@@ -6,7 +6,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 export default function App({ Component, pageProps }) {
   return (
     <ThemeProvider>
-      <CssBaseline />
+      <CssBaseline enableColorScheme />
       <Component {...pageProps} />
     </ThemeProvider>
   );

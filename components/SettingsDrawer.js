@@ -1,5 +1,4 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
 import { styled, useTheme, alpha } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Drawer from '@mui/material/Drawer';
@@ -14,7 +13,6 @@ import CloseIcon from '@mui/icons-material/Close';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import SettingsBrightnessIcon from '@mui/icons-material/SettingsBrightness';
-// import { useChangeTheme } from 'docs/src/modules/components/ThemeContext';
 import { useChangeTheme } from '@/components/ThemeContext';
 
 const Heading = styled(Typography)(({ theme }) => ({
@@ -136,10 +134,5 @@ function SettingsDrawer(props) {
     </Drawer>
   );
 }
-
-SettingsDrawer.propTypes = {
-  onClose: PropTypes.func.isRequired,
-  open: PropTypes.bool,
-};
 
 export default SettingsDrawer;
