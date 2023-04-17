@@ -1,18 +1,13 @@
 import * as React from 'react';
-// import PropTypes from 'prop-types';
 import { useRouter } from 'next/router';
 import { styled } from '@mui/material/styles';
 import { exactProp } from '@mui/utils';
 import GlobalStyles from '@mui/material/GlobalStyles';
 import NoSsr from '@mui/material/NoSsr';
-// import { pathnameToLanguage } from 'docs/src/modules/utils/helpers';
 import Head from '@/components/Head';
 import AppFrame from '@/components/AppFrame';
-// import EditPage from 'docs/src/modules/components/EditPage';
 import AppContainer from '@/components/AppContainer';
 // import AppTableOfContents from 'docs/src/modules/components/AppTableOfContents';
-// import AdManager from 'docs/src/modules/components/AdManager';
-// import AppLayoutDocsFooter from 'docs/src/modules/components/AppLayoutDocsFooter';
 import BackToTop from '@/components/BackToTop';
 
 const Main = styled('main', {
@@ -41,7 +36,6 @@ const StyledAppContainer = styled(AppContainer, {
 })(({ disableAd, hasTabs, theme }) => {
   return {
     position: 'relative',
-    // By default, a grid item cannot be smaller than the size of its content.
     // https://stackoverflow.com/questions/43311943/prevent-content-from-expanding-grid-items
     minWidth: 0,
     ...(!disableAd && {
@@ -92,25 +86,6 @@ function AppLayoutDocs(props) {
     hasTabs = false,
   } = props;
 
-  // if (description === undefined) {
-  //   throw new Error('Missing description in the page');
-  // }
-
-  // const { canonicalAs } = pathnameToLanguage(router.asPath);
-  // let productName = 'MUI';
-  // if (canonicalAs.startsWith('/material-ui/')) {
-  //   productName = 'Material UI';
-  // } else if (canonicalAs.startsWith('/base/')) {
-  //   productName = 'Base UI';
-  // } else if (canonicalAs.startsWith('/x/')) {
-  //   productName = 'MUI X';
-  // } else if (canonicalAs.startsWith('/system/')) {
-  //   productName = 'MUI System';
-  // } else if (canonicalAs.startsWith('/toolpad/')) {
-  //   productName = 'MUI Toolpad';
-  // } else if (canonicalAs.startsWith('/joy-ui/')) {
-  //   productName = 'Joy UI';
-  // }
 
   return (
     <AppFrame BannerComponent={BannerComponent}>
@@ -145,20 +120,5 @@ function AppLayoutDocs(props) {
   );
 }
 
-// AppLayoutDocs.propTypes = {
-//   BannerComponent: PropTypes.elementType,
-//   children: PropTypes.node.isRequired,
-//   description: PropTypes.string.isRequired,
-//   disableAd: PropTypes.bool.isRequired,
-//   disableToc: PropTypes.bool.isRequired,
-//   hasTabs: PropTypes.bool,
-//   location: PropTypes.string.isRequired,
-//   title: PropTypes.string.isRequired,
-//   toc: PropTypes.array.isRequired,
-// };
-
-// if (process.env.NODE_ENV !== 'production') {
-//   AppLayoutDocs.propTypes = exactProp(AppLayoutDocs.propTypes);
-// }
 
 export default AppLayoutDocs;
