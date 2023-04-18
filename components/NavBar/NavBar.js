@@ -13,10 +13,8 @@ import {
   Typography, 
   useScrollTrigger,
 } from '@mui/material';
-import { 
-  MenuIcon, 
-  SettingsIcon
-} from '@mui/icons-material';
+import MenuIcon from '@mui/icons-material/Menu';
+import SettingsIcon from '@mui/icons-material/SettingsOutlined';
 import SettingsDrawer from '@/components/NavBar/SettingsDrawer';
 import SearchBar from '@/components/NavBar/SearchBar';
 import MenuComponent from '@/components/NavBar/MenuComponent';
