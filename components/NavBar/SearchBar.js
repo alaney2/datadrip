@@ -11,11 +11,11 @@ const Search = styled('div')(({ theme }) => ({
   '&:hover': {
     backgroundColor: alpha(theme.palette.common.white, 0.25),
   },
-  marginRight: theme.spacing(2),
-  marginLeft: 0,
+  marginRight: theme.spacing(4),
+  marginLeft: theme.spacing(4),
   width: '100%',
   [theme.breakpoints.up('sm')]: {
-    marginLeft: theme.spacing(3),
+    // marginLeft: theme.spacing(4),
     width: 'auto',
   },
 }));
@@ -39,15 +39,27 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     transition: theme.transitions.create('width'),
     width: '100%',
     [theme.breakpoints.up('sm')]: {
-      width: '12ch',
+      width: '30ch',
       '&:focus': {
-        width: '20ch',
+        width: '50ch',
+      },
+    },
+    [theme.breakpoints.up('md')]: {
+      width: '40ch',
+      '&:focus': {
+        width: '60ch',
       },
     },
   },
 }));
 
 export default function SearchBar() {
+  const inputRef = React.useRef();
+  const handleKeyDown = (event) => {
+    if (event.key === 'Escape') {
+      inputRef.current.blur();
+    }
+  };
   return (
     <Search>
       <SearchIconWrapper>
@@ -56,6 +68,8 @@ export default function SearchBar() {
       <StyledInputBase
         placeholder="Search…"
         inputProps={{ 'aria-label': 'search' }}
+        inputRef={inputRef}
+        onKeyDown={handleKeyDown}
       />
     </Search>
   );

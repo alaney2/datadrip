@@ -4,17 +4,18 @@ import { styled, alpha } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import SkipLink from './SkipLink';
 import GlobalStyles from '@mui/material/GlobalStyles';
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
+// import AppBar from '@mui/material/AppBar';
+// import Toolbar from '@mui/material/Toolbar';
+// import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Tooltip from '@mui/material/Tooltip';
+import { Toolbar, AppBar, IconButton } from '@mui/material';
 import Box from '@mui/material/Box';
 import SettingsIcon from '@mui/icons-material/SettingsOutlined';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Stack from '@mui/material/Stack';
-import SettingsDrawer from 'components/SettingsDrawer';
-import SearchBar from 'components/SearchBar';
+import SettingsDrawer from '@/components/NavBar/SettingsDrawer';
+import SearchBar from '@/components/NavBar/SearchBar';
 
 const GrowingDiv = styled('div')({
   flex: '1 1 auto',

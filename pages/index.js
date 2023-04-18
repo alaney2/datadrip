@@ -4,9 +4,8 @@ import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import IconButton from '@mui/material/IconButton';
 import SettingsIcon from '@mui/icons-material/SettingsOutlined';
-import SettingsDrawer from '@/components/SettingsDrawer'
-import AppFrame from '@/components/AppFrame';
-import App from './_app';
+import SettingsDrawer from '@/components/NavBar/SettingsDrawer'
+import NavBar from '@/components/NavBar/NavBar';
 
 export default function Home() {
   const [settingsOpen, setSettingsOpen] = React.useState(false);
@@ -20,13 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main >
-        {/* <>Hello world</> */}
-        {/* <button onClick={() => setSettingsOpen(true)}>Settings</button> */}
-        {/* <IconButton color="primary" onClick={() => setSettingsOpen(true)} sx={{ px: '8px' }}> */}
-          {/* <SettingsIcon fontSize="small" /> */}
-        {/* </IconButton> */}
-        <AppFrame />
-        <SettingsDrawer onClose={() => setSettingsOpen(false)} open={settingsOpen} />
+        <NavBar />
       </main>
 
     </>
