@@ -51,7 +51,7 @@ export default function NavBar(props) {
         <HideOnScroll {...props}>
           <AppBar>
             <Toolbar>
-              <Container maxWidth="xl">
+              {/* <Container maxWidth="xl"> */}
                 <Box sx={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
                   <Box sx={{ display: 'flex', alignItems: 'center' }}>
                     <IconButton
@@ -90,7 +90,7 @@ export default function NavBar(props) {
                     </Tooltip>
                   </Box>
                 </Box>
-              </Container>
+              {/* </Container> */}
             </Toolbar>
           </AppBar>
         </HideOnScroll>

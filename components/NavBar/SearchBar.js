@@ -39,15 +39,15 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     transition: theme.transitions.create('width'),
     width: '100%',
     [theme.breakpoints.up('sm')]: {
-      width: '30ch',
+      width: '10ch',
       '&:focus': {
-        width: '50ch',
+        width: '20ch',
       },
     },
     [theme.breakpoints.up('md')]: {
-      width: '40ch',
+      width: '10ch',
       '&:focus': {
-        width: '60ch',
+        width: '20ch',
       },
     },
   },
