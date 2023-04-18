@@ -10,7 +10,7 @@ export default function MarkdownPage({ markdownContent }) {
 }
 
 export async function getStaticProps() {
-  const filePath = path.join(process.cwd(), 'data', {filename});
+  const filePath = path.join(process.cwd(), 'data', filename);
   const markdownContent = fs.readFileSync(filePath, 'utf8');
   return {
     props: {
