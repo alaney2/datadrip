@@ -34,7 +34,6 @@ function HideOnScroll(props) {
 
 export default function NavBar(props) {
   const [settingsOpen, setSettingsOpen] = React.useState(false);
-
   const [menuAnchorEl, setMenuAnchorEl] = React.useState(null);
 
   const handleMenuOpen = (event) => {
@@ -51,46 +50,45 @@ export default function NavBar(props) {
         <HideOnScroll {...props}>
           <AppBar>
             <Toolbar>
-              {/* <Container maxWidth="xl"> */}
-                <Box sx={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
-                  <Box sx={{ display: 'flex', alignItems: 'center' }}>
-                    <IconButton
-                      size="large"
-                      edge="start"
-                      color="inherit"
-                      aria-label="open drawer"
-                      sx={{ mr: 2 }}
-                      onClick={handleMenuOpen}
-                    >
-                      <MenuComponent
-                        anchorEl={menuAnchorEl}
-                        open={Boolean(menuAnchorEl)}
-                        onClose={handleMenuClose}
-                      />
-                      <MenuIcon />
-                    </IconButton>
-                    <Link href="/" passHref>
-                      <Button variant="text" color="inherit">
-                        <Typography
-                          variant="h6"
-                          noWrap
-                          component="div"
-                        >
-                          DataDrip
-                        </Typography>
-                      </Button>
-                    </Link>
-                  </Box>
-                  <Box sx={{ display: 'flex', alignItems: 'center' }}>
-                    <SearchBar />
-                    <Tooltip title="Toggle Settings">
-                      <IconButton color="inherit" onClick={() => setSettingsOpen(true)} sx={{ px: '8px' }}>
-                        <SettingsIcon fontSize="small" color="inherit" />
-                      </IconButton>
-                    </Tooltip>
-                  </Box>
+              <Box sx={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
+                <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                  <IconButton
+                    size="large"
+                    edge="start"
+                    color="inherit"
+                    aria-label="open drawer"
+                    sx={{ mr: 2 }}
+                    onClick={handleMenuOpen}
+                  >
+                    <MenuComponent
+                      anchorEl={menuAnchorEl}
+                      open={Boolean(menuAnchorEl)}
+                      onClose={handleMenuClose}
+                    />
+                    <MenuIcon />
+                  </IconButton>
+                  <Link href="/" passHref>
+                    <Button variant="text" color="inherit">
+                      <Typography
+                        variant="h6"
+                        noWrap
+                        component="div"
+                        color="inherit"
+                      >
+                        DataDrip
+                      </Typography>
+                    </Button>
+                  </Link>
                 </Box>
-              {/* </Container> */}
+                <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                  <SearchBar />
+                  <Tooltip title="Toggle Settings">
+                    <IconButton color="inherit" onClick={() => setSettingsOpen(true)} sx={{ px: '8px' }}>
+                      <SettingsIcon fontSize="small" color="inherit" />
+                    </IconButton>
+                  </Tooltip>
+                </Box>
+              </Box>
             </Toolbar>
           </AppBar>
         </HideOnScroll>

@@ -1,15 +1,16 @@
-// pages/MarkdownPage.js
 import * as React from 'react';
 import path from 'path';
 import fs from 'fs';
-import Markdown from 'components/Markdown';
+import PageContent from '@/components/PageContent/PageContent';
+
+const filename = 'gan.md';
 
 export default function MarkdownPage({ markdownContent }) {
-  return <Markdown content={markdownContent} />;
+  return <PageContent content={markdownContent} filename={filename} />;
 }
 
 export async function getStaticProps() {
-  const filePath = path.join(process.cwd(), 'data', 'gan.md');
+  const filePath = path.join(process.cwd(), 'data', {filename});
   const markdownContent = fs.readFileSync(filePath, 'utf8');
   return {
     props: {

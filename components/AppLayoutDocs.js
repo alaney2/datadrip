@@ -8,7 +8,7 @@ import Head from '@/components/Head';
 import AppFrame from '@/components/AppFrame';
 import AppContainer from '@/components/AppContainer';
 // import AppTableOfContents from 'docs/src/modules/components/AppTableOfContents';
-import BackToTop from '@/components/BackToTop';
+import BackToTop from '@/components/PageContent/BackToTop';
 
 const Main = styled('main', {
   shouldForwardProp: (prop) => prop !== 'disableToc',

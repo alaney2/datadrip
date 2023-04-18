@@ -1,11 +1,10 @@
-// pages/MarkdownPage.js
 import * as React from 'react';
 import path from 'path';
 import fs from 'fs';
-import Markdown from 'components/Markdown';
+import PageContent from '@/components/PageContent/PageContent';
 
 export default function MarkdownPage({ markdownContent }) {
-  return <Markdown content={markdownContent} />;
+  return <PageContent content={markdownContent} />;
 }
 
 export async function getStaticProps() {

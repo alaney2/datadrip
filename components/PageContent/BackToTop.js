@@ -1,13 +1,14 @@
 import * as React from 'react';
+import { useRouter } from 'next/router';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import Fab from '@mui/material/Fab';
 import Box from '@mui/material/Box';
 import Tooltip from '@mui/material/Tooltip';
 import KeyboardArrowUpRoundedIcon from '@mui/icons-material/KeyboardArrowUpRounded';
 import Fade from '@mui/material/Fade';
-import { Theme } from '@mui/material/styles';
 
 export default function BackToTop() {
+  const router = useRouter();
   const [open, setOpen] = React.useState(false);
 
   const handleClose = () => {
@@ -26,6 +27,8 @@ export default function BackToTop() {
   const handleClick = () => {
     window.scrollTo({ top: 0 });
     setOpen(false);
+    const currentPath = router.asPath.split('#')[0];
+    router.replace(currentPath, undefined, { shallow: true });
   };
 
   return (
@@ -43,26 +46,13 @@ export default function BackToTop() {
           <Fab
             sx={[
               (theme) => ({
-                backgroundColor: (theme.vars || theme).palette.primary[100],
                 boxShadow: `0px 4px 20px rgba(170, 180, 190, 0.3)`,
                 '&:hover': {
-                  backgroundColor: (theme.vars || theme).palette.primary[200],
                 },
                 '&:active': {
                   boxShadow: `0px 4px 20px rgba(170, 180, 190, 0.6)`,
                 },
               }),
-              (theme) =>
-                theme.applyDarkStyles({
-                  backgroundColor: (theme.vars || theme).palette.primaryDark[400],
-                  boxShadow: `0px 4px 20px rgba(0, 0, 0, 0.5)`,
-                  '&:hover': {
-                    backgroundColor: (theme.vars || theme).palette.primaryDark[500],
-                  },
-                  '&:active': {
-                    boxShadow: `0px 4px 20px rgba(0, 0, 0, 0.7)`,
-                  },
-                }),
             ]}
             size="small"
             aria-label="scroll back to top"
@@ -70,14 +60,7 @@ export default function BackToTop() {
             data-ga-event-category="docs"
             data-ga-event-action="click-back-to-top"
           >
-            <KeyboardArrowUpRoundedIcon
-              sx={(theme) => ({
-                color: (theme.vars || theme).palette.primary[800],
-                ...theme.applyDarkStyles({
-                  color: (theme.vars || theme).palette.primary[200],
-                }),
-              })}
-            />
+            <KeyboardArrowUpRoundedIcon />
           </Fab>
         </Box>
       </Tooltip>
