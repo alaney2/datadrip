@@ -1,0 +1,27 @@
+{
+  "gan": {
+    "title": "Generative Adversarial Networks",
+    "prerequisites": ["pageB", "pageC"],
+    "further_readings": ["pageD", "pageE"]
+  },
+  "pageB": {
+    "title": "Page B",
+    "prerequisites": ["pageA"],
+    "further_readings": ["pageC", "pageD"]
+  },
+  "pageC": {
+    "title": "Page C",
+    "prerequisites": ["pageA"],
+    "further_readings": ["pageD", "pageE"]
+  },
+  "pageD": {
+    "title": "Page D",
+    "prerequisites": ["pageA"],
+    "further_readings": ["pageE"]
+  },
+  "pageE": {
+    "title": "Page E",
+    "prerequisites": ["pageA"],
+    "further_readings": []
+  }
+}

@@ -18,7 +18,7 @@ export default function Markdown({ content, headings, filename }) {
       const token = process.env.NEXT_PUBLIC_GITHUB_TOKEN;
 
       const response = await fetch(
-        `https://api.github.com/repos/${owner}/${repo}/commits?path=${filePath}`,
+        `https://api.github.com/repos/${owner}/${repo}/commits?path=${filePath}&per_page=1`,
         {
           headers: {
             Authorization: `token ${token}`,
@@ -30,7 +30,6 @@ export default function Markdown({ content, headings, filename }) {
         setLastUpdated(data[0].commit.committer.date);
       }
     }
-
     fetchLastUpdated();
   }, [filename]);
 
@@ -47,7 +46,7 @@ export default function Markdown({ content, headings, filename }) {
         }}
       >
         <Box>
-          <LeftSidebar />
+          <LeftSidebar filename={filename} />
         </Box>
         <Box>
           <ReactMarkdown rehypePlugins={[rehypeSlug]}>{content}</ReactMarkdown>

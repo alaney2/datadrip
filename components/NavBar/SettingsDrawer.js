@@ -4,6 +4,9 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import Drawer from '@mui/material/Drawer';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemText from '@mui/material/ListItemText';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
@@ -14,6 +17,8 @@ import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import SettingsBrightnessIcon from '@mui/icons-material/SettingsBrightness';
 import { useChangeTheme } from '@/components/ThemeContext';
+import { ReadingListContext } from '@/components/ReadingListContext';
+
 
 const Heading = styled(Typography)(({ theme }) => ({
   margin: '20px 0 10px',
@@ -39,6 +44,12 @@ function SettingsDrawer(props) {
   const [mode, setMode] = React.useState(null);
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
   const preferredMode = prefersDarkMode ? 'dark' : 'light';
+
+  const { readingList, removeFromReadingList } = React.useContext(ReadingListContext);
+
+  const handleRemoveFromReadingList = (item) => {
+    removeFromReadingList(item);
+  };
 
   React.useEffect(() => {
     // syncing with homepage, can be removed once all pages are migrated to CSS variables
@@ -85,7 +96,7 @@ function SettingsDrawer(props) {
         <Typography variant="body1" fontWeight="500">
           Settings
         </Typography>
-        <IconButton color="inherit" onClick={onClose} edge="end">
+        <IconButton color="inherit" onClick={onClose} sx={{ marginRight: 1}}>
           <CloseIcon color="primary" fontSize="small" />
         </IconButton>
       </Box>
@@ -130,6 +141,26 @@ function SettingsDrawer(props) {
             Dark
           </IconToggleButton>
         </ToggleButtonGroup>
+      </Box>
+      {/* <Box sx={{ flexGrow: 1 }}></Box> */}
+      <Box sx={{ pl: 2, pr: 2 }}>
+        <Heading gutterBottom id="settings-reading-list">
+          Reading List
+        </Heading>
+        <List>
+          {readingList.map((item, index) => (
+            <ListItem key={index}>
+              <ListItemText primary={item.title} />
+              <IconButton
+                edge="end"
+                color="inherit"
+                onClick={() => handleRemoveFromReadingList(item)}
+              >
+                <CloseIcon />
+              </IconButton>
+            </ListItem>
+          ))}
+        </List>
       </Box>
     </Drawer>
   );
