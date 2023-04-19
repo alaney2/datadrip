@@ -23,11 +23,14 @@ export default function FurtherReading({ furtherReadings }) {
     setFurtherReadingExpanded(!furtherReadingExpanded);
   };
 
-  const { addToReadingList, readingList } = React.useContext(ReadingListContext);
+  const { readingList, addToReadingList, removeFromReadingList } = React.useContext(ReadingListContext);
 
   const handleAddToReadingList = (reading) => {
-    addToReadingList(reading);
-    setAddedPages((prevAddedPages) => [...prevAddedPages, reading.id]);
+    if (readingList.includes(reading)) {
+      removeFromReadingList(reading);
+    } else {
+      addToReadingList(reading);
+    }
   };
 
   const isInReadingList = (id) => {
@@ -64,9 +67,14 @@ export default function FurtherReading({ furtherReadings }) {
               <IconButton
                 edge="end"
                 color="inherit"
+                sx={{ mr: 1 }}
                 onClick={() => handleAddToReadingList(reading)}
               >
-                {isInReadingList(reading.id) ? <BookmarkAddedIcon /> : <BookmarkAddIcon />}
+                {readingList.includes(reading) ? (
+                  <BookmarkAddedIcon />
+                ) : (
+                  <BookmarkAddIcon />
+                )}
               </IconButton>
             </ListItem>
           ))}

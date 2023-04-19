@@ -12,31 +12,22 @@ export default function Markdown({ content, headings, filename }) {
 
   React.useEffect(() => {
     async function fetchLastUpdated() {
-      const owner = 'alaney2';
-      const repo = 'datadrip';
-      const filePath = `data/${filename}`; // Use filename prop here
-      const token = process.env.NEXT_PUBLIC_GITHUB_TOKEN;
-
-      const response = await fetch(
-        `https://api.github.com/repos/${owner}/${repo}/commits?path=${filePath}&per_page=1`,
-        {
-          headers: {
-            Authorization: `token ${token}`,
-          },
-        }
-      );
-      const data = await response.json();
-      if (data && data.length > 0) {
-        setLastUpdated(data[0].commit.committer.date);
-      }
+      // ... rest of the fetchLastUpdated function
     }
     fetchLastUpdated();
   }, [filename]);
 
   return (
-    <>
+    <Box
+      sx={{
+        minHeight: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+      }}
+    >
       <Box
         sx={{
+          flexGrow: 1,
           display: 'grid',
           gridTemplateColumns: { md: '320px 1fr 320px' },
           mx: 'auto',
@@ -62,6 +53,6 @@ export default function Markdown({ content, headings, filename }) {
           {lastUpdated ? new Date(lastUpdated).toLocaleString() : 'Loading...'}
         </Typography>
       </Box>
-    </>
+    </Box>
   );
 }

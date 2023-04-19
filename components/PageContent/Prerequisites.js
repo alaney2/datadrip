@@ -23,15 +23,14 @@ export default function Prerequisites({ prerequisites }) {
     setPrerequisitesExpanded(!prerequisitesExpanded);
   };
 
-  const { addToReadingList, readingList } = React.useContext(ReadingListContext);
+  const { readingList, addToReadingList, removeFromReadingList } = React.useContext(ReadingListContext);
 
-  const handleAddToReadingList = (prerequisite) => {
-    addToReadingList(prerequisite);
-    setAddedPages((prevAddedPages) => [...prevAddedPages, prerequisite.id]);
-  };
-
-  const isInReadingList = (id) => {
-    return addedPages.includes(id) || readingList.some((item) => item.id === id);
+  const handleAddToReadingList = (reading) => {
+    if (readingList.includes(reading)) {
+      removeFromReadingList(reading);
+    } else {
+      addToReadingList(reading);
+    }
   };
 
   return (
@@ -64,9 +63,14 @@ export default function Prerequisites({ prerequisites }) {
               <IconButton
                 edge="end"
                 color="inherit"
+                sx={{ mr: 1 }}
                 onClick={() => handleAddToReadingList(prerequisite)}
               >
-                {isInReadingList(prerequisite.id) ? <BookmarkAddedIcon /> : <BookmarkAddIcon />}
+                {readingList.includes(prerequisite) ? (
+                  <BookmarkAddedIcon />
+                ) : (
+                  <BookmarkAddIcon />
+                )}
               </IconButton>
             </ListItem>
           ))}

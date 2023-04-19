@@ -10,16 +10,18 @@ import FurtherReading from '@/components/PageContent/FurtherReading';
 import wikiConnections from '@/wiki-connections.json';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import BookmarkAddIcon from '@mui/icons-material/BookmarkAdd';
-import BookmarkAddedIcon from '@mui/icons-material/BookmarkAdded';
+
 
 export default function LeftSidebar({ filename }) {
+  const [relatedExpanded, setRelatedExpanded] = React.useState(false);
   const nameWithoutExtension = filename.slice(0, filename.lastIndexOf('.'));
   const pageObject = wikiConnections[nameWithoutExtension];
+  if (!pageObject) {
+    return null;
+  }
   const prerequisites = pageObject.prerequisites.map((id) => ({ ...wikiConnections[id], id }));
   const furtherReadings = pageObject.further_readings.map((id) => ({ ...wikiConnections[id], id }));
 
-  const [relatedExpanded, setRelatedExpanded] = React.useState(false);
   
   const handleRelatedClick = () => {
     setRelatedExpanded(!relatedExpanded);
