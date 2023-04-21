@@ -43,9 +43,12 @@ import { createPortal } from 'react-dom';
 
 
 export default function ReadingList() {
-  const router = useRouter();
   const { readingList, removeFromReadingList, setReadingList } = React.useContext(ReadingListContext);
   const [activeId, setActiveId] = React.useState(null);
+  const getIndex = (id) => readingList.indexOf(id);
+  const getPosition = (id) => getIndex(id) + 1;
+  const activeIndex = activeId ? getIndex(activeId) : -1;
+
   // const sensors = useSensors(useSensor(PointerSensor));
   const activationConstraint = {
     delay: 250,
@@ -64,8 +67,6 @@ export default function ReadingList() {
       sortableKeyboardCoordinates,
     })
   );
-  const getIndex = (id) => readingList.indexOf(id);
-  const getPosition = (id) => getIndex(id) + 1;
   const isFirstAnnouncement = useRef(true);
 
   const announcements = {
@@ -136,12 +137,11 @@ export default function ReadingList() {
 
   const handleDragEnd = (event) => {
     const { active, over } = event;
-    if (over && active.id !== over.id) {
-      setReadingList((currentList) => {
-        const oldIndex = currentList.findIndex(item => item.id === active.id);
-        const newIndex = currentList.findIndex(item => item.id === over.id);
-        return arrayMove(currentList, oldIndex, newIndex);
-      });
+    if (over) {
+      const overIndex = getIndex(over.id);
+      if (overIndex !== activeIndex) {
+        setReadingList((currentList) => arrayMove(currentList, activeIndex, overIndex));
+      }
     }
     setActiveId(null);
   };
