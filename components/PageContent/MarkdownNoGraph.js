@@ -7,7 +7,7 @@ import RightSidebar from './RightSidebar';
 import Divider from '@mui/material/Divider';
 import Typography from '@mui/material/Typography';
 
-export default function Markdown({ content, headings, filename }) {
+export default function MarkdownNoGraph({ content, headings, filename }) {
   const [lastUpdated, setLastUpdated] = React.useState(null);
 
   React.useEffect(() => {
@@ -29,7 +29,7 @@ export default function Markdown({ content, headings, filename }) {
         sx={{
           flexGrow: 1,
           display: 'grid',
-          gridTemplateColumns: { md: '240px 1fr ', lg: '240px 1fr 240px' },
+          gridTemplateColumns: { md: '320px 1fr 320px' },
           mx: 'auto',
           px: { xs: 2, sm: 4 },
           maxWidth: { xl: '1600px' },
@@ -37,7 +37,7 @@ export default function Markdown({ content, headings, filename }) {
         }}
       >
         <Box>
-          <LeftSidebar filename={filename} />
+          {/* <LeftSidebar filename={filename} /> */}
         </Box>
         <Box>
           <ReactMarkdown rehypePlugins={[rehypeSlug]}>{content}</ReactMarkdown>

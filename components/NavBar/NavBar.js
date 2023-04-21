@@ -1,10 +1,9 @@
 import * as React from 'react';
 import Link from 'next/link';
 import { 
-  AppBar, 
+  AppBar,
   Box, 
-  Button, 
-  Container, 
+  Button,
   CssBaseline, 
   IconButton, 
   Slide, 
@@ -14,9 +13,11 @@ import {
   useScrollTrigger,
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import SearchIcon from '@mui/icons-material/Search';
 import SettingsIcon from '@mui/icons-material/SettingsOutlined';
 import SettingsDrawer from '@/components/NavBar/SettingsDrawer';
 import SearchBar from '@/components/NavBar/SearchBar';
+import SearchMobile from '@/components/NavBar/SearchMobile';
 import MenuComponent from '@/components/NavBar/MenuComponent';
 
 
@@ -49,7 +50,7 @@ export default function NavBar(props) {
       <CssBaseline />
         <HideOnScroll {...props}>
           <AppBar>
-            <Toolbar>
+            <Toolbar sx={{ minHeight: '64px' }}>
               <Box sx={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
                 <Box sx={{ display: 'flex', alignItems: 'center' }}>
                   <IconButton
@@ -80,8 +81,10 @@ export default function NavBar(props) {
                     </Button>
                   </Link>
                 </Box>
-                <Box sx={{ display: 'flex', alignItems: 'center' }}>
-                  <SearchBar />
+                <Box sx={{ display: 'flex', alignItems: 'center', }}>
+                  <Box sx={{ mr: 2 }}>
+                    <SearchMobile />
+                  </Box>
                   <Tooltip title="Toggle Settings">
                     <IconButton color="inherit" onClick={() => setSettingsOpen(true)} sx={{ px: '8px' }}>
                       <SettingsIcon fontSize="small" color="inherit" />
@@ -93,7 +96,10 @@ export default function NavBar(props) {
           </AppBar>
         </HideOnScroll>
       <Toolbar />
-      <SettingsDrawer onClose={() => setSettingsOpen(false)} open={settingsOpen} />
+      <SettingsDrawer 
+        onClose={() => setSettingsOpen(false)} 
+        open={settingsOpen} 
+      />
       <MenuComponent
         anchorEl={menuAnchorEl}
         open={Boolean(menuAnchorEl)}

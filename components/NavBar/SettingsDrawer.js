@@ -1,12 +1,10 @@
 import * as React from 'react';
-import { styled, useTheme, alpha } from '@mui/material/styles';
+import { useRouter } from 'next/router';
+import { styled, } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Drawer from '@mui/material/Drawer';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemText from '@mui/material/ListItemText';
+import Chip from '@mui/material/Chip';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
@@ -18,14 +16,15 @@ import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import SettingsBrightnessIcon from '@mui/icons-material/SettingsBrightness';
 import { useChangeTheme } from '@/components/ThemeContext';
 import { ReadingListContext } from '@/components/ReadingListContext';
-
+import ReadingList from '@/components/NavBar/ReadingList';
+import TestList from './TestList';
 
 const Heading = styled(Typography)(({ theme }) => ({
-  margin: '20px 0 10px',
+  margin: '30px 0px 10px',
   color: theme.palette.grey[600],
   fontWeight: 700,
-  fontSize: theme.typography.pxToRem(11),
-  textTransform: 'uppercase',
+  // fontSize: theme.typography.pxToRem(11),
+  // textTransform: 'uppercase',
   letterSpacing: '.08rem',
 }));
 
@@ -34,11 +33,13 @@ const IconToggleButton = styled(ToggleButton)({
   justifyContent: 'center',
   width: '100%',
   '& > *': {
-    marginRight: '8px',
+    // marginRight: '8px',
   },
 });
 
-function SettingsDrawer(props) {
+export default function SettingsDrawer(props) {
+  const router = useRouter();
+
   const { onClose, open = false, ...other } = props;
   const changeTheme = useChangeTheme();
   const [mode, setMode] = React.useState(null);
@@ -76,7 +77,7 @@ function SettingsDrawer(props) {
       localStorage.setItem('mui-mode', 'system'); // syncing with homepage, can be removed once all pages are migrated to CSS variables
       changeTheme({ paletteMode: preferredMode });
     } else {
-      localStorage.setItem('mui-mode', paletteMode); // syncing with homepage, can be removed once all pages are migrated to CSS variables
+      localStorage.setItem('mui-mode', paletteMode);
       changeTheme({ paletteMode });
     }
   };
@@ -88,12 +89,15 @@ function SettingsDrawer(props) {
       open={open}
       PaperProps={{
         elevation: 0,
-        sx: { width: { xs: 310, sm: 360 }, borderRadius: '10px 0px 0px 10px' },
+        sx: { 
+          width: { xs: 310, sm: 360 }, 
+          borderRadius: '10px 0px 0px 10px',
+        },
       }}
       {...other}
     >
-      <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', p: 2 }}>
-        <Typography variant="body1" fontWeight="500">
+      <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', p: 2, height: '64px' }}>
+        <Typography variant="h6" fontWeight="500" sx={{letterSpacing: '.08rem',}}>
           Settings
         </Typography>
         <IconButton color="inherit" onClick={onClose} sx={{ marginRight: 1}}>
@@ -102,7 +106,7 @@ function SettingsDrawer(props) {
       </Box>
       <Divider />
       <Box sx={{ pl: 2, pr: 2 }}>
-        <Heading gutterBottom id="settings-mode">
+        <Heading gutterBottom >
           Mode
         </Heading>
         <ToggleButtonGroup
@@ -112,6 +116,7 @@ function SettingsDrawer(props) {
           onChange={handleChangeThemeMode}
           aria-labelledby="settings-mode"
           fullWidth
+          sx={{ display: 'flex', justifyContent: 'space-evenly', p: 1, paddingTop: 2 }}
         >
           <IconToggleButton
             value="light"
@@ -119,7 +124,7 @@ function SettingsDrawer(props) {
             data-ga-event-category="settings"
             data-ga-event-action="light"
           >
-            <LightModeIcon fontSize="small" />
+            <LightModeIcon fontSize="small" sx={{ mr: 1}} />
             Light
           </IconToggleButton>
           <IconToggleButton
@@ -128,7 +133,7 @@ function SettingsDrawer(props) {
             data-ga-event-category="settings"
             data-ga-event-action="system"
           >
-            <SettingsBrightnessIcon fontSize="small" />
+            <SettingsBrightnessIcon fontSize="small" sx={{ mr: 1}} />
             System
           </IconToggleButton>
           <IconToggleButton
@@ -137,33 +142,18 @@ function SettingsDrawer(props) {
             data-ga-event-category="settings"
             data-ga-event-action="dark"
           >
-            <DarkModeOutlinedIcon fontSize="small" />
+            <DarkModeOutlinedIcon fontSize="small" sx={{ mr: 1}} />
             Dark
           </IconToggleButton>
         </ToggleButtonGroup>
       </Box>
-      {/* <Box sx={{ flexGrow: 1 }}></Box> */}
       <Box sx={{ pl: 2, pr: 2 }}>
-        <Heading gutterBottom id="settings-reading-list">
+        <Heading gutterBottom >
           Reading List
+          <Chip label={readingList.length} sx={{ ml: 1 }} />
         </Heading>
-        <List>
-          {readingList.map((item, index) => (
-            <ListItem key={index}>
-              <ListItemText primary={item.title} />
-              <IconButton
-                edge="end"
-                color="inherit"
-                onClick={() => handleRemoveFromReadingList(item)}
-              >
-                <CloseIcon />
-              </IconButton>
-            </ListItem>
-          ))}
-        </List>
+        <ReadingList />
       </Box>
     </Drawer>
   );
 }
-
-export default SettingsDrawer;

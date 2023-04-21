@@ -13,6 +13,8 @@ import BookmarkAddIcon from '@mui/icons-material/BookmarkAdd';
 import BookmarkAddedIcon from '@mui/icons-material/BookmarkAdded';
 import IconButton from '@mui/material/IconButton';
 import { ReadingListContext } from '@/components/ReadingListContext';
+import ReadingListButton from '@/components/PageContent/ReadingListButton';
+
 
 export default function Prerequisites({ prerequisites }) {
   const router = useRouter();
@@ -60,7 +62,7 @@ export default function Prerequisites({ prerequisites }) {
               <ListItemButton onClick={() => router.push(`/${prerequisite.id}`)}>
                 <ListItemText primary={prerequisite.title} />
               </ListItemButton>
-              <IconButton
+              {/* <IconButton
                 edge="end"
                 color="inherit"
                 sx={{ mr: 1 }}
@@ -71,7 +73,8 @@ export default function Prerequisites({ prerequisites }) {
                 ) : (
                   <BookmarkAddIcon />
                 )}
-              </IconButton>
+              </IconButton> */}
+              <ReadingListButton item={prerequisite} />
             </ListItem>
           ))}
         </List>

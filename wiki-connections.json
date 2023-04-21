@@ -1,8 +1,13 @@
 {
   "gan": {
     "title": "Generative Adversarial Networks",
-    "prerequisites": ["pageB", "pageC"],
+    "prerequisites": ["pageB", "pageC", "pageD", "pageE", "gan", "pageF", "pageG", "pageH", "pageI", "pageJ", "pageK", "pageL", "pageM", "pageN", "pageO", "pageP", "pageQ", "pageR", "pageS", "pageT", "pageU", "pageV", "pageW", "pageX", "pageY", "pageZ"],
     "further_readings": ["pageD", "pageE"]
+  },
+  "pageA": {
+    "title": "Page A",
+    "prerequisites": [],
+    "further_readings": ["pageB", "pageC", "pageD", "pageE"]
   },
   "pageB": {
     "title": "Page B",
@@ -21,6 +26,111 @@
   },
   "pageE": {
     "title": "Page E",
+    "prerequisites": ["pageA"],
+    "further_readings": []
+  },
+  "pageF": {
+    "title": "Page F",
+    "prerequisites": ["pageA"],
+    "further_readings": []
+  },
+  "pageG": {
+    "title": "Page G",
+    "prerequisites": ["pageA"],
+    "further_readings": []
+  },
+  "pageH": {
+    "title": "Page H",
+    "prerequisites": ["pageA"],
+    "further_readings": []
+  },
+  "pageI": {
+    "title": "Page I",
+    "prerequisites": ["pageA"],
+    "further_readings": []
+  },
+  "pageJ": {
+    "title": "Page J",
+    "prerequisites": ["pageA"],
+    "further_readings": []
+  },
+  "pageK": {
+    "title": "Page K",
+    "prerequisites": ["pageA"],
+    "further_readings": []
+  },
+  "pageL": {
+    "title": "Page L",
+    "prerequisites": ["pageA"],
+    "further_readings": []
+  },
+  "pageM": {
+    "title": "Page M",
+    "prerequisites": ["pageA"],
+    "further_readings": []
+  },
+  "pageN": {
+    "title": "Page N",
+    "prerequisites": ["pageA"],
+    "further_readings": []
+  },
+  "pageO": {
+    "title": "Page O",
+    "prerequisites": ["pageA"],
+    "further_readings": []
+  },
+  "pageP": {
+    "title": "Page P",
+    "prerequisites": ["pageA"],
+    "further_readings": []
+  },
+  "pageQ": {
+    "title": "Page Q",
+    "prerequisites": ["pageA"],
+    "further_readings": []
+  },
+  "pageR": {
+    "title": "Page R",
+    "prerequisites": ["pageA"],
+    "further_readings": []
+  },
+  "pageS": {
+    "title": "Page S",
+    "prerequisites": ["pageA"],
+    "further_readings": []
+  },
+  "pageT": {
+    "title": "Page T",
+    "prerequisites": ["pageA"],
+    "further_readings": []
+  },
+  "pageU": {
+    "title": "Page U",
+    "prerequisites": ["pageA"],
+    "further_readings": []
+  },
+  "pageV": {
+    "title": "Page V",
+    "prerequisites": ["pageA"],
+    "further_readings": []
+  },
+  "pageW": {
+    "title": "Page W",
+    "prerequisites": ["pageA"],
+    "further_readings": []
+  },
+  "pageX": {
+    "title": "Page X",
+    "prerequisites": ["pageA"],
+    "further_readings": []
+  },
+  "pageY": {
+    "title": "Page Y",
+    "prerequisites": ["pageA"],
+    "further_readings": []
+  },
+  "pageZ": {
+    "title": "Page Z",
     "prerequisites": ["pageA"],
     "further_readings": []
   }

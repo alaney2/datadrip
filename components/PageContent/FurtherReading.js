@@ -13,6 +13,8 @@ import BookmarkAddIcon from '@mui/icons-material/BookmarkAdd';
 import BookmarkAddedIcon from '@mui/icons-material/BookmarkAdded';
 import IconButton from '@mui/material/IconButton';
 import { ReadingListContext } from '@/components/ReadingListContext';
+import ReadingListButton from '@/components/PageContent/ReadingListButton';
+
 
 export default function FurtherReading({ furtherReadings }) {
   const router = useRouter();
@@ -64,18 +66,7 @@ export default function FurtherReading({ furtherReadings }) {
               <ListItemButton onClick={() => router.push(`/${reading.id}`)}>
                 <ListItemText primary={reading.title} />
               </ListItemButton>
-              <IconButton
-                edge="end"
-                color="inherit"
-                sx={{ mr: 1 }}
-                onClick={() => handleAddToReadingList(reading)}
-              >
-                {readingList.includes(reading) ? (
-                  <BookmarkAddedIcon />
-                ) : (
-                  <BookmarkAddIcon />
-                )}
-              </IconButton>
+              <ReadingListButton item={reading} />
             </ListItem>
           ))}
         </List>

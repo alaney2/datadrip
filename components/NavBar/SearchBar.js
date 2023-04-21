@@ -60,6 +60,7 @@ export default function SearchBar() {
       inputRef.current.blur();
     }
   };
+  
   return (
     <Search>
       <SearchIconWrapper>
