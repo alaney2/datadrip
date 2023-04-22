@@ -40,12 +40,12 @@ export default function LeftSidebar({ filename }) {
   return (
     <Box
       sx={{
-        flex: '0 0 320px',
         display: { xs: 'none', md: 'block' },
         mt: { md: 8 },
         position: 'sticky',
         top: '64px',
         overflowY: 'auto',
+        maxHeight: 'calc(100vh - 192px)',
       }}
     >
       <List>

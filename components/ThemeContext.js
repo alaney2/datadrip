@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useMemo, useReducer } from 'react';
-import { createTheme, ThemeProvider as MuiThemeProvider } from '@mui/material/styles';
+import { ThemeProvider as MuiThemeProvider } from '@mui/material/styles';
+import { lightTheme, darkTheme } from '@/styles/theme';
 
 const DispatchContext = createContext(null);
 
@@ -18,8 +19,7 @@ export const ThemeProvider = ({ children }) => {
     ? '(prefers-color-scheme: dark)'
     : state.paletteMode === 'dark';
 
-  const theme = useMemo(() => createTheme({ 
-    palette: { mode: prefersDarkMode ? 'dark' : 'light' } }), [prefersDarkMode]);
+  const theme = useMemo(() => prefersDarkMode ? darkTheme : lightTheme, [prefersDarkMode]);
 
   return (
     <DispatchContext.Provider value={dispatch}>

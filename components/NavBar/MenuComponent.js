@@ -12,12 +12,12 @@ export default function MenuComponent({ anchorEl, open, onClose }) {
           About
         </MenuItem>
       </Link>
-      <Link href="/" passHref>
+      <Link href="/graph" passHref>
         <MenuItem onClick={onClose} component="a">
           Graph
         </MenuItem>
       </Link>
-      <Link href="/" passHref>
+      <Link href="/timeline" passHref>
         <MenuItem onClick={onClose} component="a">
           Timeline
         </MenuItem>

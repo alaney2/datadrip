@@ -17,6 +17,17 @@ export default function Markdown({ content, headings, filename }) {
     fetchLastUpdated();
   }, [filename]);
 
+  const headingRenderer = (props) => {
+    const { level, children } = props;
+    const variant = `h${level}`;
+    return (
+      <Typography variant={variant}>
+        {children}
+      </Typography>
+    );
+  };
+  
+
   return (
     <Box
       sx={{
@@ -31,23 +42,23 @@ export default function Markdown({ content, headings, filename }) {
           display: 'grid',
           gridTemplateColumns: { md: '240px 1fr ', lg: '240px 1fr 240px' },
           mx: 'auto',
-          px: { xs: 2, sm: 4 },
+          px: { xs: 1, sm: 2 },
           maxWidth: { xl: '1600px' },
-          gap: '64px',
+          gap: '32px',
         }}
       >
-        <Box>
+        <Box sx={{ ml: { xs: 1, sm: 4 } }}> 
           <LeftSidebar filename={filename} />
         </Box>
         <Box>
-          <ReactMarkdown rehypePlugins={[rehypeSlug]}>{content}</ReactMarkdown>
+          <ReactMarkdown renderers={{ heading: headingRenderer }} rehypePlugins={[rehypeSlug]}>{content}</ReactMarkdown>
         </Box>
-        <Box>
+        <Box sx={{ mr: { xs: 1, sm: 4 } }}> 
           <RightSidebar headings={headings} />
         </Box>
       </Box>
       <Divider sx={{ my: 4 }} />
-      <Box sx={{ px: { xs: 2, sm: 4 } }}>
+      <Box sx={{ px: { xs: 1, sm: 2 } }}>
         <Typography variant="caption" color="text.secondary">
           Last updated:{' '}
           {lastUpdated ? new Date(lastUpdated).toLocaleString() : 'Loading...'}

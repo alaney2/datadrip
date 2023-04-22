@@ -9,34 +9,15 @@ import Typography from '@mui/material/Typography';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Collapse from '@mui/material/Collapse';
-import BookmarkAddIcon from '@mui/icons-material/BookmarkAdd';
-import BookmarkAddedIcon from '@mui/icons-material/BookmarkAdded';
-import IconButton from '@mui/material/IconButton';
-import { ReadingListContext } from '@/components/ReadingListContext';
 import ReadingListButton from '@/components/PageContent/ReadingListButton';
 
 
 export default function FurtherReading({ furtherReadings }) {
   const router = useRouter();
   const [furtherReadingExpanded, setFurtherReadingExpanded] = React.useState(true);
-  const [addedPages, setAddedPages] = React.useState([]);
 
   const handleFurtherReadingClick = () => {
     setFurtherReadingExpanded(!furtherReadingExpanded);
-  };
-
-  const { readingList, addToReadingList, removeFromReadingList } = React.useContext(ReadingListContext);
-
-  const handleAddToReadingList = (reading) => {
-    if (readingList.includes(reading)) {
-      removeFromReadingList(reading);
-    } else {
-      addToReadingList(reading);
-    }
-  };
-
-  const isInReadingList = (id) => {
-    return addedPages.includes(id) || readingList.some((item) => item.id === id);
   };
 
   return (
