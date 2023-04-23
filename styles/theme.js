@@ -89,6 +89,7 @@ const darkTheme = createTheme({
         disableRipple: true, // Disable ripple effect for all buttons
       },
     },
+    
   },
 });
 

@@ -51,21 +51,6 @@ export function SortableItem({ handle=false, id, item, index, handleRemoveFromRe
 
   return (
     <ListItem ref={setNodeRef} style={style} {...attributes} {...listeners} sx={{m: 0, p: 0}}>
-      {/* <ListItemButton 
-        onClick={handleClick} 
-        sx={{
-          ...dragIndicatorStyle,
-          py: 0,
-          // px: 2,
-          // ml: '8px',
-          m: 1.5,
-          borderLeft: '2px solid transparent',
-          '&:hover': {
-            borderLeft: `2px solid ${theme.palette.primary.main}`,
-            backgroundColor: 'transparent',
-          },
-        }}
-      > */}
       <ListItemButton
         onClick={handleClick}
         sx={{
@@ -105,10 +90,8 @@ export function SortableItem({ handle=false, id, item, index, handleRemoveFromRe
         sx={{
           borderRadius: '4px',
           '&:hover': {
-            backgroundColor: 'transparent', // Removes the hover effect
-          },
-          '&:active': {
-            backgroundColor: 'rgba(255, 192, 203, 0.1)', // Makes the background appear a little pink when clicked
+            backgroundColor: 'transparent',
+            color: theme.palette.secondary.main,
           },
         }}
       >

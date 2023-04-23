@@ -25,11 +25,11 @@ export default function ReadingListButton({ item }) {
         p: 0.5,
         borderRadius: '4px',
         '&:hover': {
-        // backgroundColor: 'rgba(255, 50, 50, 0.1)', // Set the background color to red on hover
+        // backgroundColor: 'rgba(0, 200, 150, 0.5)',
         },
       }}
     >
-      {isInList ? <BookmarkAddedIcon /> : <BookmarkAddIcon />}
+      {isInList ? <BookmarkAddedIcon color="primary" /> : <BookmarkAddIcon />}
     </IconButton>
   );
 };

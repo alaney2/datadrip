@@ -11,6 +11,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Collapse from '@mui/material/Collapse';
 import Divider from '@mui/material/Divider';
 import ReadingListButton from '@/components/PageContent/ReadingListButton';
+import { alpha } from '@mui/material/styles';
 
 
 export default function FurtherReading({ furtherReadings }) {
@@ -49,27 +50,19 @@ export default function FurtherReading({ furtherReadings }) {
               <ListItemButton
                 sx={{
                   borderRadius: '4px',
-                  padding: 0.5,
+                  pl: 1.5,
+                  py: 0.5,
+                  margin: 0.5,
                   '&:hover': {
-                    backgroundColor: 'transparent',
+                    backgroundColor: theme => alpha(theme.palette.primary.main, 0.5),
                   },
-                  ml: 2,
-                  
+                  ml: 0,
                 }}
-                onClick={() => router.push(`/${reading.id}`)}
+                onClick={() => router.push(`/${prerequisite.id}`)}
               >
                 <ListItemText 
                   primary={reading.title}
                   primaryTypographyProps={{ variant: 'body2' }}
-                  sx={{
-                    '&:focus, &:active': {
-                      color: theme => theme.palette.primary.main,
-                    },
-                    '&:hover': {
-                      textDecoration: 'underline',
-                      textDecorationColor: theme => theme.palette.primary.main,
-                    },
-                  }}
                 />
               </ListItemButton>
               <ReadingListButton item={reading} />

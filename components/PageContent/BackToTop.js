@@ -6,7 +6,7 @@ import Box from '@mui/material/Box';
 import Tooltip from '@mui/material/Tooltip';
 import KeyboardArrowUpRoundedIcon from '@mui/icons-material/KeyboardArrowUpRounded';
 import Fade from '@mui/material/Fade';
-import { useNavBarVisibility } from '@/NavBarVisibilityContext';
+import { useNavBarVisibility } from '@/components/NavBarVisibilityContext';
 
 export default function BackToTop() {
   const router = useRouter();

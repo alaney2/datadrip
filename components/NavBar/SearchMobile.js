@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import InputBase from '@mui/material/InputBase';
-import { styled, alpha } from '@mui/material/styles';
+import { styled, alpha, useTheme } from '@mui/material/styles';
 import SearchIcon from '@mui/icons-material/Search';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
@@ -45,6 +45,8 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 export default function SearchMobile() {
   const [showSearchInput, setShowSearchInput] = React.useState(false);
+  const [searchIconColor, setSearchIconColor] = React.useState('inherit');
+  const theme = useTheme();
 
   const inputRef = React.useRef();
 
@@ -53,6 +55,16 @@ export default function SearchMobile() {
       inputRef.current.blur();
       setShowSearchInput(false);
     }
+  };
+
+  const handleSearchIconClick = () => {
+    setShowSearchInput(true);
+    setSearchIconColor(theme.palette.background.default); // Set searchIconColor to background color
+  };
+
+  const handleCloseIconClick = () => {
+    setShowSearchInput(false);
+    setSearchIconColor('inherit'); // Reset searchIconColor to 'inherit'
   };
 
   React.useEffect(() => {
@@ -66,7 +78,7 @@ export default function SearchMobile() {
   return (
     <SearchMobileWrapper>
       {!showSearchInput && (
-        <IconButton color="inherit" onClick={() => setShowSearchInput(true)}>
+        <IconButton color="inherit" onClick={handleSearchIconClick}>
           <SearchIcon />
         </IconButton>
       )}
@@ -76,7 +88,7 @@ export default function SearchMobile() {
             <SearchIcon />
           </SearchIconWrapper>
           <StyledInputBase
-            placeholder="Search…"
+            placeholder=""
             inputProps={{ 'aria-label': 'search' }}
             inputRef={inputRef}
             onKeyDown={handleKeyDown}
@@ -85,7 +97,7 @@ export default function SearchMobile() {
       )}
       {showSearchInput && (
         <Box sx={{ ml: 1 }}>
-        <IconButton color="inherit" onClick={() => setShowSearchInput(false)}>
+        <IconButton color="inherit" onClick={handleCloseIconClick}>
           <CloseIcon />
         </IconButton>
         </Box>

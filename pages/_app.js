@@ -3,7 +3,7 @@ import '@/styles/globals.css'
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider } from '@/components/ThemeContext';
 import { ReadingListProvider } from '@/components/ReadingListContext';
-import { NavBarVisibilityProvider } from '@/NavBarVisibilityContext';
+import { NavBarVisibilityProvider } from '@/components/NavBarVisibilityContext';
 
 export default function App({ Component, pageProps }) {
   return (

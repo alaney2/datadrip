@@ -1,12 +1,11 @@
 import * as React from 'react';
 import path from 'path';
 import fs from 'fs';
-import PageContentNoGraph from '@/components/PageContent/PageContentNoGraph';
+import PageContent from '@/components/PageContent/PageContent';
 
 const filename = 'about.md';
-
 export default function MarkdownPage({ markdownContent }) {
-  return <PageContentNoGraph content={markdownContent} filename={filename} />;
+  return <PageContent content={markdownContent} filename={filename} leftSidebar={false} />;
 }
 
 export async function getStaticProps() {

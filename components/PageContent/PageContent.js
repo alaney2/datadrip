@@ -20,13 +20,19 @@ function extractHeadings(markdown) {
   return headings;
 }
 
-export default function PageContent({ content, filename }) {
+export default function PageContent({ content, filename, leftSidebar=true, rightSidebar=true }) {
   const headings = extractHeadings(content);
 
   return (
     <>
       <NavBar />
-      <MarkDown content={content} headings={headings} filename={filename} />
+      <MarkDown 
+        content={content} 
+        headings={headings} 
+        filename={filename} 
+        leftSidebar={leftSidebar} 
+        rightSidebar={rightSidebar} 
+      />
       <BackToTop />
     </>
   );

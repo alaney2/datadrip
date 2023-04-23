@@ -6,6 +6,8 @@ import {
   Box,
   Button,
   CssBaseline,
+  Divider,
+  Fade,
   IconButton,
   Slide,
   Toolbar,
@@ -20,7 +22,7 @@ import SettingsDrawer from '@/components/NavBar/SettingsDrawer';
 import CottageIcon from '@mui/icons-material/Cottage';
 import SearchMobile from '@/components/NavBar/SearchMobile';
 import MenuComponent from '@/components/NavBar/MenuComponent';
-import { useNavBarVisibility } from '@/NavBarVisibilityContext';
+import { useNavBarVisibility } from '@/components/NavBarVisibilityContext';
 import { ReadingListContext } from '@/components/ReadingListContext';
 
 
@@ -71,7 +73,7 @@ export default function NavBar(props) {
     setHighlightLibraryIcon(true);
     const timer = setTimeout(() => {
       setHighlightLibraryIcon(false);
-    }, 1000);
+    }, 200);
     return () => clearTimeout(timer);
   }, [readingList]);
 
@@ -87,7 +89,11 @@ export default function NavBar(props) {
     <Box sx={{ flexGrow: 1 }}>
       <CssBaseline />
       <HideOnScroll {...props}>
-        <AppBar>
+        <AppBar 
+          color="secondary" 
+          elevation={0} 
+          sx={{ borderBottom: '0.1px solid #7c4dff' }}
+        >
           <Toolbar sx={{ minHeight: 64 }}>
             <Box sx={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
               <Box sx={{ display: 'flex', alignItems: 'center' }}>
@@ -141,19 +147,15 @@ export default function NavBar(props) {
                 <Box sx={{ mr: { xs: 0, sm: 2 } }}>
                   <SearchMobile />
                 </Box>
-                {/* <Tooltip title="Reading List"> */}
-                  <IconButton
-                    color="inherit"
-                    onClick={() => setSettingsOpen(true)}
-                    sx={{ px: '8px', borderRadius: '4px' }}
-                  >
-                    <LibraryBooksIcon
-                      fontSize="small"
-                      color={highlightLibraryIcon ? 'secondary' : 'inherit'} // Change color based on highlightLibraryIcon state
-                    />
-                  </IconButton>
-
-                {/* </Tooltip> */}
+                <IconButton
+                  color="inherit"
+                  onClick={() => setSettingsOpen(true)}
+                  sx={{ px: '8px', borderRadius: '4px' }}
+                >
+                  <Fade in={!highlightLibraryIcon} timeout={200}>
+                    <LibraryBooksIcon fontSize="small" />
+                  </Fade>
+                </IconButton>
               </Box>
             </Box>
           </Toolbar>

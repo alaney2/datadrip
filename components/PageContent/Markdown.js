@@ -7,7 +7,7 @@ import RightSidebar from './RightSidebar';
 import Divider from '@mui/material/Divider';
 import Typography from '@mui/material/Typography';
 
-export default function Markdown({ content, headings, filename }) {
+export default function Markdown({ content, headings, filename, leftSidebar, rightSidebar }) {
   const [lastUpdated, setLastUpdated] = React.useState(null);
 
   React.useEffect(() => {
@@ -16,7 +16,6 @@ export default function Markdown({ content, headings, filename }) {
       const repo = 'datadrip';
       const filePath = `data/${filename}`; // Use filename prop here
       const token = process.env.NEXT_PUBLIC_GITHUB_TOKEN;
-
       const response = await fetch(
         `https://api.github.com/repos/${owner}/${repo}/commits?path=${filePath}&per_page=1`,
         {
@@ -32,7 +31,6 @@ export default function Markdown({ content, headings, filename }) {
     }
     fetchLastUpdated();
   }, [filename]);
-
 
   return (
     <Box
@@ -54,8 +52,9 @@ export default function Markdown({ content, headings, filename }) {
         }}
       >
         <Box sx={{ ml: { xs: 1, sm: 4 } }}> 
-          <LeftSidebar filename={filename} />
+          {leftSidebar && <LeftSidebar filename={filename} />}
         </Box>
+
         <Box
           sx={{
             mt: { xs: -4, sm: 0 },
@@ -63,8 +62,9 @@ export default function Markdown({ content, headings, filename }) {
         >
           <ReactMarkdown rehypePlugins={[rehypeSlug]}>{content}</ReactMarkdown>
         </Box>
+
         <Box sx={{ mr: { xs: 1, sm: 4 } }}> 
-          <RightSidebar headings={headings} />
+          {rightSidebar && <RightSidebar headings={headings} />}
         </Box>
       </Box>
       <Divider sx={{ my: 4 }} />
