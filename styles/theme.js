@@ -54,7 +54,7 @@ const darkTheme = createTheme({
       paper: '#0A1929', // Darker gray for paper elements
     },
     text: {
-      primary: 'rgba(212, 211, 211, 0.87)', // White text
+      primary: 'rgba(212, 211, 211, 0.95)', // White text
       secondary: '#E7EBF0', // Lighter white text
     },
   },

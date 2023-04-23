@@ -101,19 +101,17 @@ export default function SettingsDrawer(props) {
     >
       <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', p: 2, height: '64px' }}>
         <Typography variant="h6" fontWeight="500" sx={{letterSpacing: '.08rem',}}>
-          Stuff
+          Nook
         </Typography>
         <IconButton 
-          // color="inherit" 
           onClick={onClose} 
           sx={{ 
-            marginRight: 1,
-             borderRadius: '4px',
-             '&:hover': {
-              backgroundColor: 'rgba(255, 50, 50, 0.1)', // Set the background color to red on hover
-              },
+            mr: { xs: 0, sm: 1 },
+            borderRadius: '4px',
+            '&:hover': {
+            backgroundColor: 'rgba(255, 50, 50, 0.1)', // Set the background color to red on hover
+            },
           }}
-          
         >
           <CloseIcon color="primary" fontSize="small" />
         </IconButton>
@@ -166,9 +164,9 @@ export default function SettingsDrawer(props) {
           Reading List
           <Chip label={readingList.length} 
             sx={{ 
-              borderRadius: '8px',
-              mr: 0,
-              backgroundColor: 'transparent' 
+              // borderRadius: '8px',
+              mr: 1,
+              // backgroundColor: 'transparent' 
             }} 
           />
         </Heading>

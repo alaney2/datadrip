@@ -6,10 +6,12 @@ import Box from '@mui/material/Box';
 import Tooltip from '@mui/material/Tooltip';
 import KeyboardArrowUpRoundedIcon from '@mui/icons-material/KeyboardArrowUpRounded';
 import Fade from '@mui/material/Fade';
+import { useNavBarVisibility } from '@/NavBarVisibilityContext';
 
 export default function BackToTop() {
   const router = useRouter();
   const [open, setOpen] = React.useState(false);
+  const { setHidden } = useNavBarVisibility();
 
   const handleClose = () => {
     setOpen(false);
@@ -24,12 +26,27 @@ export default function BackToTop() {
     threshold: 200,
   });
 
-  const handleClick = () => {
-    window.scrollTo({ top: 0 });
+  const scrollToTop = () => {
+    return new Promise((resolve) => {
+      const onScroll = () => {
+        if (window.pageYOffset === 0) {
+          window.removeEventListener("scroll", onScroll);
+          resolve();
+        }
+      };
+      window.addEventListener("scroll", onScroll);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  };
+
+  const handleClick = async () => {
+    await scrollToTop();
     setOpen(false);
-    const currentPath = router.asPath.split('#')[0];
+    setHidden(false);
+    const currentPath = router.asPath.split("#")[0];
     router.replace(currentPath, undefined, { shallow: true });
   };
+  
 
   return (
     <Fade in={trigger}>

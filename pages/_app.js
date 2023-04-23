@@ -1,15 +1,18 @@
 import * as React from 'react';
 import '@/styles/globals.css'
-import { ThemeProvider } from '@/components/ThemeContext';
 import CssBaseline from '@mui/material/CssBaseline';
+import { ThemeProvider } from '@/components/ThemeContext';
 import { ReadingListProvider } from '@/components/ReadingListContext';
+import { NavBarVisibilityProvider } from '@/NavBarVisibilityContext';
 
 export default function App({ Component, pageProps }) {
   return (
     <ThemeProvider>
       <ReadingListProvider>
-        <CssBaseline enableColorScheme />
-        <Component {...pageProps} />
+        <NavBarVisibilityProvider>
+          <CssBaseline enableColorScheme />
+          <Component {...pageProps} />
+        </NavBarVisibilityProvider>
       </ReadingListProvider>
     </ThemeProvider>
   );

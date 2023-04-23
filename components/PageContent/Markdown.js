@@ -33,16 +33,6 @@ export default function Markdown({ content, headings, filename }) {
     fetchLastUpdated();
   }, [filename]);
 
-  const headingRenderer = (props) => {
-    const { level, children } = props;
-    const variant = `h${level}`;
-    return (
-      <Typography variant={variant}>
-        {children}
-      </Typography>
-    );
-  };
-  
 
   return (
     <Box
@@ -66,8 +56,12 @@ export default function Markdown({ content, headings, filename }) {
         <Box sx={{ ml: { xs: 1, sm: 4 } }}> 
           <LeftSidebar filename={filename} />
         </Box>
-        <Box>
-          <ReactMarkdown  rehypePlugins={[rehypeSlug]}>{content}</ReactMarkdown>
+        <Box
+          sx={{
+            mt: { xs: -4, sm: 0 },
+          }}
+        >
+          <ReactMarkdown rehypePlugins={[rehypeSlug]}>{content}</ReactMarkdown>
         </Box>
         <Box sx={{ mr: { xs: 1, sm: 4 } }}> 
           <RightSidebar headings={headings} />
