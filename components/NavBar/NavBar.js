@@ -21,6 +21,7 @@ import CottageIcon from '@mui/icons-material/Cottage';
 import SearchMobile from '@/components/NavBar/SearchMobile';
 import MenuComponent from '@/components/NavBar/MenuComponent';
 import { useNavBarVisibility } from '@/NavBarVisibilityContext';
+import { ReadingListContext } from '@/components/ReadingListContext';
 
 
 function HideOnScroll(props) {
@@ -40,7 +41,7 @@ function HideOnScroll(props) {
       const scrollDirection = delta > 0 ? 'down' : 'up';
       lastScroll.current = currentScroll;
       scrollSpeed.current = Math.abs(delta);
-      if (currentScroll === 0 || (scrollDirection === 'up' && scrollSpeed.current <= threshold)) {
+      if (currentScroll <= 0 || (scrollDirection === 'up' && scrollSpeed.current <= threshold)) {
         setHidden(false);
       } else {
         setHidden(true);
@@ -62,8 +63,17 @@ function HideOnScroll(props) {
 export default function NavBar(props) {
   const [settingsOpen, setSettingsOpen] = React.useState(false);
   const [menuAnchorEl, setMenuAnchorEl] = React.useState(null);
-
+  const { readingList } = React.useContext(ReadingListContext);
+  const [highlightLibraryIcon, setHighlightLibraryIcon] = React.useState(false);
   const isSmScreen = useMediaQuery('(max-width:600px)');
+
+  React.useEffect(() => {
+    setHighlightLibraryIcon(true);
+    const timer = setTimeout(() => {
+      setHighlightLibraryIcon(false);
+    }, 1000);
+    return () => clearTimeout(timer);
+  }, [readingList]);
 
   const handleMenuOpen = (event) => {
     setMenuAnchorEl(event.currentTarget);
@@ -86,7 +96,7 @@ export default function NavBar(props) {
                   edge="start"
                   color="inherit"
                   aria-label="open drawer"
-                  sx={{ mr: { sm: 2 }, borderRadius: '4px', }}
+                  sx={{ mr: { sm: 2 }, borderRadius: '4px', p: 1, ml: 0, mr: {xs: 0, sm: 2} }}
                   onClick={handleMenuOpen}
                 >
                   <MenuComponent
@@ -118,6 +128,7 @@ export default function NavBar(props) {
                         sx={{
                           fontWeight: 700, // Make the text bolder
                           textShadow: '1px 1px 3px rgba(0, 0, 0, 0.3)', // Add a text shadow
+                          letterSpacing: '.08rem'
                         }}
                       >
                         DataDrip
@@ -131,9 +142,17 @@ export default function NavBar(props) {
                   <SearchMobile />
                 </Box>
                 {/* <Tooltip title="Reading List"> */}
-                  <IconButton color="inherit" onClick={() => setSettingsOpen(true)} sx={{ px: '8px', borderRadius: '4px', }}>
-                    <LibraryBooksIcon fontSize="small" color="inherit"  />
+                  <IconButton
+                    color="inherit"
+                    onClick={() => setSettingsOpen(true)}
+                    sx={{ px: '8px', borderRadius: '4px' }}
+                  >
+                    <LibraryBooksIcon
+                      fontSize="small"
+                      color={highlightLibraryIcon ? 'secondary' : 'inherit'} // Change color based on highlightLibraryIcon state
+                    />
                   </IconButton>
+
                 {/* </Tooltip> */}
               </Box>
             </Box>

@@ -17,7 +17,8 @@ import SettingsBrightnessIcon from '@mui/icons-material/SettingsBrightness';
 import { useChangeTheme } from '@/components/ThemeContext';
 import { ReadingListContext } from '@/components/ReadingListContext';
 import ReadingList from '@/components/NavBar/ReadingList';
-import TestList from './TestList';
+import { useTheme } from '@mui/material/styles';
+
 
 const Heading = styled(Typography)(({ theme }) => ({
   margin: '30px 0px 10px',
@@ -42,6 +43,7 @@ const IconToggleButton = styled(ToggleButton)({
 
 export default function SettingsDrawer(props) {
   const router = useRouter();
+  const theme = useTheme();
 
   const { onClose, open = false, ...other } = props;
   const changeTheme = useChangeTheme();
@@ -100,7 +102,7 @@ export default function SettingsDrawer(props) {
       {...other}
     >
       <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', p: 2, height: '64px' }}>
-        <Typography variant="h6" fontWeight="500" sx={{letterSpacing: '.08rem',}}>
+        <Typography variant="h6" fontWeight="600" sx={{letterSpacing: '.08rem',}}>
           Nook
         </Typography>
         <IconButton 
@@ -109,7 +111,10 @@ export default function SettingsDrawer(props) {
             mr: { xs: 0, sm: 1 },
             borderRadius: '4px',
             '&:hover': {
-            backgroundColor: 'rgba(255, 50, 50, 0.1)', // Set the background color to red on hover
+              backgroundColor:
+                theme.palette.mode === 'dark'
+                  ? 'rgba(150, 100, 255, 0.1)' // Light purple color for dark mode
+                  : 'rgba(255, 50, 50, 0.1)', // Red color for light mode
             },
           }}
         >

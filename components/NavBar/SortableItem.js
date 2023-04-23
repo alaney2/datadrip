@@ -74,9 +74,10 @@ export function SortableItem({ handle=false, id, item, index, handleRemoveFromRe
           px: 2,
           ml: '8px',
           m: 0,
-          borderLeft: index % 2 === 0 ? `2px solid ${theme.palette.primary.main}` : '2px solid transparent', // Conditionally add border to every other item
+          borderLeft: '2px solid transparent', // Conditionally add border to every other item
           '&:hover': {
             backgroundColor: 'transparent',
+            borderLeft: `2px solid ${theme.palette.primary.main}`
           },
         }}
       >
