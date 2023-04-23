@@ -90,7 +90,7 @@ export default function NavBar(props) {
       <CssBaseline />
       <HideOnScroll {...props}>
         <AppBar 
-          color="secondary" 
+          color="inherit"
           elevation={0} 
           sx={{ borderBottom: '0.1px solid #7c4dff' }}
         >
