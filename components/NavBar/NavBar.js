@@ -40,10 +40,10 @@ function HideOnScroll(props) {
       const scrollDirection = delta > 0 ? 'down' : 'up';
       lastScroll.current = currentScroll;
       scrollSpeed.current = Math.abs(delta);
-      if (scrollDirection === 'down' || (scrollDirection === 'up' && scrollSpeed.current > threshold)) {
-        setHidden(true);
-      } else {
+      if (currentScroll === 0 || (scrollDirection === 'up' && scrollSpeed.current <= threshold)) {
         setHidden(false);
+      } else {
+        setHidden(true);
       }
       lastScrollDirection.current = scrollDirection;
     };
@@ -57,6 +57,7 @@ function HideOnScroll(props) {
     </Slide>
   );
 }
+
 
 export default function NavBar(props) {
   const [settingsOpen, setSettingsOpen] = React.useState(false);
