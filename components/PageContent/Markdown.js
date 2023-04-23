@@ -12,7 +12,23 @@ export default function Markdown({ content, headings, filename }) {
 
   React.useEffect(() => {
     async function fetchLastUpdated() {
-      // ... rest of the fetchLastUpdated function
+      const owner = 'alaney2';
+      const repo = 'datadrip';
+      const filePath = `data/${filename}`; // Use filename prop here
+      const token = process.env.NEXT_PUBLIC_GITHUB_TOKEN;
+
+      const response = await fetch(
+        `https://api.github.com/repos/${owner}/${repo}/commits?path=${filePath}&per_page=1`,
+        {
+          headers: {
+            Authorization: `token ${token}`,
+          },
+        }
+      );
+      const data = await response.json();
+      if (data && data.length > 0) {
+        setLastUpdated(data[0].commit.committer.date);
+      }
     }
     fetchLastUpdated();
   }, [filename]);
@@ -51,7 +67,7 @@ export default function Markdown({ content, headings, filename }) {
           <LeftSidebar filename={filename} />
         </Box>
         <Box>
-          <ReactMarkdown renderers={{ heading: headingRenderer }} rehypePlugins={[rehypeSlug]}>{content}</ReactMarkdown>
+          <ReactMarkdown  rehypePlugins={[rehypeSlug]}>{content}</ReactMarkdown>
         </Box>
         <Box sx={{ mr: { xs: 1, sm: 4 } }}> 
           <RightSidebar headings={headings} />

@@ -26,6 +26,9 @@ const Heading = styled(Typography)(({ theme }) => ({
   // fontSize: theme.typography.pxToRem(11),
   // textTransform: 'uppercase',
   letterSpacing: '.08rem',
+  display: 'flex',
+  justifyContent: 'space-between',
+  alignItems: 'center',
 }));
 
 const IconToggleButton = styled(ToggleButton)({
@@ -98,9 +101,20 @@ export default function SettingsDrawer(props) {
     >
       <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', p: 2, height: '64px' }}>
         <Typography variant="h6" fontWeight="500" sx={{letterSpacing: '.08rem',}}>
-          Settings
+          Stuff
         </Typography>
-        <IconButton color="inherit" onClick={onClose} sx={{ marginRight: 1}}>
+        <IconButton 
+          // color="inherit" 
+          onClick={onClose} 
+          sx={{ 
+            marginRight: 1,
+             borderRadius: '4px',
+             '&:hover': {
+              backgroundColor: 'rgba(255, 50, 50, 0.1)', // Set the background color to red on hover
+              },
+          }}
+          
+        >
           <CloseIcon color="primary" fontSize="small" />
         </IconButton>
       </Box>
@@ -150,7 +164,13 @@ export default function SettingsDrawer(props) {
       <Box sx={{ pl: 2, pr: 2 }}>
         <Heading gutterBottom >
           Reading List
-          <Chip label={readingList.length} sx={{ ml: 1 }} />
+          <Chip label={readingList.length} 
+            sx={{ 
+              borderRadius: '8px',
+              mr: 0,
+              backgroundColor: 'transparent' 
+            }} 
+          />
         </Heading>
         <ReadingList />
       </Box>

@@ -8,10 +8,10 @@ import CloseIcon from '@mui/icons-material/Close';
 import DragIndicatorIcon from '@mui/icons-material/DragIndicator';
 import { useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
-import { useTheme, lighten } from '@mui/material/styles';
+import { useTheme } from '@mui/material/styles';
 
 
-export function SortableItem({ handle=false, id, item, handleRemoveFromReadingList, isBeingDragged }) {
+export function SortableItem({ handle=false, id, item, index, handleRemoveFromReadingList, isBeingDragged }) {
   const router = useRouter();
   const { 
     active, 
@@ -25,30 +25,15 @@ export function SortableItem({ handle=false, id, item, handleRemoveFromReadingLi
   } = useSortable({ id });
   const theme = useTheme();
 
-  // const style = {
-  //   transform: isBeingDragged ? `${CSS.Transform.toString(transform)} scale(1)` : CSS.Transform.toString(transform),
-  //   backgroundColor: isBeingDragged ? lighten(theme.palette.background.paper, 0.1) : theme.palette.background.paper,
-  //   color: isBeingDragged ? theme.palette.text.secondary : theme.palette.text.primary,
-  //   borderRadius: '4px',
-  //   marginBottom: '4px',
-  //   padding: '4px',
-  //   boxShadow: isBeingDragged ? '0 4px 6px rgba(0, 0, 0, 0.1)' : 'none',
-  //   zIndex: isBeingDragged ? 2 : 1,
-  //   // transition: transition || 'none',
-  // };
-
   const style = {
     transform: isBeingDragged ? `${CSS.Transform.toString(transform)} scale(1.0)` : CSS.Transform.toString(transform),
     backgroundColor: theme.palette.background.paper,
     color: isBeingDragged ? theme.palette.text.secondary : theme.palette.text.primary,
-    // color: isSorting ? theme.palette.text.secondary : theme.palette.text.primary,
-    // color: isSorting ? theme.palette.background.paper : theme.palette.text.primary,
     borderRadius: '4px',
-    marginBottom: '4px',
-    padding: '4px',
+    // marginBottom: '4px',
+    // padding: '4px',
     boxShadow: isBeingDragged ? '0 4px 6px rgba(0, 0, 0, 0.1)' : 'none',
     zIndex: isBeingDragged ? 2 : 1,
-    // transition: transition || 'none',
   };
 
   const dragHandleListeners = {
@@ -58,7 +43,6 @@ export function SortableItem({ handle=false, id, item, handleRemoveFromReadingLi
 
   const dragIndicatorStyle = {
     cursor: 'grab',
-    // marginRight: '8px',
   };
 
   const handleClick = () => {
@@ -66,16 +50,65 @@ export function SortableItem({ handle=false, id, item, handleRemoveFromReadingLi
   };
 
   return (
-    <ListItem ref={setNodeRef} style={style} {...attributes} {...listeners}>
-      <ListItemButton onClick={handleClick} sx={{...dragIndicatorStyle, }}>
-        <ListItemText primary={item.title} />
+    <ListItem ref={setNodeRef} style={style} {...attributes} {...listeners} sx={{m: 0, p: 0}}>
+      {/* <ListItemButton 
+        onClick={handleClick} 
+        sx={{
+          ...dragIndicatorStyle,
+          py: 0,
+          // px: 2,
+          // ml: '8px',
+          m: 1.5,
+          borderLeft: '2px solid transparent',
+          '&:hover': {
+            borderLeft: `2px solid ${theme.palette.primary.main}`,
+            backgroundColor: 'transparent',
+          },
+        }}
+      > */}
+      <ListItemButton
+        onClick={handleClick}
+        sx={{
+          ...dragIndicatorStyle,
+          py: 0,
+          px: 2,
+          ml: '8px',
+          m: 0,
+          borderLeft: index % 2 === 0 ? `2px solid ${theme.palette.primary.main}` : '2px solid transparent', // Conditionally add border to every other item
+          '&:hover': {
+            backgroundColor: 'transparent',
+          },
+        }}
+      >
+        <ListItemText 
+          primary={item.title} 
+          sx={{
+            m: 0,
+            p: 0,
+            '&:hover': {
+              color: theme.palette.primary.main,
+              backgroundColor: 'transparent',
+            },
+          }}
+          primaryTypographyProps={{
+            variant: 'body2',
+          }}
+        />
       </ListItemButton>
       <IconButton
-        edge="end"
         color="inherit"
         onClick={(e) => {
           e.stopPropagation();
           handleRemoveFromReadingList(item);
+        }}
+        sx={{
+          borderRadius: '4px',
+          '&:hover': {
+            backgroundColor: 'transparent', // Removes the hover effect
+          },
+          '&:active': {
+            backgroundColor: 'rgba(255, 192, 203, 0.1)', // Makes the background appear a little pink when clicked
+          },
         }}
       >
         <CloseIcon />

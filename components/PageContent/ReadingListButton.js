@@ -18,7 +18,17 @@ export default function ReadingListButton({ item }) {
   };
 
   return (
-    <IconButton onClick={handleClick}>
+    <IconButton 
+      onClick={handleClick}
+      sx={{ 
+        marginRight: 1,
+        p: 0.5,
+        borderRadius: '4px',
+        '&:hover': {
+        // backgroundColor: 'rgba(255, 50, 50, 0.1)', // Set the background color to red on hover
+        },
+      }}
+    >
       {isInList ? <BookmarkAddedIcon /> : <BookmarkAddIcon />}
     </IconButton>
   );

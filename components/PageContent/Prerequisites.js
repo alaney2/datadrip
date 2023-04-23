@@ -9,29 +9,12 @@ import Typography from '@mui/material/Typography';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Collapse from '@mui/material/Collapse';
+import Divider from '@mui/material/Divider';
 import ReadingListButton from '@/components/PageContent/ReadingListButton';
-import { ButtonBase } from '@mui/material';
-
-// Custom ListItemButton component with no ripple effect
-function NoRippleListItemButton({ children, onClick, sx }) {
-  return (
-    <ListItemButton
-      onClick={onClick}
-      sx={{
-        '& .MuiTouchRipple-root': {
-          display: 'none', // Disable ripple effect
-        },
-        ...sx,
-      }}
-    >
-      <ButtonBase disableRipple>{children}</ButtonBase>
-    </ListItemButton>
-  );
-}
 
 export default function Prerequisites({ prerequisites }) {
   const router = useRouter();
-  const [prerequisitesExpanded, setPrerequisitesExpanded] = React.useState(true);
+  const [prerequisitesExpanded, setPrerequisitesExpanded] = React.useState(false);
 
   const handlePrerequisitesClick = () => {
     setPrerequisitesExpanded(!prerequisitesExpanded);
@@ -50,7 +33,7 @@ export default function Prerequisites({ prerequisites }) {
           onClick={handlePrerequisitesClick}
         >
           <Typography variant="h6" gutterBottom>
-            Prerequisites
+            Kickstarters
           </Typography>
           <Box sx={{ ml: 1 }}>
             {prerequisitesExpanded ? <ExpandLessIcon /> : <ExpandMoreIcon />}
@@ -58,18 +41,36 @@ export default function Prerequisites({ prerequisites }) {
         </Box>
       </ListItem>
       <Collapse in={prerequisitesExpanded} timeout="auto" unmountOnExit>
+        <Divider />
         <List component="div">
           {prerequisites.map((prerequisite, index) => (
             <ListItem key={index} disablePadding>
-              <NoRippleListItemButton onClick={() => router.push(`/${prerequisite.id}`)}>
+              <ListItemButton
+                sx={{
+                  borderRadius: '4px',
+                  padding: 0.5,
+                  '&:hover': {
+                    backgroundColor: 'transparent',
+                  },
+                  ml: 2,
+                  
+                }}
+                onClick={() => router.push(`/${prerequisite.id}`)}
+              >
                 <ListItemText
-                  primary={
-                    <Typography variant="body2" sx={{ py: 0, pl: 0 }}>
-                      {prerequisite.title}
-                    </Typography>
-                  }
+                  primary={prerequisite.title}
+                  primaryTypographyProps={{ variant: 'body2' }}
+                  sx={{
+                    '&:focus, &:active': {
+                      color: theme => theme.palette.primary.main,
+                    },
+                    '&:hover': {
+                      textDecoration: 'underline',
+                      textDecorationColor: theme => theme.palette.primary.main,
+                    },
+                  }}
                 />
-              </NoRippleListItemButton>
+              </ListItemButton>
               <ReadingListButton item={prerequisite} />
             </ListItem>
           ))}

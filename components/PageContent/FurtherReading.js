@@ -9,12 +9,13 @@ import Typography from '@mui/material/Typography';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Collapse from '@mui/material/Collapse';
+import Divider from '@mui/material/Divider';
 import ReadingListButton from '@/components/PageContent/ReadingListButton';
 
 
 export default function FurtherReading({ furtherReadings }) {
   const router = useRouter();
-  const [furtherReadingExpanded, setFurtherReadingExpanded] = React.useState(true);
+  const [furtherReadingExpanded, setFurtherReadingExpanded] = React.useState(false);
 
   const handleFurtherReadingClick = () => {
     setFurtherReadingExpanded(!furtherReadingExpanded);
@@ -33,7 +34,7 @@ export default function FurtherReading({ furtherReadings }) {
           onClick={handleFurtherReadingClick}
         >
           <Typography variant="h6" gutterBottom>
-            Further Reading
+            Deep Dive
           </Typography>
           <Box sx={{ ml: 1 }}>
             {furtherReadingExpanded ? <ExpandLessIcon /> : <ExpandMoreIcon />}
@@ -41,11 +42,35 @@ export default function FurtherReading({ furtherReadings }) {
         </Box>
       </ListItem>
       <Collapse in={furtherReadingExpanded} timeout="auto" unmountOnExit>
+        <Divider />
         <List component="div" >
           {furtherReadings.map((reading, index) => (
             <ListItem key={index} disablePadding>
-              <ListItemButton onClick={() => router.push(`/${reading.id}`)}>
-                <ListItemText primary={reading.title} />
+              <ListItemButton
+                sx={{
+                  borderRadius: '4px',
+                  padding: 0.5,
+                  '&:hover': {
+                    backgroundColor: 'transparent',
+                  },
+                  ml: 2,
+                  
+                }}
+                onClick={() => router.push(`/${reading.id}`)}
+              >
+                <ListItemText 
+                  primary={reading.title}
+                  primaryTypographyProps={{ variant: 'body2' }}
+                  sx={{
+                    '&:focus, &:active': {
+                      color: theme => theme.palette.primary.main,
+                    },
+                    '&:hover': {
+                      textDecoration: 'underline',
+                      textDecorationColor: theme => theme.palette.primary.main,
+                    },
+                  }}
+                />
               </ListItemButton>
               <ReadingListButton item={reading} />
             </ListItem>

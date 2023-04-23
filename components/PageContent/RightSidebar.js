@@ -48,8 +48,11 @@ export default function RightSidebar({ headings }) {
   const headingRefs = React.useRef(new Map());
 
   const handleHeadingClick = (slug) => {
-    router.push(`#${slug}`);
+    const target = document.getElementById(slug);
+    const targetPosition = target.getBoundingClientRect().top;
+    window.scrollTo({ top: window.scrollY + targetPosition - 64, behavior: 'smooth' });
     setCurrentHeading(slug);
+    router.push(`#${slug}`);
   };
 
   const handleContentsClick = () => {
@@ -65,7 +68,7 @@ export default function RightSidebar({ headings }) {
         }
       },
       {
-        rootMargin: '0px 0px 0px 0px',
+        rootMargin: '0px 0px -100% 0px',
       }
     );
 

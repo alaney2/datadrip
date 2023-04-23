@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useEffect } from 'react';
 import Link from 'next/link';
 import {
   AppBar,
@@ -22,24 +23,53 @@ import MenuComponent from '@/components/NavBar/MenuComponent';
 
 
 function HideOnScroll(props) {
-  const { children, window } = props;
-  const trigger = useScrollTrigger({
-    target: window ? window() : undefined,
-  });
+  const { children, threshold = 1000 } = props;
+  const [hidden, setHidden] = React.useState(false);
+  const lastScroll = React.useRef(0);
+  const scrollSpeed = React.useRef(0);
+  const lastScrollDirection = React.useRef(null);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') {
+      return;
+    }
+    const handleScroll = () => {
+      const currentScroll = window.pageYOffset;
+      const delta = currentScroll - lastScroll.current;
+      const scrollDirection = delta > 0 ? 'down' : 'up';
+      lastScroll.current = currentScroll;
+      scrollSpeed.current = Math.abs(delta);
+      if (scrollDirection === 'down' || (scrollDirection === 'up' && scrollSpeed.current > threshold)) {
+        setHidden(true);
+      } else {
+        setHidden(false);
+      }
+
+      lastScrollDirection.current = scrollDirection;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [threshold]);
+
+  const trigger = useScrollTrigger();
+
   return (
-    <Slide appear={false} direction="down" in={!trigger}>
+    <Slide appear={false} direction="down" in={!hidden}>
       {children}
     </Slide>
   );
 }
 
+
+
+
+
 export default function NavBar(props) {
   const [settingsOpen, setSettingsOpen] = React.useState(false);
   const [menuAnchorEl, setMenuAnchorEl] = React.useState(null);
 
-
   const isSmScreen = useMediaQuery('(max-width:600px)');
-
 
   const handleMenuOpen = (event) => {
     setMenuAnchorEl(event.currentTarget);
@@ -62,7 +92,7 @@ export default function NavBar(props) {
                   edge="start"
                   color="inherit"
                   aria-label="open drawer"
-                  sx={{ mr: { sm: 2 } }}
+                  sx={{ mr: { sm: 2 }, borderRadius: '4px', }}
                   onClick={handleMenuOpen}
                 >
                   <MenuComponent
@@ -88,11 +118,11 @@ export default function NavBar(props) {
                 <Box sx={{ mr: { xs: 0, sm: 2 } }}>
                   <SearchMobile />
                 </Box>
-                <Tooltip title="Reading List">
-                  <IconButton color="inherit" onClick={() => setSettingsOpen(true)} sx={{ px: '8px' }}>
-                    <LibraryBooksIcon fontSize="small" color="inherit" />
+                {/* <Tooltip title="Reading List"> */}
+                  <IconButton color="inherit" onClick={() => setSettingsOpen(true)} sx={{ px: '8px', borderRadius: '4px', }}>
+                    <LibraryBooksIcon fontSize="small" color="inherit"  />
                   </IconButton>
-                </Tooltip>
+                {/* </Tooltip> */}
               </Box>
             </Box>
           </Toolbar>

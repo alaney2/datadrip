@@ -88,6 +88,7 @@ export default function ReadingList() {
               <SortableItem
                 key={index}
                 id={item.id}
+                index={index}
                 item={item}
                 handleRemoveFromReadingList={handleRemoveFromReadingList}
                 isBeingDragged={item.id === activeId}
@@ -95,6 +96,18 @@ export default function ReadingList() {
             ))}
           </List>
         </SortableContext>
+        {/* {createPortal(
+          <DragOverlay>
+            {activeId ? (
+              <SortableItem
+                id={activeId}
+                item={readingList.find(item => item.id === activeId)}
+                isBeingDragged={true}
+              />
+            ) : null}
+          </DragOverlay>
+          , document.body
+        )} */}
         <DragOverlay>
           {activeId ? (
             <SortableItem

@@ -31,6 +31,13 @@ const lightTheme = createTheme({
     },
     // Other typography settings as required
   },
+  components: {
+    MuiButtonBase: {
+      defaultProps: {
+        disableRipple: true, // Disable ripple effect for all buttons
+      },
+    },
+  },
 });
 
 const darkTheme = createTheme({
@@ -75,6 +82,13 @@ const darkTheme = createTheme({
       fontWeight: 100,
     }
     // Other typography settings as required
+  },
+  components: {
+    MuiButtonBase: {
+      defaultProps: {
+        disableRipple: true, // Disable ripple effect for all buttons
+      },
+    },
   },
 });
 
