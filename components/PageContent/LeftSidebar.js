@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import Box from '@mui/material/Box';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
@@ -10,8 +10,6 @@ import wikiConnections from '@/wiki-connections.json';
 import { ReadingListContext } from '@/components/ReadingListContext';
 
 export default function LeftSidebar({ filename }) {
-  const { readingList } = React.useContext(ReadingListContext);
-
   const nameWithoutExtension = filename.slice(0, filename.lastIndexOf('.'));
   const pageObject = wikiConnections[nameWithoutExtension];
 
@@ -21,7 +19,6 @@ export default function LeftSidebar({ filename }) {
   return (
     <Box
       sx={{
-        display: { xs: 'none', md: 'block' },
         mt: { md: 8 },
         position: 'sticky',
         top: '64px',

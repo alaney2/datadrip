@@ -70,7 +70,7 @@ export function SortableItem({ handle=false, id, item, index, handleRemoveFromRe
           primary={item.title} 
           sx={{
             m: 0,
-            p: 0,
+            p: 1,
             '&:hover': {
               color: theme.palette.primary.main,
               backgroundColor: 'transparent',
@@ -89,10 +89,13 @@ export function SortableItem({ handle=false, id, item, index, handleRemoveFromRe
         }}
         sx={{
           borderRadius: '4px',
-          '&:hover': {
+          '&:hover, &:focus': {
             backgroundColor: 'transparent',
             color: theme.palette.secondary.main,
           },
+          // '&:focus': {
+          //   color: theme.palette.secondary.main,
+          // }
         }}
       >
         <CloseIcon />

@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { useRouter } from 'next/router';
 import { styled, } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
@@ -19,6 +19,11 @@ import { ReadingListContext } from '@/components/ReadingListContext';
 import ReadingList from '@/components/NavBar/ReadingList';
 import { useTheme } from '@mui/material/styles';
 
+// import { styled } from '@mui/system';
+
+// const CustomButton = styled(Button)(({ theme }) => ({
+  
+// }));
 
 const Heading = styled(Typography)(({ theme }) => ({
   margin: '30px 0px 10px',
@@ -32,14 +37,35 @@ const Heading = styled(Typography)(({ theme }) => ({
   alignItems: 'center',
 }));
 
-const IconToggleButton = styled(ToggleButton)({
+const IconToggleButton = styled(ToggleButton)(({ theme }) => ({
   display: 'flex',
   justifyContent: 'center',
   width: '100%',
   '& > *': {
     // marginRight: '8px',
   },
-});
+  '&:focus': {
+    boxShadow: `0 0 0 2px ${theme.palette.primary.main}`,
+    outline: 'none',
+  },
+  '&:focus': {
+    backgroundColor: theme.palette.action.selected,
+  },
+  '&.Mui-focusVisible': {
+    backgroundColor: theme.palette.action.selected,
+  },
+  '&.MuiButtonBase-root': {
+    '& .MuiTouchRipple-root': {
+      display: 'none',
+    },
+  },
+  '&.Mui-focusVisible.MuiButtonBase-root': {
+    '& .MuiTouchRipple-root': {
+      display: 'block',
+    },
+  },
+}));
+
 
 export default function SettingsDrawer(props) {
   const router = useRouter();
@@ -94,7 +120,7 @@ export default function SettingsDrawer(props) {
       open={open}
       PaperProps={{
         elevation: 0,
-        sx: { 
+        sx: {
           width: { xs: 310, sm: 360 }, 
           borderRadius: '10px 0px 0px 10px',
         },
@@ -105,9 +131,9 @@ export default function SettingsDrawer(props) {
         <Typography variant="h6" fontWeight="600" sx={{letterSpacing: '.08rem',}}>
           Nook
         </Typography>
-        <IconButton 
+        <IconButton
           onClick={onClose} 
-          sx={{ 
+          sx={{
             mr: { xs: 0, sm: 1 },
             borderRadius: '4px',
             '&:hover': {
@@ -140,6 +166,7 @@ export default function SettingsDrawer(props) {
             aria-label="Light"
             data-ga-event-category="settings"
             data-ga-event-action="light"
+            theme={theme}
           >
             <LightModeIcon fontSize="small" sx={{ mr: 1}} />
             Light
@@ -149,6 +176,7 @@ export default function SettingsDrawer(props) {
             aria-label="System"
             data-ga-event-category="settings"
             data-ga-event-action="system"
+            theme={theme}
           >
             <SettingsBrightnessIcon fontSize="small" sx={{ mr: 1}} />
             System
@@ -158,6 +186,7 @@ export default function SettingsDrawer(props) {
             aria-label="Dark"
             data-ga-event-category="settings"
             data-ga-event-action="dark"
+            theme={theme}
           >
             <DarkModeOutlinedIcon fontSize="small" sx={{ mr: 1}} />
             Dark

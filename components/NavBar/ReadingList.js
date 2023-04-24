@@ -1,10 +1,9 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
-import { useRouter } from 'next/router';
 import { ReadingListContext } from '@/components/ReadingListContext';
 // import {
 //   AnimateLayoutChanges,
@@ -17,19 +16,75 @@ import {
   restrictToFirstScrollableAncestor,
   restrictToParentElement
 } from '@dnd-kit/modifiers';
-import { DndContext, closestCenter, DragOverlay, MouseSensor, TouchSensor, PointerSensor, useSensor, useSensors } from '@dnd-kit/core';
+import { DndContext, closestCenter, DragOverlay, MouseSensor, TouchSensor, PointerSensor, KeyboardSensor, coordinateGetter, useSensor, useSensors } from '@dnd-kit/core';
 import { SortableContext, verticalListSortingStrategy } from '@dnd-kit/sortable';
 import { SortableItem } from '@/components/NavBar/SortableItem';
 import { arrayMove } from '@dnd-kit/sortable';
-import { RemovableItems } from './dnd/RemovableItems';
 import {createPortal} from 'react-dom';
+
+const screenReaderInstructions = {
+  draggable: `
+    To pick up a sortable item, press the space bar.
+    While sorting, use the arrow keys to move the item.
+    Press space again to drop the item in its new position, or press escape to cancel.
+  `,
+};
 
 
 export default function ReadingList() {
-  const router = useRouter();
   const { readingList, removeFromReadingList, setReadingList } = React.useContext(ReadingListContext);
   const [activeId, setActiveId] = React.useState(null);
-  // const sensors = useSensors(useSensor(PointerSensor));
+  const isFirstAnnouncement = useRef(true);
+  const getIndex = (id) => readingList.indexOf(id);
+  const getPosition = (id) => getIndex(id) + 1;
+
+  const announcements = {
+    onDragStart({active: {id}}) {
+      return `Picked up sortable item ${String(
+        id
+      )}. Sortable item ${id} is in position ${getPosition(id)} of ${
+        readingList.length
+      }`;
+    },
+    onDragOver({active, over}) {
+      // In this specific use-case, the picked up item's `id` is always the same as the first `over` id.
+      // The first `onDragOver` event therefore doesn't need to be announced, because it is called
+      // immediately after the `onDragStart` announcement and is redundant.
+      if (isFirstAnnouncement.current === true) {
+        isFirstAnnouncement.current = false;
+        return;
+      }
+
+      if (over) {
+        return `Sortable item ${
+          active.id
+        } was moved into position ${getPosition(over.id)} of ${readingList.length}`;
+      }
+
+      return;
+    },
+    onDragEnd({active, over}) {
+      if (over) {
+        return `Sortable item ${
+          active.id
+        } was dropped at position ${getPosition(over.id)} of ${readingList.length}`;
+      }
+
+      return;
+    },
+    onDragCancel({active: {id}}) {
+      return `Sorting was cancelled. Sortable item ${id} was dropped and returned to position ${getPosition(
+        id
+      )} of ${readingList.length}.`;
+    },
+  };
+
+  useEffect(() => {
+    if (!activeId) {
+      isFirstAnnouncement.current = true;
+    }
+  }, [activeId]);
+
   const activationConstraint = {
     delay: 250,
     tolerance: 5,
@@ -41,11 +96,11 @@ export default function ReadingList() {
     useSensor(TouchSensor, {
       activationConstraint,
     }),
-    // useSensor(KeyboardSensor, {
-    //   // Disable smooth scrolling in Cypress automated tests
-    //   scrollBehavior: 'Cypress' in window ? 'auto' : undefined,
-    //   coordinateGetter,
-    // })
+    useSensor(KeyboardSensor, {
+      // Disable smooth scrolling in Cypress automated tests
+      scrollBehavior: 'Cypress' in window ? 'auto' : undefined,
+      coordinateGetter,
+    })
   );
 
   const handleRemoveFromReadingList = (item) => {
@@ -80,7 +135,10 @@ export default function ReadingList() {
         modifiers={[restrictToVerticalAxis, restrictToWindowEdges, restrictToParentElement]}
         onDragStart={handleDragStart}
         onDragEnd={handleDragEnd}
-        
+        accessibility={{
+          announcements,
+          screenReaderInstructions,
+        }}
       >
         <SortableContext items={readingList} strategy={verticalListSortingStrategy}>
           <List>
@@ -118,7 +176,6 @@ export default function ReadingList() {
           ) : null}
         </DragOverlay>
       </DndContext>
-      {/* <RemovableItems /> */}
     </>
   );
 }

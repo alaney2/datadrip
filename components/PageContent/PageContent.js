@@ -1,5 +1,7 @@
-import * as React from 'react';
+import React from 'react';
 import NavBar from '@/components/NavBar/NavBar';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
 import BackToTop from '@/components/PageContent/BackToTop';
 import MarkDown from '@/components/PageContent/Markdown';
 
@@ -22,9 +24,38 @@ function extractHeadings(markdown) {
 
 export default function PageContent({ content, filename, leftSidebar=true, rightSidebar=true }) {
   const headings = extractHeadings(content);
+  const [lastUpdated, setLastUpdated] = React.useState(null);
+
+  React.useEffect(() => {
+    async function fetchLastUpdated() {
+      const owner = 'alaney2';
+      const repo = 'datadrip';
+      const filePath = `data/${filename}`; // Use filename prop here
+      const token = process.env.NEXT_PUBLIC_GITHUB_TOKEN;
+      const response = await fetch(
+        `https://api.github.com/repos/${owner}/${repo}/commits?path=${filePath}&per_page=1`,
+        {
+          headers: {
+            Authorization: `token ${token}`,
+          },
+        }
+      );
+      const data = await response.json();
+      if (data && data.length > 0) {
+        setLastUpdated(data[0].commit.committer.date);
+      }
+    }
+    fetchLastUpdated();
+  }, [filename]);
 
   return (
-    <>
+    <Box
+      // sx={{
+      //   minHeight: 'calc(100vh)',
+      //   display: 'flex',
+      //   flexDirection: 'column',
+      // }}
+    >
       <NavBar />
       <MarkDown 
         content={content} 
@@ -33,7 +64,13 @@ export default function PageContent({ content, filename, leftSidebar=true, right
         leftSidebar={leftSidebar} 
         rightSidebar={rightSidebar} 
       />
+      <Box sx={{ px: { xs: 1, sm: 2 } }}>
+        <Typography variant="caption" color="text.secondary">
+          Last updated:{' '}
+          {lastUpdated ? new Date(lastUpdated).toLocaleString() : 'Loading...'}
+        </Typography>
+      </Box>
       <BackToTop />
-    </>
+    </Box>
   );
 }

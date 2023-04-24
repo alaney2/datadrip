@@ -1,12 +1,11 @@
-import * as React from 'react';
-import { useEffect } from 'react';
+import React from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import {
   AppBar,
   Box,
   Button,
   CssBaseline,
-  Divider,
   Fade,
   IconButton,
   Slide,
@@ -17,23 +16,23 @@ import {
   useMediaQuery,
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
 import SettingsDrawer from '@/components/NavBar/SettingsDrawer';
 import CottageIcon from '@mui/icons-material/Cottage';
 import SearchMobile from '@/components/NavBar/SearchMobile';
 import MenuComponent from '@/components/NavBar/MenuComponent';
+import MenuBookIcon from '@mui/icons-material/MenuBook';
 import { useNavBarVisibility } from '@/components/NavBarVisibilityContext';
 import { ReadingListContext } from '@/components/ReadingListContext';
 
 
 function HideOnScroll(props) {
-  const { children, threshold = 100 } = props;
+  const { children, threshold = 64 } = props;
   const { hidden, setHidden } = useNavBarVisibility();
   const lastScroll = React.useRef(0);
   const scrollSpeed = React.useRef(0);
   const lastScrollDirection = React.useRef(null);
 
-  useEffect(() => {
+  React.useEffect(() => {
     if (typeof window === 'undefined') {
       return;
     }
@@ -61,8 +60,8 @@ function HideOnScroll(props) {
   );
 }
 
-
 export default function NavBar(props) {
+  const router = useRouter();
   const [settingsOpen, setSettingsOpen] = React.useState(false);
   const [menuAnchorEl, setMenuAnchorEl] = React.useState(null);
   const { readingList } = React.useContext(ReadingListContext);
@@ -112,36 +111,38 @@ export default function NavBar(props) {
                   />
                   <MenuIcon />
                 </IconButton>
-                <Link href="/" passHref>
-                  <Button
-                    variant="text"
-                    color="inherit"
-                    sx={{
-                      mx: 0,
-                      '&:hover': {
-                        backgroundColor: 'transparent', // No background color on hover
-                        color: (theme) => theme.palette.primary.main, // Change text color to primary.main
-                      },
-                    }}
-                  >
-                    {isSmScreen ? (
-                      <CottageIcon fontSize="large" />
-                    ) : (
-                      <Typography
-                        variant="h6"
-                        noWrap
-                        color="inherit"
-                        sx={{
-                          fontWeight: 700, // Make the text bolder
-                          textShadow: '1px 1px 3px rgba(0, 0, 0, 0.3)', // Add a text shadow
-                          letterSpacing: '.08rem'
-                        }}
-                      >
-                        DataDrip
-                      </Typography>
-                    )}
-                  </Button>
-                </Link>
+                <Button
+                  onClick={() => router.push('/')}
+                  variant="text"
+                  color="inherit"
+                  sx={{
+                    mx: 0,
+                    '&:hover': {
+                      backgroundColor: 'transparent',
+                      color: (theme) => theme.palette.primary.main
+                    },
+                    '&.Mui-focusVisible': {
+                      color: (theme) => theme.palette.primary.main,
+                    },
+                  }}
+                >
+                  {isSmScreen ? (
+                    <CottageIcon fontSize="large" />
+                  ) : (
+                    <Typography
+                      variant="h6"
+                      noWrap
+                      color="inherit"
+                      sx={{
+                        fontWeight: 700, // Make the text bolder
+                        textShadow: '1px 1px 3px rgba(0, 0, 0, 0.3)', // Add a text shadow
+                        letterSpacing: '.08rem'
+                      }}
+                    >
+                      DataDrip
+                    </Typography>
+                  )}
+                </Button>
               </Box>
               <Box sx={{ display: 'flex', alignItems: 'center', }}>
                 <Box sx={{ mr: { xs: 0, sm: 2 } }}>
@@ -153,7 +154,7 @@ export default function NavBar(props) {
                   sx={{ px: '8px', borderRadius: '4px' }}
                 >
                   <Fade in={!highlightLibraryIcon} timeout={200}>
-                    <LibraryBooksIcon fontSize="small" />
+                    <MenuBookIcon fontSize="medium" />
                   </Fade>
                 </IconButton>
               </Box>

@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import path from 'path';
 import fs from 'fs';
 import PageContent from '@/components/PageContent/PageContent';

@@ -1,41 +1,25 @@
-import * as React from 'react';
+import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import rehypeSlug from 'rehype-slug';
 import Box from '@mui/material/Box';
 import LeftSidebar from './LeftSidebar';
 import RightSidebar from './RightSidebar';
 import Divider from '@mui/material/Divider';
-import Typography from '@mui/material/Typography';
+import { useMediaQuery, Dialog, IconButton } from '@mui/material';
+import { styled, alpha, useTheme } from '@mui/material/styles';
+import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
+import SegmentIcon from '@mui/icons-material/Segment';
+import Paper from '@mui/material/Paper';
 
 export default function Markdown({ content, headings, filename, leftSidebar, rightSidebar }) {
-  const [lastUpdated, setLastUpdated] = React.useState(null);
-
-  React.useEffect(() => {
-    async function fetchLastUpdated() {
-      const owner = 'alaney2';
-      const repo = 'datadrip';
-      const filePath = `data/${filename}`; // Use filename prop here
-      const token = process.env.NEXT_PUBLIC_GITHUB_TOKEN;
-      const response = await fetch(
-        `https://api.github.com/repos/${owner}/${repo}/commits?path=${filePath}&per_page=1`,
-        {
-          headers: {
-            Authorization: `token ${token}`,
-          },
-        }
-      );
-      const data = await response.json();
-      if (data && data.length > 0) {
-        setLastUpdated(data[0].commit.committer.date);
-      }
-    }
-    fetchLastUpdated();
-  }, [filename]);
+  const [leftSidebarDialogOpen, setLeftSidebarDialogOpen] = React.useState(false);
+  const [rightSidebarDialogOpen, setRightSidebarDialogOpen] = React.useState(false);
+  const isMdScreen = useMediaQuery('(max-width:900px)');
 
   return (
     <Box
       sx={{
-        minHeight: '100vh',
+        minHeight: 'calc(100vh - 96px)',
         display: 'flex',
         flexDirection: 'column',
       }}
@@ -44,36 +28,105 @@ export default function Markdown({ content, headings, filename, leftSidebar, rig
         sx={{
           flexGrow: 1,
           display: 'grid',
-          gridTemplateColumns: { md: '240px 1fr ', lg: '240px 1fr 240px' },
+          gridTemplateColumns: { 
+            md: '240px 1fr ', 
+            lg: '240px 1fr 240px', 
+            xl: '320px 1fr 320px' 
+          },
           mx: 'auto',
           px: { xs: 1, sm: 2 },
-          maxWidth: { xl: '1600px' },
+          maxWidth: { l: '1600px', xl: '1800px' },
           gap: '32px',
         }}
       >
-        <Box sx={{ ml: { xs: 1, sm: 4 } }}> 
+        <Box 
+          sx={{ 
+            display: { xs: 'none', md: 'block' },
+            ml: { xs: 1, sm: 0, l: 2, xl: 4 } 
+          }}
+        >
           {leftSidebar && <LeftSidebar filename={filename} />}
         </Box>
 
         <Box
           sx={{
-            mt: { xs: -4, sm: 0 },
+            mr: { xs: 0, sm: 0, md: 2, lg: 0 },
           }}
         >
           <ReactMarkdown rehypePlugins={[rehypeSlug]}>{content}</ReactMarkdown>
         </Box>
 
-        <Box sx={{ mr: { xs: 1, sm: 4 } }}> 
+        <Box 
+          sx={{ 
+            display: { xs: 'none', md: 'block' },
+            mr: { xs: 1, sm: 0, l: 2, xl: 4 } 
+          }}
+        > 
           {rightSidebar && <RightSidebar headings={headings} />}
         </Box>
       </Box>
       <Divider sx={{ my: 4 }} />
-      <Box sx={{ px: { xs: 1, sm: 2 } }}>
-        <Typography variant="caption" color="text.secondary">
-          Last updated:{' '}
-          {lastUpdated ? new Date(lastUpdated).toLocaleString() : 'Loading...'}
-        </Typography>
-      </Box>
+
+      {isMdScreen && (
+        <Paper
+          sx={{
+            position: 'fixed',
+            bottom: 16,
+            left: '50%',
+            transform: 'translateX(-50%)',
+            borderRadius: '30px',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+          elevation={3}
+        >
+          <IconButton
+            color="inherit"
+            onClick={() => setLeftSidebarDialogOpen(true)}
+            sx={{ mx: 1 }}
+          >
+            <LibraryBooksIcon />
+          </IconButton>
+          <IconButton
+            color="inherit"
+            onClick={() => setRightSidebarDialogOpen(true)}
+            sx={{ mx: 1 }}
+          >
+            <SegmentIcon />
+          </IconButton>
+        </Paper>
+      )}
+
+      <Dialog
+          open={leftSidebarDialogOpen}
+          onClose={() => setLeftSidebarDialogOpen(false)}
+          maxWidth="md"
+          fullWidth
+          sx={{
+            borderRadius: '16px',
+            '.MuiPaper-root': {
+              borderRadius: '16px',
+            },
+          }}
+        >
+          {leftSidebar && <LeftSidebar filename={filename} />}
+        </Dialog>
+
+        <Dialog
+          open={rightSidebarDialogOpen}
+          onClose={() => setRightSidebarDialogOpen(false)}
+          maxWidth="md"
+          fullWidth
+          sx={{
+            borderRadius: '16px',
+            '.MuiPaper-root': {
+              borderRadius: '16px',
+            },
+          }}
+        >
+        {rightSidebar && <RightSidebar headings={headings} />}
+      </Dialog>
     </Box>
   );
 }

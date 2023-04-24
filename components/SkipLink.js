@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import MuiLink from '@mui/material/Link';
 import { styled } from '@mui/material/styles';
 
