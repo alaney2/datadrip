@@ -26,7 +26,7 @@ import { ReadingListContext } from '@/components/ReadingListContext';
 
 
 function HideOnScroll(props) {
-  const { children, threshold = 64 } = props;
+  const { children, threshold = 111 } = props;
   const { hidden, setHidden } = useNavBarVisibility();
   const lastScroll = React.useRef(0);
   const scrollSpeed = React.useRef(0);
