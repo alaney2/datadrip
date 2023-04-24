@@ -51,6 +51,15 @@ const createCustomTheme = (mode, colors) => {
           },
           '&:hover': {
             backgroundColor: 'transparent !important',
+            '@media (max-width: 899px)': {
+              backgroundColor: 'inherit',
+            },
+          },
+          '&:active': {
+            backgroundColor: 'inherit',
+            '@media (min-width: 900px)': {
+              backgroundColor: 'transparent !important',
+            },
           },
         },
         '&.Mui-focusVisible.MuiButtonBase-root': {

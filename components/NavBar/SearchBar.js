@@ -60,6 +60,10 @@ export default function SearchBar() {
       inputRef.current.blur();
     }
   };
+
+  const handleBlur = () => {
+    inputRef.current.blur();
+  };
   
   return (
     <Search>
@@ -70,6 +74,7 @@ export default function SearchBar() {
         placeholder="Search…"
         inputProps={{ 'aria-label': 'search' }}
         inputRef={inputRef}
+        onBlur={handleBlur}
         onKeyDown={handleKeyDown}
       />
     </Search>

@@ -57,6 +57,12 @@ export default function SearchMobile() {
     }
   };
 
+   const handleBlur = () => {
+      setShowSearchInput(false);
+      inputRef.current.blur();
+      setSearchIconColor('inherit'); // Reset searchIconColor to 'inherit'
+  };
+
   const handleSearchIconClick = () => {
     setShowSearchInput(true);
     setSearchIconColor(theme.palette.background.default); // Set searchIconColor to background color
@@ -92,6 +98,7 @@ export default function SearchMobile() {
             inputProps={{ 'aria-label': 'search' }}
             inputRef={inputRef}
             onKeyDown={handleKeyDown}
+            onBlur={handleBlur}
           />
         </Search>
       )}

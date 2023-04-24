@@ -14,9 +14,9 @@ import ReadingListButton from '@/components/PageContent/ReadingListButton';
 import { alpha } from '@mui/material/styles';
 
 
-export default function FurtherReading({ furtherReadings }) {
+export default function FurtherReading({ furtherReadings, defaultExpanded=false }) {
   const router = useRouter();
-  const [furtherReadingExpanded, setFurtherReadingExpanded] = React.useState(false);
+  const [furtherReadingExpanded, setFurtherReadingExpanded] = React.useState(defaultExpanded);
 
   const handleFurtherReadingClick = () => {
     setFurtherReadingExpanded(!furtherReadingExpanded);

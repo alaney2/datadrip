@@ -50,14 +50,13 @@ function debounce(func, wait) {
 }
 
 
-export default function RightSidebar({ headings }) {
+export default function RightSidebar({ headings, onItemClick=() => {}, expandable=true }) {
   const router = useRouter();
   const [contentsExpanded, setContentsExpanded] = React.useState(true);
   const [currentHeading, setCurrentHeading] = React.useState(null);
   const [isManualScroll, setIsManualScroll] = React.useState(false);
 
   const handleScrollStop = debounce(() => {
-    const currentScrollTop = window.scrollY;
     let closestHeading = null;
     let smallestDistance = Infinity;
   
@@ -144,18 +143,15 @@ export default function RightSidebar({ headings }) {
     setContentsExpanded(!contentsExpanded);
   };
 
-
-
   return (
     <Box
       sx={{
-        // display: { xs: 'none', md: 'block' },
-        mt: { md: 8 },
+        mt: { lg: 8 },
         position: 'sticky',
         top: '64px',
         // maxHeight: '100vh',
         maxHeight: 'calc(100vh - 192px)', // Set maxHeight to viewport height minus the header height
-        overflowY: 'auto', // Enable vertical scrolling
+        overflowY: 'auto',
       }}
     >
       <List>
@@ -172,9 +168,16 @@ export default function RightSidebar({ headings }) {
             <Typography variant="h6" gutterBottom>
               Contents
             </Typography>
-            <Box sx={{ ml: 1 }}>
+            {
+              expandable && (
+                <Box sx={{ ml: 1 }}>
+                  {contentsExpanded ? <ExpandLessIcon /> : <ExpandMoreIcon />}
+                </Box>
+              )
+            }
+            {/* <Box sx={{ ml: 1 }}>
               {contentsExpanded ? <ExpandLessIcon /> : <ExpandMoreIcon />}
-            </Box>
+            </Box> */}
           </Box>
         </ListItem>
         <Divider />
@@ -183,7 +186,10 @@ export default function RightSidebar({ headings }) {
           {headings.map((heading) => (
             <ListItem key={heading.slug} disablePadding>
               <CustomListItemButton
-                onClick={() => handleHeadingClick(heading.slug)}
+                onClick={() => {
+                  handleHeadingClick(heading.slug);
+                  onItemClick();
+                }}
                 sx={{
                   width: '100%',
                   pl: (heading.depth - 2) * 2,

@@ -9,7 +9,7 @@ import FurtherReading from '@/components/PageContent/FurtherReading';
 import wikiConnections from '@/wiki-connections.json';
 import { ReadingListContext } from '@/components/ReadingListContext';
 
-export default function LeftSidebar({ filename }) {
+export default function LeftSidebar({ filename, defaultExpanded=false }) {
   const nameWithoutExtension = filename.slice(0, filename.lastIndexOf('.'));
   const pageObject = wikiConnections[nameWithoutExtension];
 
@@ -27,9 +27,9 @@ export default function LeftSidebar({ filename }) {
       }}
     >
       <List>
-        <Prerequisites prerequisites={prerequisites} />
+        <Prerequisites prerequisites={prerequisites} defaultExpanded={defaultExpanded} />
         <Divider />
-        <FurtherReading furtherReadings={furtherReadings} />
+        <FurtherReading furtherReadings={furtherReadings} defaultExpanded={defaultExpanded} />
       </List>
     </Box>
   );

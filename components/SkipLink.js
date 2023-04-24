@@ -25,9 +25,9 @@ const StyledLink = styled(MuiLink)(({ theme }) => ({
   },
 }));
 
-export default function SkipLink() {
+export default function SkipLink({ skipToId }) {
   return (
-    <StyledLink color="secondary" href="#">
+    <StyledLink color="secondary" href={`#${skipToId}`}>
       Skip to Content
     </StyledLink>
   );

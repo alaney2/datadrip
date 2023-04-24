@@ -4,6 +4,8 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import BackToTop from '@/components/PageContent/BackToTop';
 import MarkDown from '@/components/PageContent/Markdown';
+import SkipLink from '@/components/SkipLink';
+
 
 function extractHeadings(markdown) {
   const regex = /(?:^|\n)#+\s+(.+)/g;
@@ -25,6 +27,7 @@ function extractHeadings(markdown) {
 export default function PageContent({ content, filename, leftSidebar=true, rightSidebar=true }) {
   const headings = extractHeadings(content);
   const [lastUpdated, setLastUpdated] = React.useState(null);
+  const mainContentId = 'main-content';
 
   React.useEffect(() => {
     async function fetchLastUpdated() {
@@ -56,14 +59,17 @@ export default function PageContent({ content, filename, leftSidebar=true, right
       //   flexDirection: 'column',
       // }}
     >
+      <SkipLink skipToId={mainContentId} />
       <NavBar />
-      <MarkDown 
-        content={content} 
-        headings={headings} 
-        filename={filename} 
-        leftSidebar={leftSidebar} 
-        rightSidebar={rightSidebar} 
-      />
+      <Box id={mainContentId}>
+        <MarkDown 
+          content={content} 
+          headings={headings} 
+          filename={filename} 
+          leftSidebar={leftSidebar} 
+          rightSidebar={rightSidebar} 
+        />
+      </Box>
       <Box sx={{ px: { xs: 1, sm: 2 } }}>
         <Typography variant="caption" color="text.secondary">
           Last updated:{' '}

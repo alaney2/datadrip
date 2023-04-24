@@ -14,9 +14,9 @@ import ReadingListButton from '@/components/PageContent/ReadingListButton';
 import { alpha } from '@mui/material/styles';
 
 
-export default function Prerequisites({ prerequisites }) {
+export default function Prerequisites({ prerequisites, defaultExpanded=false }) {
   const router = useRouter();
-  const [prerequisitesExpanded, setPrerequisitesExpanded] = React.useState(false);
+  const [prerequisitesExpanded, setPrerequisitesExpanded] = React.useState(defaultExpanded);
 
   const handlePrerequisitesClick = () => {
     setPrerequisitesExpanded(!prerequisitesExpanded);
