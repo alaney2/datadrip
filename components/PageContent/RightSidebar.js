@@ -150,7 +150,7 @@ export default function RightSidebar({ headings, onItemClick=() => {}, expandabl
   return (
     <Box
       sx={{
-        mt: { md: '16vh' },
+        mt: { lg: '12vh' },
         position: 'sticky',
         top: '12vh',
         maxHeight: 'calc(100vh - 16vh - 12vh)',

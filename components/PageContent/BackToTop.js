@@ -7,7 +7,8 @@ import Tooltip from '@mui/material/Tooltip';
 import KeyboardArrowUpRoundedIcon from '@mui/icons-material/KeyboardArrowUpRounded';
 import Fade from '@mui/material/Fade';
 import { useNavBarVisibility } from '@/components/NavBarVisibilityContext';
-import { useTheme } from '@mui/material/styles';
+import { useTheme, alpha } from '@mui/material/styles';
+import { useMediaQuery, Dialog, IconButton } from '@mui/material';
 
 
 export default function BackToTop() {
@@ -63,25 +64,21 @@ export default function BackToTop() {
             zIndex: theme.zIndex.tooltip,
           }}
         >
-          <Fab
-            sx={[
-              (theme) => ({
-                '&:hover': {
-                  boxShadow: `0px 4px 20px rgba(170, 180, 190, 0.3)`,
-                },
-                '&:active': {
-                  boxShadow: `0px 4px 20px rgba(170, 180, 190, 0.6)`,
-                },
-              }),
-            ]}
-            size="small"
+          <IconButton
+            sx={{
+              boxShadow: theme.shadows[6],
+              bgcolor: alpha(theme.palette.text.secondary, 0.9),
+
+            }}
+            size="medium"
             aria-label="scroll back to top"
             onClick={handleClick}
             data-ga-event-category="docs"
             data-ga-event-action="click-back-to-top"
+            disableRipple
           >
-            <KeyboardArrowUpRoundedIcon />
-          </Fab>
+            <KeyboardArrowUpRoundedIcon color="secondary" />
+          </IconButton>
         </Box>
       </Tooltip>
     </Fade>

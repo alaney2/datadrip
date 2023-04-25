@@ -5,7 +5,7 @@ import { ReadingListContext } from '@/components/ReadingListContext';
 import Box from '@mui/material/Box';
 
 
-export default function ReadingListButton({ item, fontSize="medium" }) {
+export default function ReadingListButton({ item, fontSize="medium", color="inherit" }) {
   const { addToReadingList, removeFromReadingList, isInReadingList } = useContext(ReadingListContext);
   const [isInList, setIsInList] = useState(isInReadingList(item));
 
@@ -35,7 +35,7 @@ export default function ReadingListButton({ item, fontSize="medium" }) {
         borderRadius: '50%',
       }}
     >
-      {isInList ? <BookmarkAddedIcon color="primary" fontSize={fontSize} /> : <BookmarkAddIcon fontSize={fontSize} />}
+      {isInList ? <BookmarkAddedIcon color="primary" fontSize={fontSize} /> : <BookmarkAddIcon fontSize={fontSize} color={color} />}
     </Box>
   );
 };

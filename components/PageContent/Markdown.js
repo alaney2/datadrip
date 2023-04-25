@@ -11,7 +11,6 @@ import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
 import SegmentIcon from '@mui/icons-material/Segment';
 import Paper from '@mui/material/Paper';
 import Slide from '@mui/material/Slide';
-import Fab from '@mui/material/Fab';
 import ReadingListButton from '@/components/PageContent/ReadingListButton';
 import Heading from '@/components/PageContent/Heading';
 import { getPageObject } from '@/components/utilities';
@@ -115,27 +114,34 @@ export default function Markdown({ content, headings, filename, leftSidebar, rig
                     bottom: 32,
                     borderRadius: '30px',
                     zIndex: theme.zIndex.tooltip,
-                    // bgcolor: alpha(theme.palette.text.primary, 1), // Add this line
+                    boxShadow: theme.shadows[6],
+                    bgcolor: alpha(theme.palette.text.secondary, 0.9), // Add this line
                   }}
-                  elevation={3}
+                  elevation={5}
                 >
-                  <Fab
+                  <IconButton
                     size="medium"
                     sx={{ 
                       mx: 1,
+                      boxShadow: 0,
+                      // bgcolor: theme.palette.text.secondary,
                     }}
+                    disableRipple
                   >
-                    <ReadingListButton item={getPageObject(nameWithoutExtension)} />
-                  </Fab>
-                  <Fab
+                    <ReadingListButton item={getPageObject(nameWithoutExtension)} color="secondary" disableRipple={true} />
+                  </IconButton>
+                  <IconButton
                     size="medium"
                     onClick={() => setRightSidebarDialogOpen(!rightSidebarDialogOpen)}
                     sx={{ 
                       mx: 1,
+                      boxShadow: 0,
+                      // bgcolor: theme.palette.text.secondary,
                     }}
+                    disableRipple
                   >
-                    <SegmentIcon />
-                  </Fab>
+                    <SegmentIcon color="secondary"  />
+                  </IconButton>
                 </Paper>
               </Slide>
 
@@ -188,30 +194,39 @@ export default function Markdown({ content, headings, filename, leftSidebar, rig
                 bottom: 32,
                 borderRadius: '30px',
                 zIndex: theme.zIndex.tooltip,
+                // bgcolor: alpha(theme.palette.text.secondary, 1), // Add this line
+                boxShadow: theme.shadows[6],
+                bgcolor: alpha(theme.palette.text.secondary, 0.9), // Add this line
               }}
               elevation={3}
             >
-              <Fab
-                size="medium"
+              <IconButton
                 onClick={() => {
                   setLeftSidebarDialogOpen(!leftSidebarDialogOpen);
                   setRightSidebarDialogOpen(false);
                 }}
-                sx={{ 
-                  mx: 1,
-                }}
-              >
-                <LibraryBooksIcon />
-              </Fab>
-              <Fab
                 size="medium"
                 sx={{ 
                   mx: 1,
+                  boxShadow: 0,
                 }}
+                disableRipple
               >
-                <ReadingListButton item={getPageObject(nameWithoutExtension)} />
-              </Fab>
-              <Fab
+                <LibraryBooksIcon color="secondary" />
+              </IconButton>
+
+              <IconButton
+                size="medium"
+                sx={{ 
+                  mx: 1,
+                  boxShadow: 0,
+                }}
+                disableRipple
+              >
+                <ReadingListButton color="secondary" item={getPageObject(nameWithoutExtension)} />
+              </IconButton>
+
+              <IconButton
                 size="medium"
                 onClick={() => {
                   setRightSidebarDialogOpen(!rightSidebarDialogOpen); 
@@ -219,10 +234,12 @@ export default function Markdown({ content, headings, filename, leftSidebar, rig
                 }}
                 sx={{ 
                   mx: 1,
+                  boxShadow: 0,
                 }}
+                disableRipple
               >
-                <SegmentIcon />
-              </Fab>
+                <SegmentIcon color="secondary" />
+              </IconButton>
             </Paper>
           </Slide>
 
