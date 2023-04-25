@@ -60,18 +60,18 @@ function Heading({ level, children, filename, slug }) {
         </IconButton>
       ) : (
         <IconButton 
-        sx={{ 
-          ml: 2, 
-          visibility: 'hidden', 
-          cursor: 'pointer',
-          '&:hover': {
-            backgroundColor: 'transparent',
-          },
-        }}
+          sx={{ 
+            ml: 2, 
+            visibility: 'hidden', 
+            cursor: 'pointer',
+            '&:hover': {
+              backgroundColor: 'transparent',
+            },
+          }}
+        onClick={() => handleHeadingClick(slug)}
         >
           <TagRoundedIcon
             fontSize="medium"
-            onClick={() => handleHeadingClick(slug)}
           />
         </IconButton>
 
