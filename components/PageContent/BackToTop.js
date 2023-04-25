@@ -7,9 +7,12 @@ import Tooltip from '@mui/material/Tooltip';
 import KeyboardArrowUpRoundedIcon from '@mui/icons-material/KeyboardArrowUpRounded';
 import Fade from '@mui/material/Fade';
 import { useNavBarVisibility } from '@/components/NavBarVisibilityContext';
+import { useTheme } from '@mui/material/styles';
+
 
 export default function BackToTop() {
   const router = useRouter();
+  const theme = useTheme();
   const [open, setOpen] = React.useState(false);
   const { setHidden } = useNavBarVisibility();
 
@@ -57,7 +60,7 @@ export default function BackToTop() {
             position: 'fixed',
             bottom: 24,
             right: 24,
-            zIndex: 10,
+            zIndex: theme.zIndex.tooltip,
           }}
         >
           <Fab

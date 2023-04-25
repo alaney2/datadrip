@@ -23,7 +23,7 @@ export default function MenuComponent({ anchorEl, open, onClose }) {
         },
       }}
     >
-      <Link href="/about" passHref>
+      <Link href="/graph" passHref>
         <MenuItem onClick={onClose} component="a">
           <ListItemIcon>
             <InfoIcon fontSize="small" />

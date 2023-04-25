@@ -36,15 +36,20 @@ function HideOnScroll(props) {
     if (typeof window === 'undefined') {
       return;
     }
+
     const handleScroll = () => {
       const currentScroll = window.pageYOffset;
       const delta = currentScroll - lastScroll.current;
       const scrollDirection = delta > 0 ? 'down' : 'up';
       lastScroll.current = currentScroll;
       scrollSpeed.current = Math.abs(delta);
-      if (currentScroll <= 0 || (scrollDirection === 'up' && scrollSpeed.current <= threshold)) {
+      // if (currentScroll <= 0 || (scrollDirection === 'up' && scrollSpeed.current <= threshold)) {
+      //   setHidden(false);
+      // } 
+      if (currentScroll <= 0) {
         setHidden(false);
-      } else {
+      }
+      else {
         setHidden(true);
       }
       lastScrollDirection.current = scrollDirection;
@@ -151,7 +156,7 @@ export default function NavBar(props) {
                 <IconButton
                   color="inherit"
                   onClick={() => setSettingsOpen(true)}
-                  sx={{ px: '8px', borderRadius: '4px' }}
+                  sx={{ px: '8px', borderRadius: '4px', ml: 0 }}
                 >
                   <Fade in={!highlightLibraryIcon} timeout={200}>
                     <MenuBookIcon fontSize="medium" />
