@@ -2,8 +2,8 @@ import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import rehypeSlug from 'rehype-slug';
 import Box from '@mui/material/Box';
-import LeftSidebar from './LeftSidebar';
-import RightSidebar from './RightSidebar';
+import LeftSidebar from '@/components/PageContent/LeftSidebar';
+import RightSidebar from '@/components/PageContent/RightSidebar';
 import Divider from '@mui/material/Divider';
 import { useMediaQuery, Dialog, IconButton } from '@mui/material';
 import { styled, alpha, useTheme } from '@mui/material/styles';
@@ -11,7 +11,10 @@ import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
 import SegmentIcon from '@mui/icons-material/Segment';
 import Paper from '@mui/material/Paper';
 import Slide from '@mui/material/Slide';
-
+import Fab from '@mui/material/Fab';
+import ReadingListButton from '@/components/PageContent/ReadingListButton';
+import Heading from '@/components/PageContent/Heading';
+import { getPageObject } from '@/components/utilities';
 
 function useScrollDirection() {
   const [scrollDirection, setScrollDirection] = React.useState('up');
@@ -31,13 +34,14 @@ function useScrollDirection() {
   return scrollDirection;
 }
 
-
 export default function Markdown({ content, headings, filename, leftSidebar, rightSidebar }) {
   const [leftSidebarDialogOpen, setLeftSidebarDialogOpen] = React.useState(false);
   const [rightSidebarDialogOpen, setRightSidebarDialogOpen] = React.useState(false);
   const isMdScreen = useMediaQuery('(max-width:900px)');
   const isLgScreen = useMediaQuery('(max-width:1200px)');
   const scrollDirection = useScrollDirection();
+  const theme = useTheme();
+  const nameWithoutExtension = filename.slice(0, filename.lastIndexOf('.'));
 
   const handleRightSidebarItemClick = () => {
     setRightSidebarDialogOpen(false);
@@ -80,7 +84,20 @@ export default function Markdown({ content, headings, filename, leftSidebar, rig
             mr: { xs: 0, sm: 0, md: 2, lg: 0 },
           }}
         >
-          <ReactMarkdown rehypePlugins={[rehypeSlug]}>{content}</ReactMarkdown>
+          <ReactMarkdown
+            rehypePlugins={[rehypeSlug]}
+            components={{
+              h1: (props) => <Heading {...props} slug={props.id} filename={filename} />,
+              h2: (props) => <Heading {...props} slug={props.id} filename={filename} />,
+              h3: (props) => <Heading {...props} slug={props.id} filename={filename} />,
+              h4: (props) => <Heading {...props} slug={props.id} filename={filename} />,
+              h5: (props) => <Heading {...props} slug={props.id} filename={filename} />,
+              h6: (props) => <Heading {...props} slug={props.id} filename={filename} />,
+            }}
+          >
+          {/* <ReactMarkdown rehypePlugins={[rehypeSlug]} > */}
+            {content}
+          </ReactMarkdown>
           
           {isLgScreen && !isMdScreen && (
             <Box
@@ -95,18 +112,30 @@ export default function Markdown({ content, headings, filename, leftSidebar, rig
                 <Paper
                   sx={{
                     position: 'fixed',
-                    bottom: 16,
+                    bottom: 32,
                     borderRadius: '30px',
+                    zIndex: theme.zIndex.tooltip,
+                    // bgcolor: alpha(theme.palette.text.primary, 1), // Add this line
                   }}
                   elevation={3}
                 >
-                  <IconButton
-                    color="inherit"
-                    onClick={() => setRightSidebarDialogOpen(true)}
-                    sx={{ mx: 1 }}
+                  <Fab
+                    size="medium"
+                    sx={{ 
+                      mx: 1,
+                    }}
+                  >
+                    <ReadingListButton item={getPageObject(nameWithoutExtension)} />
+                  </Fab>
+                  <Fab
+                    size="medium"
+                    onClick={() => setRightSidebarDialogOpen(!rightSidebarDialogOpen)}
+                    sx={{ 
+                      mx: 1,
+                    }}
                   >
                     <SegmentIcon />
-                  </IconButton>
+                  </Fab>
                 </Paper>
               </Slide>
 
@@ -117,7 +146,6 @@ export default function Markdown({ content, headings, filename, leftSidebar, rig
                 fullWidth
                 sx={{
                   position: 'fixed',
-                  // left: dialogPositionLeft,
                   left: '120px',
                   transform: 'translateX(-25%)',
                   borderRadius: '16px',
@@ -157,25 +185,44 @@ export default function Markdown({ content, headings, filename, leftSidebar, rig
             <Paper
               sx={{
                 position: 'fixed',
-                bottom: 16,
+                bottom: 32,
                 borderRadius: '30px',
+                zIndex: theme.zIndex.tooltip,
               }}
               elevation={3}
             >
-              <IconButton
-                color="inherit"
-                onClick={() => setLeftSidebarDialogOpen(true)}
-                sx={{ mx: 1 }}
+              <Fab
+                size="medium"
+                onClick={() => {
+                  setLeftSidebarDialogOpen(!leftSidebarDialogOpen);
+                  setRightSidebarDialogOpen(false);
+                }}
+                sx={{ 
+                  mx: 1,
+                }}
               >
                 <LibraryBooksIcon />
-              </IconButton>
-              <IconButton
-                color="inherit"
-                onClick={() => setRightSidebarDialogOpen(true)}
-                sx={{ mx: 1 }}
+              </Fab>
+              <Fab
+                size="medium"
+                sx={{ 
+                  mx: 1,
+                }}
+              >
+                <ReadingListButton item={getPageObject(nameWithoutExtension)} />
+              </Fab>
+              <Fab
+                size="medium"
+                onClick={() => {
+                  setRightSidebarDialogOpen(!rightSidebarDialogOpen); 
+                  setLeftSidebarDialogOpen(false);
+                }}
+                sx={{ 
+                  mx: 1,
+                }}
               >
                 <SegmentIcon />
-              </IconButton>
+              </Fab>
             </Paper>
           </Slide>
 

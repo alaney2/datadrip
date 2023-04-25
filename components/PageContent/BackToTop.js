@@ -58,16 +58,16 @@ export default function BackToTop() {
           className="mui-fixed"
           sx={{
             position: 'fixed',
-            bottom: 24,
-            right: 24,
+            bottom: { xs: 36, lg: 64, xl: 96 },
+            right: { xs: 36, lg: 64, xl: 128 },
             zIndex: theme.zIndex.tooltip,
           }}
         >
           <Fab
             sx={[
               (theme) => ({
-                boxShadow: `0px 4px 20px rgba(170, 180, 190, 0.3)`,
                 '&:hover': {
+                  boxShadow: `0px 4px 20px rgba(170, 180, 190, 0.3)`,
                 },
                 '&:active': {
                   boxShadow: `0px 4px 20px rgba(170, 180, 190, 0.6)`,

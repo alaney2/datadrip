@@ -78,7 +78,7 @@ const lightColors = {
   backgroundDefault: '#f0f0f0',
   backgroundPaper: '#f5f5f5',
   textPrimary: '#3c3c3c',
-  textSecondary: 'rgba(0, 0, 0, 0.6)',
+  textSecondary: 'rgba(20, 20, 20, 0.6)',
 };
 
 const darkColors = {
@@ -86,7 +86,7 @@ const darkColors = {
   secondary: '#ff4081',
   backgroundDefault: '#0A1929',
   backgroundPaper: '#0A1929',
-  textPrimary: 'rgba(212, 211, 211, 0.95)',
+  textPrimary: 'rgba(217, 217, 217, 0.95)',
   textSecondary: '#E7EBF0',
 };
 

@@ -18,18 +18,18 @@ function CustomListItemButton({ children, onClick, sx, isCurrentHeading }) {
         cursor: 'pointer',
         py: 0,
         my: 0.5,
-        borderLeft: '2px solid transparent', // Add a transparent left border
+        borderLeft: '2px solid transparent',
         ...(isCurrentHeading
           ? {
-              borderLeft: '2px solid', // Add a visible left border if the current heading
-              borderColor: 'primary.main', // Set the border color
-              color: 'primary.main', // Set font color
+              borderLeft: '2px solid',
+              borderColor: 'primary.main',
+              color: 'primary.main',
             }
           : {
               '&:hover': {
-                borderLeft: '2px solid', // Add a visible left border on hover
-                borderColor: 'text.primary', // Set the border color
-                color: 'text.secondary', // Set font color to whiter when hovering
+                borderLeft: '2px solid',
+                borderColor: 'text.primary',
+                color: 'text.secondary',
               },
             }),
         ...sx,
@@ -49,7 +49,6 @@ function debounce(func, wait) {
   };
 }
 
-
 export default function RightSidebar({ headings, onItemClick=() => {}, expandable=true }) {
   const router = useRouter();
   const [contentsExpanded, setContentsExpanded] = React.useState(true);
@@ -62,6 +61,7 @@ export default function RightSidebar({ headings, onItemClick=() => {}, expandabl
   
     headings.forEach((heading) => {
       const target = document.getElementById(heading.slug);
+      if (!target) return;
       const distanceToTop = Math.abs(target.getBoundingClientRect().top);
   
       if (distanceToTop < smallestDistance) {
@@ -123,20 +123,24 @@ export default function RightSidebar({ headings, onItemClick=() => {}, expandabl
       observer.current.disconnect();
     }
     const target = document.getElementById(slug);
-    const targetPosition = target.getBoundingClientRect().top;
-    window.scrollTo({ top: window.scrollY + targetPosition - 64, behavior: 'smooth' });
+    if (!target) {
+      setIsManualScroll(false);
+      return;
+    }
+    // const targetPosition = target.getBoundingClientRect().top;
+    // window.scrollTo({ top: window.scrollY + targetPosition - 64, behavior: 'smooth' });
+    target.scrollIntoView({ behavior: 'smooth' });
     setCurrentHeading(slug);
     router.push(`#${slug}`);
     setTimeout(() => {
       setIsManualScroll(false);
-      // Reconnect the observer when isManualScroll is set back to false
       headings.forEach((heading) => {
         const target = document.getElementById(heading.slug);
         if (target) {
           observer.current.observe(target);
         }
       });
-    }, 1000);
+    }, 200);
   };
 
   const handleContentsClick = () => {
@@ -146,11 +150,10 @@ export default function RightSidebar({ headings, onItemClick=() => {}, expandabl
   return (
     <Box
       sx={{
-        mt: { lg: 8 },
+        mt: { lg: 24 },
         position: 'sticky',
-        top: '64px',
-        // maxHeight: '100vh',
-        maxHeight: 'calc(100vh - 192px)', // Set maxHeight to viewport height minus the header height
+        top: 128,
+        maxHeight: 'clamp(320px, calc(100vh - 320px), 100vh)',
         overflowY: 'auto',
       }}
     >

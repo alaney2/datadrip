@@ -5,7 +5,7 @@ import Box from '@mui/material/Box';
 import BackToTop from '@/components/PageContent/BackToTop';
 import MarkDown from '@/components/PageContent/Markdown';
 import SkipLink from '@/components/SkipLink';
-
+import NorthIndicator from '@/components/PageContent/NorthIndicator';
 
 function extractHeadings(markdown) {
   const regex = /(?:^|\n)#+\s+(.+)/g;
@@ -52,15 +52,10 @@ export default function PageContent({ content, filename, leftSidebar=true, right
   }, [filename]);
 
   return (
-    <Box
-      // sx={{
-      //   minHeight: 'calc(100vh)',
-      //   display: 'flex',
-      //   flexDirection: 'column',
-      // }}
-    >
+    <Box>
       <SkipLink skipToId={mainContentId} />
       <NavBar />
+      <NorthIndicator />
       <Box id={mainContentId}>
         <MarkDown 
           content={content} 

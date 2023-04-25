@@ -1,13 +1,11 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import Prerequisites from '@/components/PageContent/Prerequisites';
 import FurtherReading from '@/components/PageContent/FurtherReading';
 import wikiConnections from '@/wiki-connections.json';
-import { ReadingListContext } from '@/components/ReadingListContext';
+
 
 export default function LeftSidebar({ filename, defaultExpanded=false }) {
   const nameWithoutExtension = filename.slice(0, filename.lastIndexOf('.'));
@@ -19,11 +17,11 @@ export default function LeftSidebar({ filename, defaultExpanded=false }) {
   return (
     <Box
       sx={{
-        mt: { md: 8 },
+        mt: { md: 24 },
         position: 'sticky',
-        top: '64px',
+        top: 128,
+        maxHeight: 'clamp(320px, calc(100vh - 320px), 100vh)',
         overflowY: 'auto',
-        maxHeight: 'calc(100vh - 192px)',
       }}
     >
       <List>

@@ -12,6 +12,7 @@ import Collapse from '@mui/material/Collapse';
 import Divider from '@mui/material/Divider';
 import ReadingListButton from '@/components/PageContent/ReadingListButton';
 import { alpha } from '@mui/material/styles';
+import IconButton from '@mui/material/IconButton';
 
 
 export default function FurtherReading({ furtherReadings, defaultExpanded=false }) {
@@ -65,7 +66,13 @@ export default function FurtherReading({ furtherReadings, defaultExpanded=false 
                   primaryTypographyProps={{ variant: 'body2' }}
                 />
               </ListItemButton>
-              <ReadingListButton item={reading} />
+              <IconButton
+                sx={{
+                  marginRight: 1,
+                }}
+              >
+                <ReadingListButton item={reading} />
+              </IconButton>
             </ListItem>
           ))}
         </List>
