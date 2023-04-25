@@ -7,8 +7,8 @@ import {
   restrictToFirstScrollableAncestor,
   restrictToParentElement
 } from '@dnd-kit/modifiers';
-import { DndContext, closestCenter, DragOverlay, MouseSensor, TouchSensor, PointerSensor, KeyboardSensor, coordinateGetter, useSensor, useSensors } from '@dnd-kit/core';
-import { SortableContext, verticalListSortingStrategy } from '@dnd-kit/sortable';
+import { DndContext, closestCenter, DragOverlay, MouseSensor, TouchSensor, PointerSensor, KeyboardSensor, useSensor, useSensors } from '@dnd-kit/core';
+import { SortableContext, verticalListSortingStrategy, sortableKeyboardCoordinates } from '@dnd-kit/sortable';
 import { SortableItem } from '@/components/NavBar/SortableItem';
 import { arrayMove } from '@dnd-kit/sortable';
 import {createPortal} from 'react-dom';
@@ -90,7 +90,7 @@ export default function ReadingList() {
     useSensor(KeyboardSensor, {
       // Disable smooth scrolling in Cypress automated tests
       scrollBehavior: 'Cypress' in window ? 'auto' : undefined,
-      coordinateGetter,
+      coordinateGetter: sortableKeyboardCoordinates,
     })
   );
 

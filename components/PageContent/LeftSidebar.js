@@ -17,10 +17,10 @@ export default function LeftSidebar({ filename, defaultExpanded=false }) {
   return (
     <Box
       sx={{
-        mt: { md: 24 },
+        mt: { md: '16vh' },
         position: 'sticky',
-        top: 128,
-        maxHeight: 'clamp(320px, calc(100vh - 320px), 100vh)',
+        top: '12vh',
+        maxHeight: 'calc(100vh - 16vh - 12vh)',
         overflowY: 'auto',
       }}
     >
