@@ -106,7 +106,7 @@ export default function NavBar(props) {
                   edge="start"
                   color="inherit"
                   aria-label="open drawer"
-                  sx={{ mr: { sm: 2 }, borderRadius: '4px', p: 1, ml: 0, mr: {xs: 0, sm: 2} }}
+                  sx={{ borderRadius: '4px', p: 1, ml: 0, mr: {xs: 0, sm: 2} }}
                   onClick={handleMenuOpen}
                 >
                   <MenuComponent
@@ -116,11 +116,12 @@ export default function NavBar(props) {
                   />
                   <MenuIcon />
                 </IconButton>
-                <Button
+                <IconButton
                   onClick={() => router.push('/')}
                   variant="text"
                   color="inherit"
                   sx={{
+                    ml: 0,
                     mx: 0,
                     '&:hover': {
                       backgroundColor: 'transparent',
@@ -132,7 +133,7 @@ export default function NavBar(props) {
                   }}
                 >
                   {isSmScreen ? (
-                    <CottageIcon fontSize="large" />
+                    <CottageIcon fontSize="medium" />
                   ) : (
                     <Typography
                       variant="h6"
@@ -147,7 +148,7 @@ export default function NavBar(props) {
                       DataDrip
                     </Typography>
                   )}
-                </Button>
+                </IconButton>
               </Box>
               <Box sx={{ display: 'flex', alignItems: 'center', }}>
                 <Box sx={{ mr: { xs: 0, sm: 2 } }}>
@@ -156,7 +157,7 @@ export default function NavBar(props) {
                 <IconButton
                   color="inherit"
                   onClick={() => setSettingsOpen(true)}
-                  sx={{ px: '8px', borderRadius: '4px', ml: 0 }}
+                  sx={{ px: 1, borderRadius: '4px', ml: 0 }}
                 >
                   <Fade in={!highlightLibraryIcon} timeout={200}>
                     <MenuBookIcon fontSize="medium" />
