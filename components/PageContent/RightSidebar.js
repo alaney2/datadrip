@@ -167,7 +167,7 @@ export default function RightSidebar({ headings, onItemClick=() => {}, expandabl
             }}
             onClick={handleContentsClick}
           >
-            <Typography variant="h6" gutterBottom>
+            <Typography variant="h6" gutterBottom sx={{ color: 'primary.main' }} >
               Contents
             </Typography>
             {

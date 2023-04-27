@@ -35,7 +35,7 @@ export default function FurtherReading({ furtherReadings, defaultExpanded=false 
           }}
           onClick={handleFurtherReadingClick}
         >
-          <Typography variant="h6" gutterBottom>
+          <Typography variant="h6" gutterBottom sx={{ color: 'primary.main' }} >
             Deep Dive
           </Typography>
           <Box sx={{ ml: 1 }}>

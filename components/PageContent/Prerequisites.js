@@ -35,7 +35,7 @@ export default function Prerequisites({ prerequisites, defaultExpanded=false }) 
           }}
           onClick={handlePrerequisitesClick}
         >
-          <Typography variant="h6" gutterBottom>
+          <Typography variant="h6" gutterBottom sx={{ color: 'primary.main' }} >
             Kickstarters
           </Typography>
           <Box sx={{ ml: 1 }}>
