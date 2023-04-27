@@ -75,6 +75,7 @@ export default function SearchMobile() {
   };
   const handleCloseIconClick = (e) => {
     setShowSearchInput(false);
+    setInputValue('');
   };
 
   const handleInputChange = (event) => {
