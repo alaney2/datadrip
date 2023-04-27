@@ -17,12 +17,14 @@ import { getPageObject } from '@/components/utilities';
 
 function useScrollDirection() {
   const [scrollDirection, setScrollDirection] = React.useState('up');
+  const [scrollPosition, setScrollPosition] = React.useState(0);
   const prevScrollY = React.useRef(0);
 
   React.useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.pageYOffset;
       setScrollDirection(prevScrollY.current > currentScrollY ? 'up' : 'down');
+      setScrollPosition(currentScrollY);
       prevScrollY.current = currentScrollY;
     };
 
@@ -30,7 +32,7 @@ function useScrollDirection() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  return scrollDirection;
+  return { scrollDirection, scrollPosition };
 }
 
 export default function Markdown({ content, headings, filename, leftSidebar, rightSidebar }) {
@@ -38,7 +40,7 @@ export default function Markdown({ content, headings, filename, leftSidebar, rig
   const [rightSidebarDialogOpen, setRightSidebarDialogOpen] = React.useState(false);
   const isMdScreen = useMediaQuery('(max-width:900px)');
   const isLgScreen = useMediaQuery('(max-width:1200px)');
-  const scrollDirection = useScrollDirection();
+  const { scrollDirection, scrollPosition } = useScrollDirection();
   const theme = useTheme();
   const nameWithoutExtension = filename.slice(0, filename.lastIndexOf('.'));
 
@@ -107,7 +109,7 @@ export default function Markdown({ content, headings, filename, leftSidebar, rig
                 alignItems: 'center',
               }}
             >
-              <Slide direction="up" in={scrollDirection === 'up'}>
+              <Slide direction="up" in={scrollDirection === 'up' || scrollPosition <= 0}>
                 <Paper
                   sx={{
                     position: 'fixed',
@@ -187,7 +189,7 @@ export default function Markdown({ content, headings, filename, leftSidebar, rig
             alignItems: 'center',
           }}
         >
-          <Slide direction="up" in={scrollDirection === 'up'}>
+          <Slide direction="up" in={scrollDirection === 'up' || scrollPosition <= 0}>
             <Paper
               sx={{
                 position: 'fixed',

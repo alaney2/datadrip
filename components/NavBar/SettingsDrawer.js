@@ -19,11 +19,6 @@ import { ReadingListContext } from '@/components/ReadingListContext';
 import ReadingList from '@/components/NavBar/ReadingList';
 import { useTheme } from '@mui/material/styles';
 
-// import { styled } from '@mui/system';
-
-// const CustomButton = styled(Button)(({ theme }) => ({
-  
-// }));
 
 const Heading = styled(Typography)(({ theme }) => ({
   margin: '30px 0px 10px',
@@ -194,7 +189,7 @@ export default function SettingsDrawer(props) {
         </ToggleButtonGroup>
       </Box>
       <Box sx={{ pl: 2, pr: 2 }}>
-        <Heading gutterBottom >
+        <Heading gutterBottom component="div" >
           Reading List
           <Chip label={readingList.length} 
             sx={{ 
