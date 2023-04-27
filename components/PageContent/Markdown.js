@@ -117,7 +117,7 @@ export default function Markdown({ content, headings, filename, leftSidebar, rig
                     borderRadius: '30px',
                     zIndex: theme.zIndex.tooltip,
                     boxShadow: theme.shadows[6],
-                    bgcolor: alpha(theme.palette.text.secondary, 0.9), // Add this line
+                    bgcolor: alpha(theme.palette.text.secondary, 0.85),
                   }}
                   elevation={5}
                 >
@@ -126,7 +126,6 @@ export default function Markdown({ content, headings, filename, leftSidebar, rig
                     sx={{ 
                       mx: 1,
                       boxShadow: 0,
-                      // bgcolor: theme.palette.text.secondary,
                     }}
                     disableRipple
                   >
@@ -138,7 +137,6 @@ export default function Markdown({ content, headings, filename, leftSidebar, rig
                     sx={{ 
                       mx: 1,
                       boxShadow: 0,
-                      // bgcolor: theme.palette.text.secondary,
                     }}
                     disableRipple
                   >
@@ -196,9 +194,8 @@ export default function Markdown({ content, headings, filename, leftSidebar, rig
                 bottom: 32,
                 borderRadius: '30px',
                 zIndex: theme.zIndex.tooltip,
-                // bgcolor: alpha(theme.palette.text.secondary, 1), // Add this line
                 boxShadow: theme.shadows[6],
-                bgcolor: alpha(theme.palette.text.secondary, 0.9), // Add this line
+                bgcolor: alpha(theme.palette.text.secondary, 0.85),
               }}
               elevation={3}
             >

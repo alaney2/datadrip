@@ -34,7 +34,6 @@ const createCustomTheme = (mode, colors) => {
       h1: { fontWeight: 700 },
       h2: { fontWeight: 600 },
       h3: { fontWeight: 500 },
-      // Other typography settings as required
     },
     components: {
       MuiButtonBase: {
@@ -83,7 +82,7 @@ const lightColors = {
 
 const darkColors = {
   primary: '#7c4dff',
-  secondary: '#ff4081',
+  secondary: '#a576ff',
   backgroundDefault: '#0A1929',
   backgroundPaper: '#0A1929',
   textPrimary: 'rgba(217, 217, 217, 0.95)',
