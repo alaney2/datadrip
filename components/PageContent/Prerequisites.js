@@ -62,7 +62,7 @@ export default function Prerequisites({ prerequisites, defaultExpanded=false }) 
                 onClick={() => router.push(`/${prerequisite.id}`)}
               >
                 <ListItemText
-                  primary={prerequisite.title}
+                  primary={prerequisite.title ? prerequisite.title : prerequisite.id}
                   primaryTypographyProps={{ variant: 'body2' }}
                 />
               </ListItemButton>

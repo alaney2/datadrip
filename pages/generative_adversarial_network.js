@@ -3,7 +3,7 @@ import path from 'path';
 import fs from 'fs';
 import PageContent from '@/components/PageContent/PageContent';
 
-const filename = 'gan.md';
+const filename = 'generative_adversarial_network.md';
 
 export default function MarkdownPage({ markdownContent }) {
   return <PageContent content={markdownContent} filename={filename} />;

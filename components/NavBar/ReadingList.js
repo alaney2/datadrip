@@ -13,6 +13,7 @@ import { SortableItem } from '@/components/NavBar/SortableItem';
 import { arrayMove } from '@dnd-kit/sortable';
 import {createPortal} from 'react-dom';
 
+
 const screenReaderInstructions = {
   draggable: `
     To pick up a sortable item, press the space bar.
@@ -20,7 +21,6 @@ const screenReaderInstructions = {
     Press space again to drop the item in its new position, or press escape to cancel.
   `,
 };
-
 
 export default function ReadingList() {
   const { readingList, removeFromReadingList, setReadingList } = React.useContext(ReadingListContext);
@@ -38,9 +38,6 @@ export default function ReadingList() {
       }`;
     },
     onDragOver({active, over}) {
-      // In this specific use-case, the picked up item's `id` is always the same as the first `over` id.
-      // The first `onDragOver` event therefore doesn't need to be announced, because it is called
-      // immediately after the `onDragStart` announcement and is redundant.
       if (isFirstAnnouncement.current === true) {
         isFirstAnnouncement.current = false;
         return;
@@ -77,7 +74,7 @@ export default function ReadingList() {
   }, [activeId]);
 
   const activationConstraint = {
-    delay: 250,
+    delay: 100,
     tolerance: 5,
   }
   const sensors = useSensors(
@@ -88,7 +85,6 @@ export default function ReadingList() {
       activationConstraint,
     }),
     useSensor(KeyboardSensor, {
-      // Disable smooth scrolling in Cypress automated tests
       scrollBehavior: 'Cypress' in window ? 'auto' : undefined,
       coordinateGetter: sortableKeyboardCoordinates,
     })

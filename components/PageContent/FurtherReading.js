@@ -61,8 +61,8 @@ export default function FurtherReading({ furtherReadings, defaultExpanded=false 
                 }}
                 onClick={() => router.push(`/${prerequisite.id}`)}
               >
-                <ListItemText 
-                  primary={reading.title}
+                <ListItemText
+                  primary={reading.title ? reading.title : reading.id}
                   primaryTypographyProps={{ variant: 'body2' }}
                 />
               </ListItemButton>

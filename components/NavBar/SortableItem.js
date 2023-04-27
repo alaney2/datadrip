@@ -59,7 +59,7 @@ export function SortableItem({ handle=false, id, item, index, handleRemoveFromRe
           px: 2,
           ml: '8px',
           m: 0,
-          borderLeft: '2px solid transparent', // Conditionally add border to every other item
+          borderLeft: '2px solid transparent',
           '&:hover': {
             backgroundColor: 'transparent',
             borderLeft: `2px solid ${theme.palette.primary.main}`
@@ -67,7 +67,7 @@ export function SortableItem({ handle=false, id, item, index, handleRemoveFromRe
         }}
       >
         <ListItemText 
-          primary={item.title} 
+          primary={item.title ? item.title : item.id}
           sx={{
             m: 0,
             p: 1,

@@ -14,6 +14,7 @@ import Slide from '@mui/material/Slide';
 import ReadingListButton from '@/components/PageContent/ReadingListButton';
 import Heading from '@/components/PageContent/Heading';
 import { getPageObject } from '@/components/utilities';
+import EditButton from '@/components/PageContent/EditButton';
 
 function useScrollDirection() {
   const [scrollDirection, setScrollDirection] = React.useState('up');
@@ -43,6 +44,7 @@ export default function Markdown({ content, headings, filename, leftSidebar, rig
   const { scrollDirection, scrollPosition } = useScrollDirection();
   const theme = useTheme();
   const nameWithoutExtension = filename.slice(0, filename.lastIndexOf('.'));
+  const editUrl = `https://github.com/alaney2/datadrip/data/${filename}`;
 
   const handleRightSidebarItemClick = () => {
     setRightSidebarDialogOpen(false);
@@ -85,6 +87,8 @@ export default function Markdown({ content, headings, filename, leftSidebar, rig
             mr: { xs: 0, sm: 0, md: 2, lg: 0 },
           }}
         >
+        <EditButton editUrl={editUrl} />
+
           <ReactMarkdown
             rehypePlugins={[rehypeSlug]}
             components={{

@@ -93,7 +93,7 @@ export default function NavBar(props) {
     <Box sx={{ flexGrow: 1 }}>
       <CssBaseline />
       <HideOnScroll {...props}>
-        <AppBar 
+        <AppBar
           color="inherit"
           elevation={0} 
           sx={{ borderBottom: '0.1px solid #7c4dff' }}
@@ -142,7 +142,9 @@ export default function NavBar(props) {
                       sx={{
                         fontWeight: 700, // Make the text bolder
                         textShadow: '1px 1px 3px rgba(0, 0, 0, 0.3)', // Add a text shadow
-                        letterSpacing: '.08rem'
+                        letterSpacing: '.08rem',
+                        fontFamily: 'Caveat, cursive',
+                        fontSize: '1.5rem',
                       }}
                     >
                       DataDrip

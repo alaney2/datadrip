@@ -67,7 +67,7 @@ export default function BackToTop() {
           <IconButton
             sx={{
               boxShadow: theme.shadows[6],
-              bgcolor: alpha(theme.palette.text.secondary, 0.9),
+              bgcolor: alpha(theme.palette.text.secondary, 0.85),
 
             }}
             size="medium"
@@ -77,7 +77,7 @@ export default function BackToTop() {
             data-ga-event-action="click-back-to-top"
             disableRipple
           >
-            <KeyboardArrowUpRoundedIcon color="secondary" />
+            <KeyboardArrowUpRoundedIcon color="primary" />
           </IconButton>
         </Box>
       </Tooltip>

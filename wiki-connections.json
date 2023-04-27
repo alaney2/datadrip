@@ -1,63 +1,63 @@
 {
-  "gan": {
-    "title": "Generative Adversarial Networks",
-    "prerequisites": ["pageB", "pageC", "pageD", "pageE", "gan", "pageF", "pageG", "pageH", "pageI", "pageJ", "pageK", "pageL", "pageM", "pageN", "pageO", "pageP", "pageQ", "pageR", "pageS", "pageT", "pageU", "pageV", "pageW", "pageX", "pageY", "pageZ"],
-    "further_readings": ["pageD", "pageE"]
+  "generative_adversarial_network": {
+    "title": "Generative Adversarial Network",
+    "prerequisites": ["expectation_maximization_algorithm", "probability_distributions", "convolutional_neural_networks", "backpropagation", "stochastic_gradient_descent", "loss_functions", "optimization_algorithms", "deep_learning_frameworks", "regularization_techniques", "unsupervised_learning"],
+    "further_readings": ["conditional_gans", "cycle_gans", "stylegan_and_stylegan2", "wasserstein_gans", "domain_adaptation", "image_to_image_translation", "semi_supervised_learning", "adversarial_training", "adversarial_attacks_and_defenses", "transfer_learning"]
   },
-  "pageA": {
-    "title": "Page A",
-    "prerequisites": [],
-    "further_readings": ["pageB", "pageC", "pageD", "pageE"]
+  "expectation_maximization_algorithm": {
+    "title": "Expectation Maximization Algorithm",
+    "prerequisites": [ "probability_theory", "conditional_probability", "maximum_likelihood_estimation", "latent_variables", "bayes_theorem", "gaussian_mixture_models", "log_likelihood", "k_means_clustering", "joint_probability_distribution", "convergence_criteria"],
+    "further_readings": [ "hidden_markov_models", "variational_inference", "bayesian_networks", "mixture_density_networks", "gibbs_sampling", "monte_carlo_methods", "mean_field_theory", "expectation_propagation", "factor_analysis", "em_algorithm_applications"]
   },
-  "pageB": {
-    "title": "Page B",
-    "prerequisites": ["pageA"],
-    "further_readings": ["pageC", "pageD"]
+  "probability_distributions": {
+    "title": "Probability Distributions",
+    "prerequisites": [ "random_variables", "joint_probability_distribution", "conditional_probability"],
+    "further_readings": [ "moment_generating_functions", "central_limit_theorem", "maximum_likelihood_estimation", "bayesian_inference", "markov_chains", "entropy_and_information_theory", "copulas", "kernel_density_estimation", "monte_carlo_simulation", "mixture_models"]
   },
-  "pageC": {
-    "title": "Page C",
-    "prerequisites": ["pageA"],
-    "further_readings": ["pageD", "pageE"]
+  "convolutional_neural_networks": {
+    "title": "Convolutional Neural Networks",
+    "prerequisites": [ "neural_networks", "feedforward_neural_networks", "backpropagation", "activation_functions", "gradient_descent", "stochastic_gradient_descent", "loss_functions", "convolution_operation", "pooling_layers", "image_processing"],
+    "further_readings": [ "deep_learning", "recurrent_neural_networks", "transfer_learning", "image_classification", "object_detection", "semantic_segmentation", "generative_adversarial_networks", "autoencoders", "residual_networks", "neural_style_transfer"]
   },
-  "pageD": {
-    "title": "Page D",
-    "prerequisites": ["pageA"],
-    "further_readings": ["pageE"]
+  "backpropagation": {
+    "title": "Backpropagation",
+    "prerequisites": ["long_short-term_memory", "neural_networks", "feedforward_neural_networks", "activation_functions", "loss_functions", "gradient_descent", "stochastic_gradient_descent", "computational_graphs"],
+    "further_readings": [ "convolutional_neural_networks", "recurrent_neural_networks", "optimization_algorithms", "momentum", "adaptive_learning_rates", "regularization", "dropout", "weight_initialization", "vanishing_and_exploding_gradients", "transfer_learning"]
+    },
+  "stochastic_gradient_descent": {
+    "title": "Stochastic Gradient Descent",
+    "prerequisites": [ "gradient_descent", "loss_functions", "optimization", "neural_networks", "backpropagation", "learning_rate", "training_data", "minibatches"],
+    "further_readings": [ "momentum", "adaptive_learning_rates", "nesterov_accelerated_gradient", "adagrad", "adam", "rmsprop", "batch_normalization", "regularization", "dropout", "early_stopping"]
   },
-  "pageE": {
-    "title": "Page E",
-    "prerequisites": ["pageA"],
-    "further_readings": []
+  "loss_functions": {
+    "title": "Loss Functions",
+    "prerequisites": ["optimization_algorithms", "gradient_descent", "backpropagation", "convex_optimization", "stochastic_gradient_descent", "regularization", "cross_validation", "classification", "regression", "neural_networks"],
+    "further_readings": ["hinge_loss", "logistic_loss", "mean_squared_error", "cross_entropy_loss", "Kullback-Leibler_divergence", "focal_loss", "contrastive_loss", "triplet_loss", "Dice_loss", "Jaccard_loss"]
   },
-  "pageF": {
-    "title": "Page F",
-    "prerequisites": ["pageA"],
-    "further_readings": []
+  "optimization_algorithms": {
+    "title": "Optimization Algorithms",
+    "prerequisites": ["gradient_descent", "backpropagation", "convex_optimization", "stochastic_gradient_descent", "regularization", "quasi-Newton_methods", "line_search_methods", "Newton_method", "conjugate_gradient_method", "BFGS_method"],
+    "further_readings": ["Adam", "Adagrad", "RMSprop", "Momentum", "Nesterov_accelerated_gradient", "Adadelta", "LBFGS", "LARS", "K-FAC", "SWATS"]
   },
-  "pageG": {
-    "title": "Page G",
-    "prerequisites": ["pageA"],
-    "further_readings": []
+  "convex_optimization": {
+    "title": "Convex Optimization",
+    "prerequisites": ["optimization_algorithms", "gradient_descent", "backpropagation", "stochastic_gradient_descent", "regularization", "line_search_methods", "Newton_method", "quasi-Newton_methods", "conjugate_gradient_method", "BFGS_method"],
+    "further_readings": ["Lagrangian_dual", "proximal_gradient_methods", "subgradient_methods", "projected_gradient_descent", "interior-point_methods", "convex_constrained_optimization", "semidefinite_programming", "disciplined_convex_programming", "robust_optimization", "integer_programming"]
   },
-  "pageH": {
-    "title": "Page H",
-    "prerequisites": ["pageA"],
-    "further_readings": []
+  "deep_learning_frameworks": {
+    "title": "Deep Learning Frameworks",
+    "prerequisites": ["feedforward_neural_networks", "backpropagation_algorithm", "convolutional_neural_networks", "recurrent_neural_networks", "optimization_algorithms", "loss_functions", "activation_functions", "gradient_descent", "regularization_techniques", "hyperparameter_tuning"],
+    "further_readings": ["tensorflow", "pytorch", "keras", "mxnet", "caffe", "theano", "cntk", "chainer", "deeplearning4j", "paddlepaddle"]
   },
-  "pageI": {
-    "title": "Page I",
-    "prerequisites": ["pageA"],
-    "further_readings": []
+  "feedforward_neural_networks": {
+    "title": "Feedforward Neural Networks",
+    "prerequisites": ["perceptron_learning_algorithm", "multilayer_perceptron", "weight_initialization", "forward_propagation", "neuron_activation"],
+    "further_readings": ["universal_approximation_theorem", "vanishing_gradient_problem", "exploding_gradient_problem", "dropout_regularization", "batch_normalization"]
   },
-  "pageJ": {
-    "title": "Page J",
-    "prerequisites": ["pageA"],
-    "further_readings": []
-  },
-  "pageK": {
-    "title": "Page K",
-    "prerequisites": ["pageA"],
-    "further_readings": []
+  "recurrent_neural_networks": {
+    "title": "Recurrent Neural Networks",
+    "prerequisites": ["sequential_data", "hidden_states", "unrolling_rnn", "rnn_training", "rnn_architectures"],
+    "further_readings": ["long_short_term_memory", "gated_recurrent_unit", "bidirectional_rnn", "attention_mechanism", "seq2seq_models"]
   },
   "pageL": {
     "title": "Page L",
@@ -76,61 +76,6 @@
   },
   "pageO": {
     "title": "Page O",
-    "prerequisites": ["pageA"],
-    "further_readings": []
-  },
-  "pageP": {
-    "title": "Page P",
-    "prerequisites": ["pageA"],
-    "further_readings": []
-  },
-  "pageQ": {
-    "title": "Page Q",
-    "prerequisites": ["pageA"],
-    "further_readings": []
-  },
-  "pageR": {
-    "title": "Page R",
-    "prerequisites": ["pageA"],
-    "further_readings": []
-  },
-  "pageS": {
-    "title": "Page S",
-    "prerequisites": ["pageA"],
-    "further_readings": []
-  },
-  "pageT": {
-    "title": "Page T",
-    "prerequisites": ["pageA"],
-    "further_readings": []
-  },
-  "pageU": {
-    "title": "Page U",
-    "prerequisites": ["pageA"],
-    "further_readings": []
-  },
-  "pageV": {
-    "title": "Page V",
-    "prerequisites": ["pageA"],
-    "further_readings": []
-  },
-  "pageW": {
-    "title": "Page W",
-    "prerequisites": ["pageA"],
-    "further_readings": []
-  },
-  "pageX": {
-    "title": "Page X",
-    "prerequisites": ["pageA"],
-    "further_readings": []
-  },
-  "pageY": {
-    "title": "Page Y",
-    "prerequisites": ["pageA"],
-    "further_readings": []
-  },
-  "pageZ": {
-    "title": "Page Z",
     "prerequisites": ["pageA"],
     "further_readings": []
   }

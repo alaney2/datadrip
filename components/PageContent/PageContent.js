@@ -7,6 +7,7 @@ import MarkDown from '@/components/PageContent/Markdown';
 import SkipLink from '@/components/SkipLink';
 import NorthIndicator from '@/components/PageContent/NorthIndicator';
 
+
 function extractHeadings(markdown) {
   const regex = /(?:^|\n)#+\s+(.+)/g;
   const headings = [];
@@ -33,7 +34,7 @@ export default function PageContent({ content, filename, leftSidebar=true, right
     async function fetchLastUpdated() {
       const owner = 'alaney2';
       const repo = 'datadrip';
-      const filePath = `data/${filename}`; // Use filename prop here
+      const filePath = `data/${filename}`;
       const token = process.env.NEXT_PUBLIC_GITHUB_TOKEN;
       const response = await fetch(
         `https://api.github.com/repos/${owner}/${repo}/commits?path=${filePath}&per_page=1`,

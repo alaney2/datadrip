@@ -93,7 +93,7 @@ export default function RightSidebar({ headings, onItemClick=() => {}, expandabl
     };
 
     observer.current = new IntersectionObserver(handleIntersection, {
-      rootMargin: '0px 0px -90% 0px', // Offset by the header height
+      rootMargin: '0px 0px -90% 0px',
       threshold: 1,
     });
 
@@ -105,7 +105,6 @@ export default function RightSidebar({ headings, onItemClick=() => {}, expandabl
     });
 
     return () => {
-      // Clean up the observer when the component is unmounted
       if (observer.current) {
         headings.forEach((heading) => {
           const target = document.getElementById(heading.slug);

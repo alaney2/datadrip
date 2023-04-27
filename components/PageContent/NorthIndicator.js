@@ -3,12 +3,13 @@ import NorthRoundedIcon from '@mui/icons-material/NorthRounded';
 import Box from '@mui/material/Box';
 import Fade from '@mui/material/Fade';
 import { ReadingListContext } from '@/components/ReadingListContext';
-import { useTheme, alpha } from '@mui/material';
+import { useTheme, alpha, useMediaQuery } from '@mui/material';
 
 export default function NorthIndicator() {
   const [flashIcon, setFlashIcon] = React.useState(false);
   const { readingList } = React.useContext(ReadingListContext);
   const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
 
   React.useEffect(() => {
     setFlashIcon(true);
@@ -28,16 +29,17 @@ export default function NorthIndicator() {
             top: 16,
             right: 32,
             zIndex: theme.zIndex.appBar - 1,
-            borderRadius: '50%', // Add this line to create a rounded border
-            // border: '2px solid', // Add this line to specify the border thickness
-            borderColor: 'primary.main', // Add this line to set the border color
+            borderRadius: '50%',
+            // border: '2px solid', 
+            borderColor: 'primary.main',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            // bgcolor: alpha(theme.palette.secondary.main, 0.3)
+            p: 0.5,
+            bgcolor: alpha(theme.palette.secondary.main, 0.3)
           }}
         >
-          <NorthRoundedIcon color="secondary" />
+          <NorthRoundedIcon color="secondary" fontSize={isSmallScreen ? "medium" : "large"} />
         </Box>
       </Fade>
     )}

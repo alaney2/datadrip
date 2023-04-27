@@ -1,6 +1,6 @@
-# Generative Adversarial Networks (GANs)
+# Generative Adversarial Network (GAN)
 
-Hey there! Have you heard about Generative Adversarial Networks (GANs)? They're an exciting machine learning technique that can generate realistic data. 
+Generative Adversarial Networks are an exciting machine learning technique that can generate realistic data.
 
 ## A Brief History
 

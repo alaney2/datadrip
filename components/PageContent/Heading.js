@@ -36,7 +36,12 @@ function Heading({ level, children, filename, slug }) {
       alignItems="center"
       sx={{
         pt: level === 1 ? 2 : 1,
-        mt: level === 1 ? 6 : 4,
+        mt: {
+          xs: level === 1 ? 2 : 1,
+          md: level === 1 ? 3 : 2,
+          lg: level === 1 ? 4 : 3,
+          xl: level === 1 ? 5 : 4,
+        },
         mb: level === 1 ? 1 : 0,
         '&:hover .MuiIconButton-root': {
           visibility: 'visible',

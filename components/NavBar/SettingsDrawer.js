@@ -123,7 +123,14 @@ export default function SettingsDrawer(props) {
       {...other}
     >
       <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', p: 2, height: '64px' }}>
-        <Typography variant="h6" fontWeight="600" sx={{letterSpacing: '.08rem',}}>
+        <Typography variant="h6" fontWeight="600" 
+          sx={{
+            letterSpacing: '.08rem',
+            fontFamily: 'Caveat, cursive',
+            textShadow: '1px 1px 3px rgba(0, 0, 0, 0.3)', // Add a text shadow
+            fontSize: '1.4rem',
+          }}
+        >
           Nook
         </Typography>
         <IconButton
@@ -134,8 +141,8 @@ export default function SettingsDrawer(props) {
             '&:hover': {
               backgroundColor:
                 theme.palette.mode === 'dark'
-                  ? 'rgba(150, 100, 255, 0.1)' // Light purple color for dark mode
-                  : 'rgba(255, 50, 50, 0.1)', // Red color for light mode
+                  ? 'rgba(150, 100, 255, 0.1)'
+                  : 'rgba(255, 50, 50, 0.1)',
             },
           }}
         >
