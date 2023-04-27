@@ -59,7 +59,7 @@ export default function FurtherReading({ furtherReadings, defaultExpanded=false 
                   },
                   ml: 0,
                 }}
-                onClick={() => router.push(`/${prerequisite.id}`)}
+                onClick={() => router.push(`/${reading.id}`)}
               >
                 <ListItemText
                   primary={reading.title ? reading.title : reading.id}

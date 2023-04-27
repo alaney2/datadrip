@@ -1,4 +1,4 @@
-# About Data Drip Café ☕️🤖
+# About Data Drip
 
 Welcome to Data Drip Café, a cozy digital corner where we brew knowledge on machine learning, artificial intelligence, and deep learning.
 
