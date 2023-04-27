@@ -156,6 +156,7 @@ export default function Markdown({ content, headings, filename, leftSidebar, rig
                   transform: 'translateX(-25%)',
                   borderRadius: '16px',
                   width: '200%',
+                  height: '100%',
                   '.MuiPaper-root': {
                     borderRadius: '16px',
                   },
@@ -252,6 +253,7 @@ export default function Markdown({ content, headings, filename, leftSidebar, rig
               '.MuiPaper-root': {
                 borderRadius: '16px',
               },
+              bottom: 48,
             }}
           >
             {leftSidebar && <LeftSidebar filename={filename} defaultExpanded={true} />}
@@ -266,6 +268,7 @@ export default function Markdown({ content, headings, filename, leftSidebar, rig
               '.MuiPaper-root': {
                 borderRadius: '16px',
               },
+              bottom: 48,
             }}
           >
             {rightSidebar && <RightSidebar headings={headings} onItemClick={handleRightSidebarItemClick} expandable={false} />}

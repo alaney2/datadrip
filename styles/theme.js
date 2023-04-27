@@ -73,7 +73,7 @@ const createCustomTheme = (mode, colors) => {
 
 const lightColors = {
   primary: '#3f51b5',
-  secondary: '#f7665a',
+  secondary: '#3f80b5',
   backgroundDefault: '#f0f0f0',
   backgroundPaper: '#f5f5f5',
   textPrimary: '#3c3c3c',
