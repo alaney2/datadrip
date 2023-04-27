@@ -113,7 +113,7 @@ export default function Markdown({ content, headings, filename, leftSidebar, rig
                 <Paper
                   sx={{
                     position: 'fixed',
-                    bottom: 32,
+                    bottom: 24,
                     borderRadius: '30px',
                     zIndex: theme.zIndex.tooltip,
                     boxShadow: theme.shadows[6],

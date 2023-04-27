@@ -59,8 +59,8 @@ export default function BackToTop() {
           className="mui-fixed"
           sx={{
             position: 'fixed',
-            bottom: { xs: 32, lg: 64, xl: 96 },
-            right: { xs: 36, lg: 64, xl: 128 },
+            bottom: { xs: 24, lg: 64, xl: 96 },
+            right: { xs: 24, lg: 64, xl: 128 },
             zIndex: theme.zIndex.tooltip,
           }}
         >
