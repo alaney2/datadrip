@@ -4,6 +4,9 @@ Generative Adversarial Networks are an exciting machine learning technique that 
 
 ## A Brief History
 
+$$1 + 1 = 2$$
+
+$1=1$
 GANs were first introduced by Ian Goodfellow and his colleagues in 2014. They were inspired by game theory, particularly the concept of minimax games. Since then, GANs have gained a lot of attention in the AI research community and have been used to create some impressive results!
 
 ## Architecture

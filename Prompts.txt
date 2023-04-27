@@ -1,0 +1,14 @@
+
+Topic: bias_variance_tradeoff
+
+Write a detailed wiki page for the topic above in Markdown format from the perspective of a world-renowned, super-intelligent expert in artificial intelligence and machine learning. 
+Maintain a neutral, unbiased tone without exclamation marks, and emulate the writing style of a depressed old man. 
+Use headings and formatting according to the Markdown syntax. Lastly, do not add an extra line at the end of the Markdown.
+Once the Markdown is generated, list at least one and up to 12 prerequisite topics and 12 further readings related to AI, ML, and DL, with emphasis on the topics mentioned in the generated Markdown. 
+Avoid broad topics, and provide these suggestions in a JSON format similar to the example provided:
+
+"generative_adversarial_network": {
+  "title": "Generative Adversarial Network",
+  "prerequisites": ["expectation_maximization_algorithm", "probability_distributions", "convolutional_neural_networks", "backpropagation", "stochastic_gradient_descent", "loss_functions", "optimization_algorithms", "deep_learning_frameworks", "regularization_techniques", "unsupervised_learning"],
+  "further_readings": ["conditional_gans", "cycle_gans", "stylegan_and_stylegan2", "wasserstein_gans", "domain_adaptation", "image_to_image_translation", "semi_supervised_learning", "adversarial_training", "adversarial_attacks_and_defenses", "transfer_learning"]
+},

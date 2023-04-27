@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import rehypeSlug from 'rehype-slug';
+import rehypeKatex from 'rehype-katex';
+import 'katex/dist/katex.min.css';
 import Box from '@mui/material/Box';
 import LeftSidebar from '@/components/PageContent/LeftSidebar';
 import RightSidebar from '@/components/PageContent/RightSidebar';
@@ -44,7 +46,7 @@ export default function Markdown({ content, headings, filename, leftSidebar, rig
   const { scrollDirection, scrollPosition } = useScrollDirection();
   const theme = useTheme();
   const nameWithoutExtension = filename.slice(0, filename.lastIndexOf('.'));
-  const editUrl = `https://github.com/alaney2/datadrip/data/${filename}`;
+  const editUrl = `https://github.com/alaney2/datadrip/blob/main/data/${filename}`;
 
   const handleRightSidebarItemClick = () => {
     setRightSidebarDialogOpen(false);
@@ -90,7 +92,7 @@ export default function Markdown({ content, headings, filename, leftSidebar, rig
         <EditButton editUrl={editUrl} />
 
           <ReactMarkdown
-            rehypePlugins={[rehypeSlug]}
+            rehypePlugins={[rehypeSlug, rehypeKatex]}
             components={{
               h1: (props) => <Heading {...props} slug={props.id} filename={filename} />,
               h2: (props) => <Heading {...props} slug={props.id} filename={filename} />,

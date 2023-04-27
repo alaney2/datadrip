@@ -39,14 +39,14 @@ export default function MenuComponent({ anchorEl, open, onClose }) {
           <Typography variant="inherit">Graph</Typography>
         </MenuItem>
       </Link>
-      <Link href="/timeline" passHref>
+      {/* <Link href="/timeline" passHref>
         <MenuItem onClick={onClose} component="a">
           <ListItemIcon>
             <TimelineIcon fontSize="small" />
           </ListItemIcon>
           <Typography variant="inherit">Timeline</Typography>
         </MenuItem>
-      </Link>
+      </Link> */}
     </Menu>
   );
 }
