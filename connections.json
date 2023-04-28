@@ -428,7 +428,7 @@
             "manifold_learning"
         ]
     },
-    "blah": {
+    "gan": {
         "title": "Generative Adversarial Network",
         "prerequisites": [
             "backpropagation",

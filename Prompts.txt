@@ -1,14 +1,13 @@
 
-Topic: bias_variance_tradeoff
+Topic: 
 
-Write a detailed wiki page for the topic above in Markdown format from the perspective of a world-renowned, super-intelligent expert in artificial intelligence and machine learning. 
-Maintain a neutral, unbiased tone without exclamation marks, and emulate the writing style of a depressed old man. 
-Use headings and formatting according to the Markdown syntax. Lastly, do not add an extra line at the end of the Markdown.
-Once the Markdown is generated, list at least one and up to 12 prerequisite topics and 12 further readings related to AI, ML, and DL, with emphasis on the topics mentioned in the generated Markdown. 
-Avoid broad topics, and provide these suggestions in a JSON format similar to the example provided:
+Provide a JSON object containing the topic, a list of 1-12 prerequisite topics, and a list of 1-12 further readings related to AI, ML, and DL. Ensure that the prerequisites and further readings are specifically relevant to backpropagation, rather than broad topics like calculus or statistics. Use a similar format to the example provided below:
 
+Example:
 "generative_adversarial_network": {
-  "title": "Generative Adversarial Network",
-  "prerequisites": ["expectation_maximization_algorithm", "probability_distributions", "convolutional_neural_networks", "backpropagation", "stochastic_gradient_descent", "loss_functions", "optimization_algorithms", "deep_learning_frameworks", "regularization_techniques", "unsupervised_learning"],
-  "further_readings": ["conditional_gans", "cycle_gans", "stylegan_and_stylegan2", "wasserstein_gans", "domain_adaptation", "image_to_image_translation", "semi_supervised_learning", "adversarial_training", "adversarial_attacks_and_defenses", "transfer_learning"]
+"title": "Generative Adversarial Network",
+"prerequisites": ["expectation_maximization_algorithm", "probability_distributions", "convolutional_neural_networks", "backpropagation", "stochastic_gradient_descent", "loss_functions", "optimization_algorithms", "deep_learning_frameworks", "regularization_techniques", "unsupervised_learning"],
+"further_readings": ["conditional_gans", "cycle_gans", "stylegan_and_stylegan2", "wasserstein_gans", "domain_adaptation", "image_to_image_translation", "semi_supervised_learning", "adversarial_training", "adversarial_attacks_and_defenses", "transfer_learning"]
 },
+
+Next, write a detailed wiki page about backpropagation in Markdown format, from the perspective of a world-renowned AI and ML expert. Use a neutral, unbiased tone without exclamation marks, and write in the style of a melancholic older person. Follow Markdown syntax for headings and formatting, and use LaTeX for equations, with inline equations in pairs of $ and multiline equations in $$. Ensure the entire output is less than 8192 tokens long and does not include an extra line at the end of the Markdown.

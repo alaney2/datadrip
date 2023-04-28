@@ -2,6 +2,7 @@ import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import rehypeSlug from 'rehype-slug';
 import rehypeKatex from 'rehype-katex';
+import remarkMath from 'remark-math';
 import 'katex/dist/katex.min.css';
 import Box from '@mui/material/Box';
 import LeftSidebar from '@/components/PageContent/LeftSidebar';
@@ -92,6 +93,7 @@ export default function Markdown({ content, headings, filename, leftSidebar, rig
         <EditButton editUrl={editUrl} />
 
           <ReactMarkdown
+            remarkPlugins={[remarkMath]}
             rehypePlugins={[rehypeSlug, rehypeKatex]}
             components={{
               h1: (props) => <Heading {...props} slug={props.id} filename={filename} />,
