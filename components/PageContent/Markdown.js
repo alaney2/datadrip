@@ -90,8 +90,7 @@ export default function Markdown({ content, headings, filename, leftSidebar, rig
             mr: { xs: 0, sm: 0, md: 2, lg: 0 },
           }}
         >
-        <EditButton editUrl={editUrl} />
-
+          <EditButton editUrl={editUrl} />
           <ReactMarkdown
             remarkPlugins={[remarkMath]}
             rehypePlugins={[rehypeSlug, rehypeKatex]}
@@ -283,7 +282,6 @@ export default function Markdown({ content, headings, filename, leftSidebar, rig
           </Dialog>
         </Box>
       )}
-
     </Box>
   );
 }

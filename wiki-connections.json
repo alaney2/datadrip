@@ -428,21 +428,21 @@
             "manifold_learning"
         ]
     },
-    "blah": {
-        "title": "Generative Adversarial Network",
+    "conditional_gans": {
+        "title": "Conditional Generative Adversarial Networks",
         "prerequisites": [
-            "backpropagation",
+            "generative_adversarial_network",
             "convolutional_neural_networks",
-            "deep_learning_frameworks",
-            "loss_functions",
-            "optimization_algorithms",
-            "probability_distributions",
-            "regularization_techniques",
+            "backpropagation",
             "stochastic_gradient_descent",
-            "unsupervised_learning"
+            "optimization_algorithms",
+            "deep_learning_frameworks",
+            "regularization_techniques",
+            "unsupervised_learning",
+            "image_data_preprocessing",
+            "transfer_learning"
         ],
         "further_readings": [
-            "conditional_gans",
             "cycle_gans",
             "stylegan_and_stylegan2",
             "wasserstein_gans",
@@ -451,7 +451,902 @@
             "semi_supervised_learning",
             "adversarial_training",
             "adversarial_attacks_and_defenses",
+            "natural_language_generation"
+        ]
+    },
+    "image_data_preprocessing": {
+        "title": "Image Data Preprocessing",
+        "prerequisites": [
+            "convolutional_neural_networks",
+            "image_classification",
+            "data_augmentation",
+            "feature_extraction",
+            "image_segmentation",
+            "computer_vision",
+            "image_processing_techniques",
+            "image_visualization",
+            "data_normalization"
+        ],
+        "further_readings": [
+            "transfer_learning",
+            "neural_style_transfer",
+            "object_detection",
+            "face_recognition",
+            "image_captioning",
+            "semantic_segmentation",
+            "instance_segmentation",
+            "generative_models",
+            "deep_learning_architectures",
+            "cloud_computing"
+        ]
+    },
+    "transfer_learning": {
+        "title": "Transfer Learning",
+        "prerequisites": [
+            "deep_learning",
+            "neural_networks",
+            "backpropagation",
+            "convolutional_neural_networks",
+            "natural_language_processing",
+            "image_processing",
+            "data_augmentation",
+            "regularization_techniques",
+            "optimization_algorithms"
+        ],
+        "further_readings": [
+            "domain_adaptation",
+            "semi_supervised_learning",
+            "multitask_learning",
+            "meta_learning",
+            "adversarial_examples",
+            "explainable_ai",
+            "autoencoders",
+            "reinforcement_learning",
+            "online_learning",
+            "ensemble_learning"
+        ]
+    },
+    "cycle_gans": {
+        "title": "Cycle GANs",
+        "prerequisites": [
+            "generative_adversarial_network",
+            "image_to_image_translation",
+            "unsupervised_learning",
+            "adversarial_training",
+            "convolutional_neural_networks"
+        ],
+        "further_readings": [
+            "pix2pix",
+            "deepfakes",
+            "conditional_gans",
+            "style_transfer",
+            "domain_adaptation",
+            "semi_supervised_learning",
+            "adversarial_attacks_and_defenses",
             "transfer_learning"
+        ]
+    },
+    "stylegan_and_stylegan2": {
+        "title": "StyleGAN and StyleGAN2",
+        "prerequisites": [
+            "generative_adversarial_network",
+            "convolutional_neural_networks",
+            "deep_learning_frameworks",
+            "image_processing",
+            "probability_distributions",
+            "latent_space",
+            "normalizing_flows",
+            "matrix_factorization",
+            "spectral_norm",
+            "self_attention_mechanism"
+        ],
+        "further_readings": [
+            "variational_autoencoders",
+            "flow_based_generative_models",
+            "adversarial_autoencoders",
+            "progressive_growing_of_gans",
+            "big_gans",
+            "super_resolution_gans",
+            "text_to_image_synthesis",
+            "style_transfer",
+            "image_inpainting",
+            "generative_models_evaluation"
+        ]
+    },
+    "wasserstein_gans": {
+        "title": "Wasserstein GANs",
+        "prerequisites": [
+            "generative_adversarial_network",
+            "convex_optimization",
+            "probability_theory",
+            "gradient_penalty",
+            "adversarial_losses",
+            "neural_network_architectures",
+            "mathematical_optimization",
+            "deep_learning_frameworks",
+            "image_generation",
+            "unsupervised_learning"
+        ],
+        "further_readings": [
+            "conditional_wasserstein_gans",
+            "improved_training_of_wasserstein_gans",
+            "adversarial_defense_using_wasserstein_distance",
+            "wgan_gp",
+            "spectral_normalization_for_gans",
+            "coupled_gans",
+            "adversarial_autoencoders",
+            "variational_autoencoders",
+            "neural_style_transfer",
+            "image_translation"
+        ]
+    },
+    "domain_adaptation": {
+        "title": "Domain Adaptation",
+        "prerequisites": [
+            "unsupervised_learning",
+            "transfer_learning",
+            "neural_network_architectures",
+            "optimization_algorithms",
+            "probability_distributions"
+        ],
+        "further_readings": [
+            "adversarial_domain_adaptation",
+            "semi_supervised_domain_adaptation",
+            "domain_generalization",
+            "multi_task_learning",
+            "instance_weighting",
+            "unlabeled_data_exploitation",
+            "target_shift_adaptation",
+            "importance_weighted_adaptation"
+        ]
+    },
+    "image_to_image_translation": {
+        "title": "Image To Image Translation",
+        "prerequisites": [
+            "convolutional_neural_networks",
+            "generative_adversarial_networks",
+            "conditional_generative_models",
+            "variational_autoencoders",
+            "unsupervised_learning",
+            "loss_functions",
+            "backpropagation"
+        ],
+        "further_readings": [
+            "pix2pix",
+            "cycle_gans",
+            "disco_gans",
+            "stargan",
+            "unit",
+            "munit",
+            "image_super-resolution",
+            "domain_adaptation"
+        ]
+    },
+    "semi_supervised_learning": {
+        "title": "Semi-Supervised Learning",
+        "prerequisites": [
+            "supervised_learning",
+            "unsupervised_learning",
+            "deep_learning",
+            "neural_networks",
+            "convolutional_neural_networks",
+            "autoencoders",
+            "generative_models",
+            "clustering",
+            "dimensionality_reduction",
+            "graph_based_learning"
+        ],
+        "further_readings": [
+            "active_learning",
+            "self_supervised_learning",
+            "semi_supervised_clustering",
+            "transfer_learning",
+            "domain_adaptation",
+            "few_shot_learning",
+            "multi_task_learning",
+            "continual_learning",
+            "anomaly_detection",
+            "adversarial_training"
+        ]
+    },
+    "adversarial_training": {
+        "title": "Adversarial Training",
+        "prerequisites": [
+            "backpropagation",
+            "convolutional_neural_networks",
+            "stochastic_gradient_descent",
+            "loss_functions",
+            "optimization_algorithms",
+            "regularization_techniques",
+            "unsupervised_learning"
+        ],
+        "further_readings": [
+            "adversarial_examples",
+            "adversarial_attacks_and_defenses",
+            "generative_adversarial_networks",
+            "transfer_learning",
+            "semi_supervised_learning",
+            "multi_task_learning"
+        ]
+    },
+    "adversarial_attacks_and_defenses": {
+        "title": "Adversarial Attacks and Defenses",
+        "prerequisites": [
+            "deep_learning",
+            "convolutional_neural_networks",
+            "backpropagation",
+            "stochastic_gradient_descent",
+            "loss_functions",
+            "optimization_algorithms",
+            "regularization_techniques",
+            "adversarial_examples"
+        ],
+        "further_readings": [
+            "adversarial_patch",
+            "adversarial_transferability",
+            "adversarial_robustness",
+            "adversarial_examples_in_nlp",
+            "adversarial_defense",
+            "adversarial_training",
+            "adversarial_reprogramming",
+            "adversarial_explanations",
+            "adversarial_reinforcement_learning"
+        ]
+    },
+    "natural_language_generation": {
+        "title": "Natural Language Generation",
+        "prerequisites": [
+            "natural_language_processing",
+            "linguistics",
+            "machine_learning",
+            "deep_learning",
+            "neural_networks",
+            "language_models"
+        ],
+        "further_readings": [
+            "text_generation",
+            "dialogue_generation",
+            "style_transfer",
+            "image_captioning",
+            "question_answering",
+            "language_translation",
+            "summarization",
+            "knowledge_graphs",
+            "speech_synthesis",
+            "data_augmentation"
+        ]
+    },
+    "image_classification": {
+        "title": "Image Classification",
+        "prerequisites": [
+            "convolutional_neural_networks",
+            "backpropagation",
+            "stochastic_gradient_descent",
+            "loss_functions",
+            "optimization_algorithms",
+            "deep_learning_frameworks",
+            "transfer_learning",
+            "data_augmentation",
+            "object_detection"
+        ],
+        "further_readings": [
+            "semantic_segmentation",
+            "instance_segmentation",
+            "neural_style_transfer",
+            "generative_adversarial_networks",
+            "attention_mechanisms",
+            "one_shot_learning",
+            "few_shot_learning",
+            "unsupervised_learning",
+            "reinforcement_learning"
+        ]
+    },
+    "data_augmentation": {
+        "title": "Data Augmentation",
+        "prerequisites": [
+            "image_processing",
+            "computer_vision",
+            "convolutional_neural_networks",
+            "data_preprocessing",
+            "supervised_learning",
+            "unsupervised_learning"
+        ],
+        "further_readings": [
+            "cutout_augmentation",
+            "mixup_augmentation",
+            "randaugment",
+            "augmix",
+            "adversarial_training",
+            "transfer_learning",
+            "domain_adaptation"
+        ]
+    },
+    "feature_extraction": {
+        "title": "Feature Extraction",
+        "prerequisites": [
+            "linear_algebra",
+            "probability_distributions",
+            "convolutional_neural_networks",
+            "backpropagation",
+            "stochastic_gradient_descent",
+            "loss_functions",
+            "optimization_algorithms",
+            "deep_learning_frameworks",
+            "supervised_learning",
+            "unsupervised_learning"
+        ],
+        "further_readings": [
+            "dimensionality_reduction",
+            "transfer_learning",
+            "data_augmentation",
+            "autoencoders",
+            "deep_feature_extraction",
+            "sparse_coding",
+            "kernel_methods",
+            "ensemble_learning",
+            "neural_style_transfer",
+            "attention_mechanisms"
+        ]
+    },
+    "image_segmentation": {
+        "title": "Image Segmentation",
+        "prerequisites": [
+            "convolutional_neural_networks",
+            "object_detection",
+            "semantic_segmentation",
+            "instance_segmentation",
+            "neural_network_architectures",
+            "loss_functions",
+            "optimization_algorithms",
+            "deep_learning_frameworks"
+        ],
+        "further_readings": [
+            "panoptic_segmentation",
+            "weakly_supervised_segmentation",
+            "video_object_segmentation",
+            "multi_modal_segmentation",
+            "medical_image_segmentation",
+            "panorama_segmentation",
+            "interactive_segmentation",
+            "adversarial_segmentation",
+            "graph_cut_segmentation",
+            "superpixel_segmentation"
+        ]
+    },
+    "computer_vision": {
+        "title": "Computer Vision",
+        "prerequisites": [
+            "convolutional_neural_networks",
+            "image_processing",
+            "feature_extraction",
+            "object_detection",
+            "semantic_segmentation",
+            "pose_estimation",
+            "optical_flow",
+            "neural_network_architectures"
+        ],
+        "further_readings": [
+            "deep_learning_for_computer_vision",
+            "image_classification",
+            "image_captioning",
+            "visual_question_answering",
+            "face_recognition",
+            "image_generation",
+            "domain_adaptation",
+            "transfer_learning",
+            "reinforcement_learning_for_vision"
+        ]
+    },
+    "nesterov_accelerated_gradient": {
+        "title": "Nesterov Accelerated Gradient",
+        "prerequisites": [
+            "gradient_descent",
+            "stochastic_gradient_descent",
+            "backpropagation",
+            "optimization_algorithms",
+            "deep_learning_frameworks"
+        ],
+        "further_readings": [
+            "momentum_in_gradient_descent",
+            "adadelta",
+            "adam",
+            "rmsprop",
+            "conjugate_gradient_method",
+            "quasi_newton_methods",
+            "line_search_methods"
+        ]
+    },
+    "gradient_descent": {
+        "title": "Gradient Descent",
+        "prerequisites": [
+            "linear_algebra",
+            "calculus",
+            "backpropagation",
+            "optimization_algorithms",
+            "stochastic_gradient_descent"
+        ],
+        "further_readings": [
+            "momentum_optimization",
+            "adagrad",
+            "adam_optimizer",
+            "learning_rates",
+            "batch_normalization"
+        ]
+    },
+    "momentum_in_gradient_descent": {
+        "title": "Momentum in Gradient Descent",
+        "prerequisites": [
+            "gradient_descent",
+            "optimization_algorithms",
+            "backpropagation",
+            "stochastic_gradient_descent",
+            "linear_algebra",
+            "calculus"
+        ],
+        "further_readings": [
+            "nesterov_accelerated_gradient",
+            "adagrad",
+            "adadelta",
+            "rmsprop",
+            "adam",
+            "conjugate_gradient_method",
+            "quasi_newton_methods",
+            "proximal_gradient_descent",
+            "batch_normalization",
+            "weight_decay"
+        ]
+    },
+    "adadelta": {
+        "title": "Adadelta",
+        "prerequisites": [
+            "gradient_descent",
+            "backpropagation",
+            "stochastic_gradient_descent",
+            "optimization_algorithms",
+            "deep_learning_frameworks",
+            "convolutional_neural_networks"
+        ],
+        "further_readings": [
+            "adam_optimizer",
+            "rmsprop",
+            "nesterov_accelerated_gradient",
+            "adagrad",
+            "second_order_optimization_methods"
+        ]
+    },
+    "adam": {
+        "title": "Adam Optimizer",
+        "prerequisites": [
+            "gradient_descent",
+            "stochastic_gradient_descent",
+            "backpropagation",
+            "optimization_algorithms",
+            "neural_network_architectures"
+        ],
+        "further_readings": [
+            "adamw",
+            "amsgrad",
+            "ranger",
+            "lookahead_optimizer",
+            "optimization_algorithms_in_deep_learning"
+        ]
+    },
+    "rmsprop": {
+        "title": "RMSprop",
+        "prerequisites": [
+            "backpropagation",
+            "gradient_descent",
+            "optimization_algorithms",
+            "stochastic_gradient_descent",
+            "neural_network_architectures",
+            "activation_functions",
+            "loss_functions"
+        ],
+        "further_readings": [
+            "adam_optimizer",
+            "adagrad_optimizer",
+            "momentum_optimizer",
+            "nesterov_accelerated_gradient_optimizer",
+            "convergence_analysis_of_gradient_descent",
+            "overfitting",
+            "dropout_regularization",
+            "batch_normalization"
+        ]
+    },
+    "conjugate_gradient_method": {
+        "title": "Conjugate Gradient Method",
+        "prerequisites": [
+            "linear_algebra",
+            "optimization_algorithms",
+            "eigenvalues_and_eigenvectors",
+            "matrix_multiplication",
+            "gradient_descent",
+            "newtons_method",
+            "quadratic_programming",
+            "steepest_descent_method"
+        ],
+        "further_readings": [
+            "nonlinear_conjugate_gradient_methods",
+            "preconditioning_techniques",
+            "conjugate_gradient_on_parallel_architectures",
+            "conjugate_gradient_for_sparse_matrices",
+            "conjugate_gradient_for_nonlinear_problems",
+            "conjugate_gradient_and_neural_networks",
+            "conjugate_gradient_for_inverse_problems",
+            "conjugate_gradient_for_optimal_control",
+            "conjugate_gradient_for_pde_solvers",
+            "conjugate_gradient_for_eigenvalue_problems"
+        ]
+    },
+    "linear_algebra": {
+        "title": "Linear Algebra",
+        "prerequisites": [
+            "vector_calculus",
+            "matrix_calculus",
+            "eigenvalues_and_eigenvectors",
+            "linear_regression",
+            "principal_component_analysis",
+            "singular_value_decomposition"
+        ],
+        "further_readings": [
+            "matrix_factorization_methods",
+            "tensor_algebra",
+            "graph_theory_and_networks",
+            "manifold_learning",
+            "optimization_for_machine_learning"
+        ]
+    },
+    "eigenvalues_and_eigenvectors": {
+        "title": "Eigenvalues and Eigenvectors",
+        "prerequisites": [
+            "linear_algebra",
+            "matrix_multiplication",
+            "vector_spaces",
+            "linear_transformations",
+            "determinants",
+            "diagonalization",
+            "spectral_theorem",
+            "orthogonal_matrices",
+            "singular_value_decomposition",
+            "principal_component_analysis"
+        ],
+        "further_readings": [
+            "eigenfaces",
+            "eigenvector_centrality",
+            "pagerank_algorithm",
+            "graph_laplacian",
+            "kernel_pca",
+            "non-negative_matrix_factorization",
+            "tensor_decomposition",
+            "quantum_eigenvalue_algorithm",
+            "laplacian_eigenmaps",
+            "spectral_clustering"
+        ]
+    },
+    "matrix_multiplication": {
+        "title": "Matrix Multiplication",
+        "prerequisites": [
+            "linear_algebra",
+            "matrix_operations",
+            "vector_calculus",
+            "gradient_descent",
+            "backpropagation",
+            "optimization_algorithms",
+            "deep_learning_frameworks"
+        ],
+        "further_readings": [
+            "singular_value_decomposition",
+            "eigendecomposition",
+            "non-negative_matrix_factorization",
+            "tensor_calculus",
+            "convolutional_neural_networks",
+            "recurrent_neural_networks",
+            "graph_neural_networks"
+        ]
+    },
+    "newtons_method": {
+        "title": "Newton's Method",
+        "prerequisites": [
+            "calculus",
+            "optimization_algorithms"
+        ],
+        "further_readings": [
+            "quasi_newton_methods",
+            "conjugate_gradient_method",
+            "stochastic_gradient_descent"
+        ]
+    },
+    "calculus": {
+        "title": "Calculus",
+        "prerequisites": [
+            "algebra",
+            "geometry",
+            "trigonometry",
+            "limits",
+            "derivatives",
+            "integrals"
+        ],
+        "further_readings": [
+            "differential_equations",
+            "vector_calculus",
+            "real_analysis",
+            "partial_differential_equations",
+            "numerical_analysis"
+        ]
+    },
+    "quasi_newton_methods": {
+        "title": "Quasi-Newton Methods",
+        "prerequisites": [
+            "optimization_algorithms",
+            "gradient_descent",
+            "newtons_method",
+            "hessians",
+            "line_search_algorithms"
+        ],
+        "further_readings": [
+            "bfgs_method",
+            "l-bfgs_method",
+            "limited_memory_methods",
+            "nonlinear_conjugate_gradient_method",
+            "truncated_newton_method",
+            "quasi-newton_methods_for_sparse_problems",
+            "trust_region_methods",
+            "stochastic_quasi-newton_methods",
+            "bayesian_quasi-newton_methods",
+            "quasi-newton_methods_for_large_scale_problems"
+        ]
+    },
+    "algebra": {
+        "title": "Algebra",
+        "prerequisites": [
+            "basic_mathematics",
+            "elementary_algebra",
+            "linear_algebra",
+            "abstract_algebra",
+            "number_theory"
+        ],
+        "further_readings": [
+            "homological_algebra",
+            "commutative_algebra",
+            "algebraic_geometry",
+            "algebraic_topology",
+            "representation_theory",
+            "category_theory",
+            "group_theory",
+            "ring_theory",
+            "field_theory",
+            "galois_theory"
+        ]
+    },
+    "geometry": {
+        "title": "Geometry",
+        "prerequisites": [
+            "linear_algebra",
+            "trigonometry",
+            "calculus",
+            "vectors",
+            "matrices"
+        ],
+        "further_readings": [
+            "differential_geometry",
+            "topology",
+            "algebraic_geometry",
+            "computational_geometry",
+            "symplectic_geometry"
+        ]
+    },
+    "trigonometry": {
+        "title": "Trigonometry",
+        "prerequisites": [
+            "geometry",
+            "algebra",
+            "functions",
+            "calculus",
+            "vectors",
+            "matrix_algebra",
+            "complex_numbers",
+            "geometry_of_shapes",
+            "geometry_of_transformations"
+        ],
+        "further_readings": [
+            "applications_of_trigonometry",
+            "trigonometry_in_calculus",
+            "spherical_trigonometry",
+            "hyperbolic_trigonometry",
+            "trigonometric_series",
+            "fourier_series",
+            "trigonometry_in_complex_analysis",
+            "trigonometry_in_number_theory",
+            "trigonometry_in_geometry"
+        ]
+    },
+    "limits": {
+        "title": "Limits",
+        "prerequisites": [
+            "calculus",
+            "continuous_functions",
+            "epsilon_delta_definition",
+            "differentiability",
+            "derivatives",
+            "integrals",
+            "series_convergence",
+            "sequences_convergence",
+            "metric_spaces"
+        ],
+        "further_readings": [
+            "improper_integrals",
+            "uniform_convergence",
+            "power_series",
+            "taylor_series",
+            "laplace_transforms",
+            "fourier_series",
+            "cauchy_sequences",
+            "riemann_integral",
+            "lebesgue_integral"
+        ]
+    },
+    "derivatives": {
+        "title": "Derivatives",
+        "prerequisites": [
+            "limits",
+            "differentiation_rules",
+            "optimization_algorithms",
+            "linear_algebra",
+            "probability_distributions"
+        ],
+        "further_readings": [
+            "stochastic_calculus",
+            "partial_derivatives",
+            "automatic_differentiation",
+            "numerical_methods_for_derivatives",
+            "option_pricing_models",
+            "credit_derivatives"
+        ]
+    },
+    "integrals": {
+        "title": "Integrals",
+        "prerequisites": [
+            "limits",
+            "derivatives",
+            "antiderivatives",
+            "Riemann_sum",
+            "definite_integral",
+            "improper_integral",
+            "integration_by_parts",
+            "integration_by_substitution",
+            "partial_fraction_decomposition",
+            "sequences_and_series"
+        ],
+        "further_readings": [
+            "multivariable_calculus",
+            "vector_calculus",
+            "differential_equations",
+            "Fourier_series",
+            "Laplace_transforms",
+            "numerical_integration",
+            "complex_analysis",
+            "measure_theory",
+            "Lebesgue_integration",
+            "functional_analysis"
+        ]
+    },
+    "differential_equations": {
+        "title": "Differential Equations",
+        "prerequisites": [
+            "calculus",
+            "linear_algebra",
+            "partial_differential_equations",
+            "ordinary_differential_equations",
+            "numerical_analysis",
+            "mathematical_modeling",
+            "optimization",
+            "probability_theory",
+            "stochastic_processes"
+        ],
+        "further_readings": [
+            "dynamical_systems",
+            "chaos_theory",
+            "machine_learning_and_differential_equations",
+            "deep_learning_for_differential_equations",
+            "neural_odes",
+            "control_theory",
+            "optimization_for_pde",
+            "finite_element_methods",
+            "boundary_element_methods"
+        ]
+    },
+    "vector_calculus": {
+        "title": "Vector Calculus",
+        "prerequisites": [
+            "multivariable_calculus",
+            "linear_algebra",
+            "differential_equations",
+            "partial_differential_equations",
+            "gradient_descent",
+            "optimization_algorithms",
+            "mathematical_analysis_of_algorithms"
+        ],
+        "further_readings": [
+            "manifold_learning",
+            "tensor_calculus",
+            "differential_geometry",
+            "topological_data_analysis",
+            "applied_mathematics_for_machine_learning",
+            "mathematical_foundations_of_deep_learning",
+            "computational_mathematics",
+            "numerical_analysis",
+            "mathematical_optimization"
+        ]
+    },
+    "real_analysis": {
+        "title": "Real Analysis",
+        "prerequisites": [
+            "calculus",
+            "real_numbers",
+            "metric_spaces",
+            "topology",
+            "sequences_and_series",
+            "differentiation",
+            "integration",
+            "metric_spaces",
+            "measure_theory",
+            "point_set_topology"
+        ],
+        "further_readings": [
+            "functional_analysis",
+            "complex_analysis",
+            "real_analysis_textbooks",
+            "measure_theory_textbooks",
+            "topology_textbooks"
+        ]
+    },
+    "q_learning": {
+        "title": "Q Learning",
+        "prerequisites": [
+            "reinforcement_learning",
+            "markov_decision_process",
+            "value_iteration",
+            "bellman_equation",
+            "epsilon_greedy_policy",
+            "temporal_difference_learning",
+            "dynamic_programming",
+            "monte_carlo_methods",
+            "function_approximation",
+            "neural_networks"
+        ],
+        "further_readings": [
+            "deep_q_networks",
+            "double_q_learning",
+            "actor_critic_methods",
+            "policy_gradient_methods",
+            "off_policy_learning",
+            "multi_agent_reinforcement_learning",
+            "hierarchical_reinforcement_learning",
+            "inverse_reinforcement_learning",
+            "imitation_learning",
+            "meta_learning"
+        ]
+    },
+    "reinforcement_learning": {
+        "title": "Reinforcement Learning",
+        "prerequisites": [
+            "markov_decision_processes",
+            "dynamic_programming",
+            "monte_carlo_methods",
+            "temporal_difference_learning",
+            "q_learning",
+            "deep_learning"
+        ],
+        "further_readings": [
+            "policy_gradient_methods",
+            "actor_critic_methods",
+            "multi_agent_reinforcement_learning",
+            "hierarchical_reinforcement_learning",
+            "imitation_learning",
+            "exploration_exploitation_tradeoff",
+            "reinforcement_learning_in_robotics",
+            "reinforcement_learning_in_games",
+            "reinforcement_learning_in_natural_language_processing"
         ]
     }
 }

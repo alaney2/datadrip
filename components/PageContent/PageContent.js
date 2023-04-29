@@ -6,6 +6,7 @@ import BackToTop from '@/components/PageContent/BackToTop';
 import MarkDown from '@/components/PageContent/Markdown';
 import SkipLink from '@/components/SkipLink';
 import NorthIndicator from '@/components/PageContent/NorthIndicator';
+import Divider from '@mui/material/Divider';
 
 
 function extractHeadings(markdown) {
@@ -25,7 +26,7 @@ function extractHeadings(markdown) {
   return headings;
 }
 
-export default function PageContent({ content, filename, leftSidebar=true, rightSidebar=true }) {
+export default function PageContent({ content, filename, leftSidebar=true, rightSidebar=true, showLastUpdated=true }) {
   const headings = extractHeadings(content);
   const [lastUpdated, setLastUpdated] = React.useState(null);
   const mainContentId = 'main-content';
@@ -66,11 +67,14 @@ export default function PageContent({ content, filename, leftSidebar=true, right
           rightSidebar={rightSidebar} 
         />
       </Box>
+
       <Box sx={{ px: { xs: 1, sm: 2 } }}>
+        {showLastUpdated && (
         <Typography variant="caption" color="text.secondary">
           Last updated:{' '}
           {lastUpdated ? new Date(lastUpdated).toLocaleString() : 'Loading...'}
         </Typography>
+        )}
       </Box>
       <BackToTop />
     </Box>
