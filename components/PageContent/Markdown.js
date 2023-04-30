@@ -65,7 +65,7 @@ export default function Markdown({ content, headings, filename, leftSidebar, rig
         sx={{
           flexGrow: 1,
           display: 'grid',
-          gridTemplateColumns: { 
+          gridTemplateColumns: {
             md: '240px 1fr ', 
             lg: '240px 1fr 240px', 
             xl: '320px 1fr 320px' 

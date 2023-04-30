@@ -9,23 +9,25 @@ import Button from '@mui/material/Button';
 const filename = 'about.md';
 export default function MarkdownPage({ markdownContent }) {
   return (
-    <Box sx={{ mb: 16 }}>
+    <Box sx={{ display: 'flex', flexDirection: 'column', mb: 16 }}>
       <Box sx={{ height: '100vh' }}>
         <PageContent content={markdownContent} filename={filename} leftSidebar={false} showLastUpdated={false} />
       </Box>
 
       <Box
-        sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', mb: '32vh' }}
+        sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100vw', height: '20vh' }}
       >
         <Link href="/contact" passHref>
           <Button
             variant="contained"
             color="secondary"
             sx={{
-              width: '80vw',
+              // mb: 0,
               height: '15vw',
-              fontSize: '8rem',
-              padding: '32px',
+              width: '75vw',
+              position: 'relative',
+              fontSize: '5vw', // Adjust font size here
+              padding: 4,
               textTransform: 'capitalize',
               borderRadius: '250px',
               border: '36px solid',
