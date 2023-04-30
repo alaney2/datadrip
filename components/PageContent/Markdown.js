@@ -66,9 +66,10 @@ export default function Markdown({ content, headings, filename, leftSidebar, rig
           flexGrow: 1,
           display: 'grid',
           gridTemplateColumns: {
-            md: '240px 1fr ', 
-            lg: '240px 1fr 240px', 
-            xl: '320px 1fr 320px' 
+            xs: '1fr',
+            md: leftSidebar ? '240px 1fr' : '1fr', 
+            lg: '240px 1fr 240px',
+            xl: '320px 1fr 320px',
           },
           mx: 'auto',
           px: { xs: 1, sm: 2 },
