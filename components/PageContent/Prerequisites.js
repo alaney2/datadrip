@@ -1,5 +1,6 @@
 import React from 'react';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 import Box from '@mui/material/Box';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
@@ -47,25 +48,27 @@ export default function Prerequisites({ prerequisites, defaultExpanded=false }) 
         <Divider />
         <List component="div">
           {prerequisites.map((prerequisite, index) => (
-            <ListItem key={index} disablePadding>
-              <ListItemButton
-                sx={{
-                  borderRadius: '4px',
-                  pl: 1.5,
-                  py: 0.5,
-                  margin: 0.5,
-                  '&:hover': {
-                    backgroundColor: theme => alpha(theme.palette.primary.main, 0.5),
-                  },
-                  ml: 0,
-                }}
-                onClick={() => router.push(`/${prerequisite.id}`)}
-              >
-                <ListItemText
-                  primary={prerequisite.title ? prerequisite.title : prerequisite.id}
-                  primaryTypographyProps={{ variant: 'body2' }}
-                />
-              </ListItemButton>
+            <ListItem key={index} disablePadding sx={{ display: 'flex', justifyContent: 'space-between' }}>
+              <Link href={`/${prerequisite.id}`} passHref>
+                <ListItemButton
+                  sx={{
+                    borderRadius: '4px',
+                    pl: 1.5,
+                    py: 0.5,
+                    margin: 0.5,
+                    '&:hover': {
+                      backgroundColor: theme => alpha(theme.palette.primary.main, 0.5),
+                    },
+                    ml: 0,
+                  }}
+                  onClick={() => router.push(`/${prerequisite.id}`)}
+                >
+                  <ListItemText
+                    primary={prerequisite.title ? prerequisite.title : prerequisite.id}
+                    primaryTypographyProps={{ variant: 'body2' }}
+                  />
+                </ListItemButton>
+              </Link>
               <IconButton
                 sx={{ 
                   marginRight: 1,

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemButton from '@mui/material/ListItemButton';
@@ -50,37 +51,39 @@ export function SortableItem({ handle=false, id, item, index, handleRemoveFromRe
   };
 
   return (
-    <ListItem ref={setNodeRef} style={style} {...attributes} {...listeners} sx={{m: 0, p: 0}}>
-      <ListItemButton
-        onClick={handleClick}
-        sx={{
-          ...dragIndicatorStyle,
-          py: 0,
-          px: 2,
-          ml: '8px',
-          m: 0,
-          borderLeft: '2px solid transparent',
-          '&:hover': {
-            backgroundColor: 'transparent',
-            borderLeft: `2px solid ${theme.palette.primary.main}`
-          },
-        }}
-      >
-        <ListItemText 
-          primary={item.title ? item.title : item.id}
+    <ListItem ref={setNodeRef} style={style} {...attributes} {...listeners} sx={{ m: 0, p: 0, display: 'flex', justifyContent: 'space-between' }}>
+      <Link href={`/${item.id}`} passHref>
+        <ListItemButton
+          onClick={handleClick}
           sx={{
+            ...dragIndicatorStyle,
+            py: 0,
+            px: 2,
+            ml: '8px',
             m: 0,
-            p: 1,
+            borderLeft: '2px solid transparent',
             '&:hover': {
-              color: theme.palette.primary.main,
               backgroundColor: 'transparent',
+              borderLeft: `2px solid ${theme.palette.primary.main}`
             },
           }}
-          primaryTypographyProps={{
-            variant: 'body2',
-          }}
-        />
-      </ListItemButton>
+        >
+          <ListItemText 
+            primary={item.title ? item.title : item.id}
+            sx={{
+              m: 0,
+              p: 1,
+              '&:hover': {
+                color: theme.palette.primary.main,
+                backgroundColor: 'transparent',
+              },
+            }}
+            primaryTypographyProps={{
+              variant: 'body2',
+            }}
+          />
+        </ListItemButton>
+      </Link>
       <IconButton
         color="inherit"
         onClick={(e) => {

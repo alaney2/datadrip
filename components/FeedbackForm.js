@@ -8,10 +8,19 @@ const FeedbackForm = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [feedback, setFeedback] = useState('');
+  const [formMessage, setFormMessage] = useState('');
+  const [isSuccessMessage, setIsSuccessMessage] = useState(false);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    // Process form data here and send it to your backend
+
+    // Validation checks
+    if (!name.trim() || !email.trim() || !feedback.trim()) {
+      setFormMessage('All fields are required.');
+      setIsSuccessMessage(false);
+      return;
+    }
+
     const trimmedName = name.trim();
     const trimmedEmail = email.trim();
     const trimmedFeedback = feedback.trim();
@@ -31,23 +40,26 @@ const FeedbackForm = () => {
       });
   
       if (response.ok) {
-        alert('Feedback submitted successfully');
+        setFormMessage('Feedback submitted successfully');
+        setIsSuccessMessage(true);
         setName('');
         setEmail('');
         setFeedback('');
       } else {
-        alert('Failed to submit feedback');
+        setFormMessage('Failed to submit feedback');
+        setIsSuccessMessage(false);
       }
     } catch (error) {
       console.error('Error:', error);
-      alert('Failed to submit feedback');
+      setFormMessage('Failed to submit feedback');
+      setIsSuccessMessage(false);
     }
   };
 
   return (
     <Box component="form" onSubmit={handleSubmit} sx={{ maxWidth: '400px', margin: 'auto' }}>
       <Typography variant="h4" gutterBottom>
-        Feedback
+        Contact
       </Typography>
 
       <TextField
@@ -80,6 +92,15 @@ const FeedbackForm = () => {
       <Button type="submit" variant="contained" color="primary" sx={{ marginTop: '16px' }}>
         Submit
       </Button>
+
+      {formMessage && (
+        <Typography
+          variant="body1"
+          sx={{ marginTop: '16px', color: isSuccessMessage ? 'success.main' : 'error.main' }}
+        >
+          {formMessage}
+        </Typography>
+      )}
     </Box>
   );
 };

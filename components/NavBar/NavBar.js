@@ -116,41 +116,43 @@ export default function NavBar(props) {
                   />
                   <MenuIcon />
                 </IconButton>
-                <IconButton
-                  onClick={() => router.push('/')}
-                  variant="text"
-                  color="inherit"
-                  sx={{
-                    ml: 0,
-                    mx: 0,
-                    '&:hover': {
-                      backgroundColor: 'transparent',
-                      color: (theme) => theme.palette.primary.main
-                    },
-                    '&.Mui-focusVisible': {
-                      color: (theme) => theme.palette.primary.main,
-                    },
-                  }}
-                >
-                  {isSmScreen ? (
-                    <CottageIcon fontSize="medium" />
-                  ) : (
-                    <Typography
-                      variant="h6"
-                      noWrap
-                      color="inherit"
-                      sx={{
-                        fontWeight: 700, // Make the text bolder
-                        textShadow: '1px 1px 3px rgba(0, 0, 0, 0.3)', // Add a text shadow
-                        letterSpacing: '.08rem',
-                        fontFamily: 'Caveat, cursive',
-                        fontSize: '1.5rem',
-                      }}
-                    >
-                      DataDrip
-                    </Typography>
-                  )}
-                </IconButton>
+
+                <Link href="/" passHref >
+                  <IconButton
+                    variant="text"
+                    color="inherit"
+                    sx={{
+                      ml: 0,
+                      mx: 0,
+                      '&:hover': {
+                        backgroundColor: 'transparent',
+                        color: (theme) => theme.palette.primary.main
+                      },
+                      '&.Mui-focusVisible': {
+                        color: (theme) => theme.palette.primary.main,
+                      },
+                    }}
+                  >
+                    {isSmScreen ? (
+                      <CottageIcon fontSize="medium" />
+                    ) : (
+                      <Typography
+                        variant="h6"
+                        noWrap
+                        color="inherit"
+                        sx={{
+                          fontWeight: 700,
+                          textShadow: '1px 1px 3px rgba(0, 0, 0, 0.3)',
+                          letterSpacing: '.08rem',
+                          fontFamily: 'Caveat, cursive',
+                          fontSize: '1.5rem',
+                        }}
+                      >
+                        DataDrip
+                      </Typography>
+                    )}
+                  </IconButton>
+                </Link>
               </Box>
               <Box sx={{ display: 'flex', alignItems: 'center', }}>
                 <Box sx={{ mr: { xs: 0, sm: 2 } }}>
