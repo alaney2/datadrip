@@ -84,7 +84,7 @@ const darkColors = {
   primary: '#7c4dff',
   secondary: '#a576ff',
   backgroundDefault: '#0A1929',
-  backgroundPaper: '#0A1929',
+  backgroundPaper: '#0f263e',
   textPrimary: 'rgba(217, 217, 217, 0.95)',
   textSecondary: '#E7EBF0',
 };

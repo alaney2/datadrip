@@ -10,6 +10,7 @@ import DragIndicatorIcon from '@mui/icons-material/DragIndicator';
 import { useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import { useTheme } from '@mui/material/styles';
+import wikiConnections from '@/wiki-connections.json';
 
 
 export function SortableItem({ handle=false, id, item, index, handleRemoveFromReadingList, isBeingDragged }) {
@@ -46,15 +47,42 @@ export function SortableItem({ handle=false, id, item, index, handleRemoveFromRe
     cursor: 'grab',
   };
 
-  const handleClick = () => {
-    router.push(`/${item.id}`);
-  };
-
   return (
     <ListItem ref={setNodeRef} style={style} {...attributes} {...listeners} sx={{ m: 0, p: 0, display: 'flex', justifyContent: 'space-between' }}>
-      <Link href={`/${item.id}`} passHref>
+      {wikiConnections[item.id] ? (
+        <Link href={`/${item.id}`} passHref>
+          <ListItemButton
+            sx={{
+              ...dragIndicatorStyle,
+              py: 0,
+              px: 2,
+              ml: '8px',
+              m: 0,
+              borderLeft: '2px solid transparent',
+              '&:hover': {
+                backgroundColor: 'transparent',
+                borderLeft: `2px solid ${theme.palette.primary.main}`,
+              },
+            }}
+          >
+            <ListItemText
+              primary={item.title ? item.title : item.id}
+              sx={{
+                m: 0,
+                p: 1,
+                '&:hover': {
+                  color: theme.palette.primary.main,
+                  backgroundColor: 'transparent',
+                },
+              }}
+              primaryTypographyProps={{
+                variant: 'body2',
+              }}
+            />
+          </ListItemButton>
+        </Link>
+      ) : (
         <ListItemButton
-          onClick={handleClick}
           sx={{
             ...dragIndicatorStyle,
             py: 0,
@@ -64,11 +92,11 @@ export function SortableItem({ handle=false, id, item, index, handleRemoveFromRe
             borderLeft: '2px solid transparent',
             '&:hover': {
               backgroundColor: 'transparent',
-              borderLeft: `2px solid ${theme.palette.primary.main}`
+              borderLeft: `2px solid ${theme.palette.primary.main}`,
             },
           }}
         >
-          <ListItemText 
+          <ListItemText
             primary={item.title ? item.title : item.id}
             sx={{
               m: 0,
@@ -83,7 +111,7 @@ export function SortableItem({ handle=false, id, item, index, handleRemoveFromRe
             }}
           />
         </ListItemButton>
-      </Link>
+      )}
       <IconButton
         color="inherit"
         onClick={(e) => {

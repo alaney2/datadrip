@@ -56,12 +56,17 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-const StyledList = styled(List)({
+const StyledList = styled(List)(({ theme }) => ({
   padding: '16px 0',
   maxHeight: '400px',
-  width: '300px',
+  // width: '300px',
+  width: '275px',
+
   overflowY: 'auto',
-});
+  border: (theme) => `1px solid ${theme.palette.primary.main}`, // Add this line
+  borderRadius: 12, // Add this line to give the border a rounded edge
+  backgroundColor: theme.palette.background.paper,
+}));
 
 const StyledListItem = styled(ListItem)(({ theme }) => ({
   '&:hover': {
@@ -224,7 +229,7 @@ export default function SearchMobile() {
             ref={outputRef}
             style={{
               position: 'absolute',
-              top: '100%',
+              top: '120%',
               zIndex: theme.zIndex.appBar + 3,
               backgroundColor: theme.palette.background.paper,
               boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',

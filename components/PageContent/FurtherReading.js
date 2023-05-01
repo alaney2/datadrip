@@ -14,6 +14,7 @@ import Divider from '@mui/material/Divider';
 import ReadingListButton from '@/components/PageContent/ReadingListButton';
 import { alpha } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
+import wikiConnections from '@/wiki-connections.json';
 
 
 export default function FurtherReading({ furtherReadings, defaultExpanded=false }) {
@@ -50,6 +51,7 @@ export default function FurtherReading({ furtherReadings, defaultExpanded=false 
           {furtherReadings.map((reading, index) => (
             <ListItem key={index} disablePadding sx={{ display: 'flex', justifyContent: 'space-between' }}>
               <Box sx={{ flexGrow: 1 }}>
+              {wikiConnections[reading.id] ? (
                 <Link href={`/${reading.id}`} passHref>
                   <ListItemButton
                     sx={{
@@ -58,7 +60,7 @@ export default function FurtherReading({ furtherReadings, defaultExpanded=false 
                       py: 0.5,
                       margin: 0.5,
                       '&:hover': {
-                        backgroundColor: theme => alpha(theme.palette.primary.main, 0.5),
+                        backgroundColor: (theme) => alpha(theme.palette.primary.main, 0.5),
                       },
                       ml: 0,
                     }}
@@ -66,11 +68,29 @@ export default function FurtherReading({ furtherReadings, defaultExpanded=false 
                   >
                     <ListItemText
                       primary={reading.title ? reading.title : reading.id}
-                      primaryTypographyProps={{ variant: 'body2', }}
-                      
+                      primaryTypographyProps={{ variant: 'body2' }}
                     />
                   </ListItemButton>
                 </Link>
+              ) : (
+                <ListItemButton
+                  sx={{
+                    borderRadius: '4px',
+                    pl: 1.5,
+                    py: 0.5,
+                    margin: 0.5,
+                    '&:hover': {
+                      backgroundColor: (theme) => alpha(theme.palette.primary.main, 0.5),
+                    },
+                    ml: 0,
+                  }}
+                >
+                  <ListItemText
+                    primary={reading.title ? reading.title : reading.id}
+                    primaryTypographyProps={{ variant: 'body2' }}
+                  />
+                </ListItemButton>
+              )}
               </Box>
               <IconButton
                 sx={{

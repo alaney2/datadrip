@@ -14,6 +14,7 @@ import Divider from '@mui/material/Divider';
 import ReadingListButton from '@/components/PageContent/ReadingListButton';
 import { alpha } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
+import wikiConnections from '@/wiki-connections.json';
 
 
 export default function Prerequisites({ prerequisites, defaultExpanded=false }) {
@@ -50,6 +51,7 @@ export default function Prerequisites({ prerequisites, defaultExpanded=false }) 
           {prerequisites.map((prerequisite, index) => (
             <ListItem key={index} disablePadding sx={{ display: 'flex', justifyContent: 'space-between' }}>
               <Box sx={{ flexGrow: 1 }}>
+              {wikiConnections[prerequisite.id] ? (
                 <Link href={`/${prerequisite.id}`} passHref>
                   <ListItemButton
                     sx={{
@@ -58,11 +60,10 @@ export default function Prerequisites({ prerequisites, defaultExpanded=false }) 
                       py: 0.5,
                       margin: 0.5,
                       '&:hover': {
-                        backgroundColor: theme => alpha(theme.palette.primary.main, 0.5),
+                        backgroundColor: (theme) => alpha(theme.palette.primary.main, 0.5),
                       },
                       ml: 0,
                     }}
-                    onClick={() => router.push(`/${prerequisite.id}`)}
                   >
                     <ListItemText
                       primary={prerequisite.title ? prerequisite.title : prerequisite.id}
@@ -70,8 +71,26 @@ export default function Prerequisites({ prerequisites, defaultExpanded=false }) 
                     />
                   </ListItemButton>
                 </Link>
+              ) : (
+                <ListItemButton
+                  sx={{
+                    borderRadius: '4px',
+                    pl: 1.5,
+                    py: 0.5,
+                    margin: 0.5,
+                    '&:hover': {
+                      backgroundColor: (theme) => alpha(theme.palette.primary.main, 0.5),
+                    },
+                    ml: 0,
+                  }}
+                >
+                  <ListItemText
+                    primary={prerequisite.title ? prerequisite.title : prerequisite.id}
+                    primaryTypographyProps={{ variant: 'body2' }}
+                  />
+                </ListItemButton>
+              )}
               </Box>
-
               <IconButton
                 sx={{ 
                   marginRight: 1,

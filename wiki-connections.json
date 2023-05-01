@@ -198,28 +198,24 @@
     "convex_optimization": {
         "title": "Convex Optimization",
         "prerequisites": [
+            "linear_algebra",
+            "calculus",
             "optimization_algorithms",
             "gradient_descent",
-            "newtons_method",
-            "interior_point_methods",
-            "subgradient_methods",
-            "duality",
-            "lagrange_multipliers",
-            "semidefinite_programming"
+            "lagrange_multipliers"
         ],
         "further_readings": [
-            "convex_analysis",
+            "non_convex_optimization",
+            "semidefinite_programming",
+            "interior_point_methods",
+            "stochastic_gradient_descent",
             "proximal_gradient_methods",
-            "augmented_lagrangian_methods",
-            "alternating_direction_method_of_multipliers",
-            "split_bregman",
-            "frank_wolfe_algorithm",
-            "projected_gradient_descent",
-            "steepest_descent",
-            "conjugate_gradient",
-            "linear_programming",
-            "quadratic_programming",
-            "second_order_cone_programming"
+            "duality_in_optimization",
+            "online_learning",
+            "matrix_completion",
+            "compressed_sensing",
+            "robust_optimization",
+            "distributed_optimization"
         ]
     },
     "deep_learning_frameworks": {
@@ -1485,7 +1481,1600 @@
     },
     "policy_gradient_methods": {
         "title": "Policy Gradient Methods",
-        "prerequisites": ["reinforcement_learning", "markov_decision_process", "value_iteration", "q_learning", "monte_carlo_tree_search", "neural_networks", "backpropagation", "stochastic_gradient_descent", "optimization_algorithms", "gradient_descent", "convolutional_neural_networks"],
-        "further_readings": ["actor_critic_methods", "proximal_policy_optimization", "trust_region_policy_optimization", "asynchronous_advantage_actor_critic", "deep_deterministic_policy_gradient", "dual_learning", "imitation_learning", "reinforcement_learning_with_unsupervised_auxiliary_tasks", "hierarchical_reinforcement_learning", "multi_agent_reinforcement_learning"]
+        "prerequisites": [
+            "deep_learning_frameworks",
+            "backpropagation",
+            "stochastic_gradient_descent",
+            "reinforcement_learning",
+            "markov_decision_processes",
+            "monte_carlo_methods",
+            "temporal_difference_learning",
+            "value_iteration",
+            "q_learning"
+        ],
+        "further_readings": [
+            "actor_critic_methods",
+            "proximal_policy_optimization",
+            "trust_region_policy_optimization",
+            "off_policy_reinforcement_learning",
+            "imitation_learning",
+            "meta_learning",
+            "multi_agent_reinforcement_learning",
+            "hierarchical_reinforcement_learning",
+            "online_learning",
+            "continual_learning"
+        ]
+    },
+    "imitation_learning": {
+        "title": "Imitation Learning",
+        "prerequisites": [
+            "supervised_learning",
+            "reinforcement_learning",
+            "neural_networks",
+            "policy_gradient_methods"
+        ],
+        "further_readings": [
+            "inverse_reinforcement_learning",
+            "imitation_learning_in_robotics",
+            "multi_agent_imitation_learning",
+            "adversarial_imitation_learning",
+            "meta_imitation_learning",
+            "imitation_learning_in_natural_language_processing"
+        ]
+    },
+    "supervised_learning": {
+        "title": "Supervised Learning",
+        "prerequisites": [
+            "linear_algebra",
+            "calculus",
+            "probability_theory",
+            "statistics",
+            "gradient_descent",
+            "backpropagation",
+            "activation_functions",
+            "neural_networks",
+            "decision_trees",
+            "ensemble_methods",
+            "overfitting_and_underfitting"
+        ],
+        "further_readings": [
+            "semi_supervised_learning",
+            "active_learning",
+            "reinforcement_learning",
+            "transfer_learning",
+            "online_learning",
+            "multi_task_learning",
+            "interpretability_in_machine_learning",
+            "fairness_in_machine_learning",
+            "deep_learning_frameworks",
+            "machine_learning_in_practice"
+        ]
+    },
+    "neural_networks": {
+        "title": "Neural Networks",
+        "prerequisites": [
+            "linear_algebra",
+            "probability_theory",
+            "calculus",
+            "matrix_calculus",
+            "backpropagation",
+            "activation_functions",
+            "optimization_algorithms",
+            "gradient_descent",
+            "overfitting",
+            "convolutional_neural_networks"
+        ],
+        "further_readings": [
+            "recurrent_neural_networks",
+            "long_short_term_memory",
+            "transformer_networks",
+            "capsule_networks",
+            "generative_models",
+            "transfer_learning",
+            "semi_supervised_learning",
+            "reinforcement_learning",
+            "explainable_ai",
+            "neuroscience"
+        ]
+    },
+    "double_q_learning": {
+        "title": "Double Q Learning",
+        "prerequisites": [
+            "q_learning",
+            "reinforcement_learning",
+            "markov_decision_process",
+            "deep_learning",
+            "neural_networks",
+            "bellman_equations",
+            "action_value_functions",
+            "temporal_difference_learning",
+            "exploration_vs_exploitation",
+            "epsilon_greedy_policy"
+        ],
+        "further_readings": [
+            "dueling_network_architecture",
+            "prioritized_experience_replay",
+            "deep_reinforcement_learning",
+            "model_based_reinforcement_learning",
+            "continuous_control_with_deep_reinforcement_learning",
+            "hindsight_experience_replay",
+            "multi_agent_reinforcement_learning",
+            "imitation_learning",
+            "inverse_reinforcement_learning"
+        ]
+    },
+    "deep_learning": {
+        "title": "Deep Learning",
+        "prerequisites": [
+            "neural_networks",
+            "backpropagation",
+            "convolutional_neural_networks",
+            "recurrent_neural_networks",
+            "gradient_descent",
+            "stochastic_gradient_descent",
+            "optimization_algorithms",
+            "loss_functions",
+            "regularization_techniques",
+            "unsupervised_learning",
+            "supervised_learning"
+        ],
+        "further_readings": [
+            "transfer_learning",
+            "adversarial_attacks_and_defenses",
+            "semi_supervised_learning",
+            "reinforcement_learning",
+            "neural_style_transfer",
+            "image_captioning",
+            "object_detection",
+            "natural_language_processing",
+            "graph_neural_networks",
+            "generative_adversarial_networks"
+        ]
+    },
+    "action_value_functions": {
+        "title": "Action Value Functions",
+        "prerequisites": [
+            "reinforcement_learning",
+            "q_learning",
+            "bellman_equation",
+            "markov_decision_process",
+            "value_functions",
+            "temporal_difference_learning"
+        ],
+        "further_readings": [
+            "deep_q_networks",
+            "double_q_learning",
+            "dueling_network_architecture",
+            "prioritized_experience_replay",
+            "actor_critic_methods",
+            "policy_gradient_methods",
+            "off_policy_learning",
+            "multi_step_learning",
+            "exploration_exploitation_tradeoff",
+            "model_based_reinforcement_learning"
+        ]
+    },
+    "temporal_difference_learning": {
+        "title": "Temporal Difference Learning",
+        "prerequisites": [
+            "reinforcement_learning",
+            "markov_decision_processes",
+            "value_iteration_algorithm",
+            "policy_iteration_algorithm",
+            "q_learning",
+            "monte_carlo_methods",
+            "dynamic_programming",
+            "artificial_neural_networks",
+            "backpropagation",
+            "stochastic_gradient_descent"
+        ],
+        "further_readings": [
+            "sarsa_algorithm",
+            "expected_sarsa_algorithm",
+            "deep_q_networks",
+            "double_q_learning",
+            "prioritized_experience_replay",
+            "actor_critic_methods",
+            "asynchronous_advantage_actor_critic",
+            "model_based_rl",
+            "off_policy_evaluation",
+            "multi_agent_reinforcement_learning"
+        ]
+    },
+    "exploration_vs_exploitation": {
+        "title": "Exploration Vs Exploitation",
+        "prerequisites": [
+            "reinforcement_learning",
+            "multi-armed_bandits",
+            "markov_decision_processes",
+            "policy_gradient_methods",
+            "value_iteration",
+            "monte_carlo_methods"
+        ],
+        "further_readings": [
+            "bayesian_optimization",
+            "thompson_sampling",
+            "ucb_algorithm",
+            "epsilon_greedy_algorithm",
+            "online_learning",
+            "contextual_bandits",
+            "exploration_strategies",
+            "active_learning",
+            "bandit_algorithms_for_preference_learning"
+        ]
+    },
+    "epsilon_greedy_policy": {
+        "title": "Epsilon Greedy Policy",
+        "prerequisites": [
+            "multi-armed_bandit_problem",
+            "reinforcement_learning",
+            "markov_decision_process",
+            "value_iteration_algorithm",
+            "q-learning_algorithm"
+        ],
+        "further_readings": [
+            "upper_confidence_bound_algorithm",
+            "thompson_sampling_algorithm",
+            "monte_carlo_tree_search_algorithm",
+            "deep_q-learning_algorithm",
+            "policy_gradient_methods",
+            "actor-critic_methods"
+        ]
+    },
+    "dueling_network_architecture": {
+        "title": "Dueling Network Architecture",
+        "prerequisites": [
+            "convolutional_neural_networks",
+            "deep_learning_frameworks",
+            "reinforcement_learning",
+            "value_iteration_algorithm",
+            "q_learning",
+            "policy_iteration_algorithm",
+            "temporal_difference_learning",
+            "actor_critic_algorithm",
+            "monte_carlo_tree_search",
+            "deep_q_network"
+        ],
+        "further_readings": [
+            "double_dqn",
+            "dueling_double_dqn",
+            "rainbow_algorithm",
+            "hierarchical_reinforcement_learning",
+            "imitation_learning",
+            "inverse_reinforcement_learning",
+            "multi_agent_reinforcement_learning",
+            "off_policy_reinforcement_learning",
+            "on_policy_reinforcement_learning",
+            "procedural_content_generation"
+        ]
+    },
+    "prioritized_experience_replay": {
+        "title": "Prioritized Experience Replay",
+        "prerequisites": [
+            "reinforcement_learning",
+            "deep_q_networks",
+            "experience_replay",
+            "memory_management",
+            "neural_network_architectures",
+            "gradient_descent_optimization",
+            "markov_decision_processes",
+            "q_learning",
+            "epsilon_greedy_policy",
+            "temporal_difference_learning"
+        ],
+        "further_readings": [
+            "double_q_learning",
+            "dueling_network_architecture",
+            "rainbow_algorithm",
+            "actor_critic_methods",
+            "asynchronous_methods",
+            "batch_normalization",
+            "exploration_vs_exploitation",
+            "imitation_learning",
+            "online_learning",
+            "policy_gradient_methods"
+        ]
+    },
+    "deep_reinforcement_learning": {
+        "title": "Deep Reinforcement Learning",
+        "prerequisites": [
+            "reinforcement_learning",
+            "neural_networks",
+            "convolutional_neural_networks",
+            "recurrent_neural_networks",
+            "policy_gradient_methods",
+            "q_learning",
+            "actor_critic_methods",
+            "monte_carlo_tree_search",
+            "value_iteration",
+            "markov_decision_processes",
+            "dynamic_programming",
+            "bellman_equations"
+        ],
+        "further_readings": [
+            "hierarchical_reinforcement_learning",
+            "multi_agent_reinforcement_learning",
+            "imitation_learning",
+            "inverse_reinforcement_learning",
+            "exploration_vs_exploitation",
+            "curiosity_driven_learning",
+            "transfer_learning_in_reinforcement_learning",
+            "deep_reinforcement_learning_frameworks",
+            "continuous_action_spaces_in_deep_reinforcement_learning",
+            "safety_and_ethics_in_deep_reinforcement_learning"
+        ]
+    },
+    "model_based_reinforcement_learning": {
+        "title": "Model Based Reinforcement Learning",
+        "prerequisites": [
+            "reinforcement_learning",
+            "dynamic_programming",
+            "markov_decision_processes",
+            "value_iteration",
+            "policy_iteration",
+            "monte_carlo_methods",
+            "temporal_difference_learning",
+            "deep_learning",
+            "neural_networks",
+            "gradient_descent",
+            "backpropagation"
+        ],
+        "further_readings": [
+            "world_models",
+            "dreamer",
+            "planning_with_value_functions",
+            "model_based_rl_in_real_world",
+            "uncertainty_in_model_based_rl",
+            "transfer_learning_in_model_based_rl",
+            "exploration_in_model_based_rl",
+            "multi_task_model_based_rl",
+            "inverse_reinforcement_learning",
+            "imitation_learning"
+        ]
+    },
+    "continuous_control_with_deep_reinforcement_learning": {
+        "title": "Continuous Control With Deep Reinforcement Learning",
+        "prerequisites": [
+            "reinforcement_learning",
+            "deep_learning",
+            "policy_gradients",
+            "actor_critic_methods",
+            "value_iteration",
+            "markov_decision_processes",
+            "neural_networks",
+            "convolutional_neural_networks",
+            "batch_normalization",
+            "transfer_learning"
+        ],
+        "further_readings": [
+            "model_based_reinforcement_learning",
+            "hindsight_experience_replay",
+            "distributed_deep_reinforcement_learning",
+            "exploration_strategies_in_deep_rl",
+            "multi_agent_reinforcement_learning",
+            "imitation_learning",
+            "inverse_reinforcement_learning",
+            "off_policy_evaluation",
+            "meta_learning_in_rl",
+            "reinforcement_learning_in_robotics"
+        ]
+    },
+    "hindsight_experience_replay": {
+        "title": "Hindsight Experience Replay",
+        "prerequisites": [
+            "reinforcement_learning",
+            "deep_q_learning",
+            "value_iteration",
+            "policy_iteration",
+            "markov_decision_processes",
+            "neural_networks",
+            "stochastic_processes",
+            "temporal_difference_learning",
+            "function_approximation",
+            "monte_carlo_methods"
+        ],
+        "further_readings": [
+            "prioritized_experience_replay",
+            "double_q_learning",
+            "dueling_network_architecture",
+            "rainbow_algorithm",
+            "asynchronous_advantage_actor_critic",
+            "proximal_policy_optimization",
+            "deep_deterministic_policy_gradient",
+            "model_based_rl",
+            "exploration_strategies",
+            "imitation_learning"
+        ]
+    },
+    "multi_agent_reinforcement_learning": {
+        "title": "Multi Agent Reinforcement Learning",
+        "prerequisites": [
+            "reinforcement_learning",
+            "multi_agent_systems",
+            "game_theory",
+            "markov_decision_processes",
+            "deep_learning",
+            "neural_networks",
+            "probabilistic_graphical_models"
+        ],
+        "further_readings": [
+            "cooperative_and_competitive_multi_agent_learning",
+            "hierarchical_multi_agent_reinforcement_learning",
+            "multi_agent_deep_reinforcement_learning",
+            "decentralized_multi_agent_reinforcement_learning",
+            "multi_agent_reinforcement_learning_in_social_dilemmas",
+            "multi_agent_reinforcement_learning_with_communication",
+            "multi_agent_reinforcement_learning_in_robotics",
+            "multi_agent_reinforcement_learning_for_traffic_control"
+        ]
+    },
+    "inverse_reinforcement_learning": {
+        "title": "Inverse Reinforcement Learning",
+        "prerequisites": [
+            "reinforcement_learning",
+            "markov_decision_processes",
+            "dynamic_programming",
+            "stochastic_processes",
+            "optimization_algorithms",
+            "machine_learning_algorithms",
+            "deep_learning_frameworks"
+        ],
+        "further_readings": [
+            "imitation_learning",
+            "apprenticeship_learning",
+            "inverse_reinforcement_learning_with_neural_networks",
+            "inverse_reinforcement_learning_for_robotics",
+            "inverse_reinforcement_learning_for_autonomous_driving"
+        ]
+    },
+    "neural_style_transfer": {
+        "title": "Neural Style Transfer",
+        "prerequisites": [
+            "convolutional_neural_networks",
+            "transfer_learning",
+            "image_processing",
+            "optimization_algorithms"
+        ],
+        "further_readings": [
+            "fast_neural_style_transfer",
+            "neural_texture_synthesis",
+            "neural_doodle",
+            "style_transfer_for_videos",
+            "neural_style_transfer_on_mobile_devices",
+            "neural_style_transfer_for_3d_models"
+        ]
+    },
+    "image_captioning": {
+        "title": "Image Captioning",
+        "prerequisites": [
+            "convolutional_neural_networks",
+            "recurrent_neural_networks",
+            "attention_mechanisms",
+            "natural_language_processing",
+            "transfer_learning"
+        ],
+        "further_readings": [
+            "bottom_up_top_down_attention",
+            "dense_captioning",
+            "visual_question_answering",
+            "multimodal_embedding",
+            "self_attention",
+            "transformers",
+            "pretraining_techniques",
+            "image_captioning_benchmarks",
+            "multi_task_learning",
+            "data_augmentation"
+        ]
+    },
+    "object_detection": {
+        "title": "Object Detection",
+        "prerequisites": [
+            "convolutional_neural_networks",
+            "image_classification",
+            "image_segmentation",
+            "backpropagation",
+            "stochastic_gradient_descent",
+            "optimization_algorithms",
+            "deep_learning_frameworks",
+            "transfer_learning",
+            "non_maximum_suppression",
+            "region_proposal_network"
+        ],
+        "further_readings": [
+            "yolo",
+            "ssd",
+            "faster_rcnn",
+            "mask_rcnn",
+            "retinanet",
+            "efficientdet",
+            "object_tracking",
+            "object_detection_evaluation_metrics",
+            "multi_object_tracking_and_segmentation",
+            "video_object_detection"
+        ]
+    },
+    "natural_language_processing": {
+        "title": "Natural Language Processing",
+        "prerequisites": [
+            "machine_learning",
+            "statistical_inference",
+            "linear_algebra",
+            "probability_theory",
+            "linguistics",
+            "information_retrieval",
+            "algorithm_design_and_analysis",
+            "data_preprocessing",
+            "neural_networks",
+            "deep_learning"
+        ],
+        "further_readings": [
+            "named_entity_recognition",
+            "sentiment_analysis",
+            "text_classification",
+            "word_embedding",
+            "sequence_to_sequence_models",
+            "attention_mechanisms",
+            "language_modeling",
+            "question_answering",
+            "dialogue_systems",
+            "multilingual_nlp"
+        ]
+    },
+    "graph_neural_networks": {
+        "title": "Graph Neural Networks",
+        "prerequisites": [
+            "neural_networks",
+            "convolutional_neural_networks",
+            "recurrent_neural_networks",
+            "graph_theory",
+            "linear_algebra",
+            "calculus",
+            "probability_theory",
+            "optimization_algorithms",
+            "backpropagation",
+            "unsupervised_learning"
+        ],
+        "further_readings": [
+            "graph_convolutional_networks",
+            "message_passing_neural_networks",
+            "graph_embedding",
+            "graph_attention_networks",
+            "graph_classification",
+            "graph_generation",
+            "graph_data_preprocessing",
+            "graph_neural_network_frameworks",
+            "graph_neural_network_applications"
+        ]
+    },
+    "region_proposal_network": {
+        "title": "Region Proposal Network",
+        "prerequisites": [
+            "convolutional_neural_networks",
+            "object_detection",
+            "image_classification",
+            "non_maximum_suppression",
+            "anchor_boxes"
+        ],
+        "further_readings": [
+            "faster_rcnn",
+            "yolo",
+            "ssd",
+            "mask_rcnn",
+            "retinanet",
+            "efficientdet",
+            "object_tracking",
+            "instance_segmentation",
+            "video_object_detection"
+        ]
+    },
+    "non_maximum_suppression": {
+        "title": "Non-Maximum Suppression",
+        "prerequisites": [
+            "object_detection",
+            "intersection_over_union",
+            "anchor_boxes",
+            "convolutional_neural_networks"
+        ],
+        "further_readings": [
+            "region_proposal_networks",
+            "faster_rcnn",
+            "yolo",
+            "single_shot_multibox_detector",
+            "ssd_with_attention",
+            "corner_net"
+        ]
+    },
+    "intersection_over_union": {
+        "title": "Intersection over Union",
+        "prerequisites": [
+            "object_detection",
+            "bounding_boxes",
+            "image_segmentation"
+        ],
+        "further_readings": [
+            "non_max_suppression",
+            "mean_average_precision",
+            "F1_score",
+            "precision_recall_curve"
+        ]
+    },
+    "bounding_boxes": {
+        "title": "Bounding Boxes",
+        "prerequisites": [
+            "computer_vision",
+            "image_processing",
+            "object_detection",
+            "convolutional_neural_networks"
+        ],
+        "further_readings": [
+            "region_proposal_networks",
+            "mask_rcnn",
+            "yolov5",
+            "efficientdet",
+            "faster_rcnn",
+            "ssd",
+            "rcnn",
+            "object_tracking",
+            "image_segmentation"
+        ]
+    },
+    "non_max_suppression": {
+        "title": "Non Max Suppression",
+        "prerequisites": [
+            "object_detection",
+            "intersection_over_union",
+            "convolutional_neural_networks",
+            "bounding_box_regression"
+        ],
+        "further_readings": [
+            "faster_rcnn",
+            "yolo",
+            "ssd",
+            "region_proposal_network",
+            "panoptic_segmentation",
+            "hough_transform",
+            "mean_shift_clustering",
+            "tracking_algorithms"
+        ]
+    },
+    "mean_average_precision": {
+        "title": "Mean Average Precision",
+        "prerequisites": [
+            "precision_and_recall",
+            "confusion_matrix",
+            "classification_metrics"
+        ],
+        "further_readings": [
+            "average_precision_and_mean_average_precision",
+            "intersection_over_union",
+            "object_detection_metrics",
+            "retrieval_metrics",
+            "ranking_metrics"
+        ]
+    },
+    "f1_score": {
+        "title": "F1 Score",
+        "prerequisites": [
+            "precision",
+            "recall",
+            "confusion_matrix"
+        ],
+        "further_readings": [
+            "roc_curve",
+            "area_under_the_curve",
+            "accuracy_score",
+            "macro_f1_score",
+            "micro_f1_score"
+        ]
+    },
+    "image_processing": {
+        "title": "Image Processing",
+        "prerequisites": [
+            "convolutional_neural_networks",
+            "computer_vision",
+            "signal_processing",
+            "linear_algebra",
+            "probability_distributions",
+            "optimization_algorithms",
+            "deep_learning_frameworks"
+        ],
+        "further_readings": [
+            "image_segmentation",
+            "object_detection",
+            "image_classification",
+            "image_restoration",
+            "image_super_resolution",
+            "image_completion",
+            "style_transfer",
+            "image_captioning",
+            "face_recognition"
+        ]
+    },
+    "signal_processing": {
+        "title": "Signal Processing",
+        "prerequisites": [
+            "linear_algebra",
+            "calculus",
+            "probability_distributions",
+            "differential_equations",
+            "sampling_theorem",
+            "discrete_fourier_transform",
+            "z_transform",
+            "laplace_transform",
+            "convolution"
+        ],
+        "further_readings": [
+            "wavelets",
+            "filter_design",
+            "spectral_analysis",
+            "time_frequency_analysis",
+            "blind_source_separation",
+            "statistical_signal_processing",
+            "adaptive_filters"
+        ]
+    },
+    "image_restoration": {
+        "title": "Image Restoration",
+        "prerequisites": [
+            "image_processing",
+            "signal_processing",
+            "convolutional_neural_networks",
+            "deep_learning_frameworks",
+            "optimization_algorithms"
+        ],
+        "further_readings": [
+            "denoising_autoencoder",
+            "image_super-resolution",
+            "image_inpainting",
+            "blind_deconvolution",
+            "non-local_means_filtering",
+            "wavelet_transforms",
+            "total_variation_regularization",
+            "deep_image_prior",
+            "generative_models_for_image_restoration"
+        ]
+    },
+    "image_super_resolution": {
+        "title": "Image Super Resolution",
+        "prerequisites": [
+            "convolutional_neural_networks",
+            "backpropagation",
+            "stochastic_gradient_descent",
+            "loss_functions",
+            "optimization_algorithms",
+            "deep_learning_frameworks",
+            "image_processing",
+            "linear_algebra",
+            "digital_signal_processing"
+        ],
+        "further_readings": [
+            "image_colorization",
+            "image_inpainting",
+            "image_generation",
+            "image_classification",
+            "object_detection",
+            "style_transfer",
+            "neural_style_transfer",
+            "deep_dream"
+        ]
+    },
+    "image_completion": {
+        "title": "Image Completion",
+        "prerequisites": [
+            "convolutional_neural_networks",
+            "autoencoders",
+            "generative_models",
+            "deep_learning_frameworks",
+            "backpropagation",
+            "optimization_algorithms",
+            "loss_functions"
+        ],
+        "further_readings": [
+            "image_inpainting",
+            "texture_synthesis",
+            "super_resolution",
+            "style_transfer",
+            "domain_adaptation",
+            "disentangled_representation_learning",
+            "unsupervised_learning",
+            "semi_supervised_learning"
+        ]
+    },
+    "style_transfer": {
+        "title": "Style Transfer",
+        "prerequisites": [
+            "convolutional_neural_networks",
+            "backpropagation",
+            "stochastic_gradient_descent",
+            "optimization_algorithms",
+            "deep_learning_frameworks",
+            "image_processing",
+            "neural_style_transfer"
+        ],
+        "further_readings": [
+            "instance_normalization",
+            "conditional_instance_normalization",
+            "multi_style_transfer",
+            "fast_style_transfer",
+            "style_transfer_with_gans",
+            "style_transfer_with_vq_vae",
+            "style_transfer_evaluation_metrics",
+            "video_style_transfer",
+            "interactive_style_transfer",
+            "style_transfer_applications"
+        ]
+    },
+    "face_recognition": {
+        "title": "Face Recognition",
+        "prerequisites": [
+            "convolutional_neural_networks",
+            "transfer_learning",
+            "object_detection",
+            "image_classification",
+            "feature_extraction",
+            "neural_network_architectures"
+        ],
+        "further_readings": [
+            "face_detection",
+            "facial_landmark_detection",
+            "face_verification",
+            "face_identification",
+            "face_recognition_datasets",
+            "privacy_and_ethical_issues_in_face_recognition"
+        ]
+    },
+    "sampling_theorem": {
+        "title": "Sampling Theorem",
+        "prerequisites": [
+            "fourier_transform",
+            "signal_processing",
+            "nyquist_shannon_sampling_theorem"
+        ],
+        "further_readings": [
+            "quantization",
+            "aliasing",
+            "digital_signal_processing",
+            "discrete_fourier_transform",
+            "fast_fourier_transform",
+            "wavelet_transform",
+            "compressed_sensing",
+            "machine_learning_for_signal_processing",
+            "time_series_analysis"
+        ]
+    },
+    "discrete_fourier_transform": {
+        "title": "Discrete Fourier Transform",
+        "prerequisites": [
+            "fast_fourier_transform",
+            "signal_processing",
+            "complex_numbers",
+            "linear_algebra",
+            "sampling_theorem",
+            "time_series_analysis"
+        ],
+        "further_readings": [
+            "wavelet_transform",
+            "short_time_fourier_transform",
+            "spectral_analysis",
+            "spectrogram",
+            "power_spectrum",
+            "signal_filtering",
+            "deconvolution",
+            "autoregressive_models",
+            "machine_learning_for_signal_processing"
+        ]
+    },
+    "z_transform": {
+        "title": "Z Transform",
+        "prerequisites": [
+            "discrete_fourier_transform",
+            "laplace_transform",
+            "convolution",
+            "linear_time_invariant_systems",
+            "difference_equations"
+        ],
+        "further_readings": [
+            "digital_signal_processing",
+            "filter_design",
+            "signal_analysis_and_processing",
+            "spectral_analysis",
+            "time_series_analysis"
+        ]
+    },
+    "laplace_transform": {
+        "title": "Laplace Transform",
+        "prerequisites": [
+            "complex_analysis",
+            "differential_equations",
+            "fourier_transform",
+            "convolution",
+            "integral_transforms"
+        ],
+        "further_readings": [
+            "z_transform",
+            "laplace_transform_applications",
+            "laplace_transform_tables",
+            "partial_fraction_expansion",
+            "inverse_laplace_transform",
+            "laplace_transform_properties"
+        ]
+    },
+    "convolution": {
+        "title": "Convolution",
+        "prerequisites": [
+            "linear_algebra",
+            "matrix_multiplication",
+            "filtering",
+            "signal_processing"
+        ],
+        "further_readings": [
+            "convolutional_neural_networks",
+            "edge_detection",
+            "image_segmentation",
+            "laplace_transform",
+            "fourier_transform",
+            "wavelet_transform"
+        ]
+    },
+    "wavelets": {
+        "title": "Wavelets",
+        "prerequisites": [
+            "fourier_transform",
+            "signal_processing",
+            "linear_algebra",
+            "probability_theory",
+            "calculus"
+        ],
+        "further_readings": [
+            "time_frequency_analysis",
+            "wavelet_transforms_in_machine_learning",
+            "wavelet_presentation_of_audio_signals",
+            "wavelet_thresholding",
+            "wavelet_denoising"
+        ]
+    },
+    "filter_design": {
+        "title": "Filter Design",
+        "prerequisites": [
+            "signal_processing",
+            "frequency_domain_analysis",
+            "linear_algebra",
+            "complex_analysis",
+            "convolution"
+        ],
+        "further_readings": [
+            "digital_filter_design",
+            "analog_filter_design",
+            "adaptive_filtering",
+            "kalman_filter",
+            "particle_filtering",
+            "nonlinear_filtering"
+        ]
+    },
+    "spectral_analysis": {
+        "title": "Spectral Analysis",
+        "prerequisites": [
+            "fourier_transform",
+            "signal_processing",
+            "linear_algebra",
+            "probability_distributions",
+            "time_series_analysis"
+        ],
+        "further_readings": [
+            "spectral_clustering",
+            "wavelet_transform",
+            "spectral_density_estimation",
+            "principal_component_analysis",
+            "independent_component_analysis",
+            "spectral_embedding"
+        ]
+    },
+    "time_frequency_analysis": {
+        "title": "Time Frequency Analysis",
+        "prerequisites": [
+            "fourier_transform",
+            "wavelet_transform",
+            "signal_processing",
+            "spectral_analysis",
+            "linear_algebra",
+            "calculus",
+            "probability_theory",
+            "statistics"
+        ],
+        "further_readings": [
+            "short_time_fourier_transform",
+            "continuous_wavelet_transform",
+            "discrete_wavelet_transform",
+            "empirical_mode_decomposition",
+            "non-stationary_signal_analysis",
+            "time_frequency_representation",
+            "multitaper_spectrum_estimation",
+            "spectrogram",
+            "coherence_analysis"
+        ]
+    },
+    "blind_source_separation": {
+        "title": "Blind Source Separation",
+        "prerequisites": [
+            "independent_component_analysis",
+            "spectral_clustering",
+            "non-negative_matrix_factorization",
+            "matrix_decomposition",
+            "time_series_analysis"
+        ],
+        "further_readings": [
+            "sparse_coding",
+            "manifold_learning",
+            "deep_unsupervised_learning",
+            "tensor_decomposition",
+            "dictionary_learning",
+            "source_localization",
+            "audio_signal_processing",
+            "image_processing",
+            "neural_signal_processing"
+        ]
+    },
+    "statistical_signal_processing": {
+        "title": "Statistical Signal Processing",
+        "prerequisites": [
+            "probability_theory",
+            "random_processes",
+            "linear_algebra",
+            "fourier_transform",
+            "spectral_analysis",
+            "estimation_theory",
+            "hypothesis_testing",
+            "time_series_analysis",
+            "kalman_filter",
+            "wavelets"
+        ],
+        "further_readings": [
+            "adaptive_filtering",
+            "multiresolution_signal_processing",
+            "compressive_sensing",
+            "nonlinear_signal_processing",
+            "machine_learning_for_signal_processing",
+            "signal_processing_applications",
+            "signal_processing_systems",
+            "signal_processing_hardware",
+            "signal_processing_software",
+            "speech_and_audio_processing"
+        ]
+    },
+    "adaptive_filters": {
+        "title": "Adaptive Filters",
+        "prerequisites": [
+            "linear_algebra",
+            "signal_processing",
+            "probability_theory",
+            "stochastic_processes",
+            "optimization_algorithms",
+            "machine_learning_algorithms"
+        ],
+        "further_readings": [
+            "recursive_least_squares_filtering",
+            "normalized_least_mean_squares_algorithm",
+            "kernel_adaptive_filter",
+            "online_learning_algorithm",
+            "deep_learning_approaches_for_signal_processing"
+        ]
+    },
+    "denoising_autoencoder": {
+        "title": "Denoising Autoencoder",
+        "prerequisites": [
+            "autoencoder",
+            "backpropagation",
+            "convolutional_neural_networks",
+            "dropout_regularization",
+            "gaussian_noise",
+            "image_processing",
+            "loss_functions"
+        ],
+        "further_readings": [
+            "variational_autoencoder",
+            "adversarial_autoencoder",
+            "sparse_autoencoder",
+            "recurrent_autoencoder",
+            "deep_belief_networks",
+            "transfer_learning"
+        ]
+    },
+    "variational_autoencoder": {
+        "title": "Variational Autoencoder",
+        "prerequisites": [
+            "autoencoder",
+            "probability_distributions",
+            "backpropagation",
+            "stochastic_gradient_descent",
+            "latent_variable_models"
+        ],
+        "further_readings": [
+            "adversarial_autoencoder",
+            "beta_vae",
+            "conditional_vae",
+            "importance_weighted_autoencoder",
+            "normalizing_flows",
+            "generative_models",
+            "unsupervised_learning"
+        ]
+    },
+    "autoencoder": {
+        "title": "Autoencoder",
+        "prerequisites": [
+            "backpropagation",
+            "gradient_descent",
+            "neural_network_architectures",
+            "dimensionality_reduction",
+            "overfitting",
+            "convolutional_neural_networks"
+        ],
+        "further_readings": [
+            "variational_autoencoder",
+            "denoising_autoencoder",
+            "sparse_autoencoder",
+            "deep_autoencoder",
+            "convolutional_autoencoder",
+            "recurrent_autoencoder",
+            "adversarial_autoencoder",
+            "self_supervised_learning"
+        ]
+    },
+    "latent_variable_models": {
+        "title": "Latent Variable Models",
+        "prerequisites": [
+            "probability_distributions",
+            "bayesian_networks",
+            "factor_analysis",
+            "principal_component_analysis",
+            "clustering_algorithms",
+            "variational_inference",
+            "expectation_maximization_algorithm",
+            "machine_learning_algorithms",
+            "neural_networks"
+        ],
+        "further_readings": [
+            "variational_autoencoders",
+            "boltzmann_machines",
+            "restricted_boltzmann_machines",
+            "deep_belief_networks",
+            "topic_models",
+            "independent_component_analysis",
+            "non-negative_matrix_factorization",
+            "sparse_coding",
+            "generative_flow_models",
+            "normalizing_flows"
+        ]
+    },
+    "adversarial_autoencoder": {
+        "title": "Adversarial Autoencoder",
+        "prerequisites": [
+            "autoencoder",
+            "generative_adversarial_network",
+            "backpropagation",
+            "stochastic_gradient_descent",
+            "deep_learning_frameworks"
+        ],
+        "further_readings": [
+            "variational_autoencoder",
+            "conditional_gans",
+            "wasserstein_gans",
+            "adversarial_attacks_and_defenses"
+        ]
+    },
+    "beta_vae": {
+        "title": "Beta Variational Autoencoder",
+        "prerequisites": [
+            "variational_autoencoder",
+            "convolutional_neural_network",
+            "backpropagation",
+            "stochastic_gradient_descent",
+            "optimizer_algorithms",
+            "probability_distributions",
+            "latent_variable_models",
+            "unsupervised_learning",
+            "regularization_techniques"
+        ],
+        "further_readings": [
+            "adversarial_autoencoders",
+            "conditional_vae",
+            "importance_weighted_autoencoder",
+            "variational_inference",
+            "information_bottleneck_theory",
+            "disentangled_representation_learning",
+            "model_selection_in_vae",
+            "beta_tcvae"
+        ]
+    },
+    "conditional_vae": {
+        "title": "Conditional Variational Autoencoder",
+        "prerequisites": [
+            "variational_autoencoder",
+            "convolutional_neural_networks",
+            "recurrent_neural_networks",
+            "backpropagation",
+            "stochastic_gradient_descent",
+            "loss_functions",
+            "optimization_algorithms",
+            "deep_learning_frameworks"
+        ],
+        "further_readings": [
+            "semi_supervised_vae",
+            "adversarial_autoencoder",
+            "latent_variable_models",
+            "disentangled_representation_learning",
+            "generative_models_for_text",
+            "generative_models_for_graphs",
+            "graph_neural_networks"
+        ]
+    },
+    "importance_weighted_autoencoder": {
+        "title": "Importance Weighted Autoencoder",
+        "prerequisites": [
+            "autoencoder",
+            "variational_autoencoder",
+            "importance_sampling",
+            "monte_carlo_methods",
+            "deep_learning_frameworks"
+        ],
+        "further_readings": [
+            "importance_weighted_generative_adversarial_network",
+            "importance_weighted_autoencoder_for_textual_data",
+            "importance_weighted_autoencoder_for_anomaly_detection"
+        ]
+    },
+    "normalizing_flows": {
+        "title": "Normalizing Flows",
+        "prerequisites": [
+            "probability_distributions",
+            "change_of_variables_formula",
+            "jacobian_matrix",
+            "autoregressive_models",
+            "variational_autoencoders",
+            "generative_adversarial_networks"
+        ],
+        "further_readings": [
+            "flow-based_models",
+            "inverse_autoregressive_flow",
+            "masked_autoregressive_flow",
+            "real_nvp_and_density_estimation",
+            "normalizing_flows_for_image_generation",
+            "normalizing_flows_for_latent_variable_models",
+            "normalizing_flows_for_bayesian_inference",
+            "normalizing_flows_for_flow-based_sampling"
+        ]
+    },
+    "generative_models": {
+        "title": "Generative Models",
+        "prerequisites": [
+            "probability_distributions",
+            "unsupervised_learning",
+            "backpropagation",
+            "deep_learning_frameworks"
+        ],
+        "further_readings": [
+            "variational_autoencoders",
+            "reinforcement_learning",
+            "adversarial_training",
+            "transfer_learning",
+            "image_to_image_translation"
+        ]
+    },
+    "variational_autoencoders": {
+        "title": "Variational Autoencoders",
+        "prerequisites": [
+            "autoencoders",
+            "probabilistic_graphical_models",
+            "Bayesian_inference",
+            "backpropagation",
+            "stochastic_gradient_descent",
+            "optimization_algorithms",
+            "deep_learning_frameworks",
+            "probability_distributions",
+            "information_theory",
+            "Gaussian_processes"
+        ],
+        "further_readings": [
+            "generative_models",
+            "adversarial_autoencoders",
+            "semi_supervised_learning",
+            "Bayesian_neural_network",
+            "flow_based_models",
+            "normalizing_flows",
+            "variational_inference",
+            "importance_sampling",
+            "Monte_Carlo_methods",
+            "reinforcement_learning"
+        ]
+    },
+    "autoencoders": {
+        "title": "Autoencoders",
+        "prerequisites": [
+            "backpropagation",
+            "neural_networks",
+            "convolutional_neural_networks",
+            "feedforward_neural_networks",
+            "dimensionality_reduction",
+            "unsupervised_learning",
+            "optimization_algorithms"
+        ],
+        "further_readings": [
+            "variational_autoencoders",
+            "denoising_autoencoders",
+            "sparse_autoencoders",
+            "recurrent_autoencoders",
+            "deep_generative_models",
+            "transfer_learning",
+            "semi_supervised_learning"
+        ]
+    },
+    "probabilistic_graphical_models": {
+        "title": "Probabilistic Graphical Models",
+        "prerequisites": [
+            "probability_theory",
+            "bayesian_networks",
+            "markov_random_fields",
+            "inference_algorithms",
+            "graph_theory",
+            "decision_theory",
+            "machine_learning_algorithms"
+        ],
+        "further_readings": [
+            "latent_dirichlet_allocation",
+            "hidden_markov_models",
+            "variational_inference",
+            "monte_carlo_methods",
+            "message_passing_algorithms",
+            "causal_inference",
+            "reinforcement_learning_and_pgm",
+            "deep_learning_and_pgm",
+            "spatial_temporal_pgm"
+        ]
+    },
+    "bayesian_inference": {
+        "title": "Bayesian Inference",
+        "prerequisites": [
+            "probability_distributions",
+            "conditional_probability",
+            "prior_and_posterior_distributions",
+            "markov_chain_monte_carlo",
+            "variational_inference",
+            "maximum_likelihood_estimation",
+            "sampling_methods",
+            "decision_theory",
+            "statistical_hypothesis_testing"
+        ],
+        "further_readings": [
+            "bayesian_networks",
+            "bayesian_optimization",
+            "bayesian_decision_theory",
+            "bayesian_model_selection",
+            "empirical_bayes_methods",
+            "gaussian_processes",
+            "hierarchical_bayesian_models",
+            "nonparametric_bayesian_methods",
+            "sequential_monte_carlo"
+        ]
+    },
+    "information_theory": {
+        "title": "Information Theory",
+        "prerequisites": [
+            "probability_theory",
+            "statistics",
+            "calculus",
+            "linear_algebra"
+        ],
+        "further_readings": [
+            "coding_theory",
+            "error_correction_codes",
+            "source_coding",
+            "channel_coding",
+            "data_compression",
+            "entropy_estimation",
+            "information_theory_and_statistics",
+            "information_theory_and_machine_learning"
+        ]
+    },
+    "gaussian_processes": {
+        "title": "Gaussian Processes",
+        "prerequisites": [
+            "probability_distributions",
+            "bayesian_inference",
+            "linear_algebra",
+            "kernel_methods",
+            "regression_analysis",
+            "optimization_algorithms"
+        ],
+        "further_readings": [
+            "bayesian_optimization",
+            "sparse_gaussian_processes",
+            "deep_gaussian_processes",
+            "gaussian_process_regression_with_missing_data",
+            "gaussian_process_latent_variable_models",
+            "active_learning_with_gaussian_processes",
+            "variational_inference_and_gaussian_processes",
+            "gaussian_process_classification",
+            "multi_output_gaussian_processes"
+        ]
+    },
+    "adversarial_autoencoders": {
+        "title": "Adversarial Autoencoders",
+        "prerequisites": [
+            "autoencoders",
+            "generative_models",
+            "adversarial_training",
+            "backpropagation",
+            "convolutional_neural_networks"
+        ],
+        "further_readings": [
+            "variational_autoencoders",
+            "semi_supervised_learning",
+            "adversarial_examples",
+            "adversarial_attacks_and_defenses",
+            "unsupervised_domain_adaptation",
+            "multi_modal_learning"
+        ]
+    },
+    "bayesian_neural_network": {
+        "title": "Bayesian Neural Network",
+        "prerequisites": [
+            "neural_network",
+            "probability_distributions",
+            "bayesian_inference",
+            "variational_inference",
+            "monte_carlo_methods",
+            "markov_chain_monte_carlo",
+            "bayesian_optimization",
+            "optimization_algorithms",
+            "deep_learning_frameworks"
+        ],
+        "further_readings": [
+            "dropout_as_approximate_bayesian_inference",
+            "bayesian_meta_learning",
+            "bayesian_model_selection",
+            "bayesian_deep_learning",
+            "variational_autoencoder",
+            "bayesian_neural_networks_for_regression",
+            "bayesian_neural_networks_for_classification",
+            "bayesian_neural_networks_for_uncertainty_estimation",
+            "bayesian_neural_networks_for_active_learning"
+        ]
+    },
+    "bayesian_optimization": {
+        "title": "Bayesian Optimization",
+        "prerequisites": [
+            "probability_distributions",
+            "stochastic_processes",
+            "surrogate_modeling",
+            "gaussian_processes",
+            "optimization_algorithms",
+            "machine_learning_algorithms",
+            "hyperparameter_tuning",
+            "gradient_descent",
+            "convex_optimization"
+        ],
+        "further_readings": [
+            "bayesian_optimization_with_deep_learning",
+            "multi_fidelity_bayesian_optimization",
+            "bayesian_optimization_for_reinforcement_learning",
+            "bayesian_optimization_for_neural_network_architecture_search",
+            "bayesian_global_optimization",
+            "bayesian_optimization_for_simulator_based_inference",
+            "bayesian_optimization_for_transfer_learning",
+            "bayesian_optimization_for_active_learning",
+            "differential_evolution",
+            "particle_swarm_optimization"
+        ]
+    },
+    "stochastic_processes": {
+        "title": "Stochastic Processes",
+        "prerequisites": [
+            "probability_theory",
+            "random_variables",
+            "probability_distributions",
+            "markov_chains",
+            "martingales",
+            "brownian_motion",
+            "time_series_analysis",
+            "statistics",
+            "linear_algebra"
+        ],
+        "further_readings": [
+            "stochastic_calculus",
+            "point_processes",
+            "queueing_theory",
+            "random_walks",
+            "renewal_theory",
+            "monte_carlo_simulation",
+            "hidden_markov_models",
+            "bayesian_inference",
+            "machine_learning"
+        ]
+    },
+    "surrogate_modeling": {
+        "title": "Surrogate Modeling",
+        "prerequisites": [
+            "regression_analysis",
+            "design_of_experiments",
+            "response_surface_methodology",
+            "optimization_algorithms",
+            "machine_learning_algorithms"
+        ],
+        "further_readings": [
+            "kriging",
+            "support_vector_regression",
+            "neural_networks_for_surrogate_modeling",
+            "genetic_algorithms_for_surrogate_modeling",
+            "ensemble_methods_for_surrogate_modeling"
+        ]
+    },
+    "machine_learning_algorithms": {
+        "title": "Machine Learning Algorithms",
+        "prerequisites": [
+            "linear_algebra",
+            "probability_theory",
+            "statistics",
+            "calculus",
+            "data_structures",
+            "algorithms",
+            "programming_languages",
+            "databases",
+            "data_preprocessing",
+            "feature_selection"
+        ],
+        "further_readings": [
+            "deep_learning_algorithms",
+            "reinforcement_learning_algorithms",
+            "unsupervised_learning_algorithms",
+            "supervised_learning_algorithms",
+            "ensemble_learning_algorithms",
+            "transfer_learning_algorithms",
+            "online_learning_algorithms",
+            "semi_supervised_learning_algorithms",
+            "multi_task_learning_algorithms"
+        ]
+    },
+    "hyperparameter_tuning": {
+        "title": "Hyperparameter Tuning",
+        "prerequisites": [
+            "machine_learning_algorithms",
+            "optimization_algorithms",
+            "cross_validation",
+            "grid_search",
+            "random_search",
+            "bayesian_optimization"
+        ],
+        "further_readings": [
+            "ensemble_methods",
+            "neural_architecture_search",
+            "transfer_learning",
+            "meta_learning",
+            "automl",
+            "hyperband",
+            "population_based_training",
+            "evolutionary_algorithms",
+            "multi_objective_optimization",
+            "hyperparameter_importance"
+        ]
+    },
+    "maximum_likelihood_estimation": {
+        "title": "Maximum Likelihood Estimation",
+        "prerequisites": [
+            "probability_distributions",
+            "calculus",
+            "statistics",
+            "linear_algebra",
+            "optimization_algorithms"
+        ],
+        "further_readings": [
+            "bayesian_inference",
+            "markov_chain_monte_carlo",
+            "em_algorithm",
+            "gradient_descent",
+            "newton_raphson_method",
+            "logistic_regression",
+            "poisson_regression",
+            "survival_analysis",
+            "mixed_effects_models"
+        ]
     }
 }
