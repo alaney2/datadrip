@@ -1482,5 +1482,10 @@
             "inverse_rl",
             "reward_design"
         ]
+    },
+    "policy_gradient_methods": {
+        "title": "Policy Gradient Methods",
+        "prerequisites": ["reinforcement_learning", "markov_decision_process", "value_iteration", "q_learning", "monte_carlo_tree_search", "neural_networks", "backpropagation", "stochastic_gradient_descent", "optimization_algorithms", "gradient_descent", "convolutional_neural_networks"],
+        "further_readings": ["actor_critic_methods", "proximal_policy_optimization", "trust_region_policy_optimization", "asynchronous_advantage_actor_critic", "deep_deterministic_policy_gradient", "dual_learning", "imitation_learning", "reinforcement_learning_with_unsupervised_auxiliary_tasks", "hierarchical_reinforcement_learning", "multi_agent_reinforcement_learning"]
     }
 }

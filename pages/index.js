@@ -1,38 +1,19 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import NavBar from '@/components/NavBar/NavBar';
 import wikiConnections from '@/wiki-connections.json';
 import Link from 'next/link';
 import SkipLink from '@/components/SkipLink';
-import { useState, useEffect } from 'react';
 import { Card, CardActionArea, CardContent, CardMedia, Grid, Typography, Box } from '@mui/material';
 import { styled, useTheme } from '@mui/material/styles';
 import path from 'path';
-import matter from 'gray-matter';
 import fs from 'fs';
-import {remark} from 'remark';
-import remarkParse from 'remark-parse';
+import { shuffleArray } from '@/components/utilities';
+import { getArticleDescription } from '@/components/utilities';
+
 
 const MAX_ARTICLES = 24;
-
-function shuffleArray(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
-}
-
-async function getArticleDescription(fileContent) {
-  const markdownAST = remark().use(remarkParse).parse(fileContent);
-  const firstParagraph = markdownAST.children.find(node => node.type === 'paragraph');
-
-  if (!firstParagraph) {
-    return '';
-  }
-
-  return firstParagraph.children.map(child => child.value).join('');
-}
 
 export async function getStaticProps() {
   const shuffledArticles = shuffleArray(Object.entries(wikiConnections));
@@ -58,8 +39,6 @@ const StyledContainer = styled('div')(({ theme }) => ({
   padding: theme.spacing(2),
 }));
 
-
-
 export default function Home({ articles }) {  
   return (
     <>
@@ -72,24 +51,24 @@ export default function Home({ articles }) {
       <main>
         <SkipLink skipToId="main-content" />
         <NavBar />
-        <StyledContainer>
-          <h1>Random</h1>
-          <Box sx={{ flexGrow: 1 }}>
-            <Grid container spacing={2}>
+        <StyledContainer id="main-content" >
+          <h1 style={{ marginLeft: '5rem' }}>Random</h1>
+          <Box sx={{ flexGrow: 1, justifyContent: 'center', alignContent: 'center', alignItems: 'center', mx: 8, my: 4 }}>
+            <Grid container spacing={4} display="flex" justifyContent="center" >
               {articles.map(([key, value]) => (
-                <Grid item xs={12} sm={6} md={4} key={key}>
-                  <Link href={`/${key}`} passHref>
-                    <Card sx={{ maxWidth: 345, minHeight: 230 }}>
-                        <CardActionArea>
-                          <CardContent>
-                            <Typography gutterBottom variant="h5" component="div" noWrap>
-                              {value.title}
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary" >
-                              {value.description}
-                            </Typography>
-                          </CardContent>
-                        </CardActionArea>
+                <Grid item xs={12} sm={6} lg={4} key={key}>
+                  <Link href={`/${key}`} key={key} passHref>
+                    <Card sx={{ px: 2, maxHeight: 200, minHeight: 200, cursor: 'pointer', boxShadow: '0 0 11px rgba(33,33,33,.15)', '&:hover': { boxShadow: '0 0 11px rgba(33,33,33,.25)', } }}>
+                      {/* <CardActionArea> */}
+                        <CardContent>
+                          <Typography gutterBottom variant="h5" component="div" noWrap>
+                            {value.title}
+                          </Typography>
+                          <Typography variant="body1" color="text.secondary" >
+                            {value.description}
+                          </Typography>
+                        </CardContent>
+                      {/* </CardActionArea> */}
                     </Card>
                   </Link>
                 </Grid>
@@ -98,13 +77,6 @@ export default function Home({ articles }) {
           </Box>
         </StyledContainer>
       </main>
-      <style jsx>{`
-        .container {
-          max-width: 800px;
-          margin: 0 auto;
-          padding: 2rem;
-        }
-      `}</style>
     </>
   );
 }

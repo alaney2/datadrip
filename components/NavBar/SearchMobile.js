@@ -79,9 +79,11 @@ export default function SearchMobile() {
   const [showSearchInput, setShowSearchInput] = React.useState(false);
   const [inputValue, setInputValue] = React.useState('');
   const [noOptions, setNoOptions] = React.useState(false);
+
   const inputRef = React.useRef();
   const searchIconRef = React.useRef();
   const wrapperRef = React.useRef();
+  const outputRef = React.useRef();
   const theme = useTheme();
 
   const getFilterOptions = (options, { inputValue }) =>
@@ -89,7 +91,7 @@ export default function SearchMobile() {
 
   React.useEffect(() => {
     const handleClickOutside = (e) => {
-      if (wrapperRef.current && !wrapperRef.current.contains(e.target)) {
+      if (wrapperRef.current && !wrapperRef.current.contains(e.target) && !outputRef.current) {
         setShowSearchInput(false);
         setInputValue('');
       }
@@ -110,7 +112,7 @@ export default function SearchMobile() {
   } = useAutocomplete({
     id: 'search-mobile',
     options: titles,
-    getOptionLabel: (option) => option.title,
+    getOptionLabel: (option) => option ? option.title : '',
     filterOptions: getFilterOptions,
     freeSolo: true,
     inputValue: inputValue,
@@ -171,17 +173,13 @@ export default function SearchMobile() {
         }}
       /> */}
       <div>
-        <SearchMobileWrapper ref={wrapperRef} showSearchInput={showSearchInput}>
-          <Search
-            className={clsx(
-              showSearchInput ? searchOpen(theme) : searchClosed(theme)
-            )}
-          >
+        <SearchMobileWrapper ref={wrapperRef}>
+          <Search>
             <StyledInputBase
               placeholder={'Search…'}
               value={inputValue}
               inputProps={{ 'aria-label': 'search' }}
-              showSearchInput={showSearchInput}
+              // showSearchInput={showSearchInput}
               inputRef={inputRef}
               onKeyDown={handleKeyDown}
               style={{ width: showSearchInput ? '100%' : 0, }}
@@ -223,11 +221,11 @@ export default function SearchMobile() {
         </SearchMobileWrapper>
         {groupedOptions.length > 0 ? (
           <div
+            ref={outputRef}
             style={{
               position: 'absolute',
               top: '100%',
               zIndex: theme.zIndex.appBar + 3,
-              // width: '100%',
               backgroundColor: theme.palette.background.paper,
               boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
               // borderRadius: theme.shape.borderRadius,

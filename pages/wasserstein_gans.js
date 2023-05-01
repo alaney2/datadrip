@@ -11,12 +11,12 @@
     }
 
     export async function getStaticProps() {
-    const filePath = path.join(process.cwd(), 'data', filename);
-    const markdownContent = fs.readFileSync(filePath, 'utf8');
-    return {
-        props: {
-        markdownContent,
-        },
-    };
+        const filePath = path.join(process.cwd(), 'data', filename);
+        const markdownContent = fs.readFileSync(filePath, 'utf8');
+        return {
+            props: {
+                markdownContent,
+            },
+        };
     }
     

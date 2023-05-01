@@ -58,9 +58,11 @@ export default function PageContent({ content, filename, leftSidebar=true, right
 
   return (
     <Box>
-      <Head>
-        <title>{pageObject['title']}</title>
-      </Head>
+      {pageObject && 
+        <Head>
+          <title>{pageObject['title']}</title>
+        </Head>
+      }
       <SkipLink skipToId={mainContentId} />
       <NavBar />
       <NorthIndicator />

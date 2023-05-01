@@ -12,7 +12,7 @@ The main idea behind WGANs is to train a discriminator that can distinguish betw
 
 ## Training Process
 
-The training process for WGANs involves two main steps: 
+The training process for WGANs involves two main steps:
 
 1. Training the discriminator: The discriminator is trained to maximize the difference between the Wasserstein distances of the real and generated data. This step involves optimizing the discriminator's parameters using stochastic gradient descent.
 
