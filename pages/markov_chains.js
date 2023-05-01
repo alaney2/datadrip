@@ -4,7 +4,7 @@
     import fs from 'fs';
     import PageContent from '@/components/PageContent/PageContent';
 
-    const filename = 'denoising_autoencoder.md';
+    const filename = 'markov_chains.md';
 
     export default function MarkdownPage({ markdownContent }) {
     return <PageContent content={markdownContent} filename={filename} />;

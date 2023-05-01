@@ -5,13 +5,15 @@ import fs from 'fs';
 import PageContent from '@/components/PageContent/PageContent';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
+import wikiConnections from '@/wiki-connections.json';
+import Typography from '@mui/material/Typography';
 
 const filename = 'about.md';
 export default function MarkdownPage({ markdownContent }) {
   const [fixedButton, setFixedButton] = useState(false);
   const [buttonHeight, setButtonHeight] = useState('0');
-
   const buttonRef = useRef(null);
+  const articleCount = Object.keys(wikiConnections).length;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,6 +42,11 @@ export default function MarkdownPage({ markdownContent }) {
     <Box sx={{ display: 'flex', flexDirection: 'column' }}>
       <Box sx={{ minHeight: '100vh' }}>
         <PageContent content={markdownContent} filename={filename} leftSidebar={false} showLastUpdated={false} />
+        <Box sx={{ my: 2, textAlign: 'center' }}>
+          <Typography variant="h6">
+            We have generated {articleCount} articles!
+          </Typography>
+        </Box>
       </Box>
 
       <Box

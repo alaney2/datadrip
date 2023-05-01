@@ -4,7 +4,7 @@
     import fs from 'fs';
     import PageContent from '@/components/PageContent/PageContent';
 
-    const filename = 'non-maximum_suppression.md';
+    const filename = 'non_maximum_suppression.md';
 
     export default function MarkdownPage({ markdownContent }) {
     return <PageContent content={markdownContent} filename={filename} />;

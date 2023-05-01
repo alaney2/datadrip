@@ -13,9 +13,10 @@ export default function Contact() {
         <title>Contact</title>
       </Head>
       <main>
+        <SkipLink skipToId={"main-content"} />
         <Box sx={{ height: '100vh' }}>
           <NavBar />
-          <Box sx={{ mt: 16 }}>
+          <Box sx={{ mt: 16 }} id="main-content">
             <FeedbackForm />
           </Box>
           <BackToTop />

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "3d-force-graph": "1.71.3",
     "@dnd-kit/core": "^6.0.8",
     "@dnd-kit/modifiers": "^6.0.1",
     "@dnd-kit/sortable": "^7.0.2",
@@ -19,6 +20,8 @@
     "@mui/icons-material": "^5.11.16",
     "@mui/joy": "^5.0.0-alpha.75",
     "@mui/material": "^5.12.2",
+    "@react-three/fiber": "^8.13.0",
+    "@tweenjs/tween.js": "^20.0.3",
     "classnames": "^2.3.2",
     "clsx": "^1.2.1",
     "eslint": "8.38.0",
@@ -39,7 +42,8 @@
     "rehype-slug": "^5.1.0",
     "remark": "^14.0.2",
     "remark-math": "^5.1.1",
-    "remark-parse": "^10.0.1"
+    "remark-parse": "^10.0.1",
+    "three": "^0.152.2"
   },
   "devDependencies": {}
 }

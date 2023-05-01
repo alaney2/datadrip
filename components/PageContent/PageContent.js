@@ -30,7 +30,6 @@ function extractHeadings(markdown) {
 export default function PageContent({ content, filename, leftSidebar=true, rightSidebar=true, showLastUpdated=true }) {
   const headings = extractHeadings(content);
   const [lastUpdated, setLastUpdated] = React.useState(null);
-  const mainContentId = 'main-content';
   const nameWithoutExtension = filename.slice(0, filename.lastIndexOf('.'));
   const pageObject = wikiConnections[nameWithoutExtension];
 
@@ -63,10 +62,10 @@ export default function PageContent({ content, filename, leftSidebar=true, right
           <title>{pageObject['title']}</title>
         </Head>
       }
-      <SkipLink skipToId={mainContentId} />
+      <SkipLink skipToId={"main-content"} />
       <NavBar />
       <NorthIndicator />
-      <Box id={mainContentId}>
+      <Box id="main-content">
         <MarkDown
           content={content} 
           headings={headings} 

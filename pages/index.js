@@ -11,6 +11,7 @@ import path from 'path';
 import fs from 'fs';
 import { shuffleArray } from '@/components/utilities';
 import { getArticleDescription } from '@/components/utilities';
+import BackToTop from '@/components/PageContent/BackToTop';
 
 
 const MAX_ARTICLES = 16;
@@ -39,7 +40,7 @@ const StyledContainer = styled('div')(({ theme }) => ({
   padding: theme.spacing(2),
 }));
 
-export default function Home({ articles }) {  
+export default function Home({ articles }) {
   const [displayedArticles, setDisplayedArticles] = useState(articles.slice(0, MAX_ARTICLES));
   const [currentArticleCount, setCurrentArticleCount] = useState(MAX_ARTICLES);
 
@@ -137,6 +138,7 @@ export default function Home({ articles }) {
             </div>
           </Box>
         </StyledContainer>
+        <BackToTop />
       </main>
     </>
   );
