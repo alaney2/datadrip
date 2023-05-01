@@ -49,26 +49,29 @@ export default function Prerequisites({ prerequisites, defaultExpanded=false }) 
         <List component="div">
           {prerequisites.map((prerequisite, index) => (
             <ListItem key={index} disablePadding sx={{ display: 'flex', justifyContent: 'space-between' }}>
-              <Link href={`/${prerequisite.id}`} passHref>
-                <ListItemButton
-                  sx={{
-                    borderRadius: '4px',
-                    pl: 1.5,
-                    py: 0.5,
-                    margin: 0.5,
-                    '&:hover': {
-                      backgroundColor: theme => alpha(theme.palette.primary.main, 0.5),
-                    },
-                    ml: 0,
-                  }}
-                  onClick={() => router.push(`/${prerequisite.id}`)}
-                >
-                  <ListItemText
-                    primary={prerequisite.title ? prerequisite.title : prerequisite.id}
-                    primaryTypographyProps={{ variant: 'body2' }}
-                  />
-                </ListItemButton>
-              </Link>
+              <Box sx={{ flexGrow: 1 }}>
+                <Link href={`/${prerequisite.id}`} passHref>
+                  <ListItemButton
+                    sx={{
+                      borderRadius: '4px',
+                      pl: 1.5,
+                      py: 0.5,
+                      margin: 0.5,
+                      '&:hover': {
+                        backgroundColor: theme => alpha(theme.palette.primary.main, 0.5),
+                      },
+                      ml: 0,
+                    }}
+                    onClick={() => router.push(`/${prerequisite.id}`)}
+                  >
+                    <ListItemText
+                      primary={prerequisite.title ? prerequisite.title : prerequisite.id}
+                      primaryTypographyProps={{ variant: 'body2' }}
+                    />
+                  </ListItemButton>
+                </Link>
+              </Box>
+
               <IconButton
                 sx={{ 
                   marginRight: 1,

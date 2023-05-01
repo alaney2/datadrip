@@ -49,26 +49,29 @@ export default function FurtherReading({ furtherReadings, defaultExpanded=false 
         <List component="div" >
           {furtherReadings.map((reading, index) => (
             <ListItem key={index} disablePadding sx={{ display: 'flex', justifyContent: 'space-between' }}>
-              <Link href={`/${reading.id}`} passHref>
-                <ListItemButton
-                  sx={{
-                    borderRadius: '4px',
-                    pl: 1.5,
-                    py: 0.5,
-                    margin: 0.5,
-                    '&:hover': {
-                      backgroundColor: theme => alpha(theme.palette.primary.main, 0.5),
-                    },
-                    ml: 0,
-                  }}
-                  onClick={() => router.push(`/${reading.id}`)}
-                >
-                  <ListItemText
-                    primary={reading.title ? reading.title : reading.id}
-                    primaryTypographyProps={{ variant: 'body2' }}
-                  />
-                </ListItemButton>
-              </Link>
+              <Box sx={{ flexGrow: 1 }}>
+                <Link href={`/${reading.id}`} passHref>
+                  <ListItemButton
+                    sx={{
+                      borderRadius: '4px',
+                      pl: 1.5,
+                      py: 0.5,
+                      margin: 0.5,
+                      '&:hover': {
+                        backgroundColor: theme => alpha(theme.palette.primary.main, 0.5),
+                      },
+                      ml: 0,
+                    }}
+                    onClick={() => router.push(`/${reading.id}`)}
+                  >
+                    <ListItemText
+                      primary={reading.title ? reading.title : reading.id}
+                      primaryTypographyProps={{ variant: 'body2', }}
+                      
+                    />
+                  </ListItemButton>
+                </Link>
+              </Box>
               <IconButton
                 sx={{
                   marginRight: 1,

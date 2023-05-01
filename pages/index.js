@@ -4,9 +4,63 @@ import NavBar from '@/components/NavBar/NavBar';
 import wikiConnections from '@/wiki-connections.json';
 import Link from 'next/link';
 import SkipLink from '@/components/SkipLink';
+import { useState, useEffect } from 'react';
+import { Card, CardActionArea, CardContent, CardMedia, Grid, Typography, Box } from '@mui/material';
+import { styled, useTheme } from '@mui/material/styles';
+import path from 'path';
+import matter from 'gray-matter';
+import fs from 'fs';
+import {remark} from 'remark';
+import remarkParse from 'remark-parse';
+
+const MAX_ARTICLES = 24;
+
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
+async function getArticleDescription(fileContent) {
+  const markdownAST = remark().use(remarkParse).parse(fileContent);
+  const firstParagraph = markdownAST.children.find(node => node.type === 'paragraph');
+
+  if (!firstParagraph) {
+    return '';
+  }
+
+  return firstParagraph.children.map(child => child.value).join('');
+}
+
+export async function getStaticProps() {
+  const shuffledArticles = shuffleArray(Object.entries(wikiConnections));
+  const articlesWithDescriptions = [];
+
+  for (const [key, value] of shuffledArticles.slice(0, MAX_ARTICLES)) {
+    const filePath = path.join(process.cwd(), 'data', `${key}.md`);
+    const fileContent = fs.readFileSync(filePath, 'utf8');
+    const description = await getArticleDescription(fileContent);
+    articlesWithDescriptions.push([key, { ...value, description }]);
+  }
+
+  return {
+    props: {
+      articles: articlesWithDescriptions,
+    },
+  };
+}
+
+const StyledContainer = styled('div')(({ theme }) => ({
+  maxWidth: 1280,
+  margin: '0 auto',
+  padding: theme.spacing(2),
+}));
 
 
-export default function Home() {
+
+export default function Home({ articles }) {  
   return (
     <>
       <Head>
@@ -18,18 +72,31 @@ export default function Home() {
       <main>
         <SkipLink skipToId="main-content" />
         <NavBar />
-        <div className="container">
-          <h1>Recently Updated</h1>
-          <ul id="main-content">
-            {Object.entries(wikiConnections).map(([key, value]) => (
-              <li key={key}>
-                <Link href={`/${key}`}>
-                  <p>{value.title}</p>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <StyledContainer>
+          <h1>Random</h1>
+          <Box sx={{ flexGrow: 1 }}>
+            <Grid container spacing={2}>
+              {articles.map(([key, value]) => (
+                <Grid item xs={12} sm={6} md={4} key={key}>
+                  <Link href={`/${key}`} passHref>
+                    <Card sx={{ maxWidth: 345, minHeight: 230 }}>
+                        <CardActionArea>
+                          <CardContent>
+                            <Typography gutterBottom variant="h5" component="div" noWrap>
+                              {value.title}
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary" >
+                              {value.description}
+                            </Typography>
+                          </CardContent>
+                        </CardActionArea>
+                    </Card>
+                  </Link>
+                </Grid>
+              ))}
+            </Grid>
+          </Box>
+        </StyledContainer>
       </main>
       <style jsx>{`
         .container {

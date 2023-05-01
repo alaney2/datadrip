@@ -25,9 +25,11 @@
     "eslint-config-next": "13.3.0",
     "google-auth-library": "^8.7.0",
     "googleapis": "105",
+    "gray-matter": "^4.0.3",
     "katex": "^0.16.6",
     "lodash": "^4.17.21",
     "markdown-to-jsx": "^7.2.0",
+    "match-sorter": "^6.3.1",
     "next": "^13.3.1",
     "prism-react-renderer": "^1.3.5",
     "react": "18.2.0",
@@ -35,7 +37,9 @@
     "react-markdown": "^8.0.7",
     "rehype-katex": "^6.0.3",
     "rehype-slug": "^5.1.0",
-    "remark-math": "^5.1.1"
+    "remark": "^14.0.2",
+    "remark-math": "^5.1.1",
+    "remark-parse": "^10.0.1"
   },
   "devDependencies": {}
 }

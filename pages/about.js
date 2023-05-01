@@ -23,7 +23,6 @@ export default function MarkdownPage({ markdownContent }) {
 
       if (!fixedButton && currentScrollPosition + windowHeight >= documentHeight) {
         setFixedButton(true);
-        console.log('Button position fixed');
       }
     };
 

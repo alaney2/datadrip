@@ -6,7 +6,8 @@ import BackToTop from '@/components/PageContent/BackToTop';
 import MarkDown from '@/components/PageContent/Markdown';
 import SkipLink from '@/components/SkipLink';
 import NorthIndicator from '@/components/PageContent/NorthIndicator';
-import Divider from '@mui/material/Divider';
+import wikiConnections from '@/wiki-connections.json';
+import Head from "next/head";
 
 
 function extractHeadings(markdown) {
@@ -30,6 +31,8 @@ export default function PageContent({ content, filename, leftSidebar=true, right
   const headings = extractHeadings(content);
   const [lastUpdated, setLastUpdated] = React.useState(null);
   const mainContentId = 'main-content';
+  const nameWithoutExtension = filename.slice(0, filename.lastIndexOf('.'));
+  const pageObject = wikiConnections[nameWithoutExtension];
 
   React.useEffect(() => {
     async function fetchLastUpdated() {
@@ -55,11 +58,14 @@ export default function PageContent({ content, filename, leftSidebar=true, right
 
   return (
     <Box>
+      <Head>
+        <title>{pageObject['title']}</title>
+      </Head>
       <SkipLink skipToId={mainContentId} />
       <NavBar />
       <NorthIndicator />
       <Box id={mainContentId}>
-        <MarkDown 
+        <MarkDown
           content={content} 
           headings={headings} 
           filename={filename} 

@@ -361,48 +361,6 @@
             "model_evaluation_metrics"
         ]
     },
-    "model_complexity": {
-        "title": "Model Complexity",
-        "prerequisites": [
-            "capacity",
-            "flexibility",
-            "model_family",
-            "parametric_models",
-            "nonparametric_models",
-            "neural_network_architecture",
-            "shrinkage_methods"
-        ],
-        "further_readings": [
-            "smoothing_methods",
-            "kernel_methods",
-            "splines",
-            "wavelets",
-            "feature_selection",
-            "feature_extraction",
-            "dimensionality_reduction"
-        ]
-    },
-    "validation_set": {
-        "title": "Validation Set",
-        "prerequisites": [
-            "training_set",
-            "test_set",
-            "holdout_method",
-            "data_splitting",
-            "model_evaluation",
-            "hyperparameter_optimization",
-            "model_selection"
-        ],
-        "further_readings": [
-            "nested_cross_validation",
-            "stratified_sampling",
-            "time_series_cross_validation",
-            "performance_metrics",
-            "evaluation_criteria",
-            "model_comparison",
-            "validation_curves"
-        ]
-    },
     "unsupervised_learning": {
         "title": "Unsupervised Learning",
         "prerequisites": [
@@ -1301,7 +1259,7 @@
         ]
     },
     "q_learning": {
-        "title": "Q Learning",
+        "title": "Q-Learning",
         "prerequisites": [
             "reinforcement_learning",
             "markov_decision_process",
@@ -1347,6 +1305,182 @@
             "reinforcement_learning_in_robotics",
             "reinforcement_learning_in_games",
             "reinforcement_learning_in_natural_language_processing"
+        ]
+    },
+    "value_iteration": {
+        "title": "Value Iteration",
+        "prerequisites": [
+            "markov_decision_process",
+            "bellman_equations",
+            "dynamic_programming",
+            "reinforcement_learning",
+            "mdp_solving_algorithms"
+        ],
+        "further_readings": [
+            "q_learning",
+            "policy_iteration",
+            "monte_carlo_tree_search",
+            "actor_critic_methods",
+            "deep_reinforcement_learning",
+            "inverse_reinforcement_learning"
+        ]
+    },
+    "markov_decision_process": {
+        "title": "Markov Decision Process",
+        "prerequisites": [
+            "markov_chain",
+            "reinforcement_learning",
+            "dynamic_programming",
+            "probability_theory",
+            "linear_algebra"
+        ],
+        "further_readings": [
+            "partially_observable_markov_decision_process",
+            "deep_reinforcement_learning",
+            "monte_carlo_tree_search",
+            "actor_critic_methods",
+            "value_iteration",
+            "policy_iteration",
+            "q_learning",
+            "temporal_difference_learning",
+            "multi_agent_reinforcement_learning"
+        ]
+    },
+    "bellman_equations": {
+        "title": "Bellman Equations",
+        "prerequisites": [
+            "dynamic_programming",
+            "markov_decision_process",
+            "value_iteration_algorithm",
+            "q_learning",
+            "reinforcement_learning_algorithms"
+        ],
+        "further_readings": [
+            "temporal_difference_learning",
+            "actor_critic_methods",
+            "deep_q_networks",
+            "monte_carlo_methods",
+            "policy_gradient_methods"
+        ]
+    },
+    "dynamic_programming": {
+        "title": "Dynamic Programming",
+        "prerequisites": [
+            "recursion",
+            "memoization",
+            "divide_and_conquer",
+            "greedy_algorithms",
+            "graph_theory",
+            "probability_theory",
+            "data_structures",
+            "algorithms",
+            "mathematical_optimization",
+            "machine_learning"
+        ],
+        "further_readings": [
+            "bellman_ford_algorithm",
+            "dijkstra_algorithm",
+            "knapsack_problem",
+            "traveling_salesman_problem",
+            "longest_common_subsequence",
+            "maximum_subarray_problem",
+            "floyd_warshall_algorithm",
+            "edit_distance",
+            "approximation_algorithms",
+            "reinforcement_learning"
+        ]
+    },
+    "mdp_solving_algorithms": {
+        "title": "MDP Solving Algorithms",
+        "prerequisites": [
+            "markov_chain",
+            "bellman_equation",
+            "value_iteration",
+            "policy_iteration",
+            "monte_carlo_methods",
+            "dynamic_programming",
+            "reinforcement_learning",
+            "q_learning",
+            "temporal_difference_learning"
+        ],
+        "further_readings": [
+            "actor_critic_methods",
+            "deep_reinforcement_learning",
+            "hierarchical_reinforcement_learning",
+            "multi_agent_reinforcement_learning",
+            "online_learning_in_mdps",
+            "approximate_dynamic_programming",
+            "model_based_reinforcement_learning",
+            "inverse_reinforcement_learning",
+            "imitation_learning_in_rl",
+            "off_policy_rl"
+        ]
+    },
+    "policy_iteration": {
+        "title": "Policy Iteration",
+        "prerequisites": [
+            "markov_decision_process",
+            "dynamic_programming",
+            "bellman_equation",
+            "value_iteration",
+            "q_learning",
+            "reinforcement_learning",
+            "stochastic_processes",
+            "probability_theory"
+        ],
+        "further_readings": [
+            "actor_critic_methods",
+            "deep_reinforcement_learning",
+            "monte_carlo_methods",
+            "temporal_difference_learning",
+            "multi_agent_reinforcement_learning"
+        ]
+    },
+    "monte_carlo_tree_search": {
+        "title": "Monte Carlo Tree Search",
+        "prerequisites": [
+            "game_theory",
+            "decision_trees",
+            "markov_decision_processes",
+            "reinforcement_learning",
+            "heuristics",
+            "search_algorithms"
+        ],
+        "further_readings": [
+            "alpha_zero",
+            "uct_algorithm",
+            "bandit_algorithms",
+            "multi_agent_mcts",
+            "deep_mcts",
+            "monte_carlo_simulation",
+            "bayesian_mcts",
+            "online_mcts",
+            "sampling_based_planning",
+            "stochastic_search"
+        ]
+    },
+    "actor_critic_methods": {
+        "title": "Actor Critic Methods",
+        "prerequisites": [
+            "reinforcement_learning",
+            "policy_gradient_methods",
+            "value_function_approximation",
+            "markov_decision_processes",
+            "dynamic_programming",
+            "monte_carlo_methods",
+            "temporal_difference_learning",
+            "neural_networks"
+        ],
+        "further_readings": [
+            "deep_reinforcement_learning",
+            "on_policy_vs_off_policy",
+            "natural_gradient_methods",
+            "distributed_rl",
+            "multi_agent_rl",
+            "hierarchical_rl",
+            "imitation_learning",
+            "inverse_rl",
+            "reward_design"
         ]
     }
 }
