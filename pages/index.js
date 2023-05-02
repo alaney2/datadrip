@@ -12,24 +12,37 @@ import fs from 'fs';
 import { shuffleArray } from '@/components/utilities';
 import { getArticleDescription } from '@/components/utilities';
 import BackToTop from '@/components/PageContent/BackToTop';
-import Carousel from '@/components/Carousel.js';
+import Looper from '@/components/Looper';
 
-const MAX_ARTICLES = 30;
+const MAX_ARTICLES = 12;
 
 export async function getStaticProps() {
-  const shuffledArticles = shuffleArray(Object.entries(wikiConnections)).slice(0, MAX_ARTICLES);
-  const articlesWithDescriptions = [];
+  const shuffledArticles1 = shuffleArray(Object.entries(wikiConnections)).slice(0, MAX_ARTICLES);
+  const shuffledArticles2 = shuffleArray(Object.entries(wikiConnections)).slice(0, MAX_ARTICLES);
 
-  for (const [key, value] of shuffledArticles) {
+
+  const articlesWithDescriptions1 = [];
+  const articlesWithDescriptions2 = [];
+
+
+  for (const [key, value] of shuffledArticles1) {
     const filePath = path.join(process.cwd(), 'data', `${key}.md`);
     const fileContent = fs.readFileSync(filePath, 'utf8');
     const description = await getArticleDescription(fileContent);
-    articlesWithDescriptions.push([key, { ...value, description }]);
+    articlesWithDescriptions1.push([key, { ...value, description }]);
+  }
+
+  for (const [key, value] of shuffledArticles2) {
+    const filePath = path.join(process.cwd(), 'data', `${key}.md`);
+    const fileContent = fs.readFileSync(filePath, 'utf8');
+    const description = await getArticleDescription(fileContent);
+    articlesWithDescriptions2.push([key, { ...value, description }]);
   }
 
   return {
     props: {
-      articles: articlesWithDescriptions,
+      articles1: articlesWithDescriptions1,
+      articles2: articlesWithDescriptions2,
     },
   };
 }
@@ -57,8 +70,7 @@ const ColumnContainer = styled('div')(({ theme }) => ({
   },
 }));
 
-
-export default function Home({ articles }) {
+export default function Home({ articles1, articles2 }) {
   const theme = useTheme();
   const matchesSM = useMediaQuery(theme.breakpoints.down('sm'));
   const matchesMD = useMediaQuery(theme.breakpoints.between('sm', 'md'));
@@ -83,16 +95,108 @@ export default function Home({ articles }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Box sx={{ height: '100vh' }}>
+        <Box 
+          sx={{ 
+            // display: 'flex',
+            // flexDirection: 'column',
+            height: '100vh',
+            // minHeight: '100vh', 
+            // maxHeight: '100vh', 
+            // justifyContent: 'space-between', 
+            // justifyContent: 'space-between',
+
+            // alignItems: 'center' 
+          }}
+        >
           <SkipLink skipToId="main-content" />
           <NavBar />
-          <StyledContainer id="main-content" >
-            <Box sx={{ mx: { xs: 4, lg: 8 }, my: 8 }}>
-              <ColumnContainer>
-                <Carousel articles={articles} numColumns={numColumns} />
-              </ColumnContainer>
-            </Box>
-          </StyledContainer>
+          <Box
+            id="main-content"
+            sx={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'space-evenly',
+              minHeight: 'calc(100% - 128px)'
+            }}
+          >
+            <Looper speed={40} direction="right">
+              {articles1.map(([key, value]) => (
+                <Link href={`/${key}`} key={key} passHref>
+                  <Card
+                    sx={{
+                      px: 2,
+                      maxHeight: 420,
+                      minHeight: 80,
+                      width: 300,
+                      borderRadius: 8,
+                      m: 3,
+                      cursor: 'pointer',
+                      boxShadow: '0 0 11px rgba(33,33,33,.15)',
+                      '&:hover': {
+                        boxShadow: '0 0 11px rgba(33,33,33,.25)',
+                      },
+                    }}
+                  >
+                    <CardContent>
+                      <Typography
+                        gutterBottom
+                        variant="h5"
+                        component="div"
+                        noWrap
+                      >
+                        {value.title}
+                      </Typography>
+                      <Typography
+                        variant="body1"
+                        color="text.secondary"
+                      >
+                        {value.description}
+                      </Typography>
+                    </CardContent>
+                  </Card>
+                </Link>
+              ))}
+            </Looper>
+            <Looper speed={30} direction="left">
+              {articles2.map(([key, value]) => (
+                <Link href={`/${key}`} key={key} passHref>
+                  <Card
+                    sx={{
+                      px: 2,
+                      maxHeight: 420,
+                      minHeight: 80,
+                      width: 300,
+                      borderRadius: 8,
+                      m: 3,
+                      cursor: 'pointer',
+                      boxShadow: '0 0 11px rgba(33,33,33,.15)',
+                      '&:hover': {
+                        boxShadow: '0 0 11px rgba(33,33,33,.25)',
+                      },
+                    }}
+                  >
+                    <CardContent>
+                      <Typography
+                        gutterBottom
+                        variant="h5"
+                        component="div"
+                        noWrap
+                      >
+                        {value.title}
+                      </Typography>
+                      <Typography
+                        variant="body1"
+                        color="text.secondary"
+                      >
+                        {value.description}
+                      </Typography>
+                    </CardContent>
+                  </Card>
+                </Link>
+              ))}
+            </Looper>
+          </Box>
           <BackToTop />
         </Box>
       </main>

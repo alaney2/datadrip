@@ -1,6 +1,6 @@
 # Matrix Multiplication
 
-As a world-renowned AI and ML expert, I have observed the evolution of deep learning and its reliance on matrix multiplication. In this article, I will discuss the importance of matrix multiplication in machine learning and its applications in deep learning.
+This article discusses the importance of matrix multiplication in machine learning and its applications in deep learning.
 
 ## Overview
 

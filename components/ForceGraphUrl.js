@@ -64,7 +64,7 @@ const ForceGraphUrl = ({ data }) => {
       })
       .onNodeClick(node => {
         // Aim at node from outside it
-        const distance = 250;
+        const distance = 300;
         const distRatio = 1 + distance / Math.hypot(node.x, node.y, node.z);
 
         const newPos = node.x || node.y || node.z

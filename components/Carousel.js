@@ -23,8 +23,9 @@ const Carousel = ({ articles, numColumns }) => {
             <Card
               sx={{
                 px: 2,
-                maxHeight: 320,
-                minHeight: 120,
+                // maxHeight: 320,
+                // minHeight: 120,
+                height: 300,
                 cursor: 'pointer',
                 boxShadow: '0 0 11px rgba(33,33,33,.15)',
                 '&:hover': {

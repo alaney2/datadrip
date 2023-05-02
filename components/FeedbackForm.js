@@ -42,18 +42,18 @@ const FeedbackForm = () => {
       });
   
       if (response.ok) {
-        setFormMessage('Feedback submitted successfully');
+        setFormMessage('Response submitted successfully!');
         setIsSuccessMessage(true);
         setName('');
         setEmail('');
         setFeedback('');
       } else {
-        setFormMessage('Failed to submit feedback');
+        setFormMessage('Failed to submit response');
         setIsSuccessMessage(false);
       }
     } catch (error) {
       console.error('Error:', error);
-      setFormMessage('Failed to submit feedback');
+      setFormMessage('Failed to submit response');
       setIsSuccessMessage(false);
     } finally {
       setIsLoading(false);

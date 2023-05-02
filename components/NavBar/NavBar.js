@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 import {
   AppBar,
   Box,
@@ -68,7 +67,6 @@ function HideOnScroll(props) {
 }
 
 export default function NavBar(props) {
-  const router = useRouter();
   const [settingsOpen, setSettingsOpen] = React.useState(false);
   const [menuAnchorEl, setMenuAnchorEl] = React.useState(null);
   const { readingList } = React.useContext(ReadingListContext);

@@ -1,0 +1,15 @@
+# Adversarial Defense Using Wasserstein Distance
+
+Adversarial examples are inputs to machine learning models that are intentionally designed to cause the model to misclassify them with high confidence. These attacks are a major concern in security-critical domains, such as autonomous vehicles and medical diagnosis systems. To address this problem, researchers have proposed various adversarial defense techniques, including adversarial training and adversarial detection. However, these techniques are not always effective against sophisticated attacks.
+
+One promising approach for improving adversarial defense is to leverage the Wasserstein distance, which is a measure of the distance between two probability distributions. The Wasserstein distance has been used in generative adversarial networks (GANs) to measure the difference between the real data distribution and the generated data distribution. In the context of adversarial defense, the Wasserstein distance can be used to measure the difference between the distribution of the original inputs and the distribution of the adversarial examples.
+
+The idea behind adversarial defense using Wasserstein distance is to train a model to be robust against adversarial examples by minimizing the Wasserstein distance between the original input distribution and the adversarial input distribution. This can be achieved by training the model with a Wasserstein GAN (WGAN), which is a variant of GAN that uses the Wasserstein distance as the loss function.
+
+One key advantage of using the Wasserstein distance for adversarial defense is that it provides a more stable and meaningful gradient for training the model compared to other distance metrics, such as the L2 distance. This is because the Wasserstein distance takes into account the underlying structure of the data distributions, rather than just the individual data points.
+
+Another advantage of using the Wasserstein distance is that it can be used to generate adversarial examples that are more difficult to detect by existing adversarial detection methods. This is because the adversarial examples generated using the Wasserstein distance have a similar distribution to the original inputs, making them less distinguishable from the genuine inputs.
+
+However, there are also some challenges and limitations to using the Wasserstein distance for adversarial defense. One challenge is that computing the Wasserstein distance can be computationally expensive, especially for high-dimensional data. Another challenge is that the performance of the WGAN can be sensitive to the choice of hyperparameters, such as the learning rate and the number of training iterations.
+
+In summary, adversarial defense using Wasserstein distance is a promising approach for improving the robustness of machine learning models against adversarial attacks. By leveraging the Wasserstein distance, it is possible to train models that are more robust to sophisticated attacks and generate adversarial examples that are more difficult to detect. However, there are also some challenges and limitations to this approach that need to be carefully considered.
