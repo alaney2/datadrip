@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
+import CircularProgress from '@mui/material/CircularProgress';
 
 const FeedbackForm = () => {
   const [name, setName] = useState('');
@@ -10,22 +11,23 @@ const FeedbackForm = () => {
   const [feedback, setFeedback] = useState('');
   const [formMessage, setFormMessage] = useState('');
   const [isSuccessMessage, setIsSuccessMessage] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    // Validation checks
     if (!name.trim() || !email.trim() || !feedback.trim()) {
       setFormMessage('All fields are required.');
       setIsSuccessMessage(false);
       return;
     }
 
+    setIsLoading(true);
+
     const trimmedName = name.trim();
     const trimmedEmail = email.trim();
     const trimmedFeedback = feedback.trim();
   
-    // Send form data to the API
     try {
       const response = await fetch('/api/submitFeedback', {
         method: 'POST',
@@ -53,6 +55,8 @@ const FeedbackForm = () => {
       console.error('Error:', error);
       setFormMessage('Failed to submit feedback');
       setIsSuccessMessage(false);
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -89,8 +93,8 @@ const FeedbackForm = () => {
         margin="normal"
       />
 
-      <Button type="submit" variant="contained" color="primary" sx={{ marginTop: '16px' }}>
-        Submit
+      <Button type="submit" variant="contained" color="primary" sx={{ marginTop: '16px' }} disabled={isLoading}>
+        {isLoading ? <CircularProgress size={24} /> : 'Submit'}
       </Button>
 
       {formMessage && (
