@@ -17,7 +17,9 @@ import {
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import SettingsDrawer from '@/components/NavBar/SettingsDrawer';
-import CottageIcon from '@mui/icons-material/Cottage';
+import CoffeeIcon from '@mui/icons-material/Coffee';
+import LocalCafeIcon from '@mui/icons-material/LocalCafe';
+import StorefrontIcon from '@mui/icons-material/Storefront';
 import SearchMobile from '@/components/NavBar/SearchMobile';
 import MenuComponent from '@/components/NavBar/MenuComponent';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
@@ -134,7 +136,9 @@ export default function NavBar(props) {
                     }}
                   >
                     {isSmScreen ? (
-                      <CottageIcon fontSize="medium" />
+                      // <CoffeeIcon fontSize="medium" sx={{ ml: 1 }}/>
+                      <StorefrontIcon fontSize="medium" sx={{ ml: 1 }}/>
+                      // <LocalCafeIcon fontSize="medium" sx={{ ml: 1 }}/>
                     ) : (
                       <Typography
                         variant="h6"

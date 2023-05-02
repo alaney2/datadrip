@@ -4720,5 +4720,28 @@
             "jaccard_similarity_score",
             "classification_report"
         ]
+    },
+    "micro_f1_score": {
+        "title": "Micro F1 Score",
+        "prerequisites": [
+            "accuracy",
+            "precision",
+            "recall",
+            "f1_score",
+            "confusion_matrix",
+            "classification_metrics",
+            "multi_class_classification",
+            "multi_label_classification"
+        ],
+        "further_readings": [
+            "weighted_f1_score",
+            "macro_f1_score",
+            "average_precision_score",
+            "roc_auc_score",
+            "hamming_loss",
+            "jaccard_similarity_score",
+            "log_loss",
+            "zero_one_loss"
+        ]
     }
 }
