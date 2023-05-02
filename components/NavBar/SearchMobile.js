@@ -35,10 +35,7 @@ const SearchMobileWrapper = styled('div')(({ theme }) => ({
   zIndex: theme.zIndex.appBar + 2,
   backgroundColor: theme.palette.background.paper,
   borderRadius: '50px',
-  // padding: '4px',
   padding: '0 4px',
-  // border: `1px solid ${theme.palette.divider}`,
-  // border: (props) => (props.showSearchInput ? `1px solid ${theme.palette.divider}` : 'none'),
 }));
 
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
@@ -48,22 +45,16 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     easing: theme.transitions.easing.easeInOut,
     duration: theme.transitions.duration.standard,
   }),
-  '& .MuiInputBase-input': {
-    // padding: theme.spacing(1),
-    // padding: (props) => (props.showSearchInput ? theme.spacing(1) : 0),
-    // paddingLeft: (props) => (props.style.width === '100%' ? theme.spacing(1) : 0),
-  },
 }));
 
 const StyledList = styled(List)(({ theme }) => ({
   padding: '16px 0',
   maxHeight: '400px',
-  // width: '300px',
   width: '275px',
 
   overflowY: 'auto',
-  border: (theme) => `1px solid ${theme.palette.primary.main}`, // Add this line
-  borderRadius: 12, // Add this line to give the border a rounded edge
+  border: (theme) => `1px solid ${theme.palette.primary.main}`,
+  borderRadius: 12,
   backgroundColor: theme.palette.background.paper,
 }));
 

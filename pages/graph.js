@@ -14,7 +14,6 @@ const Graphology = require('graphology');
 const louvain = require('graphology-communities-louvain');
 
 function clusterTopicsWithLinks(nodes, links) {
-  // Create a new graph
   // const graph = new Graphology();
   const graph = new Graphology({ multi: true });
 
@@ -27,25 +26,17 @@ function clusterTopicsWithLinks(nodes, links) {
     source: nodeIndexLookup[source],
     target: nodeIndexLookup[target],
   }));
-  // Add nodes to the graph
+  
   nodes.forEach((node, index) => {
     graph.addNode(index, { label: node.id });
   });
-  // Add edges (connections) to the graph
 
   updatedLinks.forEach(({ source, target }) => {
     graph.addEdge(source, target);
   });
 
-
   // Run the Louvain algorithm to find communities (clusters)
   const communities = louvain(graph);
-
-  // Assign topics to their respective clusters
-  // const topicClusters = topics.map((topic, index) => ({
-  //   topic: topic.id,
-  //   cluster: communities[index],
-  // }));
 
   nodes.forEach((node, index) => {
     node.group = communities[index];
@@ -62,7 +53,7 @@ function transformData(inputData) {
   for (const key in inputData) {
     const item = inputData[key];
     nodes.push({ id: item.title });
-    
+
     item.prerequisites.forEach(prerequisiteKey => {
       if (inputData[prerequisiteKey]) {
         const source = inputData[prerequisiteKey].title;
@@ -98,7 +89,6 @@ export default function Graph() {
 
   clusterTopicsWithLinks(transformedData.nodes, transformedData.links);
 
-  console.log(transformedData)
   return (
     <>
       <Head>

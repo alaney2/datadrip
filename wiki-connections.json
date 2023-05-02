@@ -70,7 +70,6 @@
             "pareto_distribution",
             "dirichlet_distribution",
             "weibull_distribution",
-            "student_t_distribution",
             "chi_square_distribution",
             "f_distribution",
             "cauchy_distribution",
@@ -2094,7 +2093,7 @@
         "further_readings": [
             "non_max_suppression",
             "mean_average_precision",
-            "F1_score",
+            "f1_score",
             "precision_recall_curve"
         ]
     },
@@ -3916,6 +3915,473 @@
             "moment_generating_functions",
             "characteristic_functions",
             "multivariate_probability_distributions"
+        ]
+    },
+    "discrete_distributions": {
+        "title": "Discrete Distributions",
+        "prerequisites": [
+            "probability_distributions",
+            "binomial_distribution",
+            "poisson_distribution"
+        ],
+        "further_readings": [
+            "negative_binomial_distribution",
+            "geometric_distribution",
+            "hypergeometric_distribution",
+            "multinomial_distribution",
+            "conditional_probability",
+            "expected_value_and_variance"
+        ]
+    },
+    "continuous_distributions": {
+        "title": "Continuous Distributions",
+        "prerequisites": [
+            "probability_distributions",
+            "calculus",
+            "statistics"
+        ],
+        "further_readings": [
+            "normal_distribution",
+            "exponential_distribution",
+            "beta_distribution",
+            "gamma_distribution",
+            "weibull_distribution",
+            "lognormal_distribution",
+            "chi_squared_distribution",
+            "student's_t_distribution",
+            "F_distribution"
+        ]
+    },
+    "bernoulli_distribution": {
+        "title": "Bernoulli Distribution",
+        "prerequisites": [
+            "probability_distributions",
+            "expectation_and_variance",
+            "binomial_distribution",
+            "multinomial_distribution",
+            "random_variables"
+        ],
+        "further_readings": [
+            "geometric_distribution",
+            "negative_binomial_distribution",
+            "hypergeometric_distribution",
+            "poisson_distribution",
+            "exponential_distribution",
+            "gamma_distribution",
+            "beta_distribution"
+        ]
+    },
+    "binomial_distribution": {
+        "title": "Binomial Distribution",
+        "prerequisites": [
+            "probability_distributions",
+            "discrete_mathematics",
+            "combinatorics"
+        ],
+        "further_readings": [
+            "negative_binomial_distribution",
+            "hypergeometric_distribution",
+            "Poisson_distribution",
+            "central_limit_theorem",
+            "confidence_intervals",
+            "hypothesis_testing"
+        ]
+    },
+    "poisson_distribution": {
+        "title": "Poisson Distribution",
+        "prerequisites": [
+            "probability_distributions",
+            "binomial_distribution",
+            "expectation_and_variance",
+            "exponential_distribution"
+        ],
+        "further_readings": [
+            "negative_binomial_distribution",
+            "geometric_distribution",
+            "hypergeometric_distribution",
+            "chi_squared_distribution",
+            "normal_distribution",
+            "central_limit_theorem"
+        ]
+    },
+    "uniform_distribution": {
+        "title": "Uniform Distribution",
+        "prerequisites": [
+            "probability_distributions",
+            "random_variables",
+            "cumulative_distribution_functions"
+        ],
+        "further_readings": [
+            "normal_distribution",
+            "exponential_distribution",
+            "gamma_distribution",
+            "chi_squared_distribution",
+            "beta_distribution",
+            "weibull_distribution",
+            "lognormal_distribution",
+            "pareto_distribution"
+        ]
+    },
+    "normal_distribution": {
+        "title": "Normal Distribution",
+        "prerequisites": [
+            "probability_distributions",
+            "central_limit_theorem",
+            "standard_deviation"
+        ],
+        "further_readings": [
+            "multivariate_normal_distribution",
+            "t_distribution",
+            "chi_square_distribution",
+            "f_distribution",
+            "normality_tests",
+            "maximum_likelihood_estimation",
+            "Bayesian_inference"
+        ]
+    },
+    "exponential_distribution": {
+        "title": "Exponential Distribution",
+        "prerequisites": [
+            "probability_distributions",
+            "random_variables",
+            "expectation_and_variance",
+            "derivative_rules",
+            "integrals_and_limits"
+        ],
+        "further_readings": [
+            "poisson_distribution",
+            "gamma_distribution",
+            "weibull_distribution",
+            "normal_distribution",
+            "chi_squared_distribution"
+        ]
+    },
+    "beta_distribution": {
+        "title": "Beta Distribution",
+        "prerequisites": [
+            "probability_distributions",
+            "random_variables",
+            "gamma_function",
+            "conjugate_priors",
+            "maximum_likelihood_estimation"
+        ],
+        "further_readings": [
+            "dirichlet_distribution",
+            "bayesian_inference",
+            "markov_chain_monte_carlo",
+            "variational_inference",
+            "beta_regression",
+            "beta_binomial_distribution"
+        ]
+    },
+    "multivariate_distributions": {
+        "title": "Multivariate Distributions",
+        "prerequisites": [
+            "probability_distributions",
+            "joint_probability_distribution",
+            "marginal_probability_distribution",
+            "conditional_probability_distribution",
+            "covariance_and_correlation",
+            "moment_generating_function"
+        ],
+        "further_readings": [
+            "multivariate_normal_distribution",
+            "copulas",
+            "conditional_probability_distribution",
+            "multivariate_regression",
+            "multivariate_anova",
+            "principal_component_analysis",
+            "factor_analysis",
+            "latent_dirichlet_allocation"
+        ]
+    },
+    "multinomial_distribution": {
+        "title": "Multinomial Distribution",
+        "prerequisites": [
+            "probability_distributions",
+            "discrete_mathematics"
+        ],
+        "further_readings": [
+            "binomial_distribution",
+            "poisson_distribution",
+            "beta_distribution",
+            "dirichlet_distribution",
+            "categorical_distribution"
+        ]
+    },
+    "multivariate_normal_distribution": {
+        "title": "Multivariate Normal Distribution",
+        "prerequisites": [
+            "probability_distributions",
+            "matrix_algebra",
+            "linear_algebra",
+            "calculus",
+            "statistics"
+        ],
+        "further_readings": [
+            "multivariate_analysis",
+            "covariance_matrix",
+            "principal_component_analysis",
+            "canonical_correlation_analysis",
+            "multivariate_regression_analysis",
+            "factor_analysis",
+            "discriminant_analysis",
+            "bayesian_networks"
+        ]
+    },
+    "gamma_distribution": {
+        "title": "Gamma Distribution",
+        "prerequisites": [
+            "probability_distributions",
+            "exponential_distribution",
+            "poisson_distribution",
+            "beta_distribution",
+            "moment_generating_functions",
+            "maximum_likelihood_estimation",
+            "bayesian_inference",
+            "hypothesis_testing"
+        ],
+        "further_readings": [
+            "chi_squared_distribution",
+            "weibull_distribution",
+            "log_normal_distribution",
+            "dirichlet_distribution",
+            "gamma_process",
+            "probability_theory",
+            "statistical_inference",
+            "time_series_analysis"
+        ]
+    },
+    "pareto_distribution": {
+        "title": "Pareto Distribution",
+        "prerequisites": [
+            "probability_distributions",
+            "continuous_random_variables"
+        ],
+        "further_readings": [
+            "exponential_distribution",
+            "normal_distribution",
+            "gamma_distribution",
+            "beta_distribution"
+        ]
+    },
+    "dirichlet_distribution": {
+        "title": "Dirichlet Distribution",
+        "prerequisites": [
+            "probability_distributions",
+            "gamma_distribution",
+            "beta_distribution",
+            "multinomial_distribution",
+            "bayesian_inference",
+            "conjugate_priors"
+        ],
+        "further_readings": [
+            "dirichlet_process",
+            "dirichlet_multinomial_distribution",
+            "latent_dirichlet_allocation",
+            "hierarchical_dirichlet_process",
+            "bayesian_nonparametrics",
+            "bayesian_model_selection"
+        ]
+    },
+    "weibull_distribution": {
+        "title": "Weibull Distribution",
+        "prerequisites": [
+            "probability_distributions",
+            "exponential_distribution",
+            "hazard_functions",
+            "maximum_likelihood_estimation",
+            "survival_analysis"
+        ],
+        "further_readings": [
+            "gamma_distribution",
+            "lognormal_distribution",
+            "pareto_distribution",
+            "extreme_value_distribution",
+            "reliability_engineering",
+            "accelerated_life_testing",
+            "censoring_and_truncation"
+        ]
+    },
+    "chi_square_distribution": {
+        "title": "Chi Square Distribution",
+        "prerequisites": [
+            "probability_distributions",
+            "hypothesis_testing",
+            "normal_distribution"
+        ],
+        "further_readings": [
+            "f_distribution",
+            "central_limit_theorem"
+        ]
+    },
+    "f_distribution": {
+        "title": "F Distribution",
+        "prerequisites": [
+            "normal_distribution",
+            "chi_squared_distribution",
+            "hypothesis_testing",
+            "analysis_of_variance",
+            "regression_analysis"
+        ],
+        "further_readings": [
+            "probability_distributions",
+            "confidence_intervals",
+            "t_distribution",
+            "central_limit_theorem"
+        ]
+    },
+    "cauchy_distribution": {
+        "title": "Cauchy Distribution",
+        "prerequisites": [
+            "probability_distributions",
+            "central_limit_theorem"
+        ],
+        "further_readings": [
+            "levy_distribution",
+            "heavy_tailed_distributions"
+        ]
+    },
+    "copulas": {
+        "title": "Copulas",
+        "prerequisites": [
+            "probability_distributions",
+            "multivariate_statistics",
+            "correlation_analysis",
+            "maximum_likelihood_estimation",
+            "statistics_of_extremes"
+        ],
+        "further_readings": [
+            "dependence_modeling",
+            "vine_copulas",
+            "archimedean_copulas",
+            "copula_regression",
+            "copula_garch_models",
+            "copula-based_time_series_analysis",
+            "copula_networks",
+            "copula-based_machine_learning_methods"
+        ]
+    },
+    "negative_binomial_distribution": {
+        "title": "Negative Binomial Distribution",
+        "prerequisites": [
+            "probability_distributions",
+            "binomial_distribution",
+            "poisson_distribution",
+            "moment_generating_functions",
+            "factorial_moments",
+            "conditional_probability"
+        ],
+        "further_readings": [
+            "zero_inflated_negative_binomial_distribution",
+            "hurdle_negative_binomial_distribution",
+            "geometric_distribution",
+            "hypergeometric_distribution",
+            "beta_negative_binomial_distribution",
+            "bayesian_inference",
+            "maximum_likelihood_estimation",
+            "glm_models"
+        ]
+    },
+    "geometric_distribution": {
+        "title": "Geometric Distribution",
+        "prerequisites": [
+            "probability_distributions",
+            "binomial_distribution",
+            "expected_value",
+            "variance",
+            "random_variables"
+        ],
+        "further_readings": [
+            "negative_binomial_distribution",
+            "poisson_distribution",
+            "exponential_distribution",
+            "weibull_distribution",
+            "gamma_distribution",
+            "beta_distribution",
+            "chi_squared_distribution",
+            "normal_distribution",
+            "lognormal_distribution"
+        ]
+    },
+    "hypergeometric_distribution": {
+        "title": "Hypergeometric Distribution",
+        "prerequisites": [
+            "probability_distributions",
+            "combinatorics"
+        ],
+        "further_readings": [
+            "binomial_distribution",
+            "multinomial_distribution",
+            "Poisson_distribution",
+            "negative_binomial_distribution",
+            "geometric_distribution"
+        ]
+    },
+    "expected_value_and_variance": {
+        "title": "Expected Value and Variance",
+        "prerequisites": [
+            "probability_distributions",
+            "basic_statistics",
+            "calculus"
+        ],
+        "further_readings": [
+            "law_of_large_numbers",
+            "central_limit_theorem",
+            "monte_carlo_methods",
+            "markov_chain_monte_carlo",
+            "reinforcement_learning",
+            "bayesian_inference",
+            "stochastic_processes"
+        ]
+    },
+    "lognormal_distribution": {
+        "title": "Lognormal Distribution",
+        "prerequisites": [
+            "normal_distribution",
+            "probability_distributions",
+            "exponential_distribution",
+            "central_limit_theorem"
+        ],
+        "further_readings": [
+            "exponential_family",
+            "gamma_distribution",
+            "weibull_distribution",
+            "chi_squared_distribution",
+            "maximum_likelihood_estimation",
+            "bayesian_inference",
+            "monte_carlo_methods"
+        ]
+    },
+    "chi_squared_distribution": {
+        "title": "Chi Squared Distribution",
+        "prerequisites": [
+            "probability_distributions",
+            "central_limit_theorem",
+            "hypothesis_testing"
+        ],
+        "further_readings": [
+            "normal_distribution",
+            "t_distribution",
+            "f_distribution",
+            "goodness_of_fit_tests",
+            "ANOVA",
+            "nonparametric_statistics"
+        ]
+    },
+    "students_t_distribution": {
+        "title": "Student's T Distribution",
+        "prerequisites": [
+            "probability_distributions",
+            "normal_distribution",
+            "hypothesis_testing",
+            "central_limit_theorem"
+        ],
+        "further_readings": [
+            "chi_squared_distribution",
+            "ANOVA",
+            "regression_analysis",
+            "confidence_intervals"
         ]
     }
 }
