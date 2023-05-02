@@ -49,12 +49,13 @@ export default function Prerequisites({ prerequisites, defaultExpanded=false }) 
         <Divider />
         <List component="div">
           {prerequisites.map((prerequisite, index) => (
-            <ListItem key={index} disablePadding sx={{ display: 'flex', justifyContent: 'space-between' }}>
-              <Box sx={{ flexGrow: 1 }}>
+            <ListItem key={index} disablePadding sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+              <Box sx={{ flexGrow: 1, alignItems: 'center', maxWidth: 'calc(100% - 48px)' }}>
               {wikiConnections[prerequisite.id] ? (
                 <Link href={`/${prerequisite.id}`} passHref>
                   <ListItemButton
                     sx={{
+                      width: '100%',
                       borderRadius: '4px',
                       pl: 1.5,
                       py: 0.5,
@@ -68,6 +69,9 @@ export default function Prerequisites({ prerequisites, defaultExpanded=false }) 
                     <ListItemText
                       primary={prerequisite.title ? prerequisite.title : prerequisite.id}
                       primaryTypographyProps={{ variant: 'body2' }}
+                      sx={{
+                        overflow: 'hidden',
+                      }}
                     />
                   </ListItemButton>
                 </Link>
@@ -87,6 +91,9 @@ export default function Prerequisites({ prerequisites, defaultExpanded=false }) 
                   <ListItemText
                     primary={prerequisite.title ? prerequisite.title : prerequisite.id}
                     primaryTypographyProps={{ variant: 'body2' }}
+                    sx={{
+                      overflow: 'hidden',
+                    }}
                   />
                 </ListItemButton>
               )}

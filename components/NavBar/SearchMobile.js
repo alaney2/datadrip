@@ -6,7 +6,6 @@ import SearchIcon from '@mui/icons-material/Search';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Backdrop from '@mui/material/Backdrop';
-import clsx from 'clsx';
 import wikiConnections from '@/wiki-connections.json';
 import { matchSorter } from 'match-sorter'
 import useAutocomplete from '@mui/base/useAutocomplete';
@@ -83,7 +82,6 @@ const titles = Object.entries(wikiConnections).map(([key, value]) => ({
 export default function SearchMobile() {
   const [showSearchInput, setShowSearchInput] = React.useState(false);
   const [inputValue, setInputValue] = React.useState('');
-  const [noOptions, setNoOptions] = React.useState(false);
 
   const inputRef = React.useRef();
   const searchIconRef = React.useRef();
@@ -126,14 +124,6 @@ export default function SearchMobile() {
     },
   });
 
-  const searchOpen = ({ theme }) => ({
-    width: '100%',
-  });
-
-  const searchClosed = ({ theme }) => ({
-    width: 0,
-  });
-
   const handleKeyDown = (event) => {
     if (event.key === 'Escape') {
       inputRef.current.blur();
@@ -150,15 +140,6 @@ export default function SearchMobile() {
     setInputValue('');
   };
 
-  const handleInputChange = (event) => {
-    setInputValue(event.target.value);
-    if (groupedOptions.length === 0 && event.target.value !== '') {
-      setNoOptions(true);
-    } else {
-      setNoOptions(false);
-    }
-  };
-
   React.useEffect(() => {
     if (showSearchInput) {
       inputRef?.current?.focus();
@@ -167,16 +148,8 @@ export default function SearchMobile() {
     }
   }, [showSearchInput]);
 
-
   return (
     <>
-      {/* <Backdrop
-        open={showSearchInput}
-        onClick={handleCloseIconClick}
-        sx={{ 
-          zIndex: theme.zIndex.appBar + 1,
-        }}
-      /> */}
       <div>
         <SearchMobileWrapper ref={wrapperRef}>
           <Search>
@@ -184,7 +157,6 @@ export default function SearchMobile() {
               placeholder={'Search…'}
               value={inputValue}
               inputProps={{ 'aria-label': 'search' }}
-              // showSearchInput={showSearchInput}
               inputRef={inputRef}
               onKeyDown={handleKeyDown}
               style={{ width: showSearchInput ? '100%' : 0, }}
@@ -195,7 +167,6 @@ export default function SearchMobile() {
                   }
                 },
               })}
-              // onChange={handleInputChange}
               startAdornment={
                 showSearchInput ? (
                   <SearchIcon 

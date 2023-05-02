@@ -49,8 +49,8 @@ export default function FurtherReading({ furtherReadings, defaultExpanded=false 
         <Divider />
         <List component="div" >
           {furtherReadings.map((reading, index) => (
-            <ListItem key={index} disablePadding sx={{ display: 'flex', justifyContent: 'space-between' }}>
-              <Box sx={{ flexGrow: 1 }}>
+            <ListItem key={index} disablePadding sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+              <Box sx={{ flexGrow: 1, alignItems: 'center', maxWidth: 'calc(100% - 48px)' }}>
               {wikiConnections[reading.id] ? (
                 <Link href={`/${reading.id}`} passHref>
                   <ListItemButton
@@ -64,11 +64,15 @@ export default function FurtherReading({ furtherReadings, defaultExpanded=false 
                       },
                       ml: 0,
                     }}
-                    onClick={() => router.push(`/${reading.id}`)}
                   >
                     <ListItemText
                       primary={reading.title ? reading.title : reading.id}
-                      primaryTypographyProps={{ variant: 'body2' }}
+                      primaryTypographyProps={{ 
+                        variant: 'body2',
+                       }}
+                       sx={{
+                        overflow: 'hidden',
+                       }}
                     />
                   </ListItemButton>
                 </Link>
@@ -88,6 +92,9 @@ export default function FurtherReading({ furtherReadings, defaultExpanded=false 
                   <ListItemText
                     primary={reading.title ? reading.title : reading.id}
                     primaryTypographyProps={{ variant: 'body2' }}
+                    sx={{
+                      overflow: 'hidden',
+                    }}
                   />
                 </ListItemButton>
               )}
