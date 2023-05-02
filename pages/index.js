@@ -14,7 +14,6 @@ import { getArticleDescription } from '@/components/utilities';
 import BackToTop from '@/components/PageContent/BackToTop';
 import Carousel from '@/components/Carousel.js';
 
-
 const MAX_ARTICLES = 30;
 
 export async function getStaticProps() {
@@ -46,7 +45,6 @@ const ColumnContainer = styled('div')(({ theme }) => ({
   columnWidth: 'calc((100% - 64px) / 3)',
   marginBottom: '32px',
   breakInside: 'avoid',
-  // height: '100vh',
   overflow: 'hidden',
   [theme.breakpoints.down('sm')]: {
     columnCount: 1,
@@ -85,16 +83,18 @@ export default function Home({ articles }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <SkipLink skipToId="main-content" />
-        <NavBar />
-        <StyledContainer id="main-content" >
-          <Box sx={{ mx: { xs: 4, lg: 8 }, my: 8 }}>
-            <ColumnContainer>
-              <Carousel articles={articles} numColumns={numColumns} />
-            </ColumnContainer>
-          </Box>
-        </StyledContainer>
-        <BackToTop />
+        <Box sx={{ height: '100vh' }}>
+          <SkipLink skipToId="main-content" />
+          <NavBar />
+          <StyledContainer id="main-content" >
+            <Box sx={{ mx: { xs: 4, lg: 8 }, my: 8 }}>
+              <ColumnContainer>
+                <Carousel articles={articles} numColumns={numColumns} />
+              </ColumnContainer>
+            </Box>
+          </StyledContainer>
+          <BackToTop />
+        </Box>
       </main>
     </>
   );
