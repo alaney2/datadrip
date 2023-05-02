@@ -1,17 +1,13 @@
 import { google } from 'googleapis';
-import { readFileSync } from 'fs';
-import { join } from 'path';
+import dotenv from 'dotenv';
 
+dotenv.config();
 
 async function authorize() {
-  const keyFile = join(process.cwd(), 'credentials.json');
-  const keyFileContents = readFileSync(keyFile, 'utf-8');
-  const serviceAccountCredentials = JSON.parse(keyFileContents);
-
   const jwtClient = new google.auth.JWT(
-    serviceAccountCredentials.client_email,
+    process.env.GOOGLE_CLIENT_EMAIL,
     null,
-    serviceAccountCredentials.private_key,
+    process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n'),
     ['https://www.googleapis.com/auth/spreadsheets'],
   );
 

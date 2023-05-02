@@ -4383,5 +4383,342 @@
             "regression_analysis",
             "confidence_intervals"
         ]
+    },
+    "precision": {
+        "title": "Precision",
+        "prerequisites": [
+            "basic_statistics",
+            "mean",
+            "variance",
+            "standard_deviation",
+            "hypothesis_testing",
+            "confidence_intervals"
+        ],
+        "further_readings": [
+            "accuracy_vs_precision",
+            "type_i_and_type_ii_errors",
+            "precision_recall_tradeoff",
+            "receiver_operating_characteristic_curve",
+            "bias_variance_tradeoff",
+            "overfitting_and_underfitting",
+            "cross_validation",
+            "regularization_techniques"
+        ]
+    },
+    "recall": {
+        "title": "Recall",
+        "prerequisites": [
+            "classification_metrics",
+            "confusion_matrix",
+            "precision",
+            "true_positive_rate",
+            "false_negative_rate",
+            "binary_classification"
+        ],
+        "further_readings": [
+            "f1_score",
+            "precision_recall_curve",
+            "roc_curve",
+            "area_under_the_curve",
+            "average_precision",
+            "balanced_accuracy",
+            "multiclass_classification_metrics",
+            "weighted_metrics"
+        ]
+    },
+    "activation_functions": {
+        "title": "Activation Functions",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "deep_learning",
+            "gradient_descent",
+            "backpropagation"
+        ],
+        "further_readings": [
+            "vanishing_and_exploding_gradients",
+            "rectified_linear_units",
+            "softmax_function",
+            "sigmoid_function",
+            "tanh_function",
+            "swish_function",
+            "leaky_relu",
+            "maxout_function"
+        ]
+    },
+    "alexnet": {
+        "title": "AlexNet",
+        "prerequisites": [
+            "convolutional_neural_networks",
+            "backpropagation",
+            "stochastic_gradient_descent",
+            "loss_functions",
+            "optimization_algorithms",
+            "deep_learning_frameworks",
+            "regularization_techniques"
+        ],
+        "further_readings": [
+            "vgg",
+            "googlenet",
+            "resnet",
+            "inception",
+            "mobilenet",
+            "efficientnet",
+            "image_classification",
+            "transfer_learning"
+        ]
+    },
+    "vgg": {
+        "title": "VGG",
+        "prerequisites": [
+            "convolutional_neural_networks",
+            "backpropagation",
+            "stochastic_gradient_descent",
+            "loss_functions",
+            "optimization_algorithms",
+            "deep_learning_frameworks",
+            "regularization_techniques"
+        ],
+        "further_readings": [
+            "resnet",
+            "inception",
+            "efficientnet",
+            "densenet",
+            "squeezenet",
+            "mobile_net",
+            "transfer_learning",
+            "fine_tuning_and_pretraining"
+        ]
+    },
+    "resnet": {
+        "title": "ResNet",
+        "prerequisites": [
+            "convolutional_neural_networks",
+            "backpropagation",
+            "stochastic_gradient_descent",
+            "loss_functions",
+            "optimization_algorithms",
+            "deep_learning_frameworks",
+            "regularization_techniques"
+        ],
+        "further_readings": [
+            "resnet_versions",
+            "densenet",
+            "inception_networks",
+            "efficientnet",
+            "resnext",
+            "wide_resnet",
+            "residual_attention_networks",
+            "pretrained_resnet_models"
+        ]
+    },
+    "inception": {
+        "title": "Inception",
+        "prerequisites": [
+            "convolutional_neural_networks",
+            "deep_learning_frameworks",
+            "backpropagation",
+            "stochastic_gradient_descent",
+            "loss_functions",
+            "optimization_algorithms",
+            "regularization_techniques"
+        ],
+        "further_readings": [
+            "inception_v2_and_v3",
+            "inception_v4_and_inception_resnet",
+            "xception",
+            "googlenet",
+            "resnet",
+            "densenet",
+            "efficientnet",
+            "nasnet"
+        ]
+    },
+    "efficientnet": {
+        "title": "EfficientNet",
+        "prerequisites": [
+            "convolutional_neural_networks",
+            "deep_learning_frameworks",
+            "optimization_algorithms",
+            "transfer_learning",
+            "model_architecture",
+            "deep_learning"
+        ],
+        "further_readings": [
+            "efficientnet_b0_to_b7",
+            "mixnet",
+            "mobilenetv3",
+            "mnasnet",
+            "neural_architecture_search",
+            "compound_scaling",
+            "model_scaling",
+            "automl"
+        ]
+    },
+    "yolo": {
+        "title": "YOLO",
+        "prerequisites": [
+            "object_detection",
+            "convolutional_neural_networks",
+            "bounding_boxes",
+            "backpropagation",
+            "loss_functions",
+            "optimization_algorithms",
+            "deep_learning_frameworks"
+        ],
+        "further_readings": [
+            "yolo_v2",
+            "yolo_v3",
+            "yolo_v4",
+            "yolo_v5",
+            "tiny_yolo",
+            "real_time_object_detection",
+            "single_shot_multibox_detector",
+            "region_proposal_networks"
+        ]
+    },
+    "ssd": {
+        "title": "SSD",
+        "prerequisites": [
+            "convolutional_neural_networks",
+            "object_detection",
+            "bounding_boxes",
+            "anchor_boxes",
+            "sliding_window_approach",
+            "iou",
+            "loss_functions",
+            "optimization_algorithms"
+        ],
+        "further_readings": [
+            "yolo",
+            "faster_rcnn",
+            "efficientdet",
+            "retinanet",
+            "mask_rcnn",
+            "scale_and_aspect_ratio",
+            "hard_negative_mining",
+            "multi_box_loss"
+        ]
+    },
+    "fast_r-cnn": {
+        "title": "Fast R-CNN",
+        "prerequisites": [
+            "object_detection",
+            "convolutional_neural_networks",
+            "selective_search",
+            "region_proposal_networks",
+            "r-cnn",
+            "loss_functions",
+            "optimization_algorithms"
+        ],
+        "further_readings": [
+            "faster_r-cnn",
+            "mask_r-cnn",
+            "yolo",
+            "single_shot_multibox_detector",
+            "region_based_fully_convolutional_networks",
+            "cascade_r-cnn",
+            "anchor_boxes"
+        ]
+    },
+    "confusion_matrix": {
+        "title": "Confusion Matrix",
+        "prerequisites": [
+            "classification_algorithms",
+            "binary_classification",
+            "multiclass_classification",
+            "evaluation_metrics",
+            "true_positive_rate",
+            "false_positive_rate",
+            "precision",
+            "recall"
+        ],
+        "further_readings": [
+            "roc_curve",
+            "auc_score",
+            "f1_score",
+            "balanced_accuracy",
+            "cohen_kappa",
+            "matthews_correlation_coefficient",
+            "multilabel_classification",
+            "imbalanced_classification"
+        ]
+    },
+    "roc_curve": {
+        "title": "ROC Curve",
+        "prerequisites": [
+            "binary_classification",
+            "confusion_matrix",
+            "true_positive_rate",
+            "false_positive_rate",
+            "probability_thresholds",
+            "model_evaluation"
+        ],
+        "further_readings": [
+            "precision_recall_curve",
+            "area_under_the_curve",
+            "receiver_operating_characteristic",
+            "cost_sensitive_learning",
+            "model_comparison",
+            "cross_validation",
+            "imbalanced_data",
+            "classifier_calibration"
+        ]
+    },
+    "area_under_the_curve": {
+        "title": "Area Under The Curve",
+        "prerequisites": [
+            "probability_distributions",
+            "random_variables",
+            "cumulative_distribution_function",
+            "probability_density_function",
+            "integration",
+            "roc_curve"
+        ],
+        "further_readings": [
+            "precision_recall_curve",
+            "receiver_operating_characteristic",
+            "model_evaluation_metrics",
+            "threshold_selection",
+            "classification_models",
+            "regression_models",
+            "multiclass_classification",
+            "performance_measure"
+        ]
+    },
+    "accuracy_score": {
+        "title": "Accuracy Score",
+        "prerequisites": [
+            "classification_algorithms",
+            "confusion_matrix",
+            "precision_recall_f1_score",
+            "evaluation_metrics_ml"
+        ],
+        "further_readings": [
+            "cross_validation",
+            "roc_curve",
+            "area_under_curve",
+            "multiclass_classification_metrics",
+            "imbalanced_data",
+            "micro_macro_averaging",
+            "k_fold_cross_validation",
+            "stratified_k_fold_cross_validation"
+        ]
+    },
+    "macro_f1_score": {
+        "title": "Macro F1 Score",
+        "prerequisites": [
+            "precision_and_recall",
+            "confusion_matrix",
+            "classification_metrics",
+            "multiclass_classification"
+        ],
+        "further_readings": [
+            "micro_f1_score",
+            "weighted_f1_score",
+            "area_under_roc_curve",
+            "hamming_loss",
+            "jaccard_similarity_score",
+            "classification_report"
+        ]
     }
 }

@@ -14,9 +14,7 @@ const ForceGraphUrl = ({ data }) => {
     backgroundColor = '#8e8e8e';
   }
   
-  const highlightNodes = new Set();
-  const highlightLinks = new Set();
-  let hoverNode = null;
+  
 
   function getNodeById(nodes, id) {
     return nodes.find(node => node.id === id);
@@ -38,14 +36,19 @@ const ForceGraphUrl = ({ data }) => {
   });
 
   useEffect(() => {
+    if (!containerRef.current || !data) return;
+    
+    const highlightNodes = new Set();
+    const highlightLinks = new Set();
+    let hoverNode = null;
+
     function updateHighlight() {
-      // trigger update of highlighted objects in scene
       Graph
       .nodeColor(Graph.nodeColor())
       .linkWidth(Graph.linkWidth())
       .linkDirectionalParticles(Graph.linkDirectionalParticles());
     }
-    if (!containerRef.current || !data) return;
+    
 
     const Graph = ForceGraph3D()
       (containerRef.current)
@@ -93,6 +96,7 @@ const ForceGraphUrl = ({ data }) => {
         }
 
         hoverNode = node || null;
+
 
         updateHighlight();
       })
