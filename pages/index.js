@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import Head from 'next/head';
-import { Card, CardActionArea, CardContent, CardMedia, Typography, Box } from '@mui/material';
+import { Card, CardContent, Typography, Box } from '@mui/material';
 import NavBar from '@/components/NavBar/NavBar';
 import wikiConnections from '@/wiki-connections.json';
 import Link from 'next/link';
 import SkipLink from '@/components/SkipLink';
-import { styled, useTheme } from '@mui/material/styles';
-import { useMediaQuery } from '@mui/material';
 import path from 'path';
 import fs from 'fs';
 import { shuffleArray } from '@/components/utilities';
@@ -14,7 +12,7 @@ import { getArticleDescription } from '@/components/utilities';
 import BackToTop from '@/components/PageContent/BackToTop';
 import Looper from '@/components/Looper';
 
-const MAX_ARTICLES = 12;
+const MAX_ARTICLES = 24;
 
 export async function getStaticProps() {
   const shuffledArticles1 = shuffleArray(Object.entries(wikiConnections)).slice(0, MAX_ARTICLES);
@@ -47,44 +45,7 @@ export async function getStaticProps() {
   };
 }
 
-const StyledContainer = styled('div')(({ theme }) => ({
-  maxWidth: 1280,
-  margin: '0 auto',
-  padding: theme.spacing(2),
-}));
-
-const ColumnContainer = styled('div')(({ theme }) => ({
-  columnGap: '32px',
-  columnWidth: 'calc((100% - 64px) / 3)',
-  marginBottom: '32px',
-  breakInside: 'avoid',
-  overflow: 'hidden',
-  [theme.breakpoints.down('sm')]: {
-    columnCount: 1,
-  },
-  [theme.breakpoints.between('sm', 'md')]: {
-    columnCount: 2,
-  },
-  [theme.breakpoints.up('md')]: {
-    columnCount: 3,
-  },
-}));
-
 export default function Home({ articles1, articles2 }) {
-  const theme = useTheme();
-  const matchesSM = useMediaQuery(theme.breakpoints.down('sm'));
-  const matchesMD = useMediaQuery(theme.breakpoints.between('sm', 'md'));
-  const [numColumns, setNumColumns] = useState(3);
-
-  useEffect(() => {
-    if (matchesSM) {
-      setNumColumns(1);
-    } else if (matchesMD) {
-      setNumColumns(2);
-    } else {
-      setNumColumns(3);
-    }
-  }, [matchesSM, matchesMD, theme]);
 
   return (
     <>
@@ -97,15 +58,7 @@ export default function Home({ articles1, articles2 }) {
       <main>
         <Box 
           sx={{ 
-            // display: 'flex',
-            // flexDirection: 'column',
             height: '100vh',
-            // minHeight: '100vh', 
-            // maxHeight: '100vh', 
-            // justifyContent: 'space-between', 
-            // justifyContent: 'space-between',
-
-            // alignItems: 'center' 
           }}
         >
           <SkipLink skipToId="main-content" />
@@ -120,7 +73,7 @@ export default function Home({ articles1, articles2 }) {
               minHeight: 'calc(100% - 128px)'
             }}
           >
-            <Looper speed={40} direction="right">
+            <Looper speed={100} direction="right">
               {articles1.map(([key, value]) => (
                 <Link href={`/${key}`} key={key} passHref>
                   <Card
@@ -158,7 +111,7 @@ export default function Home({ articles1, articles2 }) {
                 </Link>
               ))}
             </Looper>
-            <Looper speed={30} direction="left">
+            <Looper speed={80} direction="left">
               {articles2.map(([key, value]) => (
                 <Link href={`/${key}`} key={key} passHref>
                   <Card
