@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import ForceGraph3D from '3d-force-graph';
 import { useTheme } from '@mui/material/styles';
 import SpriteText from 'three-spritetext';
@@ -36,12 +36,17 @@ const ForceGraphUrl = ({ data }) => {
     b.links.push(link);
   });
 
+  // const highlightNodes = new Set();
+  // const highlightLinks = new Set();
+  // const clickedNodes = new Set();
+
+  const highlightNodes = useRef(new Set());
+  const highlightLinks = useRef(new Set());
+  const clickedNodes = useRef(new Set());
+
   useEffect(() => {
     if (!containerRef.current || !data) return;
     
-    const highlightNodes = new Set();
-    const highlightLinks = new Set();
-    const clickedNodes = new Set();
 
     let hoverNode = null;
 
@@ -79,29 +84,33 @@ const ForceGraphUrl = ({ data }) => {
 
         const clickedGroup = Graph.scene().getObjectByName(`NodeGroup_${node.id}`);
 
-        if (clickedNodes.has(node)) {
+        if (clickedNodes.current.has(node)) {
           // Unhighlight neighbors and hide text
           node.neighbors.forEach(neighbor => {
-            highlightNodes.delete(neighbor);
+            highlightNodes.current.delete(neighbor);
+            // neighbor.group.sphere.material.transparent = true;
+            // neighbor.group.sphere.material.opacity = 0.75;
           });
-          node.links.forEach(link => highlightLinks.delete(link));
-          clickedNodes.delete(node);
+          node.links.forEach(link => highlightLinks.current.delete(link));
+          clickedNodes.current.delete(node);
           clickedGroup.sprite.visible = false;
         } else {
           // Highlight neighbors
           node.neighbors.forEach(neighbor => {
-            highlightNodes.add(neighbor);
+            highlightNodes.current.add(neighbor);
+            // neighbor.group.sphere.material.transparent = false;
+            // neighbor.group.sphere.material.opacity = 1;
           });
-          node.links.forEach(link => highlightLinks.add(link));
-          clickedNodes.add(node);
+          node.links.forEach(link => highlightLinks.current.add(link));
+          clickedNodes.current.add(node);
           clickedGroup.sprite.visible = true;
         }
 
-        hoverNode = node || null;
         Graph
-          .nodeColor(Graph.nodeColor())
-          .linkWidth(Graph.linkWidth())
-          .linkDirectionalParticles(Graph.linkDirectionalParticles());
+          .nodeColor(node => node.color)
+          .linkWidth(link => highlightLinks.current.has(link) ? 4 : 1)
+          .linkDirectionalParticles(link => highlightLinks.current.has(link) ? 4 : 0);
+
       })
 
       .nodeThreeObject(node => {
@@ -114,25 +123,26 @@ const ForceGraphUrl = ({ data }) => {
         const sphereGeometry = new THREE.SphereGeometry(sphereSize);
         const sphereMaterial = new THREE.MeshLambertMaterial({ 
           color: node.color, 
-          transparent: true,
-          opacity: 0.75 
+          transparent: highlightNodes.current.has(node) ? false : true,
+          opacity: highlightNodes.current.has(node) ? 1 : 0.75 // Increase the opacity if the node is highlighted
         });
         const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
         group.add(sphere);
+        group.sphere = sphere;
 
         const sprite = new SpriteText(node.id);
         sprite.material.depthWrite = false; // make sprite background transparent
         sprite.color = node.color;
         sprite.textHeight = 8;
-        sprite.visible = clickedNodes.has(node); // set visibility based on whether the node is clicked
+        sprite.visible = clickedNodes.current.has(node); // set visibility based on whether the node is clicked
         group.add(sprite);
         // Store the sprite as a property of the group for easier access later
         group.sprite = sprite;
         return group;
       })
       
-      .linkWidth(link => highlightLinks.has(link) ? 4 : 1)
-      .linkDirectionalParticles(link => highlightLinks.has(link) ? 4 : 0)
+      .linkWidth(link => highlightLinks.current.has(link) ? 4 : 1)
+      .linkDirectionalParticles(link => highlightLinks.current.has(link) ? 4 : 0)
       .linkDirectionalParticleWidth(4)
       .linkDirectionalParticleSpeed(0.005)
 
@@ -158,7 +168,7 @@ const ForceGraphUrl = ({ data }) => {
 
       // Graph.onEngineStop(() => Graph.zoomToFit(400));
 
-  }, [containerRef, data, backgroundColor]);
+  }, [containerRef, data, backgroundColor, highlightNodes, highlightLinks, clickedNodes]);
 
   return <div ref={containerRef} style={{ width: '100%', height: '100%' }} />;
 };
