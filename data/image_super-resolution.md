@@ -1,6 +1,6 @@
-# Image Super-resolution
+# Image Super-Resolution
 
-Image super-resolution (SR) is the process of increasing the resolution of a low-resolution image to a higher resolution image using deep learning techniques. It is a subfield of computer vision and image processing that has gained significant attention in recent years due to its wide range of practical applications, such as medical imaging, surveillance, and satellite imaging.
+Image Super-Resolution (ISR) is a technique to enhance the resolution of a low-resolution image by generating a high-resolution version of it. ISR is an essential component of many image-processing applications and has a wide range of applications in various fields, including medical imaging, video surveillance, and computer vision. In recent years, the advancement of Deep Learning (DL) has significantly improved the performance of ISR techniques.
 
 ## Convolutional Neural Networks
 
@@ -22,8 +22,12 @@ Generative adversarial networks (GANs) are a type of neural network that consist
 
 Deep residual learning is a technique used to train deep neural networks with many layers. It involves the use of residual connections to enable the network to learn the residual mapping between the input and output. In image super-resolution, deep residual networks are used to learn the complex mapping between low-resolution images and high-resolution images.
 
+## Digital Signal Processing
+
+Digital Signal Processing (DSP) is a field that deals with the processing of digital signals. ISR techniques can be viewed as a type of DSP technique that operates on digital images. DSP techniques such as Fourier Transform, Wavelet Transform, and Discrete Cosine Transform can be used in combination with ISR techniques to improve the quality of the output image.
+
 ## Perceptual Loss Functions
 
-Perceptual loss functions are used to measure the perceptual similarity between the generated high-resolution images and the ground truth high-resolution images. Unlike traditional loss functions such as mean squared error (MSE), perceptual loss functions take into account the perceptual quality of the images, such as sharpness, texture, and color. In image super-resolution, perceptual loss functions such as mean squared error plus feature reconstruction loss and adversarial loss are commonly used. 
+Perceptual loss functions are used to measure the perceptual similarity between the generated high-resolution images and the ground truth high-resolution images. Unlike traditional loss functions such as mean squared error (MSE), perceptual loss functions take into account the perceptual quality of the images, such as sharpness, texture, and color. In image super-resolution, perceptual loss functions such as mean squared error plus feature reconstruction loss and adversarial loss are commonly used.
 
 In conclusion, image super-resolution is an important subfield of computer vision and image processing that has gained significant attention in recent years. It involves the use of deep learning techniques such as convolutional neural networks, generative adversarial networks, and deep residual learning to increase the resolution of low-resolution images. Perceptual loss functions are used to measure the perceptual similarity between the generated high-resolution images and the ground truth high-resolution images.

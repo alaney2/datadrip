@@ -174,7 +174,7 @@
             "stochastic_gradient_descent",
             "momentum",
             "newtons_method",
-            "quasi_newton_methods",
+            "quasi-newton_methods",
             "adagrad",
             "rmsprop",
             "adam"
@@ -663,7 +663,6 @@
             "image_captioning",
             "question_answering",
             "language_translation",
-            "summarization",
             "knowledge_graphs",
             "speech_synthesis",
             "data_augmentation"
@@ -805,7 +804,7 @@
             "adam",
             "rmsprop",
             "conjugate_gradient_method",
-            "quasi_newton_methods",
+            "quasi-newton_methods",
             "line_search_methods"
         ]
     },
@@ -843,7 +842,7 @@
             "rmsprop",
             "adam",
             "conjugate_gradient_method",
-            "quasi_newton_methods",
+            "quasi-newton_methods",
             "proximal_gradient_descent",
             "batch_normalization",
             "weight_decay"
@@ -1004,7 +1003,7 @@
             "optimization_algorithms"
         ],
         "further_readings": [
-            "quasi_newton_methods",
+            "quasi-newton_methods",
             "conjugate_gradient_method",
             "stochastic_gradient_descent"
         ]
@@ -1027,7 +1026,7 @@
             "numerical_analysis"
         ]
     },
-    "quasi_newton_methods": {
+    "quasi-newton_methods": {
         "title": "Quasi-Newton Methods",
         "prerequisites": [
             "optimization_algorithms",
@@ -1968,8 +1967,8 @@
         "further_readings": [
             "yolo",
             "ssd",
-            "faster_rcnn",
-            "mask_rcnn",
+            "faster_r-cnn",
+            "mask_r-cnn",
             "retinanet",
             "efficientdet",
             "object_tracking",
@@ -2041,10 +2040,10 @@
             "anchor_boxes"
         ],
         "further_readings": [
-            "faster_rcnn",
+            "faster_r-cnn",
             "yolo",
             "ssd",
-            "mask_rcnn",
+            "mask_r-cnn",
             "retinanet",
             "efficientdet",
             "object_tracking",
@@ -2062,7 +2061,7 @@
         ],
         "further_readings": [
             "region_proposal_networks",
-            "faster_rcnn",
+            "faster_r-cnn",
             "yolo",
             "single_shot_multibox_detector",
             "ssd_with_attention",
@@ -2093,10 +2092,10 @@
         ],
         "further_readings": [
             "region_proposal_networks",
-            "mask_rcnn",
+            "mask_r-cnn",
             "yolov5",
             "efficientdet",
-            "faster_rcnn",
+            "faster_r-cnn",
             "ssd",
             "rcnn",
             "object_tracking",
@@ -2112,7 +2111,7 @@
             "bounding_box_regression"
         ],
         "further_readings": [
-            "faster_rcnn",
+            "faster_r-cnn",
             "yolo",
             "ssd",
             "region_proposal_network",
@@ -2168,7 +2167,7 @@
             "object_detection",
             "image_classification",
             "image_restoration",
-            "image_super_resolution",
+            "image_super-resolution",
             "image_completion",
             "style_transfer",
             "image_captioning",
@@ -2219,7 +2218,7 @@
             "generative_models_for_image_restoration"
         ]
     },
-    "image_super_resolution": {
+    "image_super-resolution": {
         "title": "Image Super-resolution",
         "prerequisites": [
             "convolutional_neural_network",
@@ -3336,7 +3335,7 @@
             "jacobian_matrix"
         ],
         "further_readings": [
-            "quasi_newton_methods",
+            "quasi-newton_methods",
             "conjugate_gradient_method",
             "broyden_fletcher_goldfarb_shanno_algorithm",
             "trust_region_methods",
@@ -4565,10 +4564,10 @@
         ],
         "further_readings": [
             "yolo",
-            "faster_rcnn",
+            "faster_r-cnn",
             "efficientdet",
             "retinanet",
-            "mask_rcnn",
+            "mask_r-cnn",
             "scale_and_aspect_ratio",
             "hard_negative_mining",
             "multi_box_loss"
@@ -4843,7 +4842,7 @@
             "convolutional_neural_networks"
         ],
         "further_readings": [
-            "mask_rcnn",
+            "mask_r-cnn",
             "panoptic_segmentation"
         ]
     },
@@ -5377,7 +5376,7 @@
         "title": "Limited-memory Broyden-Fletcher-Goldfarb-Shanno Algorithm",
         "prerequisites": [
             "gradient_descent",
-            "quasi_newton_methods",
+            "quasi-newton_methods",
             "convex_optimization"
         ],
         "further_readings": [
@@ -5446,7 +5445,7 @@
         ],
         "further_readings": [
             "stochastic_gradient_descent",
-            "quasi_newton_methods",
+            "quasi-newton_methods",
             "nonlinear_conjugate_gradient",
             "preconditioned_conjugate_gradient"
         ]
@@ -5456,7 +5455,7 @@
         "prerequisites": [
             "gradient_descent",
             "newtons_method",
-            "quasi_newton_methods",
+            "quasi-newton_methods",
             "second_order_methods"
         ],
         "further_readings": [
@@ -5485,9 +5484,9 @@
             "stochastic_gradient_descent"
         ],
         "further_readings": [
-            "ADAM_optimization_algorithm",
-            "quasi_Newton_methods",
-            "Broyden-Fletcher-Goldfarb-Shanno_algorithm"
+            "adam_optimization_algorithm",
+            "quasi-newton_methods",
+            "broyden-fletcher-goldfarb-shanno_algorithm"
         ]
     },
     "semidefinite_programming": {
@@ -6490,7 +6489,7 @@
         ],
         "further_readings": [
             "image_segmentation",
-            "image_super_resolution",
+            "image_super-resolution",
             "neural_style_transfer"
         ]
     },
@@ -7457,7 +7456,7 @@
         ],
         "further_readings": [
             "conjugate_gradient_method",
-            "quasi_newton_methods",
+            "quasi-newton_methods",
             "stochastic_gradient_descent"
         ]
     },
@@ -7508,7 +7507,7 @@
         ],
         "further_readings": [
             "conjugate_gradient_method",
-            "quasi_newton_methods",
+            "quasi-newton_methods",
             "trust_region_methods"
         ]
     },
@@ -7672,7 +7671,7 @@
             "gradient_descent"
         ],
         "further_readings": [
-            "quasi_newton_methods",
+            "quasi-newton_methods",
             "newton_raphson_method",
             "nonlinear_conjugate_gradient_method"
         ]
@@ -7840,7 +7839,7 @@
         ],
         "further_readings": [
             "convex_optimization",
-            "quasi_newton_methods",
+            "quasi-newton_methods",
             "proximal_gradient_methods"
         ]
     },
@@ -7981,7 +7980,7 @@
             "kernel_regression"
         ]
     },
-    "non_negative_matrix_factorization": {
+    "non-negative_matrix_factorization": {
         "title": "Non-negative Matrix Factorization",
         "prerequisites": [
             "linear_algebra",
@@ -8105,7 +8104,7 @@
         ],
         "further_readings": [
             "newton_method",
-            "quasi_newton_methods",
+            "quasi-newton_methods",
             "curvature_matrix"
         ]
     },
@@ -8131,12 +8130,12 @@
             "optimization_algorithms"
         ],
         "further_readings": [
-            "quasi_newton_methods",
+            "quasi-newton_methods",
             "limited_memory_bfgs",
             "conjugate_gradient_method"
         ]
     },
-    "l_bfgs_method": {
+    "l-bfgs_method": {
         "title": "L-BFGS Method",
         "prerequisites": [
             "gradient_descent",
@@ -8172,7 +8171,7 @@
         "further_readings": [
             "bfgs_method",
             "lbfgs_method",
-            "quasi_newton_methods"
+            "quasi-newton_methods"
         ]
     },
     "truncated_newton_method": {
@@ -8188,7 +8187,7 @@
             "quasi_newton_method"
         ]
     },
-    "quasi_newton_methods_for_sparse_problems": {
+    "quasi-newton_methods_for_sparse_problems": {
         "title": "Quasi-Newton Methods For Sparse Problems",
         "prerequisites": [
             "optimization_algorithms",
@@ -8201,11 +8200,11 @@
             "conjugate_gradient_method"
         ]
     },
-    "stochastic_quasi_newton_methods": {
+    "stochastic_quasi-newton_methods": {
         "title": "Stochastic Quasi-Newton Methods",
         "prerequisites": [
             "stochastic_gradient_descent",
-            "quasi_newton_methods",
+            "quasi-newton_methods",
             "optimization_algorithms"
         ],
         "further_readings": [
@@ -8215,7 +8214,7 @@
             "second_order_optimization"
         ]
     },
-    "bayesian_quasi_newton_methods": {
+    "bayesian_quasi-newton_methods": {
         "title": "Bayesian Quasi-Newton Methods",
         "prerequisites": [
             "bayesian_inference",
@@ -8230,7 +8229,7 @@
             "markov_chain_monte_carlo"
         ]
     },
-    "quasi_newton_methods_for_large_scale_problems": {
+    "quasi-newton_methods_for_large_scale_problems": {
         "title": "Quasi-Newton Methods for Large Scale Problems",
         "prerequisites": [
             "optimization_algorithms",
@@ -9318,6 +9317,188 @@
         "further_readings": [
             "complex_numbers",
             "number_systems"
+        ]
+    },
+    "differentiation": {
+        "title": "Differentiation",
+        "prerequisites": [
+            "limits",
+            "derivatives"
+        ],
+        "further_readings": [
+            "chain_rule",
+            "implicit_differentiation",
+            "partial_differentiation",
+            "vector_calculus"
+        ]
+    },
+    "integration": {
+        "title": "Integration",
+        "prerequisites": [
+            "differentiation",
+            "limits",
+            "derivatives"
+        ],
+        "further_readings": [
+            "riemann_sum",
+            "trapezoidal_rule",
+            "simpsons_rule",
+            "monte_carlo_integration"
+        ]
+    },
+    "point_set_topology": {
+        "title": "Point Set Topology",
+        "prerequisites": [
+            "set_theory",
+            "topological_spaces"
+        ],
+        "further_readings": [
+            "metric_spaces",
+            "algebraic_topology"
+        ]
+    },
+    "real_analysis_textbooks": {
+        "title": "Real Analysis Textbooks",
+        "prerequisites": [
+            "limits",
+            "sequences_and_series",
+            "differential_calculus",
+            "integral_calculus",
+            "metric_spaces"
+        ],
+        "further_readings": [
+            "measure_theory",
+            "functional_analysis",
+            "complex_analysis"
+        ]
+    },
+    "measure_theory_textbooks": {
+        "title": "Measure Theory Textbooks",
+        "prerequisites": [
+            "real_analysis",
+            "probability_theory"
+        ],
+        "further_readings": [
+            "probability_theory_textbooks",
+            "functional_analysis_textbooks"
+        ]
+    },
+    "topology_textbooks": {
+        "title": "Topology Textbooks",
+        "prerequisites": [
+            "point_set_topology",
+            "metric_spaces",
+            "topological_spaces"
+        ],
+        "further_readings": [
+            "algebraic_topology",
+            "differential_topology"
+        ]
+    },
+    "bellman_equation": {
+        "title": "Bellman Equation",
+        "prerequisites": [
+            "dynamic_programming",
+            "markov_decision_process"
+        ],
+        "further_readings": [
+            "q_learning",
+            "value_iteration",
+            "temporal_difference_learning"
+        ]
+    },
+    "function_approximation": {
+        "title": "Function Approximation",
+        "prerequisites": [
+            "linear_regression",
+            "gradient_descent",
+            "overfitting"
+        ],
+        "further_readings": [
+            "neural_networks",
+            "decision_trees",
+            "support_vector_machines"
+        ]
+    },
+    "deep_q_networks": {
+        "title": "Deep Q Networks",
+        "prerequisites": [
+            "q_learning",
+            "neural_networks",
+            "reinforcement_learning"
+        ],
+        "further_readings": [
+            "double_q_learning",
+            "policy_gradient_methods",
+            "actor_critic_methods"
+        ]
+    },
+    "off_policy_learning": {
+        "title": "Off Policy Learning",
+        "prerequisites": [
+            "reinforcement_learning",
+            "q_learning"
+        ],
+        "further_readings": [
+            "importance_sampling",
+            "doubly_robust_estimators",
+            "actor_critic_methods"
+        ]
+    },
+    "hierarchical_reinforcement_learning": {
+        "title": "Hierarchical Reinforcement Learning",
+        "prerequisites": [
+            "reinforcement_learning",
+            "markov_decision_process",
+            "policy_gradient_methods"
+        ],
+        "further_readings": [
+            "options_framework",
+            "hierarchical_deep_reinforcement_learning"
+        ]
+    },
+    "markov_decision_processes": {
+        "title": "Markov Decision Processes",
+        "prerequisites": [
+            "reinforcement_learning",
+            "markov_chains",
+            "dynamic_programming"
+        ],
+        "further_readings": [
+            "policy_iteration",
+            "value_iteration",
+            "monte_carlo_tree_search"
+        ]
+    },
+    "exploration_exploitation_tradeoff": {
+        "title": "Exploration Exploitation Tradeoff",
+        "prerequisites": [
+            "reinforcement_learning",
+            "multi-armed_bandits",
+            "epsilon_greedy_algorithm"
+        ],
+        "further_readings": [
+            "thompson_sampling",
+            "upper_confidence_bound_algorithm"
+        ]
+    },
+    "mask_r-cnn": {
+        "title": "Mask R-CNN",
+        "prerequisites": [
+            "convolutional_neural_network",
+            "object_detection",
+            "region_proposal_network",
+            "faster_r-cnn",
+            "image_segmentation"
+        ],
+        "further_readings": [
+            "residual_networks",
+            "feature_pyramid_network",
+            "anchor_boxes",
+            "iou_threshold",
+            "non_max_suppression",
+            "instance_segmentation",
+            "semantic_segmentation"
         ]
     }
 }
