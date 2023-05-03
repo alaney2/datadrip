@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "3d-force-graph": "1.71.3",
+    "3d-force-graph": "^1.71.4",
     "@dnd-kit/core": "^6.0.8",
     "@dnd-kit/modifiers": "^6.0.1",
     "@dnd-kit/sortable": "^7.0.2",
@@ -25,6 +25,7 @@
     "@vercel/analytics": "^1.0.0",
     "classnames": "^2.3.2",
     "clsx": "^1.2.1",
+    "d3": "^7.8.4",
     "dotenv": "^16.0.3",
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",

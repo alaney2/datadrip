@@ -13,9 +13,3 @@ Another technique for deep feature extraction is the use of autoencoders. Autoen
 ## Transfer Learning
 
 Transfer learning is a technique that leverages pre-trained models for a specific task and fine-tunes them for a new task. This technique has been widely used for deep feature extraction, as it allows for the extraction of high-level features from a pre-trained model, which can then be fine-tuned for a new task.
-
-## Further Readings
-
-- Neural Style Transfer
-- Object Detection
-- Face Recognition

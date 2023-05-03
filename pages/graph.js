@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import dynamic from 'next/dynamic';
 import NavBar from "@/components/NavBar/NavBar";
 import Head from "next/head";
@@ -95,7 +95,7 @@ function clusterAndTransformTopics(inputData) {
 
 
 export default function Graph() {
-  const transformedData = clusterAndTransformTopics(wikiConnections);
+  const transformedData = useMemo(() => clusterAndTransformTopics(wikiConnections), []);
 
   return (
     <>
