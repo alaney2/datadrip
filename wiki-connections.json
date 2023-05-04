@@ -10536,19 +10536,6 @@
             "alpha-beta_pruning"
         ]
     },
-    "deep_q_learning-algorithm": {
-        "title": "Deep Q-Learning Algorithm",
-        "prerequisites": [
-            "q-learning_algorithm",
-            "neural_networks",
-            "reinforcement_learning"
-        ],
-        "further_readings": [
-            "double_q_learning",
-            "policy_gradient_methods",
-            "actor_critic_methods"
-        ]
-    },
     "actor_critic_algorithm": {
         "title": "Actor Critic Algorithm",
         "prerequisites": [

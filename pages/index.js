@@ -14,7 +14,7 @@ import Looper from '@/components/Looper';
 import { styled } from '@mui/system';
 
 
-const MAX_ARTICLES = 24;
+const MAX_ARTICLES = 18;
 
 export async function getStaticProps() {
   const shuffledArticles1 = shuffleArray(Object.entries(wikiConnections)).slice(0, MAX_ARTICLES);
@@ -44,8 +44,6 @@ export async function getStaticProps() {
 
 const CustomCard = styled(Card)(({ theme }) => ({
   padding: theme.spacing(2),
-  // maxHeight: 420,
-  // minHeight: 80,
   maxHeight: '35vh',
   minHeight: '5vh',
   width: 300,
@@ -76,7 +74,6 @@ export default function Home({ articles1, articles2 }) {
       }
     }
   }
-  
 
   useEffect(() => {
     const allArticleKeys = [...articles1, ...articles2].map(([key]) => key);
@@ -105,8 +102,6 @@ export default function Home({ articles1, articles2 }) {
               flexDirection: 'column',
               alignItems: 'center',
               justifyContent: 'space-evenly',
-              // justifyContent: 'center',
-              // minHeight: '100vh',
               minHeight: 'calc(100% - 64px)'
             }}
           >
@@ -128,7 +123,7 @@ export default function Home({ articles1, articles2 }) {
                         color="text.secondary"
                         sx={{ mb: 1 }}
                       >
-                        {lastUpdatedTimes[key] ? `${lastUpdatedTimes[key]}` : 'Loading...'}
+                        {lastUpdatedTimes[key] ? `${lastUpdatedTimes[key]}` : 'Last Updated: Loading...'}
                       </Typography>
 
                       <Typography
@@ -160,7 +155,7 @@ export default function Home({ articles1, articles2 }) {
                         color="text.secondary"
                         sx={{ mb: 1 }}
                       >
-                        {lastUpdatedTimes[key] ? `${lastUpdatedTimes[key]}` : 'Loading...'}
+                        {lastUpdatedTimes[key] ? `${lastUpdatedTimes[key]}` : 'Last Updated: Loading...'}
                       </Typography>
                       <Typography
                         variant="body1"
