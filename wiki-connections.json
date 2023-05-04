@@ -9806,5 +9806,193 @@
             "value_iteration",
             "policy_iteration"
         ]
+    },
+    "imitation_learning_in_rl": {
+        "title": "Imitation Learning in RL",
+        "prerequisites": [
+            "reinforcement_learning",
+            "supervised_learning",
+            "neural_networks"
+        ],
+        "further_readings": [
+            "inverse_reinforcement_learning",
+            "imitation_learning_in_cv",
+            "imitation_learning_in_nlp"
+        ]
+    },
+    "off_policy_rl": {
+        "title": "Off Policy RL",
+        "prerequisites": [
+            "reinforcement_learning",
+            "markov_decision_process",
+            "q_learning"
+        ],
+        "further_readings": [
+            "importance_sampling",
+            "monte_carlo_tree_search",
+            "deep_reinforcement_learning"
+        ]
+    },
+    "game_theory": {
+        "title": "Game Theory",
+        "prerequisites": [
+            "nash_equilibrium",
+            "mixed_strategy_nash_equilibrium",
+            "dominant_strategy"
+        ],
+        "further_readings": [
+            "minimax_theorem",
+            "iterated_elimination_of_dominated_strategies",
+            "auction_theory"
+        ]
+    },
+    "decision_trees": {
+        "title": "Decision Trees",
+        "prerequisites": [
+            "supervised_learning",
+            "classification_algorithms",
+            "information_gain"
+        ],
+        "further_readings": [
+            "random_forests",
+            "gradient_boosting",
+            "ensemble_learning"
+        ]
+    },
+    "heuristics": {
+        "title": "Heuristics",
+        "prerequisites": [
+            "search_algorithms",
+            "optimization_algorithms"
+        ],
+        "further_readings": [
+            "decision_trees",
+            "genetic_algorithms"
+        ]
+    },
+    "search_algorithms": {
+        "title": "Search Algorithms",
+        "prerequisites": [
+            "graph_theory",
+            "data_structures",
+            "sorting_algorithms"
+        ],
+        "further_readings": [
+            "heuristic_search",
+            "genetic_algorithms",
+            "simulated_annealing"
+        ]
+    },
+    "alpha_zero": {
+        "title": "Alpha Zero",
+        "prerequisites": [
+            "reinforcement_learning",
+            "monte_carlo_tree_search",
+            "convolutional_neural_networks"
+        ],
+        "further_readings": [
+            "deep_reinforcement_learning",
+            "policy_gradient_methods",
+            "value_iteration",
+            "neural_network_architectures"
+        ]
+    },
+    "uct_algorithm": {
+        "title": "UCT Algorithm",
+        "prerequisites": [
+            "monte_carlo_tree_search",
+            "bandit_algorithms"
+        ],
+        "further_readings": [
+            "upper_confidence_bounds",
+            "multi-armed_bandits",
+            "reinforcement_learning"
+        ]
+    },
+    "bandit_algorithms": {
+        "title": "Bandit Algorithms",
+        "prerequisites": [
+            "reinforcement_learning",
+            "multi-armed_bandit"
+        ],
+        "further_readings": [
+            "upper_confidence_bound",
+            "thompson_sampling",
+            "epsilon_greedy",
+            "contextual_bandit"
+        ]
+    },
+    "multi_agent_mcts": {
+        "title": "Multi Agent Mcts",
+        "prerequisites": [
+            "monte_carlo_tree_search",
+            "multi_agent_systems"
+        ],
+        "further_readings": [
+            "distributed_mcts",
+            "multi_agent_reinforcement_learning"
+        ]
+    },
+    "deep_mcts": {
+        "title": "Deep Monte Carlo Tree Search",
+        "prerequisites": [
+            "monte_carlo_tree_search",
+            "neural_networks"
+        ],
+        "further_readings": [
+            "alpha_go",
+            "deep_reinforcement_learning"
+        ]
+    },
+    "monte_carlo_simulation": {
+        "title": "Monte Carlo Simulation",
+        "prerequisites": [
+            "probability_theory",
+            "random_variables",
+            "statistical_inference"
+        ],
+        "further_readings": [
+            "markov_chain_monte_carlo",
+            "importance_sampling",
+            "reinforcement_learning"
+        ]
+    },
+    "bayesian_mcts": {
+        "title": "Bayesian MCTS",
+        "prerequisites": [
+            "monte_carlo_tree_search",
+            "bayesian_inference",
+            "reinforcement_learning"
+        ],
+        "further_readings": [
+            "bayesian_optimization",
+            "markov_decision_processes",
+            "deep_reinforcement_learning"
+        ]
+    },
+    "online_mcts": {
+        "title": "Online Monte Carlo Tree Search",
+        "prerequisites": [
+            "monte_carlo_tree_search",
+            "reinforcement_learning",
+            "bandit_algorithms"
+        ],
+        "further_readings": [
+            "upper_confidence_bounds",
+            "multi_armed_bandits",
+            "temporal_difference_learning"
+        ]
+    },
+    "sampling_based_planning": {
+        "title": "Sampling Based Planning",
+        "prerequisites": [
+            "motion_planning",
+            "probabilistic_robotics"
+        ],
+        "further_readings": [
+            "rapidly_exploring_random_tree",
+            "probabilistic_roadmap",
+            "stochastic_optimization"
+        ]
     }
 }

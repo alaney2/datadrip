@@ -44,32 +44,39 @@ export async function getStaticProps() {
 
 const CustomCard = styled(Card)(({ theme }) => ({
   padding: theme.spacing(2),
-  maxHeight: 420,
-  minHeight: 80,
+  // maxHeight: 420,
+  // minHeight: 80,
+  maxHeight: '35vh',
+  minHeight: '5vh',
   width: 300,
   borderRadius: 16,
-  margin: theme.spacing(3),
+  margin: theme.spacing(2),
   cursor: 'pointer',
   boxShadow: '0 0 11px rgba(33,33,33,.15)',
   '&:hover': {
     boxShadow: '0 0 11px rgba(33,33,33,.25)',
+    backgroundColor: 'rgba(0, 0, 0, 0.01)',
   },
 }));
 
 export default function Home({ articles1, articles2 }) {
   const [lastUpdatedTimes, setLastUpdatedTimes] = useState({});
+  const [looperSpeed1, setLooperSpeed1] = useState(100);
+  const [looperSpeed2, setLooperSpeed2] = useState(80);
 
   async function fetchLastUpdatedTimes(articleKeys) {
-    const updatedTimes = {};
     for (const key of articleKeys) {
       const response = await fetch(`/api/last_updated?filename=${key}.md`);
       const data = await response.json();
       if (data) {
-        updatedTimes[key] = new Date(data).toLocaleString();
+        setLastUpdatedTimes((prevUpdatedTimes) => ({
+          ...prevUpdatedTimes,
+          [key]: new Date(data).toLocaleString(),
+        }));
       }
     }
-    setLastUpdatedTimes(updatedTimes);
   }
+  
 
   useEffect(() => {
     const allArticleKeys = [...articles1, ...articles2].map(([key]) => key);
@@ -98,10 +105,12 @@ export default function Home({ articles1, articles2 }) {
               flexDirection: 'column',
               alignItems: 'center',
               justifyContent: 'space-evenly',
-              minHeight: 'calc(100% - 128px)'
+              // justifyContent: 'center',
+              // minHeight: '100vh',
+              minHeight: 'calc(100% - 64px)'
             }}
           >
-            <Looper speed={100} direction="right">
+            <Looper speed={looperSpeed1} direction="right">
               {articles1.map(([key, value]) => (
                 <Link href={`/${key}`} key={key} passHref>
                   <CustomCard>
@@ -133,7 +142,7 @@ export default function Home({ articles1, articles2 }) {
                 </Link>
               ))}
             </Looper>
-            <Looper speed={80} direction="left">
+            <Looper speed={looperSpeed2} direction="left">
               {articles2.map(([key, value]) => (
                 <Link href={`/${key}`} key={key} passHref>
                   <CustomCard>
