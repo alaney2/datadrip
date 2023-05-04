@@ -9994,5 +9994,84 @@
             "probabilistic_roadmap",
             "stochastic_optimization"
         ]
+    },
+    "stochastic_search": {
+        "title": "Stochastic Search",
+        "prerequisites": [
+            "gradient_descent",
+            "stochastic_gradient_descent",
+            "random_walk",
+            "simulated_annealing"
+        ],
+        "further_readings": [
+            "evolutionary_algorithms",
+            "particle_swarm_optimization",
+            "ant_colony_optimization"
+        ]
+    },
+    "value_function_approximation": {
+        "title": "Value Function Approximation",
+        "prerequisites": [
+            "reinforcement_learning",
+            "dynamic_programming",
+            "linear_algebra"
+        ],
+        "further_readings": [
+            "deep_learning",
+            "monte_carlo_methods",
+            "temporal_difference_learning"
+        ]
+    },
+    "on_policy_vs_off_policy": {
+        "title": "On Policy Vs Off Policy",
+        "prerequisites": [
+            "reinforcement_learning",
+            "markov_decision_process",
+            "policy_iteration"
+        ],
+        "further_readings": [
+            "q_learning",
+            "sarsa",
+            "actor_critic_methods"
+        ]
+    },
+    "natural_gradient_methods": {
+        "title": "Natural Gradient Methods",
+        "prerequisites": [
+            "stochastic_gradient_descent",
+            "information_geometry",
+            "fisher_information_matrix"
+        ],
+        "further_readings": [
+            "natural_gradient_optimization",
+            "natural_gradient_reinforcement_learning",
+            "natural_gradient_deep_learning"
+        ]
+    },
+    "distributed_rl": {
+        "title": "Distributed Reinforcement Learning",
+        "prerequisites": [
+            "reinforcement_learning",
+            "multi_agent_systems",
+            "distributed_systems"
+        ],
+        "further_readings": [
+            "asynchronous_methods_in_deep_reinforcement_learning",
+            "distributed_deep_reinforcement_learning_with_pytorch",
+            "distributed_reinforcement_learning_using_unity_ml_agents"
+        ]
+    },
+    "multi_agent_rl": {
+        "title": "Multi Agent RL",
+        "prerequisites": [
+            "reinforcement_learning",
+            "game_theory",
+            "multi_agent_systems"
+        ],
+        "further_readings": [
+            "multi_agent_reinforcement_learning_in_competitive_environments",
+            "multi_agent_reinforcement_learning_in_cooperative_environments",
+            "multi_agent_reinforcement_learning_with_heterogeneous_agents"
+        ]
     }
 }

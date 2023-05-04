@@ -237,15 +237,15 @@ const ForceGraphUrl = ({ data }) => {
       
       
 
-      .onBackgroundClick(() => {
-        highlightNodes.current.clear();
-        highlightLinks.current.clear();
-        clickedNodes.current.clear();
-        Graph
-          .nodeColor(node => node.color)
-          .linkWidth(2)
-          .linkDirectionalParticles(0);
-      })
+      // .onBackgroundClick(() => {
+      //   highlightNodes.current.clear();
+      //   highlightLinks.current.clear();
+      //   clickedNodes.current.clear();
+      //   Graph
+      //     .nodeColor(node => node.color)
+      //     .linkWidth(2)
+      //     .linkDirectionalParticles(0);
+      // })
 
       ;
 
