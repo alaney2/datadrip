@@ -59,7 +59,6 @@ const CustomCard = styled(Card)(({ theme }) => ({
 }));
 
 export default function Home({ articles1, articles2 }) {
-
   return (
     <>
       <Head>

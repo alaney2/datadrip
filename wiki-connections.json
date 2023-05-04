@@ -9500,5 +9500,311 @@
             "instance_segmentation",
             "semantic_segmentation"
         ]
+    },
+    "reinforcement_learning_in_robotics": {
+        "title": "Reinforcement Learning In Robotics",
+        "prerequisites": [
+            "reinforcement_learning",
+            "robotics",
+            "deep_learning"
+        ],
+        "further_readings": [
+            "policy_gradient_methods",
+            "actor_critic_methods",
+            "inverse_reinforcement_learning",
+            "imitation_learning"
+        ]
+    },
+    "reinforcement_learning_in_games": {
+        "title": "Reinforcement Learning In Games",
+        "prerequisites": [
+            "markov_decision_process",
+            "q_learning",
+            "deep_q_networks"
+        ],
+        "further_readings": [
+            "monte_carlo_tree_search",
+            "actor_critic_methods",
+            "policy_gradient_methods"
+        ]
+    },
+    "reinforcement_learning_in_natural_language_processing": {
+        "title": "Reinforcement Learning In Natural Language Processing",
+        "prerequisites": [
+            "reinforcement_learning",
+            "natural_language_processing",
+            "deep_learning"
+        ],
+        "further_readings": [
+            "policy_gradient_methods",
+            "word_embeddings",
+            "sequence_to_sequence_models"
+        ]
+    },
+    "markov_chain": {
+        "title": "Markov Chain",
+        "prerequisites": [
+            "probability_theory",
+            "matrix_multiplication"
+        ],
+        "further_readings": [
+            "hidden_markov_models",
+            "monte_carlo_methods"
+        ]
+    },
+    "partially_observable_markov_decision_process": {
+        "title": "Partially Observable Markov Decision Process",
+        "prerequisites": [
+            "markov_decision_process",
+            "hidden_markov_model"
+        ],
+        "further_readings": [
+            "reinforcement_learning_an_introduction",
+            "probabilistic_robotics",
+            "partially_observable_markov_decision_processes_algorithms_and_applications"
+        ]
+    },
+    "value_iteration_algorithm": {
+        "title": "Value Iteration Algorithm",
+        "prerequisites": [
+            "bellman_equations",
+            "markov_decision_process",
+            "dynamic_programming"
+        ],
+        "further_readings": [
+            "q_learning",
+            "policy_iteration_algorithm",
+            "monte_carlo_tree_search"
+        ]
+    },
+    "reinforcement_learning_algorithms": {
+        "title": "Reinforcement Learning Algorithms",
+        "prerequisites": [
+            "markov_decision_process",
+            "q_learning",
+            "policy_gradient_methods"
+        ],
+        "further_readings": [
+            "actor_critic_methods",
+            "deep_reinforcement_learning",
+            "monte_carlo_methods"
+        ]
+    },
+    "recursion": {
+        "title": "Recursion",
+        "prerequisites": [
+            "functions",
+            "data_structures",
+            "control_flow"
+        ],
+        "further_readings": [
+            "tail_recursion",
+            "recursive_data_structures"
+        ]
+    },
+    "memoization": {
+        "title": "Memoization",
+        "prerequisites": [
+            "dynamic_programming"
+        ],
+        "further_readings": [
+            "tabulation"
+        ]
+    },
+    "divide_and_conquer": {
+        "title": "Divide and Conquer",
+        "prerequisites": [
+            "recursion",
+            "algorithm_analysis"
+        ],
+        "further_readings": [
+            "merge_sort",
+            "quick_sort",
+            "binary_search"
+        ]
+    },
+    "greedy_algorithms": {
+        "title": "Greedy Algorithms",
+        "prerequisites": [
+            "dynamic_programming",
+            "graph_theory"
+        ],
+        "further_readings": [
+            "minimum_spanning_trees",
+            "shortest_path_algorithms"
+        ]
+    },
+    "graph_theory": {
+        "title": "Graph Theory",
+        "prerequisites": [
+            "discrete_mathematics",
+            "set_theory",
+            "combinatorics"
+        ],
+        "further_readings": [
+            "network_flow",
+            "random_walks_on_graphs",
+            "spectral_graph_theory"
+        ]
+    },
+    "data_structures": {
+        "title": "Data Structures",
+        "prerequisites": [
+            "arrays",
+            "linked_lists",
+            "stacks",
+            "queues"
+        ],
+        "further_readings": [
+            "binary_trees",
+            "hash_tables",
+            "graph_data_structures"
+        ]
+    },
+    "algorithms": {
+        "title": "Algorithms",
+        "prerequisites": [
+            "data_structures",
+            "complexity_theory",
+            "graph_theory"
+        ],
+        "further_readings": [
+            "machine_learning_algorithms",
+            "optimization_algorithms",
+            "search_algorithms"
+        ]
+    },
+    "bellman_ford_algorithm": {
+        "title": "Bellman Ford Algorithm",
+        "prerequisites": [
+            "graph_theory",
+            "shortest_path_algorithms"
+        ],
+        "further_readings": [
+            "dijkstra_algorithm",
+            "floyd_warshall_algorithm"
+        ]
+    },
+    "dijkstra_algorithm": {
+        "title": "Dijkstra Algorithm",
+        "prerequisites": [
+            "graph_theory",
+            "shortest_path_problem"
+        ],
+        "further_readings": [
+            "bellman_ford_algorithm",
+            "a_star_algorithm"
+        ]
+    },
+    "knapsack_problem": {
+        "title": "Knapsack Problem",
+        "prerequisites": [
+            "dynamic_programming",
+            "greedy_algorithms"
+        ],
+        "further_readings": [
+            "integer_programming",
+            "approximation_algorithms"
+        ]
+    },
+    "traveling_salesman_problem": {
+        "title": "Traveling Salesman Problem",
+        "prerequisites": [
+            "graph_theory",
+            "dynamic_programming",
+            "combinatorial_optimization"
+        ],
+        "further_readings": [
+            "christofides_algorithm",
+            "branch_and_bound_algorithm",
+            "simulated_annealing"
+        ]
+    },
+    "longest_common_subsequence": {
+        "title": "Longest Common Subsequence",
+        "prerequisites": [
+            "dynamic_programming",
+            "string_algorithms"
+        ],
+        "further_readings": [
+            "edit_distance",
+            "suffix_trees",
+            "suffix_arrays"
+        ]
+    },
+    "maximum_subarray_problem": {
+        "title": "Maximum Subarray Problem",
+        "prerequisites": [
+            "dynamic_programming",
+            "divide_and_conquer"
+        ],
+        "further_readings": [
+            "kadane_algorithm",
+            "linear_time_algorithm"
+        ]
+    },
+    "floyd_warshall_algorithm": {
+        "title": "Floyd Warshall Algorithm",
+        "prerequisites": [
+            "graph_theory",
+            "shortest_path_algorithms"
+        ],
+        "further_readings": [
+            "dijkstra_algorithm",
+            "bellman_ford_algorithm",
+            "johnson_algorithm"
+        ]
+    },
+    "edit_distance": {
+        "title": "Edit Distance",
+        "prerequisites": [
+            "dynamic_programming",
+            "string_matching_algorithms"
+        ],
+        "further_readings": [
+            "levenshtein_distance",
+            "needleman_wunsch_algorithm",
+            "smith_waterman_algorithm"
+        ]
+    },
+    "approximation_algorithms": {
+        "title": "Approximation Algorithms",
+        "prerequisites": [
+            "graph_theory",
+            "complexity_theory",
+            "optimization_algorithms"
+        ],
+        "further_readings": [
+            "approximation_algorithms_in_the_real_world",
+            "randomized_approximation_algorithms",
+            "online_approximation_algorithms"
+        ]
+    },
+    "online_learning_in_mdps": {
+        "title": "Online Learning in Markov Decision Processes",
+        "prerequisites": [
+            "markov_decision_process",
+            "reinforcement_learning",
+            "online_learning"
+        ],
+        "further_readings": [
+            "stochastic_approximation",
+            "temporal_difference_learning",
+            "q_learning"
+        ]
+    },
+    "approximate_dynamic_programming": {
+        "title": "Approximate Dynamic Programming",
+        "prerequisites": [
+            "dynamic_programming",
+            "reinforcement_learning",
+            "function_approximation"
+        ],
+        "further_readings": [
+            "deep_reinforcement_learning",
+            "monte_carlo_tree_search",
+            "value_iteration",
+            "policy_iteration"
+        ]
     }
 }

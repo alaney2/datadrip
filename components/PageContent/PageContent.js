@@ -35,23 +35,12 @@ export default function PageContent({ content, filename, leftSidebar=true, right
 
   React.useEffect(() => {
     async function fetchLastUpdated() {
-      const owner = 'alaney2';
-      const repo = 'datadrip';
-      const filePath = `data/${filename}`;
-      const token = process.env.NEXT_PUBLIC_GITHUB_TOKEN;
-      const response = await fetch(
-        `https://api.github.com/repos/${owner}/${repo}/commits?path=${filePath}&per_page=1`,
-        {
-          headers: {
-            Authorization: `token ${token}`,
-          },
-        }
-      );
+      const response = await fetch(`/api/last_updated?filename=${filename}`);
       const data = await response.json();
-      if (data && data.length > 0) {
-        setLastUpdated(data[0].commit.committer.date);
+      if (data) {
+        setLastUpdated(data);
       }
-    }
+    }    
     fetchLastUpdated();
   }, [filename]);
 

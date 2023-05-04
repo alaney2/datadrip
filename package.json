@@ -45,6 +45,7 @@
     "react-infinite-scroll-component": "^6.1.0",
     "react-markdown": "^8.0.7",
     "react-window": "^1.8.9",
+    "redis": "^4.6.6",
     "rehype-katex": "^6.0.3",
     "rehype-slug": "^5.1.0",
     "remark": "^14.0.2",
