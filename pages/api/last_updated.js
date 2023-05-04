@@ -1,7 +1,6 @@
 import { createClient } from 'redis';
 import { promisify } from 'util';
 
-
 export default async function handler(req, res) {
   if (req.method !== 'GET') {
     res.status(405).json({ message: 'Method not allowed' });
@@ -16,23 +15,19 @@ export default async function handler(req, res) {
     }
   });
 
-  client.on('error', err => console.log('Redis Server Error', err));
-  
   await client.connect();
 
-  // const getAsync = promisify(client.get).bind(client);
-  // const setAsync = promisify(client.set).bind(client);
-
+  client.on('error', err => console.log('Redis Server Error', err));
+  
   const { filename } = req.query;
 
   const cacheKey = `lastUpdated:${filename}`;
 
-  // Check for cached data in Redis
-  // const cachedData = await getAsync(cacheKey);
   const cachedData = await client.get(cacheKey);
 
   if (cachedData) {
     res.status(200).json(JSON.parse(cachedData));
+    client.disconnect();
     return;
   }
 
@@ -52,20 +47,13 @@ export default async function handler(req, res) {
 
   const data = await response.json();
 
-  console.log(data)
-
   if (data && data.length > 0) {
     const lastUpdated = data[0].commit.committer.date;
-    console.log('Last updated from GitHub:', lastUpdated); // Add this line
-
-    // Cache the data in Redis with an expiry time of 1 hour (3600 seconds)
     await client.set(cacheKey, JSON.stringify(lastUpdated));
-    // await setAsync(cacheKey, JSON.stringify(lastUpdated), 'EX', 3600);
-
     res.status(200).json(lastUpdated);
   } else {
-    console.log('Data not found'); // Add this line
-
+    console.log('Data not found');
     res.status(404).json({ message: 'Not found' });
   }
+  client.disconnect();
 }

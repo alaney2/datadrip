@@ -28,14 +28,12 @@ export async function getStaticProps() {
     const description = await getArticleDescription(fileContent);
     articlesWithDescriptions1.push([key, { ...value, description }]);
   }
-
   for (const [key, value] of shuffledArticles2) {
     const filePath = path.join(process.cwd(), 'data', `${key}.md`);
     const fileContent = fs.readFileSync(filePath, 'utf8');
     const description = await getArticleDescription(fileContent);
     articlesWithDescriptions2.push([key, { ...value, description }]);
   }
-
   return {
     props: {
       articles1: articlesWithDescriptions1,
@@ -59,6 +57,25 @@ const CustomCard = styled(Card)(({ theme }) => ({
 }));
 
 export default function Home({ articles1, articles2 }) {
+  const [lastUpdatedTimes, setLastUpdatedTimes] = useState({});
+
+  async function fetchLastUpdatedTimes(articleKeys) {
+    const updatedTimes = {};
+    for (const key of articleKeys) {
+      const response = await fetch(`/api/last_updated?filename=${key}.md`);
+      const data = await response.json();
+      if (data) {
+        updatedTimes[key] = new Date(data).toLocaleString();
+      }
+    }
+    setLastUpdatedTimes(updatedTimes);
+  }
+
+  useEffect(() => {
+    const allArticleKeys = [...articles1, ...articles2].map(([key]) => key);
+    fetchLastUpdatedTimes(allArticleKeys);
+  }, [articles1, articles2]);
+  
   return (
     <>
       <Head>
@@ -98,6 +115,14 @@ export default function Home({ articles1, articles2 }) {
                         {value.title}
                       </Typography>
                       <Typography
+                        variant="subtitle2"
+                        color="text.secondary"
+                        sx={{ mb: 1 }}
+                      >
+                        {lastUpdatedTimes[key] ? `${lastUpdatedTimes[key]}` : 'Loading...'}
+                      </Typography>
+
+                      <Typography
                         variant="body1"
                         color="text.secondary"
                       >
@@ -120,6 +145,13 @@ export default function Home({ articles1, articles2 }) {
                         noWrap
                       >
                         {value.title}
+                      </Typography>
+                      <Typography
+                        variant="subtitle2"
+                        color="text.secondary"
+                        sx={{ mb: 1 }}
+                      >
+                        {lastUpdatedTimes[key] ? `${lastUpdatedTimes[key]}` : 'Loading...'}
                       </Typography>
                       <Typography
                         variant="body1"

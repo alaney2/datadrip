@@ -40,7 +40,7 @@ export default function PageContent({ content, filename, leftSidebar=true, right
       if (data) {
         setLastUpdated(data);
       }
-    }    
+    }
     fetchLastUpdated();
   }, [filename]);
 
