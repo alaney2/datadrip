@@ -49,7 +49,7 @@ export default async function handler(req, res) {
 
   if (data && data.length > 0) {
     const lastUpdated = data[0].commit.committer.date;
-    await client.set(cacheKey, JSON.stringify(lastUpdated));
+    await client.set(cacheKey, JSON.stringify(lastUpdated), 'EX', 60 * 60 * 24);
     res.status(200).json(lastUpdated);
   } else {
     console.log('Data not found');
