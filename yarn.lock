@@ -860,6 +860,11 @@ arrify@^2.0.0, arrify@^2.0.1:
   resolved "https://registry.yarnpkg.com/arrify/-/arrify-2.0.1.tgz#c9655e9331e0abcd588d2a7cad7e9956f66701fa"
   integrity sha512-3duEwti880xqi4eAMN8AyR4a0ByT90zoYdLlevfrvU43vb0YZwZVfxOgxWrLXXXpyugL0hNZc9G6BiB5B3nUug==
 
+ascii-math@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/ascii-math/-/ascii-math-2.0.0.tgz#aa0e79f675a85466d366ac8c42e332fd1c3200eb"
+  integrity sha512-8SX1PZxBTcyGZG35NHH9Iljp/HsU+lBPbnLny+urDkJ/lzPxm7Uvn9x3OfYCzu9ZIjugxEyGpUoz+9wxThh/3w==
+
 ast-types-flow@^0.0.7:
   version "0.0.7"
   resolved "https://registry.yarnpkg.com/ast-types-flow/-/ast-types-flow-0.0.7.tgz#f70b735c6bca1a5c9c22d982c3e39e7feba3bdad"
@@ -2690,10 +2695,17 @@ kapsule@1:
   dependencies:
     lodash-es "4"
 
-katex@^0.16.0, katex@^0.16.6:
+katex@^0.16.0:
   version "0.16.6"
   resolved "https://registry.yarnpkg.com/katex/-/katex-0.16.6.tgz#cf06c11bdda435b5ae5cb06efa080f4a4fcadf23"
   integrity sha512-XVB7X8jEogjJ+OY+a9JdE+VOk9i7znela0HP6WaDbpB4sUh8ghrG0Ccluu2MA2tcJbFAViBC9aVXus2UvkEr8A==
+  dependencies:
+    commander "^8.3.0"
+
+katex@^0.16.7:
+  version "0.16.7"
+  resolved "https://registry.yarnpkg.com/katex/-/katex-0.16.7.tgz#36be1d4ed96e8afdc5863407e70f8fb250aeafd5"
+  integrity sha512-Xk9C6oGKRwJTfqfIbtr0Kes9OSv6IFsuhFGc7tW4urlpMJtuh+7YhzU6YEG9n8gmWKcMAFzkp7nr+r69kV0zrA==
   dependencies:
     commander "^8.3.0"
 
@@ -3471,6 +3483,13 @@ react-is@^18.0.0, react-is@^18.2.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
 
+react-katex@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/react-katex/-/react-katex-3.0.1.tgz#262b44f49c5fa727f1d13cbab595f791318e5083"
+  integrity sha512-wIUW1fU5dHlkKvq4POfDkHruQsYp3fM8xNb/jnc8dnQ+nNCnaj0sx5pw7E6UyuEdLRyFKK0HZjmXBo+AtXXy0A==
+  dependencies:
+    katex "^0.16.0"
+
 react-markdown@^8.0.7:
   version "8.0.7"
   resolved "https://registry.yarnpkg.com/react-markdown/-/react-markdown-8.0.7.tgz#c8dbd1b9ba5f1c5e7e5f2a44de465a3caafdf89b"
@@ -3491,6 +3510,13 @@ react-markdown@^8.0.7:
     unified "^10.0.0"
     unist-util-visit "^4.0.0"
     vfile "^5.0.0"
+
+react-math@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/react-math/-/react-math-0.0.1.tgz#f01176b760ec7fbcf7e619fa20ae9e1064ad6121"
+  integrity sha512-vl3bE4VDTASTXnt4NDHaeP/UFJ3lHdkLOqMp8c161BWT030pttOfyyAAWJKrtscXiagm+T6uxe7wUdcCIfBNbA==
+  dependencies:
+    ascii-math "^2.0.0"
 
 react-reconciler@^0.27.0:
   version "0.27.0"
@@ -4079,7 +4105,7 @@ unbox-primitive@^1.0.2:
     has-symbols "^1.0.3"
     which-boxed-primitive "^1.0.2"
 
-unified@^10.0.0:
+unified@^10.0.0, unified@^10.1.2:
   version "10.1.2"
   resolved "https://registry.yarnpkg.com/unified/-/unified-10.1.2.tgz#b1d64e55dafe1f0b98bb6c719881103ecf6c86df"
   integrity sha512-pUSWAi/RAnVy1Pif2kAoeWNBa3JVrx0MId2LASj8G+7AiHWoKZNTomq6LG326T68U7/e263X6fTdcXIy7XnF7Q==

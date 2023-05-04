@@ -6,11 +6,13 @@ Quadratic programming is a mathematical optimization problem that involves maxim
 
 Quadratic programming can be formulated as follows:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \min_{x} \quad & \frac{1}{2} x^T Q x + c^T x \\
 \text{s.t.} \quad & A x \leq b \\
 & E x = d \\
-\end{aligned}$$
+\end{aligned}
+$$
 
 where $Q$ is a positive semidefinite matrix, $c$ is a vector, $A$ is a matrix, $b$ is a vector, $E$ is a matrix, and $d$ is a vector. The objective function is a quadratic function, and the constraints are linear.
 

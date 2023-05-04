@@ -18,6 +18,8 @@ import ReadingListButton from '@/components/PageContent/ReadingListButton';
 import Heading from '@/components/PageContent/Heading';
 import { getPageObject } from '@/components/utilities';
 import EditButton from '@/components/PageContent/EditButton';
+import { InlineMath, BlockMath } from 'react-katex';
+
 
 function useScrollDirection() {
   const [scrollDirection, setScrollDirection] = React.useState('up');

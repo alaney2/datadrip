@@ -1454,27 +1454,16 @@
         ]
     },
     "actor_critic_methods": {
-        "title": "Actor Critic Methods",
+        "title": "Actor-Critic Methods",
         "prerequisites": [
             "reinforcement_learning",
             "policy_gradient_methods",
-            "value_function_approximation",
-            "markov_decision_processes",
-            "dynamic_programming",
-            "monte_carlo_methods",
-            "temporal_difference_learning",
-            "neural_networks"
+            "value_function_approximation"
         ],
         "further_readings": [
-            "deep_reinforcement_learning",
-            "on_policy_vs_off_policy",
-            "natural_gradient_methods",
-            "distributed_rl",
-            "multi_agent_rl",
-            "hierarchical_rl",
-            "imitation_learning",
-            "inverse_rl",
-            "reward_design"
+            "actor_critic_architectures",
+            "asynchronous_actor_critic",
+            "deep_deterministic_policy_gradient"
         ]
     },
     "policy_gradient_methods": {
@@ -1701,8 +1690,7 @@
             "thompson_sampling_algorithm",
             "monte_carlo_tree_search_algorithm",
             "deep_q-learning_algorithm",
-            "policy_gradient_methods",
-            "actor-critic_methods"
+            "policy_gradient_methods"
         ]
     },
     "dueling_network_architecture": {
@@ -9979,7 +9967,7 @@
         ],
         "further_readings": [
             "upper_confidence_bounds",
-            "multi_armed_bandits",
+            "multi-armed_bandits",
             "temporal_difference_learning"
         ]
     },
@@ -10072,6 +10060,1151 @@
             "multi_agent_reinforcement_learning_in_competitive_environments",
             "multi_agent_reinforcement_learning_in_cooperative_environments",
             "multi_agent_reinforcement_learning_with_heterogeneous_agents"
+        ]
+    },
+    "hierarchical_rl": {
+        "title": "Hierarchical Reinforcement Learning",
+        "prerequisites": [
+            "reinforcement_learning",
+            "deep_learning",
+            "markov_decision_process"
+        ],
+        "further_readings": [
+            "hierarchical_control_using_deep_reinforcement_learning",
+            "options_in_reinforcement_learning",
+            "hierarchical_reinforcement_learning_with_the_maxq_value_function"
+        ]
+    },
+    "inverse_rl": {
+        "title": "Inverse Reinforcement Learning",
+        "prerequisites": [
+            "reinforcement_learning",
+            "markov_decision_processes",
+            "optimal_control"
+        ],
+        "further_readings": [
+            "imitation_learning",
+            "inverse_optimization",
+            "game_theory"
+        ]
+    },
+    "reward_design": {
+        "title": "Reward Design",
+        "prerequisites": [
+            "reinforcement_learning",
+            "markov_decision_processes",
+            "value_functions"
+        ],
+        "further_readings": [
+            "inverse_reinforcement_learning",
+            "multi_agent_reinforcement_learning"
+        ]
+    },
+    "proximal_policy_optimization": {
+        "title": "Proximal Policy Optimization",
+        "prerequisites": [
+            "policy_gradient_methods",
+            "actor_critic_methods",
+            "stochastic_policy",
+            "value_function_approximation"
+        ],
+        "further_readings": [
+            "trust_region_policy_optimization",
+            "deep_reinforcement_learning",
+            "monte_carlo_tree_search"
+        ]
+    },
+    "trust_region_policy_optimization": {
+        "title": "Trust Region Policy Optimization",
+        "prerequisites": [
+            "policy_gradient_methods",
+            "actor_critic_methods",
+            "reinforcement_learning"
+        ],
+        "further_readings": [
+            "proximal_policy_optimization",
+            "deep_deterministic_policy_gradient",
+            "asynchronous_advantage_actor_critic"
+        ]
+    },
+    "off_policy_reinforcement_learning": {
+        "title": "Off Policy Reinforcement Learning",
+        "prerequisites": [
+            "reinforcement_learning",
+            "markov_decision_process",
+            "q_learning"
+        ],
+        "further_readings": [
+            "monte_carlo_methods",
+            "temporal_difference_learning",
+            "deep_reinforcement_learning"
+        ]
+    },
+    "imitation_learning_in_robotics": {
+        "title": "Imitation Learning In Robotics",
+        "prerequisites": [
+            "machine_learning",
+            "robotics",
+            "supervised_learning"
+        ],
+        "further_readings": [
+            "inverse_reinforcement_learning",
+            "deep_learning_for_robotics",
+            "imitation_learning_in_games"
+        ]
+    },
+    "multi_agent_imitation_learning": {
+        "title": "Multi Agent Imitation Learning",
+        "prerequisites": [
+            "reinforcement_learning",
+            "imitation_learning",
+            "multi_agent_systems"
+        ],
+        "further_readings": [
+            "multi_agent_reinforcement_learning",
+            "multi_agent_imitation_and_reinforcement_learning",
+            "multi_agent_deep_reinforcement_learning"
+        ]
+    },
+    "adversarial_imitation_learning": {
+        "title": "Adversarial Imitation Learning",
+        "prerequisites": [
+            "reinforcement_learning",
+            "generative_adversarial_networks",
+            "policy_gradient_methods"
+        ],
+        "further_readings": [
+            "inverse_reinforcement_learning",
+            "imitation_learning",
+            "adversarial_training",
+            "multi-agent_reinforcement_learning"
+        ]
+    },
+    "meta_imitation_learning": {
+        "title": "Meta Imitation Learning",
+        "prerequisites": [
+            "imitation_learning",
+            "meta_learning",
+            "reinforcement_learning"
+        ],
+        "further_readings": [
+            "model_based_meta_learning",
+            "meta_reinforcement_learning",
+            "learning_to_learn",
+            "transfer_learning"
+        ]
+    },
+    "imitation_learning_in_natural_language_processing": {
+        "title": "Imitation Learning In Natural Language Processing",
+        "prerequisites": [
+            "natural_language_processing",
+            "machine_learning",
+            "deep_learning"
+        ],
+        "further_readings": [
+            "imitation_learning",
+            "reinforcement_learning",
+            "sequence_to_sequence_models"
+        ]
+    },
+    "interpretability_in_machine_learning": {
+        "title": "Interpretability In Machine Learning",
+        "prerequisites": [
+            "supervised_learning",
+            "unsupervised_learning",
+            "model_evaluation"
+        ],
+        "further_readings": [
+            "explainable_ai",
+            "model_interpretation",
+            "causal_inference"
+        ]
+    },
+    "fairness_in_machine_learning": {
+        "title": "Fairness In Machine Learning",
+        "prerequisites": [
+            "machine_learning",
+            "bias_in_machine_learning",
+            "ethics_in_machine_learning"
+        ],
+        "further_readings": [
+            "fairness_in_decision_making",
+            "algorithmic_fairness",
+            "fairness_in_data_and_models"
+        ]
+    },
+    "machine_learning_in_practice": {
+        "title": "Machine Learning In Practice",
+        "prerequisites": [
+            "supervised_learning",
+            "unsupervised_learning",
+            "neural_networks"
+        ],
+        "further_readings": [
+            "reinforcement_learning",
+            "deep_learning",
+            "decision_trees"
+        ]
+    },
+    "transformer_networks": {
+        "title": "Transformer Networks",
+        "prerequisites": [
+            "attention_mechanisms",
+            "neural_machine_translation",
+            "sequence_to_sequence_models"
+        ],
+        "further_readings": [
+            "bert",
+            "gpt-2",
+            "transformer-xl"
+        ]
+    },
+    "capsule_networks": {
+        "title": "Capsule Networks",
+        "prerequisites": [
+            "convolutional_neural_networks",
+            "backpropagation_algorithm",
+            "neural_network_architectures"
+        ],
+        "further_readings": [
+            "dynamic_routing_between_capsules",
+            "matrix_capsules_with_em_routing",
+            "capsule_networks_on_image_classification"
+        ]
+    },
+    "neuroscience": {
+        "title": "Neuroscience",
+        "prerequisites": [
+            "biology",
+            "psychology",
+            "statistics"
+        ],
+        "further_readings": [
+            "neuroscience_for_dummies",
+            "the_brain_that_changes_itself",
+            "principles_of_neural_science"
+        ]
+    },
+    "value_functions": {
+        "title": "Value Functions",
+        "prerequisites": [
+            "reinforcement_learning",
+            "markov_decision_processes",
+            "dynamic_programming"
+        ],
+        "further_readings": [
+            "q_learning",
+            "sarsa",
+            "monte_carlo_methods"
+        ]
+    },
+    "multi_step_learning": {
+        "title": "Multi Step Learning",
+        "prerequisites": [
+            "reinforcement_learning",
+            "temporal_difference_learning",
+            "markov_decision_process"
+        ],
+        "further_readings": [
+            "deep_reinforcement_learning",
+            "actor_critic_methods",
+            "monte_carlo_tree_search"
+        ]
+    },
+    "policy_iteration_algorithm": {
+        "title": "Policy Iteration Algorithm",
+        "prerequisites": [
+            "markov_decision_process",
+            "value_iteration_algorithm"
+        ],
+        "further_readings": [
+            "monte_carlo_tree_search",
+            "actor_critic_algorithm"
+        ]
+    },
+    "sarsa_algorithm": {
+        "title": "Sarsa Algorithm",
+        "prerequisites": [
+            "reinforcement_learning",
+            "q_learning",
+            "markov_decision_process"
+        ],
+        "further_readings": [
+            "temporal_difference_learning",
+            "monte_carlo_methods",
+            "deep_reinforcement_learning"
+        ]
+    },
+    "expected_sarsa_algorithm": {
+        "title": "Expected Sarsa Algorithm",
+        "prerequisites": [
+            "q_learning",
+            "sarsa_algorithm",
+            "markov_decision_process"
+        ],
+        "further_readings": [
+            "deep_q_networks",
+            "monte_carlo_methods",
+            "temporal_difference_learning"
+        ]
+    },
+    "asynchronous_advantage_actor_critic": {
+        "title": "Asynchronous Advantage Actor Critic",
+        "prerequisites": [
+            "reinforcement_learning",
+            "deep_learning",
+            "policy_gradient_methods"
+        ],
+        "further_readings": [
+            "proximal_policy_optimization",
+            "deep_deterministic_policy_gradient",
+            "actor_critic_algorithm"
+        ]
+    },
+    "model_based_rl": {
+        "title": "Model-Based Reinforcement Learning",
+        "prerequisites": [
+            "reinforcement_learning",
+            "dynamic_programming",
+            "markov_decision_process"
+        ],
+        "further_readings": [
+            "model_free_rl",
+            "monte_carlo_methods",
+            "temporal_difference_learning"
+        ]
+    },
+    "off_policy_evaluation": {
+        "title": "Off Policy Evaluation",
+        "prerequisites": [
+            "reinforcement_learning",
+            "monte_carlo_methods",
+            "temporal_difference_learning"
+        ],
+        "further_readings": [
+            "importance_sampling",
+            "doubly_robust_estimators",
+            "counterfactual_evaluation",
+            "inverse_reinforcement_learning"
+        ]
+    },
+    "multi-armed_bandits": {
+        "title": "Multi-Armed Bandits",
+        "prerequisites": [
+            "reinforcement_learning",
+            "probability_distributions"
+        ],
+        "further_readings": [
+            "upper_confidence_bound_algorithm",
+            "thompson_sampling",
+            "epsilon_greedy_algorithm"
+        ]
+    },
+    "thompson_sampling": {
+        "title": "Thompson Sampling",
+        "prerequisites": [
+            "bayesian_inference",
+            "probability_distributions",
+            "bandit_algorithms"
+        ],
+        "further_readings": [
+            "multi-armed_bandit_problem",
+            "reinforcement_learning",
+            "monte_carlo_methods"
+        ]
+    },
+    "ucb_algorithm": {
+        "title": "UCB Algorithm",
+        "prerequisites": [
+            "multi-armed_bandit_problem",
+            "confidence_intervals"
+        ],
+        "further_readings": [
+            "thompson_sampling",
+            "reinforcement_learning",
+            "bayesian_optimization"
+        ]
+    },
+    "epsilon_greedy_algorithm": {
+        "title": "Epsilon Greedy Algorithm",
+        "prerequisites": [
+            "reinforcement_learning",
+            "multi-armed_bandit_problem"
+        ],
+        "further_readings": [
+            "upper_confidence_bound_algorithm",
+            "thompson_sampling_algorithm"
+        ]
+    },
+    "contextual_bandits": {
+        "title": "Contextual Bandits",
+        "prerequisites": [
+            "reinforcement_learning",
+            "multi-armed_bandits",
+            "supervised_learning"
+        ],
+        "further_readings": [
+            "online_learning",
+            "decision_trees",
+            "exploration_vs_exploitation"
+        ]
+    },
+    "exploration_strategies": {
+        "title": "Exploration Strategies",
+        "prerequisites": [
+            "reinforcement_learning",
+            "markov_decision_processes",
+            "value_iteration"
+        ],
+        "further_readings": [
+            "monte_carlo_tree_search",
+            "epsilon_greedy",
+            "upper_confidence_bound",
+            "thompson_sampling"
+        ]
+    },
+    "bandit_algorithms_for_preference_learning": {
+        "title": "Bandit Algorithms For Preference Learning",
+        "prerequisites": [
+            "multi-armed_bandit_problem",
+            "reinforcement_learning",
+            "online_learning"
+        ],
+        "further_readings": [
+            "contextual_bandits",
+            "active_learning",
+            "multi-objective_reinforcement_learning"
+        ]
+    },
+    "multi-armed_bandit_problem": {
+        "title": "Multi-Armed Bandit Problem",
+        "prerequisites": [
+            "reinforcement_learning",
+            "probability_distribution"
+        ],
+        "further_readings": [
+            "epsilon_greedy_algorithm",
+            "upper_confidence_bound_algorithm"
+        ]
+    },
+    "q-learning_algorithm": {
+        "title": "Q-Learning Algorithm",
+        "prerequisites": [
+            "reinforcement_learning",
+            "markov_decision_process",
+            "value_iteration_algorithm"
+        ],
+        "further_readings": [
+            "deep_q_network",
+            "monte_carlo_tree_search",
+            "actor_critic_algorithm"
+        ]
+    },
+    "upper_confidence_bound_algorithm": {
+        "title": "Upper Confidence Bound Algorithm",
+        "prerequisites": [
+            "multi-armed_bandit_problem",
+            "reinforcement_learning"
+        ],
+        "further_readings": [
+            "thompson_sampling_algorithm",
+            "epsilon_greedy_algorithm"
+        ]
+    },
+    "thompson_sampling_algorithm": {
+        "title": "Thompson Sampling Algorithm",
+        "prerequisites": [
+            "bayesian_inference",
+            "multi-armed_bandit_problem"
+        ],
+        "further_readings": [
+            "reinforcement_learning",
+            "contextual_bandits",
+            "online_learning"
+        ]
+    },
+    "monte_carlo_tree_search_algorithm": {
+        "title": "Monte Carlo Tree Search Algorithm",
+        "prerequisites": [
+            "game_theory",
+            "reinforcement_learning",
+            "tree_search_algorithms"
+        ],
+        "further_readings": [
+            "upper_confidence_bound",
+            "deep_reinforcement_learning",
+            "alpha-beta_pruning"
+        ]
+    },
+    "deep_q_learning-algorithm": {
+        "title": "Deep Q-Learning Algorithm",
+        "prerequisites": [
+            "q-learning_algorithm",
+            "neural_networks",
+            "reinforcement_learning"
+        ],
+        "further_readings": [
+            "double_q_learning",
+            "policy_gradient_methods",
+            "actor_critic_methods"
+        ]
+    },
+    "actor_critic_algorithm": {
+        "title": "Actor Critic Algorithm",
+        "prerequisites": [
+            "reinforcement_learning",
+            "policy_gradient_methods",
+            "value_function_approximation"
+        ],
+        "further_readings": [
+            "actor_critic_architecture",
+            "asynchronous_advantage_actor_critic",
+            "deep_deterministic_policy_gradient"
+        ]
+    },
+    "deep_q_network": {
+        "title": "Deep Q Network",
+        "prerequisites": [
+            "q_learning",
+            "neural_networks",
+            "reinforcement_learning"
+        ],
+        "further_readings": [
+            "double_q_learning",
+            "dueling_network_architecture",
+            "prioritized_experience_replay"
+        ]
+    },
+    "double_dqn": {
+        "title": "Double DQN",
+        "prerequisites": [
+            "q_learning",
+            "deep_q_network",
+            "reinforcement_learning"
+        ],
+        "further_readings": [
+            "dueling_dqn",
+            "prioritized_experience_replay",
+            "actor_critic_methods"
+        ]
+    },
+    "dueling_double_dqn": {
+        "title": "Dueling Double DQN",
+        "prerequisites": [
+            "deep_q_network",
+            "dueling_network_architecture",
+            "double_q_learning"
+        ],
+        "further_readings": [
+            "prioritized_experience_replay",
+            "actor_critic_methods",
+            "policy_gradient_methods"
+        ]
+    },
+    "rainbow_algorithm": {
+        "title": "Rainbow Algorithm",
+        "prerequisites": [
+            "q_learning",
+            "deep_q_networks",
+            "double_q_learning"
+        ],
+        "further_readings": [
+            "dueling_network_architecture",
+            "prioritized_experience_replay",
+            "distributed_deep_q_learning"
+        ]
+    },
+    "policy_reinforcement_learning": {
+        "title": "Policy Reinforcement Learning",
+        "prerequisites": [
+            "markov_decision_process",
+            "value_iteration",
+            "q_learning"
+        ],
+        "further_readings": [
+            "actor_critic_methods",
+            "deep_reinforcement_learning",
+            "monte_carlo_tree_search"
+        ]
+    },
+    "procedural_content_generation": {
+        "title": "Procedural Content Generation",
+        "prerequisites": [
+            "generative_adversarial_networks",
+            "reinforcement_learning",
+            "evolutionary_algorithms"
+        ],
+        "further_readings": [
+            "procedural_generation_in_games",
+            "procedural_generation_in_terrain",
+            "procedural_generation_in_music"
+        ]
+    },
+    "experience_replay": {
+        "title": "Experience Replay",
+        "prerequisites": [
+            "reinforcement_learning",
+            "neural_networks",
+            "deep_learning"
+        ],
+        "further_readings": [
+            "q_learning",
+            "policy_gradient_methods",
+            "actor_critic_methods"
+        ]
+    },
+    "memory_management": {
+        "title": "Memory Management",
+        "prerequisites": [
+            "operating_systems",
+            "computer_architecture",
+            "data_structures"
+        ],
+        "further_readings": [
+            "virtual_memory",
+            "garbage_collection",
+            "paging"
+        ]
+    },
+    "gradient_descent_optimization": {
+        "title": "Gradient Descent Optimization",
+        "prerequisites": [
+            "linear_regression",
+            "calculus",
+            "partial_derivatives"
+        ],
+        "further_readings": [
+            "stochastic_gradient_descent",
+            "momentum_optimization",
+            "adam_optimization"
+        ]
+    },
+    "asynchronous_methods": {
+        "title": "Asynchronous Methods",
+        "prerequisites": [
+            "reinforcement_learning",
+            "deep_learning"
+        ],
+        "further_readings": [
+            "asynchronous_actor_critic_agents",
+            "asynchronous_value_iteration",
+            "asynchronous_policy_gradient_methods"
+        ]
+    },
+    "curiosity_driven_learning": {
+        "title": "Curiosity Driven Learning",
+        "prerequisites": [
+            "reinforcement_learning",
+            "deep_learning",
+            "neural_networks"
+        ],
+        "further_readings": [
+            "intrinsic_motivation",
+            "exploration_vs_exploitation",
+            "self_supervised_learning"
+        ]
+    },
+    "transfer_learning_in_reinforcement_learning": {
+        "title": "Transfer Learning In Reinforcement Learning",
+        "prerequisites": [
+            "reinforcement_learning",
+            "deep_learning",
+            "neural_networks"
+        ],
+        "further_readings": [
+            "domain_adaptation_in_deep_learning",
+            "multi_task_learning",
+            "continual_learning"
+        ]
+    },
+    "deep_reinforcement_learning_frameworks": {
+        "title": "Deep Reinforcement Learning Frameworks",
+        "prerequisites": [
+            "reinforcement_learning",
+            "deep_learning",
+            "neural_networks"
+        ],
+        "further_readings": [
+            "actor_critic_methods",
+            "policy_gradient_methods",
+            "value_iteration"
+        ]
+    },
+    "continuous_action_spaces_in_deep_reinforcement_learning": {
+        "title": "Continuous Action Spaces In Deep Reinforcement Learning",
+        "prerequisites": [
+            "reinforcement_learning",
+            "deep_learning",
+            "policy_gradient_methods"
+        ],
+        "further_readings": [
+            "actor_critic_methods",
+            "deterministic_policy_gradient",
+            "stochastic_policy_gradient"
+        ]
+    },
+    "safety_and_ethics_in_deep_reinforcement_learning": {
+        "title": "Safety and Ethics in Deep Reinforcement Learning",
+        "prerequisites": [
+            "deep_learning",
+            "reinforcement_learning",
+            "ethics_in_artificial_intelligence",
+            "adversarial_examples"
+        ],
+        "further_readings": [
+            "safe_reinforcement_learning",
+            "value_alignment",
+            "interpretable_machine_learning",
+            "fairness_in_machine_learning"
+        ]
+    },
+    "world_models": {
+        "title": "World Models",
+        "prerequisites": [
+            "reinforcement_learning",
+            "generative_models",
+            "neural_network_architectures"
+        ],
+        "further_readings": [
+            "variational_autoencoders",
+            "model_based_rl",
+            "deep_generative_models"
+        ]
+    },
+    "dreamer": {
+        "title": "Dreamer",
+        "prerequisites": [
+            "reinforcement_learning",
+            "variational_autoencoder",
+            "actor_critic_methods"
+        ],
+        "further_readings": [
+            "world_models",
+            "deep_dream",
+            "generative_adversarial_networks"
+        ]
+    },
+    "planning_with_value_functions": {
+        "title": "Planning With Value Functions",
+        "prerequisites": [
+            "markov_decision_process",
+            "value_iteration_algorithm",
+            "bellman_equation"
+        ],
+        "further_readings": [
+            "monte_carlo_tree_search",
+            "policy_iteration_algorithm",
+            "temporal_difference_learning"
+        ]
+    },
+    "model_based_rl_in_real_world": {
+        "title": "Model Based RL in Real World",
+        "prerequisites": [
+            "reinforcement_learning",
+            "model_based_methods",
+            "dynamics_models"
+        ],
+        "further_readings": [
+            "model_free_rl",
+            "deep_reinforcement_learning",
+            "inverse_reinforcement_learning"
+        ]
+    },
+    "uncertainty_in_model_based_rl": {
+        "title": "Uncertainty in Model-Based RL",
+        "prerequisites": [
+            "reinforcement_learning",
+            "model_based_rl",
+            "uncertainty_quantification"
+        ],
+        "further_readings": [
+            "bayesian_rl",
+            "ensemble_methods_in_rl",
+            "active_learning_in_rl"
+        ]
+    },
+    "transfer_learning_in_model_based_rl": {
+        "title": "Transfer Learning in Model Based RL",
+        "prerequisites": [
+            "reinforcement_learning",
+            "model_based_rl",
+            "transfer_learning"
+        ],
+        "further_readings": [
+            "multi_task_rl",
+            "domain_adaptation",
+            "meta_learning"
+        ]
+    },
+    "exploration_in_model_based_rl": {
+        "title": "Exploration in Model-Based RL",
+        "prerequisites": [
+            "reinforcement_learning",
+            "model_based_rl",
+            "exploration_vs_exploitation"
+        ],
+        "further_readings": [
+            "monte_carlo_tree_search",
+            "thompson_sampling",
+            "ucb_algorithm"
+        ]
+    },
+    "multi_task_model_based_rl": {
+        "title": "Multi Task Model Based RL",
+        "prerequisites": [
+            "reinforcement_learning",
+            "model_based_rl",
+            "multi_task_learning"
+        ],
+        "further_readings": [
+            "hierarchical_rl",
+            "meta_learning",
+            "transfer_learning"
+        ]
+    },
+    "policy_gradients": {
+        "title": "Policy Gradients",
+        "prerequisites": [
+            "reinforcement_learning",
+            "gradient_descent",
+            "neural_networks"
+        ],
+        "further_readings": [
+            "actor_critic_methods",
+            "trust_region_policy_optimization",
+            "proximal_policy_optimization"
+        ]
+    },
+    "distributed_deep_reinforcement_learning": {
+        "title": "Distributed Deep Reinforcement Learning",
+        "prerequisites": [
+            "deep_reinforcement_learning",
+            "distributed_systems",
+            "neural_networks"
+        ],
+        "further_readings": [
+            "asynchronous_methods_for_deep_reinforcement_learning",
+            "distributed_rl_with_pytorch",
+            "parameter_server_approach_for_distributed_rl"
+        ]
+    },
+    "exploration_strategies_in_deep_rl": {
+        "title": "Exploration Strategies in Deep RL",
+        "prerequisites": [
+            "reinforcement_learning",
+            "deep_learning",
+            "exploration_vs_exploitation"
+        ],
+        "further_readings": [
+            "monte_carlo_tree_search",
+            "epsilon_greedy",
+            "thompson_sampling"
+        ]
+    },
+    "meta_learning_in_rl": {
+        "title": "Meta Learning in RL",
+        "prerequisites": [
+            "reinforcement_learning",
+            "deep_learning",
+            "gradient_descent"
+        ],
+        "further_readings": [
+            "model_based_rl",
+            "multi_task_learning",
+            "transfer_learning"
+        ]
+    },
+    "deep_q_learning": {
+        "title": "Deep Q Learning",
+        "prerequisites": [
+            "q_learning",
+            "neural_networks",
+            "reinforcement_learning"
+        ],
+        "further_readings": [
+            "double_q_learning",
+            "dueling_network_architecture",
+            "prioritized_experience_replay"
+        ]
+    },
+    "deep_deterministic_policy_gradient": {
+        "title": "Deep Deterministic Policy Gradient",
+        "prerequisites": [
+            "reinforcement_learning",
+            "policy_gradient_methods",
+            "neural_networks"
+        ],
+        "further_readings": [
+            "actor_critic_methods",
+            "Q_learning",
+            "Monte_Carlo_methods"
+        ]
+    },
+    "multi_agent_systems": {
+        "title": "Multi Agent Systems",
+        "prerequisites": [
+            "reinforcement_learning",
+            "game_theory",
+            "distributed_systems"
+        ],
+        "further_readings": [
+            "multi_agent_reinforcement_learning",
+            "multi_agent_game_theory",
+            "multi_agent_distributed_systems"
+        ]
+    },
+    "cooperative_and_competitive_multi_agent_learning": {
+        "title": "Cooperative and Competitive Multi Agent Learning",
+        "prerequisites": [
+            "reinforcement_learning",
+            "multi_agent_systems",
+            "game_theory"
+        ],
+        "further_readings": [
+            "multi_agent_reinforcement_learning",
+            "cooperative_multi_agent_learning",
+            "competitive_multi_agent_learning"
+        ]
+    },
+    "hierarchical_multi_agent_reinforcement_learning": {
+        "title": "Hierarchical Multi Agent Reinforcement Learning",
+        "prerequisites": [
+            "reinforcement_learning",
+            "multi_agent_systems",
+            "deep_learning"
+        ],
+        "further_readings": [
+            "hierarchical_reinforcement_learning",
+            "multi_agent_reinforcement_learning",
+            "distributed_reinforcement_learning"
+        ]
+    },
+    "multi_agent_deep_reinforcement_learning": {
+        "title": "Multi Agent Deep Reinforcement Learning",
+        "prerequisites": [
+            "deep_reinforcement_learning",
+            "multi_agent_systems"
+        ],
+        "further_readings": [
+            "actor_critic_methods",
+            "policy_gradient_methods",
+            "multi_agent_reinforcement_learning"
+        ]
+    },
+    "decentralized_multi_agent_reinforcement_learning": {
+        "title": "Decentralized Multi Agent Reinforcement Learning",
+        "prerequisites": [
+            "reinforcement_learning",
+            "multi_agent_systems",
+            "distributed_systems"
+        ],
+        "further_readings": [
+            "decentralized_control",
+            "multi_agent_reinforcement_learning",
+            "game_theory_in_multi_agent_systems"
+        ]
+    },
+    "multi_agent_reinforcement_learning_in_social_dilemmas": {
+        "title": "Multi Agent Reinforcement Learning In Social Dilemmas",
+        "prerequisites": [
+            "reinforcement_learning",
+            "multi_agent_systems",
+            "game_theory"
+        ],
+        "further_readings": [
+            "deep_reinforcement_learning",
+            "multi_agent_reinforcement_learning",
+            "social_dilemmas_in_AI"
+        ]
+    },
+    "multi_agent_reinforcement_learning_with_communication": {
+        "title": "Multi Agent Reinforcement Learning With Communication",
+        "prerequisites": [
+            "reinforcement_learning",
+            "multi_agent_systems",
+            "deep_learning"
+        ],
+        "further_readings": [
+            "actor_critic_methods",
+            "policy_gradient_methods",
+            "multi_agent_reinforcement_learning"
+        ]
+    },
+    "multi_agent_reinforcement_learning_in_robotics": {
+        "title": "Multi Agent Reinforcement Learning In Robotics",
+        "prerequisites": [
+            "reinforcement_learning",
+            "multi_agent_systems",
+            "robotics"
+        ],
+        "further_readings": [
+            "multi_agent_reinforcement_learning",
+            "deep_reinforcement_learning",
+            "multi_agent_pathfinding"
+        ]
+    },
+    "multi_agent_reinforcement_learning_for_traffic_control": {
+        "title": "Multi Agent Reinforcement Learning For Traffic Control",
+        "prerequisites": [
+            "reinforcement_learning",
+            "multi_agent_systems",
+            "traffic_flow_theory"
+        ],
+        "further_readings": [
+            "deep_reinforcement_learning",
+            "multi_agent_reinforcement_learning",
+            "traffic_simulation",
+            "game_theory"
+        ]
+    },
+    "apprenticeship_learning": {
+        "title": "Apprenticeship Learning",
+        "prerequisites": [
+            "reinforcement_learning",
+            "imitation_learning",
+            "inverse_reinforcement_learning"
+        ],
+        "further_readings": [
+            "apprenticeship_learning_in_robotics",
+            "apprenticeship_learning_in_games",
+            "apprenticeship_learning_in_natural_language_processing"
+        ]
+    },
+    "inverse_reinforcement_learning_with_neural_networks": {
+        "title": "Inverse Reinforcement Learning With Neural Networks",
+        "prerequisites": [
+            "reinforcement_learning",
+            "neural_networks",
+            "deep_learning"
+        ],
+        "further_readings": [
+            "imitation_learning",
+            "inverse_optimization",
+            "generative_adversarial_networks"
+        ]
+    },
+    "inverse_reinforcement_learning_for_robotics": {
+        "title": "Inverse Reinforcement Learning for Robotics",
+        "prerequisites": [
+            "reinforcement_learning",
+            "robotics",
+            "machine_learning",
+            "deep_learning",
+            "markov_decision_processes"
+        ],
+        "further_readings": [
+            "imitation_learning",
+            "inverse_optimization",
+            "trajectory_optimization",
+            "policy_gradient_methods"
+        ]
+    },
+    "inverse_reinforcement_learning_for_autonomous_driving": {
+        "title": "Inverse Reinforcement Learning for Autonomous Driving",
+        "prerequisites": [
+            "reinforcement_learning",
+            "autonomous_driving",
+            "machine_learning",
+            "deep_learning"
+        ],
+        "further_readings": [
+            "imitation_learning",
+            "inverse_reinforcement_learning",
+            "behavioral_cloning",
+            "deep_q_networks"
+        ]
+    },
+    "fast_neural_style_transfer": {
+        "title": "Fast Neural Style Transfer",
+        "prerequisites": [
+            "convolutional_neural_networks",
+            "image_processing",
+            "transfer_learning"
+        ],
+        "further_readings": [
+            "neural_style_transfer",
+            "style_transfer_with_gans",
+            "neural_style_transfer_with_pytorch"
+        ]
+    },
+    "neural_texture_synthesis": {
+        "title": "Neural Texture Synthesis",
+        "prerequisites": [
+            "convolutional_neural_networks",
+            "image_processing",
+            "computer_vision"
+        ],
+        "further_readings": [
+            "style_transfer",
+            "generative_adversarial_networks",
+            "neural_style_transfer"
+        ]
+    },
+    "neural_doodle": {
+        "title": "Neural Doodle",
+        "prerequisites": [
+            "convolutional_neural_networks",
+            "style_transfer",
+            "image_generation"
+        ],
+        "further_readings": [
+            "neural_style_transfer",
+            "neural_texture_synthesis",
+            "deep_dream"
+        ]
+    },
+    "style_transfer_for_videos": {
+        "title": "Style Transfer for Videos",
+        "prerequisites": [
+            "convolutional_neural_networks",
+            "neural_style_transfer",
+            "video_processing"
+        ],
+        "further_readings": [
+            "optical_flow",
+            "temporal_consistency",
+            "long_short_term_memory",
+            "recurrent_neural_networks"
+        ]
+    },
+    "on_policy_reinforcement_learning": {
+        "title": "On-Policy Reinforcement Learning",
+        "prerequisites": [
+        "markov_decision_processes",
+        "value_functions",
+        "policy_iteration",
+        "q_learning",
+        "temporal_difference_learning",
+        "policy_gradient_methods",
+        "actor_critic_methods"
+        ],
+        "further_readings": [
+        "reinforce_algorithm",
+        "trust_region_policy_optimization",
+        "proximal_policy_optimization",
+        "soft_actor_critic",
+        "advantage_actor_critic",
+        "natural_policy_gradient"
+        ]
+    },
+    "deep_q-learning_algorithm": {
+        "title": "Deep Q-Learning Algorithm",
+        "prerequisites": [
+        "reinforcement_learning",
+        "q_learning",
+        "neural_networks",
+        "experience_replay",
+        "target_networks",
+        "epsilon_greedy_strategy"
+        ],
+        "further_readings": [
+        "double_deep_q_learning",
+        "dueling_network_architectures",
+        "prioritized_experience_replay",
+        "policy_gradient_methods",
+        "actor_critic_methods",
+        "proximal_policy_optimization",
+        "soft_actor_critic"
         ]
     }
 }
