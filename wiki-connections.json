@@ -10601,19 +10601,6 @@
             "distributed_deep_q_learning"
         ]
     },
-    "policy_reinforcement_learning": {
-        "title": "Policy Reinforcement Learning",
-        "prerequisites": [
-            "markov_decision_process",
-            "value_iteration",
-            "q_learning"
-        ],
-        "further_readings": [
-            "actor_critic_methods",
-            "deep_reinforcement_learning",
-            "monte_carlo_tree_search"
-        ]
-    },
     "procedural_content_generation": {
         "title": "Procedural Content Generation",
         "prerequisites": [

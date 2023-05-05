@@ -23,7 +23,7 @@ const ForceGraphUrl = ({ data }) => {
   if (isDarkMode) {
     backgroundColor = theme.palette.background.default;
   } else {
-    backgroundColor = '#8e8e8e';
+    backgroundColor = '#807977';
   }
   
   function getNodeById(nodes, id) {

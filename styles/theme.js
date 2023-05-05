@@ -72,10 +72,10 @@ const createCustomTheme = (mode, colors) => {
 };
 
 const lightColors = {
-  primary: '#3f51b5',
-  secondary: '#3f80b5',
-  backgroundDefault: '#f0f0f0',
-  backgroundPaper: '#f5f5f5',
+  primary: '#765130',
+  secondary: '#9a6a3f',
+  backgroundDefault: '#f2e8df',
+  backgroundPaper: '#f3ebe3',
   textPrimary: '#3c3c3c',
   textSecondary: 'rgba(20, 20, 20, 0.6)',
 };
