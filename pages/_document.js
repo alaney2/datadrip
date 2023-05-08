@@ -1,23 +1,36 @@
 import React from 'react';
-import Document, { Html, Head, Main, NextScript, Script } from 'next/document'
+import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Script from 'next/script';
 
-export default class MyDocument extends Document {
+class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
         <Head>
+          <Script
+            strategy="lazyOnload"
+            src="https://www.googletagmanager.com/gtag/js?id=G-CF4FCRS2YB"
+          />
+          <Script
+            id='gtag-init'
+            strategy="lazyOnload"
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-CF4FCRS2YB');
+              `,
+            }}
+          />
         </Head>
         <body>
           <Main />
           <NextScript />
-          <noscript
-            dangerouslySetInnerHTML={{
-              __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=G-CF4FCRS2YB"
-              height="0" width="0" style="display: none; visibility: hidden;" />`,
-            }}
-          />
         </body>
       </Html>
     );
   }
 }
+
+export default MyDocument;
