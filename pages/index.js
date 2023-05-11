@@ -84,7 +84,7 @@ export default function Home({ articles1, articles2 }) {
     <>
       <Head>
         <title>Data Drip</title>
-        <meta name="description" content="DataDrip wiki" />
+        <meta name="description" content="Artificial learning and machine intelligence wiki" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main>

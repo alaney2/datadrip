@@ -49,6 +49,7 @@ export default function PageContent({ content, filename, leftSidebar=true, right
       {pageObject && 
         <Head>
           <title>{pageObject['title']}</title>
+          <meta name="description" content={pageObject['title']} />
         </Head>
       }
       <SkipLink skipToId={"main-content"} />
