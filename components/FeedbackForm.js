@@ -62,7 +62,11 @@ const FeedbackForm = () => {
 
   return (
     <Box component="form" onSubmit={handleSubmit} sx={{ maxWidth: '400px', margin: 'auto' }}>
-      <Typography variant="h4" gutterBottom>
+      <Typography 
+        variant="h4" 
+        gutterBottom 
+        sx={{ margin: '8px ' }}
+      >
         Contact
       </Typography>
 
@@ -72,6 +76,7 @@ const FeedbackForm = () => {
         value={name}
         onChange={(e) => setName(e.target.value)}
         margin="normal"
+        sx={{ margin: '8px ' }}
       />
 
       <TextField
@@ -81,6 +86,7 @@ const FeedbackForm = () => {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         margin="normal"
+        sx={{ margin: '8px ' }}
       />
 
       <TextField
@@ -91,9 +97,11 @@ const FeedbackForm = () => {
         value={feedback}
         onChange={(e) => setFeedback(e.target.value)}
         margin="normal"
+        sx={{ margin: '8px ' }}
+
       />
 
-      <Button type="submit" variant="contained" color="primary" sx={{ marginTop: '16px' }} disabled={isLoading}>
+      <Button type="submit" variant="contained" color="primary" sx={{ marginTop: '16px', marginLeft: '8px' }} disabled={isLoading}>
         {isLoading ? <CircularProgress size={24} /> : 'Submit'}
       </Button>
 
