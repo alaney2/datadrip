@@ -28,7 +28,7 @@ export default function App({ Component, pageProps }) {
                   page_path: window.location.pathname,
                   });
                 `,
-                }}
+              }}
             />
           </NavBarVisibilityProvider>
         </ReadingListProvider>
