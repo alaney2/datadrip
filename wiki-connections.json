@@ -11144,41 +11144,520 @@
     "on_policy_reinforcement_learning": {
         "title": "On-Policy Reinforcement Learning",
         "prerequisites": [
-        "markov_decision_processes",
-        "value_functions",
-        "policy_iteration",
-        "q_learning",
-        "temporal_difference_learning",
-        "policy_gradient_methods",
-        "actor_critic_methods"
+            "markov_decision_processes",
+            "value_functions",
+            "policy_iteration",
+            "q_learning",
+            "temporal_difference_learning",
+            "policy_gradient_methods",
+            "actor_critic_methods"
         ],
         "further_readings": [
-        "reinforce_algorithm",
-        "trust_region_policy_optimization",
-        "proximal_policy_optimization",
-        "soft_actor_critic",
-        "advantage_actor_critic",
-        "natural_policy_gradient"
+            "reinforce_algorithm",
+            "trust_region_policy_optimization",
+            "proximal_policy_optimization",
+            "soft_actor_critic",
+            "advantage_actor_critic",
+            "natural_policy_gradient"
         ]
     },
     "deep_q-learning_algorithm": {
         "title": "Deep Q-Learning Algorithm",
         "prerequisites": [
-        "reinforcement_learning",
-        "q_learning",
-        "neural_networks",
-        "experience_replay",
-        "target_networks",
-        "epsilon_greedy_strategy"
+            "reinforcement_learning",
+            "q_learning",
+            "neural_networks",
+            "experience_replay",
+            "target_networks",
+            "epsilon_greedy_strategy"
         ],
         "further_readings": [
-        "double_deep_q_learning",
-        "dueling_network_architectures",
-        "prioritized_experience_replay",
-        "policy_gradient_methods",
-        "actor_critic_methods",
-        "proximal_policy_optimization",
-        "soft_actor_critic"
+            "double_deep_q_learning",
+            "dueling_network_architectures",
+            "prioritized_experience_replay",
+            "policy_gradient_methods",
+            "actor_critic_methods",
+            "proximal_policy_optimization",
+            "soft_actor_critic"
+        ]
+    },
+    "actor_critic_architectures": {
+        "title": "Actor Critic Architectures",
+        "prerequisites": [
+            "reinforcement_learning",
+            "policy_gradient_methods",
+            "value_function_approximation"
+        ],
+        "further_readings": [
+            "deep_reinforcement_learning",
+            "actor_critic_methods",
+            "asynchronous_advantage_actor_critic",
+            "proximal_policy_optimization"
+        ]
+    },
+    "asynchronous_actor_critic": {
+        "title": "Asynchronous Actor Critic",
+        "prerequisites": [
+            "reinforcement_learning",
+            "deep_learning",
+            "policy_gradient_methods"
+        ],
+        "further_readings": [
+            "asynchronous_methods_in_deep_reinforcement_learning",
+            "actor_critic_methods",
+            "asynchronous_advantage_actor_critic"
+        ]
+    },
+    "neural_style_transfer_on_mobile_devices": {
+        "title": "Neural Style Transfer on Mobile Devices",
+        "prerequisites": [
+            "neural_style_transfer",
+            "deep_learning",
+            "convolutional_neural_networks",
+            "mobile_computing"
+        ],
+        "further_readings": [
+            "fast_neural_style_transfer",
+            "pruning_neural_networks",
+            "quantization_of_neural_networks",
+            "on_device_machine_learning"
+        ]
+    },
+    "neural_style_transfer_for_3d_models": {
+        "title": "Neural Style Transfer for 3D Models",
+        "prerequisites": [
+            "neural_style_transfer",
+            "3d_modeling",
+            "convolutional_neural_network",
+            "deep_learning",
+            "loss_functions"
+        ],
+        "further_readings": [
+            "generative_adversarial_networks",
+            "domain_adaptation",
+            "mesh_convolution",
+            "geometric_deep_learning"
+        ]
+    },
+    "bottom_up_top_down_attention": {
+        "title": "Bottom Up Top Down Attention",
+        "prerequisites": [
+            "attention_mechanism",
+            "deep_learning",
+            "neural_networks",
+            "computer_vision"
+        ],
+        "further_readings": [
+            "visual_question_answering",
+            "image_captioning",
+            "scene_graph_generation",
+            "transformer_architecture"
+        ]
+    },
+    "dense_captioning": {
+        "title": "Dense Captioning",
+        "prerequisites": [
+            "image_captioning",
+            "object_detection",
+            "convolutional_neural_network",
+            "recurrent_neural_network",
+            "long_short_term_memory"
+        ],
+        "further_readings": [
+            "region_based_convolutional_neural_networks",
+            "spatial_transformer_networks",
+            "attention_mechanisms",
+            "visual_question_answering"
+        ]
+    },
+    "multimodal_embedding": {
+        "title": "Multimodal Embedding",
+        "prerequisites": [
+            "word_embeddings",
+            "image_embeddings",
+            "deep_learning",
+            "neural_networks",
+            "unsupervised_learning"
+        ],
+        "further_readings": [
+            "cross_modal_learning",
+            "zero_shot_learning",
+            "transfer_learning",
+            "domain_adaptation",
+            "joint_embedding"
+        ]
+    },
+    "self_attention": {
+        "title": "Self Attention",
+        "prerequisites": [
+            "transformer_architecture",
+            "attention_mechanism",
+            "multi_head_attention"
+        ],
+        "further_readings": [
+            "scaled_dot_product_attention",
+            "position_encoding",
+            "masked_self_attention",
+            "layer_normalization",
+            "bert"
+        ]
+    },
+    "transformers": {
+        "title": "Transformers",
+        "prerequisites": [
+            "attention_mechanism",
+            "encoder_decoder_architecture",
+            "self_attention",
+            "multi_head_attention",
+            "positional_encoding"
+        ],
+        "further_readings": [
+            "bert",
+            "gpt",
+            "gpt_2",
+            "gpt_3",
+            "t5",
+            "distilbert",
+            "roberta",
+            "xlnet"
+        ]
+    },
+    "pretraining_techniques": {
+        "title": "Pretraining Techniques",
+        "prerequisites": [
+            "unsupervised_learning",
+            "supervised_learning",
+            "transfer_learning",
+            "deep_learning",
+            "autoencoders",
+            "restricted_boltzmann_machines",
+            "generative_adversarial_networks"
+        ],
+        "further_readings": [
+            "fine_tuning",
+            "self_supervised_learning",
+            "contrastive_learning",
+            "knowledge_distillation",
+            "zero_shot_learning",
+            "one_shot_learning",
+            "few_shot_learning"
+        ]
+    },
+    "image_captioning_benchmarks": {
+        "title": "Image Captioning Benchmarks",
+        "prerequisites": [
+            "image_captioning",
+            "deep_learning",
+            "convolutional_neural_networks",
+            "recurrent_neural_networks",
+            "natural_language_processing"
+        ],
+        "further_readings": [
+            "beam_search",
+            "attention_mechanism",
+            "transfer_learning",
+            "evaluation_metrics"
+        ]
+    },
+    "faster_r-cnn": {
+        "title": "Faster R-CNN",
+        "prerequisites": [
+            "convolutional_neural_network",
+            "region_proposal_network",
+            "selective_search",
+            "object_detection",
+            "bounding_box_regression",
+            "non_maximum_suppression"
+        ],
+        "further_readings": [
+            "mask_r_cnn",
+            "yolo",
+            "ssd",
+            "retinanet",
+            "two_stage_detectors",
+            "one_stage_detectors"
+        ]
+    },
+    "retinanet": {
+        "title": "RetinaNet",
+        "prerequisites": [
+            "object_detection",
+            "convolutional_neural_network",
+            "focal_loss",
+            "resnet",
+            "feature_pyramid_network"
+        ],
+        "further_readings": [
+            "yolo",
+            "ssd",
+            "mask_rcnn",
+            "efficientdet",
+            "anchor_boxes"
+        ]
+    },
+    "efficientdet": {
+        "title": "EfficientDet",
+        "prerequisites": [
+            "object_detection",
+            "convolutional_neural_network",
+            "backbone_network",
+            "feature_pyramid_network",
+            "anchor_boxes",
+            "loss_functions"
+        ],
+        "further_readings": [
+            "yolov3",
+            "retinanet",
+            "ssd",
+            "focal_loss",
+            "swish_activation_function",
+            "compound_scaling"
+        ]
+    },
+    "object_tracking": {
+        "title": "Object Tracking",
+        "prerequisites": [
+            "computer_vision",
+            "image_processing",
+            "convolutional_neural_network",
+            "kalman_filter",
+            "optical_flow",
+            "mean_shift"
+        ],
+        "further_readings": [
+            "multiple_object_tracking",
+            "deep_sort",
+            "siamese_networks",
+            "correlation_filters",
+            "particle_filter"
+        ]
+    },
+    "object_detection_evaluation_metrics": {
+        "title": "Object Detection Evaluation Metrics",
+        "prerequisites": [
+            "object_detection",
+            "precision_recall",
+            "mean_average_precision",
+            "intersection_over_union"
+        ],
+        "further_readings": [
+            "yolo",
+            "faster_rcnn",
+            "ssd",
+            "retinanet",
+            "evaluating_object_detection_models"
+        ]
+    },
+    "multi_object_tracking_and_segmentation": {
+        "title": "Multi-Object Tracking and Segmentation",
+        "prerequisites": [
+            "object_detection",
+            "image_segmentation",
+            "deep_learning",
+            "convolutional_neural_networks",
+            "recurrent_neural_networks",
+            "tracking_algorithms"
+        ],
+        "further_readings": [
+            "optical_flow",
+            "kalman_filter",
+            "particle_filter",
+            "data_association",
+            "graph_based_methods"
+        ]
+    },
+    "video_object_detection": {
+        "title": "Video Object Detection",
+        "prerequisites": [
+            "image_object_detection",
+            "convolutional_neural_network",
+            "recurrent_neural_network",
+            "long_short_term_memory",
+            "region_proposal_network",
+            "yolo",
+            "ssd",
+            "tracking_algorithms"
+        ],
+        "further_readings": [
+            "deep_sort",
+            "kalman_filter",
+            "optical_flow",
+            "mean_shift_tracking",
+            "correlation_filter",
+            "siamese_networks",
+            "temporal_action_detection",
+            "video_instance_segmentation"
+        ]
+    },
+    "statistical_inference": {
+        "title": "Statistical Inference",
+        "prerequisites": [
+            "probability_theory",
+            "hypothesis_testing",
+            "maximum_likelihood_estimation",
+            "bayesian_inference"
+        ],
+        "further_readings": [
+            "confidence_intervals",
+            "bootstrap_methods",
+            "monte_carlo_methods",
+            "nonparametric_statistics"
+        ]
+    },
+    "information_retrieval": {
+        "title": "Information Retrieval",
+        "prerequisites": [
+            "text_preprocessing",
+            "vector_space_model",
+            "tf_idf",
+            "cosine_similarity",
+            "inverted_index",
+            "query_expansion",
+            "relevance_feedback"
+        ],
+        "further_readings": [
+            "latent_semantic_indexing",
+            "learning_to_rank",
+            "language_model",
+            "bm25",
+            "rocchio_algorithm",
+            "pagerank",
+            "hierarchical_clustering"
+        ]
+    },
+    "algorithm_design_and_analysis": {
+        "title": "Algorithm Design and Analysis",
+        "prerequisites": [
+            "time_complexity",
+            "space_complexity",
+            "big_o_notation",
+            "recursion",
+            "dynamic_programming",
+            "greedy_algorithms",
+            "divide_and_conquer"
+        ],
+        "further_readings": [
+            "graph_algorithms",
+            "sorting_algorithms",
+            "searching_algorithms",
+            "optimization_algorithms",
+            "approximation_algorithms",
+            "randomized_algorithms",
+            "parallel_algorithms"
+        ]
+    },
+    "named_entity_recognition": {
+        "title": "Named Entity Recognition",
+        "prerequisites": [
+            "natural_language_processing",
+            "machine_learning",
+            "deep_learning",
+            "sequence_labeling",
+            "conditional_random_fields",
+            "recurrent_neural_networks",
+            "transformers"
+        ],
+        "further_readings": [
+            "word_embeddings",
+            "bidirectional_lstm",
+            "bert",
+            "crf_layer",
+            "gpt",
+            "span_extraction",
+            "zero_shot_learning"
+        ]
+    },
+    "sentiment_analysis": {
+        "title": "Sentiment Analysis",
+        "prerequisites": [
+            "natural_language_processing",
+            "machine_learning",
+            "deep_learning",
+            "text_preprocessing",
+            "word_embeddings",
+            "recurrent_neural_networks",
+            "convolutional_neural_networks"
+        ],
+        "further_readings": [
+            "transfer_learning",
+            "attention_mechanism",
+            "transformer_architecture",
+            "bert",
+            "gpt",
+            "lstm",
+            "gru",
+            "policy_gradient_methods"
+        ]
+    },
+    "text_classification": {
+        "title": "Text Classification",
+        "prerequisites": [
+            "natural_language_processing",
+            "machine_learning",
+            "deep_learning",
+            "word_embeddings",
+            "convolutional_neural_network",
+            "recurrent_neural_network",
+            "transformer_models",
+            "support_vector_machines"
+        ],
+        "further_readings": [
+            "sentiment_analysis",
+            "topic_modeling",
+            "named_entity_recognition",
+            "document_clustering",
+            "sequence_labeling",
+            "zero_shot_learning",
+            "transfer_learning",
+            "multi_task_learning"
+        ]
+    },
+    "word_embedding": {
+        "title": "Word Embedding",
+        "prerequisites": [
+            "natural_language_processing",
+            "neural_networks",
+            "deep_learning"
+        ],
+        "further_readings": [
+            "word2vec",
+            "glove",
+            "fasttext",
+            "skip_gram",
+            "continuous_bag_of_words",
+            "elmo",
+            "bert",
+            "transformers"
+        ]
+    },
+    "sequence_to_sequence_models": {
+        "title": "Sequence to Sequence Models",
+        "prerequisites": [
+            "recurrent_neural_networks",
+            "long_short_term_memory",
+            "gated_recurrent_units",
+            "encoder_decoder_architecture"
+        ],
+        "further_readings": [
+            "attention_mechanism",
+            "transformer_models",
+            "beam_search",
+            "teacher_forcing"
+        ]
+    },
+    "language_modeling": {
+        "title": "Language Modeling",
+        "prerequisites": [
+            "n_gram_models",
+            "neural_networks",
+            "recurrent_neural_networks",
+            "transformer_models"
+        ],
+        "further_readings": [
+            "word_embeddings",
+            "sequence_to_sequence_models",
+            "attention_mechanism",
+            "bert"
         ]
     }
 }
