@@ -11659,5 +11659,384 @@
             "attention_mechanism",
             "bert"
         ]
+    },
+    "dialogue_systems": {
+        "title": "Dialogue Systems",
+        "prerequisites": [
+            "natural_language_processing",
+            "machine_learning",
+            "deep_learning",
+            "reinforcement_learning",
+            "sequence_to_sequence_models"
+        ],
+        "further_readings": [
+            "chatbots",
+            "intent_recognition",
+            "slot_filling",
+            "dialogue_management",
+            "response_generation",
+            "evaluation_metrics"
+        ]
+    },
+    "multilingual_nlp": {
+        "title": "Multilingual NLP",
+        "prerequisites": [
+            "natural_language_processing",
+            "machine_translation",
+            "word_embeddings",
+            "language_models",
+            "transfer_learning"
+        ],
+        "further_readings": [
+            "cross_lingual_embeddings",
+            "zero_shot_learning",
+            "multitask_learning",
+            "multimodal_machine_translation",
+            "language_identification"
+        ]
+    },
+    "graph_convolutional_networks": {
+        "title": "Graph Convolutional Networks",
+        "prerequisites": [
+            "graph_theory",
+            "deep_learning",
+            "convolutional_neural_network",
+            "spectral_graph_theory",
+            "graph_embeddings"
+        ],
+        "further_readings": [
+            "graph_attention_networks",
+            "graph_isomorphism_networks",
+            "graph_neural_networks",
+            "graph_autoencoders",
+            "graph_sage"
+        ]
+    },
+    "message_passing_neural_networks": {
+        "title": "Message Passing Neural Networks",
+        "prerequisites": [
+            "graph_theory",
+            "graph_neural_networks",
+            "deep_learning"
+        ],
+        "further_readings": [
+            "graph_convolutional_networks",
+            "graph_attention_networks",
+            "graph_isomorphism_networks",
+            "graph_embedding"
+        ]
+    },
+    "graph_embedding": {
+        "title": "Graph Embedding",
+        "prerequisites": [
+            "graph_theory",
+            "representation_learning",
+            "deep_learning",
+            "unsupervised_learning"
+        ],
+        "further_readings": [
+            "node2vec",
+            "graph_convolutional_networks",
+            "graph_attention_networks",
+            "graph_sage",
+            "deep_walk"
+        ]
+    },
+    "graph_attention_networks": {
+        "title": "Graph Attention Networks",
+        "prerequisites": [
+            "graph_theory",
+            "deep_learning",
+            "neural_networks",
+            "graph_neural_networks",
+            "attention_mechanism"
+        ],
+        "further_readings": [
+            "graph_convolutional_networks",
+            "graph_embedding",
+            "transformer_models",
+            "spectral_graph_theory",
+            "graph_isomorphism_networks"
+        ]
+    },
+    "graph_classification": {
+        "title": "Graph Classification",
+        "prerequisites": [
+            "graph_theory",
+            "graph_neural_networks",
+            "deep_learning",
+            "machine_learning"
+        ],
+        "further_readings": [
+            "graph_convolutional_networks",
+            "graph_attention_networks",
+            "graph_embedding",
+            "graph_isomorphism"
+        ]
+    },
+    "graph_generation": {
+        "title": "Graph Generation",
+        "prerequisites": [
+            "graph_theory",
+            "random_graph_models",
+            "graph_embeddings",
+            "graph_neural_networks"
+        ],
+        "further_readings": [
+            "graph_sampling",
+            "graph_clustering",
+            "graph_matching",
+            "graph_edit_distance"
+        ]
+    },
+    "graph_data_preprocessing": {
+        "title": "Graph Data Preprocessing",
+        "prerequisites": [
+            "graph_theory",
+            "data_preprocessing",
+            "graph_representation"
+        ],
+        "further_readings": [
+            "graph_embeddings",
+            "graph_neural_networks",
+            "spectral_graph_theory",
+            "graph_clustering"
+        ]
+    },
+    "graph_neural_network_frameworks": {
+        "title": "Graph Neural Network Frameworks",
+        "prerequisites": [
+            "graph_neural_networks",
+            "deep_learning_frameworks",
+            "python_programming"
+        ],
+        "further_readings": [
+            "graph_convolutional_networks",
+            "graph_attention_networks",
+            "graph_embedding",
+            "graph_database"
+        ]
+    },
+    "graph_neural_network_applications": {
+        "title": "Graph Neural Network Applications",
+        "prerequisites": [
+            "graph_neural_networks",
+            "graph_theory",
+            "deep_learning",
+            "machine_learning"
+        ],
+        "further_readings": [
+            "graph_convolutional_networks",
+            "graph_attention_networks",
+            "graph_embedding",
+            "graph_autoencoders",
+            "graph_generative_models"
+        ]
+    },
+    "anchor_boxes": {
+        "title": "Anchor Boxes",
+        "prerequisites": [
+            "object_detection",
+            "region_proposal_network",
+            "convolutional_neural_network"
+        ],
+        "further_readings": [
+            "yolo",
+            "single_shot_multibox_detector",
+            "faster_rcnn",
+            "iou"
+        ]
+    },
+    "region_proposal_networks": {
+        "title": "Region Proposal Networks",
+        "prerequisites": [
+            "convolutional_neural_network",
+            "object_detection",
+            "selective_search",
+            "faster_rcnn"
+        ],
+        "further_readings": [
+            "anchor_boxes",
+            "iou",
+            "non_maximum_suppression",
+            "resnet"
+        ]
+    },
+    "single_shot_multibox_detector": {
+        "title": "Single Shot Multibox Detector",
+        "prerequisites": [
+            "convolutional_neural_network",
+            "object_detection",
+            "deep_learning",
+            "bounding_box"
+        ],
+        "further_readings": [
+            "yolo",
+            "faster_rcnn",
+            "retinanet",
+            "anchor_boxes",
+            "iou",
+            "non_maximum_suppression"
+        ]
+    },
+    "ssd_with_attention": {
+        "title": "SSD with Attention",
+        "prerequisites": [
+            "single_shot_multibox_detector",
+            "attention_mechanism",
+            "object_detection"
+        ],
+        "further_readings": [
+            "yolo",
+            "faster_rcnn",
+            "transformer",
+            "multi_head_attention"
+        ]
+    },
+    "corner_net": {
+        "title": "Corner Net",
+        "prerequisites": [
+            "convolutional_neural_network",
+            "object_detection",
+            "deep_learning",
+            "computer_vision"
+        ],
+        "further_readings": [
+            "yolo",
+            "ssd",
+            "faster_rcnn",
+            "retinanet",
+            "anchor_boxes"
+        ]
+    },
+    "precision_recall_curve": {
+        "title": "Precision Recall Curve",
+        "prerequisites": [
+            "binary_classification",
+            "confusion_matrix",
+            "precision",
+            "recall"
+        ],
+        "further_readings": [
+            "roc_curve",
+            "f1_score",
+            "average_precision_score",
+            "area_under_curve"
+        ]
+    },
+    "yolov5": {
+        "title": "YOLOv5",
+        "prerequisites": [
+            "object_detection",
+            "convolutional_neural_network",
+            "deep_learning",
+            "transfer_learning",
+            "bounding_box"
+        ],
+        "further_readings": [
+            "yolov4",
+            "yolov3",
+            "yolov2",
+            "yolov1",
+            "anchor_boxes",
+            "mean_average_precision",
+            "iou_loss",
+            "focal_loss"
+        ]
+    },
+    "rcnn": {
+        "title": "R-CNN",
+        "prerequisites": [
+            "convolutional_neural_network",
+            "object_detection",
+            "selective_search",
+            "bounding_box_regression"
+        ],
+        "further_readings": [
+            "fast_rcnn",
+            "faster_rcnn",
+            "mask_rcnn",
+            "yolo",
+            "ssd",
+            "efficientdet"
+        ]
+    },
+    "bounding_box_regression": {
+        "title": "Bounding Box Regression",
+        "prerequisites": [
+            "object_detection",
+            "convolutional_neural_network",
+            "loss_functions",
+            "gradient_descent"
+        ],
+        "further_readings": [
+            "region_proposal_network",
+            "faster_rcnn",
+            "yolo",
+            "ssd",
+            "anchor_boxes"
+        ]
+    },
+    "hough_transform": {
+        "title": "Hough Transform",
+        "prerequisites": [
+            "image_processing",
+            "edge_detection",
+            "coordinate_systems"
+        ],
+        "further_readings": [
+            "circle_hough_transform",
+            "ellipse_hough_transform",
+            "generalized_hough_transform",
+            "radon_transform",
+            "image_segmentation"
+        ]
+    },
+    "mean_shift_clustering": {
+        "title": "Mean Shift Clustering",
+        "prerequisites": [
+            "clustering_algorithms",
+            "kernel_density_estimation"
+        ],
+        "further_readings": [
+            "k_means_clustering",
+            "hierarchical_clustering",
+            "density_based_clustering",
+            "spectral_clustering",
+            "gaussian_mixture_models"
+        ]
+    },
+    "tracking_algorithms": {
+        "title": "Tracking Algorithms",
+        "prerequisites": [
+            "kalman_filter",
+            "particle_filter",
+            "mean_shift",
+            "optical_flow",
+            "correlation_filter",
+            "deep_learning"
+        ],
+        "further_readings": [
+            "extended_kalman_filter",
+            "unscented_kalman_filter",
+            "multiple_object_tracking",
+            "data_association",
+            "track_before_detect"
+        ]
+    },
+    "precision_and_recall": {
+        "title": "Precision and Recall",
+        "prerequisites": [
+            "confusion_matrix",
+            "classification_metrics",
+            "binary_classification"
+        ],
+        "further_readings": [
+            "f1_score",
+            "roc_curve",
+            "auc_score",
+            "average_precision_score",
+            "balanced_accuracy"
+        ]
     }
 }
