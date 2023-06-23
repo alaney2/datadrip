@@ -2673,35 +2673,32 @@
         "prerequisites": [
             "autoencoder",
             "variational_autoencoder",
-            "importance_sampling",
-            "monte_carlo_methods",
-            "deep_learning_frameworks"
+            "anomaly_detection",
+            "deep_learning",
+            "neural_networks"
         ],
         "further_readings": [
-            "importance_weighted_generative_adversarial_network",
-            "importance_weighted_autoencoder_for_textual_data",
-            "importance_weighted_autoencoder_for_anomaly_detection"
+            "importance_sampling",
+            "reparameterization_trick",
+            "monte_carlo_methods",
+            "generative_adversarial_networks"
         ]
     },
     "normalizing_flows": {
         "title": "Normalizing Flows",
         "prerequisites": [
-            "probability_distributions",
-            "change_of_variables_formula",
-            "jacobian_matrix",
-            "autoregressive_models",
-            "variational_autoencoders",
-            "generative_adversarial_networks"
+            "variational_autoencoder",
+            "generative_adversarial_network",
+            "maximum_likelihood_estimation",
+            "bayesian_inference"
         ],
         "further_readings": [
-            "flow-based_models",
-            "inverse_autoregressive_flow",
-            "masked_autoregressive_flow",
-            "real_nvp_and_density_estimation",
-            "normalizing_flows_for_image_generation",
-            "normalizing_flows_for_latent_variable_models",
-            "normalizing_flows_for_bayesian_inference",
-            "normalizing_flows_for_flow-based_sampling"
+            "invertible_neural_networks",
+            "glow_generative_flow",
+            "real_nvp",
+            "maf_masked_autoregressive_flow",
+            "planar_flows",
+            "radial_flows"
         ]
     },
     "generative_models": {
@@ -13621,6 +13618,699 @@
             "active_learning",
             "reinforcement_learning",
             "online_convex_optimization"
+        ]
+    },
+    "deep_learning_approaches_for_signal_processing": {
+        "title": "Deep Learning Approaches for Signal Processing",
+        "prerequisites": [
+            "deep_learning",
+            "signal_processing",
+            "convolutional_neural_networks",
+            "recurrent_neural_networks",
+            "autoencoders",
+            "transfer_learning",
+            "time_series_analysis"
+        ],
+        "further_readings": [
+            "long_short_term_memory",
+            "gated_recurrent_units",
+            "wavelet_transform",
+            "fourier_transform",
+            "spectrogram_analysis",
+            "sparse_representation"
+        ]
+    },
+    "gaussian_noise": {
+        "title": "Gaussian Noise",
+        "prerequisites": [
+            "probability_distribution",
+            "normal_distribution",
+            "signal_processing"
+        ],
+        "further_readings": [
+            "additive_white_gaussian_noise",
+            "noise_reduction",
+            "denoising_autoencoder",
+            "kalman_filter"
+        ]
+    },
+    "sparse_autoencoder": {
+        "title": "Sparse Autoencoder",
+        "prerequisites": [
+            "autoencoder",
+            "neural_networks",
+            "unsupervised_learning",
+            "backpropagation"
+        ],
+        "further_readings": [
+            "deep_autoencoder",
+            "denoising_autoencoder",
+            "variational_autoencoder",
+            "contractive_autoencoder",
+            "stacked_autoencoder"
+        ]
+    },
+    "recurrent_autoencoder": {
+        "title": "Recurrent Autoencoder",
+        "prerequisites": [
+            "autoencoder",
+            "recurrent_neural_network",
+            "long_short_term_memory",
+            "gated_recurrent_unit"
+        ],
+        "further_readings": [
+            "sequence_to_sequence_model",
+            "variational_autoencoder",
+            "denoising_autoencoder",
+            "sparse_autoencoder"
+        ]
+    },
+    "deep_belief_networks": {
+        "title": "Deep Belief Networks",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "restricted_boltzmann_machines",
+            "unsupervised_learning",
+            "greedy_layer_wise_pretraining"
+        ],
+        "further_readings": [
+            "deep_learning",
+            "convolutional_neural_networks",
+            "recurrent_neural_networks",
+            "autoencoders",
+            "generative_adversarial_networks"
+        ]
+    },
+    "deep_autoencoder": {
+        "title": "Deep Autoencoder",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "unsupervised_learning",
+            "deep_learning",
+            "autoencoder"
+        ],
+        "further_readings": [
+            "stacked_autoencoders",
+            "denoising_autoencoders",
+            "variational_autoencoders",
+            "sparse_autoencoders",
+            "contractive_autoencoders"
+        ]
+    },
+    "convolutional_autoencoder": {
+        "title": "Convolutional Autoencoder",
+        "prerequisites": [
+            "autoencoder",
+            "convolutional_neural_network",
+            "deep_learning"
+        ],
+        "further_readings": [
+            "variational_autoencoder",
+            "denoising_autoencoder",
+            "sparse_autoencoder",
+            "stacked_autoencoder"
+        ]
+    },
+    "bayesian_networks": {
+        "title": "Bayesian Networks",
+        "prerequisites": [
+            "probability_theory",
+            "graph_theory",
+            "conditional_probability",
+            "bayes_theorem"
+        ],
+        "further_readings": [
+            "dynamic_bayesian_networks",
+            "hidden_markov_models",
+            "markov_random_fields",
+            "belief_propagation",
+            "bayesian_learning"
+        ]
+    },
+    "factor_analysis": {
+        "title": "Factor Analysis",
+        "prerequisites": [
+            "principal_component_analysis",
+            "linear_algebra",
+            "multivariate_normal_distribution",
+            "maximum_likelihood_estimation"
+        ],
+        "further_readings": [
+            "exploratory_factor_analysis",
+            "confirmatory_factor_analysis",
+            "independent_component_analysis",
+            "latent_variable_models",
+            "structural_equation_modeling"
+        ]
+    },
+    "clustering_algorithms": {
+        "title": "Clustering Algorithms",
+        "prerequisites": [
+            "k_means_clustering",
+            "hierarchical_clustering",
+            "density_based_clustering",
+            "spectral_clustering",
+            "clustering_evaluation"
+        ],
+        "further_readings": [
+            "mean_shift_clustering",
+            "affinity_propagation",
+            "birch_clustering",
+            "agglomerative_clustering",
+            "dbscan"
+        ]
+    },
+    "boltzmann_machines": {
+        "title": "Boltzmann Machines",
+        "prerequisites": [
+            "energy_based_models",
+            "markov_random_fields",
+            "gibbs_sampling",
+            "maximum_likelihood_estimation"
+        ],
+        "further_readings": [
+            "restricted_boltzmann_machines",
+            "deep_boltzmann_machines",
+            "contrastive_divergence",
+            "mean_field_theory"
+        ]
+    },
+    "restricted_boltzmann_machines": {
+        "title": "Restricted Boltzmann Machines",
+        "prerequisites": [
+            "boltzmann_machines",
+            "energy_based_models",
+            "contrastive_divergence",
+            "unsupervised_learning"
+        ],
+        "further_readings": [
+            "deep_belief_networks",
+            "deep_boltzmann_machines",
+            "autoencoders",
+            "variational_autoencoders",
+            "generative_adversarial_networks"
+        ]
+    },
+    "generative_adversarial_networks": {
+        "title": "Generative Adversarial Networks",
+        "prerequisites": [
+            "deep_learning",
+            "neural_networks",
+            "backpropagation",
+            "convolutional_neural_networks",
+            "autoencoders"
+        ],
+        "further_readings": [
+            "conditional_gans",
+            "wasserstein_gans",
+            "cycle_gans",
+            "style_gans",
+            "pix2pix",
+            "dcgans"
+        ]
+    },
+    "generative_flow_models": {
+        "title": "Generative Flow Models",
+        "prerequisites": [
+            "probability_density_function",
+            "maximum_likelihood_estimation",
+            "variational_autoencoders",
+            "generative_adversarial_networks",
+            "normalizing_flows"
+        ],
+        "further_readings": [
+            "real_nvp",
+            "glow",
+            "maf",
+            "inverse_autoregressive_flow",
+            "planar_flows",
+            "radial_flows"
+        ]
+    },
+    "optimizer_algorithms": {
+        "title": "Optimizer Algorithms",
+        "prerequisites": [
+            "gradient_descent",
+            "stochastic_gradient_descent",
+            "momentum",
+            "adaptive_gradient",
+            "rmsprop",
+            "adam_optimizer"
+        ],
+        "further_readings": [
+            "nesterov_accelerated_gradient",
+            "adadelta",
+            "ftrl",
+            "lbfgs",
+            "conjugate_gradient"
+        ]
+    },
+    "information_bottleneck_theory": {
+        "title": "Information Bottleneck Theory",
+        "prerequisites": [
+            "information_theory",
+            "mutual_information",
+            "entropy",
+            "machine_learning",
+            "deep_learning"
+        ],
+        "further_readings": [
+            "rate_distortion_theory",
+            "variational_information_bottleneck",
+            "representation_learning",
+            "unsupervised_learning",
+            "neural_network_compression"
+        ]
+    },
+    "model_selection_in_vae": {
+        "title": "Model Selection in VAE",
+        "prerequisites": [
+            "variational_autoencoder",
+            "bayesian_inference",
+            "model_comparison",
+            "cross_validation"
+        ],
+        "further_readings": [
+            "vae_with_disentangled_latent_variables",
+            "vae_with_gaussian_mixture_prior",
+            "vae_with_hierarchical_priors",
+            "information_criteria"
+        ]
+    },
+    "beta_tcvae": {
+        "title": "Beta-TCVAE",
+        "prerequisites": [
+            "variational_autoencoder",
+            "total_correlation",
+            "mutual_information",
+            "reparameterization_trick"
+        ],
+        "further_readings": [
+            "disentangled_representation_learning",
+            "information_bottleneck",
+            "conditional_variational_autoencoder",
+            "factor_vae",
+            "infovae"
+        ]
+    },
+    "semi_supervised_vae": {
+        "title": "Semi-Supervised VAE",
+        "prerequisites": [
+            "variational_autoencoder",
+            "unsupervised_learning",
+            "supervised_learning",
+            "deep_learning",
+            "neural_networks"
+        ],
+        "further_readings": [
+            "vae_with_label_information",
+            "ladder_vae",
+            "adversarial_autoencoders",
+            "m2_model",
+            "m1_m2_model"
+        ]
+    },
+    "generative_models_for_text": {
+        "title": "Generative Models for Text",
+        "prerequisites": [
+            "natural_language_processing",
+            "deep_learning",
+            "recurrent_neural_networks",
+            "transformer_models",
+            "variational_autoencoders"
+        ],
+        "further_readings": [
+            "gpt_3",
+            "seq2seq_models",
+            "unsupervised_machine_translation",
+            "text_generation_evaluation_metrics"
+        ]
+    },
+    "generative_models_for_graphs": {
+        "title": "Generative Models for Graphs",
+        "prerequisites": [
+            "graph_theory",
+            "graph_neural_networks",
+            "variational_autoencoders",
+            "generative_adversarial_networks",
+            "reinforcement_learning"
+        ],
+        "further_readings": [
+            "graph_attention_networks",
+            "graph_convolutional_networks",
+            "graph_embedding",
+            "graph_matching_networks",
+            "graph_isomorphism_networks"
+        ]
+    },
+    "importance_sampling": {
+        "title": "Importance Sampling",
+        "prerequisites": [
+            "probability_theory",
+            "monte_carlo_methods",
+            "variance_reduction_techniques"
+        ],
+        "further_readings": [
+            "sequential_importance_sampling",
+            "particle_filters",
+            "adaptive_importance_sampling",
+            "cross_entropy_method"
+        ]
+    },
+    "importance_weighted_generative_adversarial_network": {
+        "title": "Importance Weighted Generative Adversarial Network",
+        "prerequisites": [
+            "generative_adversarial_networks",
+            "deep_learning",
+            "neural_networks",
+            "backpropagation",
+            "gradient_descent"
+        ],
+        "further_readings": [
+            "conditional_generative_adversarial_networks",
+            "info_gan",
+            "wasserstein_gan",
+            "least_squares_gan",
+            "improved_training_of_gan"
+        ]
+    },
+    "importance_weighted_autoencoder_for_textual_data": {
+        "title": "Importance Weighted Autoencoder for Textual Data",
+        "prerequisites": [
+            "autoencoder",
+            "variational_autoencoder",
+            "text_representation",
+            "neural_networks",
+            "natural_language_processing"
+        ],
+        "further_readings": [
+            "importance_weighted_sampling",
+            "sequence_to_sequence_models",
+            "text_generation",
+            "unsupervised_learning"
+        ]
+    },
+    "change_of_variables_formula": {
+        "title": "Change of Variables Formula",
+        "prerequisites": [
+            "probability_density_function",
+            "cumulative_distribution_function",
+            "multivariate_calculus",
+            "jacobian_matrix"
+        ],
+        "further_readings": [
+            "transformation_of_random_variables",
+            "inverse_transform_sampling",
+            "monte_carlo_integration",
+            "importance_sampling"
+        ]
+    },
+    "jacobian_matrix": {
+        "title": "Jacobian Matrix",
+        "prerequisites": [
+            "partial_derivative",
+            "multivariable_calculus",
+            "vector_calculus"
+        ],
+        "further_readings": [
+            "hessian_matrix",
+            "gradient_descent",
+            "newtons_method",
+            "optimization_methods"
+        ]
+    },
+    "flow_based_models": {
+        "title": "Flow-based Models",
+        "prerequisites": [
+            "normalizing_flows",
+            "variational_autoencoders",
+            "generative_adversarial_networks"
+        ],
+        "further_readings": [
+            "real_nvp",
+            "glow",
+            "maf",
+            "iaf",
+            "planar_flows",
+            "radial_flows"
+        ]
+    },
+    "inverse_autoregressive_flow": {
+        "title": "Inverse Autoregressive Flow",
+        "prerequisites": [
+            "variational_autoencoder",
+            "normalizing_flow",
+            "autoregressive_models"
+        ],
+        "further_readings": [
+            "real_nvp",
+            "glow",
+            "maf",
+            "iaf_paper"
+        ]
+    },
+    "masked_autoregressive_flow": {
+        "title": "Masked Autoregressive Flow",
+        "prerequisites": [
+            "normalizing_flows",
+            "autoregressive_models",
+            "maximum_likelihood_estimation"
+        ],
+        "further_readings": [
+            "real_nvp",
+            "glow",
+            "inverse_autoregressive_flow",
+            "variational_autoencoders"
+        ]
+    },
+    "real_nvp_and_density_estimation": {
+        "title": "Real NVP and Density Estimation",
+        "prerequisites": [
+            "normalizing_flows",
+            "variational_autoencoders",
+            "generative_adversarial_networks"
+        ],
+        "further_readings": [
+            "glow_generative_flow",
+            "inverse_autoregressive_flow",
+            "masked_autoregressive_flow",
+            "coupling_layers"
+        ]
+    },
+    "normalizing_flows_for_image_generation": {
+        "title": "Normalizing Flows for Image Generation",
+        "prerequisites": [
+            "variational_autoencoders",
+            "generative_adversarial_networks",
+            "probability_density_estimation",
+            "maximum_likelihood_estimation"
+        ],
+        "further_readings": [
+            "glow",
+            "realnvp",
+            "maf",
+            "inverse_autoregressive_flow",
+            "coupling_layers",
+            "autoregressive_models"
+        ]
+    },
+    "normalizing_flows_for_latent_variable_models": {
+        "title": "Normalizing Flows for Latent Variable Models",
+        "prerequisites": [
+            "variational_autoencoders",
+            "generative_adversarial_networks",
+            "bayesian_inference",
+            "maximum_likelihood_estimation",
+            "probability_density_function"
+        ],
+        "further_readings": [
+            "real_nvp",
+            "glow",
+            "maf",
+            "inverse_autoregressive_flow",
+            "planar_flows",
+            "radial_flows"
+        ]
+    },
+    "normalizing_flows_for_bayesian_inference": {
+        "title": "Normalizing Flows for Bayesian Inference",
+        "prerequisites": [
+            "bayesian_inference",
+            "variational_inference",
+            "deep_learning",
+            "probability_distributions",
+            "maximum_likelihood_estimation"
+        ],
+        "further_readings": [
+            "variational_autoencoders",
+            "generative_adversarial_networks",
+            "markov_chain_monte_carlo",
+            "inverse_autoregressive_flows",
+            "real_nvp",
+            "glow"
+        ]
+    },
+    "sparse_autoencoders": {
+        "title": "Sparse Autoencoders",
+        "prerequisites": [
+            "autoencoders",
+            "artificial_neural_networks",
+            "backpropagation",
+            "gradient_descent",
+            "regularization"
+        ],
+        "further_readings": [
+            "deep_autoencoders",
+            "convolutional_autoencoders",
+            "denoising_autoencoders",
+            "variational_autoencoders",
+            "contractive_autoencoders"
+        ]
+    },
+    "recurrent_autoencoders": {
+        "title": "Recurrent Autoencoders",
+        "prerequisites": [
+            "autoencoder",
+            "recurrent_neural_network",
+            "long_short_term_memory",
+            "gated_recurrent_unit"
+        ],
+        "further_readings": [
+            "sequence_to_sequence_models",
+            "variational_autoencoder",
+            "time_series_prediction",
+            "anomaly_detection"
+        ]
+    },
+    "deep_generative_models": {
+        "title": "Deep Generative Models",
+        "prerequisites": [
+            "variational_autoencoders",
+            "generative_adversarial_networks",
+            "boltzmann_machines",
+            "deep_learning",
+            "unsupervised_learning"
+        ],
+        "further_readings": [
+            "normalizing_flows",
+            "autoregressive_models",
+            "energy_based_models",
+            "vae_gan_hybrid_models",
+            "disentangled_representation_learning"
+        ]
+    },
+    "markov_random_fields": {
+        "title": "Markov Random Fields",
+        "prerequisites": [
+            "probability_theory",
+            "graph_theory",
+            "bayesian_networks",
+            "undirected_graphical_models"
+        ],
+        "further_readings": [
+            "conditional_random_fields",
+            "loopy_belief_propagation",
+            "gibbs_sampling",
+            "mean_field_inference"
+        ]
+    },
+    "inference_algorithms": {
+        "title": "Inference Algorithms",
+        "prerequisites": [
+            "bayesian_inference",
+            "markov_chain_monte_carlo",
+            "variational_inference",
+            "belief_propagation",
+            "probabilistic_graphical_models"
+        ],
+        "further_readings": [
+            "approximate_inference",
+            "expectation_propagation",
+            "gibbs_sampling",
+            "importance_sampling",
+            "sequential_monte_carlo"
+        ]
+    },
+    "decision_theory": {
+        "title": "Decision Theory",
+        "prerequisites": [
+            "probability_theory",
+            "utility_theory",
+            "bayesian_inference",
+            "markov_decision_processes"
+        ],
+        "further_readings": [
+            "game_theory",
+            "reinforcement_learning",
+            "multi_agent_systems",
+            "robust_decision_making"
+        ]
+    },
+    "latent_dirichlet_allocation": {
+        "title": "Latent Dirichlet Allocation",
+        "prerequisites": [
+            "probability_theory",
+            "bayesian_inference",
+            "dirichlet_distribution",
+            "gibbs_sampling",
+            "expectation_maximization"
+        ],
+        "further_readings": [
+            "probabilistic_topic_models",
+            "collapsed_gibbs_sampling",
+            "variational_inference",
+            "online_lda",
+            "dynamic_topic_models"
+        ]
+    },
+    "message_passing_algorithms": {
+        "title": "Message Passing Algorithms",
+        "prerequisites": [
+            "belief_propagation",
+            "graphical_models",
+            "markov_random_fields",
+            "bayesian_networks"
+        ],
+        "further_readings": [
+            "loopy_belief_propagation",
+            "factor_graphs",
+            "junction_tree_algorithm",
+            "max_product_algorithm",
+            "sum_product_algorithm"
+        ]
+    },
+    "reinforcement_learning_and_pgm": {
+        "title": "Reinforcement Learning and Probabilistic Graphical Models",
+        "prerequisites": [
+            "reinforcement_learning",
+            "probabilistic_graphical_models",
+            "markov_decision_processes",
+            "dynamic_programming",
+            "bayesian_networks",
+            "markov_random_fields"
+        ],
+        "further_readings": [
+            "q_learning",
+            "policy_gradient_methods",
+            "monte_carlo_methods",
+            "variational_inference",
+            "expectation_maximization",
+            "gibbs_sampling"
+        ]
+    },
+    "deep_learning_and_pgm": {
+        "title": "Deep Learning and Probabilistic Graphical Models",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "bayesian_networks",
+            "markov_random_fields",
+            "variational_autoencoders"
+        ],
+        "further_readings": [
+            "deep_belief_networks",
+            "restricted_boltzmann_machines",
+            "graph_neural_networks",
+            "generative_adversarial_networks"
         ]
     }
 }
