@@ -14039,7 +14039,7 @@
             "optimization_methods"
         ]
     },
-    "flow_based_models": {
+    "flow-based_models": {
         "title": "Flow-based Models",
         "prerequisites": [
             "normalizing_flows",
@@ -14146,6 +14146,21 @@
             "generative_adversarial_networks",
             "markov_chain_monte_carlo",
             "inverse_autoregressive_flows",
+            "real_nvp",
+            "glow"
+        ]
+    },
+    "normalizing_flows_for_flow-based_generation": {
+        "title": "Normalizing Flows for Flow-Based Generation",
+        "prerequisites": [
+            "normalizing_flows",
+            "variational_inference",
+            "maximum_likelihood_estimation"
+        ],
+        "further_readings": [
+            "flow-based_models",
+            "radial_flows",
+            "planar_flows",
             "real_nvp",
             "glow"
         ]
