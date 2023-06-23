@@ -12136,7 +12136,7 @@
             "sparse_representation"
         ]
     },
-    "non_local_means_filtering": {
+    "non-local_means_filtering": {
         "title": "Non-Local Means Filtering",
         "prerequisites": [
             "image_processing",
@@ -13222,7 +13222,7 @@
             "adaptive_signal_processing"
         ]
     },
-    "non_stationary_signal_analysis": {
+    "non-stationary_signal_analysis": {
         "title": "Non-Stationary Signal Analysis",
         "prerequisites": [
             "time_series_analysis",
@@ -13528,6 +13528,99 @@
             "graphics_processing_units",
             "tensor_processing_units",
             "embedded_systems"
+        ]
+    },
+    "signal_processing_software": {
+        "title": "Signal Processing Software",
+        "prerequisites": [
+            "digital_signal_processing",
+            "time_series_analysis",
+            "fourier_transform",
+            "wavelet_transform"
+        ],
+        "further_readings": [
+            "adaptive_filters",
+            "spectral_analysis",
+            "convolutional_neural_network",
+            "recurrent_neural_network"
+        ]
+    },
+    "speech_and_audio_processing": {
+        "title": "Speech and Audio Processing",
+        "prerequisites": [
+            "digital_signal_processing",
+            "fourier_transform",
+            "machine_learning",
+            "deep_learning",
+            "natural_language_processing"
+        ],
+        "further_readings": [
+            "automatic_speech_recognition",
+            "text_to_speech",
+            "speaker_identification",
+            "speech_enhancement",
+            "sound_event_detection",
+            "music_information_retrieval"
+        ]
+    },
+    "recursive_least_squares_filtering": {
+        "title": "Recursive Least Squares Filtering",
+        "prerequisites": [
+            "least_squares_method",
+            "adaptive_filters",
+            "linear_algebra",
+            "signal_processing"
+        ],
+        "further_readings": [
+            "kalman_filter",
+            "wiener_filter",
+            "lms_algorithm",
+            "rls_algorithm"
+        ]
+    },
+    "normalized_least_mean_squares_algorithm": {
+        "title": "Normalized Least Mean Squares Algorithm",
+        "prerequisites": [
+            "least_mean_squares_algorithm",
+            "adaptive_filters",
+            "gradient_descent"
+        ],
+        "further_readings": [
+            "recursive_least_squares_algorithm",
+            "least_squares",
+            "stochastic_gradient_descent",
+            "convex_optimization"
+        ]
+    },
+    "kernel_adaptive_filter": {
+        "title": "Kernel Adaptive Filter",
+        "prerequisites": [
+            "adaptive_filters",
+            "kernel_methods",
+            "least_mean_squares",
+            "recursive_least_squares"
+        ],
+        "further_readings": [
+            "kernel_ridge_regression",
+            "support_vector_machines",
+            "gaussian_processes",
+            "online_learning"
+        ]
+    },
+    "online_learning_algorithm": {
+        "title": "Online Learning Algorithm",
+        "prerequisites": [
+            "supervised_learning",
+            "unsupervised_learning",
+            "gradient_descent",
+            "stochastic_gradient_descent"
+        ],
+        "further_readings": [
+            "regret_analysis",
+            "bandit_algorithms",
+            "active_learning",
+            "reinforcement_learning",
+            "online_convex_optimization"
         ]
     }
 }
