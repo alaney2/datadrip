@@ -12038,5 +12038,1496 @@
             "average_precision_score",
             "balanced_accuracy"
         ]
+    },
+    "classification_metrics": {
+        "title": "Classification Metrics",
+        "prerequisites": [
+            "supervised_learning",
+            "binary_classification",
+            "multiclass_classification",
+            "confusion_matrix"
+        ],
+        "further_readings": [
+            "precision_recall",
+            "f1_score",
+            "roc_auc",
+            "log_loss",
+            "cohen_kappa",
+            "matthews_correlation_coefficient",
+            "balanced_accuracy"
+        ]
+    },
+    "average_precision_and_mean_average_precision": {
+        "title": "Average Precision And Mean Average Precision",
+        "prerequisites": [
+            "precision_recall",
+            "information_retrieval",
+            "evaluation_metrics"
+        ],
+        "further_readings": [
+            "interpolated_average_precision",
+            "area_under_curve",
+            "precision_recall_curve",
+            "ranking_metrics"
+        ]
+    },
+    "object_detection_metrics": {
+        "title": "Object Detection Metrics",
+        "prerequisites": [
+            "precision_recall",
+            "mean_average_precision",
+            "intersection_over_union",
+            "true_positive",
+            "false_positive",
+            "true_negative",
+            "false_negative"
+        ],
+        "further_readings": [
+            "yolo",
+            "faster_rcnn",
+            "ssd",
+            "retinanet",
+            "mask_rcnn",
+            "cascade_rcnn",
+            "center_net",
+            "efficientdet"
+        ]
+    },
+    "retrieval_metrics": {
+        "title": "Retrieval Metrics",
+        "prerequisites": [
+            "information_retrieval",
+            "precision_and_recall",
+            "ranking_algorithms",
+            "evaluation_metrics"
+        ],
+        "further_readings": [
+            "mean_average_precision",
+            "discounted_cumulative_gain",
+            "trec_eval",
+            "roc_curve",
+            "auc_score"
+        ]
+    },
+    "ranking_metrics": {
+        "title": "Ranking Metrics",
+        "prerequisites": [
+            "information_retrieval",
+            "machine_learning_evaluation"
+        ],
+        "further_readings": [
+            "learning_to_rank",
+            "recommender_systems",
+            "search_engine_evaluation"
+        ]
+    },
+    "blind_deconvolution": {
+        "title": "Blind Deconvolution",
+        "prerequisites": [
+            "convolution",
+            "deconvolution",
+            "image_restoration",
+            "optimization"
+        ],
+        "further_readings": [
+            "wiener_filter",
+            "total_variation",
+            "maximum_a_posteriori",
+            "sparse_representation"
+        ]
+    },
+    "non_local_means_filtering": {
+        "title": "Non-Local Means Filtering",
+        "prerequisites": [
+            "image_processing",
+            "denoising",
+            "gaussian_filter",
+            "mean_filter",
+            "median_filter"
+        ],
+        "further_readings": [
+            "anisotropic_diffusion",
+            "total_variation_denoising",
+            "wavelet_transform",
+            "bilateral_filter"
+        ]
+    },
+    "wavelet_transforms": {
+        "title": "Wavelet Transforms",
+        "prerequisites": [
+            "fourier_transform",
+            "continuous_wavelet_transform",
+            "discrete_wavelet_transform",
+            "multiresolution_analysis"
+        ],
+        "further_readings": [
+            "wavelet_packet_transform",
+            "haar_wavelet",
+            "daubechies_wavelets",
+            "biorthogonal_wavelets"
+        ]
+    },
+    "total_variation_regularization": {
+        "title": "Total Variation Regularization",
+        "prerequisites": [
+            "convex_optimization",
+            "image_processing",
+            "sparse_representation",
+            "compressed_sensing"
+        ],
+        "further_readings": [
+            "proximal_gradient_methods",
+            "split_bregman_algorithm",
+            "primal_dual_algorithms",
+            "augmented_lagrangian_methods"
+        ]
+    },
+    "deep_image_prior": {
+        "title": "Deep Image Prior",
+        "prerequisites": [
+            "convolutional_neural_network",
+            "image_restoration",
+            "autoencoder"
+        ],
+        "further_readings": [
+            "generative_adversarial_network",
+            "variational_autoencoder",
+            "denoising_autoencoder",
+            "image_super_resolution"
+        ]
+    },
+    "generative_models_for_image_restoration": {
+        "title": "Generative Models for Image Restoration",
+        "prerequisites": [
+            "deep_learning",
+            "convolutional_neural_network",
+            "autoencoders",
+            "generative_adversarial_networks",
+            "variational_autoencoders"
+        ],
+        "further_readings": [
+            "image_super_resolution",
+            "image_denoising",
+            "image_inpainting",
+            "image_deblurring",
+            "perceptual_loss"
+        ]
+    },
+    "interpolation": {
+        "title": "Interpolation",
+        "prerequisites": [
+            "linear_regression",
+            "polynomial_regression",
+            "spline_interpolation",
+            "kernel_regression"
+        ],
+        "further_readings": [
+            "radial_basis_function",
+            "k_nearest_neighbors",
+            "gaussian_process_regression",
+            "multivariate_interpolation"
+        ]
+    },
+    "deep_residual_learning": {
+        "title": "Deep Residual Learning",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "convolutional_neural_networks",
+            "backpropagation",
+            "gradient_descent",
+            "batch_normalization"
+        ],
+        "further_readings": [
+            "identity_mapping_in_residual_networks",
+            "wide_residual_networks",
+            "stochastic_depth",
+            "resnext",
+            "densenet"
+        ]
+    },
+    "perceptual_loss_functions": {
+        "title": "Perceptual Loss Functions",
+        "prerequisites": [
+            "loss_functions",
+            "convolutional_neural_networks",
+            "deep_learning"
+        ],
+        "further_readings": [
+            "style_transfer",
+            "image_super_resolution",
+            "generative_adversarial_networks",
+            "neural_style_transfer"
+        ]
+    },
+    "texture_synthesis": {
+        "title": "Texture Synthesis",
+        "prerequisites": [
+            "image_processing",
+            "convolutional_neural_network",
+            "deep_learning",
+            "generative_adversarial_networks",
+            "autoencoders"
+        ],
+        "further_readings": [
+            "style_transfer",
+            "image_super_resolution",
+            "variational_autoencoders",
+            "pix2pix",
+            "cycle_gan"
+        ]
+    },
+    "super_resolution": {
+        "title": "Super Resolution",
+        "prerequisites": [
+            "image_processing",
+            "convolutional_neural_network",
+            "deep_learning",
+            "loss_functions"
+        ],
+        "further_readings": [
+            "generative_adversarial_networks",
+            "autoencoders",
+            "transfer_learning",
+            "image_augmentation"
+        ]
+    },
+    "disentangled_representation_learning": {
+        "title": "Disentangled Representation Learning",
+        "prerequisites": [
+            "variational_autoencoder",
+            "deep_learning",
+            "unsupervised_learning",
+            "representation_learning"
+        ],
+        "further_readings": [
+            "beta_vae",
+            "factor_vae",
+            "infovae",
+            "independent_component_analysis",
+            "nonlinear_ica"
+        ]
+    },
+    "instance_normalization": {
+        "title": "Instance Normalization",
+        "prerequisites": [
+            "batch_normalization",
+            "convolutional_neural_network"
+        ],
+        "further_readings": [
+            "layer_normalization",
+            "group_normalization",
+            "style_transfer",
+            "generative_adversarial_networks"
+        ]
+    },
+    "conditional_instance_normalization": {
+        "title": "Conditional Instance Normalization",
+        "prerequisites": [
+            "instance_normalization",
+            "style_transfer",
+            "deep_learning",
+            "convolutional_neural_network"
+        ],
+        "further_readings": [
+            "batch_normalization",
+            "group_normalization",
+            "layer_normalization",
+            "adaptive_instance_normalization"
+        ]
+    },
+    "multi_style_transfer": {
+        "title": "Multi Style Transfer",
+        "prerequisites": [
+            "neural_style_transfer",
+            "convolutional_neural_network",
+            "deep_learning",
+            "loss_functions"
+        ],
+        "further_readings": [
+            "generative_adversarial_networks",
+            "image_to_image_translation",
+            "domain_adaptation",
+            "universal_style_transfer"
+        ]
+    },
+    "fast_style_transfer": {
+        "title": "Fast Style Transfer",
+        "prerequisites": [
+            "convolutional_neural_network",
+            "neural_style_transfer",
+            "transfer_learning",
+            "loss_functions"
+        ],
+        "further_readings": [
+            "image_super_resolution",
+            "generative_adversarial_networks",
+            "deep_learning_for_computer_vision",
+            "perceptual_loss_functions"
+        ]
+    },
+    "style_transfer_with_gans": {
+        "title": "Style Transfer With GANs",
+        "prerequisites": [
+            "generative_adversarial_networks",
+            "convolutional_neural_networks",
+            "deep_learning"
+        ],
+        "further_readings": [
+            "cycle_gan",
+            "pix2pix",
+            "neural_style_transfer",
+            "conditional_gan",
+            "wasserstein_gan"
+        ]
+    },
+    "style_transfer_with_vq_vae": {
+        "title": "Style Transfer With VQ-VAE",
+        "prerequisites": [
+            "variational_autoencoder",
+            "vector_quantization",
+            "style_transfer",
+            "generative_adversarial_networks"
+        ],
+        "further_readings": [
+            "vq_vae_2",
+            "neural_style_transfer",
+            "cycle_gan",
+            "pix2pix"
+        ]
+    },
+    "style_transfer_evaluation_metrics": {
+        "title": "Style Transfer Evaluation Metrics",
+        "prerequisites": [
+            "style_transfer",
+            "neural_style_transfer",
+            "image_quality_assessment",
+            "perceptual_loss"
+        ],
+        "further_readings": [
+            "universal_style_transfer",
+            "texture_synthesis",
+            "content_loss",
+            "gram_matrix"
+        ]
+    },
+    "video_style_transfer": {
+        "title": "Video Style Transfer",
+        "prerequisites": [
+            "style_transfer",
+            "convolutional_neural_network",
+            "deep_learning",
+            "loss_functions",
+            "optimization_algorithms"
+        ],
+        "further_readings": [
+            "temporal_coherence",
+            "optical_flow",
+            "generative_adversarial_networks",
+            "domain_adaptation"
+        ]
+    },
+    "interactive_style_transfer": {
+        "title": "Interactive Style Transfer",
+        "prerequisites": [
+            "neural_style_transfer",
+            "convolutional_neural_network",
+            "deep_learning"
+        ],
+        "further_readings": [
+            "generative_adversarial_networks",
+            "image_synthesis",
+            "visual_attributes_transfer",
+            "domain_adaptation"
+        ]
+    },
+    "style_transfer_applications": {
+        "title": "Style Transfer Applications",
+        "prerequisites": [
+            "convolutional_neural_network",
+            "deep_learning",
+            "transfer_learning",
+            "neural_style_transfer"
+        ],
+        "further_readings": [
+            "generative_adversarial_networks",
+            "cycle_gan",
+            "image_to_image_translation",
+            "domain_adaptation"
+        ]
+    },
+    "face_detection": {
+        "title": "Face Detection",
+        "prerequisites": [
+            "image_processing",
+            "feature_extraction",
+            "haar_cascade",
+            "deep_learning",
+            "convolutional_neural_network"
+        ],
+        "further_readings": [
+            "face_recognition",
+            "object_detection",
+            "yolo",
+            "ssd",
+            "rcnn"
+        ]
+    },
+    "facial_landmark_detection": {
+        "title": "Facial Landmark Detection",
+        "prerequisites": [
+            "computer_vision",
+            "convolutional_neural_network",
+            "image_processing",
+            "deep_learning"
+        ],
+        "further_readings": [
+            "dlib_library",
+            "face_alignment",
+            "cascade_classifier",
+            "active_shape_models",
+            "active_appearance_models"
+        ]
+    },
+    "face_verification": {
+        "title": "Face Verification",
+        "prerequisites": [
+            "face_detection",
+            "feature_extraction",
+            "deep_learning",
+            "convolutional_neural_network",
+            "siamese_network",
+            "triplet_loss"
+        ],
+        "further_readings": [
+            "face_recognition",
+            "one_shot_learning",
+            "facenet",
+            "openface",
+            "deepface"
+        ]
+    },
+    "face_identification": {
+        "title": "Face Identification",
+        "prerequisites": [
+            "image_processing",
+            "feature_extraction",
+            "machine_learning",
+            "deep_learning",
+            "convolutional_neural_network",
+            "face_detection"
+        ],
+        "further_readings": [
+            "facial_landmarks",
+            "face_recognition",
+            "face_verification",
+            "one_shot_learning",
+            "siamese_networks",
+            "triplet_loss"
+        ]
+    },
+    "face_recognition_datasets": {
+        "title": "Face Recognition Datasets",
+        "prerequisites": [
+            "face_recognition",
+            "deep_learning",
+            "convolutional_neural_networks",
+            "image_processing"
+        ],
+        "further_readings": [
+            "facial_expression_recognition",
+            "facial_landmark_detection",
+            "face_alignment",
+            "face_verification"
+        ]
+    },
+    "privacy_and_ethical_issues_in_face_recognition": {
+        "title": "Privacy And Ethical Issues In Face Recognition",
+        "prerequisites": [
+            "face_recognition",
+            "deep_learning",
+            "computer_vision",
+            "biometrics",
+            "data_privacy"
+        ],
+        "further_readings": [
+            "facial_recognition_regulations",
+            "gdpr",
+            "bias_in_machine_learning",
+            "ethical_ai"
+        ]
+    },
+    "fourier_transform": {
+        "title": "Fourier Transform",
+        "prerequisites": [
+            "complex_numbers",
+            "linear_algebra",
+            "signal_processing"
+        ],
+        "further_readings": [
+            "fast_fourier_transform",
+            "discrete_fourier_transform",
+            "wavelet_transform",
+            "short_time_fourier_transform",
+            "laplace_transform"
+        ]
+    },
+    "nyquist_shannon_sampling_theorem": {
+        "title": "Nyquist-Shannon Sampling Theorem",
+        "prerequisites": [
+            "signal_processing",
+            "fourier_transform",
+            "discrete_time_signals"
+        ],
+        "further_readings": [
+            "aliasing",
+            "reconstruction_filter",
+            "sampling_rate",
+            "quantization"
+        ]
+    },
+    "quantization": {
+        "title": "Quantization",
+        "prerequisites": [
+            "information_theory",
+            "signal_processing",
+            "vector_quantization",
+            "lossy_compression"
+        ],
+        "further_readings": [
+            "deep_compression",
+            "quantization_aware_training",
+            "quantized_neural_networks",
+            "binary_neural_networks",
+            "ternary_neural_networks"
+        ]
+    },
+    "aliasing": {
+        "title": "Aliasing",
+        "prerequisites": [
+            "nyquist_shannon_sampling_theorem",
+            "signal_processing",
+            "fourier_transform"
+        ],
+        "further_readings": [
+            "anti_aliasing_filters",
+            "oversampling",
+            "undersampling",
+            "discrete_fourier_transform",
+            "wavelet_transform"
+        ]
+    },
+    "digital_signal_processing": {
+        "title": "Digital Signal Processing",
+        "prerequisites": [
+            "discrete_fourier_transform",
+            "z_transform",
+            "sampling_theorem",
+            "convolution",
+            "filter_design"
+        ],
+        "further_readings": [
+            "wavelet_transform",
+            "adaptive_filters",
+            "time_frequency_analysis",
+            "multirate_signal_processing"
+        ]
+    },
+    "fast_fourier_transform": {
+        "title": "Fast Fourier Transform",
+        "prerequisites": [
+            "fourier_transform",
+            "complex_numbers",
+            "discrete_fourier_transform",
+            "signal_processing"
+        ],
+        "further_readings": [
+            "cooley_tukey_algorithm",
+            "radix_2_fft",
+            "spectral_analysis",
+            "convolution_theorem",
+            "fft_applications"
+        ]
+    },
+    "wavelet_transform": {
+        "title": "Wavelet Transform",
+        "prerequisites": [
+            "fourier_transform",
+            "signal_processing",
+            "time_frequency_analysis"
+        ],
+        "further_readings": [
+            "continuous_wavelet_transform",
+            "discrete_wavelet_transform",
+            "multiresolution_analysis",
+            "wavelet_packet_decomposition",
+            "haar_wavelet",
+            "daubechies_wavelet"
+        ]
+    },
+    "machine_learning_for_signal_processing": {
+        "title": "Machine Learning for Signal Processing",
+        "prerequisites": [
+            "signal_processing",
+            "feature_extraction",
+            "supervised_learning",
+            "unsupervised_learning",
+            "deep_learning",
+            "time_series_analysis"
+        ],
+        "further_readings": [
+            "convolutional_neural_networks",
+            "recurrent_neural_networks",
+            "long_short_term_memory",
+            "wavelet_transform",
+            "fourier_transform",
+            "spectral_analysis"
+        ]
+    },
+    "short_time_fourier_transform": {
+        "title": "Short Time Fourier Transform",
+        "prerequisites": [
+            "fourier_transform",
+            "signal_processing",
+            "time_frequency_analysis"
+        ],
+        "further_readings": [
+            "wavelet_transform",
+            "spectrogram",
+            "gabor_transform",
+            "continuous_wavelet_transform",
+            "discrete_wavelet_transform"
+        ]
+    },
+    "spectrogram": {
+        "title": "Spectrogram",
+        "prerequisites": [
+            "fourier_transform",
+            "short_time_fourier_transform",
+            "signal_processing",
+            "time_frequency_analysis"
+        ],
+        "further_readings": [
+            "wavelet_transform",
+            "mel_scale",
+            "mel-frequency_cepstral_coefficients",
+            "chroma_feature_extraction"
+        ]
+    },
+    "power_spectrum": {
+        "title": "Power Spectrum",
+        "prerequisites": [
+            "fourier_transform",
+            "signal_processing",
+            "time_series_analysis"
+        ],
+        "further_readings": [
+            "spectral_density",
+            "periodogram",
+            "welch_method",
+            "autocorrelation",
+            "cross_correlation",
+            "short_time_fourier_transform",
+            "wavelet_transform"
+        ]
+    },
+    "signal_filtering": {
+        "title": "Signal Filtering",
+        "prerequisites": [
+            "digital_signal_processing",
+            "convolution",
+            "fourier_transform",
+            "z_transform",
+            "wavelet_transform"
+        ],
+        "further_readings": [
+            "adaptive_filters",
+            "kalman_filters",
+            "particle_filters",
+            "matched_filters",
+            "time_frequency_analysis"
+        ]
+    },
+    "deconvolution": {
+        "title": "Deconvolution",
+        "prerequisites": [
+            "convolution",
+            "convolutional_neural_network",
+            "signal_processing"
+        ],
+        "further_readings": [
+            "transposed_convolution",
+            "deconvolutional_networks",
+            "image_restoration",
+            "super_resolution"
+        ]
+    },
+    "autoregressive_models": {
+        "title": "Autoregressive Models",
+        "prerequisites": [
+            "linear_regression",
+            "time_series_analysis",
+            "maximum_likelihood_estimation"
+        ],
+        "further_readings": [
+            "moving_average_models",
+            "autoregressive_integrated_moving_average",
+            "autoregressive_conditional_heteroskedasticity",
+            "bayesian_autoregressive_models"
+        ]
+    },
+    "linear_time_invariant_systems": {
+        "title": "Linear Time Invariant Systems",
+        "prerequisites": [
+            "linear_systems",
+            "time_invariant_systems",
+            "convolution",
+            "impulse_response",
+            "transfer_function"
+        ],
+        "further_readings": [
+            "laplace_transform",
+            "fourier_transform",
+            "z_transform",
+            "discrete_time_systems",
+            "continuous_time_systems"
+        ]
+    },
+    "difference_equations": {
+        "title": "Difference Equations",
+        "prerequisites": [
+            "linear_algebra",
+            "discrete_mathematics",
+            "dynamical_systems"
+        ],
+        "further_readings": [
+            "z_transform",
+            "recurrence_relations",
+            "stability_analysis",
+            "discrete_fourier_transform",
+            "discrete_time_signal_processing"
+        ]
+    },
+    "signal_analysis_and_processing": {
+        "title": "Signal Analysis and Processing",
+        "prerequisites": [
+            "fourier_transform",
+            "wavelet_transform",
+            "time_series_analysis",
+            "digital_signal_processing",
+            "convolution",
+            "correlation"
+        ],
+        "further_readings": [
+            "short_time_fourier_transform",
+            "spectrogram",
+            "cepstral_analysis",
+            "adaptive_filtering",
+            "time_frequency_analysis"
+        ]
+    },
+    "integral_transforms": {
+        "title": "Integral Transforms",
+        "prerequisites": [
+            "fourier_transform",
+            "laplace_transform",
+            "convolution",
+            "complex_analysis",
+            "differential_equations"
+        ],
+        "further_readings": [
+            "z_transform",
+            "wavelet_transform",
+            "hilbert_transform",
+            "radon_transform",
+            "fractional_calculus"
+        ]
+    },
+    "laplace_transform_applications": {
+        "title": "Laplace Transform Applications",
+        "prerequisites": [
+            "laplace_transform",
+            "ordinary_differential_equations",
+            "partial_differential_equations",
+            "control_systems",
+            "circuit_analysis"
+        ],
+        "further_readings": [
+            "z_transform",
+            "fourier_transform",
+            "wavelet_transform",
+            "stochastic_processes",
+            "state_space_representation"
+        ]
+    },
+    "laplace_transform_tables": {
+        "title": "Laplace Transform Tables",
+        "prerequisites": [
+            "laplace_transform",
+            "inverse_laplace_transform",
+            "linear_differential_equations"
+        ],
+        "further_readings": [
+            "partial_fraction_decomposition",
+            "convolution_theorem",
+            "transfer_functions",
+            "control_systems",
+            "signal_processing"
+        ]
+    },
+    "partial_fraction_expansion": {
+        "title": "Partial Fraction Expansion",
+        "prerequisites": [
+            "laplace_transform",
+            "inverse_laplace_transform",
+            "linear_algebra",
+            "complex_numbers"
+        ],
+        "further_readings": [
+            "residue_theorem",
+            "contour_integration",
+            "rational_function",
+            "integration_techniques"
+        ]
+    },
+    "inverse_laplace_transform": {
+        "title": "Inverse Laplace Transform",
+        "prerequisites": [
+            "laplace_transform",
+            "complex_analysis",
+            "partial_fraction_decomposition",
+            "convolution_theorem"
+        ],
+        "further_readings": [
+            "laplace_transform_applications",
+            "z_transform",
+            "fourier_transform",
+            "transfer_functions",
+            "control_theory"
+        ]
+    },
+    "laplace_transform_properties": {
+        "title": "Laplace Transform Properties",
+        "prerequisites": [
+            "laplace_transform",
+            "linear_differential_equations",
+            "complex_numbers"
+        ],
+        "further_readings": [
+            "inverse_laplace_transform",
+            "transfer_functions",
+            "control_systems",
+            "fourier_transform",
+            "z_transform"
+        ]
+    },
+    "filtering": {
+        "title": "Filtering",
+        "prerequisites": [
+            "probability_theory",
+            "bayesian_inference",
+            "hidden_markov_models",
+            "kalman_filters",
+            "particle_filters"
+        ],
+        "further_readings": [
+            "recursive_bayesian_estimation",
+            "extended_kalman_filters",
+            "unscented_kalman_filters",
+            "smoothing_algorithms"
+        ]
+    },
+    "edge_detection": {
+        "title": "Edge Detection",
+        "prerequisites": [
+            "image_processing",
+            "convolution",
+            "gradient_descent"
+        ],
+        "further_readings": [
+            "canny_edge_detection",
+            "sobel_operator",
+            "laplacian_of_gaussian",
+            "scharr_operator",
+            "prewitt_operator"
+        ]
+    },
+    "wavelet_transforms_in_machine_learning": {
+        "title": "Wavelet Transforms in Machine Learning",
+        "prerequisites": [
+            "fourier_transform",
+            "continuous_wavelet_transform",
+            "discrete_wavelet_transform",
+            "multiresolution_analysis",
+            "time_frequency_analysis",
+            "signal_processing"
+        ],
+        "further_readings": [
+            "wavelet_packet_decomposition",
+            "wavelet_based_feature_extraction",
+            "wavelet_neural_networks",
+            "wavelet_based_image_processing",
+            "wavelet_based_anomaly_detection"
+        ]
+    },
+    "wavelet_presentation_of_audio_signals": {
+        "title": "Wavelet Presentation of Audio Signals",
+        "prerequisites": [
+            "wavelet_transform",
+            "time_frequency_analysis",
+            "audio_signal_processing"
+        ],
+        "further_readings": [
+            "continuous_wavelet_transform",
+            "discrete_wavelet_transform",
+            "multiresolution_analysis",
+            "wavelet_packet_decomposition",
+            "wavelet_applications"
+        ]
+    },
+    "wavelet_thresholding": {
+        "title": "Wavelet Thresholding",
+        "prerequisites": [
+            "wavelet_transform",
+            "signal_processing",
+            "noise_reduction"
+        ],
+        "further_readings": [
+            "wavelet_decomposition",
+            "wavelet_denoising",
+            "multiresolution_analysis",
+            "orthogonal_wavelets",
+            "biorthogonal_wavelets"
+        ]
+    },
+    "wavelet_denoising": {
+        "title": "Wavelet Denoising",
+        "prerequisites": [
+            "wavelet_transform",
+            "signal_processing",
+            "noise_reduction"
+        ],
+        "further_readings": [
+            "multiresolution_analysis",
+            "orthogonal_wavelets",
+            "biorthogonal_wavelets",
+            "wavelet_thresholding"
+        ]
+    },
+    "frequency_domain_analysis": {
+        "title": "Frequency Domain Analysis",
+        "prerequisites": [
+            "fourier_transform",
+            "signal_processing",
+            "spectral_analysis",
+            "time_domain_analysis"
+        ],
+        "further_readings": [
+            "wavelet_transform",
+            "short_time_fourier_transform",
+            "hilbert_transform",
+            "spectrogram",
+            "filter_design"
+        ]
+    },
+    "digital_filter_design": {
+        "title": "Digital Filter Design",
+        "prerequisites": [
+            "z_transform",
+            "discrete_fourier_transform",
+            "transfer_function",
+            "impulse_response",
+            "frequency_response"
+        ],
+        "further_readings": [
+            "finite_impulse_response_filters",
+            "infinite_impulse_response_filters",
+            "bilinear_transform",
+            "windowing_method",
+            "frequency_sampling_method",
+            "least_squares_method"
+        ]
+    },
+    "analog_filter_design": {
+        "title": "Analog Filter Design",
+        "prerequisites": [
+            "signal_processing",
+            "circuit_analysis",
+            "transfer_function",
+            "laplace_transform",
+            "bode_plot"
+        ],
+        "further_readings": [
+            "digital_filter_design",
+            "z_transform",
+            "fourier_transform",
+            "sampling_theorem",
+            "control_systems"
+        ]
+    },
+    "adaptive_filtering": {
+        "title": "Adaptive Filtering",
+        "prerequisites": [
+            "linear_algebra",
+            "probability_theory",
+            "signal_processing",
+            "optimization_algorithms",
+            "least_squares_method",
+            "stochastic_gradient_descent"
+        ],
+        "further_readings": [
+            "kalman_filter",
+            "particle_filter",
+            "recursive_least_squares",
+            "lms_algorithm",
+            "rls_algorithm",
+            "affine_projection_algorithm"
+        ]
+    },
+    "kalman_filter": {
+        "title": "Kalman Filter",
+        "prerequisites": [
+            "probability_theory",
+            "linear_algebra",
+            "bayesian_inference",
+            "gaussian_distributions"
+        ],
+        "further_readings": [
+            "extended_kalman_filter",
+            "unscented_kalman_filter",
+            "particle_filter",
+            "hidden_markov_models",
+            "bayesian_networks"
+        ]
+    },
+    "particle_filtering": {
+        "title": "Particle Filtering",
+        "prerequisites": [
+            "bayesian_inference",
+            "hidden_markov_models",
+            "monte_carlo_methods",
+            "sequential_monte_carlo"
+        ],
+        "further_readings": [
+            "kalman_filters",
+            "extended_kalman_filters",
+            "unscented_kalman_filters",
+            "smoothing_algorithms"
+        ]
+    },
+    "nonlinear_filtering": {
+        "title": "Nonlinear Filtering",
+        "prerequisites": [
+            "bayesian_filtering",
+            "particle_filters",
+            "kalman_filters",
+            "hidden_markov_models",
+            "stochastic_processes"
+        ],
+        "further_readings": [
+            "unscented_kalman_filter",
+            "extended_kalman_filter",
+            "ensemble_kalman_filter",
+            "monte_carlo_methods",
+            "sequential_monte_carlo_methods"
+        ]
+    },
+    "spectral_density_estimation": {
+        "title": "Spectral Density Estimation",
+        "prerequisites": [
+            "probability_theory",
+            "time_series_analysis",
+            "fourier_transform",
+            "autocorrelation_function"
+        ],
+        "further_readings": [
+            "welch_method",
+            "periodogram",
+            "multitaper_method",
+            "maximum_entropy_method",
+            "nonparametric_methods"
+        ]
+    },
+    "independent_component_analysis": {
+        "title": "Independent Component Analysis",
+        "prerequisites": [
+            "linear_algebra",
+            "probability_theory",
+            "signal_processing",
+            "principal_component_analysis"
+        ],
+        "further_readings": [
+            "blind_source_separation",
+            "fastica_algorithm",
+            "sparse_coding",
+            "non-negative_matrix_factorization",
+            "deep_learning"
+        ]
+    },
+    "spectral_embedding": {
+        "title": "Spectral Embedding",
+        "prerequisites": [
+            "graph_theory",
+            "eigenvalue_decomposition",
+            "laplacian_matrix",
+            "dimensionality_reduction"
+        ],
+        "further_readings": [
+            "spectral_clustering",
+            "manifold_learning",
+            "kernel_methods",
+            "multidimensional_scaling"
+        ]
+    },
+    "continuous_wavelet_transform": {
+        "title": "Continuous Wavelet Transform",
+        "prerequisites": [
+            "wavelet_theory",
+            "time_frequency_analysis",
+            "fourier_transform",
+            "wavelet_basis_functions"
+        ],
+        "further_readings": [
+            "discrete_wavelet_transform",
+            "multiresolution_analysis",
+            "wavelet_packet_decomposition",
+            "wavelet_applications"
+        ]
+    },
+    "discrete_wavelet_transform": {
+        "title": "Discrete Wavelet Transform",
+        "prerequisites": [
+            "fourier_transform",
+            "wavelet_theory",
+            "signal_processing"
+        ],
+        "further_readings": [
+            "continuous_wavelet_transform",
+            "multiresolution_analysis",
+            "wavelet_packet_decomposition",
+            "haar_wavelet",
+            "daubechies_wavelets"
+        ]
+    },
+    "empirical_mode_decomposition": {
+        "title": "Empirical Mode Decomposition",
+        "prerequisites": [
+            "signal_processing",
+            "hilbert_transform",
+            "time_frequency_analysis"
+        ],
+        "further_readings": [
+            "wavelet_transform",
+            "short_time_fourier_transform",
+            "wigner_ville_distribution",
+            "adaptive_signal_processing"
+        ]
+    },
+    "non_stationary_signal_analysis": {
+        "title": "Non-Stationary Signal Analysis",
+        "prerequisites": [
+            "time_series_analysis",
+            "wavelet_transform",
+            "short_time_fourier_transform",
+            "hilbert_huang_transform",
+            "empirical_mode_decomposition",
+            "adaptive_filters"
+        ],
+        "further_readings": [
+            "time_frequency_analysis",
+            "spectrogram",
+            "wigner_ville_distribution",
+            "matching_pursuit",
+            "synchrosqueezing_transform"
+        ]
+    },
+    "time_frequency_representation": {
+        "title": "Time-Frequency Representation",
+        "prerequisites": [
+            "fourier_transform",
+            "wavelet_transform",
+            "short_time_fourier_transform",
+            "spectrogram"
+        ],
+        "further_readings": [
+            "gabor_transform",
+            "wigner_ville_distribution",
+            "continuous_wavelet_transform",
+            "discrete_wavelet_transform"
+        ]
+    },
+    "multitaper_spectrum_estimation": {
+        "title": "Multitaper Spectrum Estimation",
+        "prerequisites": [
+            "time_series_analysis",
+            "spectral_analysis",
+            "fourier_transform",
+            "window_functions"
+        ],
+        "further_readings": [
+            "wavelet_transform",
+            "short_time_fourier_transform",
+            "wigner_ville_distribution",
+            "hilbert_transform"
+        ]
+    },
+    "coherence_analysis": {
+        "title": "Coherence Analysis",
+        "prerequisites": [
+            "natural_language_processing",
+            "text_mining",
+            "topic_modeling",
+            "latent_semantic_analysis",
+            "latent_dirichlet_allocation",
+            "word_embeddings"
+        ],
+        "further_readings": [
+            "text_summarization",
+            "sentiment_analysis",
+            "information_retrieval",
+            "document_clustering",
+            "text_classification"
+        ]
+    },
+    "matrix_decomposition": {
+        "title": "Matrix Decomposition",
+        "prerequisites": [
+            "linear_algebra",
+            "eigenvalues_and_eigenvectors",
+            "singular_value_decomposition"
+        ],
+        "further_readings": [
+            "principal_component_analysis",
+            "non_negative_matrix_factorization",
+            "tensor_decomposition",
+            "sparse_coding"
+        ]
+    },
+    "deep_unsupervised_learning": {
+        "title": "Deep Unsupervised Learning",
+        "prerequisites": [
+            "unsupervised_learning",
+            "deep_learning",
+            "autoencoders",
+            "generative_adversarial_networks",
+            "variational_autoencoders",
+            "clustering_algorithms",
+            "dimensionality_reduction"
+        ],
+        "further_readings": [
+            "deep_clustering",
+            "self_supervised_learning",
+            "representation_learning",
+            "energy_based_models",
+            "contrastive_learning",
+            "mutual_information_neural_estimation"
+        ]
+    },
+    "dictionary_learning": {
+        "title": "Dictionary Learning",
+        "prerequisites": [
+            "sparse_coding",
+            "k_svd",
+            "matrix_factorization",
+            "signal_processing"
+        ],
+        "further_readings": [
+            "online_dictionary_learning",
+            "convolutional_dictionary_learning",
+            "non_negative_matrix_factorization",
+            "compressed_sensing"
+        ]
+    },
+    "source_localization": {
+        "title": "Source Localization",
+        "prerequisites": [
+            "signal_processing",
+            "machine_learning",
+            "optimization",
+            "probability_theory"
+        ],
+        "further_readings": [
+            "beamforming",
+            "time_difference_of_arrival",
+            "music_algorithm",
+            "bayesian_inference",
+            "convolutional_neural_network",
+            "recurrent_neural_network"
+        ]
+    },
+    "audio_signal_processing": {
+        "title": "Audio Signal Processing",
+        "prerequisites": [
+            "digital_signal_processing",
+            "fourier_transform",
+            "wavelet_transform",
+            "spectrogram",
+            "convolution",
+            "filtering"
+        ],
+        "further_readings": [
+            "short_time_fourier_transform",
+            "cepstral_analysis",
+            "mel_frequency_cepstral_coefficients",
+            "deep_learning_for_audio"
+        ]
+    },
+    "neural_signal_processing": {
+        "title": "Neural Signal Processing",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "signal_processing",
+            "time_series_analysis",
+            "fourier_transform",
+            "wavelet_transform"
+        ],
+        "further_readings": [
+            "brain_computer_interfaces",
+            "electroencephalography",
+            "magnetoencephalography",
+            "neural_decoding",
+            "neural_encoding"
+        ]
+    },
+    "random_processes": {
+        "title": "Random Processes",
+        "prerequisites": [
+            "probability_theory",
+            "stochastic_processes",
+            "markov_chains",
+            "poisson_processes"
+        ],
+        "further_readings": [
+            "brownian_motion",
+            "gaussian_processes",
+            "hidden_markov_models",
+            "queueing_theory"
+        ]
+    },
+    "estimation_theory": {
+        "title": "Estimation Theory",
+        "prerequisites": [
+            "probability_theory",
+            "statistical_inference",
+            "maximum_likelihood_estimation",
+            "bayesian_inference"
+        ],
+        "further_readings": [
+            "least_squares_estimation",
+            "minimum_variance_unbiased_estimators",
+            "cramer_rao_bound",
+            "hypothesis_testing"
+        ]
+    },
+    "hypothesis_testing": {
+        "title": "Hypothesis Testing",
+        "prerequisites": [
+            "probability_theory",
+            "statistical_inference",
+            "confidence_intervals"
+        ],
+        "further_readings": [
+            "bayesian_inference",
+            "p_value",
+            "type_i_and_type_ii_errors",
+            "multiple_comparisons_problem"
+        ]
+    },
+    "multiresolution_signal_processing": {
+        "title": "Multiresolution Signal Processing",
+        "prerequisites": [
+            "wavelet_transform",
+            "fourier_transform",
+            "signal_processing",
+            "time_frequency_analysis"
+        ],
+        "further_readings": [
+            "wavelet_packet_transform",
+            "ridgelet_transform",
+            "curvelet_transform",
+            "shearlet_transform",
+            "contourlet_transform",
+            "fractional_fourier_transform"
+        ]
+    },
+    "compressive_sensing": {
+        "title": "Compressive Sensing",
+        "prerequisites": [
+            "signal_processing",
+            "sparse_representation",
+            "linear_algebra",
+            "optimization"
+        ],
+        "further_readings": [
+            "basis_pursuit",
+            "orthogonal_matching_pursuit",
+            "total_variation_minimization",
+            "restricted_isometry_property",
+            "l1_minimization"
+        ]
+    },
+    "nonlinear_signal_processing": {
+        "title": "Nonlinear Signal Processing",
+        "prerequisites": [
+            "linear_signal_processing",
+            "nonlinear_systems",
+            "time_frequency_analysis",
+            "wavelet_transforms",
+            "adaptive_filters"
+        ],
+        "further_readings": [
+            "volterra_series",
+            "neural_networks",
+            "kernel_methods",
+            "independent_component_analysis",
+            "compressed_sensing"
+        ]
+    },
+    "signal_processing_applications": {
+        "title": "Signal Processing Applications",
+        "prerequisites": [
+            "digital_signal_processing",
+            "analog_signal_processing",
+            "fourier_transform",
+            "wavelet_transform"
+        ],
+        "further_readings": [
+            "adaptive_signal_processing",
+            "speech_processing",
+            "image_processing",
+            "audio_signal_processing",
+            "biomedical_signal_processing"
+        ]
+    },
+    "signal_processing_systems": {
+        "title": "Signal Processing Systems",
+        "prerequisites": [
+            "digital_signal_processing",
+            "analog_signal_processing",
+            "fourier_transform",
+            "z_transform",
+            "filter_design"
+        ],
+        "further_readings": [
+            "adaptive_filters",
+            "wavelet_transform",
+            "time_frequency_analysis",
+            "spectral_estimation",
+            "array_signal_processing"
+        ]
+    },
+    "signal_processing_hardware": {
+        "title": "Signal Processing Hardware",
+        "prerequisites": [
+            "digital_signal_processing",
+            "analog_signal_processing",
+            "field_programmable_gate_arrays",
+            "digital_signal_processors"
+        ],
+        "further_readings": [
+            "application_specific_integrated_circuits",
+            "graphics_processing_units",
+            "tensor_processing_units",
+            "embedded_systems"
+        ]
     }
 }
