@@ -10,13 +10,11 @@ Generative models aim to learn the underlying data distribution of a dataset, al
 
 A normalizing flow is defined as a series of invertible transformations $f_i$ applied to a base distribution $p(z)$, such as a Gaussian or uniform distribution. The transformed distribution $q(x)$ can be written as:
 
-
 $$
 
 q(x) = p(z) \prod_{i=1}^K \left|\det\frac{\partial f_i}{\partial z}\right|
 
 $$
-
 
 where $K$ is the number of transformations, and $\det\frac{\partial f_i}{\partial z}$ is the determinant of the Jacobian of the transformation $f_i$. The determinant of the Jacobian represents the change in volume induced by the transformation, which is necessary to ensure that the transformed distribution remains normalized.
 

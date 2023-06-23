@@ -2606,6 +2606,16 @@
             "normalizing_flows"
         ]
     },
+    "topic_models": {
+        "title": "Topic Models",
+        "prerequisites": [
+            "latent_variable_models"
+        ],
+        "further_readings": [
+            "probabilistic_topic_models",
+            "dynamic_topic_models"
+        ]
+    },
     "adversarial_autoencoder": {
         "title": "Adversarial Autoencoder",
         "prerequisites": [
@@ -14163,6 +14173,18 @@
             "planar_flows",
             "real_nvp",
             "glow"
+        ]
+    },
+    "normalizing_flows_for_flow-based_sampling": {
+        "title": "Normalizing Flows for Flow-Based Sampling",
+        "prerequisites": [
+            "normalizing_flows",
+            "variational_inference",
+            "maximum_likelihood_estimation"
+        ],
+        "further_readings": [
+            "radial_flows",
+            "planar_flows"
         ]
     },
     "sparse_autoencoders": {
