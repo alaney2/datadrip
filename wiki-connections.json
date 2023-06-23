@@ -2606,16 +2606,6 @@
             "normalizing_flows"
         ]
     },
-    "topic_models": {
-        "title": "Topic Models",
-        "prerequisites": [
-            "latent_variable_models"
-        ],
-        "further_readings": [
-            "probabilistic_topic_models",
-            "dynamic_topic_models"
-        ]
-    },
     "adversarial_autoencoder": {
         "title": "Adversarial Autoencoder",
         "prerequisites": [
