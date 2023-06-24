@@ -14339,5 +14339,695 @@
             "graph_neural_networks",
             "generative_adversarial_networks"
         ]
+    },
+    "reparameterization_trick": {
+        "title": "Reparameterization Trick",
+        "prerequisites": [
+            "variational_autoencoder",
+            "stochastic_gradient_descent",
+            "backpropagation",
+            "probability_distributions"
+        ],
+        "further_readings": [
+            "normalizing_flows",
+            "bayesian_neural_networks",
+            "variational_inference",
+            "monte_carlo_sampling"
+        ]
+    },
+    "invertible_neural_networks": {
+        "title": "Invertible Neural Networks",
+        "prerequisites": [
+            "deep_learning",
+            "neural_networks",
+            "backpropagation",
+            "autoencoders",
+            "normalizing_flows"
+        ],
+        "further_readings": [
+            "variational_autoencoders",
+            "generative_adversarial_networks",
+            "bayesian_neural_networks",
+            "unsupervised_learning"
+        ]
+    },
+    "glow_generative_flow": {
+        "title": "Glow Generative Flow",
+        "prerequisites": [
+            "normalizing_flows",
+            "variational_autoencoders",
+            "generative_adversarial_networks",
+            "autoregressive_models"
+        ],
+        "further_readings": [
+            "realnvp",
+            "naf",
+            "maf",
+            "inverse_autoregressive_flow",
+            "coupling_layers",
+            "glow_paper"
+        ]
+    },
+    "real_nvp": {
+        "title": "Real NVP",
+        "prerequisites": [
+            "normalizing_flows",
+            "deep_learning",
+            "variational_autoencoders",
+            "generative_adversarial_networks"
+        ],
+        "further_readings": [
+            "glow",
+            "maf",
+            "iaf",
+            "naf",
+            "planar_flows",
+            "radial_flows"
+        ]
+    },
+    "maf_masked_autoregressive_flow": {
+        "title": "MAF Masked Autoregressive Flow",
+        "prerequisites": [
+            "normalizing_flows",
+            "autoregressive_models",
+            "maximum_likelihood_estimation"
+        ],
+        "further_readings": [
+            "real_nvp",
+            "glow",
+            "inverse_autoregressive_flow",
+            "coupling_layers",
+            "variational_autoencoders"
+        ]
+    },
+    "planar_flows": {
+        "title": "Planar Flows",
+        "prerequisites": [
+            "normalizing_flows",
+            "variational_autoencoders",
+            "change_of_variables_formula"
+        ],
+        "further_readings": [
+            "inverse_autoregressive_flows",
+            "real_nvp",
+            "glow",
+            "maf",
+            "coupling_layers"
+        ]
+    },
+    "radial_flows": {
+        "title": "Radial Flows",
+        "prerequisites": [
+            "normalizing_flows",
+            "variational_autoencoders",
+            "change_of_variables_formula"
+        ],
+        "further_readings": [
+            "inverse_autoregressive_flows",
+            "real_nvp",
+            "glow",
+            "maf",
+            "planar_flows"
+        ]
+    },
+    "flow_based_models": {
+        "title": "Flow Based Models",
+        "prerequisites": [
+            "generative_adversarial_networks",
+            "variational_autoencoders",
+            "normalizing_flows",
+            "maximum_likelihood_estimation"
+        ],
+        "further_readings": [
+            "real_nvp",
+            "glow",
+            "maf",
+            "inverse_autoregressive_flow",
+            "planar_flows",
+            "radial_flows"
+        ]
+    },
+    "spatial_temporal_pgm": {
+        "title": "Spatial Temporal PGM",
+        "prerequisites": [
+            "probabilistic_graphical_models",
+            "hidden_markov_models",
+            "dynamic_bayesian_networks",
+            "markov_random_fields"
+        ],
+        "further_readings": [
+            "conditional_random_fields",
+            "gaussian_processes",
+            "particle_filters",
+            "kalman_filters"
+        ]
+    },
+    "prior_and_posterior_distributions": {
+        "title": "Prior and Posterior Distributions",
+        "prerequisites": [
+            "bayesian_inference",
+            "probability_theory",
+            "conditional_probability",
+            "bayes_theorem"
+        ],
+        "further_readings": [
+            "bayesian_networks",
+            "markov_chain_monte_carlo",
+            "bayesian_optimization",
+            "variational_inference"
+        ]
+    },
+    "sampling_methods": {
+        "title": "Sampling Methods",
+        "prerequisites": [
+            "probability_theory",
+            "random_variables",
+            "probability_distributions",
+            "monte_carlo_methods"
+        ],
+        "further_readings": [
+            "importance_sampling",
+            "markov_chain_monte_carlo",
+            "rejection_sampling",
+            "stratified_sampling",
+            "latin_hypercube_sampling",
+            "sequential_monte_carlo"
+        ]
+    },
+    "statistical_hypothesis_testing": {
+        "title": "Statistical Hypothesis Testing",
+        "prerequisites": [
+            "probability_theory",
+            "sampling_distributions",
+            "confidence_intervals",
+            "p_value",
+            "t_test",
+            "anova",
+            "chi_square_test",
+            "nonparametric_tests"
+        ],
+        "further_readings": [
+            "bayesian_inference",
+            "likelihood_ratio_test",
+            "bootstrap_methods",
+            "multiple_comparisons_problem",
+            "false_discovery_rate",
+            "power_analysis",
+            "effect_size"
+        ]
+    },
+    "bayesian_decision_theory": {
+        "title": "Bayesian Decision Theory",
+        "prerequisites": [
+            "probability_theory",
+            "bayes_theorem",
+            "decision_theory",
+            "statistical_decision_theory"
+        ],
+        "further_readings": [
+            "bayesian_inference",
+            "bayesian_networks",
+            "bayesian_optimization",
+            "bayesian_deep_learning"
+        ]
+    },
+    "bayesian_model_selection": {
+        "title": "Bayesian Model Selection",
+        "prerequisites": [
+            "bayesian_inference",
+            "bayesian_networks",
+            "model_comparison",
+            "model_selection"
+        ],
+        "further_readings": [
+            "bayesian_information_criterion",
+            "bayesian_optimization",
+            "bayesian_statistics",
+            "bayesian_nonparametric_models"
+        ]
+    },
+    "empirical_bayes_methods": {
+        "title": "Empirical Bayes Methods",
+        "prerequisites": [
+            "bayesian_statistics",
+            "maximum_likelihood_estimation",
+            "prior_distribution",
+            "posterior_distribution"
+        ],
+        "further_readings": [
+            "bayesian_linear_regression",
+            "hierarchical_models",
+            "shrinkage_estimators",
+            "mixture_models"
+        ]
+    },
+    "hierarchical_bayesian_models": {
+        "title": "Hierarchical Bayesian Models",
+        "prerequisites": [
+            "bayesian_inference",
+            "bayesian_networks",
+            "markov_chain_monte_carlo",
+            "gibbs_sampling",
+            "latent_variable_models"
+        ],
+        "further_readings": [
+            "probabilistic_graphical_models",
+            "bayesian_nonparametrics",
+            "variational_inference",
+            "dirichlet_process"
+        ]
+    },
+    "nonparametric_bayesian_methods": {
+        "title": "Nonparametric Bayesian Methods",
+        "prerequisites": [
+            "bayesian_statistics",
+            "dirichlet_process",
+            "gaussian_process",
+            "markov_chain_monte_carlo"
+        ],
+        "further_readings": [
+            "infinite_mixture_models",
+            "hierarchical_dirichlet_process",
+            "indian_buffet_process",
+            "bayesian_optimization",
+            "latent_dirichlet_allocation"
+        ]
+    },
+    "sequential_monte_carlo": {
+        "title": "Sequential Monte Carlo",
+        "prerequisites": [
+            "monte_carlo_methods",
+            "particle_filters",
+            "hidden_markov_models",
+            "bayesian_inference"
+        ],
+        "further_readings": [
+            "importance_sampling",
+            "resampling_methods",
+            "markov_chain_monte_carlo",
+            "kalman_filters"
+        ]
+    },
+    "coding_theory": {
+        "title": "Coding Theory",
+        "prerequisites": [
+            "information_theory",
+            "error_correction_codes",
+            "linear_algebra",
+            "finite_fields"
+        ],
+        "further_readings": [
+            "turbo_codes",
+            "low_density_parity_check_codes",
+            "reed_solomon_codes",
+            "convolutional_codes",
+            "polar_codes"
+        ]
+    },
+    "error_correction_codes": {
+        "title": "Error Correction Codes",
+        "prerequisites": [
+            "information_theory",
+            "coding_theory",
+            "linear_algebra",
+            "probability_theory"
+        ],
+        "further_readings": [
+            "hamming_codes",
+            "reed_solomon_codes",
+            "turbo_codes",
+            "ldpc_codes",
+            "convolutional_codes"
+        ]
+    },
+    "source_coding": {
+        "title": "Source Coding",
+        "prerequisites": [
+            "information_theory",
+            "entropy",
+            "data_compression"
+        ],
+        "further_readings": [
+            "huffman_coding",
+            "arithmetic_coding",
+            "run_length_encoding",
+            "lossless_compression",
+            "lossy_compression"
+        ]
+    },
+    "channel_coding": {
+        "title": "Channel Coding",
+        "prerequisites": [
+            "information_theory",
+            "error_correction_codes",
+            "linear_algebra"
+        ],
+        "further_readings": [
+            "turbo_codes",
+            "low_density_parity_check_codes",
+            "polar_codes",
+            "convolutional_codes",
+            "reed_solomon_codes"
+        ]
+    },
+    "data_compression": {
+        "title": "Data Compression",
+        "prerequisites": [
+            "information_theory",
+            "entropy_coding",
+            "lossless_compression",
+            "lossy_compression",
+            "huffman_coding",
+            "run_length_encoding",
+            "lz77_lz78"
+        ],
+        "further_readings": [
+            "arithmetic_coding",
+            "burrows_wheeler_transform",
+            "wavelet_transform",
+            "jpeg",
+            "mpeg",
+            "gzip",
+            "bzip2"
+        ]
+    },
+    "entropy_estimation": {
+        "title": "Entropy Estimation",
+        "prerequisites": [
+            "information_theory",
+            "probability_theory",
+            "machine_learning"
+        ],
+        "further_readings": [
+            "mutual_information",
+            "kullback_leibler_divergence",
+            "cross_entropy",
+            "maximum_likelihood_estimation",
+            "minimum_description_length"
+        ]
+    },
+    "information_theory_and_statistics": {
+        "title": "Information Theory and Statistics",
+        "prerequisites": [
+            "probability_theory",
+            "entropy",
+            "mutual_information",
+            "bayesian_inference",
+            "maximum_likelihood_estimation"
+        ],
+        "further_readings": [
+            "kullback_leibler_divergence",
+            "cross_entropy",
+            "minimum_description_length",
+            "rate_distortion_theory",
+            "information_bottleneck"
+        ]
+    },
+    "information_theory_and_machine_learning": {
+        "title": "Information Theory and Machine Learning",
+        "prerequisites": [
+            "entropy",
+            "mutual_information",
+            "kl_divergence",
+            "cross_entropy",
+            "bayesian_inference"
+        ],
+        "further_readings": [
+            "rate_distortion_theory",
+            "minimum_description_length",
+            "information_bottleneck",
+            "variational_autoencoders",
+            "information_gain"
+        ]
+    },
+    "sparse_gaussian_processes": {
+        "title": "Sparse Gaussian Processes",
+        "prerequisites": [
+            "gaussian_processes",
+            "kernel_methods",
+            "bayesian_inference"
+        ],
+        "further_readings": [
+            "variational_inference",
+            "inducing_points",
+            "scalable_gaussian_process_methods",
+            "deep_gaussian_processes"
+        ]
+    },
+    "deep_gaussian_processes": {
+        "title": "Deep Gaussian Processes",
+        "prerequisites": [
+            "gaussian_process",
+            "bayesian_inference",
+            "variational_inference",
+            "deep_learning"
+        ],
+        "further_readings": [
+            "stochastic_variational_inference",
+            "inducing_points",
+            "multi_output_gaussian_processes",
+            "convolutional_gaussian_processes"
+        ]
+    },
+    "gaussian_process_regression_with_missing_data": {
+        "title": "Gaussian Process Regression With Missing Data",
+        "prerequisites": [
+            "gaussian_process",
+            "gaussian_process_regression",
+            "maximum_likelihood_estimation",
+            "kernel_functions"
+        ],
+        "further_readings": [
+            "bayesian_optimization",
+            "multi_output_gaussian_process",
+            "sparse_gaussian_process",
+            "deep_gaussian_process"
+        ]
+    },
+    "gaussian_process_latent_variable_models": {
+        "title": "Gaussian Process Latent Variable Models",
+        "prerequisites": [
+            "gaussian_processes",
+            "kernel_methods",
+            "latent_variable_models",
+            "bayesian_inference"
+        ],
+        "further_readings": [
+            "variational_inference",
+            "bayesian_optimization",
+            "spectral_mixture_kernels",
+            "deep_gaussian_processes"
+        ]
+    },
+    "active_learning_with_gaussian_processes": {
+        "title": "Active Learning With Gaussian Processes",
+        "prerequisites": [
+            "gaussian_processes",
+            "bayesian_optimization",
+            "machine_learning"
+        ],
+        "further_readings": [
+            "bayesian_nonparametrics",
+            "multi_armed_bandits",
+            "sequential_decision_making",
+            "information_theory"
+        ]
+    },
+    "variational_inference_and_gaussian_processes": {
+        "title": "Variational Inference and Gaussian Processes",
+        "prerequisites": [
+            "bayesian_inference",
+            "gaussian_processes",
+            "variational_inference",
+            "mean_field_approximation",
+            "kl_divergence"
+        ],
+        "further_readings": [
+            "variational_gaussian_process",
+            "sparse_gaussian_processes",
+            "variational_autoencoders",
+            "variational_bayesian_methods"
+        ]
+    },
+    "gaussian_process_classification": {
+        "title": "Gaussian Process Classification",
+        "prerequisites": [
+            "gaussian_process",
+            "kernel_methods",
+            "bayesian_inference"
+        ],
+        "further_readings": [
+            "gaussian_process_regression",
+            "support_vector_machines",
+            "deep_gaussian_process",
+            "multi_class_classification",
+            "sparse_gaussian_process"
+        ]
+    },
+    "multi_output_gaussian_processes": {
+        "title": "Multi-Output Gaussian Processes",
+        "prerequisites": [
+            "gaussian_processes",
+            "kernel_methods",
+            "bayesian_inference"
+        ],
+        "further_readings": [
+            "sparse_gaussian_processes",
+            "deep_gaussian_processes",
+            "convolutional_gaussian_processes",
+            "inducing_points"
+        ]
+    },
+    "unsupervised_domain_adaptation": {
+        "title": "Unsupervised Domain Adaptation",
+        "prerequisites": [
+            "domain_adaptation",
+            "transfer_learning",
+            "unsupervised_learning",
+            "deep_learning",
+            "convolutional_neural_network",
+            "adversarial_training"
+        ],
+        "further_readings": [
+            "maximum_mean_discrepancy",
+            "coral_loss",
+            "cycle_gan",
+            "domain_adversarial_neural_network",
+            "deep_coral",
+            "domain_confusion"
+        ]
+    },
+    "multi_modal_learning": {
+        "title": "Multi-Modal Learning",
+        "prerequisites": [
+            "deep_learning",
+            "machine_learning",
+            "neural_networks",
+            "convolutional_neural_network",
+            "recurrent_neural_network",
+            "transfer_learning",
+            "data_fusion"
+        ],
+        "further_readings": [
+            "attention_mechanism",
+            "unsupervised_learning",
+            "semi_supervised_learning",
+            "zero_shot_learning",
+            "domain_adaptation",
+            "generative_adversarial_networks",
+            "variational_autoencoder"
+        ]
+    },
+    "neural_network": {
+        "title": "Neural Network",
+        "prerequisites": [
+            "artificial_neuron",
+            "activation_function",
+            "backpropagation",
+            "gradient_descent"
+        ],
+        "further_readings": [
+            "deep_learning",
+            "convolutional_neural_network",
+            "recurrent_neural_network",
+            "long_short_term_memory",
+            "radial_basis_function_network",
+            "autoencoder",
+            "generative_adversarial_network",
+            "transfer_learning"
+        ]
+    },
+    "dropout_as_approximate_bayesian_inference": {
+        "title": "Dropout as Approximate Bayesian Inference",
+        "prerequisites": [
+            "dropout",
+            "bayesian_inference",
+            "deep_learning",
+            "neural_networks"
+        ],
+        "further_readings": [
+            "variational_inference",
+            "monte_carlo_dropout",
+            "bayesian_neural_networks",
+            "uncertainty_estimation"
+        ]
+    },
+    "bayesian_meta_learning": {
+        "title": "Bayesian Meta Learning",
+        "prerequisites": [
+            "bayesian_inference",
+            "meta_learning",
+            "probabilistic_models",
+            "variational_inference"
+        ],
+        "further_readings": [
+            "bayesian_neural_networks",
+            "gaussian_processes",
+            "maml",
+            "reptile",
+            "meta_sgd"
+        ]
+    },
+    "bayesian_deep_learning": {
+        "title": "Bayesian Deep Learning",
+        "prerequisites": [
+            "bayesian_inference",
+            "deep_learning",
+            "neural_networks",
+            "variational_inference"
+        ],
+        "further_readings": [
+            "bayesian_neural_networks",
+            "dropout_as_bayesian_approximation",
+            "variational_autoencoders",
+            "bayesian_optimization"
+        ]
+    },
+    "bayesian_neural_networks_for_regression": {
+        "title": "Bayesian Neural Networks for Regression",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "bayesian_inference",
+            "bayesian_statistics",
+            "regression_analysis"
+        ],
+        "further_readings": [
+            "variational_inference",
+            "monte_carlo_methods",
+            "dropout_as_bayesian_approximation",
+            "gaussian_processes"
+        ]
+    },
+    "bayesian_neural_networks_for_classification": {
+        "title": "Bayesian Neural Networks for Classification",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "bayesian_inference",
+            "deep_learning",
+            "probability_theory"
+        ],
+        "further_readings": [
+            "variational_inference",
+            "monte_carlo_methods",
+            "dropout_as_bayesian_approximation",
+            "bayesian_optimization"
+        ]
+    },
+    "bayesian_neural_networks_for_uncertainty_estimation": {
+        "title": "Bayesian Neural Networks For Uncertainty Estimation",
+        "prerequisites": [
+            "bayesian_inference",
+            "neural_networks",
+            "deep_learning",
+            "probability_theory",
+            "variational_inference"
+        ],
+        "further_readings": [
+            "dropout_as_bayesian_approximation",
+            "bayesian_deep_learning",
+            "monte_carlo_dropout",
+            "bayesian_convolutional_neural_networks",
+            "bayesian_recurrent_neural_networks"
+        ]
     }
 }
