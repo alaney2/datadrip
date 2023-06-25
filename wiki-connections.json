@@ -18367,5 +18367,510 @@
             "random_forests",
             "ensemble_methods"
         ]
+    },
+    "quantile_functions": {
+        "title": "Quantile Functions",
+        "prerequisites": [
+            "probability_density_function",
+            "cumulative_distribution_function",
+            "inverse_functions"
+        ],
+        "further_readings": [
+            "quantiles",
+            "percentiles",
+            "interquartile_range",
+            "box_plots",
+            "probability_plot"
+        ]
+    },
+    "order_statistics": {
+        "title": "Order Statistics",
+        "prerequisites": [
+            "probability_theory",
+            "random_variables",
+            "cumulative_distribution_function",
+            "probability_density_function",
+            "percentiles"
+        ],
+        "further_readings": [
+            "nonparametric_statistics",
+            "quantiles",
+            "rank_statistics",
+            "extreme_value_theory",
+            "sample_order_statistics"
+        ]
+    },
+    "deep_learning_theory": {
+        "title": "Deep Learning Theory",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "backpropagation",
+            "convolutional_neural_networks",
+            "recurrent_neural_networks",
+            "optimization_algorithms",
+            "regularization_techniques",
+            "loss_functions"
+        ],
+        "further_readings": [
+            "generative_adversarial_networks",
+            "transfer_learning",
+            "unsupervised_learning",
+            "reinforcement_learning",
+            "deep_reinforcement_learning",
+            "natural_language_processing",
+            "computer_vision",
+            "speech_recognition"
+        ]
+    },
+    "histograms": {
+        "title": "Histograms",
+        "prerequisites": [
+            "probability_density_function",
+            "probability_mass_function",
+            "data_visualization"
+        ],
+        "further_readings": [
+            "kernel_density_estimation",
+            "cumulative_distribution_function",
+            "box_plot",
+            "violin_plot"
+        ]
+    },
+    "basic_statistics": {
+        "title": "Basic Statistics",
+        "prerequisites": [
+            "probability_theory",
+            "descriptive_statistics",
+            "inferential_statistics"
+        ],
+        "further_readings": [
+            "bayesian_statistics",
+            "hypothesis_testing",
+            "regression_analysis",
+            "time_series_analysis",
+            "multivariate_statistics"
+        ]
+    },
+    "bayesian_nonparametrics": {
+        "title": "Bayesian Nonparametrics",
+        "prerequisites": [
+            "bayesian_inference",
+            "dirichlet_process",
+            "gaussian_process",
+            "infinite_mixture_models",
+            "markov_chain_monte_carlo"
+        ],
+        "further_readings": [
+            "hierarchical_dirichlet_process",
+            "indian_buffet_process",
+            "pitman_yor_process",
+            "variational_inference",
+            "bayesian_optimization"
+        ]
+    },
+    "nearest_neighbor_density_estimation": {
+        "title": "Nearest Neighbor Density Estimation",
+        "prerequisites": [
+            "probability_density_function",
+            "kernel_density_estimation",
+            "k_nearest_neighbors"
+        ],
+        "further_readings": [
+            "parzen_window",
+            "gaussian_mixture_model",
+            "mean_shift_clustering",
+            "density_based_clustering"
+        ]
+    },
+    "bandwidth_selection": {
+        "title": "Bandwidth Selection",
+        "prerequisites": [
+            "kernel_density_estimation",
+            "cross_validation",
+            "smoothing_parameter"
+        ],
+        "further_readings": [
+            "silverman_bandwidth",
+            "scott_bandwidth",
+            "adaptive_bandwidth",
+            "gaussian_kernels",
+            "nonparametric_regression"
+        ]
+    },
+    "multivariate_kernel_density_estimation": {
+        "title": "Multivariate Kernel Density Estimation",
+        "prerequisites": [
+            "probability_density_function",
+            "kernel_functions",
+            "bandwidth_selection",
+            "nonparametric_statistics"
+        ],
+        "further_readings": [
+            "cross_validation",
+            "mean_shift_clustering",
+            "kernel_principal_component_analysis",
+            "gaussian_processes"
+        ]
+    },
+    "moving_average_models": {
+        "title": "Moving Average Models",
+        "prerequisites": [
+            "time_series_analysis",
+            "autoregressive_models",
+            "autocorrelation"
+        ],
+        "further_readings": [
+            "arma_models",
+            "arima_models",
+            "exponential_smoothing",
+            "state_space_models",
+            "kalman_filter"
+        ]
+    },
+    "exponential_smoothing_models": {
+        "title": "Exponential Smoothing Models",
+        "prerequisites": [
+            "time_series_analysis",
+            "autoregressive_integrated_moving_average",
+            "forecasting_methods"
+        ],
+        "further_readings": [
+            "state_space_models",
+            "kalman_filter",
+            "bayesian_time_series_analysis",
+            "hierarchical_time_series"
+        ]
+    },
+    "arch_and_garch_models": {
+        "title": "ARCH and GARCH Models",
+        "prerequisites": [
+            "time_series_analysis",
+            "autoregressive_models",
+            "moving_average_models",
+            "maximum_likelihood_estimation"
+        ],
+        "further_readings": [
+            "multivariate_garch_models",
+            "stochastic_volatility_models",
+            "value_at_risk",
+            "forecasting_volatility"
+        ]
+    },
+    "vector_autoregression": {
+        "title": "Vector Autoregression",
+        "prerequisites": [
+            "time_series_analysis",
+            "linear_regression",
+            "multivariate_statistics"
+        ],
+        "further_readings": [
+            "granger_causality",
+            "cointegration",
+            "structural_vector_autoregression",
+            "bayesian_vector_autoregression",
+            "vector_error_correction_model"
+        ]
+    },
+    "state_space_models": {
+        "title": "State Space Models",
+        "prerequisites": [
+            "linear_algebra",
+            "probability_theory",
+            "stochastic_processes",
+            "time_series_analysis"
+        ],
+        "further_readings": [
+            "kalman_filter",
+            "hidden_markov_models",
+            "particle_filters",
+            "bayesian_networks",
+            "dynamic_linear_models"
+        ]
+    },
+    "time_series_forecasting": {
+        "title": "Time Series Forecasting",
+        "prerequisites": [
+            "linear_regression",
+            "autoregressive_integrated_moving_average",
+            "long_short_term_memory",
+            "convolutional_neural_network",
+            "recurrent_neural_network",
+            "deep_learning",
+            "machine_learning"
+        ],
+        "further_readings": [
+            "bayesian_time_series",
+            "state_space_models",
+            "kalman_filter",
+            "exponential_smoothing",
+            "prophet",
+            "neural_ode"
+        ]
+    },
+    "deep_learning_for_time_series": {
+        "title": "Deep Learning for Time Series",
+        "prerequisites": [
+            "time_series_analysis",
+            "deep_learning",
+            "recurrent_neural_networks",
+            "long_short_term_memory",
+            "convolutional_neural_networks",
+            "autoencoders",
+            "sequence_to_sequence_models"
+        ],
+        "further_readings": [
+            "time_series_forecasting",
+            "anomaly_detection",
+            "attention_mechanism",
+            "transformer_architecture",
+            "bayesian_deep_learning"
+        ]
+    },
+    "anomaly_detection_in_time_series": {
+        "title": "Anomaly Detection in Time Series",
+        "prerequisites": [
+            "time_series_analysis",
+            "autoregressive_integrated_moving_average",
+            "long_short_term_memory",
+            "autoencoder",
+            "isolation_forest",
+            "support_vector_machine"
+        ],
+        "further_readings": [
+            "bayesian_networks",
+            "hidden_markov_models",
+            "kalman_filters",
+            "gaussian_process_regression",
+            "change_point_detection"
+        ]
+    },
+    "continuous_time_series": {
+        "title": "Continuous Time Series",
+        "prerequisites": [
+            "time_series_analysis",
+            "autoregressive_integrated_moving_average",
+            "kalman_filter",
+            "hidden_markov_models"
+        ],
+        "further_readings": [
+            "long_short_term_memory",
+            "gated_recurrent_units",
+            "bayesian_time_series_analysis",
+            "state_space_models"
+        ]
+    },
+    "observational_studies": {
+        "title": "Observational Studies",
+        "prerequisites": [
+            "causal_inference",
+            "confounding",
+            "matching",
+            "propensity_score"
+        ],
+        "further_readings": [
+            "instrumental_variables",
+            "difference_in_differences",
+            "regression_discontinuity_design",
+            "synthetic_control_method"
+        ]
+    },
+    "confounding_variables": {
+        "title": "Confounding Variables",
+        "prerequisites": [
+            "causal_inference",
+            "observational_study",
+            "experimental_study",
+            "bias"
+        ],
+        "further_readings": [
+            "causal_graphs",
+            "propensity_score_matching",
+            "instrumental_variables",
+            "difference_in_differences"
+        ]
+    },
+    "propensity_score_matching": {
+        "title": "Propensity Score Matching",
+        "prerequisites": [
+            "causal_inference",
+            "observational_study",
+            "treatment_effect",
+            "confounding",
+            "logistic_regression"
+        ],
+        "further_readings": [
+            "inverse_probability_weighting",
+            "doubly_robust_estimation",
+            "covariate_balancing",
+            "matching_estimators"
+        ]
+    },
+    "instrumental_variables": {
+        "title": "Instrumental Variables",
+        "prerequisites": [
+            "linear_regression",
+            "endogeneity",
+            "causal_inference",
+            "two_stage_least_squares"
+        ],
+        "further_readings": [
+            "simultaneity_bias",
+            "weak_instruments",
+            "panel_data",
+            "difference_in_differences",
+            "regression_discontinuity_design"
+        ]
+    },
+    "counterfactuals": {
+        "title": "Counterfactuals",
+        "prerequisites": [
+            "causal_inference",
+            "potential_outcomes_framework",
+            "causal_graphs",
+            "confounding"
+        ],
+        "further_readings": [
+            "do_calculus",
+            "causal_effect_estimation",
+            "instrumental_variables",
+            "propensity_score_matching"
+        ]
+    },
+    "causal_graphs": {
+        "title": "Causal Graphs",
+        "prerequisites": [
+            "graph_theory",
+            "probability_theory",
+            "bayesian_networks",
+            "causal_inference"
+        ],
+        "further_readings": [
+            "structural_causal_models",
+            "do_calculus",
+            "counterfactual_inference",
+            "causal_discovery",
+            "causal_effect_estimation"
+        ]
+    },
+    "causal_inference_in_statistics": {
+        "title": "Causal Inference in Statistics",
+        "prerequisites": [
+            "probability_theory",
+            "regression_analysis",
+            "bayesian_statistics",
+            "graphical_models",
+            "potential_outcomes_framework"
+        ],
+        "further_readings": [
+            "counterfactuals",
+            "propensity_score_matching",
+            "instrumental_variables",
+            "difference_in_differences",
+            "causal_discovery"
+        ]
+    },
+    "causal_inference_in_machine_learning": {
+        "title": "Causal Inference in Machine Learning",
+        "prerequisites": [
+            "probability_theory",
+            "statistical_inference",
+            "supervised_learning",
+            "unsupervised_learning",
+            "reinforcement_learning"
+        ],
+        "further_readings": [
+            "potential_outcomes_framework",
+            "do_calculus",
+            "causal_graphical_models",
+            "counterfactual_reasoning",
+            "causal_discovery",
+            "causal_effect_estimation",
+            "causal_inference_applications"
+        ]
+    },
+    "causal_inference_in_econometrics": {
+        "title": "Causal Inference in Econometrics",
+        "prerequisites": [
+            "potential_outcomes_framework",
+            "observational_data",
+            "experimental_data",
+            "instrumental_variables",
+            "propensity_score_matching",
+            "difference_in_differences",
+            "regression_discontinuity_design"
+        ],
+        "further_readings": [
+            "causal_forests",
+            "causal_impact",
+            "synthetic_control_methods",
+            "causal_identification_strategies"
+        ]
+    },
+    "causal_inference_in_policy_evaluation": {
+        "title": "Causal Inference in Policy Evaluation",
+        "prerequisites": [
+            "counterfactuals",
+            "potential_outcomes_framework",
+            "causal_graphs",
+            "propensity_score_matching",
+            "instrumental_variables"
+        ],
+        "further_readings": [
+            "difference_in_differences",
+            "regression_discontinuity_design",
+            "synthetic_control_method",
+            "causal_forests"
+        ]
+    },
+    "causal_inference_in_social_sciences": {
+        "title": "Causal Inference in Social Sciences",
+        "prerequisites": [
+            "potential_outcomes_framework",
+            "observational_study",
+            "randomized_controlled_trial",
+            "propensity_score_matching",
+            "instrumental_variables",
+            "difference_in_differences",
+            "regression_discontinuity_design"
+        ],
+        "further_readings": [
+            "causal_graphs",
+            "structural_equation_modeling",
+            "synthetic_control_methods",
+            "bayesian_causal_inference",
+            "causal_forests"
+        ]
+    },
+    "causal_discovery": {
+        "title": "Causal Discovery",
+        "prerequisites": [
+            "probability_theory",
+            "graph_theory",
+            "bayesian_networks",
+            "causal_inference"
+        ],
+        "further_readings": [
+            "causal_graphical_models",
+            "constraint_based_methods",
+            "score_based_methods",
+            "causal_effect_estimation"
+        ]
+    },
+    "causal_inference_and_decision_making": {
+        "title": "Causal Inference and Decision Making",
+        "prerequisites": [
+            "probability_theory",
+            "bayesian_networks",
+            "causal_models",
+            "counterfactual_reasoning",
+            "reinforcement_learning"
+        ],
+        "further_readings": [
+            "do_calculus",
+            "structural_causal_models",
+            "potential_outcomes_framework",
+            "causal_discovery",
+            "causal_effect_estimation"
+        ]
     }
 }
