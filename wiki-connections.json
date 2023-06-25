@@ -16921,5 +16921,526 @@
             "multinomial_logistic_regression",
             "deep_learning"
         ]
+    },
+    "random_forests": {
+        "title": "Random Forests",
+        "prerequisites": [
+            "decision_trees",
+            "bagging",
+            "ensemble_learning",
+            "bootstrap_sampling"
+        ],
+        "further_readings": [
+            "extremely_randomized_trees",
+            "gradient_boosting",
+            "xgboost",
+            "lightgbm",
+            "catboost"
+        ]
+    },
+    "support_vector_machines": {
+        "title": "Support Vector Machines",
+        "prerequisites": [
+            "linear_algebra",
+            "optimization",
+            "kernel_methods",
+            "classification"
+        ],
+        "further_readings": [
+            "svm_variants",
+            "multi_class_svm",
+            "svm_applications",
+            "svm_hyperparameters"
+        ]
+    },
+    "naive_bayes_classification": {
+        "title": "Naive Bayes Classification",
+        "prerequisites": [
+            "probability_theory",
+            "bayes_theorem",
+            "conditional_probability",
+            "maximum_likelihood_estimation"
+        ],
+        "further_readings": [
+            "gaussian_naive_bayes",
+            "multinomial_naive_bayes",
+            "bernoulli_naive_bayes",
+            "text_classification",
+            "spam_filtering",
+            "sentiment_analysis"
+        ]
+    },
+    "boosting_algorithms": {
+        "title": "Boosting Algorithms",
+        "prerequisites": [
+            "decision_trees",
+            "ensemble_methods",
+            "gradient_descent",
+            "loss_functions"
+        ],
+        "further_readings": [
+            "adaboost",
+            "gradient_boosting",
+            "xgboost",
+            "lightgbm",
+            "catboost"
+        ]
+    },
+    "generalized_linear_models": {
+        "title": "Generalized Linear Models",
+        "prerequisites": [
+            "linear_regression",
+            "logistic_regression",
+            "maximum_likelihood_estimation",
+            "exponential_family"
+        ],
+        "further_readings": [
+            "poisson_regression",
+            "multinomial_logistic_regression",
+            "negative_binomial_regression",
+            "quasi_likelihood"
+        ]
+    },
+    "count_data": {
+        "title": "Count Data",
+        "prerequisites": [
+            "poisson_distribution",
+            "negative_binomial_distribution",
+            "zero_inflated_models"
+        ],
+        "further_readings": [
+            "generalized_linear_models",
+            "hurdle_models",
+            "bayesian_analysis",
+            "overdispersion"
+        ]
+    },
+    "overdispersion": {
+        "title": "Overdispersion",
+        "prerequisites": [
+            "generalized_linear_models",
+            "poisson_distribution",
+            "negative_binomial_distribution"
+        ],
+        "further_readings": [
+            "quasi_likelihood",
+            "zero_inflated_models",
+            "hurdle_models",
+            "mixed_effects_models",
+            "bayesian_approaches"
+        ]
+    },
+    "glmnet": {
+        "title": "Glmnet",
+        "prerequisites": [
+            "linear_regression",
+            "logistic_regression",
+            "lasso_regression",
+            "ridge_regression",
+            "elastic_net",
+            "regularization",
+            "coordinate_descent"
+        ],
+        "further_readings": [
+            "sparse_regression",
+            "multinomial_regression",
+            "poisson_regression",
+            "cox_proportional_hazards_model",
+            "group_lasso",
+            "fused_lasso"
+        ]
+    },
+    "quasi_likelihood": {
+        "title": "Quasi-Likelihood",
+        "prerequisites": [
+            "maximum_likelihood_estimation",
+            "generalized_linear_models",
+            "probability_distributions"
+        ],
+        "further_readings": [
+            "quasi_likelihood_information_criterion",
+            "robust_regression",
+            "generalized_estimating_equations",
+            "sandwich_estimators"
+        ]
+    },
+    "zero_inflated_models": {
+        "title": "Zero-Inflated Models",
+        "prerequisites": [
+            "generalized_linear_models",
+            "poisson_regression",
+            "negative_binomial_regression",
+            "maximum_likelihood_estimation"
+        ],
+        "further_readings": [
+            "zero_inflated_poisson",
+            "zero_inflated_negative_binomial",
+            "hurdle_models",
+            "count_data_regression"
+        ]
+    },
+    "hurdle_models": {
+        "title": "Hurdle Models",
+        "prerequisites": [
+            "generalized_linear_models",
+            "zero_inflated_models",
+            "maximum_likelihood_estimation"
+        ],
+        "further_readings": [
+            "count_data_regression",
+            "negative_binomial_regression",
+            "poisson_regression",
+            "zero_truncated_models"
+        ]
+    },
+    "bayesian_poisson_regression": {
+        "title": "Bayesian Poisson Regression",
+        "prerequisites": [
+            "bayesian_inference",
+            "poisson_distribution",
+            "generalized_linear_models"
+        ],
+        "further_readings": [
+            "markov_chain_monte_carlo",
+            "bayesian_hierarchical_models",
+            "bayesian_model_comparison"
+        ]
+    },
+    "negative_binomial_regression": {
+        "title": "Negative Binomial Regression",
+        "prerequisites": [
+            "generalized_linear_models",
+            "poisson_regression",
+            "maximum_likelihood_estimation",
+            "probability_distributions"
+        ],
+        "further_readings": [
+            "zero_inflated_models",
+            "hurdle_models",
+            "overdispersion",
+            "multilevel_modeling"
+        ]
+    },
+    "multilevel_poisson_regression": {
+        "title": "Multilevel Poisson Regression",
+        "prerequisites": [
+            "poisson_distribution",
+            "generalized_linear_models",
+            "maximum_likelihood_estimation",
+            "random_effects_models"
+        ],
+        "further_readings": [
+            "zero_inflated_poisson_regression",
+            "negative_binomial_regression",
+            "hierarchical_linear_models",
+            "bayesian_multilevel_models"
+        ]
+    },
+    "time_series_poisson_regression": {
+        "title": "Time Series Poisson Regression",
+        "prerequisites": [
+            "poisson_distribution",
+            "generalized_linear_models",
+            "time_series_analysis",
+            "maximum_likelihood_estimation"
+        ],
+        "further_readings": [
+            "autoregressive_integrated_moving_average",
+            "exponential_smoothing_state_space_model",
+            "bayesian_time_series_analysis",
+            "count_time_series_models"
+        ]
+    },
+    "spatial_poisson_regression": {
+        "title": "Spatial Poisson Regression",
+        "prerequisites": [
+            "poisson_regression",
+            "generalized_linear_models",
+            "spatial_statistics",
+            "maximum_likelihood_estimation"
+        ],
+        "further_readings": [
+            "negative_binomial_regression",
+            "zero_inflated_poisson_regression",
+            "spatial_autoregressive_models",
+            "bayesian_spatial_models"
+        ]
+    },
+    "ordinal_poisson_regression": {
+        "title": "Ordinal Poisson Regression",
+        "prerequisites": [
+            "poisson_regression",
+            "ordinal_regression",
+            "generalized_linear_models",
+            "maximum_likelihood_estimation"
+        ],
+        "further_readings": [
+            "multinomial_logistic_regression",
+            "proportional_odds_model",
+            "cumulative_logit_model",
+            "negative_binomial_regression"
+        ]
+    },
+    "zero_truncated_poisson_regression": {
+        "title": "Zero-Truncated Poisson Regression",
+        "prerequisites": [
+            "poisson_distribution",
+            "poisson_regression",
+            "maximum_likelihood_estimation",
+            "generalized_linear_models"
+        ],
+        "further_readings": [
+            "zero_inflated_poisson_regression",
+            "negative_binomial_regression",
+            "hurdle_models",
+            "count_data_analysis"
+        ]
+    },
+    "poisson_regression_in_r": {
+        "title": "Poisson Regression in R",
+        "prerequisites": [
+            "poisson_distribution",
+            "generalized_linear_models",
+            "r_programming_language"
+        ],
+        "further_readings": [
+            "negative_binomial_regression",
+            "zero_inflated_poisson_regression",
+            "quasi_poisson_regression"
+        ]
+    },
+    "censored_data": {
+        "title": "Censored Data",
+        "prerequisites": [
+            "survival_analysis",
+            "kaplan_meier_estimator",
+            "cox_proportional_hazards_model"
+        ],
+        "further_readings": [
+            "right_censoring",
+            "left_censoring",
+            "interval_censoring",
+            "nonparametric_estimation",
+            "accelerated_failure_time_model"
+        ]
+    },
+    "parametric_survival_models": {
+        "title": "Parametric Survival Models",
+        "prerequisites": [
+            "survival_analysis",
+            "maximum_likelihood_estimation",
+            "probability_density_function",
+            "cumulative_distribution_function",
+            "hazard_function",
+            "accelerated_failure_time_model",
+            "proportional_hazards_model"
+        ],
+        "further_readings": [
+            "kaplan_meier_estimator",
+            "cox_regression",
+            "weibull_distribution",
+            "log_normal_distribution",
+            "log_logistic_distribution",
+            "generalized_gamma_distribution",
+            "frailty_models",
+            "time_varying_covariates"
+        ]
+    },
+    "nonparametric_survival_models": {
+        "title": "Nonparametric Survival Models",
+        "prerequisites": [
+            "survival_analysis",
+            "kaplan_meier_estimator",
+            "nelson_aalen_estimator",
+            "hazard_function",
+            "censoring"
+        ],
+        "further_readings": [
+            "cox_proportional_hazards_model",
+            "accelerated_failure_time_model",
+            "proportional_hazards_assumption",
+            "log_rank_test",
+            "breslow_estimator"
+        ]
+    },
+    "cox_proportional_hazards_model": {
+        "title": "Cox Proportional Hazards Model",
+        "prerequisites": [
+            "survival_analysis",
+            "hazard_function",
+            "maximum_likelihood_estimation",
+            "partial_likelihood"
+        ],
+        "further_readings": [
+            "kaplan_meier_estimator",
+            "accelerated_failure_time_model",
+            "log_rank_test",
+            "aalen_additive_model"
+        ]
+    },
+    "multistate_models": {
+        "title": "Multistate Models",
+        "prerequisites": [
+            "markov_chains",
+            "hidden_markov_models",
+            "stochastic_processes",
+            "survival_analysis"
+        ],
+        "further_readings": [
+            "semi_markov_models",
+            "continuous_time_markov_chains",
+            "absorbing_markov_chains",
+            "markov_decision_processes"
+        ]
+    },
+    "competing_risks_analysis": {
+        "title": "Competing Risks Analysis",
+        "prerequisites": [
+            "survival_analysis",
+            "hazard_function",
+            "cumulative_incidence_function",
+            "kaplan_meier_estimator",
+            "cox_proportional_hazards_model"
+        ],
+        "further_readings": [
+            "subdistribution_hazard_model",
+            "cause_specific_hazard",
+            "multistate_models",
+            "time_dependent_covariates"
+        ]
+    },
+    "frailty_models": {
+        "title": "Frailty Models",
+        "prerequisites": [
+            "survival_analysis",
+            "hazard_function",
+            "cox_proportional_hazards_model",
+            "random_effects_models"
+        ],
+        "further_readings": [
+            "shared_frailty_models",
+            "multivariate_frailty_models",
+            "parametric_frailty_models",
+            "nonparametric_frailty_models",
+            "penalized_likelihood_methods"
+        ]
+    },
+    "survival_trees": {
+        "title": "Survival Trees",
+        "prerequisites": [
+            "decision_trees",
+            "random_forests",
+            "censoring",
+            "cox_proportional_hazards_model"
+        ],
+        "further_readings": [
+            "boosted_regression_trees",
+            "bagging",
+            "ensemble_methods",
+            "recursive_partitioning"
+        ]
+    },
+    "machine_learning_for_survival_analysis": {
+        "title": "Machine Learning for Survival Analysis",
+        "prerequisites": [
+            "survival_analysis",
+            "cox_proportional_hazards_model",
+            "random_forests",
+            "boosting",
+            "deep_learning",
+            "recurrent_neural_networks",
+            "convolutional_neural_networks"
+        ],
+        "further_readings": [
+            "kaplan_meier_estimator",
+            "censoring",
+            "time_varying_covariates",
+            "competing_risks",
+            "accelerated_failure_time_model",
+            "proportional_odds_model",
+            "neural_networks_for_survival_analysis"
+        ]
+    },
+    "bayesian_survival_analysis": {
+        "title": "Bayesian Survival Analysis",
+        "prerequisites": [
+            "bayesian_inference",
+            "survival_analysis",
+            "markov_chain_monte_carlo",
+            "hierarchical_modeling"
+        ],
+        "further_readings": [
+            "proportional_hazards_model",
+            "accelerated_failure_time_model",
+            "bayesian_nonparametrics",
+            "stan_software",
+            "pyro_software"
+        ]
+    },
+    "joint_models_for_longitudinal_data_and_time_to_event_data": {
+        "title": "Joint Models for Longitudinal Data and Time-to-Event Data",
+        "prerequisites": [
+            "survival_analysis",
+            "longitudinal_data_analysis",
+            "mixed_effects_models",
+            "cox_proportional_hazards_model",
+            "maximum_likelihood_estimation"
+        ],
+        "further_readings": [
+            "shared_random_effects_models",
+            "bayesian_joint_models",
+            "dynamic_predictions",
+            "joint_modeling_of_mean_and_variance"
+        ]
+    },
+    "survival_analysis_in_clinical_trials": {
+        "title": "Survival Analysis in Clinical Trials",
+        "prerequisites": [
+            "hazard_ratios",
+            "kaplan_meier_estimator",
+            "cox_proportional_hazards_model",
+            "log_rank_test"
+        ],
+        "further_readings": [
+            "accelerated_failure_time_model",
+            "competing_risks_analysis",
+            "censoring_and_truncation",
+            "time_dependent_covariates"
+        ]
+    },
+    "survival_analysis_in_economics": {
+        "title": "Survival Analysis in Economics",
+        "prerequisites": [
+            "hazard_function",
+            "survival_function",
+            "censoring",
+            "kaplan_meier_estimator",
+            "cox_proportional_hazards_model",
+            "accelerated_failure_time_model"
+        ],
+        "further_readings": [
+            "parametric_survival_models",
+            "semi_parametric_survival_models",
+            "non_parametric_survival_models",
+            "competing_risks",
+            "frailty_models",
+            "time_varying_covariates"
+        ]
+    },
+    "survival_analysis_in_engineering": {
+        "title": "Survival Analysis In Engineering",
+        "prerequisites": [
+            "probability_theory",
+            "statistical_inference",
+            "hazard_function",
+            "kaplan_meier_estimator",
+            "cox_proportional_hazards_model"
+        ],
+        "further_readings": [
+            "accelerated_failure_time_model",
+            "weibull_distribution",
+            "log_rank_test",
+            "censoring_and_truncation"
+        ]
     }
 }
