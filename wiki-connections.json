@@ -16827,5 +16827,20 @@
             "hyperbolic_tangent",
             "activation_functions"
         ]
+    },
+    "genetic_programming": {
+        "title": "Genetic Programming",
+        "prerequisites": [
+            "genetic_algorithms",
+            "evolutionary_algorithms",
+            "lisp_programming_language",
+            "tree_structures"
+        ],
+        "further_readings": [
+            "genetic_programming_applications",
+            "multi_objective_genetic_programming",
+            "linear_genetic_programming",
+            "genetic_programming_theory"
+        ]
     }
 }

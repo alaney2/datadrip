@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+# generation
+generator.ipynb
+
 # testing
 /coverage
 
