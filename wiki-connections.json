@@ -16998,7 +16998,7 @@
             "poisson_regression",
             "multinomial_logistic_regression",
             "negative_binomial_regression",
-            "quasi_likelihood"
+            "quasi-likelihood"
         ]
     },
     "count_data": {
@@ -17023,7 +17023,7 @@
             "negative_binomial_distribution"
         ],
         "further_readings": [
-            "quasi_likelihood",
+            "quasi-likelihood",
             "zero_inflated_models",
             "hurdle_models",
             "mixed_effects_models",
@@ -17050,7 +17050,7 @@
             "fused_lasso"
         ]
     },
-    "quasi_likelihood": {
+    "quasi-likelihood": {
         "title": "Quasi-Likelihood",
         "prerequisites": [
             "maximum_likelihood_estimation",
@@ -17058,13 +17058,13 @@
             "probability_distributions"
         ],
         "further_readings": [
-            "quasi_likelihood_information_criterion",
+            "quasi-likelihood_information_criterion",
             "robust_regression",
             "generalized_estimating_equations",
             "sandwich_estimators"
         ]
     },
-    "zero_inflated_models": {
+    "zero-inflated_models": {
         "title": "Zero-Inflated Models",
         "prerequisites": [
             "generalized_linear_models",
@@ -17090,7 +17090,7 @@
             "count_data_regression",
             "negative_binomial_regression",
             "poisson_regression",
-            "zero_truncated_models"
+            "zero-truncated_models"
         ]
     },
     "bayesian_poisson_regression": {
@@ -17181,7 +17181,7 @@
             "negative_binomial_regression"
         ]
     },
-    "zero_truncated_poisson_regression": {
+    "zero-truncated_poisson_regression": {
         "title": "Zero-Truncated Poisson Regression",
         "prerequisites": [
             "poisson_distribution",
@@ -17441,6 +17441,133 @@
             "weibull_distribution",
             "log_rank_test",
             "censoring_and_truncation"
+        ]
+    },
+    "random_effects_models": {
+        "title": "Random Effects Models",
+        "prerequisites": [
+            "linear_regression",
+            "generalized_linear_models",
+            "mixed_effects_models",
+            "multilevel_models"
+        ],
+        "further_readings": [
+            "hierarchical_linear_models",
+            "longitudinal_data_analysis",
+            "panel_data_models",
+            "bayesian_statistics"
+        ]
+    },
+    "likelihood_ratio_tests": {
+        "title": "Likelihood Ratio Tests",
+        "prerequisites": [
+            "maximum_likelihood_estimation",
+            "hypothesis_testing",
+            "statistical_models"
+        ],
+        "further_readings": [
+            "chi_square_distribution",
+            "wald_test",
+            "score_test",
+            "model_selection"
+        ]
+    },
+    "hierarchical_models": {
+        "title": "Hierarchical Models",
+        "prerequisites": [
+            "bayesian_inference",
+            "latent_variable_models",
+            "mixture_models",
+            "probabilistic_graphical_models"
+        ],
+        "further_readings": [
+            "dirichlet_process",
+            "indian_buffet_process",
+            "nested_chinese_restaurant_process",
+            "hierarchical_dirichlet_process"
+        ]
+    },
+    "multilevel_models": {
+        "title": "Multilevel Models",
+        "prerequisites": [
+            "linear_regression",
+            "generalized_linear_models",
+            "random_effects",
+            "fixed_effects",
+            "hierarchical_data"
+        ],
+        "further_readings": [
+            "longitudinal_data_analysis",
+            "mixed_effects_models",
+            "bayesian_multilevel_models",
+            "cross_classified_models",
+            "latent_variable_models"
+        ]
+    },
+    "structural_equation_models": {
+        "title": "Structural Equation Models",
+        "prerequisites": [
+            "linear_regression",
+            "path_analysis",
+            "factor_analysis",
+            "maximum_likelihood_estimation"
+        ],
+        "further_readings": [
+            "latent_variable_models",
+            "confirmatory_factor_analysis",
+            "multilevel_modeling",
+            "longitudinal_data_analysis"
+        ]
+    },
+    "nonlinear_mixed_effects_models": {
+        "title": "Nonlinear Mixed Effects Models",
+        "prerequisites": [
+            "linear_mixed_effects_models",
+            "nonlinear_regression",
+            "maximum_likelihood_estimation",
+            "random_effects"
+        ],
+        "further_readings": [
+            "hierarchical_models",
+            "bayesian_nonlinear_mixed_effects_models",
+            "generalized_linear_mixed_models",
+            "population_pharmacokinetics"
+        ]
+    },
+    "longitudinal_data_analysis": {
+        "title": "Longitudinal Data Analysis",
+        "prerequisites": [
+            "linear_regression",
+            "generalized_linear_models",
+            "mixed_effects_models",
+            "survival_analysis",
+            "time_series_analysis",
+            "multivariate_statistics"
+        ],
+        "further_readings": [
+            "panel_data_analysis",
+            "growth_curve_models",
+            "latent_growth_models",
+            "hierarchical_linear_models",
+            "structural_equation_models",
+            "missing_data_imputation"
+        ]
+    },
+    "generalized_additive_models": {
+        "title": "Generalized Additive Models",
+        "prerequisites": [
+            "linear_regression",
+            "logistic_regression",
+            "nonparametric_regression",
+            "smoothing_splines",
+            "maximum_likelihood_estimation"
+        ],
+        "further_readings": [
+            "generalized_linear_models",
+            "multivariate_adaptive_regression_splines",
+            "penalized_regression",
+            "boosting",
+            "model_selection"
         ]
     }
 }
