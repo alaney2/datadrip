@@ -3494,8 +3494,7 @@
             "continuous_probability_distributions",
             "multivariate_probability_distributions",
             "hidden_markov_models",
-            "reinforcement_learning_algorithms",
-            "machine_learning_interview_questions"
+            "reinforcement_learning_algorithms"
         ]
     },
     "conditional_probability": {
