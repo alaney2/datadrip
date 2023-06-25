@@ -16767,5 +16767,48 @@
             "conjugate_gradient_method",
             "trust_region_methods"
         ]
+    },
+    "nonlinear_least_squares": {
+        "title": "Nonlinear Least Squares",
+        "prerequisites": [
+            "least_squares",
+            "gradient_descent",
+            "optimization"
+        ],
+        "further_readings": [
+            "levenberg_marquardt_algorithm",
+            "gauss_newton_algorithm",
+            "trust_region_methods",
+            "line_search_methods"
+        ]
+    },
+    "cost_functions": {
+        "title": "Cost Functions",
+        "prerequisites": [
+            "supervised_learning",
+            "linear_regression",
+            "logistic_regression",
+            "neural_networks"
+        ],
+        "further_readings": [
+            "gradient_descent",
+            "backpropagation",
+            "regularization",
+            "optimization_algorithms"
+        ]
+    },
+    "sigmoid_function": {
+        "title": "Sigmoid Function",
+        "prerequisites": [
+            "logistic_regression",
+            "neural_networks",
+            "backpropagation"
+        ],
+        "further_readings": [
+            "softmax_function",
+            "rectified_linear_unit",
+            "hyperbolic_tangent",
+            "activation_functions"
+        ]
     }
 }
