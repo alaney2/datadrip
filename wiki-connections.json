@@ -16842,5 +16842,84 @@
             "linear_genetic_programming",
             "genetic_programming_theory"
         ]
+    },
+    "genetic_fuzzy_systems": {
+        "title": "Genetic Fuzzy Systems",
+        "prerequisites": [
+            "genetic_algorithms",
+            "fuzzy_logic",
+            "fuzzy_inference_systems",
+            "evolutionary_computation"
+        ],
+        "further_readings": [
+            "adaptive_fuzzy_systems",
+            "neuro_fuzzy_systems",
+            "multi_objective_evolutionary_algorithms",
+            "fuzzy_clustering"
+        ]
+    },
+    "genetic_neural_networks": {
+        "title": "Genetic Neural Networks",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "genetic_algorithms",
+            "evolutionary_computation"
+        ],
+        "further_readings": [
+            "neuroevolution",
+            "genetic_programming",
+            "evolutionary_strategies",
+            "particle_swarm_optimization",
+            "deep_neuroevolution"
+        ]
+    },
+    "binary_classification": {
+        "title": "Binary Classification",
+        "prerequisites": [
+            "logistic_regression",
+            "support_vector_machine",
+            "decision_tree",
+            "naive_bayes",
+            "k_nearest_neighbors",
+            "neural_networks"
+        ],
+        "further_readings": [
+            "ensemble_methods",
+            "evaluation_metrics",
+            "cross_validation",
+            "feature_selection",
+            "imbalanced_data"
+        ]
+    },
+    "multiclass_classification": {
+        "title": "Multiclass Classification",
+        "prerequisites": [
+            "supervised_learning",
+            "logistic_regression",
+            "decision_trees",
+            "support_vector_machines",
+            "neural_networks"
+        ],
+        "further_readings": [
+            "one_vs_rest",
+            "one_vs_one",
+            "softmax_regression",
+            "error_correcting_output_codes",
+            "hierarchical_classification"
+        ]
+    },
+    "softmax_regression": {
+        "title": "Softmax Regression",
+        "prerequisites": [
+            "logistic_regression",
+            "multiclass_classification",
+            "gradient_descent"
+        ],
+        "further_readings": [
+            "cross_entropy_loss",
+            "one_hot_encoding",
+            "multinomial_logistic_regression",
+            "deep_learning"
+        ]
     }
 }

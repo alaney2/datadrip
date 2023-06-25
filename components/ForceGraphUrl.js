@@ -231,11 +231,7 @@ const ForceGraphUrl = ({ data }) => {
       
       //   return cylinder;
       // })
-      
-      
-      
-      
-      
+
 
       // .onBackgroundClick(() => {
       //   highlightNodes.current.clear();
