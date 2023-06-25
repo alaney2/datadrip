@@ -13823,16 +13823,15 @@
             "deep_learning",
             "neural_networks",
             "backpropagation",
-            "convolutional_neural_networks",
-            "autoencoders"
+            "convolutional_neural_network",
+            "loss_functions"
         ],
         "further_readings": [
             "conditional_gans",
-            "wasserstein_gans",
             "cycle_gans",
+            "wasserstein_gans",
             "style_gans",
-            "pix2pix",
-            "dcgans"
+            "pix2pix"
         ]
     },
     "generative_flow_models": {
@@ -17568,6 +17567,806 @@
             "penalized_regression",
             "boosting",
             "model_selection"
+        ]
+    },
+    "machine_learning_algorithms_in_mixed_effects_models": {
+        "title": "Machine Learning Algorithms in Mixed Effects Models",
+        "prerequisites": [
+            "linear_regression",
+            "generalized_linear_models",
+            "random_effects_models",
+            "fixed_effects_models",
+            "hierarchical_models",
+            "lasso_regression",
+            "ridge_regression",
+            "elastic_net"
+        ],
+        "further_readings": [
+            "boosting",
+            "bagging",
+            "random_forests",
+            "support_vector_machines",
+            "neural_networks",
+            "deep_learning",
+            "bayesian_statistics",
+            "model_selection"
+        ]
+    },
+    "model_selection_in_mixed_effects_models": {
+        "title": "Model Selection in Mixed Effects Models",
+        "prerequisites": [
+            "linear_mixed_effects_models",
+            "generalized_linear_mixed_models",
+            "aic",
+            "bic",
+            "likelihood_ratio_test"
+        ],
+        "further_readings": [
+            "cross_validation",
+            "information_criteria",
+            "random_effects",
+            "fixed_effects",
+            "nested_models"
+        ]
+    },
+    "missing_data_in_mixed_effects_models": {
+        "title": "Missing Data in Mixed Effects Models",
+        "prerequisites": [
+            "mixed_effects_models",
+            "linear_regression",
+            "generalized_linear_models",
+            "maximum_likelihood_estimation"
+        ],
+        "further_readings": [
+            "multiple_imputation",
+            "expectation_maximization_algorithm",
+            "bayesian_statistics",
+            "random_effects_models",
+            "fixed_effects_models"
+        ]
+    },
+    "set_theory": {
+        "title": "Set Theory",
+        "prerequisites": [
+            "naive_set_theory",
+            "axiomatic_set_theory",
+            "set_operations",
+            "cardinality",
+            "ordinal_numbers"
+        ],
+        "further_readings": [
+            "zermelo_fraenkel_set_theory",
+            "cantor_set_theory",
+            "russell_paradox",
+            "aleph_numbers",
+            "large_cardinals"
+        ]
+    },
+    "combinatorics": {
+        "title": "Combinatorics",
+        "prerequisites": [
+            "permutations",
+            "combinations",
+            "pigeonhole_principle",
+            "inclusion_exclusion_principle"
+        ],
+        "further_readings": [
+            "graph_theory",
+            "generating_functions",
+            "partitions",
+            "recurrence_relations",
+            "polya_counting_theorem"
+        ]
+    },
+    "random_matrices": {
+        "title": "Random Matrices",
+        "prerequisites": [
+            "linear_algebra",
+            "probability_theory",
+            "eigenvalues_and_eigenvectors"
+        ],
+        "further_readings": [
+            "wigner_semicircle_law",
+            "marchenko_pastur_law",
+            "circular_law",
+            "random_matrix_theory_applications"
+        ]
+    },
+    "expected_value": {
+        "title": "Expected Value",
+        "prerequisites": [
+            "probability_theory",
+            "random_variables"
+        ],
+        "further_readings": [
+            "variance",
+            "covariance",
+            "conditional_expectation",
+            "moment_generating_functions",
+            "law_of_large_numbers",
+            "central_limit_theorem"
+        ]
+    },
+    "variance_and_standard_deviation": {
+        "title": "Variance and Standard Deviation",
+        "prerequisites": [
+            "probability_theory",
+            "descriptive_statistics",
+            "random_variables"
+        ],
+        "further_readings": [
+            "covariance",
+            "correlation_coefficient",
+            "central_limit_theorem",
+            "confidence_intervals",
+            "hypothesis_testing"
+        ]
+    },
+    "law_of_large_numbers": {
+        "title": "Law of Large Numbers",
+        "prerequisites": [
+            "probability_theory",
+            "random_variables",
+            "expected_value"
+        ],
+        "further_readings": [
+            "central_limit_theorem",
+            "convergence_of_random_variables",
+            "sampling_theory",
+            "monte_carlo_methods"
+        ]
+    },
+    "bayesian_probability": {
+        "title": "Bayesian Probability",
+        "prerequisites": [
+            "probability_theory",
+            "conditional_probability",
+            "bayes_theorem"
+        ],
+        "further_readings": [
+            "bayesian_inference",
+            "bayesian_networks",
+            "bayesian_optimization",
+            "naive_bayes_classifier"
+        ]
+    },
+    "discrete_probability_distributions": {
+        "title": "Discrete Probability Distributions",
+        "prerequisites": [
+            "probability_theory",
+            "random_variables",
+            "probability_mass_function"
+        ],
+        "further_readings": [
+            "binomial_distribution",
+            "poisson_distribution",
+            "geometric_distribution",
+            "negative_binomial_distribution",
+            "hypergeometric_distribution",
+            "multinomial_distribution"
+        ]
+    },
+    "continuous_probability_distributions": {
+        "title": "Continuous Probability Distributions",
+        "prerequisites": [
+            "probability_theory",
+            "probability_density_function",
+            "cumulative_distribution_function",
+            "moments_of_distributions"
+        ],
+        "further_readings": [
+            "normal_distribution",
+            "exponential_distribution",
+            "uniform_distribution",
+            "beta_distribution",
+            "gamma_distribution",
+            "t_distribution",
+            "chi_square_distribution",
+            "f_distribution"
+        ]
+    },
+    "multivariate_probability_distributions": {
+        "title": "Multivariate Probability Distributions",
+        "prerequisites": [
+            "probability_theory",
+            "random_variables",
+            "joint_probability_distribution",
+            "conditional_probability"
+        ],
+        "further_readings": [
+            "multivariate_normal_distribution",
+            "multivariate_t_distribution",
+            "copulas",
+            "bayesian_networks",
+            "markov_random_fields"
+        ]
+    },
+    "variance_reduction_techniques": {
+        "title": "Variance Reduction Techniques",
+        "prerequisites": [
+            "monte_carlo_methods",
+            "importance_sampling",
+            "control_variates",
+            "antithetic_variables",
+            "stratified_sampling"
+        ],
+        "further_readings": [
+            "quasi_monte_carlo_methods",
+            "latin_hypercube_sampling",
+            "low_discrepancy_sequences",
+            "conditional_monte_carlo"
+        ]
+    },
+    "marginal_probability": {
+        "title": "Marginal Probability",
+        "prerequisites": [
+            "probability_theory",
+            "conditional_probability",
+            "joint_probability"
+        ],
+        "further_readings": [
+            "bayes_theorem",
+            "probability_distributions",
+            "independence",
+            "expectation",
+            "variance"
+        ]
+    },
+    "multivariate_probability_distribution": {
+        "title": "Multivariate Probability Distribution",
+        "prerequisites": [
+            "probability_theory",
+            "random_variables",
+            "joint_probability_distribution",
+            "covariance_and_correlation"
+        ],
+        "further_readings": [
+            "multivariate_normal_distribution",
+            "multivariate_regression",
+            "copulas",
+            "multivariate_time_series"
+        ]
+    },
+    "entropy_and_information_theory": {
+        "title": "Entropy and Information Theory",
+        "prerequisites": [
+            "probability_theory",
+            "information_theory",
+            "shannon_entropy",
+            "mutual_information",
+            "cross_entropy",
+            "kl_divergence"
+        ],
+        "further_readings": [
+            "rate_distortion_theory",
+            "channel_capacity",
+            "source_coding_theorem",
+            "channel_coding_theorem",
+            "error_correction_codes"
+        ]
+    },
+    "marginal_probability_distribution": {
+        "title": "Marginal Probability Distribution",
+        "prerequisites": [
+            "probability_theory",
+            "joint_probability_distribution",
+            "conditional_probability"
+        ],
+        "further_readings": [
+            "bayesian_inference",
+            "hidden_markov_models",
+            "naive_bayes_classifier",
+            "markov_random_fields"
+        ]
+    },
+    "independence_in_probability": {
+        "title": "Independence in Probability",
+        "prerequisites": [
+            "probability_theory",
+            "conditional_probability",
+            "bayes_theorem"
+        ],
+        "further_readings": [
+            "joint_probability",
+            "probability_distributions",
+            "random_variables",
+            "covariance_and_correlation"
+        ]
+    },
+    "expectation_in_probability": {
+        "title": "Expectation in Probability",
+        "prerequisites": [
+            "probability_theory",
+            "random_variables",
+            "probability_distributions"
+        ],
+        "further_readings": [
+            "conditional_expectation",
+            "moments_of_distributions",
+            "variance_and_standard_deviation",
+            "covariance_and_correlation"
+        ]
+    },
+    "maximum_a_posteriori_estimation": {
+        "title": "Maximum A Posteriori Estimation",
+        "prerequisites": [
+            "bayesian_inference",
+            "maximum_likelihood_estimation",
+            "probability_theory"
+        ],
+        "further_readings": [
+            "bayesian_linear_regression",
+            "bayesian_neural_networks",
+            "expectation_maximization_algorithm",
+            "markov_chain_monte_carlo"
+        ]
+    },
+    "rejection_sampling": {
+        "title": "Rejection Sampling",
+        "prerequisites": [
+            "probability_theory",
+            "monte_carlo_methods",
+            "markov_chain_monte_carlo"
+        ],
+        "further_readings": [
+            "importance_sampling",
+            "gibbs_sampling",
+            "metropolis_hastings_algorithm",
+            "sequential_monte_carlo"
+        ]
+    },
+    "law_of_total_probability": {
+        "title": "Law of Total Probability",
+        "prerequisites": [
+            "probability_theory",
+            "conditional_probability",
+            "bayes_theorem"
+        ],
+        "further_readings": [
+            "probability_space",
+            "random_variables",
+            "probability_mass_function",
+            "probability_density_function"
+        ]
+    },
+    "moment_generating_function": {
+        "title": "Moment Generating Function",
+        "prerequisites": [
+            "probability_density_function",
+            "cumulative_distribution_function",
+            "expected_value",
+            "central_moments"
+        ],
+        "further_readings": [
+            "characteristic_function",
+            "cumulant_generating_function",
+            "laplace_transform",
+            "probability_moment"
+        ]
+    },
+    "probability_theory_and_stochastic_processes": {
+        "title": "Probability Theory and Stochastic Processes",
+        "prerequisites": [
+            "probability",
+            "random_variables",
+            "conditional_probability",
+            "markov_chains",
+            "poisson_processes"
+        ],
+        "further_readings": [
+            "bayesian_inference",
+            "monte_carlo_methods",
+            "hidden_markov_models",
+            "queueing_theory",
+            "stochastic_calculus"
+        ]
+    },
+    "variance_reduction_techniques_in_monte_carlo": {
+        "title": "Variance Reduction Techniques In Monte Carlo",
+        "prerequisites": [
+            "monte_carlo_method",
+            "probability_theory",
+            "stochastic_processes",
+            "sampling_techniques"
+        ],
+        "further_readings": [
+            "importance_sampling",
+            "antithetic_variables",
+            "control_variates",
+            "stratified_sampling",
+            "quasi_monte_carlo"
+        ]
+    },
+    "stochastic_gradient_monte_carlo": {
+        "title": "Stochastic Gradient Monte Carlo",
+        "prerequisites": [
+            "monte_carlo_methods",
+            "stochastic_gradient_descent",
+            "markov_chain_monte_carlo",
+            "bayesian_inference",
+            "optimization_algorithms"
+        ],
+        "further_readings": [
+            "hamiltonian_monte_carlo",
+            "variational_inference",
+            "stochastic_gradient_langevin_dynamics",
+            "stochastic_gradient_hamiltonian_monte_carlo"
+        ]
+    },
+    "transition_matrices": {
+        "title": "Transition Matrices",
+        "prerequisites": [
+            "markov_chains",
+            "matrix_multiplication",
+            "probability_theory"
+        ],
+        "further_readings": [
+            "absorbing_markov_chains",
+            "stationary_distributions",
+            "hidden_markov_models",
+            "markov_decision_processes"
+        ]
+    },
+    "stationary_distributions": {
+        "title": "Stationary Distributions",
+        "prerequisites": [
+            "markov_chains",
+            "probability_theory",
+            "linear_algebra"
+        ],
+        "further_readings": [
+            "ergodic_theory",
+            "markov_decision_processes",
+            "hidden_markov_models",
+            "gibbs_sampling",
+            "metropolis_hastings_algorithm"
+        ]
+    },
+    "correlation_analysis": {
+        "title": "Correlation Analysis",
+        "prerequisites": [
+            "probability_theory",
+            "linear_algebra",
+            "descriptive_statistics"
+        ],
+        "further_readings": [
+            "regression_analysis",
+            "principal_component_analysis",
+            "spearman_rank_correlation",
+            "kendall_rank_correlation"
+        ]
+    },
+    "simple_linear_regression": {
+        "title": "Simple Linear Regression",
+        "prerequisites": [
+            "linear_algebra",
+            "calculus",
+            "probability",
+            "statistics",
+            "least_squares"
+        ],
+        "further_readings": [
+            "multiple_linear_regression",
+            "ridge_regression",
+            "lasso_regression",
+            "polynomial_regression",
+            "logistic_regression"
+        ]
+    },
+    "multiple_linear_regression": {
+        "title": "Multiple Linear Regression",
+        "prerequisites": [
+            "linear_regression",
+            "least_squares",
+            "gradient_descent"
+        ],
+        "further_readings": [
+            "ridge_regression",
+            "lasso_regression",
+            "principal_component_regression",
+            "partial_least_squares_regression"
+        ]
+    },
+    "ridge_regression": {
+        "title": "Ridge Regression",
+        "prerequisites": [
+            "linear_regression",
+            "least_squares",
+            "regularization",
+            "multicollinearity"
+        ],
+        "further_readings": [
+            "lasso_regression",
+            "elastic_net_regression",
+            "principal_component_regression",
+            "kernel_ridge_regression"
+        ]
+    },
+    "lasso_regression": {
+        "title": "Lasso Regression",
+        "prerequisites": [
+            "linear_regression",
+            "ridge_regression",
+            "least_squares",
+            "regularization"
+        ],
+        "further_readings": [
+            "elastic_net_regression",
+            "feature_selection",
+            "sparse_models",
+            "coordinate_descent"
+        ]
+    },
+    "elastic_net_regression": {
+        "title": "Elastic Net Regression",
+        "prerequisites": [
+            "linear_regression",
+            "ridge_regression",
+            "lasso_regression",
+            "regularization"
+        ],
+        "further_readings": [
+            "least_angle_regression",
+            "coordinate_descent",
+            "glmnet",
+            "feature_selection"
+        ]
+    },
+    "polynomial_regression": {
+        "title": "Polynomial Regression",
+        "prerequisites": [
+            "linear_regression",
+            "least_squares_method",
+            "overfitting_and_underfitting"
+        ],
+        "further_readings": [
+            "ridge_regression",
+            "lasso_regression",
+            "kernel_regression",
+            "splines"
+        ]
+    },
+    "nonlinear_regression": {
+        "title": "Nonlinear Regression",
+        "prerequisites": [
+            "linear_regression",
+            "gradient_descent",
+            "loss_functions",
+            "optimization_algorithms"
+        ],
+        "further_readings": [
+            "kernel_regression",
+            "support_vector_regression",
+            "neural_networks",
+            "deep_learning",
+            "decision_trees",
+            "random_forests"
+        ]
+    },
+    "time_series_regression": {
+        "title": "Time Series Regression",
+        "prerequisites": [
+            "linear_regression",
+            "autoregressive_integrated_moving_average",
+            "stationarity",
+            "autocorrelation",
+            "partial_autocorrelation"
+        ],
+        "further_readings": [
+            "vector_autoregression",
+            "state_space_models",
+            "bayesian_time_series",
+            "long_short_term_memory",
+            "granger_causality"
+        ]
+    },
+    "bayesian_regression": {
+        "title": "Bayesian Regression",
+        "prerequisites": [
+            "bayesian_inference",
+            "linear_regression",
+            "probability_theory",
+            "maximum_likelihood_estimation"
+        ],
+        "further_readings": [
+            "bayesian_linear_regression",
+            "bayesian_neural_networks",
+            "markov_chain_monte_carlo",
+            "variational_inference"
+        ]
+    },
+    "robust_regression": {
+        "title": "Robust Regression",
+        "prerequisites": [
+            "linear_regression",
+            "least_squares",
+            "outliers",
+            "influence_functions",
+            "m_estimation"
+        ],
+        "further_readings": [
+            "huber_loss",
+            "tukey_biweight",
+            "ridge_regression",
+            "lasso_regression",
+            "quantile_regression"
+        ]
+    },
+    "stepwise_regression": {
+        "title": "Stepwise Regression",
+        "prerequisites": [
+            "linear_regression",
+            "multiple_regression",
+            "model_selection",
+            "aic",
+            "bic"
+        ],
+        "further_readings": [
+            "ridge_regression",
+            "lasso_regression",
+            "elastic_net_regression",
+            "principal_component_regression",
+            "partial_least_squares_regression"
+        ]
+    },
+    "machine_learning_regression": {
+        "title": "Machine Learning Regression",
+        "prerequisites": [
+            "linear_regression",
+            "logistic_regression",
+            "ridge_regression",
+            "lasso_regression",
+            "polynomial_regression",
+            "support_vector_regression",
+            "decision_tree_regression",
+            "random_forest_regression"
+        ],
+        "further_readings": [
+            "gradient_descent",
+            "neural_networks",
+            "deep_learning",
+            "reinforcement_learning",
+            "unsupervised_learning",
+            "feature_selection",
+            "model_evaluation",
+            "hyperparameter_tuning"
+        ]
+    },
+    "variance": {
+        "title": "Variance",
+        "prerequisites": [
+            "probability_theory",
+            "expected_value"
+        ],
+        "further_readings": [
+            "covariance",
+            "standard_deviation",
+            "central_limit_theorem",
+            "moments_of_a_distribution"
+        ]
+    },
+    "covariance": {
+        "title": "Covariance",
+        "prerequisites": [
+            "probability_theory",
+            "expected_value",
+            "variance"
+        ],
+        "further_readings": [
+            "correlation_coefficient",
+            "covariance_matrix",
+            "multivariate_normal_distribution",
+            "principal_component_analysis"
+        ]
+    },
+    "conditional_mean": {
+        "title": "Conditional Mean",
+        "prerequisites": [
+            "probability_theory",
+            "random_variables",
+            "expectation"
+        ],
+        "further_readings": [
+            "conditional_expectation",
+            "conditional_variance",
+            "joint_probability_distribution"
+        ]
+    },
+    "conditional_distribution": {
+        "title": "Conditional Distribution",
+        "prerequisites": [
+            "probability_theory",
+            "joint_distribution",
+            "bayes_theorem"
+        ],
+        "further_readings": [
+            "conditional_expectation",
+            "conditional_probability",
+            "marginal_distribution",
+            "conditional_independence",
+            "markov_chains"
+        ]
+    },
+    "structured_prediction": {
+        "title": "Structured Prediction",
+        "prerequisites": [
+            "supervised_learning",
+            "machine_learning",
+            "deep_learning",
+            "loss_functions",
+            "optimization_algorithms"
+        ],
+        "further_readings": [
+            "conditional_random_fields",
+            "maximum_margin_markov_networks",
+            "structured_support_vector_machines",
+            "recurrent_neural_networks",
+            "graph_neural_networks"
+        ]
+    },
+    "neural_machine_translation": {
+        "title": "Neural Machine Translation",
+        "prerequisites": [
+            "machine_translation",
+            "sequence_to_sequence_models",
+            "encoder_decoder_architecture",
+            "attention_mechanism",
+            "word_embeddings"
+        ],
+        "further_readings": [
+            "transformer_models",
+            "beam_search",
+            "multilingual_neural_machine_translation",
+            "zero_shot_translation",
+            "domain_adaptation"
+        ]
+    },
+    "speech_recognition": {
+        "title": "Speech Recognition",
+        "prerequisites": [
+            "hidden_markov_models",
+            "deep_learning",
+            "recurrent_neural_networks",
+            "convolutional_neural_networks",
+            "natural_language_processing",
+            "acoustic_phonetics"
+        ],
+        "further_readings": [
+            "transformer_models",
+            "end_to_end_speech_recognition",
+            "language_models",
+            "transfer_learning",
+            "speech_synthesis",
+            "voice_activity_detection"
+        ]
+    },
+    "descriptive_statistics": {
+        "title": "Descriptive Statistics",
+        "prerequisites": [
+            "probability_theory",
+            "measures_of_central_tendency",
+            "measures_of_dispersion",
+            "data_visualization"
+        ],
+        "further_readings": [
+            "inferential_statistics",
+            "probability_distributions",
+            "hypothesis_testing",
+            "correlation_and_regression"
+        ]
+    },
+    "bootstrapping": {
+        "title": "Bootstrapping",
+        "prerequisites": [
+            "resampling_methods",
+            "bias_variance_tradeoff",
+            "cross_validation"
+        ],
+        "further_readings": [
+            "bagging",
+            "boosting",
+            "random_forests",
+            "ensemble_methods"
         ]
     }
 }

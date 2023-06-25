@@ -39,7 +39,7 @@ export default function MarkdownPage({ markdownContent }) {
   }, [fixedButton]);
 
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+    <Box sx={{ display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
       <Box sx={{ minHeight: '100vh' }}>
         <PageContent content={markdownContent} filename={filename} leftSidebar={false} showLastUpdated={false} />
         <Box sx={{ my: 2, textAlign: 'center' }}>
