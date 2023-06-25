@@ -3132,6 +3132,23 @@
             "genetic_hmm"
         ]
     },
+    "genetic_hmm": {
+        "title": "Genetic Hidden Markov Models",
+        "prerequisites": [
+            "hidden_markov_models",
+            "genetic_algorithms",
+            "machine_learning_algorithms",
+            "unsupervised_learning"
+        ],
+        "further_readings": [
+            "genetic_programming",
+            "evolutionary_algorithms",
+            "particle_swarm_optimization",
+            "differential_evolution",
+            "genetic_fuzzy_systems",
+            "genetic_neural_networks"
+        ]
+    },
     "gaussian_mixture_model": {
         "title": "Gaussian Mixture Model",
         "prerequisites": [
