@@ -1751,29 +1751,18 @@
         "title": "Deep Reinforcement Learning",
         "prerequisites": [
             "reinforcement_learning",
+            "deep_learning",
             "neural_networks",
-            "convolutional_neural_networks",
-            "recurrent_neural_networks",
-            "policy_gradient_methods",
             "q_learning",
-            "actor_critic_methods",
-            "monte_carlo_tree_search",
-            "value_iteration",
-            "markov_decision_processes",
-            "dynamic_programming",
-            "bellman_equations"
+            "policy_gradient_methods",
+            "actor_critic_methods"
         ],
         "further_readings": [
-            "hierarchical_reinforcement_learning",
-            "multi_agent_reinforcement_learning",
-            "imitation_learning",
-            "inverse_reinforcement_learning",
-            "exploration_vs_exploitation",
-            "curiosity_driven_learning",
-            "transfer_learning_in_reinforcement_learning",
-            "deep_reinforcement_learning_frameworks",
-            "continuous_action_spaces_in_deep_reinforcement_learning",
-            "safety_and_ethics_in_deep_reinforcement_learning"
+            "deep_q_networks",
+            "double_deep_q_networks",
+            "dueling_deep_q_networks",
+            "proximal_policy_optimization",
+            "soft_actor_critic"
         ]
     },
     "model_based_reinforcement_learning": {
@@ -15028,6 +15017,590 @@
             "monte_carlo_dropout",
             "bayesian_convolutional_neural_networks",
             "bayesian_recurrent_neural_networks"
+        ]
+    },
+    "bayesian_neural_networks_for_active_learning": {
+        "title": "Bayesian Neural Networks for Active Learning",
+        "prerequisites": [
+            "bayesian_inference",
+            "neural_networks",
+            "active_learning",
+            "variational_inference",
+            "dropout"
+        ],
+        "further_readings": [
+            "gaussian_processes",
+            "monte_carlo_methods",
+            "deep_bayesian_learning",
+            "uncertainty_estimation"
+        ]
+    },
+    "bayesian_optimization_with_deep_learning": {
+        "title": "Bayesian Optimization with Deep Learning",
+        "prerequisites": [
+            "bayesian_optimization",
+            "deep_learning",
+            "gaussian_process",
+            "acquisition_functions",
+            "hyperparameter_optimization"
+        ],
+        "further_readings": [
+            "bayesian_neural_networks",
+            "multi_task_learning",
+            "transfer_learning",
+            "active_learning",
+            "reinforcement_learning"
+        ]
+    },
+    "multi_fidelity_bayesian_optimization": {
+        "title": "Multi Fidelity Bayesian Optimization",
+        "prerequisites": [
+            "bayesian_optimization",
+            "gaussian_processes",
+            "acquisition_functions",
+            "surrogate_models"
+        ],
+        "further_readings": [
+            "multi_fidelity_models",
+            "bayesian_optimization_applications",
+            "parallel_bayesian_optimization",
+            "bayesian_optimization_hyperparameters"
+        ]
+    },
+    "bayesian_optimization_for_reinforcement_learning": {
+        "title": "Bayesian Optimization for Reinforcement Learning",
+        "prerequisites": [
+            "reinforcement_learning",
+            "bayesian_optimization",
+            "gaussian_processes",
+            "markov_decision_processes",
+            "q_learning",
+            "policy_gradient_methods"
+        ],
+        "further_readings": [
+            "deep_reinforcement_learning",
+            "multi_armed_bandits",
+            "bayesian_neural_networks",
+            "monte_carlo_tree_search"
+        ]
+    },
+    "bayesian_optimization_for_neural_network_architecture_search": {
+        "title": "Bayesian Optimization for Neural Network Architecture Search",
+        "prerequisites": [
+            "bayesian_optimization",
+            "neural_networks",
+            "hyperparameter_optimization",
+            "gaussian_processes"
+        ],
+        "further_readings": [
+            "deep_neural_networks",
+            "convolutional_neural_networks",
+            "reinforcement_learning",
+            "genetic_algorithms"
+        ]
+    },
+    "bayesian_global_optimization": {
+        "title": "Bayesian Global Optimization",
+        "prerequisites": [
+            "bayesian_inference",
+            "gaussian_processes",
+            "optimization",
+            "surrogate_models"
+        ],
+        "further_readings": [
+            "bayesian_optimization_applications",
+            "multi_objective_bayesian_optimization",
+            "bayesian_optimization_hyperparameters",
+            "acquisition_functions"
+        ]
+    },
+    "bayesian_optimization_for_simulator_based_inference": {
+        "title": "Bayesian Optimization for Simulator-Based Inference",
+        "prerequisites": [
+            "bayesian_optimization",
+            "gaussian_processes",
+            "surrogate_models",
+            "likelihood_function",
+            "monte_carlo_methods"
+        ],
+        "further_readings": [
+            "bayesian_neural_networks",
+            "sequential_model_based_optimization",
+            "multi_fidelity_optimization",
+            "acquisition_functions"
+        ]
+    },
+    "bayesian_optimization_for_transfer_learning": {
+        "title": "Bayesian Optimization for Transfer Learning",
+        "prerequisites": [
+            "bayesian_optimization",
+            "transfer_learning",
+            "gaussian_process",
+            "machine_learning",
+            "deep_learning"
+        ],
+        "further_readings": [
+            "multi_task_learning",
+            "hyperparameter_optimization",
+            "active_learning",
+            "reinforcement_learning"
+        ]
+    },
+    "bayesian_optimization_for_active_learning": {
+        "title": "Bayesian Optimization for Active Learning",
+        "prerequisites": [
+            "bayesian_optimization",
+            "active_learning",
+            "gaussian_processes",
+            "acquisition_functions"
+        ],
+        "further_readings": [
+            "bayesian_neural_networks",
+            "multi_armed_bandit",
+            "sequential_model_based_optimization",
+            "information_theory"
+        ]
+    },
+    "differential_evolution": {
+        "title": "Differential Evolution",
+        "prerequisites": [
+            "evolutionary_algorithms",
+            "genetic_algorithms",
+            "optimization_techniques"
+        ],
+        "further_readings": [
+            "particle_swarm_optimization",
+            "ant_colony_optimization",
+            "simulated_annealing",
+            "cuckoo_search"
+        ]
+    },
+    "martingales": {
+        "title": "Martingales",
+        "prerequisites": [
+            "probability_theory",
+            "conditional_expectation",
+            "stochastic_processes"
+        ],
+        "further_readings": [
+            "martingale_convergence_theorems",
+            "martingale_inequalities",
+            "optional_stopping_theorem",
+            "martingale_representation_theorem",
+            "filtrations",
+            "adapted_processes",
+            "martingale_applications"
+        ]
+    },
+    "brownian_motion": {
+        "title": "Brownian Motion",
+        "prerequisites": [
+            "random_walk",
+            "stochastic_processes",
+            "markov_chains"
+        ],
+        "further_readings": [
+            "wiener_process",
+            "ito_calculus",
+            "stochastic_differential_equations",
+            "levy_processes"
+        ]
+    },
+    "point_processes": {
+        "title": "Point Processes",
+        "prerequisites": [
+            "probability_theory",
+            "stochastic_processes",
+            "poisson_process",
+            "markov_chains",
+            "hawkes_process"
+        ],
+        "further_readings": [
+            "temporal_point_process",
+            "spatial_point_process",
+            "cox_process",
+            "gibbs_point_process",
+            "self_exciting_process"
+        ]
+    },
+    "queueing_theory": {
+        "title": "Queueing Theory",
+        "prerequisites": [
+            "probability_theory",
+            "stochastic_processes",
+            "markov_chains",
+            "poisson_processes"
+        ],
+        "further_readings": [
+            "birth_death_processes",
+            "little_law",
+            "erlang_b_formula",
+            "erlang_c_formula",
+            "m_g_1_queue"
+        ]
+    },
+    "random_walks": {
+        "title": "Random Walks",
+        "prerequisites": [
+            "markov_chains",
+            "graph_theory",
+            "probability_theory"
+        ],
+        "further_readings": [
+            "brownian_motion",
+            "monte_carlo_methods",
+            "reinforcement_learning",
+            "markov_decision_processes"
+        ]
+    },
+    "renewal_theory": {
+        "title": "Renewal Theory",
+        "prerequisites": [
+            "probability_theory",
+            "stochastic_processes",
+            "poisson_process",
+            "markov_chains"
+        ],
+        "further_readings": [
+            "queueing_theory",
+            "reliability_theory",
+            "martingales",
+            "branching_processes",
+            "semi_markov_processes"
+        ]
+    },
+    "design_of_experiments": {
+        "title": "Design of Experiments",
+        "prerequisites": [
+            "hypothesis_testing",
+            "statistical_inference",
+            "anova",
+            "regression_analysis"
+        ],
+        "further_readings": [
+            "factorial_design",
+            "response_surface_methodology",
+            "taguchi_method",
+            "latin_square_design",
+            "orthogonal_arrays"
+        ]
+    },
+    "response_surface_methodology": {
+        "title": "Response Surface Methodology",
+        "prerequisites": [
+            "design_of_experiments",
+            "regression_analysis",
+            "optimization"
+        ],
+        "further_readings": [
+            "central_composite_design",
+            "box_behnken_design",
+            "mixture_design",
+            "artificial_neural_networks",
+            "genetic_algorithms",
+            "particle_swarm_optimization"
+        ]
+    },
+    "kriging": {
+        "title": "Kriging",
+        "prerequisites": [
+            "gaussian_process",
+            "covariance_functions",
+            "variogram"
+        ],
+        "further_readings": [
+            "ordinary_kriging",
+            "universal_kriging",
+            "co_kriging",
+            "kriging_with_external_drift",
+            "bayesian_kriging"
+        ]
+    },
+    "support_vector_regression": {
+        "title": "Support Vector Regression",
+        "prerequisites": [
+            "support_vector_machine",
+            "kernel_methods",
+            "loss_functions",
+            "optimization"
+        ],
+        "further_readings": [
+            "epsilon_insensitive_loss",
+            "c_support_vector_classification",
+            "nu_support_vector_regression",
+            "libsvm",
+            "liblinear"
+        ]
+    },
+    "neural_networks_for_surrogate_modeling": {
+        "title": "Neural Networks for Surrogate Modeling",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "deep_learning",
+            "supervised_learning",
+            "regression_analysis",
+            "optimization_algorithms"
+        ],
+        "further_readings": [
+            "convolutional_neural_networks",
+            "recurrent_neural_networks",
+            "autoencoders",
+            "transfer_learning",
+            "bayesian_optimization"
+        ]
+    },
+    "genetic_algorithms_for_surrogate_modeling": {
+        "title": "Genetic Algorithms for Surrogate Modeling",
+        "prerequisites": [
+            "genetic_algorithms",
+            "surrogate_modeling",
+            "optimization",
+            "evolutionary_computation"
+        ],
+        "further_readings": [
+            "genetic_programming",
+            "multi_objective_optimization",
+            "response_surface_methodology",
+            "kriging"
+        ]
+    },
+    "ensemble_methods_for_surrogate_modeling": {
+        "title": "Ensemble Methods for Surrogate Modeling",
+        "prerequisites": [
+            "surrogate_modeling",
+            "ensemble_learning",
+            "bagging",
+            "boosting",
+            "stacking",
+            "model_selection",
+            "cross_validation"
+        ],
+        "further_readings": [
+            "random_forests",
+            "gradient_boosting_machines",
+            "xgboost",
+            "lightgbm",
+            "catboost",
+            "deep_ensembles",
+            "bayesian_model_averaging"
+        ]
+    },
+    "feature_selection": {
+        "title": "Feature Selection",
+        "prerequisites": [
+            "supervised_learning",
+            "unsupervised_learning",
+            "feature_extraction",
+            "dimensionality_reduction"
+        ],
+        "further_readings": [
+            "lasso_regression",
+            "ridge_regression",
+            "recursive_feature_elimination",
+            "principal_component_analysis",
+            "mutual_information"
+        ]
+    },
+    "deep_learning_algorithms": {
+        "title": "Deep Learning Algorithms",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "backpropagation",
+            "convolutional_neural_network",
+            "recurrent_neural_network",
+            "long_short_term_memory",
+            "autoencoders",
+            "generative_adversarial_networks",
+            "reinforcement_learning"
+        ],
+        "further_readings": [
+            "deep_belief_networks",
+            "deep_boltzmann_machines",
+            "capsule_networks",
+            "transformer_architecture",
+            "residual_networks",
+            "policy_gradient_methods",
+            "deep_q_networks",
+            "neural_style_transfer"
+        ]
+    },
+    "unsupervised_learning_algorithms": {
+        "title": "Unsupervised Learning Algorithms",
+        "prerequisites": [
+            "machine_learning",
+            "clustering",
+            "dimensionality_reduction",
+            "k_means_clustering",
+            "principal_component_analysis",
+            "autoencoders"
+        ],
+        "further_readings": [
+            "t_sne",
+            "spectral_clustering",
+            "deep_belief_networks",
+            "generative_adversarial_networks",
+            "self_organizing_maps"
+        ]
+    },
+    "supervised_learning_algorithms": {
+        "title": "Supervised Learning Algorithms",
+        "prerequisites": [
+            "machine_learning",
+            "linear_regression",
+            "logistic_regression",
+            "support_vector_machines",
+            "decision_trees",
+            "neural_networks"
+        ],
+        "further_readings": [
+            "ensemble_methods",
+            "regularization_techniques",
+            "cross_validation",
+            "model_evaluation_metrics",
+            "feature_selection"
+        ]
+    },
+    "ensemble_learning_algorithms": {
+        "title": "Ensemble Learning Algorithms",
+        "prerequisites": [
+            "decision_tree",
+            "bagging",
+            "boosting",
+            "random_forest",
+            "gradient_boosting",
+            "stacking"
+        ],
+        "further_readings": [
+            "adaboost",
+            "xgboost",
+            "lightgbm",
+            "catboost",
+            "deep_ensemble_learning"
+        ]
+    },
+    "transfer_learning_algorithms": {
+        "title": "Transfer Learning Algorithms",
+        "prerequisites": [
+            "machine_learning",
+            "deep_learning",
+            "convolutional_neural_network",
+            "recurrent_neural_network",
+            "fine_tuning",
+            "pretrained_models"
+        ],
+        "further_readings": [
+            "domain_adaptation",
+            "multi_task_learning",
+            "zero_shot_learning",
+            "one_shot_learning",
+            "few_shot_learning"
+        ]
+    },
+    "online_learning_algorithms": {
+        "title": "Online Learning Algorithms",
+        "prerequisites": [
+            "supervised_learning",
+            "unsupervised_learning",
+            "reinforcement_learning",
+            "gradient_descent",
+            "stochastic_gradient_descent"
+        ],
+        "further_readings": [
+            "regret_analysis",
+            "bandit_algorithms",
+            "adaptive_learning_rate",
+            "optimization_algorithms",
+            "convex_optimization"
+        ]
+    },
+    "semi_supervised_learning_algorithms": {
+        "title": "Semi-Supervised Learning Algorithms",
+        "prerequisites": [
+            "supervised_learning",
+            "unsupervised_learning",
+            "machine_learning",
+            "deep_learning",
+            "label_propagation",
+            "graph_based_methods",
+            "generative_models"
+        ],
+        "further_readings": [
+            "co_training",
+            "multi_view_learning",
+            "self_training",
+            "active_learning",
+            "domain_adaptation",
+            "transfer_learning",
+            "ensemble_methods"
+        ]
+    },
+    "multi_task_learning_algorithms": {
+        "title": "Multi-Task Learning Algorithms",
+        "prerequisites": [
+            "supervised_learning",
+            "deep_learning",
+            "neural_networks",
+            "transfer_learning"
+        ],
+        "further_readings": [
+            "hard_parameter_sharing",
+            "soft_parameter_sharing",
+            "cross_stitch_networks",
+            "attention_mechanisms",
+            "lifelong_learning"
+        ]
+    },
+    "neural_architecture_search": {
+        "title": "Neural Architecture Search",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "deep_learning",
+            "convolutional_neural_network",
+            "recurrent_neural_network",
+            "genetic_algorithms",
+            "reinforcement_learning"
+        ],
+        "further_readings": [
+            "differentiable_architecture_search",
+            "bayesian_optimization",
+            "evolutionary_algorithms",
+            "transfer_learning",
+            "meta_learning"
+        ]
+    },
+    "automl": {
+        "title": "AutoML",
+        "prerequisites": [
+            "machine_learning",
+            "deep_learning",
+            "neural_networks",
+            "genetic_algorithms",
+            "bayesian_optimization",
+            "reinforcement_learning",
+            "hyperparameter_optimization"
+        ],
+        "further_readings": [
+            "transfer_learning",
+            "meta_learning",
+            "multi_task_learning",
+            "ensemble_learning",
+            "active_learning",
+            "few_shot_learning"
+        ]
+    },
+    "population_based_training": {
+        "title": "Population Based Training",
+        "prerequisites": [
+            "genetic_algorithms",
+            "reinforcement_learning",
+            "hyperparameter_optimization",
+            "neural_networks"
+        ],
+        "further_readings": [
+            "distributed_computing",
+            "evolutionary_strategies",
+            "particle_swarm_optimization",
+            "bayesian_optimization"
         ]
     }
 }
