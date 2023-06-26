@@ -19936,7 +19936,7 @@
             "copula_based_dependence_measures"
         ]
     },
-    "copula_based_time_series_analysis": {
+    "copula-based_time_series_analysis": {
         "title": "Copula-based Time Series Analysis",
         "prerequisites": [
             "time_series_analysis",
@@ -19971,7 +19971,7 @@
             "copula_based_classification"
         ]
     },
-    "copula_based_machine_learning_methods": {
+    "copula-based_machine_learning_methods": {
         "title": "Copula-based Machine Learning Methods",
         "prerequisites": [
             "probability_theory",
