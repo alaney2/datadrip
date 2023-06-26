@@ -19567,5 +19567,517 @@
             "manova_interpretation",
             "manova_vs_anova"
         ]
+    },
+    "categorical_distribution": {
+        "title": "Categorical Distribution",
+        "prerequisites": [
+            "probability_theory",
+            "discrete_random_variables"
+        ],
+        "further_readings": [
+            "multinomial_distribution",
+            "dirichlet_distribution",
+            "cross_entropy_loss"
+        ]
+    },
+    "covariance_matrix": {
+        "title": "Covariance Matrix",
+        "prerequisites": [
+            "probability_theory",
+            "linear_algebra",
+            "multivariate_normal_distribution"
+        ],
+        "further_readings": [
+            "principal_component_analysis",
+            "linear_regression",
+            "multivariate_regression",
+            "canonical_correlation_analysis"
+        ]
+    },
+    "canonical_correlation_analysis": {
+        "title": "Canonical Correlation Analysis",
+        "prerequisites": [
+            "linear_algebra",
+            "multivariate_statistics",
+            "principal_component_analysis",
+            "linear_regression"
+        ],
+        "further_readings": [
+            "partial_least_squares",
+            "redundancy_analysis",
+            "multivariate_regression",
+            "manifold_learning"
+        ]
+    },
+    "multivariate_regression_analysis": {
+        "title": "Multivariate Regression Analysis",
+        "prerequisites": [
+            "linear_regression",
+            "multiple_regression",
+            "least_squares",
+            "gradient_descent"
+        ],
+        "further_readings": [
+            "ridge_regression",
+            "lasso_regression",
+            "principal_component_regression",
+            "partial_least_squares"
+        ]
+    },
+    "discriminant_analysis": {
+        "title": "Discriminant Analysis",
+        "prerequisites": [
+            "linear_algebra",
+            "multivariate_statistics",
+            "supervised_learning"
+        ],
+        "further_readings": [
+            "linear_discriminant_analysis",
+            "quadratic_discriminant_analysis",
+            "principal_component_analysis",
+            "support_vector_machines",
+            "logistic_regression"
+        ]
+    },
+    "log_normal_distribution": {
+        "title": "Log Normal Distribution",
+        "prerequisites": [
+            "probability_distributions",
+            "normal_distribution",
+            "logarithm"
+        ],
+        "further_readings": [
+            "logistic_regression",
+            "maximum_likelihood_estimation",
+            "generalized_linear_models",
+            "exponential_family"
+        ]
+    },
+    "gamma_process": {
+        "title": "Gamma Process",
+        "prerequisites": [
+            "poisson_process",
+            "gamma_distribution",
+            "stochastic_processes",
+            "bayesian_nonparametrics"
+        ],
+        "further_readings": [
+            "dirichlet_process",
+            "levy_process",
+            "beta_process",
+            "gaussian_process",
+            "completely_random_measures"
+        ]
+    },
+    "continuous_random_variables": {
+        "title": "Continuous Random Variables",
+        "prerequisites": [
+            "probability_density_function",
+            "cumulative_distribution_function",
+            "expected_value",
+            "variance"
+        ],
+        "further_readings": [
+            "uniform_distribution",
+            "normal_distribution",
+            "exponential_distribution",
+            "gamma_distribution",
+            "beta_distribution"
+        ]
+    },
+    "dirichlet_multinomial_distribution": {
+        "title": "Dirichlet Multinomial Distribution",
+        "prerequisites": [
+            "probability_theory",
+            "multinomial_distribution",
+            "dirichlet_distribution",
+            "bayesian_statistics"
+        ],
+        "further_readings": [
+            "conjugate_prior",
+            "latent_dirichlet_allocation",
+            "gibbs_sampling",
+            "variational_inference"
+        ]
+    },
+    "hierarchical_dirichlet_process": {
+        "title": "Hierarchical Dirichlet Process",
+        "prerequisites": [
+            "dirichlet_distribution",
+            "gibbs_sampling",
+            "latent_dirichlet_allocation",
+            "bayesian_nonparametrics",
+            "chinese_restaurant_process"
+        ],
+        "further_readings": [
+            "dirichlet_process",
+            "stick_breaking_process",
+            "infinite_latent_feature_models",
+            "collapsed_gibbs_sampling",
+            "variational_inference"
+        ]
+    },
+    "hazard_functions": {
+        "title": "Hazard Functions",
+        "prerequisites": [
+            "probability_density_function",
+            "cumulative_distribution_function",
+            "survival_analysis"
+        ],
+        "further_readings": [
+            "cox_proportional_hazards_model",
+            "accelerated_failure_time_model",
+            "kaplan_meier_estimator",
+            "nelson_aalen_estimator",
+            "nonparametric_hazard_estimation"
+        ]
+    },
+    "extreme_value_distribution": {
+        "title": "Extreme Value Distribution",
+        "prerequisites": [
+            "probability_theory",
+            "cumulative_distribution_function",
+            "probability_density_function",
+            "generalized_extreme_value_distribution"
+        ],
+        "further_readings": [
+            "fisher_tippett_gnedenko_theorem",
+            "gumbel_distribution",
+            "frechet_distribution",
+            "weibull_distribution",
+            "pickands_balkema_de_haan_theorem"
+        ]
+    },
+    "reliability_engineering": {
+        "title": "Reliability Engineering",
+        "prerequisites": [
+            "probability_theory",
+            "failure_analysis",
+            "fault_tolerance",
+            "system_reliability",
+            "reliability_growth_models",
+            "maintainability"
+        ],
+        "further_readings": [
+            "reliability_prediction",
+            "reliability_allocation",
+            "reliability_centered_maintenance",
+            "reliability_testing",
+            "reliability_data_analysis",
+            "reliability_optimization"
+        ]
+    },
+    "accelerated_life_testing": {
+        "title": "Accelerated Life Testing",
+        "prerequisites": [
+            "reliability_engineering",
+            "survival_analysis",
+            "probability_distributions",
+            "maximum_likelihood_estimation"
+        ],
+        "further_readings": [
+            "weibull_distribution",
+            "proportional_hazards_model",
+            "bayesian_reliability_analysis",
+            "nonparametric_reliability_estimation"
+        ]
+    },
+    "censoring_and_truncation": {
+        "title": "Censoring and Truncation",
+        "prerequisites": [
+            "survival_analysis",
+            "hazard_function",
+            "kaplan_meier_estimator",
+            "cox_proportional_hazards_model"
+        ],
+        "further_readings": [
+            "accelerated_failure_time_model",
+            "nonparametric_estimation",
+            "semi_parametric_estimation",
+            "competing_risks"
+        ]
+    },
+    "analysis_of_variance": {
+        "title": "Analysis Of Variance",
+        "prerequisites": [
+            "probability_theory",
+            "hypothesis_testing",
+            "linear_regression"
+        ],
+        "further_readings": [
+            "anova_assumptions",
+            "anova_extensions",
+            "multivariate_analysis_of_variance",
+            "repeated_measures_anova",
+            "mixed_effects_models"
+        ]
+    },
+    "levy_distribution": {
+        "title": "L\u00e9vy Distribution",
+        "prerequisites": [
+            "probability_theory",
+            "probability_distributions",
+            "stable_distributions"
+        ],
+        "further_readings": [
+            "levy_flight",
+            "levy_processes",
+            "heavy_tailed_distributions",
+            "alpha_stable_distributions",
+            "levy_khintchine_representation"
+        ]
+    },
+    "heavy_tailed_distributions": {
+        "title": "Heavy Tailed Distributions",
+        "prerequisites": [
+            "probability_theory",
+            "probability_distributions",
+            "statistical_moments",
+            "central_limit_theorem"
+        ],
+        "further_readings": [
+            "pareto_distribution",
+            "levy_distribution",
+            "stable_distributions",
+            "extreme_value_theory",
+            "power_law"
+        ]
+    },
+    "statistics_of_extremes": {
+        "title": "Statistics of Extremes",
+        "prerequisites": [
+            "probability_theory",
+            "statistical_inference",
+            "maximum_likelihood_estimation",
+            "generalized_extreme_value_distribution",
+            "generalized_pareto_distribution"
+        ],
+        "further_readings": [
+            "extreme_value_theory",
+            "multivariate_extreme_value_theory",
+            "peak_over_threshold_method",
+            "return_level_analysis",
+            "extremal_dependence"
+        ]
+    },
+    "dependence_modeling": {
+        "title": "Dependence Modeling",
+        "prerequisites": [
+            "probability_theory",
+            "statistical_inference",
+            "linear_regression",
+            "multivariate_regression",
+            "copula_theory"
+        ],
+        "further_readings": [
+            "bayesian_networks",
+            "graphical_models",
+            "time_series_analysis",
+            "extreme_value_theory",
+            "vine_copulas"
+        ]
+    },
+    "vine_copulas": {
+        "title": "Vine Copulas",
+        "prerequisites": [
+            "copula_theory",
+            "multivariate_distributions",
+            "dependence_measures",
+            "maximum_likelihood_estimation"
+        ],
+        "further_readings": [
+            "pair_copulas",
+            "regular_vines",
+            "canonical_vines",
+            "vine_copula_models"
+        ]
+    },
+    "archimedean_copulas": {
+        "title": "Archimedean Copulas",
+        "prerequisites": [
+            "copula_theory",
+            "multivariate_distributions",
+            "dependence_measures"
+        ],
+        "further_readings": [
+            "copula_models",
+            "vine_copulas",
+            "extreme_value_copulas",
+            "copula_simulation",
+            "copula_estimation"
+        ]
+    },
+    "copula_regression": {
+        "title": "Copula Regression",
+        "prerequisites": [
+            "copula_theory",
+            "maximum_likelihood_estimation",
+            "generalized_linear_models",
+            "multivariate_regression"
+        ],
+        "further_readings": [
+            "copula_selection",
+            "copula_applications",
+            "vine_copulas",
+            "copula_based_dependence_modelling"
+        ]
+    },
+    "copula_garch_models": {
+        "title": "Copula GARCH Models",
+        "prerequisites": [
+            "generalized_autoregressive_conditional_heteroskedasticity",
+            "copula_theory",
+            "multivariate_time_series"
+        ],
+        "further_readings": [
+            "dynamic_conditional_correlation_garch",
+            "vine_copulas",
+            "copula_value_at_risk",
+            "copula_based_dependence_measures"
+        ]
+    },
+    "copula_based_time_series_analysis": {
+        "title": "Copula-based Time Series Analysis",
+        "prerequisites": [
+            "time_series_analysis",
+            "copulas",
+            "multivariate_time_series",
+            "maximum_likelihood_estimation",
+            "arch_models",
+            "garch_models"
+        ],
+        "further_readings": [
+            "vine_copulas",
+            "copula_garch_models",
+            "copula_arima_models",
+            "copula_wavelet_analysis",
+            "copula_extreme_value_theory"
+        ]
+    },
+    "copula_networks": {
+        "title": "Copula Networks",
+        "prerequisites": [
+            "probability_theory",
+            "copulas",
+            "bayesian_networks",
+            "graphical_models",
+            "maximum_likelihood_estimation"
+        ],
+        "further_readings": [
+            "copula_gaussian_graphical_models",
+            "vine_copulas",
+            "copula_regression",
+            "copula_based_anomaly_detection",
+            "copula_based_classification"
+        ]
+    },
+    "copula_based_machine_learning_methods": {
+        "title": "Copula-based Machine Learning Methods",
+        "prerequisites": [
+            "probability_theory",
+            "copulas",
+            "maximum_likelihood_estimation",
+            "bayesian_inference",
+            "kernel_density_estimation",
+            "support_vector_machines",
+            "neural_networks"
+        ],
+        "further_readings": [
+            "copula_theory",
+            "multivariate_dependence_modeling",
+            "copula_applications_in_finance",
+            "copula_applications_in_hydrology",
+            "copula_applications_in_healthcare"
+        ]
+    },
+    "factorial_moments": {
+        "title": "Factorial Moments",
+        "prerequisites": [
+            "probability_theory",
+            "random_variables",
+            "moment_generating_functions"
+        ],
+        "further_readings": [
+            "central_moments",
+            "cumulants",
+            "moment_problem",
+            "characteristic_functions"
+        ]
+    },
+    "zero_inflated_negative_binomial_distribution": {
+        "title": "Zero Inflated Negative Binomial Distribution",
+        "prerequisites": [
+            "negative_binomial_distribution",
+            "poisson_distribution",
+            "probability_mass_function",
+            "maximum_likelihood_estimation"
+        ],
+        "further_readings": [
+            "zero_inflated_poisson_distribution",
+            "zero_inflated_models",
+            "count_data_regression",
+            "generalized_linear_models"
+        ]
+    },
+    "hurdle_negative_binomial_distribution": {
+        "title": "Hurdle Negative Binomial Distribution",
+        "prerequisites": [
+            "negative_binomial_distribution",
+            "zero_inflated_models",
+            "poisson_distribution",
+            "probability_mass_function"
+        ],
+        "further_readings": [
+            "zero_truncated_negative_binomial_distribution",
+            "zero_inflated_poisson_distribution",
+            "generalized_linear_models",
+            "count_data_regression"
+        ]
+    },
+    "beta_negative_binomial_distribution": {
+        "title": "Beta Negative Binomial Distribution",
+        "prerequisites": [
+            "negative_binomial_distribution",
+            "beta_distribution",
+            "probability_density_function",
+            "cumulative_distribution_function",
+            "maximum_likelihood_estimation"
+        ],
+        "further_readings": [
+            "gamma_distribution",
+            "dirichlet_distribution",
+            "bayesian_statistics",
+            "conjugate_prior"
+        ]
+    },
+    "glm_models": {
+        "title": "GLM Models",
+        "prerequisites": [
+            "linear_regression",
+            "logistic_regression",
+            "poisson_regression",
+            "exponential_family"
+        ],
+        "further_readings": [
+            "generalized_linear_mixed_models",
+            "multivariate_adaptive_regression_splines",
+            "lasso_regression",
+            "ridge_regression",
+            "elastic_net_regression"
+        ]
+    },
+    "exponential_family": {
+        "title": "Exponential Family",
+        "prerequisites": [
+            "probability_theory",
+            "maximum_likelihood_estimation",
+            "information_theory"
+        ],
+        "further_readings": [
+            "generalized_linear_models",
+            "natural_gradient_descent",
+            "variational_inference",
+            "expectation_propagation"
+        ]
     }
 }
