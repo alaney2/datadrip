@@ -18863,5 +18863,709 @@
             "causal_discovery",
             "causal_effect_estimation"
         ]
+    },
+    "pooling_layers": {
+        "title": "Pooling Layers",
+        "prerequisites": [
+            "convolutional_neural_network",
+            "deep_learning",
+            "artificial_neural_network"
+        ],
+        "further_readings": [
+            "max_pooling",
+            "average_pooling",
+            "global_average_pooling",
+            "global_max_pooling"
+        ]
+    },
+    "dropout_layers": {
+        "title": "Dropout Layers",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "deep_learning",
+            "overfitting",
+            "regularization"
+        ],
+        "further_readings": [
+            "convolutional_neural_networks",
+            "recurrent_neural_networks",
+            "batch_normalization",
+            "weight_initialization"
+        ]
+    },
+    "causal_explanation_methods": {
+        "title": "Causal Explanation Methods",
+        "prerequisites": [
+            "causal_inference",
+            "bayesian_networks",
+            "potential_outcomes_framework",
+            "graphical_models",
+            "counterfactuals"
+        ],
+        "further_readings": [
+            "do_calculus",
+            "causal_discovery",
+            "causal_effect_estimation",
+            "instrumental_variables",
+            "propensity_score_matching"
+        ]
+    },
+    "machine_learning_for_causal_inference": {
+        "title": "Machine Learning for Causal Inference",
+        "prerequisites": [
+            "causal_inference",
+            "supervised_learning",
+            "unsupervised_learning",
+            "reinforcement_learning",
+            "potential_outcomes_framework",
+            "propensity_score_matching",
+            "instrumental_variables",
+            "difference_in_differences"
+        ],
+        "further_readings": [
+            "causal_forests",
+            "causal_convolutional_neural_networks",
+            "deep_iv",
+            "causal_effect_variational_autoencoders",
+            "causal_bayesian_networks",
+            "counterfactual_regression",
+            "causal_discovery",
+            "causal_impact"
+        ]
+    },
+    "causal_inference_in_health_research": {
+        "title": "Causal Inference in Health Research",
+        "prerequisites": [
+            "observational_study",
+            "randomized_controlled_trial",
+            "confounding",
+            "counterfactual_framework",
+            "propensity_score_matching",
+            "instrumental_variables"
+        ],
+        "further_readings": [
+            "causal_diagrams",
+            "difference_in_differences",
+            "synthetic_control_method",
+            "causal_impact_analysis"
+        ]
+    },
+    "interventional_distributions": {
+        "title": "Interventional Distributions",
+        "prerequisites": [
+            "causal_inference",
+            "graphical_models",
+            "probability_theory"
+        ],
+        "further_readings": [
+            "counterfactual_inference",
+            "do_calculus",
+            "causal_effect_estimation",
+            "causal_discovery"
+        ]
+    },
+    "causal_effects": {
+        "title": "Causal Effects",
+        "prerequisites": [
+            "causal_inference",
+            "potential_outcomes_framework",
+            "confounding",
+            "instrumental_variables",
+            "propensity_score_matching"
+        ],
+        "further_readings": [
+            "causal_graphs",
+            "difference_in_differences",
+            "synthetic_control_method",
+            "mediation_analysis"
+        ]
+    },
+    "potential_outcomes": {
+        "title": "Potential Outcomes",
+        "prerequisites": [
+            "causal_inference",
+            "counterfactuals",
+            "observational_data"
+        ],
+        "further_readings": [
+            "causal_graphs",
+            "propensity_score_matching",
+            "instrumental_variables",
+            "difference_in_differences",
+            "regression_discontinuity_design"
+        ]
+    },
+    "inverse_propensity_score_weighting": {
+        "title": "Inverse Propensity Score Weighting",
+        "prerequisites": [
+            "propensity_score",
+            "causal_inference",
+            "observational_study"
+        ],
+        "further_readings": [
+            "doubly_robust_estimation",
+            "matching_estimators",
+            "causal_forests",
+            "targeted_maximum_likelihood_estimation"
+        ]
+    },
+    "counterfactual_fairness": {
+        "title": "Counterfactual Fairness",
+        "prerequisites": [
+            "causal_inference",
+            "fair_machine_learning",
+            "causal_graphs",
+            "potential_outcomes"
+        ],
+        "further_readings": [
+            "counterfactual_explanations",
+            "algorithmic_bias",
+            "fairness_accountability_transparency",
+            "causal_reasoning"
+        ]
+    },
+    "causal_forest": {
+        "title": "Causal Forest",
+        "prerequisites": [
+            "decision_trees",
+            "random_forests",
+            "causal_inference",
+            "machine_learning"
+        ],
+        "further_readings": [
+            "heterogeneous_treatment_effects",
+            "causal_trees",
+            "generalized_random_forests",
+            "causal_impact"
+        ]
+    },
+    "causal_inference_with_missing_data": {
+        "title": "Causal Inference with Missing Data",
+        "prerequisites": [
+            "causal_inference",
+            "missing_data",
+            "multiple_imputation",
+            "propensity_score_matching",
+            "bayesian_networks",
+            "graphical_models"
+        ],
+        "further_readings": [
+            "causal_discovery",
+            "counterfactual_inference",
+            "causal_effect_estimation",
+            "causal_identification",
+            "causal_graphs",
+            "causal_impact"
+        ]
+    },
+    "causal_inference_with_noncompliance": {
+        "title": "Causal Inference With Noncompliance",
+        "prerequisites": [
+            "causal_inference",
+            "potential_outcomes_framework",
+            "instrumental_variables",
+            "randomized_controlled_trials"
+        ],
+        "further_readings": [
+            "compliance_classes",
+            "local_average_treatment_effect",
+            "principal_stratification",
+            "causal_inference_in_economics"
+        ]
+    },
+    "causal_inference_with_time_series_data": {
+        "title": "Causal Inference with Time Series Data",
+        "prerequisites": [
+            "time_series_analysis",
+            "causal_inference",
+            "granger_causality",
+            "vector_autoregression",
+            "dynamic_causal_modelling",
+            "bayesian_networks"
+        ],
+        "further_readings": [
+            "causal_impact",
+            "counterfactual_analysis",
+            "synthetic_control_methods",
+            "difference_in_differences",
+            "causal_discovery"
+        ]
+    },
+    "causal_inference_in_reinforcement_learning": {
+        "title": "Causal Inference in Reinforcement Learning",
+        "prerequisites": [
+            "reinforcement_learning",
+            "causal_inference",
+            "markov_decision_processes",
+            "policy_gradient_methods",
+            "q_learning"
+        ],
+        "further_readings": [
+            "counterfactual_reasoning",
+            "off_policy_evaluation",
+            "causal_bandits",
+            "do_calculus",
+            "structural_causal_models"
+        ]
+    },
+    "causal_inference_in_natural_language_processing": {
+        "title": "Causal Inference in Natural Language Processing",
+        "prerequisites": [
+            "natural_language_processing",
+            "machine_learning",
+            "causal_inference",
+            "bayesian_networks",
+            "potential_outcomes_framework",
+            "counterfactual_reasoning"
+        ],
+        "further_readings": [
+            "causal_effect_estimation",
+            "do_calculus",
+            "causal_discovery",
+            "instrumental_variables",
+            "propensity_score_matching",
+            "text_causality_extraction"
+        ]
+    },
+    "causal_inference_in_public_health": {
+        "title": "Causal Inference in Public Health",
+        "prerequisites": [
+            "probability_theory",
+            "statistical_inference",
+            "observational_study",
+            "experimental_study",
+            "confounding",
+            "counterfactual_framework"
+        ],
+        "further_readings": [
+            "causal_graphs",
+            "propensity_score_matching",
+            "instrumental_variables",
+            "difference_in_differences",
+            "synthetic_control_methods",
+            "causal_impact"
+        ]
+    },
+    "underfitting": {
+        "title": "Underfitting",
+        "prerequisites": [
+            "supervised_learning",
+            "model_complexity",
+            "bias_variance_tradeoff"
+        ],
+        "further_readings": [
+            "regularization",
+            "cross_validation",
+            "ensemble_methods",
+            "hyperparameter_tuning"
+        ]
+    },
+    "akaike_information_criterion": {
+        "title": "Akaike Information Criterion",
+        "prerequisites": [
+            "maximum_likelihood_estimation",
+            "model_selection",
+            "information_theory"
+        ],
+        "further_readings": [
+            "bayesian_information_criterion",
+            "cross_validation",
+            "minimum_description_length",
+            "model_complexity"
+        ]
+    },
+    "bayesian_information_criterion": {
+        "title": "Bayesian Information Criterion",
+        "prerequisites": [
+            "bayesian_statistics",
+            "model_selection",
+            "maximum_likelihood_estimation"
+        ],
+        "further_readings": [
+            "akaike_information_criterion",
+            "cross_validation",
+            "bayesian_model_comparison",
+            "model_complexity"
+        ]
+    },
+    "minimum_description_length": {
+        "title": "Minimum Description Length",
+        "prerequisites": [
+            "information_theory",
+            "kolmogorov_complexity",
+            "model_selection",
+            "bayesian_inference"
+        ],
+        "further_readings": [
+            "algorithmic_information_theory",
+            "mdl_principle",
+            "aic_criterion",
+            "bic_criterion",
+            "cross_validation"
+        ]
+    },
+    "softmax_function": {
+        "title": "Softmax Function",
+        "prerequisites": [
+            "probability_theory",
+            "multiclass_classification",
+            "logistic_regression"
+        ],
+        "further_readings": [
+            "cross_entropy_loss",
+            "gradient_descent",
+            "backpropagation",
+            "neural_networks",
+            "deep_learning"
+        ]
+    },
+    "binary_cross_entropy_loss": {
+        "title": "Binary Cross Entropy Loss",
+        "prerequisites": [
+            "cross_entropy",
+            "logistic_regression",
+            "neural_networks"
+        ],
+        "further_readings": [
+            "categorical_cross_entropy_loss",
+            "softmax_activation",
+            "optimization_algorithms"
+        ]
+    },
+    "categorical_cross_entropy_loss": {
+        "title": "Categorical Cross Entropy Loss",
+        "prerequisites": [
+            "probability_theory",
+            "information_theory",
+            "logarithm",
+            "softmax_function",
+            "neural_networks",
+            "deep_learning"
+        ],
+        "further_readings": [
+            "binary_cross_entropy_loss",
+            "mean_squared_error_loss",
+            "optimization_algorithms",
+            "backpropagation",
+            "gradient_descent"
+        ]
+    },
+    "jensen_shannon_divergence": {
+        "title": "Jensen-Shannon Divergence",
+        "prerequisites": [
+            "information_theory",
+            "kl_divergence",
+            "probability_distributions"
+        ],
+        "further_readings": [
+            "mutual_information",
+            "cross_entropy",
+            "entropy",
+            "bayesian_inference"
+        ]
+    },
+    "entropy": {
+        "title": "Entropy",
+        "prerequisites": [
+            "information_theory",
+            "probability_theory",
+            "shannon_entropy"
+        ],
+        "further_readings": [
+            "cross_entropy",
+            "mutual_information",
+            "kl_divergence",
+            "conditional_entropy",
+            "relative_entropy"
+        ]
+    },
+    "divergence_measures": {
+        "title": "Divergence Measures",
+        "prerequisites": [
+            "information_theory",
+            "probability_theory",
+            "entropy",
+            "cross_entropy",
+            "mutual_information"
+        ],
+        "further_readings": [
+            "kullback_leibler_divergence",
+            "jensen_shannon_divergence",
+            "total_variation_distance",
+            "hellinger_distance",
+            "bhattacharyya_distance"
+        ]
+    },
+    "f_kl_divergence": {
+        "title": "F-KL Divergence",
+        "prerequisites": [
+            "information_theory",
+            "entropy",
+            "cross_entropy",
+            "probability_distributions"
+        ],
+        "further_readings": [
+            "mutual_information",
+            "relative_entropy",
+            "bayesian_inference",
+            "variational_inference"
+        ]
+    },
+    "mutual_information": {
+        "title": "Mutual Information",
+        "prerequisites": [
+            "information_theory",
+            "entropy",
+            "joint_entropy",
+            "conditional_entropy"
+        ],
+        "further_readings": [
+            "kl_divergence",
+            "mutual_information_estimators",
+            "information_bottleneck",
+            "feature_selection"
+        ]
+    },
+    "standard_deviation": {
+        "title": "Standard Deviation",
+        "prerequisites": [
+            "mean",
+            "variance",
+            "probability_distribution"
+        ],
+        "further_readings": [
+            "covariance",
+            "correlation_coefficient",
+            "normal_distribution",
+            "central_limit_theorem"
+        ]
+    },
+    "probability_mass_functions": {
+        "title": "Probability Mass Functions",
+        "prerequisites": [
+            "probability_theory",
+            "discrete_random_variables"
+        ],
+        "further_readings": [
+            "probability_density_functions",
+            "cumulative_distribution_functions",
+            "joint_probability_distributions",
+            "conditional_probability"
+        ]
+    },
+    "sampling_distributions": {
+        "title": "Sampling Distributions",
+        "prerequisites": [
+            "probability_theory",
+            "random_variables",
+            "central_limit_theorem",
+            "statistical_inference"
+        ],
+        "further_readings": [
+            "bootstrap_method",
+            "monte_carlo_simulation",
+            "nonparametric_statistics",
+            "bayesian_inference"
+        ]
+    },
+    "expectation_and_variance": {
+        "title": "Expectation and Variance",
+        "prerequisites": [
+            "probability_theory",
+            "random_variables",
+            "probability_distributions"
+        ],
+        "further_readings": [
+            "covariance",
+            "correlation",
+            "central_limit_theorem",
+            "moment_generating_functions"
+        ]
+    },
+    "discrete_mathematics": {
+        "title": "Discrete Mathematics",
+        "prerequisites": [
+            "set_theory",
+            "logic",
+            "combinatorics",
+            "graph_theory",
+            "number_theory"
+        ],
+        "further_readings": [
+            "probability_theory",
+            "algorithm_analysis",
+            "automata_theory",
+            "computational_complexity"
+        ]
+    },
+    "t_distribution": {
+        "title": "T Distribution",
+        "prerequisites": [
+            "probability_theory",
+            "central_limit_theorem",
+            "confidence_intervals",
+            "hypothesis_testing"
+        ],
+        "further_readings": [
+            "chi_square_distribution",
+            "f_distribution",
+            "anova",
+            "nonparametric_statistics",
+            "bayesian_inference"
+        ]
+    },
+    "normality_tests": {
+        "title": "Normality Tests",
+        "prerequisites": [
+            "probability_distributions",
+            "hypothesis_testing",
+            "statistical_significance",
+            "central_limit_theorem"
+        ],
+        "further_readings": [
+            "shapiro_wilk_test",
+            "kolmogorov_smirnov_test",
+            "lilliefors_test",
+            "anderson_darling_test",
+            "jarque_bera_test"
+        ]
+    },
+    "derivative_rules": {
+        "title": "Derivative Rules",
+        "prerequisites": [
+            "limits",
+            "continuity",
+            "differentiation",
+            "chain_rule",
+            "product_rule",
+            "quotient_rule"
+        ],
+        "further_readings": [
+            "partial_derivatives",
+            "implicit_differentiation",
+            "higher_order_derivatives",
+            "applications_of_derivatives"
+        ]
+    },
+    "integrals_and_limits": {
+        "title": "Integrals and Limits",
+        "prerequisites": [
+            "calculus",
+            "real_analysis",
+            "continuous_functions",
+            "differentiation"
+        ],
+        "further_readings": [
+            "riemann_integral",
+            "lebesgue_integral",
+            "improper_integral",
+            "multivariable_calculus",
+            "complex_analysis",
+            "measure_theory"
+        ]
+    },
+    "gamma_function": {
+        "title": "Gamma Function",
+        "prerequisites": [
+            "factorial",
+            "integral_calculus",
+            "complex_numbers"
+        ],
+        "further_readings": [
+            "beta_function",
+            "digamma_function",
+            "polygamma_function",
+            "stirling_approximation",
+            "lanczos_approximation"
+        ]
+    },
+    "conjugate_priors": {
+        "title": "Conjugate Priors",
+        "prerequisites": [
+            "bayesian_inference",
+            "probability_distributions",
+            "bayes_theorem"
+        ],
+        "further_readings": [
+            "beta_distribution",
+            "gamma_distribution",
+            "dirichlet_distribution",
+            "exponential_family"
+        ]
+    },
+    "beta_regression": {
+        "title": "Beta Regression",
+        "prerequisites": [
+            "linear_regression",
+            "logistic_regression",
+            "generalized_linear_models",
+            "maximum_likelihood_estimation"
+        ],
+        "further_readings": [
+            "ordinal_regression",
+            "multinomial_regression",
+            "zero_inflated_models",
+            "hurdle_models",
+            "bayesian_regression"
+        ]
+    },
+    "beta_binomial_distribution": {
+        "title": "Beta Binomial Distribution",
+        "prerequisites": [
+            "binomial_distribution",
+            "beta_distribution",
+            "conjugate_prior"
+        ],
+        "further_readings": [
+            "bayesian_inference",
+            "hierarchical_models",
+            "generalized_linear_models"
+        ]
+    },
+    "covariance_and_correlation": {
+        "title": "Covariance and Correlation",
+        "prerequisites": [
+            "probability_theory",
+            "random_variables",
+            "expected_value",
+            "variance"
+        ],
+        "further_readings": [
+            "linear_regression",
+            "principal_component_analysis",
+            "pearson_correlation_coefficient",
+            "spearman_rank_correlation_coefficient",
+            "kendall_tau_correlation_coefficient"
+        ]
+    },
+    "multivariate_regression": {
+        "title": "Multivariate Regression",
+        "prerequisites": [
+            "linear_regression",
+            "multiple_linear_regression",
+            "gradient_descent",
+            "cost_function"
+        ],
+        "further_readings": [
+            "ridge_regression",
+            "lasso_regression",
+            "principal_component_analysis",
+            "partial_least_squares"
+        ]
+    },
+    "multivariate_anova": {
+        "title": "Multivariate Anova",
+        "prerequisites": [
+            "anova",
+            "linear_regression",
+            "hypothesis_testing",
+            "multivariate_normal_distribution"
+        ],
+        "further_readings": [
+            "manova_assumptions",
+            "manova_applications",
+            "manova_interpretation",
+            "manova_vs_anova"
+        ]
     }
 }
