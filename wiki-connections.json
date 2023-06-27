@@ -21853,5 +21853,392 @@
             "3d_reconstruction",
             "3d_shape_analysis"
         ]
+    },
+    "volumetric_data": {
+        "title": "Volumetric Data",
+        "prerequisites": [
+            "computer_vision",
+            "image_processing",
+            "3d_reconstruction",
+            "convolutional_neural_network"
+        ],
+        "further_readings": [
+            "point_cloud",
+            "octree",
+            "voxel_grid",
+            "3d_image_segmentation",
+            "3d_object_detection"
+        ]
+    },
+    "isosurface_extraction": {
+        "title": "Isosurface Extraction",
+        "prerequisites": [
+            "marching_cubes_algorithm",
+            "volume_rendering",
+            "computer_graphics",
+            "3d_data_representation"
+        ],
+        "further_readings": [
+            "surface_nets_algorithm",
+            "dual_contouring",
+            "adaptive_marching_cubes",
+            "octree_data_structure"
+        ]
+    },
+    "voxelization": {
+        "title": "Voxelization",
+        "prerequisites": [
+            "computer_graphics",
+            "3d_modeling",
+            "spatial_data_structures",
+            "geometry_processing"
+        ],
+        "further_readings": [
+            "octree",
+            "point_cloud",
+            "marching_cubes",
+            "isosurface_extraction",
+            "volume_rendering"
+        ]
+    },
+    "neural_network_activation_functions": {
+        "title": "Neural Network Activation Functions",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "deep_learning",
+            "backpropagation"
+        ],
+        "further_readings": [
+            "rectified_linear_units",
+            "softmax_function",
+            "sigmoid_function",
+            "tanh_function",
+            "leaky_relu",
+            "swish_function",
+            "maxout_function"
+        ]
+    },
+    "early_stopping_in_neural_networks": {
+        "title": "Early Stopping in Neural Networks",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "gradient_descent",
+            "overfitting",
+            "cross_validation"
+        ],
+        "further_readings": [
+            "dropout",
+            "regularization",
+            "learning_rate_scheduling",
+            "model_selection"
+        ]
+    },
+    "neural_network_architecture": {
+        "title": "Neural Network Architecture",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "feedforward_neural_networks",
+            "backpropagation",
+            "activation_functions",
+            "loss_functions",
+            "optimization_algorithms"
+        ],
+        "further_readings": [
+            "convolutional_neural_networks",
+            "recurrent_neural_networks",
+            "deep_learning",
+            "transfer_learning",
+            "unsupervised_learning",
+            "reinforcement_learning"
+        ]
+    },
+    "long_short_term_memory_networks": {
+        "title": "Long Short-term Memory Networks",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "recurrent_neural_networks",
+            "backpropagation",
+            "gradient_descent"
+        ],
+        "further_readings": [
+            "gated_recurrent_units",
+            "bidirectional_recurrent_neural_networks",
+            "sequence_to_sequence_models",
+            "attention_mechanism"
+        ]
+    },
+    "residual_networks": {
+        "title": "Residual Networks",
+        "prerequisites": [
+            "deep_learning",
+            "convolutional_neural_network",
+            "backpropagation",
+            "gradient_descent",
+            "batch_normalization"
+        ],
+        "further_readings": [
+            "identity_mapping",
+            "dense_net",
+            "stochastic_depth",
+            "inception_network",
+            "squeeze_and_excitation"
+        ]
+    },
+    "vanishing_gradient_problem": {
+        "title": "Vanishing Gradient Problem",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "backpropagation",
+            "activation_functions"
+        ],
+        "further_readings": [
+            "long_short_term_memory",
+            "gated_recurrent_units",
+            "batch_normalization",
+            "residual_networks",
+            "gradient_clipping"
+        ]
+    },
+    "exploding_gradient_problem": {
+        "title": "Exploding Gradient Problem",
+        "prerequisites": [
+            "backpropagation",
+            "gradient_descent",
+            "vanishing_gradient_problem",
+            "recurrent_neural_networks"
+        ],
+        "further_readings": [
+            "long_short_term_memory",
+            "gradient_clipping",
+            "batch_normalization",
+            "weight_initialization"
+        ]
+    },
+    "adadelta_optimizer": {
+        "title": "Adadelta Optimizer",
+        "prerequisites": [
+            "gradient_descent",
+            "stochastic_gradient_descent",
+            "adaptive_gradient_methods"
+        ],
+        "further_readings": [
+            "adam_optimizer",
+            "adagrad_optimizer",
+            "rmsprop_optimizer",
+            "momentum_optimizer"
+        ]
+    },
+    "rmsprop_optimizer": {
+        "title": "RMSprop Optimizer",
+        "prerequisites": [
+            "gradient_descent",
+            "stochastic_gradient_descent",
+            "adaptive_gradient_methods"
+        ],
+        "further_readings": [
+            "adam_optimizer",
+            "adagrad_optimizer",
+            "momentum_optimizer",
+            "nesterov_accelerated_gradient"
+        ]
+    },
+    "l2_regularization": {
+        "title": "L2 Regularization",
+        "prerequisites": [
+            "linear_regression",
+            "logistic_regression",
+            "overfitting",
+            "cost_function",
+            "gradient_descent"
+        ],
+        "further_readings": [
+            "ridge_regression",
+            "lasso_regression",
+            "elastic_net",
+            "dropout",
+            "early_stopping"
+        ]
+    },
+    "l1_regularization": {
+        "title": "L1 Regularization",
+        "prerequisites": [
+            "linear_regression",
+            "logistic_regression",
+            "ridge_regression",
+            "lasso_regression",
+            "cost_function",
+            "gradient_descent"
+        ],
+        "further_readings": [
+            "elastic_net",
+            "feature_selection",
+            "sparse_representation",
+            "compressed_sensing"
+        ]
+    },
+    "adabound_optimizer": {
+        "title": "AdaBound Optimizer",
+        "prerequisites": [
+            "gradient_descent",
+            "adaptive_gradient_methods",
+            "adam_optimizer"
+        ],
+        "further_readings": [
+            "amsbound_optimizer",
+            "radam_optimizer",
+            "lookahead_optimizer",
+            "optimization_algorithms_comparison"
+        ]
+    },
+    "adam_optimization": {
+        "title": "Adam Optimization",
+        "prerequisites": [
+            "gradient_descent",
+            "stochastic_gradient_descent",
+            "momentum",
+            "adaptive_gradient_algorithm"
+        ],
+        "further_readings": [
+            "rmsprop",
+            "adadelta",
+            "nadam",
+            "amsgrad",
+            "optimization_algorithms_comparison"
+        ]
+    },
+    "backpropagation_algorithm": {
+        "title": "Backpropagation Algorithm",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "gradient_descent",
+            "chain_rule",
+            "loss_functions",
+            "activation_functions"
+        ],
+        "further_readings": [
+            "stochastic_gradient_descent",
+            "optimization_algorithms",
+            "convolutional_neural_network",
+            "recurrent_neural_network",
+            "deep_learning"
+        ]
+    },
+    "learning_rate_scheduling": {
+        "title": "Learning Rate Scheduling",
+        "prerequisites": [
+            "gradient_descent",
+            "stochastic_gradient_descent",
+            "backpropagation",
+            "optimization_algorithms"
+        ],
+        "further_readings": [
+            "adaptive_gradient_methods",
+            "momentum_optimization",
+            "learning_rate_decay",
+            "cyclical_learning_rate"
+        ]
+    },
+    "global_contrast_normalization": {
+        "title": "Global Contrast Normalization",
+        "prerequisites": [
+            "image_preprocessing",
+            "feature_scaling",
+            "convolutional_neural_network"
+        ],
+        "further_readings": [
+            "local_contrast_normalization",
+            "whitening_transformation",
+            "zca_whitening",
+            "batch_normalization"
+        ]
+    },
+    "momentum_methods": {
+        "title": "Momentum Methods",
+        "prerequisites": [
+            "gradient_descent",
+            "optimization_algorithms",
+            "stochastic_gradient_descent"
+        ],
+        "further_readings": [
+            "nesterov_accelerated_gradient",
+            "adam_optimizer",
+            "rmsprop_optimizer",
+            "adagrad_optimizer"
+        ]
+    },
+    "swats": {
+        "title": "Swats: A Versatile Optimizer for Machine Learning",
+        "prerequisites": [
+            "gradient_descent",
+            "stochastic_gradient_descent",
+            "adam_optimizer",
+            "learning_rate_scheduling"
+        ],
+        "further_readings": [
+            "momentum_optimization",
+            "adagrad_optimizer",
+            "rmsprop_optimizer",
+            "nesterov_accelerated_gradient"
+        ]
+    },
+    "evaluating_the_swats_optimizer_on_the_cifar_10_dataset": {
+        "title": "Evaluating the SWATS Optimizer on the CIFAR-10 Dataset",
+        "prerequisites": [
+            "swats_optimizer",
+            "cifar_10_dataset",
+            "deep_learning",
+            "optimization_algorithms"
+        ],
+        "further_readings": [
+            "adam_optimizer",
+            "stochastic_gradient_descent",
+            "learning_rate_scheduling",
+            "convolutional_neural_networks"
+        ]
+    },
+    "a_comparative_study_of_swats_and_other_optimizers": {
+        "title": "A Comparative Study of SWATS and Other Optimizers",
+        "prerequisites": [
+            "stochastic_gradient_descent",
+            "adam_optimizer",
+            "adagrad_optimizer",
+            "rmsprop_optimizer",
+            "momentum_optimizer",
+            "swats_optimizer"
+        ],
+        "further_readings": [
+            "nesterov_accelerated_gradient",
+            "adadelta_optimizer",
+            "ftrl_optimizer",
+            "radam_optimizer",
+            "lookahead_optimizer",
+            "lamb_optimizer"
+        ]
+    },
+    "mean_squared_error": {
+        "title": "Mean Squared Error",
+        "prerequisites": [
+            "linear_regression",
+            "loss_functions",
+            "gradient_descent"
+        ],
+        "further_readings": [
+            "mean_absolute_error",
+            "root_mean_squared_error",
+            "coefficient_of_determination"
+        ]
+    },
+    "root_mean_squared_error": {
+        "title": "Root Mean Squared Error",
+        "prerequisites": [
+            "mean_squared_error",
+            "regression_analysis"
+        ],
+        "further_readings": [
+            "mean_absolute_error",
+            "mean_squared_logarithmic_error",
+            "mean_absolute_percentage_error",
+            "r_squared"
+        ]
     }
 }
