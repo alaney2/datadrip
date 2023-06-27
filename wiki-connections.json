@@ -20079,5 +20079,977 @@
             "variational_inference",
             "expectation_propagation"
         ]
+    },
+    "goodness_of_fit_tests": {
+        "title": "Goodness Of Fit Tests",
+        "prerequisites": [
+            "hypothesis_testing",
+            "chi_square_test",
+            "kolmogorov_smirnov_test",
+            "anderson_darling_test"
+        ],
+        "further_readings": [
+            "likelihood_ratio_test",
+            "cramers_v",
+            "contingency_tables",
+            "nonparametric_tests"
+        ]
+    },
+    "anova": {
+        "title": "ANOVA",
+        "prerequisites": [
+            "hypothesis_testing",
+            "f_distribution",
+            "variance",
+            "linear_regression"
+        ],
+        "further_readings": [
+            "anova_assumptions",
+            "anova_post_hoc_tests",
+            "two_way_anova",
+            "multivariate_analysis_of_variance",
+            "repeated_measures_anova"
+        ]
+    },
+    "mean": {
+        "title": "Mean",
+        "prerequisites": [
+            "probability_theory",
+            "descriptive_statistics"
+        ],
+        "further_readings": [
+            "median",
+            "mode",
+            "variance",
+            "standard_deviation",
+            "central_limit_theorem"
+        ]
+    },
+    "accuracy_vs_precision": {
+        "title": "Accuracy Vs Precision",
+        "prerequisites": [
+            "machine_learning_evaluation_metrics",
+            "classification_metrics",
+            "regression_metrics"
+        ],
+        "further_readings": [
+            "bias_variance_tradeoff",
+            "confusion_matrix",
+            "mean_squared_error",
+            "cross_validation"
+        ]
+    },
+    "type_i_and_type_ii_errors": {
+        "title": "Type I and Type II Errors",
+        "prerequisites": [
+            "hypothesis_testing",
+            "null_hypothesis",
+            "alternative_hypothesis",
+            "statistical_significance"
+        ],
+        "further_readings": [
+            "p_value",
+            "confidence_intervals",
+            "power_analysis",
+            "bayesian_statistics"
+        ]
+    },
+    "precision_recall_tradeoff": {
+        "title": "Precision-Recall Tradeoff",
+        "prerequisites": [
+            "classification_metrics",
+            "confusion_matrix",
+            "machine_learning_evaluation"
+        ],
+        "further_readings": [
+            "roc_curve",
+            "area_under_curve",
+            "f1_score",
+            "average_precision_score"
+        ]
+    },
+    "receiver_operating_characteristic_curve": {
+        "title": "Receiver Operating Characteristic Curve",
+        "prerequisites": [
+            "binary_classification",
+            "true_positive_rate",
+            "false_positive_rate",
+            "confusion_matrix",
+            "thresholds"
+        ],
+        "further_readings": [
+            "precision_recall_curve",
+            "area_under_curve",
+            "performance_metrics",
+            "model_evaluation",
+            "model_selection"
+        ]
+    },
+    "true_positive_rate": {
+        "title": "True Positive Rate",
+        "prerequisites": [
+            "confusion_matrix",
+            "sensitivity",
+            "specificity",
+            "accuracy",
+            "precision",
+            "recall"
+        ],
+        "further_readings": [
+            "roc_curve",
+            "auc_score",
+            "f1_score",
+            "balanced_accuracy",
+            "classification_report"
+        ]
+    },
+    "false_negative_rate": {
+        "title": "False Negative Rate",
+        "prerequisites": [
+            "confusion_matrix",
+            "sensitivity",
+            "specificity",
+            "accuracy",
+            "precision",
+            "recall"
+        ],
+        "further_readings": [
+            "roc_curve",
+            "auc_score",
+            "f1_score",
+            "type_i_and_type_ii_errors",
+            "performance_metrics"
+        ]
+    },
+    "average_precision": {
+        "title": "Average Precision",
+        "prerequisites": [
+            "precision_recall",
+            "information_retrieval",
+            "machine_learning_evaluation"
+        ],
+        "further_readings": [
+            "mean_average_precision",
+            "area_under_curve",
+            "interpolated_precision"
+        ]
+    },
+    "balanced_accuracy": {
+        "title": "Balanced Accuracy",
+        "prerequisites": [
+            "classification_metrics",
+            "confusion_matrix",
+            "accuracy_score"
+        ],
+        "further_readings": [
+            "precision_recall",
+            "f1_score",
+            "roc_auc_score",
+            "imbalanced_datasets"
+        ]
+    },
+    "multiclass_classification_metrics": {
+        "title": "Multiclass Classification Metrics",
+        "prerequisites": [
+            "classification",
+            "confusion_matrix",
+            "accuracy",
+            "precision",
+            "recall",
+            "f1_score"
+        ],
+        "further_readings": [
+            "micro_macro_averaging",
+            "weighted_average",
+            "one_vs_all",
+            "one_vs_one",
+            "multilabel_classification"
+        ]
+    },
+    "weighted_metrics": {
+        "title": "Weighted Metrics",
+        "prerequisites": [
+            "supervised_learning",
+            "evaluation_metrics",
+            "loss_functions"
+        ],
+        "further_readings": [
+            "precision_recall",
+            "f1_score",
+            "roc_auc",
+            "confusion_matrix",
+            "mean_squared_error",
+            "mean_absolute_error"
+        ]
+    },
+    "tanh_function": {
+        "title": "Tanh Function",
+        "prerequisites": [
+            "activation_functions",
+            "neural_networks",
+            "backpropagation"
+        ],
+        "further_readings": [
+            "sigmoid_function",
+            "rectified_linear_unit",
+            "softmax_function",
+            "hyperbolic_functions",
+            "deep_learning"
+        ]
+    },
+    "swish_function": {
+        "title": "Swish Function",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "activation_functions",
+            "rectified_linear_unit"
+        ],
+        "further_readings": [
+            "sigmoid_function",
+            "hyperbolic_tangent_function",
+            "softmax_function",
+            "leaky_relu",
+            "elu_function"
+        ]
+    },
+    "leaky_relu": {
+        "title": "Leaky ReLU",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "activation_functions",
+            "rectified_linear_unit"
+        ],
+        "further_readings": [
+            "deep_learning",
+            "convolutional_neural_networks",
+            "recurrent_neural_networks",
+            "dropout_regularization"
+        ]
+    },
+    "maxout_function": {
+        "title": "Maxout Function",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "activation_functions",
+            "deep_learning"
+        ],
+        "further_readings": [
+            "dropout",
+            "rectified_linear_units",
+            "leaky_relu",
+            "parametric_relu",
+            "exponential_linear_units"
+        ]
+    },
+    "googlenet": {
+        "title": "GoogLeNet",
+        "prerequisites": [
+            "convolutional_neural_network",
+            "deep_learning",
+            "inception_module",
+            "image_classification"
+        ],
+        "further_readings": [
+            "resnet",
+            "vgg",
+            "alexnet",
+            "efficientnet",
+            "squeeze_and_excitation_networks"
+        ]
+    },
+    "mobilenet": {
+        "title": "MobileNet",
+        "prerequisites": [
+            "convolutional_neural_network",
+            "deep_learning",
+            "transfer_learning",
+            "image_classification"
+        ],
+        "further_readings": [
+            "inception_v3",
+            "resnet",
+            "efficientnet",
+            "squeeze_and_excitation_networks",
+            "nasnet"
+        ]
+    },
+    "densenet": {
+        "title": "DenseNet",
+        "prerequisites": [
+            "deep_learning",
+            "convolutional_neural_network",
+            "residual_networks"
+        ],
+        "further_readings": [
+            "image_classification",
+            "transfer_learning",
+            "object_detection",
+            "image_segmentation"
+        ]
+    },
+    "squeezenet": {
+        "title": "SqueezeNet",
+        "prerequisites": [
+            "convolutional_neural_network",
+            "deep_learning",
+            "image_classification"
+        ],
+        "further_readings": [
+            "alexnet",
+            "resnet",
+            "mobilenet",
+            "efficientnet",
+            "vgg"
+        ]
+    },
+    "mobile_net": {
+        "title": "MobileNet",
+        "prerequisites": [
+            "convolutional_neural_network",
+            "deep_learning",
+            "transfer_learning"
+        ],
+        "further_readings": [
+            "inception_v3",
+            "resnet",
+            "efficientnet",
+            "squeezeNet",
+            "shufflenet"
+        ]
+    },
+    "fine_tuning_and_pretraining": {
+        "title": "Fine Tuning and Pretraining",
+        "prerequisites": [
+            "transfer_learning",
+            "deep_learning",
+            "neural_networks",
+            "unsupervised_learning"
+        ],
+        "further_readings": [
+            "bert",
+            "gpt",
+            "transformers",
+            "language_models",
+            "computer_vision"
+        ]
+    },
+    "resnet_versions": {
+        "title": "ResNet Versions",
+        "prerequisites": [
+            "deep_learning",
+            "convolutional_neural_network",
+            "residual_networks"
+        ],
+        "further_readings": [
+            "resnet_paper",
+            "pre_activation_resnet",
+            "resnext",
+            "wide_resnet",
+            "resnet_for_detection"
+        ]
+    },
+    "inception_networks": {
+        "title": "Inception Networks",
+        "prerequisites": [
+            "convolutional_neural_network",
+            "deep_learning",
+            "artificial_neural_networks",
+            "backpropagation"
+        ],
+        "further_readings": [
+            "residual_networks",
+            "googlenet",
+            "batch_normalization",
+            "dropout"
+        ]
+    },
+    "resnext": {
+        "title": "ResNeXt",
+        "prerequisites": [
+            "deep_learning",
+            "convolutional_neural_network",
+            "residual_networks"
+        ],
+        "further_readings": [
+            "densenet",
+            "inception_network",
+            "efficientnet",
+            "squeeze_and_excitation_networks"
+        ]
+    },
+    "wide_resnet": {
+        "title": "Wide ResNet",
+        "prerequisites": [
+            "residual_networks",
+            "convolutional_neural_network",
+            "deep_learning",
+            "batch_normalization"
+        ],
+        "further_readings": [
+            "identity_mappings_in_deep_residual_networks",
+            "network_in_network",
+            "densenet",
+            "efficientnet"
+        ]
+    },
+    "residual_attention_networks": {
+        "title": "Residual Attention Networks",
+        "prerequisites": [
+            "deep_learning",
+            "convolutional_neural_networks",
+            "residual_networks",
+            "attention_mechanism"
+        ],
+        "further_readings": [
+            "squeeze_and_excitation_networks",
+            "dilated_convolution",
+            "image_classification",
+            "object_detection"
+        ]
+    },
+    "pretrained_resnet_models": {
+        "title": "Pretrained ResNet Models",
+        "prerequisites": [
+            "deep_learning",
+            "convolutional_neural_network",
+            "transfer_learning",
+            "residual_networks"
+        ],
+        "further_readings": [
+            "imagenet",
+            "fine_tuning",
+            "data_augmentation",
+            "model_zoo"
+        ]
+    },
+    "inception_v2_and_v3": {
+        "title": "Inception V2 and V3",
+        "prerequisites": [
+            "convolutional_neural_network",
+            "deep_learning",
+            "transfer_learning",
+            "inception_v1"
+        ],
+        "further_readings": [
+            "residual_networks",
+            "batch_normalization",
+            "image_classification",
+            "object_detection"
+        ]
+    },
+    "inception_v4_and_inception_resnet": {
+        "title": "Inception V4 and Inception-ResNet",
+        "prerequisites": [
+            "convolutional_neural_networks",
+            "residual_networks",
+            "inception_v3",
+            "deep_learning"
+        ],
+        "further_readings": [
+            "inception_v1",
+            "inception_v2",
+            "batch_normalization",
+            "image_classification"
+        ]
+    },
+    "xception": {
+        "title": "Xception",
+        "prerequisites": [
+            "convolutional_neural_network",
+            "deep_learning",
+            "inception_v3"
+        ],
+        "further_readings": [
+            "residual_networks",
+            "depthwise_separable_convolution",
+            "efficientnet",
+            "nasnet"
+        ]
+    },
+    "nasnet": {
+        "title": "NASNet",
+        "prerequisites": [
+            "neural_architecture_search",
+            "convolutional_neural_network",
+            "deep_learning",
+            "transfer_learning"
+        ],
+        "further_readings": [
+            "efficientnet",
+            "densenet",
+            "resnet",
+            "inception_v3",
+            "mobilenet"
+        ]
+    },
+    "model_architecture": {
+        "title": "Model Architecture",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "deep_learning",
+            "convolutional_neural_network",
+            "recurrent_neural_network",
+            "transfer_learning",
+            "unsupervised_learning"
+        ],
+        "further_readings": [
+            "residual_networks",
+            "generative_adversarial_networks",
+            "autoencoders",
+            "reinforcement_learning",
+            "long_short_term_memory",
+            "transformer_architecture"
+        ]
+    },
+    "efficientnet_b0_to_b7": {
+        "title": "EfficientNet B0 to B7",
+        "prerequisites": [
+            "convolutional_neural_network",
+            "deep_learning",
+            "transfer_learning",
+            "image_classification"
+        ],
+        "further_readings": [
+            "mobilenet",
+            "resnet",
+            "inception_network",
+            "nasnet",
+            "densenet"
+        ]
+    },
+    "mixnet": {
+        "title": "Mixnet",
+        "prerequisites": [
+            "cryptography",
+            "onion_routing",
+            "tor_network",
+            "anonymity_networks"
+        ],
+        "further_readings": [
+            "chaumian_mix",
+            "dc_networks",
+            "anonymous_communication_protocols",
+            "privacy_enhancing_technologies"
+        ]
+    },
+    "mobilenetv3": {
+        "title": "MobileNetV3",
+        "prerequisites": [
+            "convolutional_neural_network",
+            "deep_learning",
+            "transfer_learning",
+            "mobilenetv1",
+            "mobilenetv2"
+        ],
+        "further_readings": [
+            "efficientnet",
+            "inverted_residuals",
+            "squeeze_and_excitation",
+            "neural_architecture_search"
+        ]
+    },
+    "mnasnet": {
+        "title": "MnasNet",
+        "prerequisites": [
+            "convolutional_neural_network",
+            "neural_architecture_search",
+            "mobile_nets"
+        ],
+        "further_readings": [
+            "efficient_net",
+            "nasnet",
+            "densenet",
+            "resnet",
+            "inception_v3"
+        ]
+    },
+    "compound_scaling": {
+        "title": "Compound Scaling",
+        "prerequisites": [
+            "deep_learning",
+            "convolutional_neural_network",
+            "efficientnet"
+        ],
+        "further_readings": [
+            "neural_architecture_search",
+            "model_scaling",
+            "transfer_learning",
+            "mobile_nets"
+        ]
+    },
+    "model_scaling": {
+        "title": "Model Scaling",
+        "prerequisites": [
+            "deep_learning",
+            "neural_networks",
+            "convolutional_neural_network",
+            "transfer_learning",
+            "batch_normalization"
+        ],
+        "further_readings": [
+            "efficientnet",
+            "mobilenet",
+            "resnet",
+            "nasnet",
+            "vision_transformer"
+        ]
+    },
+    "yolo_v2": {
+        "title": "YOLO V2",
+        "prerequisites": [
+            "convolutional_neural_network",
+            "object_detection",
+            "deep_learning",
+            "anchor_boxes",
+            "iou",
+            "non_maximum_suppression"
+        ],
+        "further_readings": [
+            "yolo_v1",
+            "yolo_v3",
+            "yolo_v4",
+            "yolo_v5",
+            "ssd",
+            "faster_rcnn",
+            "mask_rcnn"
+        ]
+    },
+    "yolo_v3": {
+        "title": "YOLO V3",
+        "prerequisites": [
+            "object_detection",
+            "convolutional_neural_network",
+            "bounding_box",
+            "anchor_box",
+            "iou",
+            "non_max_suppression",
+            "transfer_learning",
+            "darknet"
+        ],
+        "further_readings": [
+            "yolo_v1",
+            "yolo_v2",
+            "yolo_v4",
+            "yolo_v5",
+            "ssd",
+            "faster_rcnn",
+            "efficientdet",
+            "mmdetection"
+        ]
+    },
+    "yolo_v4": {
+        "title": "YOLO V4",
+        "prerequisites": [
+            "object_detection",
+            "convolutional_neural_network",
+            "deep_learning",
+            "transfer_learning",
+            "anchor_boxes",
+            "iou",
+            "non_max_suppression"
+        ],
+        "further_readings": [
+            "yolo_v3",
+            "yolo_v2",
+            "yolo_v1",
+            "ssd",
+            "faster_rcnn",
+            "efficientdet",
+            "darknet"
+        ]
+    },
+    "yolo_v5": {
+        "title": "YOLO V5",
+        "prerequisites": [
+            "object_detection",
+            "convolutional_neural_network",
+            "deep_learning",
+            "transfer_learning",
+            "bounding_box"
+        ],
+        "further_readings": [
+            "yolo_v1",
+            "yolo_v2",
+            "yolo_v3",
+            "yolo_v4",
+            "anchor_boxes",
+            "mean_average_precision"
+        ]
+    },
+    "tiny_yolo": {
+        "title": "Tiny YOLO",
+        "prerequisites": [
+            "yolo_algorithm",
+            "object_detection",
+            "convolutional_neural_network",
+            "deep_learning"
+        ],
+        "further_readings": [
+            "yolo_v2",
+            "yolo_v3",
+            "yolo_v4",
+            "yolo_v5",
+            "anchor_boxes",
+            "region_proposal_network"
+        ]
+    },
+    "real_time_object_detection": {
+        "title": "Real Time Object Detection",
+        "prerequisites": [
+            "convolutional_neural_network",
+            "deep_learning",
+            "image_processing",
+            "computer_vision",
+            "machine_learning"
+        ],
+        "further_readings": [
+            "yolo",
+            "ssd",
+            "faster_rcnn",
+            "mask_rcnn",
+            "retinanet",
+            "efficientdet",
+            "anchor_boxes",
+            "non_maximum_suppression"
+        ]
+    },
+    "sliding_window_approach": {
+        "title": "Sliding Window Approach",
+        "prerequisites": [
+            "time_series_analysis",
+            "pattern_recognition",
+            "feature_extraction"
+        ],
+        "further_readings": [
+            "dynamic_time_warping",
+            "convolutional_neural_network",
+            "recurrent_neural_network",
+            "long_short_term_memory",
+            "sequence_to_sequence_models"
+        ]
+    },
+    "iou": {
+        "title": "Intersection over Union (IoU)",
+        "prerequisites": [
+            "object_detection",
+            "image_segmentation",
+            "bounding_box"
+        ],
+        "further_readings": [
+            "mean_average_precision",
+            "precision_recall_curve",
+            "non_maximum_suppression",
+            "coco_evaluation_metrics"
+        ]
+    },
+    "scale_and_aspect_ratio": {
+        "title": "Scale and Aspect Ratio",
+        "prerequisites": [
+            "image_processing",
+            "computer_vision",
+            "convolutional_neural_network"
+        ],
+        "further_readings": [
+            "image_augmentation",
+            "image_pyramids",
+            "object_detection",
+            "image_classification",
+            "image_segmentation"
+        ]
+    },
+    "hard_negative_mining": {
+        "title": "Hard Negative Mining",
+        "prerequisites": [
+            "loss_functions",
+            "gradient_descent",
+            "support_vector_machines",
+            "object_detection"
+        ],
+        "further_readings": [
+            "online_hard_example_mining",
+            "triplet_loss",
+            "contrastive_loss",
+            "focal_loss"
+        ]
+    },
+    "multi_box_loss": {
+        "title": "Multi Box Loss",
+        "prerequisites": [
+            "object_detection",
+            "single_shot_multibox_detector",
+            "convolutional_neural_network",
+            "loss_functions"
+        ],
+        "further_readings": [
+            "yolo",
+            "faster_rcnn",
+            "region_proposal_network",
+            "anchor_boxes",
+            "iou"
+        ]
+    },
+    "selective_search": {
+        "title": "Selective Search",
+        "prerequisites": [
+            "image_segmentation",
+            "region_proposals",
+            "object_detection"
+        ],
+        "further_readings": [
+            "convolutional_neural_network",
+            "rcnn",
+            "fast_rcnn",
+            "faster_rcnn",
+            "mask_rcnn"
+        ]
+    },
+    "r_cnn": {
+        "title": "R-CNN",
+        "prerequisites": [
+            "convolutional_neural_network",
+            "object_detection",
+            "selective_search"
+        ],
+        "further_readings": [
+            "fast_r_cnn",
+            "faster_r_cnn",
+            "mask_r_cnn",
+            "yolo",
+            "ssd"
+        ]
+    },
+    "region_based_fully_convolutional_networks": {
+        "title": "Region Based Fully Convolutional Networks",
+        "prerequisites": [
+            "convolutional_neural_network",
+            "object_detection",
+            "region_proposal_network",
+            "fast_r_cnn",
+            "faster_r_cnn"
+        ],
+        "further_readings": [
+            "mask_r_cnn",
+            "yolo",
+            "ssd",
+            "efficientdet",
+            "anchor_boxes"
+        ]
+    },
+    "cascade_r_cnn": {
+        "title": "Cascade R-CNN",
+        "prerequisites": [
+            "object_detection",
+            "convolutional_neural_network",
+            "region_proposal_network",
+            "faster_r_cnn"
+        ],
+        "further_readings": [
+            "mask_r_cnn",
+            "yolo",
+            "ssd",
+            "retinanet",
+            "efficientdet"
+        ]
+    },
+    "classification_algorithms": {
+        "title": "Classification Algorithms",
+        "prerequisites": [
+            "supervised_learning",
+            "logistic_regression",
+            "decision_trees",
+            "support_vector_machines",
+            "naive_bayes",
+            "k_nearest_neighbors",
+            "neural_networks"
+        ],
+        "further_readings": [
+            "ensemble_methods",
+            "model_evaluation",
+            "feature_selection",
+            "hyperparameter_tuning",
+            "deep_learning"
+        ]
+    },
+    "evaluation_metrics": {
+        "title": "Evaluation Metrics",
+        "prerequisites": [
+            "supervised_learning",
+            "unsupervised_learning",
+            "classification",
+            "regression",
+            "model_selection"
+        ],
+        "further_readings": [
+            "precision_recall",
+            "f1_score",
+            "roc_auc",
+            "mean_squared_error",
+            "r_squared",
+            "adjusted_r_squared",
+            "confusion_matrix"
+        ]
+    },
+    "false_positive_rate": {
+        "title": "False Positive Rate",
+        "prerequisites": [
+            "confusion_matrix",
+            "precision_recall",
+            "type_i_error"
+        ],
+        "further_readings": [
+            "roc_curve",
+            "auc_score",
+            "specificity",
+            "sensitivity",
+            "f1_score"
+        ]
+    },
+    "auc_score": {
+        "title": "AUC Score",
+        "prerequisites": [
+            "roc_curve",
+            "binary_classification",
+            "confusion_matrix",
+            "true_positive_rate",
+            "false_positive_rate"
+        ],
+        "further_readings": [
+            "precision_recall_curve",
+            "f1_score",
+            "gini_coefficient",
+            "lift_curve",
+            "calibration_curve"
+        ]
+    },
+    "cohen_kappa": {
+        "title": "Cohen Kappa",
+        "prerequisites": [
+            "confusion_matrix",
+            "inter_rater_reliability",
+            "classification_metrics"
+        ],
+        "further_readings": [
+            "fleiss_kappa",
+            "intraclass_correlation",
+            "weighted_kappa",
+            "krippendorffs_alpha"
+        ]
+    },
+    "matthews_correlation_coefficient": {
+        "title": "Matthews Correlation Coefficient",
+        "prerequisites": [
+            "confusion_matrix",
+            "true_positive_rate",
+            "false_positive_rate",
+            "true_negative_rate",
+            "false_negative_rate"
+        ],
+        "further_readings": [
+            "roc_curve",
+            "precision_recall_curve",
+            "f1_score",
+            "cohen_kappa",
+            "area_under_curve"
+        ]
     }
 }
