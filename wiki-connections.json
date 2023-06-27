@@ -5364,7 +5364,7 @@
             "adam"
         ],
         "further_readings": [
-            "on_the_adaptive_moment_estimation_algorithm",
+            "adaptive_moment_estimation_algorithm",
             "a_quick_introduction_to_adam_optimization_algorithm",
             "understanding_rmsprop_faster_neural_network_learning",
             "the_moving_block_hessian_approximation_for_large_scale_optimization"

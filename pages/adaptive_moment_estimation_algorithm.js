@@ -4,7 +4,7 @@
     import fs from 'fs';
     import PageContent from '@/components/PageContent/PageContent';
 
-    const filename = 'on_the_adaptive_moment_estimation_algorithm.md';
+    const filename = 'adaptive_moment_estimation_algorithm.md';
 
     export default function MarkdownPage({ markdownContent }) {
     return <PageContent content={markdownContent} filename={filename} />;
