@@ -5210,10 +5210,10 @@
             "Adam_optimizer"
         ],
         "further_readings": [
-            "SWATS: A Family of Fast Converging Optimizers for Deep Learning",
-            "Evaluating the SWATS optimizer on the CIFAR-10 dataset",
-            "SWATS: A versatile optimizer for machine learning",
-            "A comparative study of SWATS and other optimizers"
+            "nesterov_accelerated_gradient",
+            "cyclical_learning_rates",
+            "adabound_optimizer",
+            "swats"
         ]
     },
     "mean_absolute_error": {
@@ -5781,7 +5781,7 @@
         ],
         "further_readings": [
             "convolutional_neural_networks",
-            "long_short_term_memory_networks"
+            "long_short-term_memory_networks"
         ]
     },
     "multilayer_perceptrons": {
@@ -21952,7 +21952,7 @@
             "reinforcement_learning"
         ]
     },
-    "long_short_term_memory_networks": {
+    "long_short-term_memory_networks": {
         "title": "Long Short-term Memory Networks",
         "prerequisites": [
             "artificial_neural_networks",
@@ -22178,10 +22178,12 @@
             "momentum_optimization",
             "adagrad_optimizer",
             "rmsprop_optimizer",
-            "nesterov_accelerated_gradient"
+            "nesterov_accelerated_gradient",
+            "evaluating_the_swats_optimizer_on_the_cifar-10_dataset",
+            "a_comparative_study_of_swats_and_other_optimizers"
         ]
     },
-    "evaluating_the_swats_optimizer_on_the_cifar_10_dataset": {
+    "evaluating_the_swats_optimizer_on_the_cifar-10_dataset": {
         "title": "Evaluating the SWATS Optimizer on the CIFAR-10 Dataset",
         "prerequisites": [
             "swats_optimizer",
@@ -22192,6 +22194,7 @@
         "further_readings": [
             "adam_optimizer",
             "stochastic_gradient_descent",
+            "a_comparative_study_of_swats_and_other_optimizers",
             "learning_rate_scheduling",
             "convolutional_neural_networks"
         ]

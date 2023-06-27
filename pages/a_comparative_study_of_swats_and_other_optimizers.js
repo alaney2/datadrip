@@ -4,7 +4,7 @@
     import fs from 'fs';
     import PageContent from '@/components/PageContent/PageContent';
 
-    const filename = 'evaluating the swats optimizer on the cifar-10 dataset.md';
+    const filename = 'a_comparative_study_of_swats_and_other_optimizers.md';
 
     export default function MarkdownPage({ markdownContent }) {
     return <PageContent content={markdownContent} filename={filename} />;
