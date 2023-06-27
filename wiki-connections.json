@@ -22243,5 +22243,422 @@
             "mean_absolute_percentage_error",
             "r_squared"
         ]
+    },
+    "r_squared": {
+        "title": "R Squared",
+        "prerequisites": [
+            "linear_regression",
+            "correlation_coefficient",
+            "mean_squared_error",
+            "residuals"
+        ],
+        "further_readings": [
+            "adjusted_r_squared",
+            "coefficient_of_determination",
+            "multiple_regression",
+            "anova"
+        ]
+    },
+    "smooth_l1_loss": {
+        "title": "Smooth L1 Loss",
+        "prerequisites": [
+            "mean_squared_error",
+            "huber_loss",
+            "loss_functions",
+            "regression"
+        ],
+        "further_readings": [
+            "fast_rcnn",
+            "focal_loss",
+            "generalized_iou_loss",
+            "yolo_v2"
+        ]
+    },
+    "sigmoid_activation_function": {
+        "title": "Sigmoid Activation Function",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "activation_functions",
+            "backpropagation"
+        ],
+        "further_readings": [
+            "hyperbolic_tangent_activation_function",
+            "rectified_linear_unit",
+            "softmax_activation_function",
+            "vanishing_gradient_problem",
+            "deep_learning"
+        ]
+    },
+    "softmax_activation": {
+        "title": "Softmax Activation",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "activation_functions",
+            "backpropagation"
+        ],
+        "further_readings": [
+            "cross_entropy_loss",
+            "multiclass_classification",
+            "multilayer_perceptron",
+            "deep_learning"
+        ]
+    },
+    "class_imbalance_problem": {
+        "title": "Class Imbalance Problem",
+        "prerequisites": [
+            "supervised_learning",
+            "classification",
+            "performance_metrics",
+            "sampling_methods"
+        ],
+        "further_readings": [
+            "smote",
+            "cost_sensitive_learning",
+            "ensemble_methods",
+            "under_sampling",
+            "over_sampling"
+        ]
+    },
+    "weighted_cross_entropy_loss": {
+        "title": "Weighted Cross Entropy Loss",
+        "prerequisites": [
+            "cross_entropy_loss",
+            "binary_classification",
+            "deep_learning"
+        ],
+        "further_readings": [
+            "focal_loss",
+            "dice_loss",
+            "logistic_regression",
+            "softmax_regression"
+        ]
+    },
+    "sigmoid_activation": {
+        "title": "Sigmoid Activation",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "activation_functions"
+        ],
+        "further_readings": [
+            "deep_learning",
+            "backpropagation",
+            "vanishing_gradient_problem",
+            "rectified_linear_unit",
+            "hyperbolic_tangent_activation"
+        ]
+    },
+    "jaccard_index": {
+        "title": "Jaccard Index",
+        "prerequisites": [
+            "set_theory",
+            "similarity_measures"
+        ],
+        "further_readings": [
+            "cosine_similarity",
+            "dice_coefficient",
+            "hamming_distance",
+            "euclidean_distance",
+            "manhattan_distance"
+        ]
+    },
+    "lovasz_softmax": {
+        "title": "Lovasz Softmax",
+        "prerequisites": [
+            "softmax_function",
+            "convolutional_neural_network",
+            "image_segmentation",
+            "loss_functions"
+        ],
+        "further_readings": [
+            "dice_loss",
+            "jaccard_index",
+            "focal_loss",
+            "deep_learning"
+        ]
+    },
+    "dice_coefficient": {
+        "title": "Dice Coefficient",
+        "prerequisites": [
+            "set_theory",
+            "similarity_measures",
+            "jaccard_index"
+        ],
+        "further_readings": [
+            "cosine_similarity",
+            "hamming_distance",
+            "euclidean_distance",
+            "manhattan_distance",
+            "pearson_correlation_coefficient"
+        ]
+    },
+    "segmentation_models": {
+        "title": "Segmentation Models",
+        "prerequisites": [
+            "image_segmentation",
+            "convolutional_neural_network",
+            "deep_learning"
+        ],
+        "further_readings": [
+            "u_net",
+            "mask_r_cnn",
+            "deeplab",
+            "fcn",
+            "pspnet",
+            "hrnet"
+        ]
+    },
+    "lovasz_softmax_loss": {
+        "title": "Lovasz Softmax Loss",
+        "prerequisites": [
+            "softmax_function",
+            "loss_functions",
+            "deep_learning",
+            "convolutional_neural_network"
+        ],
+        "further_readings": [
+            "dice_loss",
+            "focal_loss",
+            "cross_entropy_loss",
+            "jaccard_index"
+        ]
+    },
+    "siamese_network": {
+        "title": "Siamese Network",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "deep_learning",
+            "loss_functions",
+            "backpropagation"
+        ],
+        "further_readings": [
+            "contrastive_loss",
+            "triplet_loss",
+            "one_shot_learning",
+            "face_recognition",
+            "signature_verification"
+        ]
+    },
+    "arcface_loss": {
+        "title": "ArcFace Loss",
+        "prerequisites": [
+            "softmax_loss",
+            "deep_metric_learning",
+            "face_recognition",
+            "convolutional_neural_network"
+        ],
+        "further_readings": [
+            "cosface_loss",
+            "sphereface_loss",
+            "triplet_loss",
+            "contrastive_loss"
+        ]
+    },
+    "siamese_networks": {
+        "title": "Siamese Networks",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "deep_learning",
+            "loss_functions",
+            "backpropagation"
+        ],
+        "further_readings": [
+            "triplet_loss",
+            "contrastive_loss",
+            "one_shot_learning",
+            "face_recognition",
+            "signature_verification"
+        ]
+    },
+    "facenet": {
+        "title": "FaceNet",
+        "prerequisites": [
+            "deep_learning",
+            "convolutional_neural_network",
+            "triplet_loss",
+            "face_recognition"
+        ],
+        "further_readings": [
+            "inception_architecture",
+            "siamese_networks",
+            "one_shot_learning",
+            "openface"
+        ]
+    },
+    "deep_metric_learning": {
+        "title": "Deep Metric Learning",
+        "prerequisites": [
+            "deep_learning",
+            "convolutional_neural_network",
+            "triplet_loss",
+            "contrastive_loss",
+            "siamese_networks"
+        ],
+        "further_readings": [
+            "large_margin_nearest_neighbor",
+            "global_loss_functions",
+            "hard_negative_mining",
+            "semi_supervised_learning"
+        ]
+    },
+    "gradient_descent_algorithm": {
+        "title": "Gradient Descent Algorithm",
+        "prerequisites": [
+            "linear_regression",
+            "logistic_regression",
+            "cost_function",
+            "partial_derivative",
+            "learning_rate"
+        ],
+        "further_readings": [
+            "stochastic_gradient_descent",
+            "mini_batch_gradient_descent",
+            "momentum",
+            "adam_optimizer",
+            "rmsprop"
+        ]
+    },
+    "optimal_control": {
+        "title": "Optimal Control",
+        "prerequisites": [
+            "dynamic_programming",
+            "reinforcement_learning",
+            "control_theory",
+            "linear_quadratic_regulator",
+            "bellman_equation"
+        ],
+        "further_readings": [
+            "model_predictive_control",
+            "calculus_of_variations",
+            "hamilton_jacobi_bellman_equation",
+            "stochastic_optimal_control",
+            "robust_control"
+        ]
+    },
+    "stochastic_optimization": {
+        "title": "Stochastic Optimization",
+        "prerequisites": [
+            "gradient_descent",
+            "stochastic_gradient_descent",
+            "convex_optimization",
+            "optimization_algorithms"
+        ],
+        "further_readings": [
+            "adam_optimizer",
+            "rmsprop_optimizer",
+            "adagrad_optimizer",
+            "momentum_optimizer",
+            "nesterov_accelerated_gradient"
+        ]
+    },
+    "adaptive_moment_estimation_algorithm": {
+        "title": "Adaptive Moment Estimation Algorithm",
+        "prerequisites": [
+            "gradient_descent",
+            "stochastic_gradient_descent",
+            "optimization_algorithms",
+            "backpropagation"
+        ],
+        "further_readings": [
+            "adam_optimizer",
+            "rmsprop",
+            "momentum",
+            "nesterov_accelerated_gradient",
+            "learning_rate_scheduling"
+        ]
+    },
+    "adam_optimization_algorithm": {
+        "title": "A Quick Introduction to Adam Optimization Algorithm",
+        "prerequisites": [
+            "gradient_descent",
+            "stochastic_gradient_descent",
+            "momentum_optimization",
+            "adaptive_gradient_algorithm"
+        ],
+        "further_readings": [
+            "rmsprop",
+            "adamax",
+            "nadam",
+            "amsgrad",
+            "optimization_algorithms_comparison"
+        ]
+    },
+    "understanding_rmsprop_faster_neural_network_learning": {
+        "title": "Understanding Rmsprop: Faster Neural Network Learning",
+        "prerequisites": [
+            "gradient_descent",
+            "stochastic_gradient_descent",
+            "adaptive_gradient_methods",
+            "neural_networks"
+        ],
+        "further_readings": [
+            "adam_optimizer",
+            "adagrad_optimizer",
+            "momentum_optimizer",
+            "optimization_techniques_in_deep_learning"
+        ]
+    },
+    "the_moving_block_hessian_approximation_for_large_scale_optimization": {
+        "title": "The Moving Block Hessian Approximation for Large Scale Optimization",
+        "prerequisites": [
+            "large_scale_optimization",
+            "hessian_matrix",
+            "quasi_newton_methods",
+            "broyden_fletcher_goldfarb_shanno_algorithm"
+        ],
+        "further_readings": [
+            "limited_memory_bfgs",
+            "truncated_newton_method",
+            "conjugate_gradient_method",
+            "block_coordinate_descent"
+        ]
+    },
+    "l_bfgs_b_algorithm": {
+        "title": "L-BFGS-B Algorithm",
+        "prerequisites": [
+            "gradient_descent",
+            "quasi_newton_methods",
+            "broyden_fletcher_goldfarb_shanno_algorithm",
+            "conjugate_gradient_method",
+            "optimization"
+        ],
+        "further_readings": [
+            "limited_memory_optimization",
+            "nonlinear_conjugate_gradient_method",
+            "truncated_newton_method",
+            "line_search_methods",
+            "trust_region_methods"
+        ]
+    },
+    "evolutionary_computation": {
+        "title": "Evolutionary Computation",
+        "prerequisites": [
+            "genetic_algorithms",
+            "genetic_programming",
+            "evolutionary_strategies",
+            "differential_evolution",
+            "swarm_intelligence",
+            "optimization_techniques"
+        ],
+        "further_readings": [
+            "multi_objective_optimization",
+            "coevolution",
+            "evolutionary_multi_agent_systems",
+            "neuroevolution",
+            "evolutionary_robotics"
+        ]
+    },
+    "real_coded_genetic_algorithms": {
+        "title": "Real Coded Genetic Algorithms",
+        "prerequisites": [
+            "genetic_algorithms",
+            "evolutionary_algorithms",
+            "optimization_techniques"
+        ],
+        "further_readings": [
+            "simulated_annealing",
+            "particle_swarm_optimization",
+            "differential_evolution",
+            "genetic_programming"
+        ]
     }
 }
