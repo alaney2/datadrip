@@ -21659,7 +21659,7 @@
             "stylegan"
         ]
     },
-    "image_super_resolution_using_deep_convolutional_networks": {
+    "image_super-resolution_using_deep_convolutional_networks": {
         "title": "Image Super-resolution Using Deep Convolutional Networks",
         "prerequisites": [
             "convolutional_neural_network",
@@ -21693,7 +21693,7 @@
             "image_enhancement"
         ]
     },
-    "deep_residual_learning_for_image_super_resolution": {
+    "deep_residual_learning_for_image_super-resolution": {
         "title": "Deep Residual Learning for Image Super-Resolution",
         "prerequisites": [
             "convolutional_neural_network",
