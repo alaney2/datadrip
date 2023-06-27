@@ -22659,5 +22659,95 @@
             "differential_evolution",
             "genetic_programming"
         ]
+    },
+    "multiobjective_optimization_with_genetic_algorithms": {
+        "title": "Multiobjective Optimization With Genetic Algorithms",
+        "prerequisites": [
+            "genetic_algorithms",
+            "pareto_optimality",
+            "evolutionary_computation",
+            "optimization"
+        ],
+        "further_readings": [
+            "nondominated_sorting_genetic_algorithm",
+            "multiobjective_evolutionary_algorithms",
+            "pareto_based_algorithms",
+            "constraint_handling_techniques"
+        ]
+    },
+    "neural_networks_and_genetic_algorithms": {
+        "title": "Neural Networks and Genetic Algorithms",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "genetic_algorithms",
+            "evolutionary_computation"
+        ],
+        "further_readings": [
+            "deep_learning",
+            "reinforcement_learning",
+            "optimization_techniques",
+            "neuroevolution"
+        ]
+    },
+    "randomized_algorithms": {
+        "title": "Randomized Algorithms",
+        "prerequisites": [
+            "probability_theory",
+            "algorithm_analysis",
+            "computational_complexity"
+        ],
+        "further_readings": [
+            "monte_carlo_methods",
+            "markov_chain_monte_carlo",
+            "las_vegas_algorithms",
+            "probabilistic_data_structures",
+            "randomized_rounding"
+        ]
+    },
+    "tabu_search": {
+        "title": "Tabu Search",
+        "prerequisites": [
+            "local_search",
+            "metaheuristic_algorithms",
+            "hill_climbing",
+            "simulated_annealing"
+        ],
+        "further_readings": [
+            "genetic_algorithms",
+            "ant_colony_optimization",
+            "particle_swarm_optimization",
+            "evolutionary_computation"
+        ]
+    },
+    "swarm_intelligence": {
+        "title": "Swarm Intelligence",
+        "prerequisites": [
+            "artificial_intelligence",
+            "machine_learning",
+            "optimization_algorithms",
+            "multi_agent_systems",
+            "stochastic_processes"
+        ],
+        "further_readings": [
+            "particle_swarm_optimization",
+            "ant_colony_optimization",
+            "bee_algorithm",
+            "firefly_algorithm",
+            "artificial_fish_swarm_algorithm"
+        ]
+    },
+    "ant_colony_optimization": {
+        "title": "Ant Colony Optimization",
+        "prerequisites": [
+            "swarm_intelligence",
+            "graph_theory",
+            "optimization_algorithms"
+        ],
+        "further_readings": [
+            "particle_swarm_optimization",
+            "genetic_algorithms",
+            "simulated_annealing",
+            "tabu_search"
+        ]
     }
 }
