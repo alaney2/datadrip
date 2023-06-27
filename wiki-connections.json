@@ -12098,7 +12098,7 @@
             "ssd",
             "retinanet",
             "mask_rcnn",
-            "cascade_rcnn",
+            "cascade_r-cnn",
             "center_net",
             "efficientdet"
         ]
@@ -20903,7 +20903,7 @@
             "mask_rcnn"
         ]
     },
-    "r_cnn": {
+    "r-cnn": {
         "title": "R-CNN",
         "prerequisites": [
             "convolutional_neural_network",
@@ -20935,7 +20935,7 @@
             "anchor_boxes"
         ]
     },
-    "cascade_r_cnn": {
+    "cascade_r-cnn": {
         "title": "Cascade R-CNN",
         "prerequisites": [
             "object_detection",
