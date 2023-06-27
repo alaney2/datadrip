@@ -21051,5 +21051,807 @@
             "cohen_kappa",
             "area_under_curve"
         ]
+    },
+    "multilabel_classification": {
+        "title": "Multilabel Classification",
+        "prerequisites": [
+            "supervised_learning",
+            "classification",
+            "machine_learning_algorithms",
+            "evaluation_metrics"
+        ],
+        "further_readings": [
+            "multi_instance_learning",
+            "multi_output_classification",
+            "multi_task_learning",
+            "label_powerset",
+            "binary_relevance",
+            "classifier_chains",
+            "neural_networks"
+        ]
+    },
+    "imbalanced_classification": {
+        "title": "Imbalanced Classification",
+        "prerequisites": [
+            "supervised_learning",
+            "classification",
+            "evaluation_metrics"
+        ],
+        "further_readings": [
+            "oversampling",
+            "undersampling",
+            "smote",
+            "cost_sensitive_learning",
+            "ensemble_methods"
+        ]
+    },
+    "probability_thresholds": {
+        "title": "Probability Thresholds",
+        "prerequisites": [
+            "probability_theory",
+            "machine_learning",
+            "classification_algorithms"
+        ],
+        "further_readings": [
+            "roc_curve",
+            "precision_recall_curve",
+            "model_evaluation_metrics",
+            "imbalanced_data"
+        ]
+    },
+    "model_evaluation": {
+        "title": "Model Evaluation",
+        "prerequisites": [
+            "supervised_learning",
+            "unsupervised_learning",
+            "reinforcement_learning",
+            "classification",
+            "regression",
+            "clustering",
+            "performance_metrics"
+        ],
+        "further_readings": [
+            "cross_validation",
+            "bias_variance_tradeoff",
+            "overfitting",
+            "underfitting",
+            "hyperparameter_tuning",
+            "ensemble_methods"
+        ]
+    },
+    "receiver_operating_characteristic": {
+        "title": "Receiver Operating Characteristic",
+        "prerequisites": [
+            "binary_classification",
+            "true_positive_rate",
+            "false_positive_rate",
+            "confusion_matrix",
+            "thresholds"
+        ],
+        "further_readings": [
+            "area_under_curve",
+            "precision_recall_curve",
+            "performance_metrics",
+            "roc_analysis"
+        ]
+    },
+    "cost_sensitive_learning": {
+        "title": "Cost Sensitive Learning",
+        "prerequisites": [
+            "supervised_learning",
+            "classification",
+            "regression",
+            "loss_functions",
+            "decision_trees",
+            "support_vector_machines"
+        ],
+        "further_readings": [
+            "ensemble_methods",
+            "boosting",
+            "bagging",
+            "cost_sensitive_neural_networks",
+            "cost_sensitive_decision_trees",
+            "cost_sensitive_support_vector_machines"
+        ]
+    },
+    "model_comparison": {
+        "title": "Model Comparison",
+        "prerequisites": [
+            "supervised_learning",
+            "unsupervised_learning",
+            "reinforcement_learning",
+            "cross_validation",
+            "model_evaluation_metrics"
+        ],
+        "further_readings": [
+            "bayesian_model_comparison",
+            "ensemble_learning",
+            "hyperparameter_tuning",
+            "model_selection"
+        ]
+    },
+    "imbalanced_data": {
+        "title": "Imbalanced Data",
+        "prerequisites": [
+            "supervised_learning",
+            "classification",
+            "sampling_methods"
+        ],
+        "further_readings": [
+            "smote",
+            "adasyn",
+            "cost_sensitive_learning",
+            "under_sampling",
+            "over_sampling",
+            "ensemble_methods"
+        ]
+    },
+    "classifier_calibration": {
+        "title": "Classifier Calibration",
+        "prerequisites": [
+            "supervised_learning",
+            "classification",
+            "probability_theory",
+            "logistic_regression",
+            "support_vector_machines",
+            "decision_trees"
+        ],
+        "further_readings": [
+            "isotonic_regression",
+            "platt_scaling",
+            "temperature_scaling",
+            "bayesian_methods",
+            "cross_entropy_loss"
+        ]
+    },
+    "cumulative_distribution_function": {
+        "title": "Cumulative Distribution Function",
+        "prerequisites": [
+            "probability_theory",
+            "probability_density_function",
+            "probability_mass_function"
+        ],
+        "further_readings": [
+            "joint_cumulative_distribution_function",
+            "multivariate_normal_distribution",
+            "central_limit_theorem",
+            "kolmogorov_smirnov_test",
+            "copulas"
+        ]
+    },
+    "probability_density_function": {
+        "title": "Probability Density Function",
+        "prerequisites": [
+            "probability_theory",
+            "random_variables",
+            "continuous_random_variables"
+        ],
+        "further_readings": [
+            "cumulative_distribution_function",
+            "joint_probability_density_function",
+            "conditional_probability_density_function",
+            "moment_generating_function",
+            "central_limit_theorem"
+        ]
+    },
+    "threshold_selection": {
+        "title": "Threshold Selection",
+        "prerequisites": [
+            "supervised_learning",
+            "classification",
+            "performance_metrics"
+        ],
+        "further_readings": [
+            "roc_curve",
+            "precision_recall_curve",
+            "cost_sensitive_learning",
+            "imbalanced_datasets"
+        ]
+    },
+    "classification_models": {
+        "title": "Classification Models",
+        "prerequisites": [
+            "supervised_learning",
+            "logistic_regression",
+            "decision_trees",
+            "support_vector_machines",
+            "naive_bayes",
+            "k_nearest_neighbors",
+            "neural_networks"
+        ],
+        "further_readings": [
+            "ensemble_methods",
+            "evaluation_metrics",
+            "feature_selection",
+            "hyperparameter_tuning",
+            "model_selection",
+            "cross_validation"
+        ]
+    },
+    "regression_models": {
+        "title": "Regression Models",
+        "prerequisites": [
+            "linear_regression",
+            "logistic_regression",
+            "ridge_regression",
+            "lasso_regression",
+            "polynomial_regression",
+            "support_vector_regression",
+            "decision_tree_regression",
+            "random_forest_regression"
+        ],
+        "further_readings": [
+            "neural_network_regression",
+            "bayesian_regression",
+            "kernel_regression",
+            "quantile_regression",
+            "robust_regression",
+            "multivariate_adaptive_regression_splines",
+            "generalized_additive_models",
+            "ensemble_methods"
+        ]
+    },
+    "performance_measure": {
+        "title": "Performance Measure",
+        "prerequisites": [
+            "supervised_learning",
+            "unsupervised_learning",
+            "reinforcement_learning"
+        ],
+        "further_readings": [
+            "accuracy",
+            "precision_recall_f1",
+            "confusion_matrix",
+            "roc_auc",
+            "mean_squared_error",
+            "cross_entropy_loss",
+            "perplexity"
+        ]
+    },
+    "precision_recall_f1_score": {
+        "title": "Precision, Recall, and F1 Score",
+        "prerequisites": [
+            "confusion_matrix",
+            "classification_metrics"
+        ],
+        "further_readings": [
+            "roc_curve",
+            "auc_score",
+            "average_precision_score",
+            "balanced_accuracy_score"
+        ]
+    },
+    "evaluation_metrics_ml": {
+        "title": "Evaluation Metrics in Machine Learning",
+        "prerequisites": [
+            "supervised_learning",
+            "unsupervised_learning",
+            "classification",
+            "regression",
+            "confusion_matrix"
+        ],
+        "further_readings": [
+            "precision_recall",
+            "f1_score",
+            "roc_auc",
+            "mean_squared_error",
+            "r2_score"
+        ]
+    },
+    "area_under_curve": {
+        "title": "Area Under Curve",
+        "prerequisites": [
+            "integral_calculus",
+            "probability_density_function",
+            "cumulative_distribution_function",
+            "roc_curve"
+        ],
+        "further_readings": [
+            "trapezoidal_rule",
+            "simpsons_rule",
+            "numerical_integration",
+            "precision_recall_curve"
+        ]
+    },
+    "micro_macro_averaging": {
+        "title": "Micro and Macro Averaging",
+        "prerequisites": [
+            "precision_recall",
+            "f1_score",
+            "multi_class_classification"
+        ],
+        "further_readings": [
+            "weighted_f1_score",
+            "confusion_matrix",
+            "area_under_roc_curve",
+            "multi_label_classification"
+        ]
+    },
+    "k_fold_cross_validation": {
+        "title": "K-Fold Cross Validation",
+        "prerequisites": [
+            "supervised_learning",
+            "model_evaluation",
+            "overfitting",
+            "underfitting",
+            "train_test_split"
+        ],
+        "further_readings": [
+            "leave_one_out_cross_validation",
+            "stratified_k_fold",
+            "time_series_cross_validation",
+            "grid_search",
+            "random_search"
+        ]
+    },
+    "stratified_k_fold_cross_validation": {
+        "title": "Stratified K-Fold Cross Validation",
+        "prerequisites": [
+            "cross_validation",
+            "k_fold_cross_validation",
+            "supervised_learning"
+        ],
+        "further_readings": [
+            "leave_one_out_cross_validation",
+            "time_series_cross_validation",
+            "nested_cross_validation"
+        ]
+    },
+    "weighted_f1_score": {
+        "title": "Weighted F1 Score",
+        "prerequisites": [
+            "precision_and_recall",
+            "f1_score",
+            "confusion_matrix",
+            "classification_metrics"
+        ],
+        "further_readings": [
+            "macro_and_micro_f1_score",
+            "multiclass_classification",
+            "imbalanced_datasets",
+            "performance_measures"
+        ]
+    },
+    "area_under_roc_curve": {
+        "title": "Area Under ROC Curve",
+        "prerequisites": [
+            "roc_curve",
+            "binary_classification",
+            "true_positive_rate",
+            "false_positive_rate"
+        ],
+        "further_readings": [
+            "precision_recall_curve",
+            "confusion_matrix",
+            "logistic_regression",
+            "support_vector_machines"
+        ]
+    },
+    "hamming_loss": {
+        "title": "Hamming Loss",
+        "prerequisites": [
+            "multi_label_classification",
+            "evaluation_metrics"
+        ],
+        "further_readings": [
+            "precision_recall_f1_score",
+            "jaccard_index",
+            "confusion_matrix",
+            "roc_auc_score"
+        ]
+    },
+    "jaccard_similarity_score": {
+        "title": "Jaccard Similarity Score",
+        "prerequisites": [
+            "set_theory",
+            "similarity_measures",
+            "binary_classification"
+        ],
+        "further_readings": [
+            "cosine_similarity",
+            "dice_coefficient",
+            "hamming_distance",
+            "euclidean_distance",
+            "manhattan_distance"
+        ]
+    },
+    "classification_report": {
+        "title": "Classification Report",
+        "prerequisites": [
+            "supervised_learning",
+            "classification_metrics",
+            "confusion_matrix",
+            "accuracy",
+            "precision",
+            "recall",
+            "f1_score"
+        ],
+        "further_readings": [
+            "roc_curve",
+            "auc_score",
+            "multiclass_classification",
+            "imbalanced_data",
+            "cross_validation"
+        ]
+    },
+    "accuracy": {
+        "title": "Accuracy",
+        "prerequisites": [
+            "classification",
+            "confusion_matrix",
+            "evaluation_metrics"
+        ],
+        "further_readings": [
+            "precision",
+            "recall",
+            "f1_score",
+            "roc_auc",
+            "cross_validation"
+        ]
+    },
+    "multi_class_classification": {
+        "title": "Multi-Class Classification",
+        "prerequisites": [
+            "supervised_learning",
+            "logistic_regression",
+            "decision_trees",
+            "support_vector_machines",
+            "neural_networks"
+        ],
+        "further_readings": [
+            "one_vs_all_classification",
+            "one_vs_one_classification",
+            "softmax_regression",
+            "error_correcting_output_codes"
+        ]
+    },
+    "multi_label_classification": {
+        "title": "Multi-Label Classification",
+        "prerequisites": [
+            "supervised_learning",
+            "classification",
+            "machine_learning_algorithms",
+            "feature_extraction",
+            "evaluation_metrics"
+        ],
+        "further_readings": [
+            "binary_relevance",
+            "classifier_chains",
+            "label_powerset",
+            "neural_networks",
+            "deep_learning",
+            "ensemble_methods"
+        ]
+    },
+    "average_precision_score": {
+        "title": "Average Precision Score",
+        "prerequisites": [
+            "precision_recall_curve",
+            "area_under_curve",
+            "binary_classification"
+        ],
+        "further_readings": [
+            "mean_average_precision",
+            "f1_score",
+            "roc_auc_score",
+            "precision_recall_fscore_support"
+        ]
+    },
+    "roc_auc_score": {
+        "title": "ROC AUC Score",
+        "prerequisites": [
+            "binary_classification",
+            "confusion_matrix",
+            "true_positive_rate",
+            "false_positive_rate"
+        ],
+        "further_readings": [
+            "precision_recall_curve",
+            "f1_score",
+            "logistic_regression",
+            "support_vector_machines"
+        ]
+    },
+    "log_loss": {
+        "title": "Log Loss",
+        "prerequisites": [
+            "cross_entropy",
+            "probability_theory",
+            "maximum_likelihood_estimation"
+        ],
+        "further_readings": [
+            "binary_classification",
+            "multiclass_classification",
+            "neural_networks",
+            "gradient_descent"
+        ]
+    },
+    "zero_one_loss": {
+        "title": "Zero-One Loss",
+        "prerequisites": [
+            "supervised_learning",
+            "classification",
+            "loss_functions"
+        ],
+        "further_readings": [
+            "hinge_loss",
+            "logistic_loss",
+            "cross_entropy_loss",
+            "mean_squared_error"
+        ]
+    },
+    "segmentation": {
+        "title": "Segmentation",
+        "prerequisites": [
+            "image_processing",
+            "convolutional_neural_network",
+            "object_detection",
+            "semantic_segmentation",
+            "instance_segmentation",
+            "panoptic_segmentation"
+        ],
+        "further_readings": [
+            "mask_r_cnn",
+            "deeplab",
+            "unet",
+            "fcn",
+            "efficientnet"
+        ]
+    },
+    "resnet_paper": {
+        "title": "ResNet Paper",
+        "prerequisites": [
+            "deep_learning",
+            "convolutional_neural_network",
+            "backpropagation",
+            "vanishing_gradient_problem"
+        ],
+        "further_readings": [
+            "inception_network",
+            "densenet",
+            "wide_resnet",
+            "resnext",
+            "efficientnet"
+        ]
+    },
+    "vgg_paper": {
+        "title": "VGG Paper",
+        "prerequisites": [
+            "convolutional_neural_network",
+            "image_classification",
+            "deep_learning"
+        ],
+        "further_readings": [
+            "resnet_paper",
+            "inception_paper",
+            "alexnet_paper",
+            "efficientnet_paper"
+        ]
+    },
+    "inception_paper": {
+        "title": "Inception Paper",
+        "prerequisites": [
+            "deep_learning",
+            "convolutional_neural_network",
+            "image_classification"
+        ],
+        "further_readings": [
+            "resnet_paper",
+            "vgg_paper",
+            "alexnet_paper",
+            "googlenet_paper",
+            "efficientnet_paper"
+        ]
+    },
+    "conditional_gan": {
+        "title": "Conditional GAN",
+        "prerequisites": [
+            "generative_adversarial_networks",
+            "deep_learning",
+            "neural_networks"
+        ],
+        "further_readings": [
+            "pix2pix",
+            "cycle_gan",
+            "ac_gan",
+            "stackgan",
+            "biggan",
+            "stylegan"
+        ]
+    },
+    "image_super_resolution_using_deep_convolutional_networks": {
+        "title": "Image Super-resolution Using Deep Convolutional Networks",
+        "prerequisites": [
+            "convolutional_neural_network",
+            "deep_learning",
+            "computer_vision",
+            "image_processing",
+            "loss_functions",
+            "optimization_algorithms"
+        ],
+        "further_readings": [
+            "generative_adversarial_networks",
+            "residual_learning",
+            "transfer_learning",
+            "image_augmentation",
+            "perceptual_loss"
+        ]
+    },
+    "photorealistic_image_super_resolution_using_dense_skip_connections": {
+        "title": "Photorealistic Image Super Resolution Using Dense Skip Connections",
+        "prerequisites": [
+            "convolutional_neural_network",
+            "deep_learning",
+            "image_super_resolution",
+            "residual_learning",
+            "skip_connections"
+        ],
+        "further_readings": [
+            "generative_adversarial_networks",
+            "perceptual_loss",
+            "image_restoration",
+            "image_enhancement"
+        ]
+    },
+    "deep_residual_learning_for_image_super_resolution": {
+        "title": "Deep Residual Learning for Image Super-Resolution",
+        "prerequisites": [
+            "convolutional_neural_network",
+            "residual_networks",
+            "image_super_resolution",
+            "deep_learning"
+        ],
+        "further_readings": [
+            "generative_adversarial_networks",
+            "perceptual_loss",
+            "image_restoration",
+            "image_generation"
+        ]
+    },
+    "image_augmentation_using_gans": {
+        "title": "Image Augmentation Using GANs",
+        "prerequisites": [
+            "generative_adversarial_networks",
+            "data_augmentation",
+            "deep_learning",
+            "convolutional_neural_networks"
+        ],
+        "further_readings": [
+            "cycle_gan",
+            "pix2pix",
+            "stylegan",
+            "biggan",
+            "conditional_gans"
+        ]
+    },
+    "progressive_gans": {
+        "title": "Progressive GANs",
+        "prerequisites": [
+            "generative_adversarial_networks",
+            "deep_learning",
+            "convolutional_neural_networks"
+        ],
+        "further_readings": [
+            "stylegan",
+            "stylegan2",
+            "biggan",
+            "conditional_gans",
+            "spectral_normalization"
+        ]
+    },
+    "panoptic_deeplab": {
+        "title": "Panoptic Deeplab",
+        "prerequisites": [
+            "semantic_segmentation",
+            "instance_segmentation",
+            "deeplab",
+            "convolutional_neural_network",
+            "axial_attention"
+        ],
+        "further_readings": [
+            "panoptic_fpn",
+            "panoptic_feature_pyramid_networks",
+            "deeplabv3_plus",
+            "efficientnet"
+        ]
+    },
+    "panoptic_fpn": {
+        "title": "Panoptic FPN",
+        "prerequisites": [
+            "feature_pyramid_network",
+            "convolutional_neural_network",
+            "object_detection",
+            "semantic_segmentation",
+            "panoptic_segmentation"
+        ],
+        "further_readings": [
+            "mask_rcnn",
+            "deeplab",
+            "detectron2",
+            "efficientdet",
+            "yolact"
+        ]
+    },
+    "panoptic_track_rcnn": {
+        "title": "Panoptic Track R-CNN",
+        "prerequisites": [
+            "object_detection",
+            "instance_segmentation",
+            "panoptic_segmentation",
+            "mask_rcnn",
+            "track_rcnn",
+            "deep_learning",
+            "computer_vision"
+        ],
+        "further_readings": [
+            "detectron2",
+            "tensor_mask",
+            "pointrend",
+            "deeplab",
+            "panoptic_fpn"
+        ]
+    },
+    "deeplab_v3_plus": {
+        "title": "Deeplab V3 Plus",
+        "prerequisites": [
+            "convolutional_neural_network",
+            "semantic_segmentation",
+            "residual_networks",
+            "atrous_convolution",
+            "pyramid_pooling_module"
+        ],
+        "further_readings": [
+            "deeplab_v1",
+            "deeplab_v2",
+            "deeplab_v3",
+            "image_segmentation",
+            "fully_convolutional_networks"
+        ]
+    },
+    "xception_paper": {
+        "title": "Xception Paper",
+        "prerequisites": [
+            "deep_learning",
+            "convolutional_neural_networks",
+            "inception_v3",
+            "residual_connections"
+        ],
+        "further_readings": [
+            "mobilenet",
+            "nasnet",
+            "efficientnet",
+            "inception_resnet_v2",
+            "squeeze_and_excitation_networks"
+        ]
+    },
+    "3d_convolution": {
+        "title": "3D Convolution",
+        "prerequisites": [
+            "convolutional_neural_network",
+            "deep_learning",
+            "image_processing",
+            "computer_vision"
+        ],
+        "further_readings": [
+            "3d_convolutional_neural_networks",
+            "video_classification",
+            "medical_image_analysis",
+            "volume_rendering"
+        ]
+    },
+    "3d_image_processing": {
+        "title": "3D Image Processing",
+        "prerequisites": [
+            "image_processing",
+            "computer_vision",
+            "convolutional_neural_network",
+            "deep_learning"
+        ],
+        "further_readings": [
+            "point_cloud_processing",
+            "3d_object_recognition",
+            "3d_reconstruction",
+            "3d_shape_analysis"
+        ]
     }
 }
