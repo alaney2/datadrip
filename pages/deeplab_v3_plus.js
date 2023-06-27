@@ -4,7 +4,7 @@
     import fs from 'fs';
     import PageContent from '@/components/PageContent/PageContent';
 
-    const filename = 'deeplab_v3_plus_paper.md';
+    const filename = 'deeplab_v3_plus.md';
 
     export default function MarkdownPage({ markdownContent }) {
     return <PageContent content={markdownContent} filename={filename} />;
