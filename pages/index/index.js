@@ -18,10 +18,12 @@ const AlphabetList = styled('ul')`
     margin-top: 10%;
   }
   @media (min-width: 600px) {
-    right: 10%; 
+    right: 10%;
+    margin-top: 3%;
   }
   @media (min-width: 1024px) {
     right: 15%;
+    margin-top: 3%;
   }
 
   a {
@@ -53,10 +55,12 @@ const MainList = styled('ul')`
     margin-left: 0.5rem;
   }
   @media (min-width: 600px) {
-    margin-left: 10%; 
+    margin-left: 10%;
+    margin-top: 3%;
   }
   @media (min-width: 1024px) {
     margin-left: 15%;
+    margin-top: 3%;
   }
   
   a {
