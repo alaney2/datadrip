@@ -2078,7 +2078,7 @@
         "further_readings": [
             "region_proposal_networks",
             "mask_r-cnn",
-            "yolov5",
+            "yolo_v5",
             "efficientdet",
             "faster_r-cnn",
             "ssd",
@@ -11930,26 +11930,6 @@
             "f1_score",
             "average_precision_score",
             "area_under_curve"
-        ]
-    },
-    "yolov5": {
-        "title": "YOLOv5",
-        "prerequisites": [
-            "object_detection",
-            "convolutional_neural_network",
-            "deep_learning",
-            "transfer_learning",
-            "bounding_box"
-        ],
-        "further_readings": [
-            "yolov4",
-            "yolov3",
-            "yolov2",
-            "yolov1",
-            "anchor_boxes",
-            "mean_average_precision",
-            "iou_loss",
-            "focal_loss"
         ]
     },
     "rcnn": {
