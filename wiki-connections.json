@@ -16729,17 +16729,17 @@
         ]
     },
     "broyden_fletcher_goldfarb_shanno_algorithm": {
-        "title": "Broyden Fletcher Goldfarb Shanno Algorithm",
+        "title": "Broyden-Fletcher-Goldfarb-Shanno Algorithm",
         "prerequisites": [
+            "optimization_algorithms",
             "gradient_descent",
             "quasi_newton_methods",
-            "line_search",
-            "optimization"
+            "line_search_methods"
         ],
         "further_readings": [
-            "limited_memory_bfgs",
             "conjugate_gradient_method",
             "newton_raphson_method",
+            "limited_memory_bfgs",
             "trust_region_methods"
         ]
     },
@@ -22748,6 +22748,477 @@
             "genetic_algorithms",
             "simulated_annealing",
             "tabu_search"
+        ]
+    },
+    "elastic_net": {
+        "title": "Elastic Net",
+        "prerequisites": [
+            "linear_regression",
+            "ridge_regression",
+            "lasso_regression",
+            "overfitting",
+            "underfitting",
+            "bias_variance_tradeoff"
+        ],
+        "further_readings": [
+            "regularization",
+            "cross_validation",
+            "feature_selection",
+            "multicollinearity",
+            "glmnet"
+        ]
+    },
+    "nonlinear_conjugate_gradient": {
+        "title": "Nonlinear Conjugate Gradient",
+        "prerequisites": [
+            "gradient_descent",
+            "conjugate_gradient_method",
+            "line_search_methods",
+            "optimization_in_machine_learning"
+        ],
+        "further_readings": [
+            "quasi_newton_methods",
+            "stochastic_gradient_descent",
+            "broyden_fletcher_goldfarb_shanno_algorithm",
+            "limited_memory_bfgs"
+        ]
+    },
+    "preconditioned_conjugate_gradient": {
+        "title": "Preconditioned Conjugate Gradient",
+        "prerequisites": [
+            "linear_algebra",
+            "numerical_optimization",
+            "gradient_descent",
+            "conjugate_gradient_method"
+        ],
+        "further_readings": [
+            "sparse_matrix",
+            "krylov_subspace",
+            "iterative_methods",
+            "preconditioning_techniques"
+        ]
+    },
+    "second_order_methods": {
+        "title": "Second Order Methods",
+        "prerequisites": [
+            "gradient_descent",
+            "newtons_method",
+            "optimization_algorithms",
+            "machine_learning_basics",
+            "deep_learning_basics"
+        ],
+        "further_readings": [
+            "conjugate_gradient_method",
+            "broyden_fletcher_goldfarb_shanno_algorithm",
+            "levenberg_marquardt_algorithm",
+            "trust_region_methods"
+        ]
+    },
+    "constrained_optimization": {
+        "title": "Constrained Optimization",
+        "prerequisites": [
+            "linear_programming",
+            "nonlinear_programming",
+            "lagrange_multipliers",
+            "gradient_descent",
+            "convex_optimization"
+        ],
+        "further_readings": [
+            "interior_point_methods",
+            "penalty_methods",
+            "augmented_lagrangian_methods",
+            "sequential_quadratic_programming"
+        ]
+    },
+    "karush_kuhn_tucker_conditions": {
+        "title": "Karush Kuhn Tucker Conditions",
+        "prerequisites": [
+            "convex_optimization",
+            "lagrange_multipliers",
+            "nonlinear_programming",
+            "constraint_optimization"
+        ],
+        "further_readings": [
+            "convex_analysis",
+            "duality_theory",
+            "interior_point_methods",
+            "penalty_methods"
+        ]
+    },
+    "duality_theory": {
+        "title": "Duality Theory",
+        "prerequisites": [
+            "linear_programming",
+            "convex_optimization",
+            "lagrange_multipliers"
+        ],
+        "further_readings": [
+            "support_vector_machines",
+            "dual_decomposition",
+            "primal_dual_methods",
+            "convex_analysis"
+        ]
+    },
+    "penalty_method": {
+        "title": "Penalty Method",
+        "prerequisites": [
+            "optimization_techniques",
+            "constraint_handling",
+            "mathematical_programming"
+        ],
+        "further_readings": [
+            "interior_point_methods",
+            "lagrange_multiplier",
+            "augmented_lagrangian_method",
+            "constrained_optimization"
+        ]
+    },
+    "linear_programming": {
+        "title": "Linear Programming",
+        "prerequisites": [
+            "optimization",
+            "simplex_method",
+            "duality_in_linear_programming",
+            "integer_programming"
+        ],
+        "further_readings": [
+            "convex_optimization",
+            "stochastic_programming",
+            "dynamic_programming",
+            "game_theory"
+        ]
+    },
+    "sdp_and_sos_for_optimization": {
+        "title": "SDP and SOS for Optimization",
+        "prerequisites": [
+            "linear_programming",
+            "convex_optimization",
+            "semidefinite_programming",
+            "sum_of_squares_optimization",
+            "polynomial_optimization"
+        ],
+        "further_readings": [
+            "convex_cones_and_interior_point_methods",
+            "optimization_over_polynomials",
+            "positive_polynomials_and_sos",
+            "semidefinite_programming_and_sos"
+        ]
+    },
+    "introduction_to_semidefinite_relaxation": {
+        "title": "Introduction to Semidefinite Relaxation",
+        "prerequisites": [
+            "linear_programming",
+            "convex_optimization",
+            "quadratic_programming",
+            "linear_algebra"
+        ],
+        "further_readings": [
+            "semidefinite_programming",
+            "convex_relaxation",
+            "spectral_theory",
+            "optimization_theory"
+        ]
+    },
+    "convex_optimization_and_semidefinite_programming": {
+        "title": "Convex Optimization and Semidefinite Programming",
+        "prerequisites": [
+            "linear_algebra",
+            "optimization_theory",
+            "convex_sets_and_functions",
+            "linear_programming",
+            "quadratic_programming",
+            "convex_optimization"
+        ],
+        "further_readings": [
+            "interior_point_methods",
+            "conic_optimization",
+            "duality_in_optimization",
+            "stochastic_optimization",
+            "nonlinear_optimization",
+            "machine_learning_optimization"
+        ]
+    },
+    "applications_of_semidefinite_programming": {
+        "title": "Applications of Semidefinite Programming",
+        "prerequisites": [
+            "linear_programming",
+            "convex_optimization",
+            "optimization_theory",
+            "machine_learning_basics"
+        ],
+        "further_readings": [
+            "convex_analysis",
+            "duality_in_optimization",
+            "interior_point_methods",
+            "robust_optimization"
+        ]
+    },
+    "primal_dual_interior_point_method": {
+        "title": "Primal Dual Interior Point Method",
+        "prerequisites": [
+            "linear_programming",
+            "convex_optimization",
+            "duality_theory",
+            "interior_point_methods"
+        ],
+        "further_readings": [
+            "barrier_methods",
+            "conic_programming",
+            "semidefinite_programming",
+            "second_order_cone_programming"
+        ]
+    },
+    "barrier_method": {
+        "title": "Barrier Method",
+        "prerequisites": [
+            "convex_optimization",
+            "interior_point_methods",
+            "lagrange_multipliers",
+            "karush_kuhn_tucker_conditions"
+        ],
+        "further_readings": [
+            "primal_dual_interior_point_methods",
+            "semidefinite_programming",
+            "second_order_cone_programming",
+            "linear_programming"
+        ]
+    },
+    "proximal_algorithms_in_machine_learning": {
+        "title": "Proximal Algorithms in Machine Learning",
+        "prerequisites": [
+            "gradient_descent",
+            "convex_optimization",
+            "regularization_in_machine_learning",
+            "loss_functions",
+            "linear_regression",
+            "logistic_regression"
+        ],
+        "further_readings": [
+            "stochastic_gradient_descent",
+            "convex_analysis",
+            "lasso_and_ridge_regression",
+            "elastic_net",
+            "sparse_coding"
+        ]
+    },
+    "proximal_optimization_for_large_scale_machine_learning": {
+        "title": "Proximal Optimization For Large Scale Machine Learning",
+        "prerequisites": [
+            "gradient_descent",
+            "convex_optimization",
+            "stochastic_optimization",
+            "machine_learning_basics",
+            "large_scale_machine_learning"
+        ],
+        "further_readings": [
+            "proximal_gradient_methods",
+            "accelerated_proximal_gradient_methods",
+            "splitting_methods_for_large_scale_ml",
+            "distributed_optimization",
+            "nonconvex_proximal_optimization"
+        ]
+    },
+    "proximal_gradient_methods_for_nonconvex_problems": {
+        "title": "Proximal Gradient Methods For Nonconvex Problems",
+        "prerequisites": [
+            "gradient_descent",
+            "convex_optimization",
+            "nonconvex_optimization",
+            "proximal_gradient_descent",
+            "machine_learning_basics"
+        ],
+        "further_readings": [
+            "stochastic_gradient_descent",
+            "convex_relaxation",
+            "subgradient_methods",
+            "mirror_descent",
+            "accelerated_gradient_descent"
+        ]
+    },
+    "nonlinear_programming": {
+        "title": "Nonlinear Programming",
+        "prerequisites": [
+            "linear_programming",
+            "convex_optimization",
+            "gradient_descent",
+            "lagrange_multipliers"
+        ],
+        "further_readings": [
+            "quadratic_programming",
+            "constrained_optimization",
+            "genetic_algorithms",
+            "evolutionary_algorithms",
+            "deep_learning_optimization"
+        ]
+    },
+    "convex_analysis": {
+        "title": "Convex Analysis",
+        "prerequisites": [
+            "linear_algebra",
+            "real_analysis",
+            "optimization_theory",
+            "convex_optimization",
+            "vector_spaces"
+        ],
+        "further_readings": [
+            "convex_geometry",
+            "functional_analysis",
+            "nonlinear_optimization",
+            "duality_theory",
+            "convex_hulls"
+        ]
+    },
+    "e_learning": {
+        "title": "E-Learning",
+        "prerequisites": [
+            "artificial_intelligence",
+            "machine_learning",
+            "deep_learning",
+            "natural_language_processing",
+            "reinforcement_learning",
+            "convolutional_neural_network",
+            "recurrent_neural_network",
+            "policy_gradient_methods"
+        ],
+        "further_readings": [
+            "transfer_learning",
+            "generative_adversarial_networks",
+            "autoencoders",
+            "neural_network_optimization",
+            "deep_reinforcement_learning",
+            "unsupervised_learning",
+            "supervised_learning",
+            "semi_supervised_learning"
+        ]
+    },
+    "blended_learning": {
+        "title": "Blended Learning",
+        "prerequisites": [
+            "artificial_intelligence",
+            "machine_learning",
+            "deep_learning",
+            "online_learning",
+            "adaptive_learning",
+            "learning_management_systems"
+        ],
+        "further_readings": [
+            "flipped_classroom",
+            "synchronous_learning",
+            "asynchronous_learning",
+            "learning_analytics",
+            "personalized_learning"
+        ]
+    },
+    "massive_open_online_courses": {
+        "title": "Massive Open Online Courses",
+        "prerequisites": [
+            "e_learning",
+            "distance_education",
+            "online_learning_environments",
+            "learning_management_systems",
+            "open_educational_resources"
+        ],
+        "further_readings": [
+            "mooc_pedagogy",
+            "mooc_evaluation_and_assessment",
+            "mooc_design_and_development",
+            "mooc_student_engagement",
+            "mooc_certification_and_credibility"
+        ]
+    },
+    "collaborative_filtering": {
+        "title": "Collaborative Filtering",
+        "prerequisites": [
+            "machine_learning",
+            "recommender_systems",
+            "similarity_measures",
+            "user_item_interaction"
+        ],
+        "further_readings": [
+            "matrix_factorization",
+            "deep_learning_for_recommender_systems",
+            "hybrid_recommender_systems",
+            "cold_start_problem"
+        ]
+    },
+    "low_rank_approximation": {
+        "title": "Low-Rank Approximation",
+        "prerequisites": [
+            "linear_algebra",
+            "singular_value_decomposition",
+            "matrix_factorization",
+            "principal_component_analysis"
+        ],
+        "further_readings": [
+            "non_negative_matrix_factorization",
+            "tensor_decomposition",
+            "latent_semantic_analysis",
+            "collaborative_filtering",
+            "recommendation_systems"
+        ]
+    },
+    "random_matrix_theory": {
+        "title": "Random Matrix Theory",
+        "prerequisites": [
+            "linear_algebra",
+            "probability_theory",
+            "spectral_theory",
+            "stochastic_processes"
+        ],
+        "further_readings": [
+            "eigenvalue_statistics",
+            "random_graph_theory",
+            "free_probability_theory",
+            "quantum_chaos"
+        ]
+    },
+    "compressive_sensing_theory": {
+        "title": "Compressive Sensing Theory",
+        "prerequisites": [
+            "signal_processing",
+            "linear_algebra",
+            "optimization_theory",
+            "probability_theory"
+        ],
+        "further_readings": [
+            "sparse_representation",
+            "convex_optimization",
+            "reconstruction_algorithms",
+            "machine_learning_in_signal_processing"
+        ]
+    },
+    "adversarial_machine_learning": {
+        "title": "Adversarial Machine Learning",
+        "prerequisites": [
+            "machine_learning_basics",
+            "deep_learning",
+            "neural_networks",
+            "convolutional_neural_network",
+            "generative_adversarial_networks",
+            "reinforcement_learning"
+        ],
+        "further_readings": [
+            "deep_fakes",
+            "adversarial_attacks_in_cyber_security",
+            "robust_machine_learning",
+            "adversarial_defense_techniques",
+            "policy_gradient_methods"
+        ]
+    },
+    "robust_statistics": {
+        "title": "Robust Statistics",
+        "prerequisites": [
+            "probability_theory",
+            "statistical_inference",
+            "outlier_detection",
+            "machine_learning_basics"
+        ],
+        "further_readings": [
+            "m_estimation",
+            "huber_loss",
+            "tukey_biweight",
+            "influence_function",
+            "breakdown_point"
         ]
     }
 }
