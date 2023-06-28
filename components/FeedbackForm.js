@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
@@ -64,7 +64,7 @@ const FeedbackForm = () => {
     <Box component="form" onSubmit={handleSubmit} sx={{ maxWidth: '400px', margin: 'auto' }}>
       <Typography 
         variant="h4" 
-        gutterBottom 
+        gutterBottom
         sx={{ margin: '8px ' }}
       >
         Contact

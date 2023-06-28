@@ -7,6 +7,7 @@ import Typography from '@mui/material/Typography';
 import InfoIcon from '@mui/icons-material/Info';
 import TimelineIcon from '@mui/icons-material/Timeline';
 import BubbleChartIcon from '@mui/icons-material/BubbleChart';
+import ListIcon from '@mui/icons-material/List';
 
 export default function MenuComponent({ anchorEl, open, onClose }) {
   return (
@@ -37,6 +38,14 @@ export default function MenuComponent({ anchorEl, open, onClose }) {
             <BubbleChartIcon fontSize="small" />
           </ListItemIcon>
           <Typography variant="inherit">Graph</Typography>
+        </MenuItem>
+      </Link>
+      <Link href="/index" passHref>
+        <MenuItem onClick={onClose} component="a">
+          <ListItemIcon>
+            <ListIcon fontSize="small" />
+          </ListItemIcon>
+          <Typography variant="inherit">Index</Typography>
         </MenuItem>
       </Link>
       {/* <Link href="/timeline" passHref>

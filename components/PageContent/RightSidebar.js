@@ -93,8 +93,9 @@ export default function RightSidebar({ headings, onItemClick=() => {}, expandabl
     };
 
     observer.current = new IntersectionObserver(handleIntersection, {
-      rootMargin: '0px 0px -90% 0px',
-      threshold: 1,
+      // rootMargin: '0px 0px -90% 0px',
+      rootMargin: '0px 0px 0px 0px',
+      threshold: 0.5,
     });
 
     headings.forEach((heading) => {
@@ -131,15 +132,15 @@ export default function RightSidebar({ headings, onItemClick=() => {}, expandabl
     target.scrollIntoView({ behavior: 'smooth' });
     setCurrentHeading(slug);
     router.push(`#${slug}`);
-    setTimeout(() => {
-      setIsManualScroll(false);
-      headings.forEach((heading) => {
-        const target = document.getElementById(heading.slug);
-        if (target) {
-          observer.current.observe(target);
-        }
-      });
-    }, 200);
+    // setTimeout(() => {
+    //   setIsManualScroll(false);
+    //   headings.forEach((heading) => {
+    //     const target = document.getElementById(heading.slug);
+    //     if (target) {
+    //       observer.current.observe(target);
+    //     }
+    //   });
+    // }, 0);
   };
 
   const handleContentsClick = () => {
