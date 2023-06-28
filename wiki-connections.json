@@ -5546,7 +5546,6 @@
             "reinforcement_learning"
         ],
         "further_readings": [
-            "e-learning",
             "blended_learning",
             "massive_open_online_courses"
         ]
@@ -16728,7 +16727,7 @@
             "generalized_belief_propagation"
         ]
     },
-    "broyden_fletcher_goldfarb_shanno_algorithm": {
+    "broyden-fletcher-goldfarb-shanno_algorithm": {
         "title": "Broyden-Fletcher-Goldfarb-Shanno Algorithm",
         "prerequisites": [
             "optimization_algorithms",
@@ -23068,62 +23067,21 @@
             "convex_hulls"
         ]
     },
-    "e_learning": {
-        "title": "E-Learning",
-        "prerequisites": [
-            "artificial_intelligence",
-            "machine_learning",
-            "deep_learning",
-            "natural_language_processing",
-            "reinforcement_learning",
-            "convolutional_neural_network",
-            "recurrent_neural_network",
-            "policy_gradient_methods"
-        ],
-        "further_readings": [
-            "transfer_learning",
-            "generative_adversarial_networks",
-            "autoencoders",
-            "neural_network_optimization",
-            "deep_reinforcement_learning",
-            "unsupervised_learning",
-            "supervised_learning",
-            "semi_supervised_learning"
-        ]
-    },
     "blended_learning": {
         "title": "Blended Learning",
         "prerequisites": [
             "artificial_intelligence",
             "machine_learning",
-            "deep_learning",
-            "online_learning",
-            "adaptive_learning",
-            "learning_management_systems"
+            "deep_learning"
         ],
         "further_readings": [
-            "flipped_classroom",
-            "synchronous_learning",
-            "asynchronous_learning",
-            "learning_analytics",
-            "personalized_learning"
         ]
     },
     "massive_open_online_courses": {
         "title": "Massive Open Online Courses",
         "prerequisites": [
-            "e_learning",
-            "distance_education",
-            "online_learning_environments",
-            "learning_management_systems",
-            "open_educational_resources"
         ],
         "further_readings": [
-            "mooc_pedagogy",
-            "mooc_evaluation_and_assessment",
-            "mooc_design_and_development",
-            "mooc_student_engagement",
-            "mooc_certification_and_credibility"
         ]
     },
     "collaborative_filtering": {
