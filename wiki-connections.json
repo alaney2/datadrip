@@ -16742,6 +16742,21 @@
             "trust_region_methods"
         ]
     },
+    "broyden_fletcher_goldfarb_shanno_algorithm": {
+        "title": "Broyden Fletcher Goldfarb Shanno Algorithm",
+        "prerequisites": [
+            "optimization_algorithms",
+            "gradient_descent",
+            "quasi_newton_methods",
+            "line_search_methods"
+        ],
+        "further_readings": [
+            "conjugate_gradient_method",
+            "newton_raphson_method",
+            "limited_memory_bfgs",
+            "trust_region_methods"
+        ]
+    },
     "levenberg_marquardt_algorithm": {
         "title": "Levenberg-Marquardt Algorithm",
         "prerequisites": [
@@ -23099,7 +23114,7 @@
             "cold_start_problem"
         ]
     },
-    "low_rank_approximation": {
+    "low-rank_approximation": {
         "title": "Low-Rank Approximation",
         "prerequisites": [
             "linear_algebra",
