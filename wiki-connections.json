@@ -351,6 +351,21 @@
             "bayesian_inference"
         ]
     },
+    "bias-variance_tradeoff": {
+        "title": "Bias-Variance Tradeoff",
+        "prerequisites": [
+            "supervised_learning",
+            "overfitting_underfitting",
+            "model_complexity",
+            "error_analysis"
+        ],
+        "further_readings": [
+            "regularization",
+            "cross_validation",
+            "ensemble_methods",
+            "bayesian_inference"
+        ]
+    },
     "unsupervised_learning": {
         "title": "Unsupervised Learning",
         "prerequisites": [
@@ -5587,15 +5602,13 @@
         ],
         "further_readings": [
             "cuda_toolkit_documentation",
-            "gpu_architecture_whitepaper",
+            "gpu_architecture",
             "tensorflow_gpu_setup_guide"
         ]
     },
     "pytorch": {
         "title": "Pytorch",
         "prerequisites": [
-            "python programming",
-            "neural networks"
         ],
         "further_readings": [
             "tensorflow",
@@ -6020,7 +6033,7 @@
         "title": "Irreducible Error",
         "prerequisites": [
             "overfitting",
-            "bias-variance_tradeoff"
+            "bias_variance_tradeoff"
         ],
         "further_readings": [
             "cross_validation",
@@ -6035,7 +6048,7 @@
         ],
         "further_readings": [
             "generalization_error",
-            "bias-variance_tradeoff"
+            "bias_variance_tradeoff"
         ]
     },
     "successive_halving": {
@@ -6321,7 +6334,6 @@
         ],
         "further_readings": [
             "interpretable_machine_learning",
-            "model_explanation",
             "causal_inference",
             "fairness_in_machine_learning"
         ]
@@ -6979,8 +6991,7 @@
         "further_readings": [
             "adversarial_defense",
             "adversarial_training",
-            "interpretable_machine_learning",
-            "model_explanation"
+            "interpretable_machine_learning"
         ]
     },
     "adversarial_reinforcement_learning": {
@@ -15399,7 +15410,7 @@
             "autoencoders"
         ],
         "further_readings": [
-            "t_sne",
+            "t-sne",
             "spectral_clustering",
             "deep_belief_networks",
             "generative_adversarial_networks",
@@ -16108,7 +16119,7 @@
         "prerequisites": [
             "clustering_algorithms",
             "dimensionality_reduction",
-            "t_sne",
+            "t-sne",
             "umap",
             "pca",
             "data_preprocessing"
@@ -22215,7 +22226,7 @@
             "r_squared"
         ]
     },
-    "r_squared": {
+    "r-squared": {
         "title": "R-squared",
         "prerequisites": [
             "simple_linear_regression",
@@ -23280,7 +23291,7 @@
             "convolutional_neural_network"
         ]
     },
-    "scikit_learn": {
+    "scikit-learn": {
         "title": "Scikit-learn",
         "prerequisites": [
             "python_programming",
@@ -24466,12 +24477,12 @@
             "manifold_learning",
             "autoencoders",
             "kernel_methods",
-            "t_sne",
+            "t-sne",
             "umap",
             "deep_learning"
         ]
     },
-    "t_sne": {
+    "t-sne": {
         "title": "T-SNE",
         "prerequisites": [
             "machine_learning",
@@ -24536,7 +24547,7 @@
             "support_vector_machines"
         ]
     },
-    "min_max_normalization": {
+    "min-max_normalization": {
         "title": "Min-Max Normalization",
         "prerequisites": [
             "data_preprocessing",
@@ -24669,7 +24680,7 @@
             "cloud_automation"
         ]
     },
-    "multi_task_learning_in_pytorch": {
+    "multi-task_learning_in_pytorch": {
         "title": "Multi-Task Learning in Pytorch",
         "prerequisites": [
             "pytorch_basics",
