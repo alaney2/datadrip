@@ -340,28 +340,15 @@
         "title": "Bias-Variance Tradeoff",
         "prerequisites": [
             "supervised_learning",
-            "irreducible_error",
             "overfitting_underfitting",
-            "model_selection",
-            "regularization_techniques",
-            "ensemble_methods",
-            "expected_prediction_error"
+            "model_complexity",
+            "error_analysis"
         ],
         "further_readings": [
+            "regularization",
             "cross_validation",
-            "successive_halving",
-            "hyperband",
-            "learning_rate_schedules",
-            "random_search",
-            "grid_search",
-            "transfer_learning",
-            "bayesian_optimization",
-            "genetic_algorithms",
-            "adversarial_training",
-            "hyperparameter_optimization",
-            "feature_engineering",
-            "domain_adaptation",
-            "model_evaluation_metrics"
+            "ensemble_methods",
+            "bayesian_inference"
         ]
     },
     "unsupervised_learning": {
@@ -1548,28 +1535,19 @@
     "neural_networks": {
         "title": "Neural Networks",
         "prerequisites": [
-            "linear_algebra",
-            "probability_theory",
-            "calculus",
-            "matrix_calculus",
+            "artificial_intelligence",
+            "machine_learning",
+            "deep_learning",
+            "perceptron",
             "backpropagation",
-            "activation_functions",
-            "optimization_algorithms",
-            "gradient_descent",
-            "overfitting",
-            "convolutional_neural_networks"
+            "activation_functions"
         ],
         "further_readings": [
-            "recurrent_neural_networks",
-            "long_short_term_memory",
-            "transformer_networks",
-            "capsule_networks",
-            "generative_models",
-            "transfer_learning",
-            "semi_supervised_learning",
-            "reinforcement_learning",
-            "explainable_ai",
-            "neuroscience"
+            "convolutional_neural_network",
+            "recurrent_neural_network",
+            "deep_neural_network",
+            "feedforward_neural_network",
+            "radial_basis_function_network"
         ]
     },
     "double_q_learning": {
@@ -22238,18 +22216,19 @@
         ]
     },
     "r_squared": {
-        "title": "R Squared",
+        "title": "R-squared",
         "prerequisites": [
-            "linear_regression",
-            "correlation_coefficient",
-            "mean_squared_error",
-            "residuals"
+            "simple_linear_regression",
+            "multiple_linear_regression",
+            "residuals_in_regression",
+            "sum_of_squares"
         ],
         "further_readings": [
             "adjusted_r_squared",
-            "coefficient_of_determination",
-            "multiple_regression",
-            "anova"
+            "f_test",
+            "anova",
+            "goodness_of_fit",
+            "model_selection"
         ]
     },
     "smooth_l1_loss": {
@@ -23069,15 +23048,12 @@
             "machine_learning",
             "deep_learning"
         ],
-        "further_readings": [
-        ]
+        "further_readings": []
     },
     "massive_open_online_courses": {
         "title": "Massive Open Online Courses",
-        "prerequisites": [
-        ],
-        "further_readings": [
-        ]
+        "prerequisites": [],
+        "further_readings": []
     },
     "collaborative_filtering": {
         "title": "Collaborative Filtering",
@@ -23172,6 +23148,1926 @@
             "tukey_biweight",
             "influence_function",
             "breakdown_point"
+        ]
+    },
+    "asynchronous_stochastic_gradient_descent": {
+        "title": "Asynchronous Stochastic Gradient Descent",
+        "prerequisites": [
+            "gradient_descent",
+            "stochastic_gradient_descent",
+            "distributed_computing",
+            "machine_learning_optimization"
+        ],
+        "further_readings": [
+            "parallel_computing",
+            "convex_optimization",
+            "deep_learning_optimization",
+            "large_scale_machine_learning"
+        ]
+    },
+    "federated_learning": {
+        "title": "Federated Learning",
+        "prerequisites": [
+            "machine_learning",
+            "deep_learning",
+            "distributed_computing",
+            "data_privacy"
+        ],
+        "further_readings": [
+            "privacy_preserving_machine_learning",
+            "edge_computing",
+            "multi_agent_learning",
+            "differential_privacy"
+        ]
+    },
+    "parallel_computing": {
+        "title": "Parallel Computing",
+        "prerequisites": [
+            "computer_architecture",
+            "operating_systems",
+            "data_structures",
+            "algorithms",
+            "distributed_computing"
+        ],
+        "further_readings": [
+            "cloud_computing",
+            "high_performance_computing",
+            "quantum_computing",
+            "gpu_programming",
+            "multithreading"
+        ]
+    },
+    "cuda_toolkit_documentation": {
+        "title": "CUDA Toolkit Documentation",
+        "prerequisites": [
+            "gpu_architecture",
+            "parallel_computing",
+            "nvidia_graphics_processing_units",
+            "c++_programming",
+            "python_programming"
+        ],
+        "further_readings": [
+            "cuda_c_programming_guide",
+            "cuda_samples",
+            "cuda_best_practices_guide",
+            "cuda_runtime_api",
+            "cuda_library_documentation"
+        ]
+    },
+    "gpu_architecture": {
+        "title": "GPU Architecture",
+        "prerequisites": [
+            "computer_architecture",
+            "parallel_computing",
+            "cuda_programming",
+            "opencl_programming",
+            "deep_learning",
+            "convolutional_neural_network",
+            "recurrent_neural_network"
+        ],
+        "further_readings": [
+            "tensor_cores",
+            "ray_tracing",
+            "gpu_memory_hierarchy",
+            "gpu_programming_optimization",
+            "distributed_computing",
+            "high_performance_computing"
+        ]
+    },
+    "tensorflow_gpu_setup_guide": {
+        "title": "Tensorflow GPU Setup Guide",
+        "prerequisites": [
+            "tensorflow_basics",
+            "gpu_architecture",
+            "cuda_programming",
+            "python_programming"
+        ],
+        "further_readings": [
+            "tensorflow_advanced_topics",
+            "deep_learning_optimization",
+            "gpu_computing",
+            "distributed_computing"
+        ]
+    },
+    "python_programming": {
+        "title": "Python Programming",
+        "prerequisites": [
+            "basic_programming_concepts",
+            "data_structures",
+            "algorithms",
+            "object_oriented_programming"
+        ],
+        "further_readings": [
+            "advanced_python_programming",
+            "python_for_data_science",
+            "python_for_machine_learning",
+            "python_for_deep_learning"
+        ]
+    },
+    "torchvision": {
+        "title": "Torchvision",
+        "prerequisites": [
+            "python_programming",
+            "pytorch",
+            "deep_learning",
+            "computer_vision",
+            "neural_networks"
+        ],
+        "further_readings": [
+            "image_processing",
+            "data_augmentation",
+            "transfer_learning",
+            "convolutional_neural_network"
+        ]
+    },
+    "scikit_learn": {
+        "title": "Scikit-learn",
+        "prerequisites": [
+            "python_programming",
+            "machine_learning_basics",
+            "numpy",
+            "pandas",
+            "matplotlib",
+            "supervised_learning",
+            "unsupervised_learning"
+        ],
+        "further_readings": [
+            "deep_learning",
+            "natural_language_processing",
+            "computer_vision",
+            "reinforcement_learning",
+            "tensorflow",
+            "keras",
+            "pytorch"
+        ]
+    },
+    "python": {
+        "title": "Python",
+        "prerequisites": [
+            "basic_programming_concepts",
+            "object_oriented_programming",
+            "data_structures",
+            "algorithms"
+        ],
+        "further_readings": [
+            "python_libraries_for_data_science",
+            "python_for_web_development",
+            "python_for_artificial_intelligence",
+            "python_for_machine_learning",
+            "python_for_deep_learning"
+        ]
+    },
+    "gpu": {
+        "title": "GPU",
+        "prerequisites": [
+            "computer_architecture",
+            "parallel_computing",
+            "cuda_programming",
+            "opencl_programming",
+            "deep_learning"
+        ],
+        "further_readings": [
+            "gpu_optimization",
+            "gpu_architecture",
+            "tensor_cores",
+            "ray_tracing",
+            "gpu_accelerated_computing"
+        ]
+    },
+    "torch": {
+        "title": "Torch",
+        "prerequisites": [
+            "python_programming",
+            "deep_learning_basics",
+            "neural_networks",
+            "backpropagation"
+        ],
+        "further_readings": [
+            "pytorch_documentation",
+            "torchvision",
+            "torchtext",
+            "torch_audio",
+            "torch_geometric"
+        ]
+    },
+    "theano": {
+        "title": "Theano",
+        "prerequisites": [
+            "python_programming",
+            "machine_learning_basics",
+            "deep_learning_basics",
+            "neural_networks",
+            "backpropagation"
+        ],
+        "further_readings": [
+            "tensorflow",
+            "keras",
+            "pytorch",
+            "cuda_programming",
+            "gpu_computing"
+        ]
+    },
+    "chain_rule": {
+        "title": "Chain Rule",
+        "prerequisites": [
+            "derivative",
+            "partial_derivative",
+            "multivariable_calculus",
+            "backpropagation"
+        ],
+        "further_readings": [
+            "gradient_descent",
+            "stochastic_gradient_descent",
+            "optimization_algorithms",
+            "neural_networks"
+        ]
+    },
+    "reverse_mode_autodiff": {
+        "title": "Reverse Mode Autodiff",
+        "prerequisites": [
+            "automatic_differentiation",
+            "backpropagation",
+            "neural_networks",
+            "gradient_descent"
+        ],
+        "further_readings": [
+            "optimization_algorithms",
+            "deep_learning",
+            "computational_graphs",
+            "machine_learning"
+        ]
+    },
+    "forward_mode_autodiff": {
+        "title": "Forward Mode Autodiff",
+        "prerequisites": [
+            "automatic_differentiation",
+            "computational_graphs",
+            "chain_rule"
+        ],
+        "further_readings": [
+            "backpropagation",
+            "reverse_mode_autodiff",
+            "neural_networks",
+            "gradient_descent"
+        ]
+    },
+    "cuda": {
+        "title": "CUDA",
+        "prerequisites": [
+            "parallel_computing",
+            "gpu_architecture",
+            "programming_languages_c_c++",
+            "data_parallelism",
+            "thread_hierarchy"
+        ],
+        "further_readings": [
+            "cuda_memory_hierarchy",
+            "cuda_programming_model",
+            "cuda_optimization_techniques",
+            "gpu_accelerated_computing",
+            "cuda_libraries"
+        ]
+    },
+    "distributed_deep_learning": {
+        "title": "Distributed Deep Learning",
+        "prerequisites": [
+            "deep_learning",
+            "neural_networks",
+            "machine_learning",
+            "parallel_computing",
+            "cloud_computing",
+            "data_distributions",
+            "gradient_descent",
+            "backpropagation"
+        ],
+        "further_readings": [
+            "federated_learning",
+            "edge_computing",
+            "multi_agent_systems",
+            "distributed_systems",
+            "scalable_machine_learning",
+            "high_performance_computing",
+            "distributed_data_storage"
+        ]
+    },
+    "tensor_cores": {
+        "title": "Tensor Cores",
+        "prerequisites": [
+            "gpu_architecture",
+            "cuda_programming",
+            "deep_learning",
+            "matrix_multiplication",
+            "floating_point_arithmetic"
+        ],
+        "further_readings": [
+            "mixed_precision_training",
+            "nvidia_ampere_architecture",
+            "nvidia_volta_architecture",
+            "nvidia_turing_architecture"
+        ]
+    },
+    "fine_tuning": {
+        "title": "Fine Tuning",
+        "prerequisites": [
+            "machine_learning",
+            "deep_learning",
+            "neural_networks",
+            "transfer_learning"
+        ],
+        "further_readings": [
+            "convolutional_neural_network",
+            "recurrent_neural_network",
+            "generative_adversarial_network",
+            "reinforcement_learning"
+        ]
+    },
+    "docker": {
+        "title": "Docker",
+        "prerequisites": [
+            "virtualization",
+            "containerization",
+            "linux_operating_system",
+            "cloud_computing",
+            "software_development",
+            "operating_systems"
+        ],
+        "further_readings": [
+            "docker_compose",
+            "docker_swarm",
+            "kubernetes",
+            "microservices",
+            "devops",
+            "continuous_integration_continuous_deployment"
+        ]
+    },
+    "continuous_integration": {
+        "title": "Continuous Integration",
+        "prerequisites": [
+            "software_development_life_cycle",
+            "version_control_systems",
+            "automated_testing",
+            "build_automation"
+        ],
+        "further_readings": [
+            "continuous_delivery",
+            "continuous_deployment",
+            "devops",
+            "jenkins",
+            "travis_ci",
+            "gitlab_ci"
+        ]
+    },
+    "model_serving_architectures": {
+        "title": "Model Serving Architectures",
+        "prerequisites": [
+            "machine_learning",
+            "deep_learning",
+            "artificial_neural_networks",
+            "cloud_computing",
+            "distributed_systems"
+        ],
+        "further_readings": [
+            "tensorflow_serving",
+            "seldon",
+            "kubeflow",
+            "clipper",
+            "mlflow"
+        ]
+    },
+    "debugging_techniques": {
+        "title": "Debugging Techniques",
+        "prerequisites": [
+            "machine_learning_basics",
+            "deep_learning_basics",
+            "neural_networks",
+            "gradient_descent",
+            "backpropagation",
+            "overfitting_and_underfitting",
+            "bias_variance_tradeoff"
+        ],
+        "further_readings": [
+            "optimization_techniques_in_ml",
+            "regularization_techniques",
+            "dropout_in_neural_networks",
+            "early_stopping_in_ml",
+            "cross_validation_in_ml"
+        ]
+    },
+    "tensorboard": {
+        "title": "TensorBoard",
+        "prerequisites": [
+            "tensorflow",
+            "deep_learning",
+            "neural_networks",
+            "python_programming"
+        ],
+        "further_readings": [
+            "visualization_techniques",
+            "machine_learning_debugging",
+            "hyperparameter_tuning",
+            "model_evaluation"
+        ]
+    },
+    "matplotlib": {
+        "title": "Matplotlib",
+        "prerequisites": [
+            "python_basics",
+            "numpy",
+            "pandas",
+            "data_visualization_concepts"
+        ],
+        "further_readings": [
+            "seaborn",
+            "plotly",
+            "bokeh",
+            "ggplot",
+            "data_visualization_best_practices"
+        ]
+    },
+    "seaborn": {
+        "title": "Seaborn",
+        "prerequisites": [
+            "python",
+            "matplotlib",
+            "pandas",
+            "numpy",
+            "data_visualization"
+        ],
+        "further_readings": [
+            "statistical_data_visualization",
+            "data_science",
+            "machine_learning",
+            "deep_learning"
+        ]
+    },
+    "pycharm_debugger": {
+        "title": "PyCharm Debugger",
+        "prerequisites": [
+            "python_basics",
+            "introduction_to_pycharm",
+            "python_debugging"
+        ],
+        "further_readings": [
+            "advanced_python_debugging",
+            "pycharm_profiling",
+            "unit_testing_in_pycharm"
+        ]
+    },
+    "data_parallelism": {
+        "title": "Data Parallelism",
+        "prerequisites": [
+            "distributed_computing",
+            "parallel_computing",
+            "deep_learning",
+            "neural_networks",
+            "gpu_programming"
+        ],
+        "further_readings": [
+            "model_parallelism",
+            "distributed_tensorflow",
+            "cuda_programming",
+            "horovod",
+            "mpi"
+        ]
+    },
+    "model_parallelism": {
+        "title": "Model Parallelism",
+        "prerequisites": [
+            "deep_learning",
+            "neural_networks",
+            "distributed_computing",
+            "gpu_computing"
+        ],
+        "further_readings": [
+            "data_parallelism",
+            "pipeline_parallelism",
+            "hybrid_parallelism",
+            "parallel_computing_in_machine_learning"
+        ]
+    },
+    "deep_learning_book": {
+        "title": "Deep Learning Book",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "backpropagation",
+            "convolutional_neural_network",
+            "recurrent_neural_network",
+            "deep_belief_network",
+            "autoencoder",
+            "generative_adversarial_network",
+            "reinforcement_learning"
+        ],
+        "further_readings": [
+            "deep_learning_techniques",
+            "deep_learning_applications",
+            "deep_learning_frameworks",
+            "deep_learning_optimization",
+            "deep_learning_for_computer_vision",
+            "deep_learning_for_natural_language_processing",
+            "deep_learning_for_audio_signal_processing",
+            "deep_learning_in_healthcare"
+        ]
+    },
+    "contrastive_divergence": {
+        "title": "Contrastive Divergence",
+        "prerequisites": [
+            "machine_learning",
+            "deep_learning",
+            "neural_networks",
+            "unsupervised_learning",
+            "boltzmann_machine",
+            "markov_chain_monte_carlo"
+        ],
+        "further_readings": [
+            "restricted_boltzmann_machine",
+            "deep_belief_networks",
+            "generative_modeling",
+            "energy_based_models"
+        ]
+    },
+    "particle_filter": {
+        "title": "Particle Filter",
+        "prerequisites": [
+            "bayesian_inference",
+            "monte_carlo_methods",
+            "probability_theory",
+            "stochastic_processes"
+        ],
+        "further_readings": [
+            "sequential_monte_carlo_methods",
+            "hidden_markov_models",
+            "kalman_filters",
+            "robot_localization"
+        ]
+    },
+    "backpropagation_through_time": {
+        "title": "Backpropagation Through Time",
+        "prerequisites": [
+            "neural_networks",
+            "recurrent_neural_networks",
+            "gradient_descent",
+            "loss_functions"
+        ],
+        "further_readings": [
+            "vanishing_gradient_problem",
+            "long_short_term_memory",
+            "gated_recurrent_unit",
+            "optimization_algorithms"
+        ]
+    },
+    "lstm": {
+        "title": "Long Short-Term Memory (LSTM)",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "backpropagation",
+            "recurrent_neural_networks",
+            "gradient_descent",
+            "activation_functions"
+        ],
+        "further_readings": [
+            "gated_recurrent_units",
+            "bidirectional_lstm",
+            "sequence_prediction",
+            "time_series_prediction",
+            "natural_language_processing"
+        ]
+    },
+    "gru": {
+        "title": "Gated Recurrent Unit (GRU)",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "recurrent_neural_networks",
+            "backpropagation",
+            "gradient_descent",
+            "activation_functions"
+        ],
+        "further_readings": [
+            "long_short_term_memory",
+            "deep_learning",
+            "sequence_to_sequence_models",
+            "natural_language_processing",
+            "time_series_prediction"
+        ]
+    },
+    "seq2seq": {
+        "title": "Seq2Seq",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "recurrent_neural_networks",
+            "long_short_term_memory",
+            "encoder_decoder_architecture"
+        ],
+        "further_readings": [
+            "attention_mechanism",
+            "transformer_model",
+            "beam_search",
+            "greedy_decoding",
+            "teacher_forcing"
+        ]
+    },
+    "gated_recurrent_units": {
+        "title": "Gated Recurrent Units",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "recurrent_neural_networks",
+            "backpropagation",
+            "gradient_descent",
+            "long_short_term_memory"
+        ],
+        "further_readings": [
+            "deep_learning",
+            "sequence_to_sequence_models",
+            "natural_language_processing",
+            "speech_recognition",
+            "time_series_prediction"
+        ]
+    },
+    "transformer_architecture": {
+        "title": "Transformer Architecture",
+        "prerequisites": [
+            "deep_learning",
+            "neural_networks",
+            "attention_mechanism",
+            "sequence_to_sequence_models"
+        ],
+        "further_readings": [
+            "self_attention",
+            "multi_head_attention",
+            "position_encoding",
+            "transformer_in_nlp",
+            "transformer_in_computer_vision"
+        ]
+    },
+    "dilated_recurrent_neural_networks": {
+        "title": "Dilated Recurrent Neural Networks",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "recurrent_neural_networks",
+            "long_short_term_memory",
+            "gradient_descent",
+            "backpropagation"
+        ],
+        "further_readings": [
+            "gated_recurrent_units",
+            "convolutional_neural_network",
+            "residual_neural_networks",
+            "deep_learning_optimization"
+        ]
+    },
+    "vanishing_gradients_problem": {
+        "title": "Vanishing Gradients Problem",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "backpropagation",
+            "activation_functions",
+            "gradient_descent"
+        ],
+        "further_readings": [
+            "long_short_term_memory",
+            "gated_recurrent_units",
+            "residual_networks",
+            "batch_normalization"
+        ]
+    },
+    "sequence_to_sequence_learning": {
+        "title": "Sequence To Sequence Learning",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "recurrent_neural_networks",
+            "long_short_term_memory",
+            "encoder_decoder_architecture"
+        ],
+        "further_readings": [
+            "attention_mechanism",
+            "transformer_models",
+            "beam_search",
+            "teacher_forcing"
+        ]
+    },
+    "memory_networks": {
+        "title": "Memory Networks",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "deep_learning",
+            "recurrent_neural_networks",
+            "long_short_term_memory",
+            "attention_mechanisms"
+        ],
+        "further_readings": [
+            "end_to_end_memory_networks",
+            "dynamic_memory_networks",
+            "neural_turing_machines",
+            "differentiable_neural_computers"
+        ]
+    },
+    "encoder_decoder_architecture": {
+        "title": "Encoder Decoder Architecture",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "deep_learning",
+            "recurrent_neural_networks",
+            "sequence_to_sequence_model"
+        ],
+        "further_readings": [
+            "attention_mechanism",
+            "transformer_model",
+            "long_short_term_memory",
+            "gated_recurrent_unit"
+        ]
+    },
+    "beam_search": {
+        "title": "Beam Search",
+        "prerequisites": [
+            "search_algorithms",
+            "heuristic_search",
+            "artificial_intelligence",
+            "machine_learning"
+        ],
+        "further_readings": [
+            "greedy_search",
+            "a_star_search",
+            "genetic_algorithms",
+            "reinforcement_learning"
+        ]
+    },
+    "bias_and_variance_tradeoff": {
+        "title": "Bias and Variance Tradeoff",
+        "prerequisites": [
+            "supervised_learning",
+            "overfitting_and_underfitting",
+            "model_complexity",
+            "error_analysis"
+        ],
+        "further_readings": [
+            "regularization",
+            "cross_validation",
+            "ensemble_methods",
+            "learning_curves",
+            "model_selection"
+        ]
+    },
+    "kernel_regularization": {
+        "title": "Kernel Regularization",
+        "prerequisites": [
+            "support_vector_machines",
+            "kernel_methods",
+            "ridge_regression",
+            "lasso_regression",
+            "regularization_techniques"
+        ],
+        "further_readings": [
+            "elastic_net_regularization",
+            "least_absolute_shrinkage_and_selection_operator",
+            "ridge_estimator",
+            "representer_theorem",
+            "mercer_s_theorem"
+        ]
+    },
+    "bagging": {
+        "title": "Bagging",
+        "prerequisites": [
+            "decision_trees",
+            "random_forests",
+            "bias_variance_tradeoff",
+            "overfitting",
+            "underfitting"
+        ],
+        "further_readings": [
+            "boosting",
+            "stacking",
+            "ensemble_learning",
+            "cross_validation",
+            "bootstrap_sampling"
+        ]
+    },
+    "boosting": {
+        "title": "Boosting",
+        "prerequisites": [
+            "decision_tree",
+            "gradient_descent",
+            "overfitting",
+            "bias_variance_tradeoff",
+            "ensemble_methods"
+        ],
+        "further_readings": [
+            "adaboost",
+            "gradient_boosting",
+            "xgboost",
+            "lightgbm",
+            "catboost"
+        ]
+    },
+    "stacking": {
+        "title": "Stacking",
+        "prerequisites": [
+            "supervised_learning",
+            "ensemble_methods",
+            "cross_validation",
+            "decision_tree",
+            "random_forest",
+            "gradient_boosting"
+        ],
+        "further_readings": [
+            "bagging",
+            "boosting",
+            "deep_stacking_networks",
+            "stacked_generalization"
+        ]
+    },
+    "gradient_boosting": {
+        "title": "Gradient Boosting",
+        "prerequisites": [
+            "decision_tree",
+            "loss_functions",
+            "gradient_descent",
+            "ensemble_methods"
+        ],
+        "further_readings": [
+            "xgboost",
+            "lightgbm",
+            "catboost",
+            "stochastic_gradient_boosting"
+        ]
+    },
+    "training_set": {
+        "title": "Training Set",
+        "prerequisites": [
+            "supervised_learning",
+            "machine_learning_basics",
+            "data_preprocessing"
+        ],
+        "further_readings": [
+            "cross_validation",
+            "overfitting_underfitting",
+            "bias_variance_tradeoff",
+            "data_augmentation"
+        ]
+    },
+    "test_set": {
+        "title": "Test Set",
+        "prerequisites": [
+            "supervised_learning",
+            "training_set",
+            "validation_set",
+            "overfitting",
+            "underfitting"
+        ],
+        "further_readings": [
+            "cross_validation",
+            "bias_variance_tradeoff",
+            "generalization_error",
+            "model_selection"
+        ]
+    },
+    "learning_curves": {
+        "title": "Learning Curves",
+        "prerequisites": [
+            "supervised_learning",
+            "overfitting_underfitting",
+            "model_evaluation",
+            "cross_validation"
+        ],
+        "further_readings": [
+            "bias_variance_tradeoff",
+            "model_selection",
+            "hyperparameter_tuning",
+            "regularization"
+        ]
+    },
+    "regularization_methods": {
+        "title": "Regularization Methods",
+        "prerequisites": [
+            "machine_learning_basics",
+            "overfitting_and_underfitting",
+            "linear_regression",
+            "logistic_regression"
+        ],
+        "further_readings": [
+            "lasso_regression",
+            "ridge_regression",
+            "elastic_net",
+            "dropout_in_neural_networks",
+            "early_stopping"
+        ]
+    },
+    "generalization_error": {
+        "title": "Generalization Error",
+        "prerequisites": [
+            "supervised_learning",
+            "overfitting_and_underfitting",
+            "bias_variance_tradeoff",
+            "model_complexity",
+            "cross_validation"
+        ],
+        "further_readings": [
+            "regularization",
+            "ensemble_methods",
+            "dropout_in_neural_networks",
+            "early_stopping"
+        ]
+    },
+    "asynchronous_hyperband": {
+        "title": "Asynchronous Hyperband",
+        "prerequisites": [
+            "machine_learning",
+            "reinforcement_learning",
+            "hyperparameter_optimization",
+            "multi_armed_bandit_problem",
+            "successive_halving"
+        ],
+        "further_readings": [
+            "hyperband_a_novel_bandit_based_approach_to_hyperparameter_optimization",
+            "asynchronous_methods_for_deep_reinforcement_learning",
+            "practical_bayesian_optimization_of_machine_learning_algorithms"
+        ]
+    },
+    "bohb": {
+        "title": "BOHB: Robust and Efficient Hyperparameter Optimization at Scale",
+        "prerequisites": [
+            "hyperparameter_optimization",
+            "bayesian_optimization",
+            "bandit_based_optimization",
+            "machine_learning"
+        ],
+        "further_readings": [
+            "automl",
+            "efficient_hyperparameter_optimization",
+            "hyperband",
+            "bayesian_optimization_with_bandits"
+        ]
+    },
+    "pbt": {
+        "title": "Population Based Training",
+        "prerequisites": [
+            "reinforcement_learning",
+            "genetic_algorithms",
+            "hyperparameter_optimization"
+        ],
+        "further_readings": [
+            "distributed_computing",
+            "evolutionary_algorithms",
+            "deep_reinforcement_learning"
+        ]
+    },
+    "data_cleaning": {
+        "title": "Data Cleaning",
+        "prerequisites": [
+            "data_preprocessing",
+            "missing_data_imputation",
+            "outlier_detection",
+            "data_transformation",
+            "data_normalization"
+        ],
+        "further_readings": [
+            "feature_engineering",
+            "data_wrangling",
+            "data_integration",
+            "data_curation"
+        ]
+    },
+    "data_wrangling": {
+        "title": "Data Wrangling",
+        "prerequisites": [
+            "python_programming",
+            "pandas_library",
+            "numpy_library",
+            "data_cleaning",
+            "data_preprocessing"
+        ],
+        "further_readings": [
+            "data_visualization",
+            "machine_learning",
+            "deep_learning",
+            "data_analysis",
+            "big_data"
+        ]
+    },
+    "data_scaling": {
+        "title": "Data Scaling",
+        "prerequisites": [
+            "machine_learning_basics",
+            "data_preprocessing",
+            "feature_engineering",
+            "linear_regression",
+            "logistic_regression"
+        ],
+        "further_readings": [
+            "standardization_vs_normalization",
+            "principal_component_analysis",
+            "support_vector_machines",
+            "k_means_clustering"
+        ]
+    },
+    "error_analysis": {
+        "title": "Error Analysis",
+        "prerequisites": [
+            "machine_learning_basics",
+            "supervised_learning",
+            "classification_metrics",
+            "regression_metrics",
+            "model_evaluation",
+            "bias_variance_tradeoff"
+        ],
+        "further_readings": [
+            "confusion_matrix",
+            "precision_recall",
+            "roc_curve",
+            "cross_validation",
+            "bootstrap_sampling",
+            "learning_curves"
+        ]
+    },
+    "artificial_intelligence": {
+        "title": "Artificial Intelligence",
+        "prerequisites": [
+            "machine_learning",
+            "deep_learning",
+            "neural_networks",
+            "reinforcement_learning",
+            "natural_language_processing",
+            "computer_vision",
+            "knowledge_representation",
+            "expert_systems"
+        ],
+        "further_readings": [
+            "genetic_algorithms",
+            "fuzzy_logic",
+            "swarm_intelligence",
+            "evolutionary_computation",
+            "multi_agent_systems",
+            "cognitive_computing",
+            "neuro_fuzzy_systems",
+            "hybrid_intelligent_systems"
+        ]
+    },
+    "perceptron": {
+        "title": "Perceptron",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "linear_classification",
+            "gradient_descent"
+        ],
+        "further_readings": [
+            "multilayer_perceptron",
+            "deep_learning",
+            "backpropagation",
+            "stochastic_gradient_descent"
+        ]
+    },
+    "deep_neural_network": {
+        "title": "Deep Neural Network",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "backpropagation",
+            "activation_functions",
+            "gradient_descent",
+            "overfitting_and_regularization"
+        ],
+        "further_readings": [
+            "convolutional_neural_network",
+            "recurrent_neural_network",
+            "long_short_term_memory",
+            "autoencoders",
+            "deep_learning_optimization"
+        ]
+    },
+    "feedforward_neural_network": {
+        "title": "Feedforward Neural Network",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "activation_functions",
+            "backpropagation",
+            "gradient_descent"
+        ],
+        "further_readings": [
+            "deep_learning",
+            "convolutional_neural_network",
+            "recurrent_neural_network",
+            "optimization_techniques_in_neural_networks"
+        ]
+    },
+    "radial_basis_function_network": {
+        "title": "Radial Basis Function Network",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "supervised_learning",
+            "unsupervised_learning",
+            "backpropagation",
+            "gradient_descent"
+        ],
+        "further_readings": [
+            "multilayer_perceptron",
+            "support_vector_machines",
+            "k_means_clustering",
+            "kernel_methods"
+        ]
+    },
+    "outlier_detection": {
+        "title": "Outlier Detection",
+        "prerequisites": [
+            "supervised_learning",
+            "unsupervised_learning",
+            "probability_distribution",
+            "statistical_analysis",
+            "machine_learning_basics",
+            "data_preprocessing"
+        ],
+        "further_readings": [
+            "anomaly_detection",
+            "novelty_detection",
+            "density_estimation",
+            "clustering",
+            "svm",
+            "deep_learning_for_anomaly_detection"
+        ]
+    },
+    "vector_space_model": {
+        "title": "Vector Space Model",
+        "prerequisites": [
+            "information_retrieval",
+            "linear_algebra",
+            "cosine_similarity",
+            "tf_idf",
+            "document_representation"
+        ],
+        "further_readings": [
+            "latent_semantic_indexing",
+            "word2vec",
+            "doc2vec",
+            "glove",
+            "deep_learning_for_text"
+        ]
+    },
+    "cosine_similarity": {
+        "title": "Cosine Similarity",
+        "prerequisites": [
+            "vector_space_model",
+            "dot_product",
+            "norm_of_a_vector",
+            "information_retrieval"
+        ],
+        "further_readings": [
+            "tf_idf_weighting",
+            "cosine_distance",
+            "similarity_measures",
+            "document_clustering"
+        ]
+    },
+    "jaccard_similarity": {
+        "title": "Jaccard Similarity",
+        "prerequisites": [
+            "set_theory",
+            "binary_classification",
+            "information_retrieval",
+            "machine_learning_basics"
+        ],
+        "further_readings": [
+            "cosine_similarity",
+            "hamming_distance",
+            "euclidean_distance",
+            "k_nearest_neighbors",
+            "support_vector_machines"
+        ]
+    },
+    "manhattan_distance": {
+        "title": "Manhattan Distance",
+        "prerequisites": [
+            "euclidean_distance",
+            "distance_metrics",
+            "vector_space_model"
+        ],
+        "further_readings": [
+            "city_block_distance",
+            "minkowski_distance",
+            "hamming_distance",
+            "cosine_similarity"
+        ]
+    },
+    "pearson_correlation_coefficient": {
+        "title": "Pearson Correlation Coefficient",
+        "prerequisites": [
+            "probability_theory",
+            "linear_regression",
+            "descriptive_statistics",
+            "inferential_statistics",
+            "hypothesis_testing"
+        ],
+        "further_readings": [
+            "spearman_correlation_coefficient",
+            "kendall_tau_rank_correlation_coefficient",
+            "chi_square_test",
+            "anova",
+            "multiple_regression"
+        ]
+    },
+    "minkowski_distance": {
+        "title": "Minkowski Distance",
+        "prerequisites": [
+            "euclidean_distance",
+            "manhattan_distance",
+            "norms_in_vector_space",
+            "distance_metrics"
+        ],
+        "further_readings": [
+            "generalized_minkowski_distance",
+            "distance_functions_in_machine_learning",
+            "similarity_metrics",
+            "clustering_algorithms"
+        ]
+    },
+    "hamming_distance": {
+        "title": "Hamming Distance",
+        "prerequisites": [
+            "binary_numbers",
+            "error_detection_and_correction",
+            "information_theory"
+        ],
+        "further_readings": [
+            "hamming_code",
+            "levenshtein_distance",
+            "jaccard_similarity_coefficient",
+            "cosine_similarity"
+        ]
+    },
+    "contrastive_learning": {
+        "title": "Contrastive Learning",
+        "prerequisites": [
+            "supervised_learning",
+            "unsupervised_learning",
+            "deep_learning",
+            "representation_learning",
+            "neural_networks"
+        ],
+        "further_readings": [
+            "self_supervised_learning",
+            "semi_supervised_learning",
+            "triplet_loss",
+            "siamese_networks",
+            "hebbian_learning"
+        ]
+    },
+    "representation_learning": {
+        "title": "Representation Learning",
+        "prerequisites": [
+            "machine_learning",
+            "deep_learning",
+            "neural_networks",
+            "unsupervised_learning",
+            "supervised_learning"
+        ],
+        "further_readings": [
+            "autoencoders",
+            "generative_adversarial_networks",
+            "transfer_learning",
+            "self_supervised_learning",
+            "multi_task_learning"
+        ]
+    },
+    "dbscan": {
+        "title": "DBSCAN",
+        "prerequisites": [
+            "machine_learning",
+            "clustering",
+            "euclidean_distance",
+            "density_estimation"
+        ],
+        "further_readings": [
+            "k_means_clustering",
+            "hierarchical_clustering",
+            "spectral_clustering",
+            "mean_shift_clustering"
+        ]
+    },
+    "normalized_cuts": {
+        "title": "Normalized Cuts",
+        "prerequisites": [
+            "graph_theory",
+            "spectral_clustering",
+            "image_segmentation",
+            "linear_algebra"
+        ],
+        "further_readings": [
+            "semi_supervised_learning",
+            "spectral_graph_theory",
+            "unsupervised_learning",
+            "image_processing"
+        ]
+    },
+    "nonlinear_dimensionality_reduction": {
+        "title": "Nonlinear Dimensionality Reduction",
+        "prerequisites": [
+            "linear_algebra",
+            "principal_component_analysis",
+            "multivariate_statistics",
+            "machine_learning_basics",
+            "neural_networks"
+        ],
+        "further_readings": [
+            "manifold_learning",
+            "autoencoders",
+            "kernel_methods",
+            "t_sne",
+            "umap",
+            "deep_learning"
+        ]
+    },
+    "t_sne": {
+        "title": "T-SNE",
+        "prerequisites": [
+            "machine_learning",
+            "dimensionality_reduction",
+            "manifold_learning",
+            "euclidean_distance",
+            "probability_distribution"
+        ],
+        "further_readings": [
+            "stochastic_neighbor_embedding",
+            "principal_component_analysis",
+            "kullback_leibler_divergence",
+            "multidimensional_scaling",
+            "autoencoders"
+        ]
+    },
+    "visualizing_convolutional_neural_networks": {
+        "title": "Visualizing Convolutional Neural Networks",
+        "prerequisites": [
+            "convolutional_neural_network",
+            "deep_learning",
+            "neural_networks",
+            "image_processing",
+            "feature_extraction"
+        ],
+        "further_readings": [
+            "activation_functions",
+            "backpropagation",
+            "gradient_descent",
+            "optimization_algorithms",
+            "deep_learning_frameworks"
+        ]
+    },
+    "feature_scaling": {
+        "title": "Feature Scaling",
+        "prerequisites": [
+            "machine_learning_basics",
+            "data_preprocessing",
+            "linear_regression",
+            "logistic_regression"
+        ],
+        "further_readings": [
+            "standardization_vs_normalization",
+            "principal_component_analysis",
+            "support_vector_machines",
+            "k_nearest_neighbors",
+            "gradient_descent"
+        ]
+    },
+    "standardization": {
+        "title": "Standardization",
+        "prerequisites": [
+            "feature_scaling",
+            "data_preprocessing",
+            "supervised_learning"
+        ],
+        "further_readings": [
+            "normal_distribution",
+            "z_score",
+            "principal_component_analysis",
+            "linear_regression",
+            "support_vector_machines"
+        ]
+    },
+    "min_max_normalization": {
+        "title": "Min-Max Normalization",
+        "prerequisites": [
+            "data_preprocessing",
+            "feature_scaling",
+            "machine_learning_basics"
+        ],
+        "further_readings": [
+            "standardization",
+            "z_score_normalization",
+            "data_transformation",
+            "feature_engineering"
+        ]
+    },
+    "unit_vector_scaling": {
+        "title": "Unit Vector Scaling",
+        "prerequisites": [
+            "vector_operations",
+            "linear_algebra",
+            "scalar_multiplication",
+            "vector_normalization"
+        ],
+        "further_readings": [
+            "euclidean_vectors",
+            "vector_spaces",
+            "dot_product",
+            "cross_product",
+            "vector_projection"
+        ]
+    },
+    "virtualization": {
+        "title": "Virtualization",
+        "prerequisites": [
+            "computer_architecture",
+            "operating_systems",
+            "cloud_computing"
+        ],
+        "further_readings": [
+            "hypervisor",
+            "containerization",
+            "network_virtualization",
+            "storage_virtualization",
+            "server_virtualization"
+        ]
+    },
+    "distributed_systems": {
+        "title": "Distributed Systems",
+        "prerequisites": [
+            "computer_networks",
+            "operating_systems",
+            "database_systems",
+            "software_engineering",
+            "data_structures",
+            "algorithms"
+        ],
+        "further_readings": [
+            "cloud_computing",
+            "big_data",
+            "internet_of_things",
+            "blockchain_technology",
+            "machine_learning",
+            "deep_learning"
+        ]
+    },
+    "networking_fundamentals": {
+        "title": "Networking Fundamentals",
+        "prerequisites": [
+            "computer_networks",
+            "internet_protocol_suite",
+            "network_architecture",
+            "network_protocols",
+            "network_security"
+        ],
+        "further_readings": [
+            "network_topology",
+            "network_routing",
+            "network_switching",
+            "network_management",
+            "network_performance_analysis"
+        ]
+    },
+    "cloud_security": {
+        "title": "Cloud Security",
+        "prerequisites": [
+            "cloud_computing",
+            "information_security",
+            "cryptography",
+            "network_security",
+            "data_privacy"
+        ],
+        "further_readings": [
+            "security_as_a_service",
+            "intrusion_detection_systems",
+            "security_information_and_event_management",
+            "identity_and_access_management",
+            "advanced_persistent_threats"
+        ]
+    },
+    "serverless_architecture": {
+        "title": "Serverless Architecture",
+        "prerequisites": [
+            "cloud_computing",
+            "distributed_systems",
+            "microservices",
+            "event_driven_architecture"
+        ],
+        "further_readings": [
+            "aws_lambda",
+            "google_cloud_functions",
+            "azure_functions",
+            "faas",
+            "baas"
+        ]
+    },
+    "cloud_economics": {
+        "title": "Cloud Economics",
+        "prerequisites": [
+            "cloud_computing",
+            "cost_analysis",
+            "cloud_services",
+            "cloud_infrastructure",
+            "cloud_storage",
+            "cloud_security"
+        ],
+        "further_readings": [
+            "cloud_cost_optimization",
+            "cloud_migration",
+            "cloud_governance",
+            "cloud_architecture",
+            "cloud_scalability",
+            "cloud_automation"
+        ]
+    },
+    "multi_task_learning_in_pytorch": {
+        "title": "Multi-Task Learning in Pytorch",
+        "prerequisites": [
+            "pytorch_basics",
+            "neural_networks",
+            "deep_learning",
+            "machine_learning_concepts",
+            "python_programming"
+        ],
+        "further_readings": [
+            "multi_task_learning",
+            "deep_learning_for_multi_task",
+            "pytorch_advanced_techniques",
+            "machine_learning_advanced_concepts"
+        ]
+    },
+    "meta_reinforcement_learning": {
+        "title": "Meta Reinforcement Learning",
+        "prerequisites": [
+            "reinforcement_learning",
+            "machine_learning",
+            "deep_learning",
+            "neural_networks",
+            "policy_gradient_methods",
+            "multi_armed_bandit"
+        ],
+        "further_readings": [
+            "model_based_reinforcement_learning",
+            "inverse_reinforcement_learning",
+            "hierarchical_reinforcement_learning",
+            "transfer_learning",
+            "deep_q_network"
+        ]
+    },
+    "model_agnostic_meta_learning": {
+        "title": "Model Agnostic Meta Learning",
+        "prerequisites": [
+            "machine_learning",
+            "deep_learning",
+            "reinforcement_learning",
+            "meta_learning",
+            "supervised_learning",
+            "unsupervised_learning"
+        ],
+        "further_readings": [
+            "few_shot_learning",
+            "transfer_learning",
+            "multi_task_learning",
+            "neural_networks",
+            "gradient_descent"
+        ]
+    },
+    "optimization_based_meta_learning": {
+        "title": "Optimization Based Meta Learning",
+        "prerequisites": [
+            "machine_learning",
+            "deep_learning",
+            "reinforcement_learning",
+            "gradient_descent",
+            "backpropagation",
+            "convolutional_neural_network",
+            "recurrent_neural_network",
+            "policy_gradient_methods"
+        ],
+        "further_readings": [
+            "model_agnostic_meta_learning",
+            "reptile",
+            "meta_sgd",
+            "meta_learning_in_neural_networks",
+            "meta_learning_for_control",
+            "meta_learning_in_reinforcement_learning"
+        ]
+    },
+    "explaining_and_harnessing_adversarial_examples": {
+        "title": "Explaining And Harnessing Adversarial Examples",
+        "prerequisites": [
+            "machine_learning",
+            "deep_learning",
+            "neural_networks",
+            "convolutional_neural_network",
+            "gradient_descent"
+        ],
+        "further_readings": [
+            "generative_adversarial_networks",
+            "reinforcement_learning",
+            "policy_gradient_methods",
+            "deep_reinforcement_learning"
+        ]
+    },
+    "towards_deep_learning_models_resistant_to_adversarial_attacks": {
+        "title": "Towards Deep Learning Models Resistant to Adversarial Attacks",
+        "prerequisites": [
+            "deep_learning",
+            "adversarial_attacks",
+            "machine_learning_security",
+            "neural_networks",
+            "convolutional_neural_network",
+            "reinforcement_learning"
+        ],
+        "further_readings": [
+            "generative_adversarial_networks",
+            "policy_gradient_methods",
+            "deep_reinforcement_learning",
+            "machine_learning_ethics",
+            "robust_machine_learning"
+        ]
+    },
+    "adversarial_examples_in_the_physical_world": {
+        "title": "Adversarial Examples In The Physical World",
+        "prerequisites": [
+            "machine_learning",
+            "deep_learning",
+            "convolutional_neural_network",
+            "adversarial_attacks",
+            "computer_vision"
+        ],
+        "further_readings": [
+            "adversarial_machine_learning",
+            "robust_machine_learning",
+            "deepfool",
+            "fast_gradient_sign_method",
+            "universal_adversarial_perturbations"
+        ]
+    },
+    "interpretable_machine_learning": {
+        "title": "Interpretable Machine Learning",
+        "prerequisites": [
+            "machine_learning_basics",
+            "supervised_learning",
+            "unsupervised_learning",
+            "deep_learning",
+            "decision_tree",
+            "random_forest",
+            "neural_networks"
+        ],
+        "further_readings": [
+            "explainable_ai",
+            "feature_importance",
+            "model_evaluation",
+            "model_selection",
+            "shapley_values",
+            "lime_explainer"
+        ]
+    },
+    "convolutional_neural_network": {
+        "title": "Convolutional Neural Network",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "deep_learning",
+            "image_processing"
+        ],
+        "further_readings": [
+            "max_pooling",
+            "relu_activation_function",
+            "backpropagation",
+            "dropout_regularization"
+        ]
+    },
+    "stacking_ensemble": {
+        "title": "Stacking Ensemble",
+        "prerequisites": [
+            "supervised_learning",
+            "decision_tree",
+            "random_forest",
+            "gradient_boosting",
+            "model_evaluation"
+        ],
+        "further_readings": [
+            "ensemble_learning",
+            "bagging",
+            "boosting",
+            "meta_learning",
+            "deep_learning"
+        ]
+    },
+    "voting_ensemble": {
+        "title": "Voting Ensemble",
+        "prerequisites": [
+            "machine_learning_basics",
+            "supervised_learning",
+            "decision_tree",
+            "random_forest",
+            "bagging_and_boosting"
+        ],
+        "further_readings": [
+            "stacking",
+            "ensemble_learning",
+            "bias_variance_tradeoff",
+            "cross_validation"
+        ]
+    },
+    "image_manipulation": {
+        "title": "Image Manipulation",
+        "prerequisites": [
+            "computer_vision",
+            "convolutional_neural_network",
+            "image_processing",
+            "deep_learning",
+            "python_programming"
+        ],
+        "further_readings": [
+            "gan",
+            "image_augmentation",
+            "image_restoration",
+            "image_segmentation",
+            "image_synthesis"
+        ]
+    },
+    "recommender_systems": {
+        "title": "Recommender Systems",
+        "prerequisites": [
+            "machine_learning",
+            "supervised_learning",
+            "unsupervised_learning",
+            "collaborative_filtering",
+            "content_based_filtering",
+            "matrix_factorization"
+        ],
+        "further_readings": [
+            "deep_learning",
+            "convolutional_neural_network",
+            "recurrent_neural_network",
+            "autoencoders",
+            "natural_language_processing"
+        ]
+    },
+    "latent_factor_models": {
+        "title": "Latent Factor Models",
+        "prerequisites": [
+            "matrix_factorization",
+            "singular_value_decomposition",
+            "probabilistic_graphical_models",
+            "collaborative_filtering"
+        ],
+        "further_readings": [
+            "deep_learning",
+            "autoencoders",
+            "variational_autoencoders",
+            "bayesian_networks",
+            "hidden_markov_models"
+        ]
+    },
+    "matrix_norms": {
+        "title": "Matrix Norms",
+        "prerequisites": [
+            "linear_algebra",
+            "vector_norms",
+            "matrix_operations"
+        ],
+        "further_readings": [
+            "spectral_norm",
+            "frobenius_norm",
+            "p_norm",
+            "infinity_norm",
+            "singular_value_decomposition"
+        ]
+    },
+    "eigenvalues": {
+        "title": "Eigenvalues",
+        "prerequisites": [
+            "linear_algebra",
+            "matrix_theory",
+            "spectral_theorem",
+            "quadratic_forms"
+        ],
+        "further_readings": [
+            "eigenvectors",
+            "diagonalization",
+            "matrix_decomposition",
+            "singular_value_decomposition",
+            "principal_component_analysis"
+        ]
+    },
+    "multi_head_attention": {
+        "title": "Multi Head Attention",
+        "prerequisites": [
+            "attention_mechanism",
+            "transformer_model",
+            "neural_networks",
+            "deep_learning"
+        ],
+        "further_readings": [
+            "self_attention",
+            "scaled_dot_product_attention",
+            "transformer_architecture",
+            "sequence_to_sequence_model"
+        ]
+    },
+    "bert": {
+        "title": "BERT",
+        "prerequisites": [
+            "natural_language_processing",
+            "transformer_model",
+            "attention_mechanism",
+            "word_embedding",
+            "machine_learning"
+        ],
+        "further_readings": [
+            "transformer_model_in_depth",
+            "self_attention",
+            "positional_encoding",
+            "masked_language_model",
+            "next_sentence_prediction"
+        ]
+    },
+    "transformerxl": {
+        "title": "TransformerXL",
+        "prerequisites": [
+            "transformer_model",
+            "attention_mechanism",
+            "recurrent_neural_network",
+            "long_short_term_memory",
+            "natural_language_processing"
+        ],
+        "further_readings": [
+            "transformer_architecture",
+            "self_attention",
+            "sequence_to_sequence_model",
+            "language_modeling",
+            "machine_translation"
+        ]
+    },
+    "gpt2": {
+        "title": "GPT-2",
+        "prerequisites": [
+            "natural_language_processing",
+            "transformer_models",
+            "attention_mechanism",
+            "language_modeling"
+        ],
+        "further_readings": [
+            "openai_gpt",
+            "gpt3",
+            "bert",
+            "transformer_xl",
+            "turing_nlg"
+        ]
+    },
+    "invertible_autoencoders": {
+        "title": "Invertible Autoencoders",
+        "prerequisites": [
+            "autoencoder",
+            "deep_learning",
+            "neural_networks",
+            "backpropagation",
+            "gradient_descent"
+        ],
+        "further_readings": [
+            "variational_autoencoder",
+            "generative_adversarial_networks",
+            "unsupervised_learning",
+            "dimensionality_reduction"
+        ]
+    },
+    "spectral_normalization_for_generative_adversarial_networks": {
+        "title": "Spectral Normalization for Generative Adversarial Networks",
+        "prerequisites": [
+            "generative_adversarial_networks",
+            "deep_learning",
+            "neural_networks",
+            "machine_learning",
+            "spectral_normalization"
+        ],
+        "further_readings": [
+            "wasserstein_gan",
+            "conditional_gan",
+            "deep_convolutional_gan",
+            "spectral_norm_regularization"
+        ]
+    },
+    "style_gans": {
+        "title": "Style GANs",
+        "prerequisites": [
+            "generative_adversarial_networks",
+            "deep_learning",
+            "convolutional_neural_network",
+            "style_transfer"
+        ],
+        "further_readings": [
+            "progressive_growing_of_gans",
+            "stylegan2",
+            "stylegan3",
+            "stylegan_ada",
+            "stylegan_ada_pytorch"
+        ]
+    },
+    "spectral_normalization": {
+        "title": "Spectral Normalization",
+        "prerequisites": [
+            "linear_algebra",
+            "deep_learning",
+            "convolutional_neural_network",
+            "generative_adversarial_networks"
+        ],
+        "further_readings": [
+            "singular_value_decomposition",
+            "lipschitz_continuity",
+            "stochastic_gradient_descent",
+            "weight_initialization"
         ]
     }
 }
