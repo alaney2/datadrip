@@ -6533,7 +6533,7 @@
         "further_readings": [
             "wasserstein_metric",
             "conditional_gans",
-            "semi-supervised_learning"
+            "semi_supervised_learning"
         ]
     },
     "improved_training_of_wasserstein_gans": {
@@ -6624,7 +6624,7 @@
         ],
         "further_readings": [
             "domain_adaptation_techniques",
-            "semi-supervised_learning",
+            "semi_supervised_learning",
             "transfer_learning"
         ]
     },
