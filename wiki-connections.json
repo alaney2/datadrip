@@ -5218,7 +5218,7 @@
         "further_readings": [
             "mean_squared_error",
             "root_mean_squared_error",
-            "r_squared"
+            "r-squared"
         ]
     },
     "huber_loss": {
@@ -6111,7 +6111,7 @@
             "receiver_operating_characteristic",
             "mean_absolute_error",
             "mean_squared_error",
-            "R-squared"
+            "r-squared"
         ]
     },
     "data_preprocessing": {
@@ -20966,7 +20966,7 @@
             "f1_score",
             "roc_auc",
             "mean_squared_error",
-            "r_squared",
+            "r-squared",
             "adjusted_r_squared",
             "confusion_matrix"
         ]
@@ -22223,11 +22223,27 @@
             "mean_absolute_error",
             "mean_squared_logarithmic_error",
             "mean_absolute_percentage_error",
-            "r_squared"
+            "r-squared"
         ]
     },
     "r-squared": {
         "title": "R-squared",
+        "prerequisites": [
+            "simple_linear_regression",
+            "multiple_linear_regression",
+            "residuals_in_regression",
+            "sum_of_squares"
+        ],
+        "further_readings": [
+            "adjusted_r_squared",
+            "f_test",
+            "anova",
+            "goodness_of_fit",
+            "model_selection"
+        ]
+    },
+    "r_squared": {
+        "title": "R Squared",
         "prerequisites": [
             "simple_linear_regression",
             "multiple_linear_regression",
