@@ -590,26 +590,16 @@
         "prerequisites": [
             "supervised_learning",
             "unsupervised_learning",
-            "deep_learning",
-            "neural_networks",
-            "convolutional_neural_networks",
-            "autoencoders",
-            "generative_models",
-            "clustering",
-            "dimensionality_reduction",
-            "graph_based_learning"
+            "machine_learning_basics",
+            "probability_theory",
+            "deep_learning"
         ],
         "further_readings": [
-            "active_learning",
-            "self_supervised_learning",
-            "semi_supervised_clustering",
-            "transfer_learning",
-            "domain_adaptation",
-            "few_shot_learning",
-            "multi_task_learning",
-            "continual_learning",
-            "anomaly_detection",
-            "adversarial_training"
+            "graph_based_semi_supervised_learning",
+            "self_training",
+            "multi_view_training",
+            "co_training",
+            "semi_supervised_learning_with_deep_generative_models"
         ]
     },
     "adversarial_training": {
@@ -1266,27 +1256,13 @@
         "title": "Q-Learning",
         "prerequisites": [
             "reinforcement_learning",
-            "markov_decision_process",
-            "value_iteration",
-            "bellman_equation",
-            "epsilon_greedy_policy",
-            "temporal_difference_learning",
-            "dynamic_programming",
-            "monte_carlo_methods",
-            "function_approximation",
-            "neural_networks"
+            "markov_decision_processes",
+            "dynamic_programming"
         ],
         "further_readings": [
-            "deep_q_networks",
+            "deep_q_learning",
             "double_q_learning",
-            "actor_critic_methods",
-            "policy_gradient_methods",
-            "off_policy_learning",
-            "multi_agent_reinforcement_learning",
-            "hierarchical_reinforcement_learning",
-            "inverse_reinforcement_learning",
-            "imitation_learning",
-            "meta_learning"
+            "dueling_network_architectures_for_deep_reinforcement_learning"
         ]
     },
     "reinforcement_learning": {
@@ -5608,8 +5584,7 @@
     },
     "pytorch": {
         "title": "Pytorch",
-        "prerequisites": [
-        ],
+        "prerequisites": [],
         "further_readings": [
             "tensorflow",
             "keras",
@@ -6843,9 +6818,6 @@
             "query_strategy"
         ],
         "further_readings": [
-            "http://www.cs.columbia.edu/~mcollins/papers/activeLearning.pdf",
-            "https://arxiv.org/abs/1907.06347",
-            "https://www.cs.cmu.edu/~tom/10701_sp11/slides/active_learning.pdf"
         ]
     },
     "semi_supervised_clustering": {
@@ -25095,6 +25067,472 @@
             "lipschitz_continuity",
             "stochastic_gradient_descent",
             "weight_initialization"
+        ]
+    },
+    "self_attention_in_generative_models": {
+        "title": "Self Attention in Generative Models",
+        "prerequisites": [
+            "deep_learning",
+            "neural_networks",
+            "generative_models",
+            "transformer_models",
+            "attention_mechanism"
+        ],
+        "further_readings": [
+            "self_attention",
+            "generative_adversarial_networks",
+            "transformer_architecture",
+            "attention_is_all_you_need"
+        ]
+    },
+    "wasserstein_distance": {
+        "title": "Wasserstein Distance",
+        "prerequisites": [
+            "probability_theory",
+            "measure_theory",
+            "optimization_theory",
+            "machine_learning_basics"
+        ],
+        "further_readings": [
+            "optimal_transport_theory",
+            "generative_adversarial_networks",
+            "earth_mover_distance"
+        ]
+    },
+    "nonlinear_optimization": {
+        "title": "Nonlinear Optimization",
+        "prerequisites": [
+            "linear_algebra",
+            "calculus",
+            "convex_optimization",
+            "gradient_descent",
+            "machine_learning_basics"
+        ],
+        "further_readings": [
+            "lagrange_multipliers",
+            "constrained_optimization",
+            "stochastic_gradient_descent",
+            "genetic_algorithms",
+            "neural_networks"
+        ]
+    },
+    "integer_programming": {
+        "title": "Integer Programming",
+        "prerequisites": [
+            "linear_programming",
+            "combinatorial_optimization",
+            "branch_and_bound",
+            "cutting_plane_method"
+        ],
+        "further_readings": [
+            "mixed_integer_programming",
+            "conic_integer_programming",
+            "stochastic_integer_programming",
+            "dynamic_programming"
+        ]
+    },
+    "deep_dream": {
+        "title": "Deep Dream",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "convolutional_neural_networks",
+            "deep_learning",
+            "computer_vision",
+            "python_programming"
+        ],
+        "further_readings": [
+            "generative_adversarial_networks",
+            "transfer_learning",
+            "image_synthesis",
+            "deep_learning_for_visual_recognition"
+        ]
+    },
+    "wasserstein_metric": {
+        "title": "Wasserstein Metric",
+        "prerequisites": [
+            "probability_theory",
+            "measure_theory",
+            "optimal_transport_theory",
+            "machine_learning_basics"
+        ],
+        "further_readings": [
+            "wasserstein_gan",
+            "earth_movers_distance",
+            "wasserstein_autoencoders",
+            "wasserstein_distance_in_machine_learning"
+        ]
+    },
+    "adversarial_defense_using_rew": {
+        "title": "Adversarial Defense Using Rew",
+        "prerequisites": [
+            "machine_learning_basics",
+            "deep_learning",
+            "adversarial_attacks",
+            "reinforcement_learning"
+        ],
+        "further_readings": [
+            "adversarial_machine_learning",
+            "robust_machine_learning",
+            "reinforcement_learning_with_adversarial_attacks",
+            "deep_reinforcement_learning"
+        ]
+    },
+    "adversarial_defense_using_robust_optimization": {
+        "title": "Adversarial Defense Using Robust Optimization",
+        "prerequisites": [
+            "machine_learning",
+            "deep_learning",
+            "convolutional_neural_networks",
+            "adversarial_attacks",
+            "optimization_techniques"
+        ],
+        "further_readings": [
+            "adversarial_machine_learning",
+            "robust_machine_learning",
+            "deep_robust_learning",
+            "adversarial_defense_techniques",
+            "robust_optimization"
+        ]
+    },
+    "semi-supervised_learning_with_wgan": {
+        "title": "Semi-supervised Learning With WGAN",
+        "prerequisites": [
+            "machine_learning_basics",
+            "deep_learning",
+            "generative_adversarial_networks",
+            "semi_supervised_learning",
+            "wasserstein_gan"
+        ],
+        "further_readings": [
+            "improved_training_of_wgan",
+            "semi_supervised_learning_with_deep_generative_models",
+            "semi_supervised_gan"
+        ]
+    },
+    "improved_training_of_wgan": {
+        "title": "Improved Training of WGAN",
+        "prerequisites": [
+            "generative_adversarial_networks",
+            "wasserstein_gan",
+            "gradient_penalty"
+        ],
+        "further_readings": [
+            "deep_learning",
+            "neural_network_optimization",
+            "machine_learning_algorithms"
+        ]
+    },
+    "wgan_gp_for_text_generation": {
+        "title": "WGAN GP for Text Generation",
+        "prerequisites": [
+            "generative_adversarial_networks",
+            "gradient_penalty",
+            "natural_language_processing",
+            "deep_learning",
+            "neural_networks"
+        ],
+        "further_readings": [
+            "wasserstein_gan",
+            "improved_training_of_wgan",
+            "text_generation_with_gans",
+            "deep_learning_for_nlp"
+        ]
+    },
+    "weight_normalization": {
+        "title": "Weight Normalization",
+        "prerequisites": [
+            "neural_networks",
+            "backpropagation",
+            "gradient_descent",
+            "optimization_techniques"
+        ],
+        "further_readings": [
+            "batch_normalization",
+            "layer_normalization",
+            "adaptive_gradient_methods"
+        ]
+    },
+    "group_normalization": {
+        "title": "Group Normalization",
+        "prerequisites": [
+            "convolutional_neural_networks",
+            "batch_normalization",
+            "deep_learning"
+        ],
+        "further_readings": [
+            "layer_normalization",
+            "instance_normalization",
+            "residual_networks",
+            "deep_residual_learning_for_image_recognition"
+        ]
+    },
+    "multi_agent_gans": {
+        "title": "Multi Agent GANs",
+        "prerequisites": [
+            "generative_adversarial_networks",
+            "reinforcement_learning",
+            "deep_learning",
+            "machine_learning_concepts",
+            "probability_theory"
+        ],
+        "further_readings": [
+            "multi_agent_systems",
+            "game_theory",
+            "distributed_learning",
+            "deep_reinforcement_learning",
+            "neural_network_architectures"
+        ]
+    },
+    "domain_adaptation_techniques": {
+        "title": "Domain Adaptation Techniques",
+        "prerequisites": [
+            "machine_learning",
+            "supervised_learning",
+            "unsupervised_learning",
+            "transfer_learning",
+            "deep_learning",
+            "neural_networks"
+        ],
+        "further_readings": [
+            "feature_extraction",
+            "semi_supervised_learning",
+            "multi_task_learning",
+            "reinforcement_learning",
+            "generative_adversarial_networks",
+            "convolutional_neural_networks"
+        ]
+    },
+    "adversarial_learning": {
+        "title": "Adversarial Learning",
+        "prerequisites": [
+            "machine_learning",
+            "deep_learning",
+            "neural_networks",
+            "generative_adversarial_networks",
+            "reinforcement_learning"
+        ],
+        "further_readings": [
+            "adversarial_machine_learning",
+            "adversarial_attacks",
+            "defensive_distillation",
+            "adversarial_training",
+            "adversarial_robustness"
+        ]
+    },
+    "class_imbalance": {
+        "title": "Class Imbalance",
+        "prerequisites": [
+            "supervised_learning",
+            "classification_algorithms",
+            "performance_metrics"
+        ],
+        "further_readings": [
+            "oversampling_techniques",
+            "undersampling_techniques",
+            "cost_sensitive_learning",
+            "smote",
+            "roc_curves"
+        ]
+    },
+    "distribution_shift": {
+        "title": "Distribution Shift",
+        "prerequisites": [
+            "probability_theory",
+            "machine_learning_basics",
+            "supervised_learning",
+            "unsupervised_learning",
+            "data_preprocessing"
+        ],
+        "further_readings": [
+            "covariate_shift",
+            "concept_drift",
+            "domain_adaptation",
+            "transfer_learning",
+            "robust_machine_learning"
+        ]
+    },
+    "importance_weighting": {
+        "title": "Importance Weighting",
+        "prerequisites": [
+            "probability_theory",
+            "machine_learning_basics",
+            "sampling_methods"
+        ],
+        "further_readings": [
+            "covariate_shift",
+            "importance_sampling",
+            "reweighting_methods"
+        ]
+    },
+    "counterfactual_evaluation": {
+        "title": "Counterfactual Evaluation",
+        "prerequisites": [
+            "causal_inference",
+            "machine_learning",
+            "reinforcement_learning",
+            "policy_evaluation"
+        ],
+        "further_readings": [
+            "off_policy_evaluation",
+            "inverse_propensity_scoring",
+            "doubly_robust_estimation"
+        ]
+    },
+    "offline_reinforcement_learning": {
+        "title": "Offline Reinforcement Learning",
+        "prerequisites": [
+            "reinforcement_learning",
+            "q_learning",
+            "policy_gradients",
+            "deep_learning",
+            "markov_decision_processes"
+        ],
+        "further_readings": [
+            "actor_critic_methods",
+            "monte_carlo_methods",
+            "temporal_difference_learning",
+            "deep_q_networks",
+            "proximal_policy_optimization"
+        ]
+    },
+    "batch_norm": {
+        "title": "Batch Norm",
+        "prerequisites": [
+            "neural_networks",
+            "deep_learning",
+            "backpropagation",
+            "gradient_descent"
+        ],
+        "further_readings": [
+            "convolutional_neural_networks",
+            "normalization_techniques",
+            "optimization_techniques"
+        ]
+    },
+    "gan": {
+        "title": "Generative Adversarial Networks (GAN)",
+        "prerequisites": [
+            "deep_learning",
+            "neural_networks",
+            "probability_theory",
+            "computer_vision"
+        ],
+        "further_readings": [
+            "conditional_gans",
+            "stylegan",
+            "gan_applications",
+            "gan_limitations"
+        ]
+    },
+    "sequential_models": {
+        "title": "Sequential Models",
+        "prerequisites": [
+            "machine_learning_basics",
+            "deep_learning",
+            "recurrent_neural_networks",
+            "long_short_term_memory",
+            "gradient_descent"
+        ],
+        "further_readings": [
+            "gated_recurrent_units",
+            "bidirectional_recurrent_neural_networks",
+            "sequence_to_sequence_models",
+            "attention_mechanisms"
+        ]
+    },
+    "dragan": {
+        "title": "DRAGAN",
+        "prerequisites": [
+            "generative_adversarial_networks",
+            "deep_learning",
+            "backpropagation",
+            "gradient_descent",
+            "stochastic_optimization"
+        ],
+        "further_readings": [
+            "wasserstein_gan",
+            "least_squares_gan",
+            "conditional_gan",
+            "cycle_gan",
+            "pix2pix"
+        ]
+    },
+    "deep_belief_network": {
+        "title": "Deep Belief Network",
+        "prerequisites": [
+            "artificial_neural_networks",
+            "machine_learning_basics",
+            "probability_theory",
+            "restricted_boltzmann_machines"
+        ],
+        "further_readings": [
+            "deep_learning",
+            "unsupervised_learning",
+            "generative_models",
+            "neural_network_optimization"
+        ]
+    },
+    "cycle_consistent_adversarial_networks": {
+        "title": "Cycle Consistent Adversarial Networks",
+        "prerequisites": [
+            "generative_adversarial_networks",
+            "deep_learning",
+            "neural_networks",
+            "image_to_image_translation",
+            "computer_vision"
+        ],
+        "further_readings": [
+            "unsupervised_image_to_image_translation",
+            "conditional_generative_adversarial_networks",
+            "domain_adaptation",
+            "style_transfer",
+            "image_synthesis"
+        ]
+    },
+    "cycada": {
+        "title": "Cycada",
+        "prerequisites": [
+            "machine_learning_basics",
+            "deep_learning",
+            "domain_adaptation",
+            "convolutional_neural_networks",
+            "transfer_learning"
+        ],
+        "further_readings": [
+            "adversarial_training",
+            "generative_adversarial_networks",
+            "neural_style_transfer",
+            "unsupervised_learning"
+        ]
+    },
+    "t-distributed_stochastic_neighbor_embedding": {
+        "title": "T-Distributed Stochastic Neighbor Embedding",
+        "prerequisites": [
+            "machine_learning_basics",
+            "dimensionality_reduction",
+            "probability_distributions",
+            "k-nearest_neighbors_algorithm"
+        ],
+        "further_readings": [
+            "manifold_learning",
+            "principal_component_analysis",
+            "autoencoders",
+            "spectral_clustering"
+        ]
+    },
+    "uncertainty_sampling": {
+        "title": "Uncertainty Sampling",
+        "prerequisites": [
+            "supervised_learning",
+            "active_learning",
+            "probability_theory",
+            "information_theory"
+        ],
+        "further_readings": [
+            "query_learning",
+            "pool_based_sampling",
+            "stream_based_sampling",
+            "multi_arm_bandit_problem"
         ]
     }
 }
