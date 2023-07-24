@@ -60,7 +60,7 @@ function Heading({ level, children, filename, slug }) {
         {children}
       </Typography>
       {level === 1 ? (
-        <IconButton sx={{ ml: 3, visibility: 'hidden' }}>
+        <IconButton sx={{ ml: 3 }}>
           <ReadingListButton item={getPageObject(nameWithoutExtension)} fontSize="medium" />
         </IconButton>
       ) : (

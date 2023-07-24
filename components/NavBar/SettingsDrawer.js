@@ -206,6 +206,9 @@ export default function SettingsDrawer(props) {
             }} 
           />
         </Heading>
+        <Typography variant="caption" color="#999">
+          {readingList.length > 0 ? 'Drag and drop to reorder' : 'Add pages to your reading list to save them for later'}
+        </Typography>
         <ReadingList />
       </Box>
     </Drawer>
