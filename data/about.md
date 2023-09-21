@@ -10,11 +10,7 @@ A script runs in the background, automatically generating pages and updating exi
 
 ## How to Use
 
-To improve the learning experience, Data Drip offers a left sidebar with prerequisite and further readings for each topic. Users can add these topics to their reading lists, which are stored locally on their devices. Items in the reading list can be rearranged by dragging them, allowing users to tailor their learning paths according to their preferences. Reading lists persist through local storage, making it easy to access curated resources during future visits.
-
-## Disclaimer
-
-While GPTs are powerful AI models, they are not perfect. As a result, there may be instances where the generated content contains inaccuracies or is not fully up-to-date. Readers can fix mistakes or add more information to articles by clicking the edit button at the top of each page. Data Drip continuously works on refining its algorithms and improving the overall quality of wiki pages, but users are encouraged to verify any critical information through additional sources.
+To improve the learning experience, Data Drip offers a left sidebar with prerequisite and further readings for each topic. Users can add these topics to their reading lists, which are stored locally on their devices. Items in the reading list can be rearranged by dragging them, allowing users to tailor their learning paths according to their preferences. Reading lists persist through local storage, making it easy to access pages on future visits. Users can also edit any page to add more information or fix mistakes by going to the page and clicking the "Edit this page" button on the top.
 
 ## Contact
 
